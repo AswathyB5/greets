@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Greets Equipment – Installation, Training, Service and Spares in India</title>
+  <meta name="description" content="Process selection, sample trials, import handling, site preparation, installation, training, service and spares — Greets supports your equipment from day one.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Services page-specific */
+    .services-hero-split {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 0;
+      margin-top: 3rem;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      min-height: 420px;
+    }
+    .services-hero-split__text {
+      background: var(--gray-900);
+      padding: clamp(2.5rem, 4vw, 4rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .services-hero-split__text h3 { color: var(--white); margin-bottom: 0.75rem; }
+    .services-hero-split__text p { color: var(--gray-400); font-size: 1rem; line-height: 1.75; }
+    .services-hero-split__img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+
+    /* Timeline-style service blocks */
+    .service-timeline {
+      position: relative;
+      padding-left: 3rem;
+    }
+    .service-timeline::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--green-500), var(--green-200), var(--gray-200));
+      border-radius: 2px;
+    }
+    .timeline-item {
+      position: relative;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .timeline-item:last-child { border-bottom: none; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -3rem;
+      top: 2.8rem;
+      width: 12px; height: 12px;
+      background: var(--white);
+      border: 3px solid var(--green-500);
+      border-radius: 50%;
+      transform: translateX(-5px);
+    }
+    .timeline-item__num {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--green-600);
+      margin-bottom: 0.5rem;
+    }
+    .timeline-item h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-item p {
+      max-width: 600px;
+      font-size: 0.95rem;
+    }
+
+    /* Alternating split service sections */
+    .service-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+      padding: clamp(3rem, 6vw, 5rem) 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .service-block:last-child { border-bottom: none; }
+    .service-block:nth-child(even) { direction: rtl; }
+    .service-block:nth-child(even) > * { direction: ltr; }
+    .service-block__img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+    }
+    .service-block__img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    .service-block__content .eyebrow { margin-bottom: 0.75rem; }
+    .service-block__content h3 { margin-bottom: 0.75rem; }
+    .service-block__content p { margin-bottom: 1rem; }
+
+    /* Partner logos bar */
+    .partner-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(2rem, 5vw, 5rem);
+      padding: 3rem 0;
+      border-top: 1px solid rgba(255,255,255,.06);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .partner-bar img {
+      height: clamp(28px, 4vw, 40px);
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.5;
+      transition: opacity var(--duration-fast);
+    }
+    .partner-bar img:hover { opacity: 0.9; }
+
+    @media (max-width: 768px) {
+      .services-hero-split { grid-template-columns: 1fr; }
+      .services-hero-split__img { min-height: 220px; }
+      .service-block { grid-template-columns: 1fr; }
+      .service-block:nth-child(even) { direction: ltr; }
+      .service-timeline { padding-left: 2rem; }
+    }
+  </style>
+</head>
+<body class="page-enter">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo"><img src="assets/logo-greets.png" alt="Greets Equipment"></a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="industries.html">Industries</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header__cta">
+        <a href="contact.html" class="header__enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <button class="header__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="industries.html">Industries</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn--primary">Enquire</a>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="split" style="align-items:center; gap:clamp(2rem, 5vw, 4rem);">
+        <div class="page-hero__content fade-up">
+          <span class="eyebrow">End-to-End Lifecycle Support</span>
+          <h1>Why buy through Greets</h1>
+          <p>You get the manufacturer's genuine equipment backed by a dedicated engineering team in India that stays with your machine from sample trials and installation to continuous production.</p>
+          <div style="display:flex; gap:1.25rem; margin-top:2rem; flex-wrap:wrap;">
+            <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(34,197,94,0.3); border-radius:var(--radius-md); padding:0.75rem 1.25rem;">
+              <strong style="display:block; color:#4ade80; font-size:1.2rem;">Single Point</strong>
+              <span style="font-size:0.72rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.06em;">Consulting to AMC</span>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(34,197,94,0.3); border-radius:var(--radius-md); padding:0.75rem 1.25rem;">
+              <strong style="display:block; color:#4ade80; font-size:1.2rem;">Zero Hassle</strong>
+              <span style="font-size:0.72rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.06em;">INR Invoicing & Customs</span>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(34,197,94,0.3); border-radius:var(--radius-md); padding:0.75rem 1.25rem;">
+              <strong style="display:block; color:#4ade80; font-size:1.2rem;">Local Hub</strong>
+              <span style="font-size:0.72rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.06em;">Bangalore Spares & Service</span>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up hud-corner" style="border-radius:var(--radius-xl); overflow:hidden; border:1px solid rgba(34,197,94,0.3); box-shadow:0 20px 50px rgba(0,0,0,0.6);">
+          <img src="assets/service-banner.webp" alt="Engineering support and commissioning" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service blocks — alternating split layout with large photography -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="text-center mb-6 fade-up">
+        <span class="eyebrow">Production Lifecycle</span>
+        <h2>Six Ways We Support Your Production</h2>
+        <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem;">From metallurgy verification to rapid-response maintenance, we guarantee uptime.</p>
+      </div>
+
+      <!-- Step 01 -->
+      <div class="service-block fade-up">
+        <div class="service-block__img hud-corner">
+          <img src="assets/service1.webp" alt="Process selection and consulting">
+        </div>
+        <div class="service-block__content">
+          <span class="eyebrow">Phase 01 · Engineering Advisory</span>
+          <h3>Process Selection</h3>
+          <p>We analyze your parts, materials, dimensional tolerances and production volumes. We recommend the optimal vacuum furnace, ultrasonic cleaning line, coating system, or a cohesive turnkey line.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:1rem;">
+            <span class="partner-spec-pill">Alloy & Geometry Analysis</span>
+            <span class="partner-spec-pill">Cycle Time Feasibility</span>
+            <span class="partner-spec-pill">Capacity Sizing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 02 -->
+      <div class="service-block fade-up">
+        <div class="service-block__img hud-corner">
+          <img src="assets/service2.webp" alt="Sample trials">
+        </div>
+        <div class="service-block__content">
+          <span class="eyebrow">Phase 02 · Pre-Order Proof</span>
+          <h3>Sample Trials</h3>
+          <p>We arrange trials on your own parts with the European and Asian manufacturers before you commit. You see exact metallurgical results, coating adhesion, and cleanliness levels on your actual components.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:1rem;">
+            <span class="partner-spec-pill">Hardness & Depth Reports</span>
+            <span class="partner-spec-pill">Surface Cleanliness Gravimetry</span>
+            <span class="partner-spec-pill">Calo & Scratch Testing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 03 -->
+      <div class="service-block fade-up">
+        <div class="service-block__img hud-corner">
+          <img src="assets/service3.webp" alt="Import and documentation">
+        </div>
+        <div class="service-block__content">
+          <span class="eyebrow">Phase 03 · Logistics & Clearance</span>
+          <h3>Import and Documentation</h3>
+          <p>Quotations in INR or foreign currency, ocean freight, Indian customs clearance, duty calculation and statutory documentation handled seamlessly. No unexpected demurrage or port clearance delays.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:1rem;">
+            <span class="partner-spec-pill">INR Commercial Terms</span>
+            <span class="partner-spec-pill">Customs Tariff Classification</span>
+            <span class="partner-spec-pill">Inland Transit Insurance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 04 -->
+      <div class="service-block fade-up">
+        <div class="service-block__img hud-corner">
+          <img src="assets/engineering_support_bg.webp" alt="Site preparation">
+        </div>
+        <div class="service-block__content">
+          <span class="eyebrow">Phase 04 · Plant Readiness</span>
+          <h3>Site Preparation</h3>
+          <p>Detailed engineering schematics and pre-installation guidance on electrical power feeds, closed-loop cooling water circuits, compressed air quality, technical gas banks, and foundation pits before machines land.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:1rem;">
+            <span class="partner-spec-pill">P&ID Utility Drawings</span>
+            <span class="partner-spec-pill">Cooling Tower Sizing</span>
+            <span class="partner-spec-pill">Foundation Civil Specs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 05 -->
+      <div class="service-block fade-up">
+        <div class="service-block__img hud-corner">
+          <img src="assets/about-2.webp" alt="Installation and training">
+        </div>
+        <div class="service-block__content">
+          <span class="eyebrow">Phase 05 · Commissioning</span>
+          <h3>Installation and Training</h3>
+          <p>Factory commissioning conducted alongside senior OEM service engineers. We carry out Site Acceptance Testing (SAT) and comprehensive hands-on training for your operating crew and maintenance engineers.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:1rem;">
+            <span class="partner-spec-pill">OEM Supervised SAT</span>
+            <span class="partner-spec-pill">Recipe Creation & Calibration</span>
+            <span class="partner-spec-pill">Operator Safety & Maintenance SOPs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 06 -->
+      <div class="service-block fade-up">
+        <div class="service-block__img hud-corner">
+          <img src="assets/industrial_system.webp" alt="Service and spares">
+        </div>
+        <div class="service-block__content">
+          <span class="eyebrow">Phase 06 · Uptime Assurance</span>
+          <h3>Service and Spares</h3>
+          <p>Prompt local field-service support based out of Bangalore, stocked critical spare parts (heating elements, seals, ultrasonic transducers, vacuum sensors) and planned preventive maintenance to ensure high line availability.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:1rem;">
+            <span class="partner-spec-pill">Bangalore Stocked Spares</span>
+            <span class="partner-spec-pill">Annual Maintenance Contracts (AMC)</span>
+            <span class="partner-spec-pill">Rapid Emergency Response</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Partner brands bar -->
+  <section class="section section--dark" style="padding:3rem 0;">
+    <div class="container">
+      <p class="text-center mb-3" style="font-size:0.78rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--gray-500); font-weight:600;">Authorised dealer for</p>
+      <div class="partner-bar">
+        <img src="assets/BMI.png" alt="BMI Fours Industriels">
+        <img src="assets/logo-novatec 1.png" alt="Novatec S.r.l.">
+        <img src="assets/huasheng_logo.png" alt="Huasheng Nanotechnology">
+      </div>
+    </div>
+  </section>
+
+  <!-- Grand CTA Masterpiece -->
+  <section class="cta-masterpiece" id="cta">
+    <div class="container">
+      <div class="cta-masterpiece__grid">
+        
+        <div class="fade-up">
+          <div class="cta-badge">
+            <span class="dot"></span>
+            End-to-End Turnkey Support · 4-Hour Response SLA
+          </div>
+          <h2>Need a customized system <br><span class="text-gradient-green">engineered for your line?</span></h2>
+          <p class="lead">Tell us about your part geometry, alloy, and required cycle times. Our metallurgical engineers recommend the right furnace, cleaning line, or PVD coating system with guaranteed trial validation.</p>
+
+          <div class="cta-benefits-list">
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Free metallurgical process audit and feasibility evaluation</span>
+            </div>
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Pre-order trial runs on your own parts at French & Italian OEM labs</span>
+            </div>
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Turnkey delivery, INR customs clearance, and local Bangalore spares support</span>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn--white btn--lg">
+              Talk to Greets Engineers
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="products.html" class="btn btn--outline btn--lg" style="border-color:rgba(255,255,255,.3); color:var(--white);">
+              Browse 45+ Systems
+            </a>
+          </div>
+        </div>
+
+        <div class="cta-interactive-card hud-corner fade-up">
+          <h3>Direct Contact Desk</h3>
+          <p>Reach out directly to our leadership and process engineering team:</p>
+
+          <div class="cta-contact-chips">
+            <a href="tel:+919823386558" class="cta-contact-chip">
+              <div class="cta-chip-avatar">PK</div>
+              <div class="cta-chip-text">
+                <strong>Mr. Pramod Kanse</strong>
+                <span>+91 98233 86558 · Vacuum Heat Treatment</span>
+              </div>
+            </a>
+            <a href="tel:+919429875547" class="cta-contact-chip">
+              <div class="cta-chip-avatar">MA</div>
+              <div class="cta-chip-text">
+                <strong>Mr. Manoj Agrawal</strong>
+                <span>+91 94298 75547 · Ultrasonic Cleaning</span>
+              </div>
+            </a>
+            <a href="tel:+919871408194" class="cta-contact-chip">
+              <div class="cta-chip-avatar">PC</div>
+              <div class="cta-chip-text">
+                <strong>Ms. Pahal Chawla</strong>
+                <span>+91 98714 08194 · PVD & DLC Coating</span>
+              </div>
+            </a>
+          </div>
+
+          <a href="mailto:enquiry-equipment@greets.co.in" class="btn btn--primary" style="margin-bottom:0.75rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            enquiry-equipment@greets.co.in
+          </a>
+          <div style="font-size:0.75rem; color:#86efac; text-align:center;">
+            HSR Layout, Bangalore 560102 · Operating Nationwide
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:32px; filter:brightness(10);">
+          <p>Authorised dealer in India for Novatec, Huasheng and BMI.</p>
+          <p style="margin-top:0.5rem; font-size:0.82rem;">BMI vacuum furnaces · Novatec ultrasonic cleaning · Huasheng coating equipment</p>
+        </div>
+        <div class="footer__col">
+          <h5>Products</h5>
+          <a href="products.html#bmi">BMI Furnaces</a>
+          <a href="products.html#novatec">Novatec Cleaning</a>
+          <a href="products.html#huasheng">Huasheng Coating</a>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="industries.html">Industries</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <a href="mailto:enquiry-equipment@greets.co.in">enquiry-equipment@greets.co.in</a>
+          <a href="tel:+919823386558">+91 98233 86558</a>
+          <p style="font-size:0.82rem; margin-top:0.5rem; color:var(--gray-500);">HSR Layout, Bangalore 560102</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Greets Equipment Pvt. Ltd. All rights reserved.</span>
+        <span>Brand names and logos belong to their respective owners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>

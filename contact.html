@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Greets Equipment – Talk to Us About Vacuum Furnaces, Cleaning and Coating</title>
+  <meta name="description" content="Get in touch with Greets Equipment in Bangalore for vacuum furnaces, ultrasonic cleaning and PVD coating systems. Tell us your part and process — we'll recommend the right system.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Contact page-specific */
+    .contact-hero {
+      position: relative;
+      padding: 10rem 0 5rem;
+      background: var(--glow-dark), var(--gradient-dark);
+      overflow: hidden;
+    }
+    .contact-hero__inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .contact-hero__text h1 {
+      color: var(--white);
+      margin-bottom: 1rem;
+      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    }
+    .contact-hero__text p {
+      color: var(--gray-400);
+      font-size: 1.1rem;
+      line-height: 1.75;
+    }
+    .contact-hero__img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .contact-hero__img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+
+    /* Contact main content */
+    .contact-main {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: clamp(2rem, 4vw, 4rem);
+      align-items: start;
+    }
+
+    /* Info sidebar */
+    .contact-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+    .contact-sidebar__card {
+      background: var(--gray-900);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .contact-sidebar__card h3 {
+      color: var(--white);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-sidebar__card > p {
+      color: var(--gray-400);
+      font-size: 0.88rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-team {
+      margin-bottom: 1.5rem;
+    }
+    .contact-team__person {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .contact-team__person:last-child { border-bottom: none; }
+    .contact-team__avatar {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--green-700), var(--green-900));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: var(--green-200);
+      flex-shrink: 0;
+    }
+    .contact-team__name {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--white);
+    }
+    .contact-team__phone {
+      font-size: 0.82rem;
+      color: var(--gray-400);
+    }
+    .contact-team__phone a {
+      color: var(--gray-400);
+      transition: color var(--duration-fast);
+    }
+    .contact-team__phone a:hover { color: var(--green-400); }
+
+    .contact-sidebar__address {
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .contact-sidebar__address p {
+      font-size: 0.88rem;
+      color: var(--gray-400);
+      line-height: 1.7;
+    }
+    .contact-sidebar__address a {
+      color: var(--green-400);
+      transition: color var(--duration-fast);
+    }
+    .contact-sidebar__address a:hover { color: var(--green-300); }
+
+    /* Quick contact chips */
+    .contact-chips {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .contact-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.2rem;
+      background: var(--gray-50);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--gray-600);
+      transition: all var(--duration-fast);
+    }
+    .contact-chip:hover {
+      border-color: var(--green-200);
+      background: var(--green-50);
+      color: var(--green-700);
+    }
+    .contact-chip svg { flex-shrink: 0; }
+
+    /* Form card */
+    .contact-form-card {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 4vw, 3rem);
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-form-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.35rem;
+    }
+    .contact-form-card > p {
+      color: var(--gray-500);
+      font-size: 0.88rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .form-row--single { grid-template-columns: 1fr; }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-field label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      margin-bottom: 0.4rem;
+    }
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      padding: 0.8rem 1rem;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      color: var(--gray-800);
+      transition: all var(--duration-fast);
+      outline: none;
+      font-size: 0.92rem;
+    }
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: var(--gray-300);
+    }
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--green-500);
+      box-shadow: 0 0 0 3px rgba(22,163,74,.08);
+    }
+    .form-field textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .form-field select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form-note {
+      font-size: 0.78rem;
+      color: var(--gray-400);
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    @media (max-width: 1024px) {
+      .contact-main { grid-template-columns: 1fr; }
+      .contact-sidebar { position: static; }
+    }
+    @media (max-width: 768px) {
+      .contact-hero__inner { grid-template-columns: 1fr; gap: 2rem; }
+      .contact-hero { padding: 8rem 0 3rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="page-enter">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo"><img src="assets/logo-greets.png" alt="Greets Equipment"></a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="industries.html">Industries</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="header__cta">
+        <a href="contact.html" class="header__enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <button class="header__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="industries.html">Industries</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="btn btn--primary">Enquire</a>
+  </nav>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero__inner fade-up">
+        <div class="contact-hero__text">
+          <span class="eyebrow">Direct Engineering Consultation</span>
+          <h1>Talk to Greets</h1>
+          <p>Tell us about your component dimensions, alloy, and target surface treatment. Our process engineers reply promptly with technical recommendations and equipment specifications.</p>
+        </div>
+        <div class="contact-hero__img hud-corner" style="border:1px solid rgba(34,197,94,0.3); box-shadow:0 20px 50px rgba(0,0,0,0.6);">
+          <img src="assets/Contact.webp" alt="Greets team and facilities">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Main -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="contact-main">
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar fade-up">
+          <div class="contact-sidebar__card hud-corner">
+            <h3>Greets Equipment Pvt. Ltd.</h3>
+            <p>Your authorized partner in India for BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD coating systems.</p>
+
+            <div class="contact-team">
+              <div class="contact-team__person">
+                <div class="contact-team__avatar">PK</div>
+                <div>
+                  <div class="contact-team__name">Mr. Pramod Kanse</div>
+                  <div class="contact-team__phone"><a href="tel:+919823386558">+91 98233 86558</a></div>
+                </div>
+              </div>
+              <div class="contact-team__person">
+                <div class="contact-team__avatar">MA</div>
+                <div>
+                  <div class="contact-team__name">Mr. Manoj Agrawal</div>
+                  <div class="contact-team__phone"><a href="tel:+919429875547">+91 94298 75547</a></div>
+                </div>
+              </div>
+              <div class="contact-team__person">
+                <div class="contact-team__avatar">PC</div>
+                <div>
+                  <div class="contact-team__name">Ms. Pahal Chawla</div>
+                  <div class="contact-team__phone"><a href="tel:+919871408194">+91 98714 08194</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-sidebar__address">
+              <p>
+                #384, Second Floor,<br>
+                9th Main Road, Sector 7, HSR Layout,<br>
+                Bangalore, India 560102
+              </p>
+              <p style="margin-top:0.75rem;">
+                <a href="mailto:enquiry-equipment@greets.co.in">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-right:4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  enquiry-equipment@greets.co.in
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick links -->
+          <div class="contact-chips">
+            <a href="tel:+919823386558" class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call us
+            </a>
+            <a href="mailto:enquiry-equipment@greets.co.in" class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email us
+            </a>
+            <a href="products.html" class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              Browse products
+            </a>
+          </div>
+        </div>
+
+        <!-- Enquiry form -->
+        <div class="contact-form-card hud-corner fade-up">
+          <h3>Send an enquiry</h3>
+          <p>Fill in the details below. Sending opens your email app with everything filled in, addressed to our team.</p>
+
+          <form id="enquiry-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-field">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Company name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="process">Process</label>
+                <select id="process" name="process">
+                  <option value="Not sure yet">Not sure yet</option>
+                  <option value="Vacuum heat treatment (BMI)">Vacuum heat treatment (BMI)</option>
+                  <option value="Ultrasonic cleaning (Novatec)">Ultrasonic cleaning (Novatec)</option>
+                  <option value="PVD, DLC, diamond coating (Huasheng)">PVD, DLC, diamond coating (Huasheng)</option>
+                  <option value="Complete line">Complete line</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Your city">
+              </div>
+            </div>
+
+            <div class="form-row form-row--single">
+              <div class="form-field">
+                <label for="details">Parts, material and volumes</label>
+                <textarea id="details" name="details" placeholder="Describe the parts you process, the material, and approximate volumes..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%; justify-content:center; margin-top:0.5rem;">
+              Send enquiry
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+
+            <div class="form-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              Sending opens your email app with the details filled in, addressed to enquiry-equipment@greets.co.in.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:32px; filter:brightness(10);">
+          <p>Authorised dealer in India for Novatec, Huasheng and BMI.</p>
+          <p style="margin-top:0.5rem; font-size:0.82rem;">BMI vacuum furnaces · Novatec ultrasonic cleaning · Huasheng coating equipment</p>
+        </div>
+        <div class="footer__col">
+          <h5>Products</h5>
+          <a href="products.html#bmi">BMI Furnaces</a>
+          <a href="products.html#novatec">Novatec Cleaning</a>
+          <a href="products.html#huasheng">Huasheng Coating</a>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="industries.html">Industries</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <a href="mailto:enquiry-equipment@greets.co.in">enquiry-equipment@greets.co.in</a>
+          <a href="tel:+919823386558">+91 98233 86558</a>
+          <p style="font-size:0.82rem; margin-top:0.5rem; color:var(--gray-500);">HSR Layout, Bangalore 560102</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Greets Equipment Pvt. Ltd. All rights reserved.</span>
+        <span>Brand names and logos belong to their respective owners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>

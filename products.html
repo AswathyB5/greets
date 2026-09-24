@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Greets Equipment – Authorised dealer in India for Novatec, Huasheng and BMI</title>
+  <meta name="description" content="Browse vacuum furnaces from BMI, ultrasonic cleaning systems from Novatec, and PVD, DLC and diamond coating equipment from Huasheng — all available through Greets Equipment in India.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Products-specific */
+    .brand-divider {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem 0;
+    }
+    .brand-divider img {
+      height: 32px;
+      width: auto;
+    }
+    .brand-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gray-200);
+    }
+
+    /* Brand intro with large image */
+    .brand-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .brand-intro__img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+    }
+    .brand-intro__img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    .brand-intro__img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(0,0,0,.05);
+      border-radius: var(--radius-lg);
+      pointer-events: none;
+    }
+
+    .brand-intro__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .brand-intro__stat {
+      padding: 1rem;
+      background: var(--gray-50);
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+    .brand-intro__stat-value {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--green-600);
+    }
+    .brand-intro__stat-label {
+      font-size: 0.72rem;
+      color: var(--gray-400);
+      margin-top: 0.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .brand-intro__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.25rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--green-600);
+      transition: color var(--duration-fast);
+    }
+    .brand-intro__link:hover { color: var(--green-700); }
+    .brand-intro__link svg { transition: transform var(--duration-fast); }
+    .brand-intro__link:hover svg { transform: translateX(3px); }
+
+    /* Dark brand section */
+    .brand-section--dark {
+      background: var(--gray-900);
+      color: var(--white);
+      padding: clamp(4rem, 8vw, 6rem) 0;
+      margin: 3rem 0;
+      border-radius: 0;
+    }
+    .brand-section--dark h2,
+    .brand-section--dark h3,
+    .brand-section--dark h4,
+    .brand-section--dark h5 { color: var(--white); }
+    .brand-section--dark p { color: var(--gray-400); }
+    .brand-section--dark .product-category__title {
+      color: var(--white);
+      border-bottom-color: var(--green-500);
+    }
+    .brand-section--dark .product-card {
+      background: #141f19;
+      border-color: #223028;
+    }
+    .brand-section--dark .product-card:hover {
+      border-color: var(--green-600);
+      box-shadow: 0 8px 32px rgba(0,0,0,.3);
+    }
+    .brand-section--dark .product-card h5 { color: var(--white); }
+    .brand-section--dark .product-card__subtitle { color: var(--green-400); }
+    .brand-section--dark .product-card p { color: var(--gray-400); }
+    .brand-section--dark .product-card__tag {
+      background: rgba(224,138,30,.16);
+      color: var(--amber-300);
+    }
+    .brand-section--dark .product-card__features { border-top-color: #223028; }
+    .brand-section--dark .product-card__feature {
+      background: #1c2820;
+      color: var(--gray-300);
+    }
+    .brand-section--dark .brand-intro__stat {
+      background: #141f19;
+    }
+    .brand-section--dark .brand-intro__stat-value { color: var(--green-400); }
+    .brand-section--dark .brand-intro__stat-label { color: var(--gray-400); }
+    .brand-section--dark .brand-intro__link { color: var(--green-400); }
+    .brand-section--dark .product-detail { border-top-color: var(--gray-700); }
+    .brand-section--dark .product-detail__section h6 { color: var(--gray-500); }
+    .brand-section--dark .product-detail__section p,
+    .brand-section--dark .product-detail__section li { color: var(--gray-400); }
+
+    /* Green brand section */
+    .brand-section--green {
+      background: linear-gradient(135deg, var(--green-800) 0%, var(--green-900) 100%);
+      color: var(--white);
+      padding: clamp(4rem, 8vw, 6rem) 0;
+      margin: 3rem 0;
+    }
+    .brand-section--green h2,
+    .brand-section--green h3,
+    .brand-section--green h4,
+    .brand-section--green h5 { color: var(--white); }
+    .brand-section--green p { color: var(--green-200); }
+    .brand-section--green .product-category__title {
+      color: var(--white);
+      border-bottom-color: var(--green-400);
+    }
+    .brand-section--green .product-card {
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.1);
+      backdrop-filter: blur(8px);
+    }
+    .brand-section--green .product-card:hover {
+      border-color: var(--green-400);
+      background: rgba(255,255,255,.1);
+      box-shadow: 0 8px 32px rgba(0,0,0,.2);
+    }
+    .brand-section--green .product-card h5 { color: var(--white); }
+    .brand-section--green .product-card__subtitle { color: var(--green-300); }
+    .brand-section--green .product-card p { color: var(--green-200); }
+    .brand-section--green .product-card__tag {
+      background: rgba(245,197,99,.18);
+      color: var(--amber-300);
+    }
+    .brand-section--green .product-card__features { border-top-color: rgba(255,255,255,.08); }
+    .brand-section--green .product-card__feature {
+      background: rgba(255,255,255,.08);
+      color: var(--green-200);
+    }
+    .brand-section--green .brand-intro__stat {
+      background: rgba(255,255,255,.06);
+    }
+    .brand-section--green .brand-intro__stat-value { color: var(--green-300); }
+    .brand-section--green .brand-intro__stat-label { color: var(--green-200); }
+    .brand-section--green .brand-intro__link { color: var(--green-300); }
+    .brand-section--green .product-detail { border-top-color: rgba(255,255,255,.1); }
+    .brand-section--green .product-detail__section h6 { color: var(--green-300); }
+    .brand-section--green .product-detail__section p,
+    .brand-section--green .product-detail__section li { color: var(--green-200); }
+
+    @media (max-width: 768px) {
+      .brand-intro { grid-template-columns: 1fr; }
+      .brand-intro__stats { grid-template-columns: 1fr 1fr 1fr; }
+      .product-list { grid-template-columns: 1fr; }
+      .brand-section--dark,
+      .brand-section--green { margin: 1.5rem 0; }
+    }
+  </style>
+</head>
+<body class="page-enter">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo"><img src="assets/logo-greets.png" alt="Greets Equipment"></a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="industries.html">Industries</a>
+        <a href="services.html">Services</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header__cta">
+        <a href="contact.html" class="header__enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <button class="header__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="industries.html">Industries</a>
+    <a href="services.html">Services</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn--primary">Enquire</a>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="split" style="align-items:center; gap:clamp(2rem, 5vw, 4rem);">
+        <div class="page-hero__content fade-up">
+          <span class="eyebrow">Product Catalog · 3 OEM Lines</span>
+          <h1>Find an engineered system</h1>
+          <p>Browse advanced vacuum furnaces from BMI (France), ultrasonic precision cleaning systems from Novatec (Italy), and PVD, DLC and CVD diamond coating equipment from Huasheng (China).</p>
+          <div style="display:flex; gap:1.25rem; margin-top:2rem; flex-wrap:wrap;">
+            <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(34,197,94,0.3); border-radius:var(--radius-md); padding:0.75rem 1.25rem;">
+              <strong style="display:block; color:#4ade80; font-size:1.2rem;">45+</strong>
+              <span style="font-size:0.72rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.06em;">Configured Systems</span>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(34,197,94,0.3); border-radius:var(--radius-md); padding:0.75rem 1.25rem;">
+              <strong style="display:block; color:#4ade80; font-size:1.2rem;">100%</strong>
+              <span style="font-size:0.72rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.06em;">OEM Certified</span>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(34,197,94,0.3); border-radius:var(--radius-md); padding:0.75rem 1.25rem;">
+              <strong style="display:block; color:#4ade80; font-size:1.2rem;">Pan-India</strong>
+              <span style="font-size:0.72rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.06em;">Installation & Spares</span>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up hud-corner" style="border-radius:var(--radius-xl); overflow:hidden; border:1px solid rgba(34,197,94,0.3); box-shadow:0 20px 50px rgba(0,0,0,0.6);">
+          <img src="assets/product-banner.png" alt="Industrial equipment systems overview" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <section class="section" style="padding-bottom:2rem;">
+    <div class="container fade-up">
+      <div class="search-box">
+        <span class="search-box__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
+        <input type="text" placeholder="Type what you make or the process you need, e.g. moulds | hob coating | implant cleaning | nitriding">
+      </div>
+      <div class="filter-bar">
+        <button class="filter-chip active" data-filter="all" data-target=".brand-section">All brands</button>
+        <button class="filter-chip" onclick="document.getElementById('bmi').scrollIntoView({behavior:'smooth',block:'start'})">BMI</button>
+        <button class="filter-chip" onclick="document.getElementById('novatec').scrollIntoView({behavior:'smooth',block:'start'})">Novatec</button>
+        <button class="filter-chip" onclick="document.getElementById('huasheng').scrollIntoView({behavior:'smooth',block:'start'})">Huasheng</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BRAND: BMI -->
+  <!-- ============================================================ -->
+  <section class="brand-section" id="bmi">
+    <div class="container">
+      <!-- Brand intro -->
+      <div class="brand-intro fade-up">
+        <div>
+          <div class="brand-divider">
+            <img src="assets/BMI.png" alt="Fours Industriels BMI">
+          </div>
+          <h2>Fours Industriels B.M.I.</h2>
+          <p style="font-size:0.88rem; color:var(--gray-500); margin-bottom:0.5rem;">Saint-Quentin-Fallavier, France</p>
+          <p>Vacuum furnace specialists since the early 1980s, building standard and custom furnaces for aerospace, automotive, medical, tooling and heat-treatment shops. BMI's patented rotating gas flow gives uniform quenching even on dense loads.</p>
+          <a href="https://bmi-fours.com" target="_blank" rel="noopener" class="brand-intro__link">
+            Visit bmi-fours.com
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <div class="brand-intro__stats">
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">1980s</div>
+              <div class="brand-intro__stat-label">Vacuum furnaces since</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">5–12 bar</div>
+              <div class="brand-intro__stat-label">Gas quench pressure</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">1500 °C</div>
+              <div class="brand-intro__stat-label">Max temperature option</div>
+            </div>
+          </div>
+        </div>
+        <div class="brand-intro__img">
+          <img src="assets/product-bmi.png" alt="BMI vacuum furnace">
+        </div>
+      </div>
+
+      <!-- Category: Gas quenching furnaces -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Gas quenching furnaces — Hardening, brazing and laboratory furnaces</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Horizontal</span>
+            <h5>B8_T vacuum gas quenching furnace</h5>
+            <p class="product-card__subtitle">Front-loading furnace for high-throughput production.</p>
+            <p>The B8_T is BMI's horizontal-loading vacuum gas quenching furnace, built for high-throughput production. Parts are heated under vacuum and quenched with gas at 5 to 12 bar, with BMI's patented rotating volute keeping gas flow even through the whole load.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">5–12 bar gas quench</span>
+              <span class="product-card__feature">Patented rotating volute</span>
+              <span class="product-card__feature">GRAPHTIL® interface</span>
+              <span class="product-card__feature">200–3000 kg loads</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Features</h6>
+                <p>Horizontal front loading · Gas quenching at 5 to 12 bar abs · Patented rotating volute for uniform cooling · GRAPHTIL® man-machine interface · Graphite, molybdenum or fibre hot zones</p>
+              </div>
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Hardening and gas quenching · Hyperquenching · Bright annealing · Solution annealing of stainless steel · Ageing · Stress relieving · Brazing · Sintering · Special alloy degassing · Steel tempering · ALLCARB® low-pressure carburizing</p>
+              </div>
+              <div class="product-detail__section">
+                <h6>Specifications</h6>
+                <ul>
+                  <li>Working zone: 450 × 450 × 600 mm to 900 × 900 × 1200 mm</li>
+                  <li>Load capacity: 200 to 3000 kg</li>
+                  <li>Maximum temperature: 1250 °C, 1350 °C or 1500 °C</li>
+                  <li>Vacuum level: 10⁻² mbar, 10⁻⁵ mbar or 10⁻⁶ mbar</li>
+                  <li>Quench pressure: 5 to 12 bar abs</li>
+                  <li>Hot zone: Graphite, molybdenum or fibre/wool combinations</li>
+                  <li>Control: GRAPHTIL® man-machine interface</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Vertical</span>
+            <h5>VSE8_T vacuum gas quenching furnace</h5>
+            <p class="product-card__subtitle">Bottom-loading furnace for tall or delicate parts.</p>
+            <p>The VSE8_T is BMI's bottom-loading vertical vacuum gas quenching furnace. Loading from below suits long, tall or delicate components that must be treated standing or hanging to limit distortion.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Vertical bottom loading</span>
+              <span class="product-card__feature">5–12 bar gas quench</span>
+              <span class="product-card__feature">Rotating volute</span>
+              <span class="product-card__feature">Ø600–Ø1800 mm</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Features</h6>
+                <p>Vertical bottom loading · Gas quenching at 5 to 12 bar abs · Patented rotating volute for uniform cooling · GRAPHTIL® man-machine interface · Graphite, molybdenum or fibre hot zones</p>
+              </div>
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Hardening and gas quenching · Hyperquenching · Bright annealing · Ageing · Stress relieving · Brazing · Sintering · Steel tempering</p>
+              </div>
+              <div class="product-detail__section">
+                <h6>Specifications</h6>
+                <ul>
+                  <li>Working zone: Ø 600 × h 600 mm to Ø 1800 × h 1800 mm</li>
+                  <li>Load capacity: 200 to 3000 kg</li>
+                  <li>Maximum temperature: 1250 °C, 1350 °C or 1500 °C</li>
+                  <li>Vacuum level: 10⁻² mbar, 10⁻⁵ mbar or 10⁻⁶ mbar</li>
+                  <li>Quench pressure: 5 to 12 bar abs</li>
+                  <li>Control: GRAPHTIL® man-machine interface</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Brazing</span>
+            <h5>Vacuum brazing furnace</h5>
+            <p class="product-card__subtitle">Oxide-free brazing of assemblies.</p>
+            <p>Vacuum furnace for brazing assemblies in a clean, oxide-free atmosphere, used widely in aerospace and for high-value components where joint quality matters.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Oxide-free brazing</span>
+              <span class="product-card__feature">Controlled heating/cooling</span>
+              <span class="product-card__feature">Nickel alloys</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Features</h6>
+                <p>Oxide-free brazing under vacuum · Controlled heating and cooling · Suited to nickel and other brazing alloys</p>
+              </div>
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Vacuum brazing · Degassing</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Lab / R&D</span>
+            <h5>Compact laboratory furnace</h5>
+            <p class="product-card__subtitle">Small vacuum furnace for R&D and process development.</p>
+            <p>A compact vacuum furnace for laboratories, universities and R&D departments, for developing and validating heat-treatment cycles before scaling up to production.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Compact footprint</span>
+              <span class="product-card__feature">Process development</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Hardening · Brazing · Annealing · Process trials</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: Oil quenching furnaces -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Oil quenching furnaces — Horizontal and vertical</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Horizontal</span>
+            <h5>Vacuum oil quenching furnace, horizontal</h5>
+            <p class="product-card__subtitle">Vacuum heating with an integrated oil quench.</p>
+            <p>Horizontal vacuum furnace with an integrated oil quench tank, for steels and part sections that need a more severe quench than gas.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Integrated oil quench</span>
+              <span class="product-card__feature">No oxidation</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Hardening · Oil quenching · Carburizing followed by oil quench</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Vertical</span>
+            <h5>Vacuum oil quenching furnace, vertical</h5>
+            <p class="product-card__subtitle">For long parts quenched hanging.</p>
+            <p>Vertical vacuum oil quenching furnace for long parts that must be quenched hanging to limit distortion.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Vertical loading</span>
+              <span class="product-card__feature">Reduced distortion</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Hardening · Oil quenching</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: Low-temperature furnaces -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Low-temperature furnaces — Tempering and aluminium brazing</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Tempering</span>
+            <h5>Vacuum tempering furnace</h5>
+            <p class="product-card__subtitle">Tempering after hardening.</p>
+            <p>Vacuum tempering furnace for tempering hardened parts with clean surfaces and uniform temperature through the load.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Uniform temperature</span>
+              <span class="product-card__feature">Clean surfaces</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Tempering · Stress relieving · Ageing</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Aluminium</span>
+            <h5>Aluminium brazing vacuum furnace</h5>
+            <p class="product-card__subtitle">For heat exchangers and aluminium assemblies.</p>
+            <p>Vacuum furnace for fluxless brazing of aluminium assemblies such as heat exchangers.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Fluxless brazing</span>
+              <span class="product-card__feature">Tight uniformity</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Aluminium vacuum brazing</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: Thermochemical treatment furnaces -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Thermochemical treatment furnaces — Carburizing, nitriding and sub-zero</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Carburizing</span>
+            <h5>ALLCARB® low-pressure carburizing</h5>
+            <p class="product-card__subtitle">Case hardening for gears and transmission parts.</p>
+            <p>BMI's ALLCARB® low-pressure carburizing process, run in its vacuum furnaces, case-hardens steel parts such as gears and transmission components without intergranular oxidation.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">No intergranular oxidation</span>
+              <span class="product-card__feature">Gas quench compatible</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Low-pressure carburizing · Carbonitriding</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Nitriding</span>
+            <h5>ALLNIT® low-pressure nitriding</h5>
+            <p class="product-card__subtitle">Nitriding for wear and fatigue resistance.</p>
+            <p>BMI's ALLNIT® low-pressure nitriding process for improving wear and fatigue resistance of steel parts and tools.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Low-pressure nitriding</span>
+              <span class="product-card__feature">Controlled layer</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Nitriding · Nitrocarburizing</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Plasma</span>
+            <h5>Plasma nitriding furnace</h5>
+            <p class="product-card__subtitle">Ion nitriding for tools, dies and engineering parts.</p>
+            <p>Plasma (ion) nitriding furnace for tools, dies and engineering components.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Plasma-assisted</span>
+              <span class="product-card__feature">Selective treatment</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Plasma nitriding</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="bmi" data-process="harden">
+            <span class="product-card__tag">Sub-zero</span>
+            <h5>COOL PLUS sub-zero treatment furnace</h5>
+            <p class="product-card__subtitle">Cryogenic treatment of hardened steels.</p>
+            <p>The COOL PLUS vacuum furnace performs sub-zero cryogenic treatment, stabilising hardened steels by converting retained austenite.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Cryogenic treatment</span>
+              <span class="product-card__feature">Dimensional stabilisation</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Sub-zero treatment · Cryogenic treatment</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BRAND: Novatec (dark section) -->
+  <!-- ============================================================ -->
+  <section class="brand-section brand-section--dark" id="novatec">
+    <div class="container">
+      <!-- Brand intro -->
+      <div class="brand-intro fade-up">
+        <div>
+          <div class="brand-divider" style="border-color:rgba(255,255,255,.1);">
+            <img src="assets/logo-novatec 1.png" alt="Novatec S.r.l." style="filter:brightness(0) invert(1);">
+          </div>
+          <h2>Novatec S.r.l.</h2>
+          <p style="color:var(--gray-400); margin-bottom:0.5rem;">San Martino di Lupari (Padova), Italy</p>
+          <p>Italian maker of industrial ultrasonic cleaning systems since 1993, from multi-stage PLURITANK lines to compact 2CRD machines, each built to the customer's parts and tested on real samples before shipping.</p>
+          <a href="https://novatec.it" target="_blank" rel="noopener" class="brand-intro__link">
+            Visit novatec.it
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <div class="brand-intro__stats">
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">1993</div>
+              <div class="brand-intro__stat-label">Founded</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value" data-count="2300+">0</div>
+              <div class="brand-intro__stat-label">Systems installed</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value" data-count="45+">0</div>
+              <div class="brand-intro__stat-label">Countries</div>
+            </div>
+          </div>
+        </div>
+        <div class="brand-intro__img">
+          <img src="assets/product-surfacefinishing.png" alt="Novatec ultrasonic cleaning system">
+        </div>
+      </div>
+
+      <!-- Category: PLURITANK -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">PLURITANK multi-chamber lines — Modular lines up to 12 stages</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">Multi-stage</span>
+            <h5>PLURITANK ultrasonic cleaning line</h5>
+            <p class="product-card__subtitle">Serial and large-format parts, up to 12 stages.</p>
+            <p>PLURITANK is Novatec's modular multi-chamber ultrasonic cleaning line. Stages for ultrasonic cleaning, rinsing and drying are combined to suit the part, the contamination and the required cleanliness.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Up to 12 stages</span>
+              <span class="product-card__feature">Multi-frequency</span>
+              <span class="product-card__feature">AISI 304/316</span>
+              <span class="product-card__feature">Factory-tested</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Features</h6>
+                <p>Modular, up to 12 stages, with room for future upgrades · Multi-frequency ultrasonic groups · User-friendly HMI with multiple programs · Data exchange and traceability · AISI 304/316 stainless construction · Factory acceptance test with your sample parts</p>
+              </div>
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Degreasing · Ultrasonic cleaning · Rinsing · Drying</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">Pre-coating</span>
+            <h5>PLURITANK pre-treatment line for PVD coating</h5>
+            <p class="product-card__subtitle">Surface preparation before PVD, CVD and DLC.</p>
+            <p>A PLURITANK line configured to prepare tools and components for coating. Ultrasonic cleaning followed by rinsing and drying removes residues so the coating bonds reliably, batch after batch.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Pre-coating cleanliness</span>
+              <span class="product-card__feature">Rinsing & drying</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Pre-PVD cleaning · Pre-CVD cleaning · Pre-DLC cleaning</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">Cleanroom</span>
+            <h5>Cleanroom cleaning line</h5>
+            <p class="product-card__subtitle">Low-particle cleaning for semiconductor and medical.</p>
+            <p>Precision cleaning for semiconductor hardware, vacuum-chamber parts and medical devices. Cleanroom class 7 design is available, with ultrapure water rinsing and documentation for validated processes.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Cleanroom class 7</span>
+              <span class="product-card__feature">Ultrapure water</span>
+              <span class="product-card__feature">IQ/OQ/PQ docs</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Precision cleaning · Ultrapure rinsing · Drying</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: 2CRD -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">2CRD single-chamber systems — Vacuum cleaning with rotating basket, 8 sizes</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">Single chamber</span>
+            <h5>2CRD vacuum precision cleaning system</h5>
+            <p class="product-card__subtitle">Cleaning and vacuum drying in one chamber.</p>
+            <p>The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Clean, rinse & vacuum dry</span>
+              <span class="product-card__feature">Rotating basket</span>
+              <span class="product-card__feature">8 sizes</span>
+              <span class="product-card__feature">Blind holes & porous surfaces</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Ultrasonic cleaning · Rinsing · Vacuum drying</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: Medical implant processing -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Medical implant processing — In-process cleaning, final cleaning, passivation and FPI</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">In-process</span>
+            <h5>IPC in-process cleaning</h5>
+            <p class="product-card__subtitle">Cleaning implants between production steps.</p>
+            <p>In-process cleaning removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Available as one-chamber 2CRD or in-line PLURITANK.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">2CRD or PLURITANK</span>
+              <span class="product-card__feature">Traceability</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Removing polishing pastes and oils · Cleaning after grinding and blasting · Cleaning between machining steps</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">Final cleaning</span>
+            <h5>FCS / FCPS final cleaning and passivation</h5>
+            <p class="product-card__subtitle">Final cleaning, with optional passivation, into the cleanroom.</p>
+            <p>The FCS or FCPS is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Cleanroom unload</span>
+              <span class="product-card__feature">IQ/OQ support</span>
+              <span class="product-card__feature">Passivation</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Final cleaning before sterilisation · Passivation · Cleanroom transfer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">FPI</span>
+            <h5>FPI fluorescent penetrant inspection line</h5>
+            <p class="product-card__subtitle">Automated cleaning and crack detection.</p>
+            <p>An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process for validating medical implants.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Automated FPI</span>
+              <span class="product-card__feature">Flaw detection</span>
+              <span class="product-card__feature">High throughput</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Fluorescent penetrant inspection · Pre-inspection cleaning · Part validation</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">Turnkey</span>
+            <h5>Combined turnkey implant lines (URS)</h5>
+            <p class="product-card__subtitle">Complete, automated implant cleaning plant.</p>
+            <p>For larger projects Novatec designs the whole cleaning area to the customer's URS, linking individual systems with conveyors and full automatic management.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">RFID tracking</span>
+              <span class="product-card__feature">Full automation</span>
+              <span class="product-card__feature">Cleanroom integration</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Features</h6>
+                <p>Automatic basket loading with scanners and RFID · IPC one-chamber vacuum systems · QVS quality verification stations · FCPS final cleaning and passivation with air lock · PFC spray cleaning system · BRC basket return conveyor · Full automatic management and data exchange for traceability</p>
+              </div>
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>In-process cleaning · Final cleaning and passivation · Quality verification · Cleanroom transfer</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: Ultrasonic components -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Ultrasonic components — Generators, transducers and PLT 60V</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">Components</span>
+            <h5>Ultrasonic generators and transducers</h5>
+            <p class="product-card__subtitle">For building or upgrading cleaning tanks.</p>
+            <p>Ultrasonic generators and transducers for building new cleaning tanks or upgrading existing ones.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">New tanks or retrofits</span>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="novatec" data-process="clean">
+            <span class="product-card__tag">Pressure cycle</span>
+            <h5>PLT 60V pressure-cycle unit</h5>
+            <p class="product-card__subtitle">Pressure-change cleaning for internal channels.</p>
+            <p>The PLT 60V uses pressure cycling to clean internal channels and cavities that ultrasound alone struggles to reach.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Internal channels</span>
+              <span class="product-card__feature">Pressure cycling</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BRAND: Huasheng (green section) -->
+  <!-- ============================================================ -->
+  <section class="brand-section brand-section--green" id="huasheng">
+    <div class="container">
+      <!-- Brand intro -->
+      <div class="brand-intro fade-up">
+        <div>
+          <div class="brand-divider" style="border-color:rgba(255,255,255,.1);">
+            <img src="assets/huasheng_logo.png" alt="Huasheng Nanotechnology" style="filter:brightness(0) invert(1);">
+          </div>
+          <h2>Guangdong Huasheng Nanotechnology</h2>
+          <p style="color:var(--green-200); margin-bottom:0.5rem;">Dongguan, China</p>
+          <p>Founded in 2012, Huasheng builds arc, HiPIMS, PECVD, ta-C and HFCVD coating equipment and complete turnkey coating plants, mainly for cutting tools, moulds and precision parts.</p>
+          <a href="https://hscoat.com" target="_blank" rel="noopener" class="brand-intro__link">
+            Visit hscoat.com
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <div class="brand-intro__stats">
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">2012</div>
+              <div class="brand-intro__stat-label">Founded</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value" data-count="120+">0</div>
+              <div class="brand-intro__stat-label">Patents</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">30,000 m²</div>
+              <div class="brand-intro__stat-label">Manufacturing centre</div>
+            </div>
+          </div>
+        </div>
+        <div class="brand-intro__img">
+          <img src="assets/product-pvdcoating.png" alt="Huasheng PVD coating machine">
+        </div>
+      </div>
+
+      <!-- Category: PVD coating equipment -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">PVD coating equipment — Arc, HiPIMS, hybrid and decorative</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">Arc coating</span>
+            <h5>MD800 arc coating machine</h5>
+            <p class="product-card__subtitle">High-rate arc coater for tool coating production.</p>
+            <p>The MD800 is the arc coating machine at the heart of Huasheng's turnkey tool-coating plant. Low-voltage, high-current arc discharge evaporates and ionises the target material for high deposition rate and strong coating adhesion.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">12,000 pcs/batch</span>
+              <span class="product-card__feature">Fully automatic</span>
+              <span class="product-card__feature">High adhesion</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Specifications</h6>
+                <ul>
+                  <li>Technology: Arc coating</li>
+                  <li>Capacity: 12,000 pcs per batch (APMT1135 inserts)</li>
+                  <li>Operation: Fully automatic</li>
+                </ul>
+              </div>
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>TiAlN, AlCrN and similar hard coatings · Inserts, drills and end mills</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">Arc coating</span>
+            <h5>Arc coating equipment</h5>
+            <p class="product-card__subtitle">Hard nitride coatings for cutting tools.</p>
+            <p>Arc coating systems for hard nitride coatings such as TiAlN and AlCrN on inserts, drills, end mills and forming tools.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">High deposition rate</span>
+              <span class="product-card__feature">Multilayer & nano-layer</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Cutting tool coating · Mould and die coating</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">HiPIMS</span>
+            <h5>HiPIMS coating equipment</h5>
+            <p class="product-card__subtitle">Dense, smooth, droplet-free coatings.</p>
+            <p>High-power impulse magnetron sputtering systems that produce dense, smooth coatings without the droplets typical of arc processes.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">High-density plasma</span>
+              <span class="product-card__feature">Droplet-free</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Precision tool coating · Component coating</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">Hybrid</span>
+            <h5>Hybrid coating equipment</h5>
+            <p class="product-card__subtitle">Arc and sputtering in one chamber.</p>
+            <p>Hybrid systems that combine arc and sputtering sources in one chamber for multilayer coating designs.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Multiple processes</span>
+              <span class="product-card__feature">Flexible multilayer</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Multilayer tool and component coatings</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">Decorative</span>
+            <h5>Decorative coating equipment</h5>
+            <p class="product-card__subtitle">Colour PVD finishes.</p>
+            <p>PVD systems for durable colour finishes on hardware, sanitaryware, watches and consumer products.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Wide colour range</span>
+              <span class="product-card__feature">Wear-resistant</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Decorative PVD</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: DLC coating equipment -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">DLC coating equipment — PECVD DLC and ta-C</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">DLC</span>
+            <h5>PECVD DLC coating equipment</h5>
+            <p class="product-card__subtitle">Low-friction coatings for components.</p>
+            <p>Plasma-enhanced CVD systems for low-friction DLC coatings on automotive and engineering components such as piston pins.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Low friction</span>
+              <span class="product-card__feature">High hardness</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Automotive component coating · Engineering component coating</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">ta-C</span>
+            <h5>ta-C coating equipment</h5>
+            <p class="product-card__subtitle">Hydrogen-free carbon coatings.</p>
+            <p>Systems for hydrogen-free tetrahedral amorphous carbon (ta-C) coatings, used for machining non-ferrous materials and for high-wear parts.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Hydrogen-free</span>
+              <span class="product-card__feature">Very high hardness</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Tools for aluminium and non-ferrous machining · High-wear components</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: Diamond coating equipment -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Diamond coating equipment — HFCVD</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">Diamond</span>
+            <h5>HFCVD diamond coating equipment</h5>
+            <p class="product-card__subtitle">Diamond films on carbide tools.</p>
+            <p>Hot-filament CVD systems that deposit diamond on carbide tools for machining graphite, composites and aluminium-silicon alloys.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Very high hardness</span>
+              <span class="product-card__feature">Long tool life</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Carbide tool coating</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: Optical coating equipment -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Optical coating equipment — Evaporation and magnetron sputtering</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">Evaporation</span>
+            <h5>Evaporation optical coating equipment</h5>
+            <p class="product-card__subtitle">Anti-reflection and filter coatings.</p>
+            <p>Evaporation systems for anti-reflection and filter coatings on lenses and optics.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Anti-reflection</span>
+              <span class="product-card__feature">Filter coatings</span>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">Sputtering</span>
+            <h5>Magnetron sputtering optical coating equipment</h5>
+            <p class="product-card__subtitle">Precise multilayer optical films.</p>
+            <p>Magnetron sputtering systems for precise multilayer optical films.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Precise layer control</span>
+              <span class="product-card__feature">Multilayer films</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: CVD coating equipment -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">CVD coating equipment — CVD and CVA aluminizing</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">CVD</span>
+            <h5>CVD coating systems</h5>
+            <p class="product-card__subtitle">Thick wear-resistant coatings.</p>
+            <p>CVD systems for thick wear-resistant coatings, typically on turning inserts.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Thick layers</span>
+              <span class="product-card__feature">Wear-resistant</span>
+            </div>
+          </div>
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat">
+            <span class="product-card__tag">Aluminizing</span>
+            <h5>CVA aluminizing systems</h5>
+            <p class="product-card__subtitle">Aluminide coatings for high-temperature parts.</p>
+            <p>Chemical vapour aluminizing systems for aluminide coatings that protect parts against high-temperature oxidation.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">High-temp protection</span>
+              <span class="product-card__feature">Turbine parts</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category: Turnkey coating solutions -->
+      <div class="product-category fade-up">
+        <div class="product-category__title">Turnkey coating solutions — Complete MD800 tool-coating plant</div>
+        <div class="product-list">
+
+          <div class="product-card" data-expandable data-brand="huasheng" data-process="coat" style="grid-column:1/-1;">
+            <span class="product-card__tag">Turnkey plant</span>
+            <h5>MD800 turnkey coating centre</h5>
+            <p class="product-card__subtitle">Complete plant for in-house tool coating.</p>
+            <p>Huasheng's turnkey coating solution gives a tool maker full control of its own coating process, from incoming tools to inspected, coated product. The plant is built around the MD800 arc coater, with a fully automatic ultrasonic cleaning line, blasting equipment, utilities and quality-control instruments.</p>
+            <div class="product-card__features">
+              <span class="product-card__feature">Full process control</span>
+              <span class="product-card__feature">Open technology</span>
+              <span class="product-card__feature">Same-day turnaround</span>
+              <span class="product-card__feature">Universal process flow</span>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__section">
+                <h6>Plant Specifications</h6>
+                <ul>
+                  <li>Cleaning: Fully automatic ultrasonic cleaning line, 14,000 pcs/h (APMT1135)</li>
+                  <li>Coating: MD800 arc coater, 12,000 pcs per batch (APMT1135)</li>
+                  <li>Target maintenance: 9060A manual sandblaster, about 2 min per target</li>
+                  <li>Liner maintenance: 1212F pressurised sandblaster, about 4 h per set</li>
+                  <li>Cooling: MCW-600 air-cooled chiller, 60 kW, R407C, 380 V 50 Hz</li>
+                  <li>Pure water: CSJ-05 EDI water purifier, up to 18 MΩ·cm</li>
+                  <li>Compressed air: SZ-30A permanent-magnet inverter compressor</li>
+                  <li>Quality control: XHS-4700 ball crater tester, HR-150C Rockwell hardness tester, industrial microscope</li>
+                </ul>
+              </div>
+              <div class="product-detail__section">
+                <h6>Process / Applications</h6>
+                <p>Cleaning · Coating · Target and liner maintenance · Inspection and dispatch</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Grand CTA Masterpiece -->
+  <section class="cta-masterpiece" id="cta">
+    <div class="container">
+      <div class="cta-masterpiece__grid">
+        
+        <div class="fade-up">
+          <div class="cta-badge">
+            <span class="dot"></span>
+            Technical Configuration & Trials · 4-Hour Response SLA
+          </div>
+          <h2>Need help selecting the <br><span class="text-gradient-green">optimal equipment setup?</span></h2>
+          <p class="lead">Describe your part, the material, and your target volumes. Our metallurgical engineers recommend the right system configuration and arrange sample trials on your own parts at the OEM laboratories.</p>
+
+          <div class="cta-benefits-list">
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Free metallurgical process audit and feasibility evaluation</span>
+            </div>
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Pre-order trial runs on your own parts at French & Italian OEM labs</span>
+            </div>
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Turnkey delivery, INR customs clearance, and local Bangalore spares support</span>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn--white btn--lg">
+              Talk to Greets Engineers
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="contact.html" class="btn btn--outline btn--lg" style="border-color:rgba(255,255,255,.3); color:var(--white);">
+              Request Price Quotation
+            </a>
+          </div>
+        </div>
+
+        <div class="cta-interactive-card hud-corner fade-up">
+          <h3>Direct Contact Desk</h3>
+          <p>Reach out directly to our leadership and process engineering team:</p>
+
+          <div class="cta-contact-chips">
+            <a href="tel:+919823386558" class="cta-contact-chip">
+              <div class="cta-chip-avatar">PK</div>
+              <div class="cta-chip-text">
+                <strong>Mr. Pramod Kanse</strong>
+                <span>+91 98233 86558 · Vacuum Heat Treatment</span>
+              </div>
+            </a>
+            <a href="tel:+919429875547" class="cta-contact-chip">
+              <div class="cta-chip-avatar">MA</div>
+              <div class="cta-chip-text">
+                <strong>Mr. Manoj Agrawal</strong>
+                <span>+91 94298 75547 · Ultrasonic Cleaning</span>
+              </div>
+            </a>
+            <a href="tel:+919871408194" class="cta-contact-chip">
+              <div class="cta-chip-avatar">PC</div>
+              <div class="cta-chip-text">
+                <strong>Ms. Pahal Chawla</strong>
+                <span>+91 98714 08194 · PVD & DLC Coating</span>
+              </div>
+            </a>
+          </div>
+
+          <a href="mailto:enquiry-equipment@greets.co.in" class="btn btn--primary" style="margin-bottom:0.75rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            enquiry-equipment@greets.co.in
+          </a>
+          <div style="font-size:0.75rem; color:#86efac; text-align:center;">
+            HSR Layout, Bangalore 560102 · Operating Nationwide
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:32px; filter:brightness(10);">
+          <p>Authorised dealer in India for Novatec, Huasheng and BMI.</p>
+          <p style="margin-top:0.5rem; font-size:0.82rem;">BMI vacuum furnaces · Novatec ultrasonic cleaning · Huasheng coating equipment</p>
+        </div>
+        <div class="footer__col">
+          <h5>Products</h5>
+          <a href="products.html#bmi">BMI Furnaces</a>
+          <a href="products.html#novatec">Novatec Cleaning</a>
+          <a href="products.html#huasheng">Huasheng Coating</a>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="industries.html">Industries</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <a href="mailto:enquiry-equipment@greets.co.in">enquiry-equipment@greets.co.in</a>
+          <a href="tel:+919823386558">+91 98233 86558</a>
+          <p style="font-size:0.82rem; margin-top:0.5rem; color:var(--gray-500);">HSR Layout, Bangalore 560102</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Greets Equipment Pvt. Ltd. All rights reserved.</span>
+        <span>Brand names and logos belong to their respective owners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>

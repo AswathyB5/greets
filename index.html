@@ -1,0 +1,2787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greets Equipment – Authorised Dealer in India for Novatec, Huasheng and BMI</title>
+  <meta name="description"
+    content="One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Full product catalog (shared look with products.html) */
+    /* Give each brand (BMI / Novatec / Huasheng) its own separated card */
+    .brand-section {
+      padding: 1.5rem 0;
+      background: linear-gradient(165deg, #ffffff 0%, #f3fdf6 55%, var(--green-50) 88%, rgba(10, 14, 12, 0.09) 100%);
+    }
+
+    .brand-section>.container {
+      background: var(--white);
+      border: 1.5px solid rgba(22, 163, 74, 0.22);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 4px 28px rgba(0, 0, 0, 0.06);
+      padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem);
+    }
+
+    @media (max-width: 640px) {
+      .brand-section>.container {
+        border-radius: var(--radius-lg);
+      }
+    }
+
+    .brand-divider {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem 0;
+    }
+
+    .brand-divider img {
+      height: 32px;
+      width: auto;
+    }
+
+    .brand-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gray-200);
+    }
+
+    .brand-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .brand-intro__img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .brand-intro__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+
+    .brand-intro__img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(0, 0, 0, .05);
+      border-radius: var(--radius-lg);
+      pointer-events: none;
+    }
+
+    .brand-intro__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .brand-intro__stat {
+      padding: 1rem;
+      background: var(--gray-50);
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+
+    .brand-intro__stat-value {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--green-600);
+    }
+
+    .brand-intro__stat-label {
+      font-size: 0.72rem;
+      color: var(--gray-400);
+      margin-top: 0.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .brand-intro__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.25rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--green-600);
+      transition: color var(--duration-fast);
+    }
+
+    .brand-intro__link:hover {
+      color: var(--green-700);
+    }
+
+    .brand-intro__link svg {
+      transition: transform var(--duration-fast);
+    }
+
+    .brand-intro__link:hover svg {
+      transform: translateX(3px);
+    }
+
+    .brand-section--dark {
+      background: linear-gradient(165deg, #0d0d0f 0%, #141416 55%, #0a0a0c 100%);
+      color: var(--white);
+      padding: clamp(4rem, 8vw, 6rem) 0;
+      margin: 3rem 0;
+      border-radius: 0;
+    }
+
+    .brand-section--dark h2,
+    .brand-section--dark h3,
+    .brand-section--dark h4,
+    .brand-section--dark h5 {
+      color: var(--white);
+    }
+
+    .brand-section--dark p {
+      color: var(--gray-400);
+    }
+
+    .brand-section--dark .product-category__title {
+      color: var(--white);
+      border-bottom-color: var(--green-500);
+    }
+
+    .brand-section--dark .product-card {
+      background: #141f19;
+      border-color: #223028;
+    }
+
+    .brand-section--dark .product-card:hover {
+      border-color: var(--green-600);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .3);
+    }
+
+    .brand-section--dark .product-card h5 {
+      color: var(--white);
+    }
+
+    .brand-section--dark .product-card__subtitle {
+      color: var(--green-400);
+    }
+
+    .brand-section--dark .product-card p {
+      color: var(--gray-400);
+    }
+
+    .brand-section--dark .product-card__tag {
+      background: rgba(224, 138, 30, .16);
+      color: var(--amber-300);
+    }
+
+    .brand-section--dark .product-card__features {
+      border-top-color: #223028;
+    }
+
+    .brand-section--dark .product-card__feature {
+      background: #1c2820;
+      color: var(--gray-300);
+    }
+
+    .brand-section--dark .brand-intro__stat {
+      background: #141f19;
+    }
+
+    .brand-section--dark .brand-intro__stat-value {
+      color: var(--green-400);
+    }
+
+    .brand-section--dark .brand-intro__stat-label {
+      color: var(--gray-400);
+    }
+
+    .brand-section--dark .brand-intro__link {
+      color: var(--green-400);
+    }
+
+    .brand-section--dark .product-detail {
+      border-top-color: var(--gray-700);
+    }
+
+    .brand-section--dark .product-detail__section h6 {
+      color: var(--gray-500);
+    }
+
+    .brand-section--dark .product-detail__section p,
+    .brand-section--dark .product-detail__section li {
+      color: var(--gray-400);
+    }
+
+    .brand-section--green {
+      background: linear-gradient(135deg, #0f5c2a 0%, #1a8040 50%, #0d6b30 100%);
+      color: var(--white);
+      padding: clamp(4rem, 8vw, 6rem) 0;
+      margin: 3rem 0;
+    }
+
+    .brand-section--green h2,
+    .brand-section--green h3,
+    .brand-section--green h4,
+    .brand-section--green h5 {
+      color: var(--white);
+    }
+
+    .brand-section--green p {
+      color: var(--green-200);
+    }
+
+    .brand-section--green .product-category__title {
+      color: var(--white);
+      border-bottom-color: var(--green-400);
+    }
+
+    .brand-section--green .product-card {
+      background: rgba(255, 255, 255, .06);
+      border-color: rgba(255, 255, 255, .1);
+      backdrop-filter: blur(8px);
+    }
+
+    .brand-section--green .product-card:hover {
+      border-color: var(--green-400);
+      background: rgba(255, 255, 255, .1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .2);
+    }
+
+    .brand-section--green .product-card h5 {
+      color: var(--white);
+    }
+
+    .brand-section--green .product-card__subtitle {
+      color: var(--green-300);
+    }
+
+    .brand-section--green .product-card p {
+      color: var(--green-200);
+    }
+
+    .brand-section--green .product-card__tag {
+      background: rgba(245, 197, 99, .18);
+      color: var(--amber-300);
+    }
+
+    .brand-section--green .product-card__features {
+      border-top-color: rgba(255, 255, 255, .08);
+    }
+
+    .brand-section--green .product-card__feature {
+      background: rgba(255, 255, 255, .08);
+      color: var(--green-200);
+    }
+
+    .brand-section--green .brand-intro__stat {
+      background: rgba(255, 255, 255, .06);
+    }
+
+    .brand-section--green .brand-intro__stat-value {
+      color: var(--green-300);
+    }
+
+    .brand-section--green .brand-intro__stat-label {
+      color: var(--green-200);
+    }
+
+    .brand-section--green .brand-intro__link {
+      color: var(--green-300);
+    }
+
+    .brand-section--green .product-detail {
+      border-top-color: rgba(255, 255, 255, .1);
+    }
+
+    .brand-section--green .product-detail__section h6 {
+      color: var(--green-300);
+    }
+
+    .brand-section--green .product-detail__section p,
+    .brand-section--green .product-detail__section li {
+      color: var(--green-200);
+    }
+
+    @media (max-width: 768px) {
+      .brand-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .brand-intro__stats {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .product-list {
+        grid-template-columns: 1fr;
+      }
+
+      .brand-section--dark,
+      .brand-section--green {
+        margin: 1.5rem 0;
+      }
+    }
+
+    /* ── Hero: light green gradient with subtle pattern ── */
+    .hero--light {
+      position: relative;
+      background: linear-gradient(160deg, #f3fdf6 0%, var(--green-50) 55%, #e7f9ee 88%, rgba(10, 14, 12, 0.09) 100%) !important;
+      padding: calc(72px + 5.5rem) 0 6rem !important;
+      min-height: 760px !important;
+      display: flex !important;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(22, 163, 74, 0.12);
+    }
+
+    .hero--light .hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero--light .hero__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 1 !important;
+    }
+
+    .hero--light .hero__bg::after {
+      display: block !important;
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0%, rgba(74, 222, 128, 0.25) 45%, rgba(3, 10, 7, 0.55) 100%);
+    }
+
+    .hero--light h1 {
+      color: #ffffff !important;
+      font-size: clamp(2.3rem, 4.2vw, 3.2rem) !important;
+      line-height: 1.18 !important;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.85rem !important;
+    }
+
+    .hero--light h1 .text-gradient-green {
+      background: linear-gradient(135deg, #4ade80 0%, #22c55e 55%, #86efac 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+
+    .hero--light .hero__desc {
+      color: rgba(255, 255, 255, 0.82) !important;
+      font-size: 0.94rem !important;
+      line-height: 1.65 !important;
+      max-width: 530px;
+      margin-bottom: 1.6rem !important;
+    }
+
+    .hero--light .hero__badge {
+      background: rgba(255, 255, 255, 0.1) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      color: #4ade80 !important;
+      font-size: 0.76rem !important;
+      padding: 0.6rem 1.1rem !important;
+      margin-bottom: 1.1rem !important;
+      letter-spacing: 0.05em;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero--light .hero__badge .dot {
+      background: #16a34a !important;
+      box-shadow: 0 0 8px rgba(22, 163, 74, 0.6);
+    }
+
+    .hero--light .hero__actions .btn {
+      padding: 0.72rem 1.6rem !important;
+      font-size: 0.88rem !important;
+    }
+
+    /* ── Hero: full-width text over background image ── */
+    .hero-inner {
+      display: block;
+      min-height: 420px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-inner__text {
+      z-index: 2;
+      max-width: 720px;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+      padding: 2.25rem 2rem !important;
+    }
+
+    .hero-inner__text::before {
+      content: '';
+      position: absolute;
+      inset: -1.5rem -2.5rem;
+      z-index: -1;
+      border-radius: 2rem;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.75) 100%);
+    }
+
+
+    .hero-inner__text .hero__badge,
+    .hero-inner__text .hero__actions {
+      justify-content: center;
+    }
+
+    .hero-inner__text .hero__desc {
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero__bg-badge {
+      position: absolute;
+      right: clamp(1rem, 4vw, 3rem);
+      bottom: clamp(1.5rem, 4vw, 2.5rem);
+      z-index: 2;
+      background: rgba(20, 20, 20, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-full);
+      padding: 0.6rem 1.15rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .hero__bg-badge span {
+      color: var(--green-400);
+      font-size: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero__bg-badge {
+        display: none;
+      }
+    }
+
+    /* ── Disable partner image hover effect ── */
+    .partner-card-light:hover .partner-card-light__img img,
+    .partner-card-light__img img {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    /* ── Industry cards Glassmorphic Design ── */
+    .industry-grid-v2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .industry-card-v2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 1.6rem 1.4rem 1.25rem;
+      border-radius: var(--radius-lg, 16px);
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1.5px solid rgba(22, 163, 74, 0.3);
+      box-shadow: 0 12px 32px -8px rgba(22, 163, 74, 0.16), 0 2px 8px rgba(0, 0, 0, 0.04);
+      text-decoration: none;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .industry-card-v2::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(255, 255, 255, 0) 65%);
+      transition: opacity 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .industry-card-v2:hover::before {
+      opacity: 1;
+    }
+
+    .industry-card-v2:hover {
+      transform: translateY(-6px);
+      background: rgba(255, 255, 255, 0.92);
+      border-color: rgba(34, 197, 94, 0.45);
+      box-shadow: 0 20px 40px -10px rgba(22, 163, 74, 0.18), 0 0 25px rgba(34, 197, 94, 0.12), inset 0 1px 1px rgba(255, 255, 255, 1);
+    }
+
+    .industry-card-v2__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.1rem;
+    }
+
+    .industry-card-v2__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #16a34a;
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+
+    .industry-card-v2:hover .industry-card-v2__icon {
+      background: #16a34a;
+      color: #ffffff;
+      border-color: #16a34a;
+      transform: scale(1.08) rotate(-4deg);
+      box-shadow: 0 6px 16px rgba(22, 163, 74, 0.3);
+    }
+
+    .industry-card-v2__num {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #15803d;
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.18);
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+    }
+
+    .industry-card-v2 h5 {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 0.45rem;
+      line-height: 1.35;
+      transition: color 0.2s ease;
+    }
+
+    .industry-card-v2:hover h5 {
+      color: #15803d;
+    }
+
+    .industry-card-v2 p {
+      font-size: 0.83rem;
+      color: var(--gray-500);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .industry-card-v2__footer {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(34, 197, 94, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .industry-card-v2__brands {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .industry-card-v2__brands span {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.18rem 0.55rem;
+      border-radius: var(--radius-full);
+      background: rgba(240, 253, 244, 0.9);
+      color: #15803d;
+      border: 1px solid rgba(22, 163, 74, 0.22);
+      backdrop-filter: blur(6px);
+    }
+
+    .industry-card-v2__arrow {
+      color: rgba(22, 163, 74, 0.4);
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: transform 0.25s ease, color 0.25s ease;
+    }
+
+    .industry-card-v2:hover .industry-card-v2__arrow {
+      color: #16a34a;
+      transform: translateX(4px);
+    }
+
+    /* ── Finder v2 ── */
+    .finder-wrap {
+      background: var(--gradient-dark);
+      border-radius: var(--radius-xl, 1.5rem);
+      padding: clamp(2rem, 4vw, 3.5rem);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .finder-wrap .finder-head h2 {
+      color: #fff;
+    }
+
+    .finder-wrap .finder-head p {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .finder-wrap .finder-count {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .finder-wrap .finder-select span {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .finder-wrap .finder-select select {
+      background-color: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+
+    .finder-wrap .search-box input {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+
+    .finder-wrap .search-box input::placeholder {
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .finder-wrap .search-box__icon {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .finder-wrap .filter-chip {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .finder-wrap .filter-chip.active {
+      background: var(--green-600);
+      border-color: var(--green-600);
+      color: #fff;
+    }
+
+    .finder-wrap .finder-results {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .finder-wrap .finder-result {
+      border-bottom-color: rgba(255, 255, 255, 0.07);
+    }
+
+    .finder-wrap .finder-result:hover {
+      background: rgba(34, 197, 94, 0.1);
+    }
+
+    .finder-wrap .finder-result__name {
+      color: #fff;
+    }
+
+    .finder-wrap .finder-result__sub {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .finder-wrap .finder-result__meta {
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .finder-wrap .finder-result__brand {
+      color: var(--amber-300);
+    }
+
+    .finder-wrap .finder-result__arrow {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .finder-wrap .finder-empty {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .finder-wrap .finder-qchip {
+      background: rgba(34, 197, 94, 0.15);
+      border-color: rgba(34, 197, 94, 0.3);
+      color: var(--green-300);
+    }
+
+    .finder-wrap .finder-qchip:hover {
+      background: var(--green-600);
+      color: #fff;
+    }
+
+    .catlink {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--green-600);
+      margin-bottom: 0.5rem;
+    }
+
+    .catlink a {
+      color: inherit;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.9rem;
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      border-radius: var(--radius-full);
+      transition: all 0.2s ease;
+    }
+
+    .catlink a:hover {
+      background: var(--green-600);
+      color: #fff;
+    }
+
+    /* ── Brand Section 2-Column Category Cards (Modern replacement for old 1-row accordion) ── */
+    .families {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+
+    @media (max-width: 820px) {
+      .families {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .families details {
+      border: 1.5px solid rgba(34, 197, 94, 0.2);
+      border-radius: var(--radius-lg, 16px);
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdfc 100%);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+      padding: 1.3rem 1.4rem;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .families details:hover {
+      border-color: rgba(34, 197, 94, 0.45);
+      box-shadow: 0 10px 28px rgba(22, 163, 74, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .families details[open] {
+      border-color: var(--green-500);
+      box-shadow: 0 12px 32px rgba(22, 163, 74, 0.12);
+      background: #ffffff;
+    }
+
+    .families summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0;
+      user-select: none;
+    }
+
+    .family-thumb {
+      flex-shrink: 0;
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--green-50);
+      border: 1.5px solid rgba(34, 197, 94, 0.2);
+    }
+
+    .family-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .families summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .family-head {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      flex: 1;
+    }
+
+    .family-count-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #15803d;
+      background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      padding: 0.18rem 0.55rem;
+      border-radius: var(--radius-full);
+      width: fit-content;
+    }
+
+    .families summary .t {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--gray-900);
+      line-height: 1.3;
+    }
+
+    .families summary .t small {
+      display: block;
+      font-weight: 400;
+      font-size: 0.82rem;
+      color: var(--gray-500);
+      margin-top: 0.25rem;
+      line-height: 1.4;
+    }
+
+    .families summary .ic {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--green-50);
+      border: 1.5px solid rgba(34, 197, 94, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--green-600);
+      transition: all 0.25s ease;
+      margin-top: 0.25rem;
+    }
+
+    .families details:hover summary .ic {
+      background: var(--green-100);
+      border-color: var(--green-500);
+    }
+
+    .families details[open] summary .ic {
+      transform: rotate(45deg);
+      background: var(--green-600);
+      border-color: var(--green-600);
+      color: #ffffff;
+    }
+
+    .families .models {
+      list-style: none;
+      margin: 1.25rem 0 0;
+      padding-top: 1rem;
+      border-top: 1px dashed rgba(34, 197, 94, 0.25);
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .families .models li a {
+      display: block;
+      padding: 0.75rem 0.95rem;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      background: #f8faf8;
+      border: 1px solid rgba(22, 163, 74, 0.08);
+      transition: all 0.2s ease;
+    }
+
+    .families .models li a:hover {
+      background: var(--green-50);
+      border-color: rgba(34, 197, 94, 0.35);
+      transform: translateX(3px);
+    }
+
+    .families .models li b {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--gray-900);
+    }
+
+    .families .models li span {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--gray-600);
+      margin-top: 0.15rem;
+      line-height: 1.45;
+    }
+
+    /* — Finder: search + filters + results — */
+    .finder-head {
+      margin-bottom: 1.75rem;
+    }
+
+    .finder-qchip {
+      display: inline-block;
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--green-700);
+      background: var(--green-50);
+      border: 1px solid rgba(34, 197, 94, .25);
+      border-radius: var(--radius-full);
+      padding: 0.2rem 0.7rem;
+      margin: 0 0.3rem 0.3rem 0;
+      cursor: pointer;
+    }
+
+    .finder-qchip:hover {
+      background: var(--green-600);
+      color: var(--white);
+    }
+
+    .finder-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .finder-controls .search-box {
+      flex: 1 1 320px;
+    }
+
+    .finder-select-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-left: auto;
+    }
+
+    .finder-select {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .finder-select span {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray-500);
+    }
+
+    .finder-select select {
+      padding: 0.55rem 2rem 0.55rem 0.85rem;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      color: var(--gray-800);
+      font-size: 0.85rem;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.7rem center;
+    }
+
+    .finder-select select:focus {
+      border-color: var(--green-500);
+    }
+
+    .finder-count {
+      font-size: 0.85rem;
+      color: var(--gray-500);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    .finder-results {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      max-height: 520px;
+      overflow-y: auto;
+    }
+
+    .finder-result {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--gray-100);
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .finder-result:last-child {
+      border-bottom: none;
+    }
+
+    .finder-result:hover {
+      background: var(--green-50);
+    }
+
+    .finder-result__name {
+      font-weight: 600;
+      color: var(--gray-900);
+      font-size: 0.92rem;
+    }
+
+    .finder-result__sub {
+      font-size: 0.82rem;
+      color: var(--gray-500);
+      margin-top: 0.15rem;
+    }
+
+    .finder-result__meta {
+      font-size: 0.78rem;
+      color: var(--gray-400);
+      text-align: right;
+    }
+
+    .finder-result__brand {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--amber-700);
+      margin-top: 0.2rem;
+    }
+
+    .finder-result__arrow {
+      color: var(--gray-300);
+    }
+
+    .finder-empty {
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--gray-400);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .finder-result {
+        grid-template-columns: 1fr auto;
+      }
+
+      .finder-result__meta {
+        display: none;
+      }
+
+      .finder-select-group {
+        margin-left: 0;
+      }
+    }
+
+    /* — Contact (reused from contact.html) — */
+    .contact-main {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: clamp(2rem, 4vw, 4rem);
+      align-items: start;
+    }
+
+    .contact-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .contact-sidebar__card {
+      background: var(--gray-900);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-sidebar__card h3 {
+      color: var(--white);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-sidebar__card>p {
+      color: var(--gray-400);
+      font-size: 0.88rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-team {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-team__person {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .contact-team__person:last-child {
+      border-bottom: none;
+    }
+
+    .contact-team__avatar {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--green-700), var(--green-900));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: var(--green-200);
+      flex-shrink: 0;
+    }
+
+    .contact-team__name {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--white);
+    }
+
+    .contact-team__phone {
+      font-size: 0.82rem;
+      color: var(--gray-400);
+    }
+
+    .contact-team__phone a {
+      color: var(--gray-400);
+      transition: color var(--duration-fast);
+    }
+
+    .contact-team__phone a:hover {
+      color: var(--green-400);
+    }
+
+    .contact-sidebar__address {
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .contact-sidebar__address p {
+      font-size: 0.88rem;
+      color: var(--gray-400);
+      line-height: 1.7;
+    }
+
+    .contact-sidebar__address a {
+      color: var(--green-400);
+      transition: color var(--duration-fast);
+    }
+
+    .contact-sidebar__address a:hover {
+      color: var(--green-300);
+    }
+
+    .contact-chips {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.2rem;
+      background: var(--gray-50);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--gray-600);
+      transition: all var(--duration-fast);
+    }
+
+    .contact-chip:hover {
+      border-color: var(--green-200);
+      background: var(--green-50);
+      color: var(--green-700);
+    }
+
+    .contact-chip svg {
+      flex-shrink: 0;
+    }
+
+    .contact-form-card {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 4vw, 3rem);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-form-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .contact-form-card>p {
+      color: var(--gray-500);
+      font-size: 0.88rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-row--single {
+      grid-template-columns: 1fr;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-field label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      padding: 0.8rem 1rem;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      color: var(--gray-800);
+      transition: all var(--duration-fast);
+      outline: none;
+      font-size: 0.92rem;
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: var(--gray-300);
+    }
+
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--green-500);
+      box-shadow: 0 0 0 3px rgba(22, 163, 74, .08);
+    }
+
+    .form-field textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-field select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form-note {
+      font-size: 0.78rem;
+      color: var(--gray-400);
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    @media (max-width: 1024px) {
+      .contact-main {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .finder-controls .search-box {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body class="page-enter">
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/logo-greets.png" alt="Greets Equipment">
+      </a>
+      <nav class="header__nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="industries.html">Industries</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header__cta">
+        <a href="contact.html" class="header__enquire">
+          Enquire
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+      <button class="header__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="industries.html">Industries</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn--primary">Enquire</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero--light" id="hero">
+    <div class="hero__bg">
+      <img src="assets/home-img.webp" alt="Industrial facility">
+    </div>
+
+    <div class="container" style="position:relative; z-index:2;">
+      <div class="hero-inner">
+        <div class="hero-inner__text hero__content" style="padding:0;">
+          <div class="hero__badge">
+            <span class="dot"></span>
+            AUTHORISED DEALER IN INDIA
+          </div>
+          <h1>Heat treatment, cleaning and <span class="text-gradient-green">coating systems</span>, supported in India
+          </h1>
+          <p class="hero__desc">One partner in India for your complete surface-engineering line: BMI vacuum furnaces,
+            Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating. Greets stays with you from process
+            choice and import to installation, training and service.</p>
+          <div class="hero__actions">
+            <a href="#finder" class="btn btn--primary btn--lg">
+              Find a system
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="#partners" class="btn btn--outline btn--lg"
+              style="color:var(--gray-800); border-color:rgba(0,0,0,0.15); background:rgba(255,255,255,0.85);">
+              Our Partners
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__bg-badge">
+      <span>✦</span> 3 Global Technology Partners
+    </div>
+  </section>
+
+  <!-- Partners: Triple Process Powerhouse (Crisp Light-Neutral Surface with Subtle Grid) -->
+  <section class="section section--light section--pattern" id="partners">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <span class="eyebrow">Our Global Partners</span>
+        <h2>Three world-class partners,<br>one local team in India</h2>
+        <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem;">World-leading European and Asian engineering
+          combined with responsive on-ground engineering support throughout India.</p>
+      </div>
+
+      <!-- Photographic Partner Cards Grid -->
+      <div class="partners-showcase-grid stagger-children">
+
+        <!-- 1 HARDEN: BMI -->
+        <div class="partner-card-light hud-corner">
+          <div class="partner-card-light__img">
+            <img src="assets/product-bmi.png" alt="BMI Vacuum Furnace">
+            <div class="partner-card-light__flag-badge">
+              <span>🇫🇷</span> France · BMI
+            </div>
+          </div>
+          <div class="partner-card-light__body">
+            <div class="partner-card-light__step">Step 01 · Harden</div>
+            <h3>Vacuum Furnaces</h3>
+            <div class="partner-card-light__oem">Fours Industriels BMI, France</div>
+            <a href="#bmi" class="btn btn--ghost" style="color:var(--green-700);">
+              Explore BMI furnaces <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2 CLEAN: Novatec -->
+        <div class="partner-card-light hud-corner">
+          <div class="partner-card-light__img">
+            <img src="assets/product-surfacefinishing.png" alt="Novatec Ultrasonic Cleaning System"
+              style="transform: scale(1.55) !important; object-position: 20% 42%;">
+            <div class="partner-card-light__flag-badge">
+              <span>🇮🇹</span> Italy · Novatec
+            </div>
+          </div>
+          <div class="partner-card-light__body">
+            <div class="partner-card-light__step">Step 02 · Clean</div>
+            <h3>Ultrasonic Cleaning</h3>
+            <div class="partner-card-light__oem">Novatec S.r.l., Italy</div>
+            <a href="#novatec" class="btn btn--ghost" style="color:var(--green-700);">
+              Explore Novatec cleaning <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 COAT: Huasheng -->
+        <div class="partner-card-light hud-corner">
+          <div class="partner-card-light__img">
+            <img src="assets/product-pvdcoating.png" alt="Huasheng PVD Coating System">
+            <div class="partner-card-light__flag-badge">
+              <span>🇨🇳</span> China · Huasheng
+            </div>
+          </div>
+          <div class="partner-card-light__body">
+            <div class="partner-card-light__step">Step 03 · Coat</div>
+            <h3>PVD, DLC & Diamond Coating</h3>
+            <div class="partner-card-light__oem">Huasheng Nanotechnology, China</div>
+            <a href="#huasheng" class="btn btn--ghost" style="color:var(--green-700);">
+              Explore Huasheng coating <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Support Banner - Step 04 -->
+      <div class="split fade-up"
+        style="background:linear-gradient(135deg, var(--gray-900) 0%, var(--black) 100%); border-radius:var(--radius-lg); margin-top:2.5rem; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,0.35); position:relative;">
+        <!-- decorative pattern -->
+        <div
+          style="position:absolute; inset:0; background-image:radial-gradient(circle at 15% 50%, rgba(255,255,255,0.04) 0%, transparent 50%), radial-gradient(circle at 85% 10%, rgba(255,255,255,0.03) 0%, transparent 40%); pointer-events:none;">
+        </div>
+        <div
+          style="padding:clamp(2rem, 4vw, 3.5rem); display:flex; flex-direction:column; justify-content:center; position:relative; z-index:1;">
+          <div
+            style="display:inline-flex; align-items:center; gap:0.5rem; font-size:0.7rem; font-weight:800; text-transform:uppercase; letter-spacing:0.14em; color:#4ade80; margin-bottom:0.75rem; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:2rem; padding:0.3rem 0.85rem; width:fit-content;">
+            ⬡ Step 04 · Support</div>
+          <h3 style="color:#ffffff; margin-bottom:0.35rem; font-size:clamp(1.4rem, 3vw, 1.9rem); line-height:1.2;">
+            One local team for all three</h3>
+          <p style="color:rgba(255,255,255,0.7); font-size:0.92rem; margin-bottom:1.75rem;">
+            Greets Equipment Pvt. Ltd., India</p>
+          <!-- support cards -->
+          <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:0.6rem; margin-bottom:1.75rem; max-width:480px;">
+            <div
+              style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:0.75rem; padding:0.75rem 0.4rem; text-align:center;">
+              <div style="font-size:1.15rem; margin-bottom:0.3rem;">🛠️</div>
+              <span style="color:#fff; font-size:0.78rem; font-weight:600;">Installation</span>
+            </div>
+            <div
+              style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:0.75rem; padding:0.75rem 0.4rem; text-align:center;">
+              <div style="font-size:1.15rem; margin-bottom:0.3rem;">🎓</div>
+              <span style="color:#fff; font-size:0.78rem; font-weight:600;">Training</span>
+            </div>
+            <div
+              style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:0.75rem; padding:0.75rem 0.4rem; text-align:center;">
+              <div style="font-size:1.15rem; margin-bottom:0.3rem;">⚙️</div>
+              <span style="color:#fff; font-size:0.78rem; font-weight:600;">Spares</span>
+            </div>
+            <div
+              style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:0.75rem; padding:0.75rem 0.4rem; text-align:center;">
+              <div style="font-size:1.15rem; margin-bottom:0.3rem;">🔧</div>
+              <span style="color:#fff; font-size:0.78rem; font-weight:600;">Service</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="services.html" class="btn" style="background:#16a34a; color:#fff; border:none; font-weight:700;">
+              See how we support you
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="contact.html" class="btn"
+              style="background:rgba(255,255,255,0.1); color:#fff; border:1.5px solid rgba(255,255,255,0.25); font-weight:600;">
+              Contact Bangalore Office
+            </a>
+          </div>
+        </div>
+        <div style="position:relative; min-height:300px;">
+          <img src="assets/industrial_system.webp" alt="Greets engineering support in India"
+            style="width:100%; height:100%; object-fit:cover;">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Industries we serve -->
+  <section class="section section--green-tint section--pattern" id="industries"
+    style="border-top:1px solid rgba(22,163,74,0.12);">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <span class="eyebrow">12 Specialized Sectors</span>
+        <h2>Industries we serve</h2>
+        <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Choose an industry to see
+          the surface-engineering systems that apply to it.</p>
+      </div>
+
+      <div class="industry-grid-v2 stagger-children">
+        <!-- 01 Cutting Tools -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">01</span>
+          </div>
+          <h5>Cutting and gear cutting tools</h5>
+          <p>Hobs, shaper cutters, gear cutting tools, inserts, drills and end mills.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 02 PVD Coating -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">02</span>
+          </div>
+          <h5>PVD coating service providers</h5>
+          <p>Coating job shops and in-house coating centres.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 03 Dies & Moulds -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                <line x1="12" y1="22.08" x2="12" y2="12" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">03</span>
+          </div>
+          <h5>Dies and mould manufacturers</h5>
+          <p>Press tools, forging dies, die-casting and plastic moulds.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 04 Steel & Metal -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">04</span>
+          </div>
+          <h5>Steel and metal processing</h5>
+          <p>Commercial heat treaters, steel, alloy and forging plants.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 05 Power -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">05</span>
+          </div>
+          <h5>Power: wind, solar and thermal</h5>
+          <p>Gearbox parts, turbine blades, shafts and bearings.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 06 Oil & Gas -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">06</span>
+          </div>
+          <h5>Oil and gas</h5>
+          <p>Valves, pumps, drilling tools and wear parts.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 07 Automotive -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="2" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">07</span>
+          </div>
+          <h5>Automotive</h5>
+          <p>Gears, transmission, engine and EV components.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 08 Aerospace & Defence -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">08</span>
+          </div>
+          <h5>Aerospace and defence</h5>
+          <p>Turbine parts, brazed assemblies, weapon and vehicle components.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 09 Medical Devices -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">09</span>
+          </div>
+          <h5>Medical devices and implants</h5>
+          <p>Orthopaedic implants, surgical instruments, cleanroom final cleaning.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 10 Semiconductor & Electronics -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <rect x="9" y="9" width="6" height="6" />
+                <line x1="9" y1="1" x2="9" y2="4" />
+                <line x1="15" y1="1" x2="15" y2="4" />
+                <line x1="9" y1="20" x2="9" y2="23" />
+                <line x1="15" y1="20" x2="15" y2="23" />
+                <line x1="20" y1="9" x2="23" y2="9" />
+                <line x1="20" y1="14" x2="23" y2="14" />
+                <line x1="1" y1="9" x2="4" y2="9" />
+                <line x1="1" y1="14" x2="4" y2="14" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">10</span>
+          </div>
+          <h5>Semiconductor and electronics</h5>
+          <p>Chamber parts and precision components.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 11 Optics & Eyewear -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <circle cx="12" cy="12" r="8" />
+                <line x1="12" y1="2" x2="12" y2="4" />
+                <line x1="12" y1="20" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="4" y2="12" />
+                <line x1="20" y1="12" x2="22" y2="12" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">11</span>
+          </div>
+          <h5>Optics and eyewear</h5>
+          <p>Lenses and optical components.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- 12 Watches & Jewellery -->
+        <a href="industries.html" class="industry-card-v2">
+          <div class="industry-card-v2__top">
+            <div class="industry-card-v2__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12l4 6-10 12L2 9z" />
+                <path d="M2 9h20" />
+                <path d="m10 3 2 6 2-6" />
+              </svg>
+            </div>
+            <span class="industry-card-v2__num">12</span>
+          </div>
+          <h5>Watches, jewellery and decorative</h5>
+          <p>Cases, bands, fittings and hardware finishes.</p>
+          <div class="industry-card-v2__footer">
+            <div class="industry-card-v2__brands"><span>Novatec</span><span>Huasheng</span></div>
+            <span class="industry-card-v2__arrow">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find a system: live search + filters + results -->
+  <section class="section section--light" id="finder">
+    <div class="container">
+      <div class="finder-wrap fade-up">
+        <div class="finder-head">
+          <h2>Find a system</h2>
+          <p class="lead" style="margin-top:0.6rem;">Type what you make or the process you need, for example
+            <button type="button" class="finder-qchip" data-q="moulds">moulds</button><button type="button"
+              class="finder-qchip" data-q="hob coating">hob coating</button><button type="button" class="finder-qchip"
+              data-q="implant cleaning">implant cleaning</button><button type="button" class="finder-qchip"
+              data-q="nitriding">nitriding</button>
+          </p>
+        </div>
+
+        <div class="finder-controls fade-up">
+          <div class="search-box" style="margin-bottom:0;">
+            <span class="search-box__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-4-4" />
+              </svg>
+            </span>
+            <input type="search" id="finder-q"
+              placeholder="Describe your need: moulds, hob coating, implant cleaning, nitriding…" autocomplete="off">
+          </div>
+          <div class="filter-bar" id="finder-brand" style="margin-bottom:0;">
+            <button type="button" class="filter-chip active" data-brand="all">All brands</button>
+            <button type="button" class="filter-chip" data-brand="BMI">BMI</button>
+            <button type="button" class="filter-chip" data-brand="Novatec">Novatec</button>
+            <button type="button" class="filter-chip" data-brand="Huasheng">Huasheng</button>
+          </div>
+        </div>
+
+        <div class="finder-controls fade-up" style="margin-top:0.75rem;">
+          <div class="filter-bar" id="finder-process" style="margin-bottom:0;">
+            <button type="button" class="filter-chip active" data-process="all">All processes</button>
+            <button type="button" class="filter-chip" data-process="harden">1 · Harden</button>
+            <button type="button" class="filter-chip" data-process="clean">2 · Clean</button>
+            <button type="button" class="filter-chip" data-process="coat">3 · Coat</button>
+          </div>
+          <div class="finder-select-group">
+            <label class="finder-select">
+              <span>Industry</span>
+              <select id="finder-industry">
+                <option value="">All industries</option>
+                <option value="tools">Cutting and gear cutting tools</option>
+                <option value="jobshop">PVD coating service providers</option>
+                <option value="dies">Dies and mould manufacturers</option>
+                <option value="steel">Steel and metal processing</option>
+                <option value="power">Power: wind, solar and thermal</option>
+                <option value="oilgas">Oil and gas</option>
+                <option value="auto">Automotive</option>
+                <option value="aero">Aerospace and defence</option>
+                <option value="medical">Medical devices and implants</option>
+                <option value="semi">Semiconductor and electronics</option>
+                <option value="optics">Optics and eyewear</option>
+                <option value="watch">Watches, jewellery and decorative</option>
+              </select>
+            </label>
+            <label class="finder-select">
+              <span>Category</span>
+              <select id="finder-category">
+                <option value="">All categories</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <p class="finder-count" id="finder-count">35 systems</p>
+        <div class="finder-results" id="finder-results"></div>
+      </div><!-- end finder-wrap -->
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BRAND: BMI -->
+  <!-- ============================================================ -->
+  <section class="brand-section" id="bmi">
+    <div class="container">
+      <!-- Brand intro -->
+      <div class="brand-intro fade-up">
+        <div>
+          <div class="brand-divider">
+            <img src="assets/BMI.png" alt="Fours Industriels BMI">
+          </div>
+          <h2>Fours Industriels B.M.I.</h2>
+          <p style="font-size:0.88rem; color:var(--gray-500); margin-bottom:0.5rem;">Saint-Quentin-Fallavier, France</p>
+          <p>Vacuum furnace specialists since the early 1980s, building standard and custom furnaces for aerospace,
+            automotive, medical, tooling and heat-treatment shops. BMI's patented rotating gas flow gives uniform
+            quenching even on dense loads.</p>
+          <a href="https://bmi-fours.com" target="_blank" rel="noopener" class="brand-intro__link">
+            Visit bmi-fours.com
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+          <div class="brand-intro__stats">
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">1980s</div>
+              <div class="brand-intro__stat-label">Vacuum furnaces since</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">5–12 bar</div>
+              <div class="brand-intro__stat-label">Gas quench pressure</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">1500 °C</div>
+              <div class="brand-intro__stat-label">Max temperature option</div>
+            </div>
+          </div>
+        </div>
+        <div class="brand-intro__img">
+          <img src="assets/product-bmi.png" alt="BMI vacuum furnace">
+        </div>
+      </div>
+
+      <p class="catlink"><a href="#" data-open-all>See all BMI machines ↓</a></p>
+
+      <div class="families fade-up">
+        <details data-cat="Gas quenching furnaces">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/bmi_gas.jpg" alt="BMI gas quenching furnace"></span>
+            <div class="family-head">
+              <span class="family-count-badge">4 products</span>
+              <span class="t">Gas quenching furnaces<small>Hardening, brazing and laboratory furnaces</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#bmi" data-brand="BMI" data-process="harden" data-category="Gas quenching furnaces"><b>B8_T
+                  vacuum gas quenching furnace</b><span>Front-loading furnace for high-throughput production.</span></a>
+            </li>
+            <li><a href="#bmi" data-brand="BMI" data-process="harden" data-category="Gas quenching furnaces"><b>VSE8_T
+                  vacuum gas quenching furnace</b><span>Bottom-loading furnace for tall or delicate parts.</span></a>
+            </li>
+            <li><a href="#bmi" data-brand="BMI" data-process="harden" data-category="Gas quenching furnaces"><b>Vacuum
+                  brazing furnace</b><span>Oxide-free brazing of assemblies.</span></a></li>
+            <li><a href="#bmi" data-brand="BMI" data-process="harden" data-category="Gas quenching furnaces"><b>Compact
+                  laboratory furnace</b><span>Small vacuum furnace for R&D and process development.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="Oil quenching furnaces">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/bmi_oil.jpg" alt="BMI oil quenching furnace"></span>
+            <div class="family-head">
+              <span class="family-count-badge">2 products</span>
+              <span class="t">Oil quenching furnaces<small>Horizontal and vertical</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#bmi" data-brand="BMI" data-process="harden" data-category="Oil quenching furnaces"><b>Vacuum
+                  oil quenching furnace, horizontal</b><span>Vacuum heating with an integrated oil quench.</span></a>
+            </li>
+            <li><a href="#bmi" data-brand="BMI" data-process="harden" data-category="Oil quenching furnaces"><b>Vacuum
+                  oil quenching furnace, vertical</b><span>For long parts quenched hanging.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="Low-temperature furnaces">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/bmi_low.jpg" alt="BMI low-temperature furnace"></span>
+            <div class="family-head">
+              <span class="family-count-badge">2 products</span>
+              <span class="t">Low-temperature furnaces<small>Tempering and aluminium brazing</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#bmi" data-brand="BMI" data-process="harden" data-category="Low-temperature furnaces"><b>Vacuum
+                  tempering furnace</b><span>Tempering after hardening.</span></a></li>
+            <li><a href="#bmi" data-brand="BMI" data-process="harden"
+                data-category="Low-temperature furnaces"><b>Aluminium brazing vacuum furnace</b><span>For heat
+                  exchangers and aluminium assemblies.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="Thermochemical treatment furnaces">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/bmi_thermo.jpg" alt="BMI thermochemical treatment furnace"></span>
+            <div class="family-head">
+              <span class="family-count-badge">4 products</span>
+              <span class="t">Thermochemical treatment furnaces<small>Carburizing, nitriding and sub-zero</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#bmi" data-brand="BMI" data-process="harden"
+                data-category="Thermochemical treatment furnaces"><b>ALLCARB® low-pressure carburizing</b><span>Case
+                  hardening for gears and transmission parts.</span></a></li>
+            <li><a href="#bmi" data-brand="BMI" data-process="harden"
+                data-category="Thermochemical treatment furnaces"><b>ALLNIT® low-pressure nitriding</b><span>Nitriding
+                  for wear and fatigue resistance.</span></a></li>
+            <li><a href="#bmi" data-brand="BMI" data-process="harden"
+                data-category="Thermochemical treatment furnaces"><b>Plasma nitriding furnace</b><span>Ion nitriding for
+                  tools, dies and engineering parts.</span></a></li>
+            <li><a href="#bmi" data-brand="BMI" data-process="harden"
+                data-category="Thermochemical treatment furnaces"><b>COOL PLUS sub-zero treatment
+                  furnace</b><span>Cryogenic treatment of hardened steels.</span></a></li>
+          </ul>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BRAND: Novatec (dark section) -->
+  <!-- ============================================================ -->
+  <section class="brand-section" id="novatec">
+    <div class="container">
+      <!-- Brand intro -->
+      <div class="brand-intro fade-up">
+        <div>
+          <div class="brand-divider">
+            <img src="assets/logo-novatec 1.png" alt="Novatec S.r.l.">
+          </div>
+          <h2>Novatec S.r.l.</h2>
+          <p style="color:var(--gray-500); margin-bottom:0.5rem;">San Martino di Lupari (Padova), Italy</p>
+          <p>Italian maker of industrial ultrasonic cleaning systems since 1993, from multi-stage PLURITANK lines to
+            compact 2CRD machines, each built to the customer's parts and tested on real samples before shipping.</p>
+          <a href="https://novatec.it" target="_blank" rel="noopener" class="brand-intro__link">
+            Visit novatec.it
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+          <div class="brand-intro__stats">
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">1993</div>
+              <div class="brand-intro__stat-label">Founded</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value" data-count="2300+">0</div>
+              <div class="brand-intro__stat-label">Systems installed</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value" data-count="45+">0</div>
+              <div class="brand-intro__stat-label">Countries</div>
+            </div>
+          </div>
+        </div>
+        <div class="brand-intro__img">
+          <img src="assets/product-surfacefinishing.png" alt="Novatec ultrasonic cleaning system">
+        </div>
+      </div>
+
+      <p class="catlink"><a href="#" data-open-all>See all Novatec machines ↓</a></p>
+
+      <div class="families fade-up">
+        <details data-cat="PLURITANK multi-chamber lines">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/nov_main.jpg" alt="Novatec PLURITANK multi-chamber cleaning line"></span>
+            <div class="family-head">
+              <span class="family-count-badge">3 products</span>
+              <span class="t">PLURITANK multi-chamber lines<small>Modular lines up to 12 stages</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="PLURITANK multi-chamber lines"><b>PLURITANK ultrasonic cleaning line</b><span>Serial and
+                  large-format parts, up to 12 stages.</span></a></li>
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="PLURITANK multi-chamber lines"><b>PLURITANK pre-treatment line for PVD
+                  coating</b><span>Surface preparation before PVD, CVD and DLC.</span></a></li>
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="PLURITANK multi-chamber lines"><b>Cleanroom cleaning line</b><span>Low-particle cleaning
+                  for semiconductor and medical.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="2CRD single-chamber systems">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/crd_green.jpg" alt="Novatec 2CRD single-chamber precision cleaning system"></span>
+            <div class="family-head">
+              <span class="family-count-badge">1 product</span>
+              <span class="t">2CRD single-chamber systems<small>Vacuum cleaning with rotating basket, 8
+                  sizes</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="2CRD single-chamber systems"><b>2CRD vacuum precision cleaning system</b><span>Cleaning
+                  and vacuum drying in one chamber.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="Medical implant processing">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/nm_implants.jpg" alt="Orthopaedic implants cleaned on Novatec systems"></span>
+            <div class="family-head">
+              <span class="family-count-badge">4 products</span>
+              <span class="t">Medical implant processing<small>In-process cleaning, final cleaning, passivation and
+                  FPI</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="Medical implant processing"><b>IPC in-process cleaning</b><span>Cleaning implants between
+                  production steps.</span></a></li>
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="Medical implant processing"><b>FCS / FCPS final cleaning and passivation</b><span>Final
+                  cleaning, with optional passivation, into the cleanroom.</span></a></li>
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="Medical implant processing"><b>FPI fluorescent penetrant inspection
+                  line</b><span>Automated cleaning and crack detection.</span></a></li>
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="Medical implant processing"><b>Combined turnkey implant lines (URS)</b><span>Complete,
+                  automated implant cleaning plant.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="Ultrasonic components">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/nov_gen.jpg" alt="Novatec ultrasonic generators"></span>
+            <div class="family-head">
+              <span class="family-count-badge">2 products</span>
+              <span class="t">Ultrasonic components<small>Generators, transducers and PLT 60V</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="Ultrasonic components"><b>Ultrasonic generators and transducers</b><span>For building or
+                  upgrading cleaning tanks.</span></a></li>
+            <li><a href="#novatec" data-brand="Novatec" data-process="clean"
+                data-category="Ultrasonic components"><b>PLT 60V pressure-cycle unit</b><span>Pressure-change cleaning
+                  for internal channels.</span></a></li>
+          </ul>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BRAND: Huasheng (green section) -->
+  <!-- ============================================================ -->
+  <section class="brand-section" id="huasheng">
+    <div class="container">
+      <!-- Brand intro -->
+      <div class="brand-intro fade-up">
+        <div>
+          <div class="brand-divider">
+            <img src="assets/huasheng_logo_cropped.png" alt="Huasheng Nanotechnology" style="height:44px;">
+          </div>
+          <h2>Guangdong Huasheng Nanotechnology</h2>
+          <p style="color:var(--gray-500); margin-bottom:0.5rem;">Dongguan, China</p>
+          <p>Founded in 2012, Huasheng builds arc, HiPIMS, PECVD, ta-C and HFCVD coating equipment and complete turnkey
+            coating plants, mainly for cutting tools, moulds and precision parts.</p>
+          <a href="https://hscoat.com" target="_blank" rel="noopener" class="brand-intro__link">
+            Visit hscoat.com
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+          <div class="brand-intro__stats">
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">2012</div>
+              <div class="brand-intro__stat-label">Founded</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value" data-count="120+">0</div>
+              <div class="brand-intro__stat-label">Patents</div>
+            </div>
+            <div class="brand-intro__stat">
+              <div class="brand-intro__stat-value">30,000 m²</div>
+              <div class="brand-intro__stat-label">Manufacturing centre</div>
+            </div>
+          </div>
+        </div>
+        <div class="brand-intro__img">
+          <img src="assets/product-pvdcoating.png" alt="Huasheng PVD coating machine">
+        </div>
+      </div>
+
+      <p class="catlink"><a href="#" data-open-all>See all Huasheng machines ↓</a></p>
+
+      <div class="families fade-up">
+        <details data-cat="PVD coating equipment">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/hs_pvd.jpg" alt="Huasheng PVD coating machine"></span>
+            <div class="family-head">
+              <span class="family-count-badge">5 products</span>
+              <span class="t">PVD coating equipment<small>Arc, HiPIMS, hybrid and decorative</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="PVD coating equipment"><b>MD800 arc coating machine</b><span>High-rate arc coater for
+                  tool coating production.</span></a></li>
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="PVD coating equipment"><b>Arc coating equipment</b><span>Hard nitride coatings for
+                  cutting tools.</span></a></li>
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="PVD coating equipment"><b>HiPIMS coating equipment</b><span>Dense, smooth, droplet-free
+                  coatings.</span></a></li>
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="PVD coating equipment"><b>Hybrid coating equipment</b><span>Arc and sputtering in one
+                  chamber.</span></a></li>
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="PVD coating equipment"><b>Decorative coating equipment</b><span>Colour PVD
+                  finishes.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="DLC coating equipment">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/hs_dlc.jpg" alt="Huasheng DLC coating system"></span>
+            <div class="family-head">
+              <span class="family-count-badge">2 products</span>
+              <span class="t">DLC coating equipment<small>PECVD DLC and ta-C</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="DLC coating equipment"><b>PECVD DLC coating equipment</b><span>Low-friction coatings for
+                  components.</span></a></li>
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="DLC coating equipment"><b>ta-C coating equipment</b><span>Hydrogen-free carbon
+                  coatings.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="Diamond coating equipment">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/hs_diamond.jpg" alt="Huasheng diamond coating system"></span>
+            <div class="family-head">
+              <span class="family-count-badge">1 product</span>
+              <span class="t">Diamond coating equipment<small>HFCVD</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="Diamond coating equipment"><b>HFCVD diamond coating equipment</b><span>Diamond films on
+                  carbide tools.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="Optical coating equipment">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/hs_mc1000.jpg" alt="Huasheng MC1000 coating machine"></span>
+            <div class="family-head">
+              <span class="family-count-badge">2 products</span>
+              <span class="t">Optical coating equipment<small>Evaporation and magnetron sputtering</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="Optical coating equipment"><b>Evaporation optical coating
+                  equipment</b><span>Anti-reflection and filter coatings.</span></a></li>
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="Optical coating equipment"><b>Magnetron sputtering optical coating
+                  equipment</b><span>Precise multilayer optical films.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="CVD coating equipment">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/hs_ma1500.jpg" alt="Huasheng MA1500 coating machine"></span>
+            <div class="family-head">
+              <span class="family-count-badge">2 products</span>
+              <span class="t">CVD coating equipment<small>CVD and CVA aluminizing</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="CVD coating equipment"><b>CVD coating systems</b><span>Thick wear-resistant
+                  coatings.</span></a></li>
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="CVD coating equipment"><b>CVA aluminizing systems</b><span>Aluminide coatings for
+                  high-temperature parts.</span></a></li>
+          </ul>
+        </details>
+        <details data-cat="Turnkey coating solutions">
+          <summary>
+            <span class="family-thumb"><img src="assets/family-thumbs/turnkey.jpg" alt="Huasheng turnkey coating plant"></span>
+            <div class="family-head">
+              <span class="family-count-badge">1 product</span>
+              <span class="t">Turnkey coating solutions<small>Complete MD800 tool-coating plant</small></span>
+            </div>
+            <span class="ic">+</span>
+          </summary>
+          <ul class="models">
+            <li><a href="#huasheng" data-brand="Huasheng" data-process="coat"
+                data-category="Turnkey coating solutions"><b>MD800 turnkey coating centre</b><span>Complete plant for
+                  in-house tool coating.</span></a></li>
+          </ul>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Greets with Multi-Ring Graphic Icons -->
+  <section class="section section--green-tint section--pattern" id="why-greets">
+    <div class="container">
+      <div class="text-center mb-6 fade-up">
+        <span class="eyebrow">Local Commitment · Global Standards</span>
+        <h2>Why buy through Greets</h2>
+        <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">You get the manufacturer's
+          equipment with a team in India that stays with the machine after it arrives.</p>
+      </div>
+
+      <div class="service-grid stagger-children">
+        <!-- 1 Process selection -->
+        <div class="service-card-graphic hud-corner">
+          <div class="icon-box-multi-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14" />
+              <line x1="4" y1="10" x2="4" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12" y2="3" />
+              <line x1="20" y1="21" x2="20" y2="16" />
+              <line x1="20" y1="12" x2="20" y2="3" />
+              <line x1="1" y1="14" x2="7" y2="14" />
+              <line x1="9" y1="8" x2="15" y2="8" />
+              <line x1="17" y1="16" x2="23" y2="16" />
+            </svg>
+          </div>
+          <h4>Process selection</h4>
+          <p>We look at your parts, materials and volumes and recommend the right furnace, cleaning line or coating
+            system, or a combination.</p>
+        </div>
+
+        <!-- 2 Sample trials -->
+        <div class="service-card-graphic hud-corner">
+          <div class="icon-box-multi-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M9 3h6" />
+              <path d="M10 3v6.5L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9.5V3" />
+              <line x1="7" y1="15" x2="17" y2="15" />
+            </svg>
+          </div>
+          <h4>Sample trials</h4>
+          <p>We arrange trials on your own parts with the manufacturer before you commit, validating metallurgical
+            performance.</p>
+        </div>
+
+        <!-- 3 Import and documentation -->
+        <div class="service-card-graphic hud-corner">
+          <div class="icon-box-multi-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M16.5 9.4 7.5 4.21" />
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+              <line x1="12" y1="22.08" x2="12" y2="12" />
+            </svg>
+          </div>
+          <h4>Import and documentation</h4>
+          <p>Quotations in INR, shipping logistics, customs clearance, and statutory paperwork fully handled for you.
+          </p>
+        </div>
+
+        <!-- 4 Site preparation -->
+        <div class="service-card-graphic hud-corner">
+          <div class="icon-box-multi-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <h4>Site preparation</h4>
+          <p>Guidance on electrical power, cooling water circuits, compressed air, gases, and foundation layout before
+            equipment lands.</p>
+        </div>
+
+        <!-- 5 Installation and training -->
+        <div class="service-card-graphic hud-corner">
+          <div class="icon-box-multi-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
+          </div>
+          <h4>Installation and training</h4>
+          <p>Commissioning alongside the manufacturer's senior engineers and in-depth, hands-on training for your
+            operating team.</p>
+        </div>
+
+        <!-- 6 Service and spares -->
+        <div class="service-card-graphic hud-corner">
+          <div class="icon-box-multi-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="4" />
+              <line x1="4.93" y1="4.93" x2="9.17" y2="9.17" />
+              <line x1="14.83" y1="14.83" x2="19.07" y2="19.07" />
+              <line x1="14.83" y1="9.17" x2="19.07" y2="4.93" />
+              <line x1="4.93" y1="19.07" x2="9.17" y2="14.83" />
+            </svg>
+          </div>
+          <h4>Service and spares</h4>
+          <p>Local service support based out of Bangalore and planned spare parts stocking so your line downtime stays
+            near zero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talk to Greets: real contact section embedded on the home page -->
+  <section class="section section--light" id="contact">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <span class="eyebrow">Talk to Greets</span>
+        <h2>Tell us about the part and the process</h2>
+        <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">We reply with a recommended
+          system and next steps.</p>
+      </div>
+
+      <div class="contact-main fade-up">
+        <div class="contact-sidebar">
+          <div class="contact-sidebar__card">
+            <h3>Greets Equipment Pvt. Ltd.</h3>
+            <p>Your authorized partner in India for BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD
+              coating systems.</p>
+
+            <div class="contact-team">
+              <div class="contact-team__person">
+                <div class="contact-team__avatar">PK</div>
+                <div>
+                  <div class="contact-team__name">Mr. Pramod Kanse</div>
+                  <div class="contact-team__phone"><a href="tel:+919823386558">+91 98233 86558</a></div>
+                </div>
+              </div>
+              <div class="contact-team__person">
+                <div class="contact-team__avatar">MA</div>
+                <div>
+                  <div class="contact-team__name">Mr. Manoj Agrawal</div>
+                  <div class="contact-team__phone"><a href="tel:+919429875547">+91 94298 75547</a></div>
+                </div>
+              </div>
+              <div class="contact-team__person">
+                <div class="contact-team__avatar">PC</div>
+                <div>
+                  <div class="contact-team__name">Ms. Pahal Chawla</div>
+                  <div class="contact-team__phone"><a href="tel:+919871408194">+91 98714 08194</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-sidebar__address">
+              <p>
+                #384, Second Floor,<br>
+                9th Main Road, Sector 7, HSR Layout,<br>
+                Bangalore, India 560102
+              </p>
+              <p style="margin-top:0.75rem;">
+                <a href="mailto:enquiry-equipment@greets.co.in">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-right:4px;">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  enquiry-equipment@greets.co.in
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-chips">
+            <a href="tel:+919823386558" class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Call us
+            </a>
+            <a href="mailto:enquiry-equipment@greets.co.in" class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Email us
+            </a>
+            <a href="products.html" class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+              Browse products
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card hud-corner">
+          <h3>Send an enquiry</h3>
+          <p>Fill in the details below. Sending opens your email app with everything filled in, addressed to our team.
+          </p>
+
+          <form id="enquiry-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-field">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Company name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="process">Process</label>
+                <select id="process" name="process">
+                  <option value="Not sure yet">Not sure yet</option>
+                  <option value="Vacuum heat treatment (BMI)">Vacuum heat treatment (BMI)</option>
+                  <option value="Ultrasonic cleaning (Novatec)">Ultrasonic cleaning (Novatec)</option>
+                  <option value="PVD, DLC, diamond coating (Huasheng)">PVD, DLC, diamond coating (Huasheng)</option>
+                  <option value="Complete line">Complete line</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Your city">
+              </div>
+            </div>
+
+            <div class="form-row form-row--single">
+              <div class="form-field">
+                <label for="details">Parts, material and volumes</label>
+                <textarea id="details" name="details"
+                  placeholder="For example: HSS and carbide end mills, 2,000 pieces a month, need AlTiN coating"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg"
+              style="width:100%; justify-content:center; margin-top:0.5rem;">
+              Send enquiry
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+
+            <div class="form-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="16" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12.01" y2="8" />
+              </svg>
+              Sending opens your email app with the details filled in, addressed to enquiry-equipment@greets.co.in.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:32px;">
+          <p>Authorised dealer in India for Novatec, Huasheng and BMI.</p>
+          <p style="margin-top:0.5rem; font-size:0.82rem;">BMI vacuum furnaces · Novatec ultrasonic cleaning · Huasheng
+            coating equipment</p>
+        </div>
+        <div class="footer__col">
+          <h5>Products</h5>
+          <a href="#bmi">BMI Furnaces</a>
+          <a href="#novatec">Novatec Cleaning</a>
+          <a href="#huasheng">Huasheng Coating</a>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="industries.html">Industries</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <a href="mailto:enquiry-equipment@greets.co.in">enquiry-equipment@greets.co.in</a>
+          <a href="tel:+919823386558">+91 98233 86558</a>
+          <p style="font-size:0.82rem; margin-top:0.5rem; color:var(--gray-500);">HSR Layout, Bangalore 560102</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Greets Equipment Pvt. Ltd. All rights reserved.</span>
+        <span>Brand names and logos belong to their respective owners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+  <script>
+    (function () {
+      var resultsEl = document.getElementById('finder-results');
+      if (!resultsEl) return;
+
+      var modelLinks = Array.prototype.slice.call(document.querySelectorAll('.families .models li a[data-brand]'));
+      var items = modelLinks.map(function (a) {
+        return {
+          name: a.querySelector('b').textContent,
+          sub: a.querySelector('span').textContent,
+          brand: a.dataset.brand,
+          process: a.dataset.process,
+          category: a.dataset.category,
+          href: a.getAttribute('href')
+        };
+      });
+
+      // Populate the category <select> from the data actually present
+      var categorySelect = document.getElementById('finder-category');
+      var seenCats = [];
+      items.forEach(function (it) {
+        if (seenCats.indexOf(it.category) === -1) seenCats.push(it.category);
+      });
+      seenCats.forEach(function (cat) {
+        var opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat;
+        categorySelect.appendChild(opt);
+      });
+
+      // Approximate industry -> relevant brands (matches the tags shown under each industry card)
+      var industryBrands = {
+        tools: ['BMI', 'Novatec', 'Huasheng'],
+        jobshop: ['BMI', 'Novatec', 'Huasheng'],
+        dies: ['BMI', 'Novatec', 'Huasheng'],
+        steel: ['BMI', 'Novatec'],
+        power: ['BMI', 'Novatec', 'Huasheng'],
+        oilgas: ['BMI', 'Novatec', 'Huasheng'],
+        auto: ['BMI', 'Novatec', 'Huasheng'],
+        aero: ['BMI', 'Novatec', 'Huasheng'],
+        medical: ['BMI', 'Novatec', 'Huasheng'],
+        semi: ['Novatec', 'Huasheng'],
+        optics: ['Novatec', 'Huasheng'],
+        watch: ['Novatec', 'Huasheng']
+      };
+
+      var qInput = document.getElementById('finder-q');
+      var brandBar = document.getElementById('finder-brand');
+      var processBar = document.getElementById('finder-process');
+      var industrySelect = document.getElementById('finder-industry');
+      var countEl = document.getElementById('finder-count');
+
+      var state = { q: '', brand: 'all', process: 'all', industry: '', category: '' };
+
+      function render() {
+        var q = state.q.toLowerCase().trim();
+        var filtered = items.filter(function (it) {
+          if (state.brand !== 'all' && it.brand !== state.brand) return false;
+          if (state.process !== 'all' && it.process !== state.process) return false;
+          if (state.category && it.category !== state.category) return false;
+          if (state.industry) {
+            var allowed = industryBrands[state.industry] || [];
+            if (allowed.indexOf(it.brand) === -1) return false;
+          }
+          if (q && (it.name + ' ' + it.sub + ' ' + it.category).toLowerCase().indexOf(q) === -1) return false;
+          return true;
+        });
+
+        countEl.textContent = filtered.length + (filtered.length === 1 ? ' system' : ' systems');
+
+        if (!filtered.length) {
+          resultsEl.innerHTML = '<div class="finder-empty">No systems match that search. Try a different term or clear the filters.</div>';
+          return;
+        }
+
+        resultsEl.innerHTML = filtered.map(function (it) {
+          return '<a class="finder-result" href="' + it.href + '">' +
+            '<span><span class="finder-result__name">' + it.name + '</span>' +
+            '<span class="finder-result__sub">' + it.sub + '</span></span>' +
+            '<span class="finder-result__meta">' + it.category + '<span class="finder-result__brand">' + it.brand + '</span></span>' +
+            '<span class="finder-result__arrow">›</span></a>';
+        }).join('');
+      }
+
+      if (qInput) qInput.addEventListener('input', function (e) { state.q = e.target.value; render(); });
+
+      document.querySelectorAll('.finder-qchip').forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          state.q = chip.dataset.q;
+          if (qInput) qInput.value = state.q;
+          render();
+        });
+      });
+
+      if (brandBar) brandBar.querySelectorAll('.filter-chip').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          brandBar.querySelectorAll('.filter-chip').forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          state.brand = btn.dataset.brand;
+          render();
+        });
+      });
+
+      if (processBar) processBar.querySelectorAll('.filter-chip').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          processBar.querySelectorAll('.filter-chip').forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          state.process = btn.dataset.process;
+          render();
+        });
+      });
+
+      if (industrySelect) industrySelect.addEventListener('change', function (e) { state.industry = e.target.value; render(); });
+      if (categorySelect) categorySelect.addEventListener('change', function (e) { state.category = e.target.value; render(); });
+
+      // "See all X machines" opens every accordion in that brand section
+      document.querySelectorAll('[data-open-all]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          var section = link.closest('.brand-section');
+          if (!section) return;
+          section.querySelectorAll('.families details').forEach(function (d) { d.open = true; });
+          section.querySelector('.families').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+      render();
+    })();
+  </script>
+</body>
+
+</html>

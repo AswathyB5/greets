@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries | Greets Equipment – Vacuum Furnaces, Ultrasonic Cleaning, PVD Coating in India</title>
+  <meta name="description" content="Greets Equipment serves 12 industries with vacuum furnaces, ultrasonic cleaning and PVD coating systems — from aerospace and automotive to medical implants and optics.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Industries page-specific */
+    .industry-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-top: 3rem;
+    }
+    .industry-feature {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0;
+      min-height: 380px;
+      display: flex;
+      align-items: flex-end;
+      padding: 2.5rem;
+      transition: all var(--duration) var(--ease-out);
+    }
+    .industry-feature:first-child { border-radius: var(--radius-lg) 0 0 var(--radius-lg); }
+    .industry-feature:last-child { border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
+    .industry-feature img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease-out);
+    }
+    .industry-feature:hover img { transform: scale(1.05); }
+    .industry-feature::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,10,10,.85) 0%, rgba(10,10,10,.2) 60%, transparent 100%);
+    }
+    .industry-feature__content { position: relative; z-index: 1; }
+    .industry-feature__content h3 { color: var(--white); font-size: 1.4rem; margin-bottom: 0.35rem; }
+    .industry-feature__content p { color: var(--gray-300); font-size: 0.88rem; }
+
+    /* Full industry list with alternating bg */
+    .industry-full-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .industry-row {
+      display: grid;
+      grid-template-columns: 60px 1fr auto;
+      gap: 2rem;
+      align-items: center;
+      padding: 2rem 2.5rem;
+      border-bottom: 1px solid var(--gray-100);
+      transition: all var(--duration) var(--ease-out);
+      cursor: default;
+    }
+    .industry-row:nth-child(odd) { background: var(--gray-50); }
+    .industry-row:hover { background: var(--green-50); }
+    .industry-row__num {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gray-200);
+      transition: color var(--duration) var(--ease-out);
+    }
+    .industry-row:hover .industry-row__num { color: var(--green-400); }
+    .industry-row h4 { font-size: 1.05rem; margin-bottom: 0.25rem; }
+    .industry-row p { font-size: 0.85rem; color: var(--gray-500); }
+    .industry-row__arrow {
+      color: var(--gray-200);
+      transition: all var(--duration) var(--ease-out);
+    }
+    .industry-row:hover .industry-row__arrow {
+      color: var(--green-500);
+      transform: translateX(4px);
+    }
+
+    /* Showcase section — large image + overlay text */
+    .industry-showcase {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+    }
+    .industry-showcase img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .industry-showcase::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(10,10,10,.8) 0%, rgba(6,78,32,.4) 100%);
+    }
+    .industry-showcase__content {
+      position: relative; z-index: 1;
+      padding: clamp(2rem, 5vw, 4rem);
+      max-width: 600px;
+    }
+    .industry-showcase__content h3 { color: var(--white); margin-bottom: 0.75rem; }
+    .industry-showcase__content p { color: var(--gray-300); font-size: 1rem; line-height: 1.7; }
+
+    @media (max-width: 768px) {
+      .industry-hero-grid { grid-template-columns: 1fr; }
+      .industry-feature:first-child,
+      .industry-feature:last-child { border-radius: var(--radius-lg); }
+      .industry-feature { min-height: 260px; }
+      .industry-row { grid-template-columns: 40px 1fr; gap: 1rem; padding: 1.25rem 1rem; }
+      .industry-row__arrow { display: none; }
+    }
+  </style>
+</head>
+<body class="page-enter">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo"><img src="assets/logo-greets.png" alt="Greets Equipment"></a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="industries.html" class="active">Industries</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header__cta">
+        <a href="contact.html" class="header__enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <button class="header__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="industries.html" class="active">Industries</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn--primary">Enquire</a>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__content fade-up">
+        <span class="eyebrow">Industries</span>
+        <h1>Industries we serve</h1>
+        <p>Choose an industry to see the systems that apply to it. From cutting tools to medical implants, our three partner brands cover the surface-engineering needs of every sector.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured industries — large image cards -->
+  <section class="section">
+    <div class="container">
+      <div class="industry-hero-grid fade-up">
+        <div class="industry-feature">
+          <img src="assets/aerospace.webp" alt="Aerospace and defence">
+          <div class="industry-feature__content">
+            <h3>Aerospace and defence</h3>
+            <p>Turbine parts, brazed assemblies, weapon and vehicle components.</p>
+          </div>
+        </div>
+        <div class="industry-feature">
+          <img src="assets/medical.webp" alt="Medical devices and implants">
+          <div class="industry-feature__content">
+            <h3>Medical devices and implants</h3>
+            <p>Orthopaedic implants, surgical instruments, cleanroom final cleaning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full industry list with rich photographic cards -->
+  <section class="section section--dark pt-0">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <span class="eyebrow">Comprehensive Coverage</span>
+        <h2>Twelve Industries, Three Integrated Technologies</h2>
+        <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem;">Every industry has specialized metallurgical requirements. See our equipment pairings below.</p>
+      </div>
+
+      <div class="industry-visual-grid stagger-children">
+        
+        <!-- 01 Cutting & gear tools -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/blog-pvd coating.webp" alt="Cutting and gear cutting tools">
+            <span class="industry-card-visual__badge">01 · Tooling</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Cutting & Gear Cutting Tools</h4>
+            <p>Hobs, shaper cutters, gear cutting tools, indexable inserts, drills and solid carbide end mills.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">BMI Furnaces</span>
+              <span class="industry-tag-pill">Novatec Clean</span>
+              <span class="industry-tag-pill">Huasheng PVD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 PVD coating service providers -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/blog-DLC coating.webp" alt="PVD coating service providers">
+            <span class="industry-card-visual__badge">02 · Job Shops</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>PVD Coating Service Providers</h4>
+            <p>High-throughput commercial coating job shops and captive in-house coating centres requiring versatile recipes.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">Huasheng Arc PVD</span>
+              <span class="industry-tag-pill">PECVD DLC</span>
+              <span class="industry-tag-pill">Multi-Stage Ultrasonic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 Dies and moulds -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/blog-precision.webp" alt="Dies and mould manufacturers">
+            <span class="industry-card-visual__badge">03 · Tool & Die</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Dies & Mould Manufacturers</h4>
+            <p>Press tools, hot forging dies, high-pressure die-casting and precision plastic injection moulds.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">BMI Hardening</span>
+              <span class="industry-tag-pill">Huasheng CrN/TiAlN</span>
+              <span class="industry-tag-pill">Die Degreasing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 Steel and metal processing -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/thermal.png" alt="Steel and metal processing">
+            <span class="industry-card-visual__badge">04 · Metallurgy</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Steel & Metal Processing</h4>
+            <p>Commercial heat treaters, specialty steel, titanium, nickel alloy processors and open-die forging plants.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">BMI 10-Bar Gas Quench</span>
+              <span class="industry-tag-pill">Vacuum Sintering</span>
+              <span class="industry-tag-pill">Annealing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 Power: wind, solar and thermal -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/urbain-blade.webp" alt="Power: wind, solar and thermal">
+            <span class="industry-card-visual__badge">05 · Energy</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Power: Wind, Solar & Thermal</h4>
+            <p>Heavy megawatt wind gearbox parts, steam/gas turbine blades, drive shafts and large bearing assemblies.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">BMI Vacuum Brazing</span>
+              <span class="industry-tag-pill">Novatec Heavy Wash</span>
+              <span class="industry-tag-pill">Carburizing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 Oil and gas -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/general-manufacturing.webp" alt="Oil and gas components">
+            <span class="industry-card-visual__badge">06 · Heavy Duty</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Oil & Gas Equipment</h4>
+            <p>Subsea valves, multi-phase pumps, downhole drilling tools, drill bits and high-wear corrosive environment parts.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">Thick DLC Coatings</span>
+              <span class="industry-tag-pill">Vacuum Hardening</span>
+              <span class="industry-tag-pill">Deep Cavity Clean</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 07 Automotive -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/automative.webp" alt="Automotive manufacturing">
+            <span class="industry-card-visual__badge">07 · Automotive</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Automotive & E-Mobility</h4>
+            <p>Gears, synchronizer rings, transmission shafts, fuel injection, turbocharger rotors and EV drive components.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">Low-Distortion Carburizing</span>
+              <span class="industry-tag-pill">Novatec Precision Wash</span>
+              <span class="industry-tag-pill">DLC Pin Coating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 08 Aerospace and defence -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/aerospace.webp" alt="Aerospace and defence">
+            <span class="industry-card-visual__badge">08 · Aerospace</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Aerospace & Defence</h4>
+            <p>Aero-engine turbine disks, high-temperature brazed honeycombs, landing gear actuators and ordnance components.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">AMS 2750 Compliant</span>
+              <span class="industry-tag-pill">Nadcap Standards</span>
+              <span class="industry-tag-pill">Precision Brazing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 09 Medical devices and implants -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/medical.webp" alt="Medical devices and implants">
+            <span class="industry-card-visual__badge">09 · Medical</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Medical Devices & Implants</h4>
+            <p>Orthopaedic joint implants, titanium bone screws, dental fixtures and sterile surgical instruments.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">ISO 13485 Cleanroom</span>
+              <span class="industry-tag-pill">Biocompatible PVD</span>
+              <span class="industry-tag-pill">Sintering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 Semiconductor and electronics -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/electronics.webp" alt="Semiconductor and electronics">
+            <span class="industry-card-visual__badge">10 · High-Tech</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Semiconductor & Electronics</h4>
+            <p>Etch/CVD chamber parts, ceramic chucks, lead frames, leaded connectors and sub-micron wafer handling tools.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">Sub-Micron Ultrasonic</span>
+              <span class="industry-tag-pill">Vacuum De-gas</span>
+              <span class="industry-tag-pill">Specialty PVD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 Optics and eyewear -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/blog-ultrasonic.webp" alt="Optics and eyewear">
+            <span class="industry-card-visual__badge">11 · Optics</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Optics & Eyewear</h4>
+            <p>Precision glass & polymer lenses, optical prisms, laser mirrors and premium spectacle frame coatings.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">Novatec Lens Wash</span>
+              <span class="industry-tag-pill">Zero-Residue Drying</span>
+              <span class="industry-tag-pill">Anti-Reflective</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 Watches, jewellery and decorative -->
+        <div class="industry-card-visual hud-corner">
+          <div class="industry-card-visual__img">
+            <img src="assets/featured-industry.webp" alt="Watches, jewellery and decorative">
+            <span class="industry-card-visual__badge">12 · Decorative</span>
+          </div>
+          <div class="industry-card-visual__body">
+            <h4>Watches, Jewellery & Decorative</h4>
+            <p>Luxury watch cases, metallic bracelet bands, door fittings, sanitary hardware and scratch-resistant black/gold finishes.</p>
+            <div class="industry-card-visual__tags">
+              <span class="industry-tag-pill">Huasheng Gold/Rose PVD</span>
+              <span class="industry-tag-pill">Deep Black DLC</span>
+              <span class="industry-tag-pill">Mirror Polish Clean</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Automotive -->
+  <section class="section" style="padding-bottom:0;">
+    <div class="container fade-up">
+      <div class="industry-showcase">
+        <img src="assets/automative.webp" alt="Automotive components">
+        <div class="industry-showcase__content">
+          <span class="eyebrow">Featured</span>
+          <h3>Automotive manufacturing</h3>
+          <p>From transmission gears and engine components to EV parts, we equip automotive plants with vacuum heat treatment, precision cleaning and advanced PVD coatings for extended tool and component life.</p>
+          <a href="products.html" class="btn btn--white mt-3">
+            View systems for automotive
+            <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grand CTA Masterpiece -->
+  <section class="cta-masterpiece" id="cta">
+    <div class="container">
+      <div class="cta-masterpiece__grid">
+        
+        <div class="fade-up">
+          <div class="cta-badge">
+            <span class="dot"></span>
+            Cross-Sector Process Engineering · 4-Hour Response SLA
+          </div>
+          <h2>Not sure which system fits your <br><span class="text-gradient-green">exact industry spec?</span></h2>
+          <p class="lead">Tell us about your part geometry, alloy, and required cycle times. Our metallurgical engineers recommend the right furnace, cleaning line, or PVD coating system with guaranteed trial validation.</p>
+
+          <div class="cta-benefits-list">
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Free metallurgical process audit and feasibility evaluation</span>
+            </div>
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Pre-order trial runs on your own parts at French & Italian OEM labs</span>
+            </div>
+            <div class="cta-benefit-item">
+              <div class="cta-benefit-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Turnkey delivery, INR customs clearance, and local Bangalore spares support</span>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn--white btn--lg">
+              Talk to Greets Engineers
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="products.html" class="btn btn--outline btn--lg" style="border-color:rgba(255,255,255,.3); color:var(--white);">
+              Browse 45+ Systems
+            </a>
+          </div>
+        </div>
+
+        <div class="cta-interactive-card hud-corner fade-up">
+          <h3>Direct Contact Desk</h3>
+          <p>Reach out directly to our leadership and process engineering team:</p>
+
+          <div class="cta-contact-chips">
+            <a href="tel:+919823386558" class="cta-contact-chip">
+              <div class="cta-chip-avatar">PK</div>
+              <div class="cta-chip-text">
+                <strong>Mr. Pramod Kanse</strong>
+                <span>+91 98233 86558 · Vacuum Heat Treatment</span>
+              </div>
+            </a>
+            <a href="tel:+919429875547" class="cta-contact-chip">
+              <div class="cta-chip-avatar">MA</div>
+              <div class="cta-chip-text">
+                <strong>Mr. Manoj Agrawal</strong>
+                <span>+91 94298 75547 · Ultrasonic Cleaning</span>
+              </div>
+            </a>
+            <a href="tel:+919871408194" class="cta-contact-chip">
+              <div class="cta-chip-avatar">PC</div>
+              <div class="cta-chip-text">
+                <strong>Ms. Pahal Chawla</strong>
+                <span>+91 98714 08194 · PVD & DLC Coating</span>
+              </div>
+            </a>
+          </div>
+
+          <a href="mailto:enquiry-equipment@greets.co.in" class="btn btn--primary" style="margin-bottom:0.75rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            enquiry-equipment@greets.co.in
+          </a>
+          <div style="font-size:0.75rem; color:#86efac; text-align:center;">
+            HSR Layout, Bangalore 560102 · Operating Nationwide
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:32px; filter:brightness(10);">
+          <p>Authorised dealer in India for Novatec, Huasheng and BMI.</p>
+          <p style="margin-top:0.5rem; font-size:0.82rem;">BMI vacuum furnaces · Novatec ultrasonic cleaning · Huasheng coating equipment</p>
+        </div>
+        <div class="footer__col">
+          <h5>Products</h5>
+          <a href="products.html#bmi">BMI Furnaces</a>
+          <a href="products.html#novatec">Novatec Cleaning</a>
+          <a href="products.html#huasheng">Huasheng Coating</a>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="industries.html">Industries</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <a href="mailto:enquiry-equipment@greets.co.in">enquiry-equipment@greets.co.in</a>
+          <a href="tel:+919823386558">+91 98233 86558</a>
+          <p style="font-size:0.82rem; margin-top:0.5rem; color:var(--gray-500);">HSR Layout, Bangalore 560102</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Greets Equipment Pvt. Ltd. All rights reserved.</span>
+        <span>Brand names and logos belong to their respective owners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
