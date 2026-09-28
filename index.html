@@ -1222,7 +1222,7 @@
       border: 1px solid var(--line);
       border-radius: var(--radius-xl, 20px);
       box-shadow: 0 10px 28px -18px rgba(27, 35, 40, 0.18);
-      padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem);
+      /* padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem); */
     }
 
     @media (max-width: 640px) {
@@ -1239,33 +1239,25 @@
     }
 
     .brand-divider img {
-      height: 48px !important;
-      max-height: 48px !important;
-      max-width: 210px;
+      height: 62px !important;
+      max-height: 62px !important;
+      max-width: 320px;
       width: auto !important;
       object-fit: contain !important;
       display: block !important;
     }
 
-    /* The three source files have very different aspect ratios — BMI is a
-       1.41:1 stacked lockup (emblem + wordmark + tagline), Novatec is a
-       3.85:1 single-line wordmark, Huasheng is a 1.95:1 stacked lockup.
-       One box height for all three makes their wordmarks read at very
-       different sizes, so each brand gets a height that brings its visible
-       wordmark to roughly the same optical size (~18px cap height). */
-    #bmi .brand-divider img {
-      height: 42px !important;
-      max-height: 42px !important;
-    }
-
-    #novatec .brand-divider img {
-      height: 30px !important;
-      max-height: 30px !important;
-    }
-
+    /* All three brand sections share one logo box height so the headers
+       read at a consistent size. The sources differ in aspect ratio
+       (BMI 1.41:1 stacked, Novatec 3.85:1 wordmark, Huasheng 1.95:1
+       stacked), so max-width is generous enough that the wide Novatec
+       lockup is not scaled back down and breaks the match. */
+    #bmi .brand-divider img,
+    #novatec .brand-divider img,
     #huasheng .brand-divider img {
       height: 62px !important;
       max-height: 62px !important;
+      max-width: 320px;
     }
 
     .brand-divider::after {
@@ -2345,7 +2337,7 @@
           <div class="partner-card-light__img">
             <img src="assets/catalog/b8t.jpg" alt="BMI Vacuum Furnace">
             <div class="partner-card-light__flag-badge">
-              <span>🇫🇷</span> France · BMI
+               France · BMI
             </div>
           </div>
           <div class="partner-card-light__body">
@@ -2372,7 +2364,7 @@
           <div class="partner-card-light__img">
             <img src="assets/catalog/nov_main.jpg" alt="Novatec Ultrasonic Cleaning System">
             <div class="partner-card-light__flag-badge">
-              <span>🇮🇹</span> Italy · Novatec
+               Italy · Novatec
             </div>
           </div>
           <div class="partner-card-light__body">
@@ -2399,7 +2391,7 @@
           <div class="partner-card-light__img">
             <img src="assets/catalog/hs_pvd.jpg" alt="Huasheng PVD Coating System">
             <div class="partner-card-light__flag-badge">
-              <span>🇨🇳</span> China · Huasheng
+               China · Huasheng
             </div>
           </div>
           <div class="partner-card-light__body">
@@ -3078,7 +3070,7 @@
       <div class="brand-intro fade-up">
         <div>
           <div class="brand-divider">
-            <img src="assets/logos/huasheng.jpg" alt="Huasheng Nanotechnology" style="height:44px;">
+            <img src="assets/logos/huasheng.jpg" alt="Huasheng Nanotechnology">
           </div>
           <h2>Guangdong Huasheng Nanotechnology, Dongguan, China</h2>
           <p>Founded in 2012, Huasheng builds arc, HiPIMS, PECVD, ta-C and HFCVD coating equipment and complete turnkey
