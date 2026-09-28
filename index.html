@@ -1239,25 +1239,36 @@
     }
 
     .brand-divider img {
-      height: 62px !important;
-      max-height: 62px !important;
-      max-width: 320px;
+      height: auto !important;
+      max-height: 72px !important;
+      max-width: 150px;
       width: auto !important;
       object-fit: contain !important;
       display: block !important;
     }
 
-    /* All three brand sections share one logo box height so the headers
-       read at a consistent size. The sources differ in aspect ratio
-       (BMI 1.41:1 stacked, Novatec 3.85:1 wordmark, Huasheng 1.95:1
-       stacked), so max-width is generous enough that the wide Novatec
-       lockup is not scaled back down and breaks the match. */
-    #bmi .brand-divider img,
-    #novatec .brand-divider img,
+    /* The three sources have very different aspect ratios: BMI is a
+       332x236 stacked lockup (1:0.71), Novatec an 908x236 single-line
+       wordmark (1:0.26), Huasheng a 246x126 stacked lockup (1:0.51).
+       A shared box height therefore reads as one huge logo and two small
+       ones. These sizes equalize visual *area* (width x height) instead,
+       so all three carry the same presence in the divider row. */
+    #bmi .brand-divider img {
+      height: 60px !important;
+      max-height: 60px !important;
+      max-width: 200px;
+    }
+
+    #novatec .brand-divider img {
+      height: 44px !important;
+      max-height: 44px !important;
+      max-width: 240px;
+    }
+
     #huasheng .brand-divider img {
-      height: 62px !important;
-      max-height: 62px !important;
-      max-width: 320px;
+      height: 51px !important;
+      max-height: 51px !important;
+      max-width: 200px;
     }
 
     .brand-divider::after {
