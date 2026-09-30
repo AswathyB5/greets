@@ -129,9 +129,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.querySelector('#enquiry-form');
   if (contactForm) {
     // FormSubmit relays the POST server-side and emails it to the address in
-    // the URL, so a visitor without a mail client still reaches us. The first
-    // submission from a new address needs the activation link that arrives at
-    // the destination mailbox; after that it delivers silently.
+    // the URL, so a visitor without a mail client still reaches us. A new
+    // destination address has to be activated once from the link FormSubmit
+    // sends to that mailbox; until then the service answers 500.
     const ENQUIRY_ENDPOINT = 'https://formsubmit.co/ajax/aswathybcontact@gmail.com';
     const statusEl = document.querySelector('#enquiry-status');
     const submitBtn = contactForm.querySelector('button[type="submit"]');
@@ -143,6 +143,50 @@ document.addEventListener('DOMContentLoaded', () => {
       statusEl.className = 'form-status form-status--' + kind;
       statusEl.hidden = false;
     };
+
+    // A failed send must not cost the visitor their enquiry, so the details
+    // they typed stay on screen and selectable, with the phone number and the
+    // office email offered as a way through.
+    const showFallback = (reason) => {
+      if (!statusEl) return;
+      statusEl.className = 'form-status form-status--error';
+
+      const intro = document.createElement('div');
+      intro.textContent = 'We could not send that automatically. Your details are below — ' +
+        'please copy them, email them to enquiry-equipment@greets.co.in, or call the Bangalore office.';
+      statusEl.appendChild(intro);
+
+      const copy = document.createElement('pre');
+      copy.className = 'form-status__data';
+      copy.textContent = lastSubmission;
+      statusEl.appendChild(copy);
+
+      const actions = document.createElement('div');
+      actions.className = 'form-status__actions';
+
+      const mail = document.createElement('a');
+      mail.href = 'mailto:enquiry-equipment@greets.co.in';
+      mail.textContent = 'Email the office';
+      actions.appendChild(mail);
+
+      const call = document.createElement('a');
+      call.href = 'tel:+918000000000';
+      call.textContent = 'Call the office';
+      actions.appendChild(call);
+
+      const retry = document.createElement('button');
+      retry.type = 'button';
+      retry.className = 'form-status__retry';
+      retry.textContent = 'Try sending again';
+      retry.addEventListener('click', () => contactForm.requestSubmit());
+      actions.appendChild(retry);
+
+      statusEl.appendChild(actions);
+      statusEl.hidden = false;
+      if (reason) console.warn('[enquiry] send failed:', reason);
+    };
+
+    let lastSubmission = '';
 
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -163,18 +207,31 @@ document.addEventListener('DOMContentLoaded', () => {
       const get = (k) => String(data.get(k) || '').trim();
       const name = get('name');
 
-      const payload = new URLSearchParams();
-      payload.set('name', name);
-      payload.set('company', get('company'));
-      payload.set('email', get('email'));
-      payload.set('phone', get('phone'));
-      payload.set('process', get('process'));
-      payload.set('city', get('city'));
-      payload.set('details', get('details'));
-      payload.set('_subject', 'Website enquiry' + (name ? ' from ' + name : ''));
-      payload.set('_template', 'table');
-      // Replied-to goes to the visitor so a reply from the mailbox reaches them.
-      payload.set('_replyto', get('email'));
+      const payload = {
+        name: name,
+        company: get('company'),
+        email: get('email'),
+        phone: get('phone'),
+        process: get('process'),
+        city: get('city'),
+        details: get('details'),
+        _subject: 'Website enquiry' + (name ? ' from ' + name : ''),
+        _template: 'table',
+        // Replied-to goes to the visitor so a reply from the mailbox reaches them.
+        _replyto: get('email')
+      };
+
+      lastSubmission = [
+        'Name: ' + payload.name,
+        'Company: ' + payload.company,
+        'Email: ' + payload.email,
+        'Phone: ' + payload.phone,
+        'Process: ' + payload.process,
+        'City: ' + payload.city,
+        '',
+        'Parts, material and volumes:',
+        payload.details
+      ].join('\n');
 
       contactForm.setAttribute('data-busy', '');
       if (btnLabel) btnLabel.textContent = 'Sending…';
@@ -187,10 +244,18 @@ document.addEventListener('DOMContentLoaded', () => {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
-          body: JSON.stringify(Object.fromEntries(payload))
+          body: JSON.stringify(payload)
         });
 
-        if (!res.ok) throw new Error('HTTP ' + res.status);
+        if (!res.ok) {
+          // 5xx from the relay is its usual answer for an address that has not
+          // been activated yet, which only the site owner can fix.
+          throw new Error(
+            res.status >= 500
+              ? 'the form relay returned ' + res.status + ' (the destination address may still need activating)'
+              : 'the form relay rejected the enquiry with ' + res.status
+          );
+        }
 
         setStatus(
           'Thanks' + (name ? ', ' + name : '') + ' — your enquiry has reached our Bangalore office. ' +
@@ -199,11 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
         contactForm.reset();
       } catch (err) {
-        setStatus(
-          'We could not send that just now. Please email enquiry-equipment@greets.co.in ' +
-          'or call the Bangalore office and we will pick it up.',
-          'error'
-        );
+        showFallback(err && err.message ? err.message : 'network error');
       } finally {
         contactForm.removeAttribute('data-busy');
         if (btnLabel) btnLabel.textContent = 'Send enquiry';
