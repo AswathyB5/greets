@@ -125,14 +125,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* — Enquiry form: posts to the form-to-email endpoint — */
+  /* — Enquiry form: posts to a form-to-email relay — */
   const contactForm = document.querySelector('#enquiry-form');
   if (contactForm) {
-    // FormSubmit relays the POST server-side and emails it to the address in
-    // the URL, so a visitor without a mail client still reaches us. A new
-    // destination address has to be activated once from the link FormSubmit
-    // sends to that mailbox; until then the service answers 500.
-    const ENQUIRY_ENDPOINT = 'https://formsubmit.co/ajax/aswathybcontact@gmail.com';
+    // The enquiry is posted to a form-to-email relay, which runs on someone
+    // else's server and emails it to the destination in the URL. The visitor's
+    // browser is not involved beyond the POST, so this works on a phone with no
+    // mail client configured, which a mailto: link cannot do.
+    //
+    // The destination is the company address already published in the contact
+    // sidebar and footer, so nothing new is exposed in the page source.
+    //
+    // Left empty on purpose if you would rather not use a relay: the form then
+    // falls back to handing the enquiry to the visitor's mail app.
+    const ENQUIRY_ENDPOINT = 'https://formsubmit.co/ajax/enquiry-equipment@greets.co.in';
+    const OFFICE_EMAIL = 'enquiry-equipment@greets.co.in';
+    const OFFICE_PHONE = '+918000000000';
     const statusEl = document.querySelector('#enquiry-status');
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const btnLabel = submitBtn && submitBtn.querySelector('.btn-label');
@@ -144,16 +152,27 @@ document.addEventListener('DOMContentLoaded', () => {
       statusEl.hidden = false;
     };
 
-    // A failed send must not cost the visitor their enquiry, so the details
-    // they typed stay on screen and selectable, with the phone number and the
-    // office email offered as a way through.
-    const showFallback = (reason) => {
+    const summaryOf = (p) => [
+      'Name: ' + p.name,
+      'Company: ' + p.company,
+      'Email: ' + p.email,
+      'Phone: ' + p.phone,
+      'Process: ' + p.process,
+      'City: ' + p.city,
+      '',
+      'Parts, material and volumes:',
+      p.details
+    ].join('\n');
+
+    // The enquiry must never be lost, so the details the visitor typed are
+    // always shown back to them as copyable text, with the office email and
+    // phone offered as a way through.
+    const showFallback = (reason, heading) => {
       if (!statusEl) return;
       statusEl.className = 'form-status form-status--error';
 
       const intro = document.createElement('div');
-      intro.textContent = 'We could not send that automatically. Your details are below — ' +
-        'please copy them, email them to enquiry-equipment@greets.co.in, or call the Bangalore office.';
+      intro.textContent = heading;
       statusEl.appendChild(intro);
 
       const copy = document.createElement('pre');
@@ -165,21 +184,23 @@ document.addEventListener('DOMContentLoaded', () => {
       actions.className = 'form-status__actions';
 
       const mail = document.createElement('a');
-      mail.href = 'mailto:enquiry-equipment@greets.co.in';
+      mail.href = 'mailto:' + OFFICE_EMAIL;
       mail.textContent = 'Email the office';
       actions.appendChild(mail);
 
       const call = document.createElement('a');
-      call.href = 'tel:+918000000000';
+      call.href = 'tel:' + OFFICE_PHONE;
       call.textContent = 'Call the office';
       actions.appendChild(call);
 
-      const retry = document.createElement('button');
-      retry.type = 'button';
-      retry.className = 'form-status__retry';
-      retry.textContent = 'Try sending again';
-      retry.addEventListener('click', () => contactForm.requestSubmit());
-      actions.appendChild(retry);
+      if (ENQUIRY_ENDPOINT) {
+        const retry = document.createElement('button');
+        retry.type = 'button';
+        retry.className = 'form-status__retry';
+        retry.textContent = 'Try sending again';
+        retry.addEventListener('click', () => contactForm.requestSubmit());
+        actions.appendChild(retry);
+      }
 
       statusEl.appendChild(actions);
       statusEl.hidden = false;
@@ -214,24 +235,24 @@ document.addEventListener('DOMContentLoaded', () => {
         phone: get('phone'),
         process: get('process'),
         city: get('city'),
-        details: get('details'),
-        _subject: 'Website enquiry' + (name ? ' from ' + name : ''),
-        _template: 'table',
-        // Replied-to goes to the visitor so a reply from the mailbox reaches them.
-        _replyto: get('email')
+        details: get('details')
       };
 
-      lastSubmission = [
-        'Name: ' + payload.name,
-        'Company: ' + payload.company,
-        'Email: ' + payload.email,
-        'Phone: ' + payload.phone,
-        'Process: ' + payload.process,
-        'City: ' + payload.city,
-        '',
-        'Parts, material and volumes:',
-        payload.details
-      ].join('\n');
+      lastSubmission = summaryOf(payload);
+
+      // No relay configured: hand the enquiry to the visitor's mail app and
+      // keep their details on screen in case they do not send it.
+      if (!ENQUIRY_ENDPOINT) {
+        showFallback(
+          null,
+          'Your email app should now be open with the enquiry ready to send to ' + OFFICE_EMAIL + '. ' +
+          'If it did not open, the details are below — please copy them and email or call us.'
+        );
+        const subject = encodeURIComponent('Website enquiry' + (name ? ' from ' + name : ''));
+        window.location.href = 'mailto:' + OFFICE_EMAIL + '?subject=' + subject +
+          '&body=' + encodeURIComponent(lastSubmission);
+        return;
+      }
 
       contactForm.setAttribute('data-busy', '');
       if (btnLabel) btnLabel.textContent = 'Sending…';
@@ -244,17 +265,16 @@ document.addEventListener('DOMContentLoaded', () => {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
-          body: JSON.stringify(payload)
+          body: JSON.stringify(Object.assign({}, payload, {
+            _subject: 'Website enquiry' + (name ? ' from ' + name : ''),
+            _template: 'table',
+            // Replied-to goes to the visitor so a reply from the mailbox reaches them.
+            _replyto: payload.email
+          }))
         });
 
         if (!res.ok) {
-          // 5xx from the relay is its usual answer for an address that has not
-          // been activated yet, which only the site owner can fix.
-          throw new Error(
-            res.status >= 500
-              ? 'the form relay returned ' + res.status + ' (the destination address may still need activating)'
-              : 'the form relay rejected the enquiry with ' + res.status
-          );
+          throw new Error('the form relay answered ' + res.status);
         }
 
         setStatus(
@@ -264,7 +284,11 @@ document.addEventListener('DOMContentLoaded', () => {
         );
         contactForm.reset();
       } catch (err) {
-        showFallback(err && err.message ? err.message : 'network error');
+        showFallback(
+          err && err.message ? err.message : 'network error',
+          'We could not send that automatically. Your details are below — please copy them, ' +
+          'email them to ' + OFFICE_EMAIL + ', or call the Bangalore office.'
+        );
       } finally {
         contactForm.removeAttribute('data-busy');
         if (btnLabel) btnLabel.textContent = 'Send enquiry';
