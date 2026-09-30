@@ -125,25 +125,89 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* — Contact form mailto — */
+  /* — Enquiry form: posts to the form-to-email endpoint — */
   const contactForm = document.querySelector('#enquiry-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const data = new FormData(contactForm);
-      const name = data.get('name') || '';
-      const company = data.get('company') || '';
-      const email = data.get('email') || '';
-      const phone = data.get('phone') || '';
-      const process = data.get('process') || '';
-      const city = data.get('city') || '';
-      const details = data.get('details') || '';
+    // FormSubmit relays the POST server-side and emails it to the address in
+    // the URL, so a visitor without a mail client still reaches us. The first
+    // submission from a new address needs the activation link that arrives at
+    // the destination mailbox; after that it delivers silently.
+    const ENQUIRY_ENDPOINT = 'https://formsubmit.co/ajax/aswathybcontact@gmail.com';
+    const statusEl = document.querySelector('#enquiry-status');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const btnLabel = submitBtn && submitBtn.querySelector('.btn-label');
 
-      const subject = encodeURIComponent(`Enquiry from ${name} – ${company}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone: ${phone}\nProcess: ${process}\nCity: ${city}\n\nParts, material and volumes:\n${details}`
-      );
-      window.location.href = `mailto:enquiry-equipment@greets.co.in?subject=${subject}&body=${body}`;
+    const setStatus = (message, kind) => {
+      if (!statusEl) return;
+      statusEl.textContent = message;
+      statusEl.className = 'form-status form-status--' + kind;
+      statusEl.hidden = false;
+    };
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Native validation first, so the browser marks the empty and malformed
+      // fields before anything is sent.
+      if (!contactForm.reportValidity()) return;
+
+      // Honeypot: pretend it worked, but send nothing.
+      const honey = contactForm.querySelector('input[name="website"]');
+      if (honey && honey.value) {
+        setStatus('Thanks — your enquiry has been sent. We reply within one working day.', 'ok');
+        contactForm.reset();
+        return;
+      }
+
+      const data = new FormData(contactForm);
+      const get = (k) => String(data.get(k) || '').trim();
+      const name = get('name');
+
+      const payload = new URLSearchParams();
+      payload.set('name', name);
+      payload.set('company', get('company'));
+      payload.set('email', get('email'));
+      payload.set('phone', get('phone'));
+      payload.set('process', get('process'));
+      payload.set('city', get('city'));
+      payload.set('details', get('details'));
+      payload.set('_subject', 'Website enquiry' + (name ? ' from ' + name : ''));
+      payload.set('_template', 'table');
+      // Replied-to goes to the visitor so a reply from the mailbox reaches them.
+      payload.set('_replyto', get('email'));
+
+      contactForm.setAttribute('data-busy', '');
+      if (btnLabel) btnLabel.textContent = 'Sending…';
+      if (statusEl) statusEl.hidden = true;
+
+      try {
+        const res = await fetch(ENQUIRY_ENDPOINT, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(Object.fromEntries(payload))
+        });
+
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+
+        setStatus(
+          'Thanks' + (name ? ', ' + name : '') + ' — your enquiry has reached our Bangalore office. ' +
+          'We reply within one working day.',
+          'ok'
+        );
+        contactForm.reset();
+      } catch (err) {
+        setStatus(
+          'We could not send that just now. Please email enquiry-equipment@greets.co.in ' +
+          'or call the Bangalore office and we will pick it up.',
+          'error'
+        );
+      } finally {
+        contactForm.removeAttribute('data-busy');
+        if (btnLabel) btnLabel.textContent = 'Send enquiry';
+      }
     });
   }
 
