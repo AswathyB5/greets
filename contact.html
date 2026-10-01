@@ -612,29 +612,29 @@
           </div>
 
           <div class="contact-form-card hud-corner mt-2">
-            <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off" novalidate>
               <input type="hidden" name="access_key" value="0554f1da-4bb4-4c4e-85fe-523711ed17e6">
               <input type="hidden" name="from_name" value="Greets Equipment Website">
               <input type="hidden" name="subject" value="New Equipment Enquiry from Greets Website">
               <div class="form-row">
                 <div class="form-field">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" autocomplete="name" required>
+                  <label for="name">Name *</label>
+                  <input type="text" id="name" name="name" autocomplete="off" required>
                 </div>
                 <div class="form-field">
                   <label for="company">Company</label>
-                  <input type="text" id="company" name="company" autocomplete="organization">
+                  <input type="text" id="company" name="company" autocomplete="off">
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-field">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" autocomplete="email" required>
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" autocomplete="off" required>
                 </div>
                 <div class="form-field">
                   <label for="phone">Phone</label>
-                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                  <input type="tel" id="phone" name="phone" autocomplete="off">
                 </div>
               </div>
 
@@ -652,7 +652,7 @@
                 </div>
                 <div class="form-field">
                   <label for="city">City</label>
-                  <input type="text" id="city" name="city" autocomplete="address-level2">
+                  <input type="text" id="city" name="city" autocomplete="off">
                 </div>
               </div>
 

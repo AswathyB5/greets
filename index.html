@@ -2387,12 +2387,14 @@
 
     @media (max-width: 768px) {
       .brand-intro__stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
         width: 100%;
       }
 
       .brand-intro__stat {
         white-space: normal;
+        padding: 0.6rem 0.35rem;
       }
 
       .form-row {
@@ -2404,10 +2406,10 @@
       }
     }
 
-    @media (max-width: 680px) {
-
+    @media (max-width: 480px) {
       .brand-intro__stats {
         grid-template-columns: 1fr;
+        gap: 0.5rem;
       }
     }
 
@@ -4179,29 +4181,29 @@
           </div>
 
           <div class="contact-form-card hud-corner mt-2">
-            <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off" novalidate>
               <input type="hidden" name="access_key" value="0554f1da-4bb4-4c4e-85fe-523711ed17e6">
               <input type="hidden" name="from_name" value="Greets Equipment Website">
               <input type="hidden" name="subject" value="New Equipment Enquiry from Greets Website">
               <div class="form-row">
                 <div class="form-field">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" autocomplete="name" required>
+                  <label for="name">Name *</label>
+                  <input type="text" id="name" name="name" autocomplete="off" required>
                 </div>
                 <div class="form-field">
                   <label for="company">Company</label>
-                  <input type="text" id="company" name="company" autocomplete="organization">
+                  <input type="text" id="company" name="company" autocomplete="off">
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-field">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" autocomplete="email" required>
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" autocomplete="off" required>
                 </div>
                 <div class="form-field">
                   <label for="phone">Phone</label>
-                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                  <input type="tel" id="phone" name="phone" autocomplete="off">
                 </div>
               </div>
 
@@ -4219,7 +4221,7 @@
                 </div>
                 <div class="form-field">
                   <label for="city">City</label>
-                  <input type="text" id="city" name="city" autocomplete="address-level2">
+                  <input type="text" id="city" name="city" autocomplete="off">
                 </div>
               </div>
 
@@ -4318,7 +4320,7 @@
 
       var brandLogos = {
         'BMI': 'assets/logo-BMI.png',
-        'Novatec': 'assets/logos/novatec.png',
+        'Novatec': 'assets/logo-novatec.png',
         'Huasheng': 'assets/logos/huasheng.jpg'
       };
 
@@ -4326,47 +4328,106 @@
         'b8_t': 'assets/catalog/b8t.jpg',
         'vse8_t': 'assets/catalog/vse8t.jpg',
         'brazing': 'assets/catalog/bmi_brazing.jpg',
-        'oil': 'assets/catalog/bmi_oil.jpg',
+        'lab': 'assets/catalog/bmi_brazing.jpg',
+        'oil-horizontal': 'assets/catalog/bmi_oil.jpg',
+        'oil-vertical': 'assets/catalog/bmi_oil.jpg',
         'tempering': 'assets/catalog/bmi_low.jpg',
-        'aluminium brazing': 'assets/catalog/bmi_low.jpg',
+        'alu-brazing': 'assets/catalog/bmi_low.jpg',
         'allcarb': 'assets/catalog/bmi_thermo.jpg',
-        'nitriding': 'assets/catalog/bmi_thermo.jpg',
-        'sub-zero': 'assets/catalog/bmi_thermo.jpg',
-        'pluritank': 'assets/catalog/nm_pluri.jpg',
-        '2crd': 'assets/catalog/crd_green.jpg',
-        'cleanline': 'assets/catalog/cleanline.jpg',
-        'implants': 'assets/catalog/nm_implants.jpg',
+        'allnit': 'assets/catalog/bmi_thermo.jpg',
+        'plasma-nitriding': 'assets/catalog/bmi_thermo.jpg',
+        'cool-plus': 'assets/catalog/bmi_thermo.jpg',
+        'pluritank-line': 'assets/catalog/nm_pluri.jpg',
+        'pre-pvd': 'assets/catalog/nm_pluri.jpg',
+        'cleanroom': 'assets/catalog/cleanline.jpg',
+        '2crd-system': 'assets/catalog/crd_green.jpg',
+        'ipc': 'assets/catalog/nm_implants.jpg',
+        'fcps': 'assets/catalog/nm_implants.jpg',
         'fpi': 'assets/catalog/nm_fpi.jpg',
+        'combined': 'assets/catalog/nm_implants.jpg',
         'generators': 'assets/catalog/nov_gen.jpg',
-        'pvd': 'assets/catalog/hs_pvd.jpg',
-        'dlc': 'assets/catalog/hs_dlc.jpg',
-        'diamond': 'assets/catalog/hs_diamond.jpg',
-        'mc1000': 'assets/catalog/hs_mc1000.jpg',
-        'ma1500': 'assets/catalog/hs_ma1500.jpg',
-        'turnkey': 'assets/catalog/turnkey.jpg',
-        'md800': 'assets/catalog/hs_md.jpg'
+        'plt60v': 'assets/catalog/nov_gen.jpg',
+        'md800': 'assets/catalog/hs_md.jpg',
+        'aip': 'assets/catalog/hs_pvd.jpg',
+        'hipims': 'assets/catalog/hs_pvd.jpg',
+        'hybrid': 'assets/catalog/hs_pvd.jpg',
+        'decorative': 'assets/catalog/hs_pvd.jpg',
+        'pecvd-dlc': 'assets/catalog/hs_dlc.jpg',
+        'tac': 'assets/catalog/hs_dlc.jpg',
+        'hfcvd': 'assets/catalog/hs_diamond.jpg',
+        'evaporation': 'assets/catalog/hs_mc1000.jpg',
+        'sputter-optical': 'assets/catalog/hs_mc1000.jpg',
+        'cvd-systems': 'assets/catalog/hs_ma1500.jpg',
+        'cva': 'assets/catalog/hs_ma1500.jpg',
+        'md800-turnkey': 'assets/catalog/turnkey.jpg'
+      };
+
+      // Model-specific keywords & aliases to guarantee 100% search hit accuracy
+      var modelKeywords = {
+        'b8t': 'b8t b8_t b8-t b8 t front loading vacuum furnace gas quenching hardening brazing',
+        'vse8t': 'vse8t vse8_t vse8-t vse8 t bottom loading vertical tall delicate parts gas quenching',
+        'brazing': 'vacuum brazing furnace oxide free assemblies join metal',
+        'lab': 'compact laboratory furnace r&d research development small vacuum furnace',
+        'oil-horizontal': 'vacuum oil quenching furnace horizontal integrated oil quench liquid quench',
+        'oil-vertical': 'vacuum oil quenching furnace vertical long parts hanging shaft',
+        'tempering': 'vacuum tempering furnace low temperature tempering after hardening annealing',
+        'alu-brazing': 'aluminium brazing vacuum furnace alu heat exchangers assemblies',
+        'allcarb': 'allcarb allcarb® all carb lpc low pressure carburizing case hardening gears transmission automotive',
+        'allnit': 'allnit allnit® all nit low pressure nitriding nitrocarburizing wear fatigue resistance',
+        'plasma-nitriding': 'plasma nitriding furnace ion nitriding tools dies engineering parts',
+        'cool-plus': 'cool plus cool-plus coolplus sub-zero subzero deep freeze cryogenic treatment hardened steels',
+        'pluritank-line': 'pluritank pluritank-line multi chamber ultrasonic cleaning line 12 stages serial parts',
+        'pre-pvd': 'pluritank pre-treatment line pre treatment pvd cvd dlc surface preparation degrease cleaning',
+        'cleanroom': 'cleanroom cleaning line low particle semiconductor medical pharma ultrasonic',
+        '2crd-system': '2crd 2crd-system 2 crd 2-crd single chamber precision cleaning system vacuum drying rotating basket',
+        'ipc': 'ipc in-process in process cleaning implants orthopaedic medical surgical',
+        'fcps': 'fcps fcs final cleaning passivation cleanroom medical implants orthopaedic',
+        'fpi': 'fpi fluorescent penetrant inspection line crack detection ndt testing automated',
+        'combined': 'combined turnkey implant lines urs complete automated medical implant cleaning plant',
+        'generators': 'ultrasonic generators transducers piezo submersibles cleaning tanks building upgrading',
+        'plt60v': 'plt60v plt 60v plt-60v pressure cycle unit pressure change internal channels complex parts',
+        'md800': 'md800 md 800 md-800 arc coating machine high rate coater tool coating production cutting tools',
+        'aip': 'aip arc coating equipment hard nitride cutting tools drills endmills inserts hobs',
+        'hipims': 'hipims high power impulse magnetron sputtering dense smooth droplet free coatings',
+        'hybrid': 'hybrid coating equipment arc and sputtering in one chamber multi layer',
+        'decorative': 'decorative coating equipment colour color pvd finishes watches jewellery sanitary hardware',
+        'pecvd-dlc': 'pecvd dlc coating equipment low friction components diamond like carbon wear resistance',
+        'tac': 'ta-c tac ta c tetrahedral amorphous carbon hydrogen free carbon coatings extreme hardness',
+        'hfcvd': 'hfcvd diamond coating equipment hot filament chemical vapour deposition diamond films carbide tools',
+        'evaporation': 'evaporation optical coating equipment anti reflection anti-reflection filter multilayer glass lens',
+        'sputter-optical': 'magnetron sputtering optical coating equipment multilayer optical films precision optics',
+        'cvd-systems': 'cvd coating systems chemical vapour deposition thick wear resistant cutting tools',
+        'cva': 'cva aluminizing systems gas phase aluminide diffusion high temperature aero turbine blades',
+        'md800-turnkey': 'turnkey coating solutions md800 turnkey complete plant tool coating centre jobshop'
       };
 
       var modelLinks = Array.prototype.slice.call(document.querySelectorAll('.families .models li a[data-brand]'));
       var items = modelLinks.map(function (a) {
-        var name = a.querySelector('b').textContent;
-        var sub = a.querySelector('span').textContent;
-        var brand = a.dataset.brand;
-        var process = a.dataset.process;
-        var category = a.dataset.category;
-        var href = a.getAttribute('href');
+        var name = a.querySelector('b') ? a.querySelector('b').textContent.trim() : '';
+        var sub = a.querySelector('span') ? a.querySelector('span').textContent.trim() : '';
+        var brand = a.dataset.brand || '';
+        var process = a.dataset.process || '';
+        var category = a.dataset.category || '';
+        var href = a.getAttribute('href') || '';
 
         var detailsEl = a.closest('details');
         var catThumb = detailsEl ? detailsEl.querySelector('.family-thumb img') : null;
         var thumb = catThumb ? catThumb.getAttribute('src') : '';
 
-        var nameLow = name.toLowerCase();
-        for (var key in modelThumbMap) {
-          if (nameLow.indexOf(key) !== -1) {
-            thumb = modelThumbMap[key];
-            break;
+        var hrefKey = href.split('/').pop() || '';
+        if (modelThumbMap[hrefKey]) {
+          thumb = modelThumbMap[hrefKey];
+        } else {
+          var nameLow = name.toLowerCase();
+          for (var key in modelThumbMap) {
+            if (nameLow.indexOf(key.replace(/[-_]/g, ' ')) !== -1 || nameLow.indexOf(key) !== -1) {
+              thumb = modelThumbMap[key];
+              break;
+            }
           }
         }
+
+        var extraKw = modelKeywords[hrefKey] || '';
 
         return {
           name: name,
@@ -4376,11 +4437,12 @@
           category: category,
           href: href,
           thumb: thumb,
-          logo: brandLogos[brand] || ''
+          logo: brandLogos[brand] || '',
+          keywords: extraKw
         };
       });
 
-      // Populate the category <select> from the data actually present
+      // Populate category select options
       var categorySelect = document.getElementById('finder-category');
       var seenCats = [];
       items.forEach(function (it) {
@@ -4393,7 +4455,6 @@
         categorySelect.appendChild(opt);
       });
 
-      // Approximate industry -> relevant brands (matches the tags shown under each industry card)
       var industryBrands = {
         tools: ['BMI', 'Novatec', 'Huasheng'],
         jobshop: ['Novatec', 'Huasheng'],
@@ -4409,6 +4470,179 @@
         watch: ['Novatec', 'Huasheng']
       };
 
+      // Synonym & application dictionary
+      var SYNONYMS = [
+        { keys: ['mould', 'mold', 'die', 'dies', 'diecast', 'die cast', 'press tool', 'presstool', 'forging die', 'punch'], tag: 'i:dies' },
+        { keys: ['hob', 'hobs', 'hobbing', 'shaper', 'broach', 'drill', 'drills', 'endmill', 'end mill', 'insert', 'inserts', 'tap', 'cutter', 'cutting tool', 'cutting tools', 'milling', 'tool', 'tools'], tag: 'i:tools' },
+        { keys: ['car', 'automotive', 'auto', 'vehicle', 'gearbox', 'transmission', 'engine', 'piston'], tag: 'i:auto' },
+        { keys: ['aerospace', 'aircraft', 'aviation', 'defence', 'defense', 'military', 'turbine blade', 'turbine'], tag: 'i:aero' },
+        { keys: ['implant', 'implants', 'medical', 'orthopaedic', 'orthopedic', 'surgical', 'dental'], tag: 'i:medical' },
+        { keys: ['semiconductor', 'wafer', 'electronics', 'electronic', 'chip'], tag: 'i:semi' },
+        { keys: ['lens', 'optics', 'optic', 'eyewear', 'spectacle', 'glass', 'optical'], tag: 'i:optics' },
+        { keys: ['watch', 'watches', 'jewel', 'jewellery', 'jewelry', 'decorative', 'sanitary', 'faucet', 'hardware finish', 'colour', 'color'], tag: 'i:watch' },
+        { keys: ['job shop', 'jobshop', 'coating service', 'coating centre', 'coater'], tag: 'i:jobshop' },
+        { keys: ['steel', 'forging', 'metal', 'heat treater', 'alloy', 'foundry'], tag: 'i:steel' },
+        { keys: ['wind', 'solar', 'thermal power', 'power plant', 'power'], tag: 'i:power' },
+        { keys: ['oil', 'gas', 'valve', 'pump', 'drilling', 'petro', 'refinery'], tag: 'i:oilgas' },
+        { keys: ['nitriding', 'nitrocarburizing', 'ion nitriding'], tag: 'p:harden' },
+        { keys: ['carburizing', 'case hardening', 'lpc'], tag: 'p:harden' },
+        { keys: ['hardening', 'quenching', 'annealing', 'sintering', 'vacuum furnace', 'furnace'], tag: 'p:harden' },
+        { keys: ['tempering'], tag: 'p:harden' },
+        { keys: ['brazing'], tag: 'p:harden' },
+        { keys: ['cryo', 'sub-zero', 'subzero', 'deep freeze'], tag: 'p:harden' },
+        { keys: ['ultrasonic', 'degreasing', 'pre treatment', 'pretreat', 'vacuum dry'], tag: 'p:clean' },
+        { keys: ['passivation'], tag: 'p:clean' },
+        { keys: ['fpi', 'fluorescent penetrant', 'crack detection', 'ndt'], tag: 'p:clean' },
+        { keys: ['coating', 'surface treatment'], tag: 'p:coat' },
+        { keys: ['pvd', 'hipims', 'tialn', 'alcrn', 'physical vapour'], tag: 'p:coat' },
+        { keys: ['dlc', 'diamond-like', 'ta-c', 'tac', 'ta c', 'low friction'], tag: 'p:coat' },
+        { keys: ['diamond', 'hfcvd'], tag: 'p:coat' },
+        { keys: ['cvd', 'aluminizing', 'cva'], tag: 'p:coat' },
+        { keys: ['turnkey plant', 'complete line'], tag: 'p:coat' }
+      ];
+
+      function normalize(str) {
+        if (!str) return '';
+        return str.toLowerCase()
+          .replace(/[®™©]/g, '')
+          .replace(/[\r\n\t]+/g, ' ')
+          .replace(/[_\-\/\.\,\:\;\(\)\[\]"']/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+      }
+
+      function stripPunct(str) {
+        if (!str) return '';
+        return str.toLowerCase().replace(/[^a-z0-9]/g, '');
+      }
+
+      function scoreItem(item, rawQ) {
+        if (!rawQ) return 1;
+        var q = rawQ.toLowerCase().trim();
+        if (!q) return 1;
+
+        var normQ = normalize(q);
+        var stripQ = stripPunct(q);
+        var qTokens = normQ.split(' ').filter(function (t) { return t.length > 0; });
+
+        var hrefKey = item.href.split('/').pop() || '';
+        var extraKw = modelKeywords[hrefKey] || '';
+
+        var nameNorm = normalize(item.name);
+        var nameStrip = stripPunct(item.name);
+        var subNorm = normalize(item.sub);
+        var catNorm = normalize(item.category);
+        var brandNorm = normalize(item.brand);
+        var kwNorm = normalize(extraKw);
+
+        var rawBlob = (item.name + ' ' + item.brand + ' ' + item.category + ' ' + item.process + ' ' + item.sub + ' ' + extraKw).toLowerCase();
+        var normBlob = ' ' + normalize(rawBlob) + ' ';
+        var stripBlob = stripPunct(rawBlob);
+
+        var score = 0;
+
+        // 1. Exact or prefix match on title
+        if (nameNorm === normQ || nameStrip === stripQ) {
+          score += 1500;
+        } else if (nameNorm.startsWith(normQ)) {
+          score += 1000;
+        } else if (nameNorm.indexOf(normQ) !== -1) {
+          score += 700;
+        } else if (stripQ.length >= 3 && nameStrip.indexOf(stripQ) !== -1) {
+          score += 650;
+        }
+
+        // 2. Multi-token scoring on title
+        if (qTokens.length > 0) {
+          var titleTokensMatched = 0;
+          qTokens.forEach(function (token) {
+            if (token.length >= 2 && nameNorm.indexOf(token) !== -1) {
+              score += 150;
+              titleTokensMatched++;
+            }
+          });
+          if (titleTokensMatched === qTokens.length) {
+            score += 400;
+          }
+        }
+
+        // 3. Subtitle / description scoring
+        if (subNorm.indexOf(normQ) !== -1) {
+          score += 250;
+        }
+
+        // 4. Model code & keywords scoring
+        if (kwNorm.indexOf(normQ) !== -1) {
+          score += 200;
+        } else if (stripQ.length >= 2 && stripPunct(extraKw).indexOf(stripQ) !== -1) {
+          score += 180;
+        }
+
+        // 5. Category & Brand match
+        if (catNorm.indexOf(normQ) !== -1) score += 120;
+        if (brandNorm === normQ) score += 100;
+
+        // 6. General blob match
+        if (score === 0) {
+          if (normBlob.indexOf(' ' + normQ + ' ') !== -1 || normBlob.indexOf(normQ) !== -1) {
+            score += 80;
+          } else if (stripQ.length >= 2 && stripBlob.indexOf(stripQ) !== -1) {
+            score += 70;
+          }
+        }
+
+        // 7. Multi-word all token match in blob
+        if (qTokens.length > 1) {
+          var allTokensInBlob = qTokens.every(function (token) {
+            if (token.length === 1) return normBlob.indexOf(' ' + token + ' ') !== -1;
+            var sTok = stripPunct(token);
+            return normBlob.indexOf(token) !== -1 || (sTok.length >= 2 && stripBlob.indexOf(sTok) !== -1);
+          });
+          if (allTokensInBlob) score += 60;
+        }
+
+        // 8. Synonym match
+        var matchedProcesses = [];
+        var matchedIndustries = [];
+
+        for (var i = 0; i < SYNONYMS.length; i++) {
+          var synRule = SYNONYMS[i];
+          var hit = synRule.keys.some(function (k) {
+            var normK = normalize(k);
+            var stripK = stripPunct(k);
+            if (normQ === normK || stripQ === stripK) return true;
+            if (normQ === normK + 's' || normQ + 's' === normK) return true;
+            if (normK.indexOf(' ') !== -1 && (' ' + normQ + ' ').indexOf(' ' + normK + ' ') !== -1) return true;
+            if (normK.indexOf(' ') === -1 && qTokens.indexOf(normK) !== -1) return true;
+            return false;
+          });
+          if (hit) {
+            var tag = synRule.tag;
+            if (tag.startsWith('p:')) matchedProcesses.push(tag.slice(2).toLowerCase());
+            if (tag.startsWith('i:')) matchedIndustries.push(tag.slice(2));
+          }
+        }
+
+        if (matchedProcesses.length > 0) {
+          var procMatch = matchedProcesses.indexOf(item.process.toLowerCase()) !== -1;
+          if (matchedIndustries.length > 0) {
+            var indMatch = matchedIndustries.some(function (ind) {
+              return (industryBrands[ind] || []).indexOf(item.brand) !== -1;
+            });
+            if (procMatch && indMatch) score += 40;
+          } else if (procMatch) {
+            score += 30;
+          }
+        } else if (matchedIndustries.length > 0) {
+          var indMatch = matchedIndustries.some(function (ind) {
+            return (industryBrands[ind] || []).indexOf(item.brand) !== -1;
+          });
+          if (indMatch) score += 20;
+        }
+
+        return score;
+      }
+
       var qInput = document.getElementById('finder-q');
       var brandBar = document.getElementById('finder-brand');
       var processBar = document.getElementById('finder-process');
@@ -4418,18 +4652,30 @@
       var state = { q: '', brand: 'all', process: 'all', industry: '', category: '' };
 
       function render() {
-        var q = state.q.toLowerCase().trim();
-        var filtered = items.filter(function (it) {
-          if (state.brand !== 'all' && it.brand !== state.brand) return false;
-          if (state.process !== 'all' && it.process !== state.process) return false;
-          if (state.category && it.category !== state.category) return false;
+        var q = state.q;
+        var scored = [];
+
+        items.forEach(function (it) {
+          if (state.brand !== 'all' && it.brand.toLowerCase() !== state.brand.toLowerCase()) return;
+          if (state.process !== 'all' && it.process.toLowerCase() !== state.process.toLowerCase()) return;
+          if (state.category && it.category !== state.category) return;
           if (state.industry) {
             var allowed = industryBrands[state.industry] || [];
-            if (allowed.indexOf(it.brand) === -1) return false;
+            if (allowed.indexOf(it.brand) === -1) return;
           }
-          if (q && (it.name + ' ' + it.sub + ' ' + it.category).toLowerCase().indexOf(q) === -1) return false;
-          return true;
+          var score = q ? scoreItem(it, q) : 1;
+          if (score > 0) {
+            scored.push({ item: it, score: score });
+          }
         });
+
+        if (q) {
+          scored.sort(function (a, b) {
+            return b.score - a.score;
+          });
+        }
+
+        var filtered = scored.map(function (s) { return s.item; });
 
         countEl.textContent = filtered.length + (filtered.length === 1 ? ' system' : ' systems');
 
@@ -4542,9 +4788,6 @@
           var section = link.closest('.brand-section');
           if (!section) return;
           var grid = section.querySelector('.families');
-          // Single cards drop their list below the card and push the rest of the
-          // grid down. "See all" simply opens every card at once; the class
-          // stays so the toggle can be recognised and reverted.
           var expanding = !grid.classList.contains('families--all-open');
           grid.classList.toggle('families--all-open', expanding);
           section.querySelectorAll('.families details').forEach(function (d) { d.open = expanding; });
@@ -4556,6 +4799,7 @@
         });
       });
 
+      // Initial render of all products
       render();
     })();
   </script>

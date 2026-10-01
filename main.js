@@ -166,6 +166,134 @@ document.addEventListener('DOMContentLoaded', () => {
       p.details || 'N/A'
     ].join('\n');
 
+    /* — Confirmation Popup Modal — */
+    const getOrCreateModal = () => {
+      let modal = document.getElementById('confirmation-modal');
+      if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'confirmation-modal';
+        modal.className = 'greets-modal-overlay';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('aria-labelledby', 'greets-modal-title');
+        modal.innerHTML = `
+          <div class="greets-modal-dialog">
+            <div class="greets-modal-accent"></div>
+            <div class="greets-modal-body">
+              <button type="button" class="greets-modal-close" aria-label="Close modal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+
+              <div class="greets-modal-icon-wrap">
+                <div class="greets-modal-icon-pulse"></div>
+                <div class="greets-modal-icon-circle">
+                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline class="greets-modal-svg-check" points="14,25 21,32 34,17"></polyline>
+                  </svg>
+                </div>
+              </div>
+
+              <h3 class="greets-modal-title" id="greets-modal-title">Enquiry Received!</h3>
+              <p class="greets-modal-subtitle" id="greets-modal-subtitle">
+                Thank you for reaching out. Your enquiry has been received and routed to our Bangalore technical team.
+              </p>
+
+              <div class="greets-modal-sla">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>We reply within 1 working day</span>
+              </div>
+
+              <div class="greets-modal-info-box" id="greets-modal-info-box"></div>
+
+              <div class="greets-modal-actions">
+                <button type="button" class="greets-modal-btn-primary" id="greets-modal-done">
+                  <span>Done</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+                <a href="index.html#/bmi" class="greets-modal-btn-secondary" id="greets-modal-catalog">
+                  Browse Equipment Catalog &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+        document.body.appendChild(modal);
+
+        // Bind closing actions
+        const closeModal = () => {
+          modal.classList.remove('active');
+          document.body.classList.remove('greets-modal-open');
+        };
+
+        modal.querySelector('.greets-modal-close').addEventListener('click', closeModal);
+        modal.querySelector('#greets-modal-done').addEventListener('click', closeModal);
+        modal.querySelector('#greets-modal-catalog').addEventListener('click', closeModal);
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+          }
+        });
+      }
+      return modal;
+    };
+
+    const showConfirmationModal = (data) => {
+      const modal = getOrCreateModal();
+      const titleEl = modal.querySelector('#greets-modal-title');
+      const subEl = modal.querySelector('#greets-modal-subtitle');
+      const infoBox = modal.querySelector('#greets-modal-info-box');
+
+      if (data.name) {
+        titleEl.textContent = `Thank You, ${data.name}!`;
+      } else {
+        titleEl.textContent = 'Enquiry Received!';
+      }
+
+      subEl.textContent = `Your equipment enquiry has been sent to enquiry-equipment@greets.co.in. Our team will review your specifications and get in touch.`;
+
+      // Build summary rows
+      const rows = [];
+      if (data.email) {
+        rows.push(`<div class="greets-modal-info-row"><span class="greets-modal-info-label">Confirmation To:</span><span class="greets-modal-info-value">${data.email}</span></div>`);
+      }
+      if (data.company) {
+        rows.push(`<div class="greets-modal-info-row"><span class="greets-modal-info-label">Company:</span><span class="greets-modal-info-value">${data.company}</span></div>`);
+      }
+      if (data.process && data.process !== 'Not sure yet') {
+        rows.push(`<div class="greets-modal-info-row"><span class="greets-modal-info-label">Process / Equipment:</span><span class="greets-modal-info-value">${data.process}</span></div>`);
+      }
+      if (data.city) {
+        rows.push(`<div class="greets-modal-info-row"><span class="greets-modal-info-label">Location:</span><span class="greets-modal-info-value">${data.city}</span></div>`);
+      }
+
+      infoBox.innerHTML = rows.join('');
+      infoBox.style.display = rows.length ? 'flex' : 'none';
+
+      // Re-trigger SVG animation cleanly by cloning node or resetting class
+      const svgCheck = modal.querySelector('.greets-modal-svg-check');
+      if (svgCheck) {
+        svgCheck.style.animation = 'none';
+        void svgCheck.offsetHeight; // trigger reflow
+        svgCheck.style.animation = '';
+      }
+
+      modal.classList.add('active');
+      document.body.classList.add('greets-modal-open');
+    };
+
     const showFallback = (reason, heading) => {
       if (!statusEl) return;
       statusEl.className = 'form-status form-status--error';
@@ -207,20 +335,100 @@ document.addEventListener('DOMContentLoaded', () => {
       if (reason) console.warn('[enquiry] send failed:', reason);
     };
 
+    /* — Form Validation & Error Display — */
+    const clearError = (field) => {
+      const container = field.closest('.form-field');
+      if (container) {
+        container.classList.remove('has-error');
+        const err = container.querySelector('.field-error-msg');
+        if (err) err.remove();
+      }
+    };
+
+    const setError = (field, message) => {
+      const container = field.closest('.form-field');
+      if (container) {
+        clearError(field);
+        container.classList.add('has-error');
+        const err = document.createElement('span');
+        err.className = 'field-error-msg';
+        err.textContent = message;
+        container.appendChild(err);
+      }
+    };
+
+    const validateForm = () => {
+      let isValid = true;
+      let firstInvalid = null;
+
+      const nameInput = contactForm.querySelector('#name');
+      const emailInput = contactForm.querySelector('#email');
+      const phoneInput = contactForm.querySelector('#phone');
+
+      // Validate Name
+      if (nameInput) {
+        const val = nameInput.value.trim();
+        if (!val) {
+          setError(nameInput, 'Please enter your name');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = nameInput;
+        } else if (val.length < 2) {
+          setError(nameInput, 'Name must be at least 2 characters');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = nameInput;
+        } else {
+          clearError(nameInput);
+        }
+      }
+
+      // Validate Email
+      if (emailInput) {
+        const val = emailInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!val) {
+          setError(emailInput, 'Please enter your email address');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = emailInput;
+        } else if (!emailRegex.test(val)) {
+          setError(emailInput, 'Please enter a valid email address (e.g. name@company.com)');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = emailInput;
+        } else {
+          clearError(emailInput);
+        }
+      }
+
+      // Validate Phone (optional, but if provided check format/length)
+      if (phoneInput && phoneInput.value.trim()) {
+        const val = phoneInput.value.trim();
+        if (val.length < 6) {
+          setError(phoneInput, 'Please enter a valid phone number');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = phoneInput;
+        } else {
+          clearError(phoneInput);
+        }
+      }
+
+      if (firstInvalid) {
+        firstInvalid.focus();
+      }
+
+      return isValid;
+    };
+
+    // Live validation clearance on user typing
+    contactForm.querySelectorAll('input, select, textarea').forEach((input) => {
+      input.addEventListener('input', () => clearError(input));
+      input.addEventListener('change', () => clearError(input));
+    });
+
     let lastSubmission = '';
 
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      if (!contactForm.reportValidity()) return;
-
-      // Honeypot: pretend it worked, but send nothing.
-      const honey = contactForm.querySelector('input[name="website"]') || contactForm.querySelector('input[name="botcheck"]');
-      if (honey && honey.value) {
-        setStatus('Thanks — your enquiry has been sent. We reply within one working day.', 'ok');
-        contactForm.reset();
-        return;
-      }
+      if (!validateForm()) return;
 
       const data = new FormData(contactForm);
       const get = (k) => String(data.get(k) || '').trim();
@@ -231,6 +439,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const process = get('process');
       const city = get('city');
       const details = get('details');
+
+      // Honeypot: pretend it worked, show popup, but send nothing.
+      const honey = contactForm.querySelector('input[name="website"]') || contactForm.querySelector('input[name="botcheck"]');
+      if (honey && honey.value) {
+        showConfirmationModal({ name, company, email, process, city });
+        contactForm.reset();
+        contactForm.querySelectorAll('.form-field').forEach(f => f.classList.remove('has-error'));
+        return;
+      }
 
       const payload = {
         access_key: WEB3FORMS_ACCESS_KEY,
@@ -279,11 +496,10 @@ document.addEventListener('DOMContentLoaded', () => {
           throw new Error(json.message || ('Server answered with status ' + res.status));
         }
 
-        setStatus(
-          'Thanks' + (name ? ', ' + name : '') + ' — your enquiry has been sent to ' + OFFICE_EMAIL + '. We reply within one working day.',
-          'ok'
-        );
+        // Show our popup modal matching the site design
+        showConfirmationModal({ name, company, email, process, city });
         contactForm.reset();
+        contactForm.querySelectorAll('.form-field').forEach(f => f.classList.remove('has-error'));
       } catch (err) {
         showFallback(
           err && err.message ? err.message : 'network error',
@@ -299,7 +515,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* — Search box filtering (a page may have more than one search box,
      e.g. the home page's quick finder plus its own full catalog) — */
-  const searchInputs = document.querySelectorAll('.search-box input, .quick-finder__row input[name="q"]');
+  const searchInputs = document.querySelectorAll('.search-box input:not(#finder-q), .quick-finder__row input[name="q"]');
   const runProductFilter = (query) => {
     if (!document.querySelector('.product-card')) return;
     document.querySelectorAll('.product-card').forEach(card => {

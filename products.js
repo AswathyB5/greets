@@ -828,13 +828,12 @@
      ---------------------------------------------------------------- */
   function brandPage(b) {
     document.title = b.name + " Equipment in India | GREETS";
-    var flag = b.country === "France" ? "🇫🇷" : (b.country === "Italy" ? "🇮🇹" : "🇨🇳");
 
     var html = crumbs([{ t: b.name }]) +
       '<header class="phead brandhead has-photo">' +
       '<div class="phead-content">' +
       '<div class="brand-badge-row">' +
-      '<span class="flag-chip">' + flag + ' ' + esc(b.country) + '</span>' +
+      '<span class="flag-chip">' + esc(b.country) + '</span>' +
       '<span class="oem-chip">Authorised Dealer in India</span>' +
       '</div>' +
       '<div class="brand-title-group">' +
@@ -876,13 +875,12 @@
 
   function catPage(b, c) {
     document.title = c.name + " | " + b.name + " | GREETS";
-    var flag = b.country === "France" ? "🇫🇷" : (b.country === "Italy" ? "🇮🇹" : "🇨🇳");
 
     var html = crumbs([{ t: b.name, href: "#/" + b.id }, { t: c.name }]) +
       '<header class="phead has-photo">' +
       '<div class="phead-content">' +
       '<div class="brand-badge-row">' +
-      '<span class="flag-chip">' + flag + ' ' + esc(b.country) + '</span>' +
+      '<span class="flag-chip">' + esc(b.country) + '</span>' +
       '<span class="oem-chip">' + esc(b.name) + '</span>' +
       '</div>' +
       '<h1>' + esc(c.name) + '</h1>' +
@@ -915,7 +913,6 @@
 
   function machinePage(b, c, m) {
     document.title = m.name + " | " + b.name + " | GREETS";
-    var flag = b.country === "France" ? "🇫🇷" : (b.country === "Italy" ? "🇮🇹" : "🇨🇳");
     var rel = c.machines.filter(function (x) { return x !== m; });
 
     var src = [m, c, b].find(function (x) { return x && x.photo && PHOTOS[x.photo]; });
@@ -957,9 +954,9 @@
         '<p class="note">* Manufacturer figures; exact values depend on configuration.</p>';
     } else {
       specs = '<div class="ondemand">' +
-        '<b>Datasheet & Proposal on Request</b>' +
+        '<b>Datasheet on Request</b>' +
         '<p>This machine is configured to your part specs and throughput. Contact Greets Equipment for technical proposal.</p>' +
-        enquire(b.id, m.name + " datasheet", "Request Proposal") +
+        enquire(b.id, m.name + " datasheet", "Enquire about this") +
         '</div>';
     }
 
@@ -968,14 +965,14 @@
       '<div class="mlayout' + (many ? ' many' : '') + '">' +
       '<div class="mleft">' +
       '<div class="brand-badge-row">' +
-      '<span class="flag-chip">' + flag + ' ' + esc(b.country) + '</span>' +
+      '<span class="flag-chip">' + esc(b.country) + '</span>' +
       '<span class="oem-chip">' + esc(b.name) + '</span>' +
       (m.tag ? '<span class="tag-chip">' + esc(m.tag) + '</span>' : '') +
       '</div>' +
       '<h1>' + esc(m.name) + '</h1>' +
       '<p class="lede">' + esc(m.desc) + '</p>' +
       '<div class="cta-row">' +
-      enquire(b.id, m.name, "Enquire About Machine") +
+      enquire(b.id, m.name, "Enquire about this") +
       '<a class="btn btn--ghost" href="' + (m.url || c.url) + '" target="_blank" rel="noopener"><span>View on ' + esc(b.name) + ' website</span>' + SVG_EXT + '</a>' +
       '</div>' +
       '<div class="mcols">' +
