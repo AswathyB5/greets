@@ -65,13 +65,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* — Smooth anchor scrolling — */
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]:not([href^="#/"])').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
+      const hash = this.getAttribute('href');
+      const viewEl = document.getElementById('view');
+      const homeEl = document.getElementById('top');
+
+      if (viewEl && !viewEl.hidden && homeEl) {
+        viewEl.hidden = true;
+        homeEl.hidden = false;
+        window.location.hash = hash;
+      }
+
+      const target = document.querySelector(hash);
       if (target) {
         e.preventDefault();
+        window.location.hash = hash;
         const headerHeight = document.querySelector('.header')?.offsetHeight || 72;
-        const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+        const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
     });
@@ -125,20 +136,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* — Enquiry form: posts to a form-to-email relay — */
+  /* — Enquiry form: Web3Forms integration — */
   const contactForm = document.querySelector('#enquiry-form');
   if (contactForm) {
-    // The enquiry is posted to a form-to-email relay, which runs on someone
-    // else's server and emails it to the destination in the URL. The visitor's
-    // browser is not involved beyond the POST, so this works on a phone with no
-    // mail client configured, which a mailto: link cannot do.
-    //
-    // The destination is the company address already published in the contact
-    // sidebar and footer, so nothing new is exposed in the page source.
-    //
-    // Left empty on purpose if you would rather not use a relay: the form then
-    // falls back to handing the enquiry to the visitor's mail app.
-    const ENQUIRY_ENDPOINT = 'https://formsubmit.co/ajax/enquiry-equipment@greets.co.in';
+    const WEB3FORMS_ACCESS_KEY = '0554f1da-4bb4-4c4e-85fe-523711ed17e6';
+    const ENQUIRY_ENDPOINT = 'https://api.web3forms.com/submit';
     const OFFICE_EMAIL = 'enquiry-equipment@greets.co.in';
     const OFFICE_PHONE = '+918000000000';
     const statusEl = document.querySelector('#enquiry-status');
@@ -153,23 +155,21 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const summaryOf = (p) => [
-      'Name: ' + p.name,
-      'Company: ' + p.company,
-      'Email: ' + p.email,
-      'Phone: ' + p.phone,
-      'Process: ' + p.process,
-      'City: ' + p.city,
+      'Name: ' + (p.name || ''),
+      'Company: ' + (p.company || 'N/A'),
+      'Email: ' + (p.email || ''),
+      'Phone: ' + (p.phone || 'N/A'),
+      'Process: ' + (p.process || 'N/A'),
+      'City: ' + (p.city || 'N/A'),
       '',
       'Parts, material and volumes:',
-      p.details
+      p.details || 'N/A'
     ].join('\n');
 
-    // The enquiry must never be lost, so the details the visitor typed are
-    // always shown back to them as copyable text, with the office email and
-    // phone offered as a way through.
     const showFallback = (reason, heading) => {
       if (!statusEl) return;
       statusEl.className = 'form-status form-status--error';
+      statusEl.innerHTML = '';
 
       const intro = document.createElement('div');
       intro.textContent = heading;
@@ -212,12 +212,10 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      // Native validation first, so the browser marks the empty and malformed
-      // fields before anything is sent.
       if (!contactForm.reportValidity()) return;
 
       // Honeypot: pretend it worked, but send nothing.
-      const honey = contactForm.querySelector('input[name="website"]');
+      const honey = contactForm.querySelector('input[name="website"]') || contactForm.querySelector('input[name="botcheck"]');
       if (honey && honey.value) {
         setStatus('Thanks — your enquiry has been sent. We reply within one working day.', 'ok');
         contactForm.reset();
@@ -227,32 +225,39 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = new FormData(contactForm);
       const get = (k) => String(data.get(k) || '').trim();
       const name = get('name');
+      const company = get('company');
+      const email = get('email');
+      const phone = get('phone');
+      const process = get('process');
+      const city = get('city');
+      const details = get('details');
 
       const payload = {
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `New Equipment Enquiry from ${name}${company ? ' (' + company + ')' : ''}`,
+        from_name: 'Greets Equipment Website',
+        replyto: email,
         name: name,
-        company: get('company'),
-        email: get('email'),
-        phone: get('phone'),
-        process: get('process'),
-        city: get('city'),
-        details: get('details')
+        company: company,
+        email: email,
+        phone: phone,
+        process: process,
+        city: city,
+        details: details,
+        message: [
+          'Name: ' + name,
+          'Company: ' + (company || 'N/A'),
+          'Email: ' + email,
+          'Phone: ' + (phone || 'N/A'),
+          'Process: ' + (process || 'N/A'),
+          'City: ' + (city || 'N/A'),
+          '',
+          'Parts, material and volumes:',
+          details || 'None provided'
+        ].join('\n')
       };
 
       lastSubmission = summaryOf(payload);
-
-      // No relay configured: hand the enquiry to the visitor's mail app and
-      // keep their details on screen in case they do not send it.
-      if (!ENQUIRY_ENDPOINT) {
-        showFallback(
-          null,
-          'Your email app should now be open with the enquiry ready to send to ' + OFFICE_EMAIL + '. ' +
-          'If it did not open, the details are below — please copy them and email or call us.'
-        );
-        const subject = encodeURIComponent('Website enquiry' + (name ? ' from ' + name : ''));
-        window.location.href = 'mailto:' + OFFICE_EMAIL + '?subject=' + subject +
-          '&body=' + encodeURIComponent(lastSubmission);
-        return;
-      }
 
       contactForm.setAttribute('data-busy', '');
       if (btnLabel) btnLabel.textContent = 'Sending…';
@@ -265,21 +270,17 @@ document.addEventListener('DOMContentLoaded', () => {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
-          body: JSON.stringify(Object.assign({}, payload, {
-            _subject: 'Website enquiry' + (name ? ' from ' + name : ''),
-            _template: 'table',
-            // Replied-to goes to the visitor so a reply from the mailbox reaches them.
-            _replyto: payload.email
-          }))
+          body: JSON.stringify(payload)
         });
 
-        if (!res.ok) {
-          throw new Error('the form relay answered ' + res.status);
+        const json = await res.json().catch(() => ({}));
+
+        if (!res.ok || json.success === false) {
+          throw new Error(json.message || ('Server answered with status ' + res.status));
         }
 
         setStatus(
-          'Thanks' + (name ? ', ' + name : '') + ' — your enquiry has reached our Bangalore office. ' +
-          'We reply within one working day.',
+          'Thanks' + (name ? ', ' + name : '') + ' — your enquiry has been sent to ' + OFFICE_EMAIL + '. We reply within one working day.',
           'ok'
         );
         contactForm.reset();
