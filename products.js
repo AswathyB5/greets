@@ -13,7 +13,7 @@
   const LOGO_PATHS = {
     bmi: "assets/logo-BMI.png",
     novatec: "assets/logo-novatec.png",
-    huasheng: "assets/logos/huasheng.jpg",
+    huasheng: "assets/logos/huasheng.png",
   };
 
   /* ----------------------------------------------------------------
@@ -52,7 +52,7 @@
      Industries
      ---------------------------------------------------------------- */
   const IND = [
-    { id: "tools", n: "Cutting and gear cutting tools", d: "Hobs, shaper cutters, gear cutting tools, inserts, drills and end mills." },
+    { id: "tools", n: "Cutting and gear cutting tools", d: "Hobs, shaper cutters, inserts, drills and end mills." },
     { id: "jobshop", n: "PVD coating service providers", d: "Coating job shops and in-house coating centres." },
     { id: "dies", n: "Dies and mould manufacturers", d: "Press tools, forging dies, die-casting and plastic moulds." },
     { id: "steel", n: "Steel and metal processing", d: "Commercial heat treaters, steel, alloy and forging plants." },
@@ -88,7 +88,7 @@
   const CATALOG = [
     {
       id: "bmi", photo: "bmi_brand", photoAlt: "BMI vacuum furnace installation",
-      name: "BMI", full: "Fours Industriels B.M.I.", country: "France", site: "https://www.bmi-fours.com",
+      name: "BMI", full: "Fours Industriels BMI", country: "France", site: "https://www.bmi-fours.com",
       intro: "Vacuum furnaces for hardening, brazing, tempering and thermochemical treatment, designed and built in France since the early 1980s.",
       cats: [
         {
@@ -612,13 +612,13 @@
           ],
         },
         {
-          id: "optical", photo: "hs_mc1000", photoAlt: "Huasheng MC1000 coating machine",
+          id: "optical", photo: "hs_mc1000", photoAlt: "Huasheng optical coating equipment",
           name: "Optical coating equipment", sub: "Evaporation and magnetron sputtering",
           desc: "Systems for optical thin films on lenses and optical components.",
           url: "https://www.hscoat.com/optical-coating-equipment/",
           machines: [
             {
-              id: "evaporation", photo: "hs_mc1000", photoAlt: "Huasheng MC1000 coating machine",
+              id: "evaporation", photo: "hs_mc1000", photoAlt: "Huasheng evaporation optical coating equipment",
               name: "Evaporation optical coating equipment",
               short: "Anti-reflection and filter coatings.",
               desc: "Evaporation systems for anti-reflection and filter coatings on lenses and optics.",
@@ -629,7 +629,7 @@
               i: ["optics"],
             },
             {
-              id: "sputter-optical", photo: "hs_mc1000", photoAlt: "Huasheng MC1000 coating machine",
+              id: "sputter-optical", photo: "hs_mc1000", photoAlt: "Huasheng magnetron sputtering optical coating equipment",
               name: "Magnetron sputtering optical coating equipment",
               short: "Precise multilayer optical films.",
               desc: "Magnetron sputtering systems for precise multilayer optical films.",
@@ -642,13 +642,13 @@
           ],
         },
         {
-          id: "cvd", photo: "hs_ma1500", photoAlt: "Huasheng MA1500 coating machine",
+          id: "cvd", photo: "hs_ma1500", photoAlt: "Huasheng CVD and aluminizing coating equipment",
           name: "CVD coating equipment", sub: "CVD and CVA aluminizing",
           desc: "Chemical vapour deposition systems for thick wear-resistant and high-temperature coatings.",
           url: "https://www.hscoat.com/cvd-coating-equipment/",
           machines: [
             {
-              id: "cvd-systems", photo: "hs_ma1500", photoAlt: "Huasheng MA1500 coating machine",
+              id: "cvd-systems", photo: "hs_ma1500", photoAlt: "Huasheng CVD coating system",
               name: "CVD coating systems",
               short: "Thick wear-resistant coatings.",
               desc: "CVD systems for thick wear-resistant coatings, typically on turning inserts.",
@@ -659,7 +659,7 @@
               i: ["tools"],
             },
             {
-              id: "cva", photo: "hs_ma1500", photoAlt: "Huasheng MA1500 coating machine",
+              id: "cva", photo: "hs_ma1500", photoAlt: "Huasheng CVA aluminizing system",
               name: "CVA aluminizing systems",
               short: "Aluminide coatings for high-temperature parts.",
               desc: "Chemical vapour aluminizing systems for aluminide coatings that protect parts against high-temperature oxidation.",
@@ -803,7 +803,7 @@
     return '<div class="crumbrow">' +
       '<button type="button" class="backbtn" data-back>' + SVG_BACK + '<span>Back</span></button>' +
       '<nav class="crumbs" aria-label="Breadcrumb">' +
-      '<a href="#" class="crumb-home"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Products</a>' +
+      '<a href="#finder" class="crumb-home"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Products</a>' +
       parts.map(function (p) {
         return p.href
           ? ' <span class="crumb-sep" aria-hidden="true">/</span> <a href="' + p.href + '">' + esc(p.t) + '</a>'
@@ -977,7 +977,6 @@
       '</div>' +
       '<div class="mcols">' +
       '<section class="mcol-card"><h2>Key Features</h2><ul class="feat">' + m.features.map(function (f) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(f) + '</span></li>'; }).join("") + '</ul></section>' +
-      '<section class="mcol-card"><h2>Processes & Applications</h2><div class="pills">' + m.process.map(function (p) { return '<span>' + esc(p) + '</span>'; }).join("") + '</div></section>' +
       '</div>' +
       (m.i && m.i.length
         ? '<p class="ind-para"><strong>Target Industries:</strong> ' + m.i.map(function (x) {
@@ -1033,7 +1032,7 @@
         document.getElementById("view").innerHTML = '<div class="wrap">' +
           crumbs([{ t: "Not found" }]) +
           '<h1>Page not found</h1>' +
-          '<p class="lede">This product page doesn\'t exist. <a href="#">Go back to all products</a>.</p>' +
+          '<p class="lede">This product page doesn\'t exist. <a href="#finder">Go back to all products</a>.</p>' +
           '</div>';
         document.title = "Not found | GREETS";
       }
@@ -1087,6 +1086,13 @@
      Back button + photo gallery + enquire handling
      ---------------------------------------------------------------- */
   view.addEventListener("click", function (e) {
+    var crumbHome = e.target.closest(".crumb-home");
+    if (crumbHome) {
+      location.hash = "#finder";
+      route();
+      return;
+    }
+
     var back = e.target.closest("[data-back]");
     if (back) {
       var d = history.state && history.state.d;
@@ -1127,6 +1133,379 @@
       }
     }
   });
+
+  /* ----------------------------------------------------------------
+     Smart search: understands applications, processes and synonyms
+     (Ported directly from greets-products (20).html)
+     ---------------------------------------------------------------- */
+  const PROC = {
+    harden: ["b8t", "vse8t", "oil-horizontal", "oil-vertical", "lab"],
+    temper: ["tempering"],
+    braze: ["brazing", "alu-brazing"],
+    carburize: ["allcarb"],
+    nitride: ["allnit", "plasma-nitriding"],
+    cryo: ["cool-plus"],
+    clean: ["pluritank-line", "pre-pvd", "cleanroom", "2crd-system", "ipc", "fcps", "combined", "generators", "plt60v"],
+    passivate: ["fcps", "combined"],
+    inspect: ["fpi"],
+    pvd: ["md800", "aip", "hipims", "hybrid", "decorative"],
+    dlc: ["pecvd-dlc", "tac"],
+    diamond: ["hfcvd"],
+    optical: ["evaporation", "sputter-optical"],
+    cvd: ["cvd-systems", "cva"],
+    turnkey: ["md800-turnkey", "combined"]
+  };
+  PROC.coat = [].concat(PROC.pvd, PROC.dlc, PROC.diamond, PROC.optical, PROC.cvd, ["md800-turnkey"]);
+  PROC.heat = [].concat(PROC.harden, PROC.temper, PROC.braze, PROC.carburize, PROC.nitride, PROC.cryo);
+
+  const PROC_LABEL = {
+    harden: "hardening",
+    temper: "tempering",
+    braze: "brazing",
+    carburize: "carburizing",
+    nitride: "nitriding",
+    cryo: "sub-zero treatment",
+    clean: "cleaning",
+    passivate: "passivation",
+    inspect: "crack inspection (FPI)",
+    pvd: "PVD coating",
+    dlc: "DLC coating",
+    diamond: "diamond coating",
+    optical: "optical coating",
+    cvd: "CVD coating",
+    turnkey: "turnkey plants",
+    coat: "coating",
+    heat: "heat treatment"
+  };
+
+  const SYN = [
+    [["mould", "mold", "die", "dies", "diecast", "die-cast", "injection", "stamping", "press tool", "presstool", "forging die", "punch"], "i:dies"],
+    [["hob", "shaper", "gear cutting", "broach", "drill", "endmill", "end mill", "insert", "tap", "reamer", "cutting tool", "cutter", "milling"], "i:tools"],
+    [["car", "automotive", "auto", "vehicle", "gearbox", "transmission", "engine", "piston", "ev "], "i:auto"],
+    [["aerospace", "aircraft", "aviation", "defence", "defense", "military", "weapon"], "i:aero"],
+    [["implant", "medical", "orthopaedic", "orthopedic", "surgical", "hospital", "dental"], "i:medical"],
+    [["semiconductor", "wafer", "electronic", "chip"], "i:semi"],
+    [["lens", "optic", "eyewear", "spectacle", "glass"], "i:optics"],
+    [["watch", "jewel", "decorative", "sanitary", "faucet", "hardware finish", "colour", "color"], "i:watch"],
+    [["job shop", "jobshop", "coating service", "coating centre", "coating center", "coater"], "i:jobshop"],
+    [["steel", "forging", "metal", "heat treater", "alloy", "foundry"], "i:steel"],
+    [["wind", "solar", "thermal power", "power plant", "power", "turbine"], "i:power"],
+    [["oil", "gas", "valve", "pump", "drilling", "petro", "refinery"], "i:oilgas"],
+    [["nitrid", "nitrocarbur", "ion nitr"], "p:nitride"],
+    [["carburi", "case harden", "lpc"], "p:carburize"],
+    [["harden", "quench", "anneal", "stress reliev", "sinter", "vacuum furnace", "furnace"], "p:harden"],
+    [["temper"], "p:temper"],
+    [["braz"], "p:braze"],
+    [["cryo", "sub-zero", "subzero", "deep freez"], "p:cryo"],
+    [["heat treat", "heat-treat", "thermal process"], "p:heat"],
+    [["clean", "wash", "degreas", "ultrason", "pre-treat", "pretreat", "rinse", "dry"], "p:clean"],
+    [["passivat"], "p:passivate"],
+    [["fpi", "penetrant", "crack", "ndt", "inspection"], "p:inspect"],
+    [["coat", "plating", "film", "surface treat"], "p:coat"],
+    [["pvd", "arc", "sputter", "hipims", "tialn", "alcrn", "tin ", "physical vapour", "physical vapor"], "p:pvd"],
+    [["dlc", "diamond-like", "diamond like", "ta-c", "tac", "low friction"], "p:dlc"],
+    [["diamond", "hfcvd"], "p:diamond"],
+    [["cvd", "aluminiz", "aluminis"], "p:cvd"],
+    [["anti-reflect", "optical coat", "evaporation"], "p:optical"],
+    [["turnkey", "plant", "complete line", "setup"], "p:turnkey"]
+  ];
+
+  function lev1(a, b) {
+    if (Math.abs(a.length - b.length) > 1) return false;
+    let i = 0, j = 0, d = 0;
+    while (i < a.length && j < b.length) {
+      if (a[i] === b[j]) { i++; j++; continue; }
+      if (++d > 1) return false;
+      if (a.length > b.length) i++;
+      else if (b.length > a.length) j++;
+      else { i++; j++; }
+    }
+    return d + (a.length - i) + (b.length - j) <= 1;
+  }
+
+  function understand(q) {
+    const text = " " + q.toLowerCase().replace(/[^a-z0-9\- ]/g, " ").replace(/\s+/g, " ") + " ";
+    const words = text.trim().split(" ").filter(function (w) { return w.length > 1; });
+    const inds = new Set(), procs = new Set(), used = new Set();
+    SYN.forEach(function (pair) {
+      const keys = pair[0], c = pair[1];
+      keys.forEach(function (k) {
+        const hit = k.includes(" ")
+          ? text.includes(" " + k.trim())
+          : words.some(function (w) {
+              const ok = w.startsWith(k) ||
+                (w.length >= 4 && k.startsWith(w)) ||
+                (w.length >= 5 && k.length >= 4 && [k.length - 1, k.length, k.length + 1].some(function (L) { return lev1(w.slice(0, L), k); }));
+              if (ok) used.add(w);
+              return ok;
+            });
+        if (hit) {
+          if (c[0] === "i") inds.add(c.slice(2));
+          else procs.add(c.slice(2));
+        }
+      });
+    });
+    return {
+      words: words,
+      inds: Array.from(inds),
+      procs: Array.from(procs),
+      free: words.filter(function (w) { return !used.has(w); })
+    };
+  }
+
+  const STEP_OF = function (p) {
+    return ({ bmi: 1, novatec: 2, huasheng: 3 })[p.bid] || 1;
+  };
+
+  function scoreOf(p, u) {
+    let sc = 0, why = [];
+    const blob = (p.n + " " + p.b + " " + p.f + " " + p.s + " " + p.k).toLowerCase();
+    u.inds.forEach(function (i) {
+      if (p.i.includes(i)) {
+        sc += 3;
+        var indObj = IND.find(function (z) { return z.id === i; });
+        if (indObj) why.push(indObj.n);
+      }
+    });
+    let procHit = false;
+    u.procs.forEach(function (pr) {
+      if ((PROC[pr] || []).includes(p.mid)) {
+        sc += 5;
+        procHit = true;
+        if (PROC_LABEL[pr]) why.push(PROC_LABEL[pr]);
+      }
+    });
+    u.words.forEach(function (w) {
+      if (p.n.toLowerCase().includes(w)) sc += 4;
+      else if (blob.includes(w)) sc += 2;
+    });
+    // when both an application and a process are asked for, favour machines matching both
+    if (u.procs.length && !procHit) sc = 0;
+    if (u.inds.length && u.procs.length && !(u.inds.some(function (i) { return p.i.includes(i); }))) sc = Math.min(sc, 1);
+    return { sc: sc, why: Array.from(new Set(why)) };
+  }
+
+  /* ----------------------------------------------------------------
+     Finder Controller
+     ---------------------------------------------------------------- */
+  (function initFinder() {
+    let brand = "all", ind = null;
+    const q = document.getElementById("q"),
+      res = document.getElementById("results"),
+      st = document.getElementById("ind-status"),
+      fInd = document.getElementById("f-ind"),
+      fCat = document.getElementById("f-cat");
+
+    if (fInd) {
+      fInd.innerHTML = '<option value="">All industries</option>' +
+        IND.map(function (x) { return '<option value="' + x.id + '">' + esc(x.n) + '</option>'; }).join("");
+    }
+
+    function fillCats() {
+      if (!fCat) return;
+      const cur = fCat.value;
+      const bs = CATALOG.filter(function (x) { return brand === "all" || x.name === brand; });
+      fCat.innerHTML = '<option value="">All categories</option>' + bs.map(function (x) {
+        return '<optgroup label="' + esc(x.name) + '">' + x.cats.map(function (c) {
+          return '<option value="' + x.id + '/' + c.id + '">' + esc(c.name) + '</option>';
+        }).join("") + '</optgroup>';
+      }).join("");
+      if (Array.from(fCat.options).some(function (o) { return o.value === cur; })) {
+        fCat.value = cur;
+      }
+    }
+
+    const thumbOf = function (p) {
+      const o = [p._m, p._c, p._b].find(function (x) { return x && x.photo && PHOTOS[x.photo]; });
+      return o ? PHOTOS[o.photo] : "";
+    };
+
+    function syncButtons() {
+      document.querySelectorAll(".seg button").forEach(function (x) {
+        x.setAttribute("aria-pressed", x.dataset.brand === brand);
+      });
+      const step = brand === "all" ? "all" : brand.toLowerCase();
+      document.querySelectorAll(".steps button").forEach(function (x) {
+        x.setAttribute("aria-pressed", x.dataset.step === step);
+      });
+    }
+
+    function render() {
+      if (!res) return;
+      const raw = q ? q.value.trim() : "", cat = fCat ? fCat.value : "", u = understand(raw);
+      let list = IDX.filter(function (p) {
+        return (brand === "all" || p.b === brand) &&
+          (!ind || p.i.includes(ind)) &&
+          (!cat || (p.bid + "/" + p.cid) === cat);
+      });
+      let scored = list.map(function (p) {
+        return Object.assign({ p: p }, raw ? scoreOf(p, u) : { sc: 1, why: [] });
+      }).filter(function (x) { return x.sc > 0; });
+
+      if (raw) {
+        const top = Math.max.apply(Math, [0].concat(scored.map(function (x) { return x.sc; })));
+        scored = scored.filter(function (x) { return x.sc >= Math.min(3, top); });
+      }
+
+      scored.sort(function (a, b) {
+        return (STEP_OF(a.p) - STEP_OF(b.p)) || (b.sc - a.sc);
+      });
+
+      const rowHtml = function (x) {
+        const p = x.p, th = thumbOf(p), lg = logo(p.bid);
+        return '<a class="result" role="listitem" href="' + p.href + '">' +
+          '<span class="r-th">' + (th ? '<img src="' + th + '" alt="" loading="lazy">' : '') + '</span>' +
+          '<span class="r-main"><span class="n">' + esc(p.n) + '</span><span class="r-s">' +
+          (x.why.length ? '<em class="r-why">For ' + esc(x.why.slice(0, 2).join(", ")) + '</em> ' : '') +
+          esc(p.s) + '</span></span>' +
+          '<span class="r-cat">' + esc(p.f) + '</span>' +
+          '<span class="b">' + (lg ? '<img src="' + lg + '" alt="' + esc(p.b) + '">' : esc(p.b)) + '</span>' +
+          '<span class="r-go" aria-hidden="true">›</span></a>';
+      };
+
+      if (!scored.length) {
+        res.innerHTML = '<p class="empty">No systems match. Try an application such as “moulds”, “hobs” or “implants”, a process such as “nitriding” or “DLC”, or <a href="#contact">ask Greets</a>.</p>';
+      } else if (raw) {
+        const steps = [
+          [1, "Harden", "BMI vacuum furnaces"],
+          [2, "Clean", "Novatec cleaning systems"],
+          [3, "Coat", "Huasheng coating equipment"]
+        ];
+        res.innerHTML = steps.map(function (stepArr) {
+          const n = stepArr[0], v = stepArr[1], sub = stepArr[2];
+          const g = scored.filter(function (x) { return STEP_OF(x.p) === n; });
+          return g.length
+            ? '<div class="r-group" role="presentation"><span class="bc-n">' + n + '</span> <b>' + v + '</b> <span>' + sub + '</span> <em>' + g.length + '</em></div>' + g.map(rowHtml).join("")
+            : "";
+        }).join("");
+      } else {
+        res.innerHTML = scored.map(rowHtml).join("");
+      }
+
+      const n = scored.length;
+      let head = '<b>' + n + '</b> ' + (n === 1 ? 'system' : 'systems');
+      if (raw && (u.inds.length || u.procs.length)) {
+        const appl = u.inds.map(function (i) {
+          var found = IND.find(function (z) { return z.id === i; });
+          return found ? found.n : i;
+        });
+        const pr = u.procs.map(function (x) { return PROC_LABEL[x] || x; });
+        const stepsHit = [1, 2, 3].filter(function (k) {
+          return scored.some(function (x) { return STEP_OF(x.p) === k; });
+        }).map(function (k) { return ["", "Harden", "Clean", "Coat"][k]; });
+        head += ' for ' + esc(appl.concat(pr).join(" + ")) + (stepsHit.length > 1 ? ' <span class="route">Suggested route: ' + esc(stepsHit.join(" → ")) + '</span>' : '');
+      } else if (raw) {
+        head += ' for “' + esc(raw) + '”';
+      }
+
+      const active = [
+        brand !== "all" ? brand : null,
+        ind ? (IND.find(function (z) { return z.id === ind; }) || {}).n : null,
+        (cat && fCat && fCat.selectedIndex >= 0) ? fCat.options[fCat.selectedIndex].text : null
+      ].filter(Boolean);
+
+      if (active.length) {
+        head += ' <span class="fchips">' + active.map(esc).join(", ") + '</span>';
+      }
+      if (raw || active.length) {
+        head += '<button type="button" id="clr">Reset filters</button>';
+      }
+      if (st) st.innerHTML = head;
+
+      const c = document.getElementById("clr");
+      if (c) {
+        c.onclick = function () {
+          brand = "all";
+          ind = null;
+          if (q) q.value = "";
+          if (fInd) fInd.value = "";
+          fillCats();
+          if (fCat) fCat.value = "";
+          syncButtons();
+          render();
+        };
+      }
+    }
+
+    // Populate logo buttons
+    document.querySelectorAll('.seg button[data-brand]:not([data-brand="all"])').forEach(function (bt) {
+      const id = bt.dataset.brand.toLowerCase(), src = logo(id);
+      if (src) {
+        bt.innerHTML = '<img src="' + src + '" alt="' + esc(bt.dataset.brand) + '">';
+        bt.classList.add("logo-btn");
+      }
+    });
+
+    if (q) q.addEventListener("input", render);
+    document.querySelectorAll(".qchip").forEach(function (c) {
+      c.addEventListener("click", function () {
+        if (q) {
+          q.value = c.textContent.trim();
+          render();
+          q.focus();
+        }
+      });
+    });
+
+    if (fInd) fInd.addEventListener("change", function () { ind = fInd.value || null; render(); });
+    if (fCat) fCat.addEventListener("change", function () {
+      if (fCat.value) {
+        const bid = fCat.value.split("/")[0];
+        const found = CATALOG.find(function (x) { return x.id === bid; });
+        if (found) brand = found.name;
+        syncButtons();
+      }
+      render();
+    });
+
+    document.querySelectorAll(".steps button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        const s = b.dataset.step;
+        if (s === "all") {
+          brand = "all";
+        } else {
+          const found = CATALOG.find(function (x) { return x.id === s; });
+          if (found) brand = found.name;
+        }
+        fillCats();
+        syncButtons();
+        render();
+      });
+    });
+
+    document.querySelectorAll(".seg button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        brand = b.dataset.brand;
+        fillCats();
+        syncButtons();
+        render();
+      });
+    });
+
+    // Clicking an industry card in the industries section filters the finder
+    document.querySelectorAll(".industry-card-v2[data-ind], .ind[data-ind]").forEach(function (b) {
+      b.addEventListener("click", function (e) {
+        e.preventDefault();
+        ind = b.dataset.ind;
+        if (fInd) fInd.value = ind;
+        brand = "all";
+        if (q) q.value = "";
+        fillCats();
+        if (fCat) fCat.value = "";
+        syncButtons();
+        render();
+        var finderSection = document.getElementById("finder");
+        if (finderSection) {
+          var headerHeight = document.querySelector(".header") ? document.querySelector(".header").offsetHeight : 72;
+          var y = finderSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      });
+    });
+
+    fillCats();
+    render();
+  })();
 
   /* ----------------------------------------------------------------
       Product mega menu

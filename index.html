@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Greets Equipment – Authorised Dealer in India for Novatec, Huasheng and BMI</title>
+  <title>Greets Equipment – Authorised Dealer in India for BMI, Novatec and Huasheng</title>
   <meta name="description"
     content="One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating.">
   <link rel="icon" type="image/png" href="assets/greetsfavicon.png">
@@ -96,6 +96,48 @@
 
     .hdr-cta:hover .arrow {
       transform: translateX(4px);
+    }
+
+    /* Mobile Hamburger Menu */
+    .header__hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 20px;
+      padding: 0;
+      background: transparent !important;
+      border: none !important;
+      cursor: pointer;
+      z-index: 1010;
+    }
+
+    .header__hamburger span {
+      display: block !important;
+      width: 100% !important;
+      height: 2.5px !important;
+      background-color: #000000 !important;
+      background: #000000 !important;
+      border-radius: 2px;
+      transition: transform 0.3s var(--ease-out), opacity 0.3s var(--ease-out);
+    }
+
+    .header__hamburger.open span:nth-child(1) {
+      transform: translateY(8.75px) rotate(45deg) !important;
+    }
+
+    .header__hamburger.open span:nth-child(2) {
+      opacity: 0 !important;
+    }
+
+    .header__hamburger.open span:nth-child(3) {
+      transform: translateY(-8.75px) rotate(-45deg) !important;
+    }
+
+    @media (max-width: 768px) {
+      .header__hamburger {
+        display: flex !important;
+      }
     }
 
     html {
@@ -202,8 +244,8 @@
 
     .hero--light h1 {
       color: #FFFFFF !important;
-      font-size: clamp(2.2rem, 4vw, 3.1rem) !important;
-      line-height: 1.15 !important;
+      font-size: clamp(1.75rem, 4vw, 3.1rem) !important;
+      line-height: 1.16 !important;
       letter-spacing: -0.02em;
       margin-bottom: 0.85rem !important;
       text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.35);
@@ -220,8 +262,8 @@
 
     .hero--light .hero__desc {
       color: rgba(255, 255, 255, 0.86) !important;
-      font-size: 0.98rem !important;
-      line-height: 1.65 !important;
+      font-size: clamp(0.85rem, 1.6vw, 1rem) !important;
+      line-height: 1.6 !important;
       max-width: 700px;
       margin-bottom: 1.6rem !important;
       text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -231,10 +273,10 @@
       background: rgba(255, 255, 255, 0.12) !important;
       border: 1px solid rgba(255, 255, 255, 0.28) !important;
       color: #FFFFFF !important;
-      font-size: 0.76rem !important;
+      font-size: clamp(0.66rem, 1.2vw, 0.76rem) !important;
       font-weight: 700 !important;
-      padding: 0.5rem 1.1rem !important;
-      margin-bottom: 1.1rem !important;
+      padding: 0.45rem 1rem !important;
+      margin-bottom: 1rem !important;
       letter-spacing: 0.06em;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
     }
@@ -247,6 +289,46 @@
     .hero--light .hero__actions .btn {
       padding: 0.72rem 1.6rem !important;
       font-size: 0.88rem !important;
+    }
+
+    @media (max-width: 768px) {
+      .hero--light {
+        padding: 85px 0 2.5rem !important;
+        min-height: auto !important;
+      }
+
+      .hero-inner__text {
+        padding: 1.5rem 0.75rem !important;
+      }
+
+      .hero--light h1 {
+        font-size: clamp(1.65rem, 6.8vw, 2.15rem) !important;
+        line-height: 1.18 !important;
+        margin-bottom: 0.85rem !important;
+      }
+
+      .hero--light .hero__desc {
+        font-size: 0.88rem !important;
+        line-height: 1.52 !important;
+        margin-bottom: 1.25rem !important;
+      }
+
+      .hero--light .hero__badge {
+        font-size: 0.65rem !important;
+        padding: 0.35rem 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+      }
+
+      .hero--light .hero__actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.65rem;
+      }
+
+      .hero--light .hero__actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
     }
 
     .hero__bg-badge {
@@ -2259,6 +2341,54 @@
       gap: 0.4rem;
     }
 
+    .form-privacy-card {
+      margin-top: 0.65rem;
+      background: #F8FAF9;
+      border: 1px solid rgba(2, 150, 60, 0.2);
+      border-radius: 8px;
+      padding: 0.45rem 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.76rem;
+      line-height: 1.4;
+      color: var(--steel);
+    }
+
+    .form-privacy-card__icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(2, 150, 60, 0.12);
+      color: var(--lime);
+      flex-shrink: 0;
+    }
+
+    .form-privacy-card__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+
+    .form-privacy-card__link {
+      color: var(--accent-text);
+      font-weight: 650;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      white-space: nowrap;
+      margin-left: auto;
+    }
+
+    .form-privacy-card__link:hover {
+      color: var(--ink);
+    }
+
     /* Submit state and the on-screen confirmation. */
     .form-status {
       margin-top: 0.85rem;
@@ -2341,17 +2471,22 @@
       pointer-events: none;
     }
 
-    /* Honeypot: off-screen, not display:none, so bots still fill it. */
+    /* Honeypot: off-screen, not display:none, so bots still fill it while remaining completely invisible to humans and autofill. */
     .hp-field {
       position: absolute !important;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-      border: 0;
+      left: -9999px !important;
+      top: -9999px !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      z-index: -9999 !important;
     }
 
     /* ── Footer ── */
@@ -2581,13 +2716,15 @@
        Vertical padding is viewport-height based rather than width based, which
        keeps the rhythm identical on a 768px laptop and a 1080px desktop. */
     .section,
-    .brand-section {
+    .brand-section,
+    .finder {
       min-height: calc(100svh - 72px);
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding-top: clamp(2rem, 5vh, 5rem);
       padding-bottom: clamp(2rem, 5vh, 5rem);
+      box-sizing: border-box;
     }
 
     /* Short viewports: trim the rhythm so the content still lands inside one
@@ -2595,7 +2732,8 @@
     @media (max-height: 900px) {
 
       .section,
-      .brand-section {
+      .brand-section,
+      .finder {
         padding-top: clamp(1.5rem, 3.5vh, 3rem);
         padding-bottom: clamp(1.5rem, 3.5vh, 3rem);
       }
@@ -2604,7 +2742,8 @@
     @media (max-height: 720px) {
 
       .section,
-      .brand-section {
+      .brand-section,
+      .finder {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
       }
@@ -2998,15 +3137,600 @@
       .section .text-center.mb-6 {
         margin-bottom: 0.6rem !important;
       }
+    }
 
-      .form-field textarea {
-        min-height: 46px !important;
+    /* ============================================================
+       Find a system (Finder) - Redesigned to match image
+       ============================================================ */
+
+    /* Section wrapper: light gray background, the card sits inside */
+    .finder {
+      background: #F0F1ED;
+      border-top: none;
+      border-bottom: none;
+      position: relative;
+      isolation: isolate;
+    }
+
+    /* White card */
+    .finder>.wrap.container {
+      width: 100%;
+      background: #FFFFFF;
+      border-radius: 16px;
+      border: 1px solid #E0E3DC;
+      box-shadow: 0 4px 24px -8px rgba(27, 35, 40, 0.12);
+      padding: clamp(1.25rem, 2.5vh, 2rem) clamp(1.25rem, 2.5vw, 2.25rem);
+      box-sizing: border-box;
+    }
+
+    .finder-head {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .finder-head h2 {
+      font-size: clamp(1.45rem, 2.2vw, 1.9rem);
+      font-weight: 800;
+      color: #1B2328;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .finder .lede,
+    .finder-head .lede {
+      margin-top: 0 !important;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      color: #56636B;
+      max-width: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+
+    /* Row 1: search + brand buttons */
+    .finder-controls {
+      display: flex;
+      align-items: stretch;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .search {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1.5px solid #D3D8D4;
+      border-radius: 10px;
+      padding: 0 14px;
+      background: #FFFFFF;
+      transition: border-color 0.18s;
+    }
+
+    .search:focus-within {
+      border-color: #1B2328;
+      box-shadow: 0 0 0 3px rgba(2, 150, 60, 0.10);
+    }
+
+    .search svg {
+      color: #8A959E;
+      flex-shrink: 0;
+    }
+
+    .search input {
+      border: 0;
+      background: transparent;
+      font: inherit;
+      font-size: 0.92rem;
+      color: #1B2328;
+      padding: 13px 0;
+      width: 100%;
+      outline: none;
+    }
+
+    .search input::placeholder {
+      color: #9AA3A8;
+    }
+
+    /* Brand segment buttons */
+    .seg {
+      display: flex;
+      align-items: stretch;
+      gap: 6px;
+    }
+
+    .seg button {
+      font: inherit;
+      font-size: 0.87rem;
+      font-weight: 650;
+      border: 1.5px solid #D3D8D4;
+      background: #FFFFFF;
+      color: #1B2328;
+      border-radius: 8px;
+      padding: 0 16px;
+      height: 46px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.18s;
+      white-space: nowrap;
+    }
+
+    .seg button:hover {
+      border-color: #1B2328;
+    }
+
+    .seg button[aria-pressed="true"] {
+      background: #027A35;
+      color: #FFFFFF;
+      border-color: #027A35;
+    }
+
+    .seg button[data-brand="all"] {
+      min-width: 100px;
+    }
+
+    /* Logo brand buttons */
+    .seg button.logo-btn {
+      background: #FFFFFF;
+      padding: 0 14px;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-color: #D3D8D4;
+    }
+
+    .seg button.logo-btn img {
+      display: block;
+      height: 24px;
+      width: auto;
+      max-width: 110px;
+      object-fit: contain;
+    }
+
+    .seg button.logo-btn[data-brand="BMI"] img {
+      height: 32px;
+    }
+
+    .seg button.logo-btn[data-brand="Huasheng"] img {
+      height: 30px;
+    }
+
+    .seg button.logo-btn[aria-pressed="true"] {
+      background: #FFFFFF;
+      border-color: #027A35;
+      box-shadow: 0 0 0 2px #027A35 inset;
+    }
+
+    .seg button.logo-btn:hover {
+      border-color: #1B2328;
+    }
+
+    /* Row 2: process steps + dropdowns */
+    .finder-filters {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px 18px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* Process step pill buttons */
+    .steps {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .steps button {
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 650;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1.5px solid #D3D8D4;
+      background: #FFFFFF;
+      color: #1B2328;
+      border-radius: 999px;
+      padding: 7px 15px;
+      cursor: pointer;
+      transition: all 0.18s;
+      white-space: nowrap;
+    }
+
+    .steps button:hover {
+      border-color: #1B2328;
+    }
+
+    .steps button span {
+      display: inline-grid;
+      place-items: center;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: #1B2328;
+      color: #FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 800;
+    }
+
+    .steps button[aria-pressed="true"] {
+      background: #027A35;
+      color: #FFFFFF;
+      border-color: #027A35;
+    }
+
+    .steps button[aria-pressed="true"] span {
+      background: rgba(255, 255, 255, 0.30);
+      color: #FFFFFF;
+    }
+
+    /* Separator between steps and dropdowns */
+    .finder-filter-sep {
+      display: flex;
+      gap: 18px;
+      align-items: flex-end;
+      margin-left: auto;
+    }
+
+    /* Dropdown labels + selects stacked */
+    .fsel {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .fsel>span {
+      font-size: 0.7rem;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #56636B;
+    }
+
+    .fsel select {
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #1B2328;
+      background: #FFFFFF;
+      border: 1.5px solid #D3D8D4;
+      border-radius: 8px;
+      padding: 8px 32px 8px 12px;
+      min-width: 180px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2356636B' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      transition: border-color 0.18s;
+    }
+
+    .fsel select:focus {
+      border-color: #1B2328;
+      box-shadow: 0 0 0 3px rgba(2, 150, 60, 0.10);
+    }
+
+    /* Status line: count + filter chips + reset */
+    .finder .active-industry,
+    .active-industry {
+      margin-top: 14px;
+      font-size: 0.88rem;
+      color: #56636B;
+      min-height: 1.4em;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .active-industry b {
+      color: #1B2328;
+      font-weight: 700;
+    }
+
+    .active-industry button {
+      font: inherit;
+      border: 0;
+      background: none;
+      color: var(--accent-text);
+      font-weight: 650;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0 0 0 6px;
+      font-size: 0.88rem;
+    }
+
+    #clr {
+      font: inherit;
+      font-size: 0.8rem;
+      font-weight: 650;
+      padding: 3px 12px;
+      border-radius: 999px;
+      border: 1.5px solid #D3D8D4;
+      background: #FFFFFF;
+      color: #56636B;
+      cursor: pointer;
+      transition: border-color 0.18s, color 0.18s;
+      margin-left: 4px;
+    }
+
+    #clr:hover {
+      border-color: #1B2328;
+      color: #1B2328;
+    }
+
+    .finder .active-industry .route {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 10px;
+      border-radius: 999px;
+      background: rgba(2, 150, 60, .10);
+      color: var(--accent-text);
+      font-weight: 650;
+      font-size: 0.82rem;
+    }
+
+    .finder .active-industry .fchips {
+      color: #56636B;
+      font-size: 0.82rem;
+    }
+
+    /* Quick chips */
+    .qchip {
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin: 0 2px;
+      padding: 2px 10px;
+      border-radius: 999px;
+      border: 1.5px solid rgba(2, 150, 60, .4);
+      background: rgba(2, 150, 60, .07);
+      color: #027A35;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .qchip:hover {
+      background: rgba(2, 150, 60, .16);
+    }
+
+    /* Results list */
+    .results {
+      margin-top: 6px;
+      max-height: max(220px, calc(100svh - 420px));
+      overflow-y: auto;
+      background: #FFFFFF;
+      border-radius: 10px;
+      border: 1.5px solid #E0E3DC;
+      padding: 0;
+      box-shadow: none;
+      scrollbar-width: thin;
+      scrollbar-color: #C8CCC9 transparent;
+    }
+
+    .results::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .results::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .results::-webkit-scrollbar-thumb {
+      background: #C8CCC9;
+      border-radius: 4px;
+    }
+
+    .result {
+      display: grid;
+      grid-template-columns: 64px minmax(0, 1.7fr) minmax(0, 1fr) 105px 24px;
+      gap: 14px;
+      align-items: center;
+      padding: 11px 16px;
+      border-bottom: 1px solid #EEF0EC;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.12s;
+    }
+
+    .result:last-child {
+      border-bottom: 0;
+    }
+
+    .result:hover {
+      background: #F7F8F5;
+    }
+
+    .r-th {
+      width: 64px;
+      height: 46px;
+      border-radius: 7px;
+      overflow: hidden;
+      background: #F5F6F2;
+      border: 1px solid #E0E3DC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .r-th img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .r-main {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      gap: 1px;
+    }
+
+    .r-main .n {
+      font-size: 0.93rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #1B2328;
+    }
+
+    .r-s {
+      font-size: 0.8rem;
+      color: #56636B;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .r-why {
+      font-style: normal;
+      font-weight: 650;
+      color: #027A35;
+    }
+
+    .r-cat {
+      font-size: 0.82rem;
+      color: #56636B;
+    }
+
+    .result .b {
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .result .b img {
+      max-height: 26px;
+      max-width: 96px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .result .b:not(:has(img)) {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #56636B;
+    }
+
+    .r-go {
+      font-size: 1.2rem;
+      color: #9AA3A8;
+      line-height: 1;
+      text-align: right;
+      transition: color 0.15s, transform 0.15s;
+    }
+
+    .result:hover .r-go {
+      color: #027A35;
+      transform: translateX(2px);
+    }
+
+    /* Group headers (shown when searching, sticky) */
+    .r-group {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 16px 8px;
+      position: sticky;
+      top: 0;
+      background: #FFFFFF;
+      z-index: 1;
+      border-bottom: 1px solid #EEF0EC;
+    }
+
+    .r-group .bc-n {
+      width: 21px;
+      height: 21px;
+      font-size: 0.72rem;
+      background: #1B2328;
+      color: #FFFFFF;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 50%;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .r-group b {
+      font-size: 0.9rem;
+      font-weight: 750;
+      color: #1B2328;
+    }
+
+    .r-group span:not(.bc-n) {
+      font-size: 0.8rem;
+      color: #56636B;
+    }
+
+    .r-group em {
+      margin-left: auto;
+      font-style: normal;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #027A35;
+    }
+
+    .empty {
+      padding: 28px 16px;
+      color: #56636B;
+      font-size: 0.92rem;
+    }
+
+    .empty a {
+      color: #027A35;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1100px) {
+      .finder-filters {
+        flex-wrap: wrap;
+      }
+
+      .finder-filter-sep {
+        margin-left: 0;
       }
     }
 
-    /* ── Global Partner Showcase Section (#partners) ── */
+    @media (max-width: 700px) {
+      .finder-controls {
+        flex-direction: column;
+      }
+
+      .seg {
+        flex-wrap: wrap;
+      }
+
+      .result {
+        grid-template-columns: 56px 1fr 24px !important;
+      }
+
+      .r-cat,
+      .result .b {
+        display: none !important;
+      }
+
+      .fsel select {
+        min-width: 0;
+        width: 100%;
+      }
+
+      .finder-filter-sep {
+        width: 100%;
+      }
+    }
   </style>
-  <title>Products | Greets Equipment – Authorised dealer in India for Novatec, Huasheng and BMI</title>
 </head>
 
 <body class="page-enter">
@@ -3023,7 +3747,7 @@
           aria-controls="mega">Products</button>
         <nav class="header__nav main" aria-label="Main">
           <a class="navlink" href="#industries" data-spy="industries">Industries</a>
-          <a class="navlink" href="#why" data-spy="why">Services</a>
+          <a class="navlink" href="#why" data-spy="why">Why buy through Greets</a>
           <a class="navlink" href="contact.html" data-spy="contact">Contact</a>
         </nav>
       </div>
@@ -3047,12 +3771,15 @@
     <a href="#hero" class="active">Home</a>
     <a href="#finder">Products</a>
     <a href="#industries">Industries</a>
-    <a href="#why">Services</a>
+    <a href="#why">Why buy through Greets</a>
     <a href="contact.html">Contact</a>
     <a href="contact.html" class="btn btn--primary">Talk to Greets</a>
   </nav>
 
-  <!-- Hero -->
+  <!-- Product View Overlay Container (for #/brand/cat/machine routes) -->
+  <div class="view" id="view" hidden></div>
+
+  <!-- Main Homepage Content -->
   <main id="top">
     <section class="hero hero--light" id="hero">
       <div class="hero__bg" role="img" aria-label="Greets surface-engineering equipment"></div>
@@ -3083,7 +3810,7 @@
               </a>
               <a href="#partners" class="btn btn--outline btn--lg"
                 style="color:var(--gray-800); border-color:rgba(0,0,0,0.15); background:rgba(255,255,255,0.85);">
-                Our Partners
+                Our partners
               </a>
             </div>
           </div>
@@ -3113,14 +3840,14 @@
             <div class="partner-card-light__body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
                 <div class="bc-step">
-                  <span class="bc-n">1</span>Harden
+                  <span class="bc-n">1</span> Harden
                 </div>
                 <div class="partner-brand-logo">
                   <img src="assets/logo-BMI.png" alt="Fours Industriels BMI">
                 </div>
               </div>
               <div class="partner-card-light__content">
-                <h5>Vacuum Furnaces</h5>
+                <h5>Vacuum furnaces</h5>
                 <p>Fours Industriels BMI, France</p>
               </div>
               <a href="#/bmi" class="btn btn--ghost">
@@ -3140,7 +3867,7 @@
             <div class="partner-card-light__body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
                 <div class="bc-step">
-                  <span class="bc-n">2</span>Clean
+                  <span class="bc-n">2</span> Clean
                 </div>
                 <div class="partner-brand-logo">
                   <img src="assets/logo-novatec.png" alt="Novatec S.r.l.">
@@ -3167,10 +3894,10 @@
             <div class="partner-card-light__body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
                 <div class="bc-step">
-                  <span class="bc-n">3</span>Coat
+                  <span class="bc-n">3</span> Coat
                 </div>
                 <div class="partner-brand-logo">
-                  <img src="assets/logos/huasheng.jpg" alt="Huasheng Nanotechnology">
+                  <img src="assets/logos/huasheng.png" alt="Huasheng Nanotechnology">
                 </div>
               </div>
               <div class="partner-card-light__content">
@@ -3223,7 +3950,7 @@
             <div class="partner-card-light__body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
                 <div class="bc-step">
-                  <span class="bc-n">4</span>Support
+                  <span class="bc-n">4</span> Support
                 </div>
                 <div class="partner-brand-logo">
                   <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:32px; width:auto;">
@@ -3268,9 +3995,9 @@
               </div>
             </div>
             <h5>Cutting and gear cutting tools</h5>
-            <p>Hobs, shaper cutters, gear cutting tools, inserts, drills and end mills.</p>
+            <p>Hobs, shaper cutters, inserts, drills and end mills.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3291,7 +4018,7 @@
             <h5>PVD coating service providers</h5>
             <p>Coating job shops and in-house coating centres.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3311,7 +4038,7 @@
             <h5>Dies and mould manufacturers</h5>
             <p>Press tools, forging dies, die-casting and plastic moulds.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3330,7 +4057,7 @@
             <h5>Steel and metal processing</h5>
             <p>Commercial heat treaters, steel, alloy and forging plants.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span></div>
             </div>
           </a>
 
@@ -3352,7 +4079,7 @@
             <h5>Power: wind, solar and thermal</h5>
             <p>Gearbox parts, turbine blades, shafts and bearings.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3371,7 +4098,7 @@
             <h5>Oil and gas</h5>
             <p>Valves, pumps, drilling tools and wear parts.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3392,7 +4119,7 @@
             <h5>Automotive</h5>
             <p>Gears, transmission, engine and EV components.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3411,7 +4138,7 @@
             <h5>Aerospace and defence</h5>
             <p>Turbine parts, brazed assemblies, weapon and vehicle components.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3431,7 +4158,7 @@
             <h5>Medical devices and implants</h5>
             <p>Orthopaedic implants, surgical instruments, cleanroom final cleaning.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3452,7 +4179,7 @@
             <h5>Semiconductor and electronics</h5>
             <p>Chamber parts and precision components.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3472,7 +4199,7 @@
             <h5>Optics and eyewear</h5>
             <p>Lenses and optical components.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
 
@@ -3492,7 +4219,7 @@
             <h5>Watches, jewellery and decorative</h5>
             <p>Cases, bands, fittings and hardware finishes.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>Novatec</span><span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
             </div>
           </a>
         </div>
@@ -3500,77 +4227,57 @@
     </section>
 
     <!-- Find a system: live search + filters + results -->
-    <section class="section section--light" id="finder">
-      <div class="container">
-        <div class="finder-wrap fade-up">
-          <div class="finder-head">
-            <h2 data-anim="fade-left">Find a system</h2>
-            <p class="lead" style="margin-top:0.6rem;">Type what you make or the process you need, for example
-              <button type="button" class="finder-qchip" data-q="moulds">moulds</button><button type="button"
-                class="finder-qchip" data-q="hob coating">hob coating</button><button type="button" class="finder-qchip"
-                data-q="implant cleaning">implant cleaning</button><button type="button" class="finder-qchip"
-                data-q="nitriding">nitriding</button>
-            </p>
-          </div>
+    <section class="finder" id="finder" aria-labelledby="finder-h">
+      <div class="wrap container">
+        <div class="finder-head">
+          <h2 id="finder-h">Find a system</h2>
+          <p class="lede">Type what you make or the process you need, for example
+            <button type="button" class="qchip">moulds</button><button type="button" class="qchip">hob
+              coating</button><button type="button" class="qchip">implant cleaning</button><button type="button"
+              class="qchip">nitriding</button>
+          </p>
+        </div>
 
-          <div class="finder-controls fade-up">
-            <div class="search-box" style="margin-bottom:0;">
-              <span class="search-box__icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="11" cy="11" r="7" />
-                  <path d="m20 20-4-4" />
-                </svg>
-              </span>
-              <input type="search" id="finder-q"
-                placeholder="Describe your need: moulds, hob coating, implant cleaning, nitriding…" autocomplete="off">
-            </div>
-            <div class="filter-bar" id="finder-brand" style="margin-bottom:0;">
-              <button type="button" class="filter-chip active" data-brand="all">All brands</button>
-              <button type="button" class="filter-chip" data-brand="BMI">BMI</button>
-              <button type="button" class="filter-chip" data-brand="Novatec">Novatec</button>
-              <button type="button" class="filter-chip" data-brand="Huasheng">Huasheng</button>
-            </div>
+        <!-- Row 1: search + brand buttons -->
+        <div class="finder-controls">
+          <label class="search" aria-label="Search products">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-4-4" />
+            </svg>
+            <input id="q" type="search"
+              placeholder="Describe your need: moulds, hob coating, implant cleaning, nitriding…" autocomplete="off">
+          </label>
+          <div class="seg" role="group" aria-label="Filter by brand">
+            <button type="button" data-brand="all" aria-pressed="true">All brands</button>
+            <button type="button" data-brand="BMI" aria-pressed="false">BMI</button>
+            <button type="button" data-brand="Novatec" aria-pressed="false">Novatec</button>
+            <button type="button" data-brand="Huasheng" aria-pressed="false">Huasheng</button>
           </div>
+        </div>
 
-          <div class="finder-controls fade-up" style="margin-top:0.75rem;">
-            <div class="filter-bar" id="finder-process" style="margin-bottom:0;">
-              <button type="button" class="filter-chip active" data-process="all">All processes</button>
-              <button type="button" class="filter-chip" data-process="harden">1 Harden</button>
-              <button type="button" class="filter-chip" data-process="clean">2 Clean</button>
-              <button type="button" class="filter-chip" data-process="coat">3 Coat</button>
-            </div>
-            <div class="finder-select-group">
-              <label class="finder-select">
-                <span>Industry</span>
-                <select id="finder-industry">
-                  <option value="">All industries</option>
-                  <option value="tools">Cutting and gear cutting tools</option>
-                  <option value="jobshop">PVD coating service providers</option>
-                  <option value="dies">Dies and mould manufacturers</option>
-                  <option value="steel">Steel and metal processing</option>
-                  <option value="power">Power: wind, solar and thermal</option>
-                  <option value="oilgas">Oil and gas</option>
-                  <option value="auto">Automotive</option>
-                  <option value="aero">Aerospace and defence</option>
-                  <option value="medical">Medical devices and implants</option>
-                  <option value="semi">Semiconductor and electronics</option>
-                  <option value="optics">Optics and eyewear</option>
-                  <option value="watch">Watches, jewellery and decorative</option>
-                </select>
-              </label>
-              <label class="finder-select">
-                <span>Category</span>
-                <select id="finder-category">
-                  <option value="">All categories</option>
-                </select>
-              </label>
-            </div>
+        <!-- Row 2: process steps + dropdowns -->
+        <div class="finder-filters">
+          <div class="steps" role="group" aria-label="Filter by process step">
+            <button type="button" data-step="all" aria-pressed="true">All processes</button>
+            <button type="button" data-step="bmi" aria-pressed="false"><span>1</span>Harden</button>
+            <button type="button" data-step="novatec" aria-pressed="false"><span>2</span>Clean</button>
+            <button type="button" data-step="huasheng" aria-pressed="false"><span>3</span>Coat</button>
           </div>
+          <div class="finder-filter-sep">
+            <label class="fsel"><span>Industry</span><select id="f-ind">
+                <option value="">All industries</option>
+              </select></label>
+            <label class="fsel"><span>Category</span><select id="f-cat">
+                <option value="">All categories</option>
+              </select></label>
+          </div>
+        </div>
 
-          <p class="finder-count" id="finder-count">35 systems</p>
-          <div class="finder-results" id="finder-results"></div>
-        </div><!-- end finder-wrap -->
+        <!-- Status + results -->
+        <p class="active-industry" id="ind-status" aria-live="polite"></p>
+        <div class="results" id="results" role="list"></div>
       </div>
     </section>
 
@@ -3586,7 +4293,7 @@
             <div class="brand-divider">
               <img src="assets/logo-BMI.png" alt="Fours Industriels BMI">
             </div>
-            <h2>Fours Industriels B.M.I., Saint-Quentin-Fallavier, France</h2>
+            <h2>Fours Industriels BMI, Saint-Quentin-Fallavier, France</h2>
             <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Vacuum furnace
               specialists since the early 1980s, building standard and custom furnaces for aerospace,
               automotive, medical, tooling and heat-treatment shops. BMI's patented rotating gas flow gives uniform
@@ -3606,12 +4313,12 @@
                 <div class="brand-intro__stat-label">Vacuum furnaces since</div>
               </div>
               <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value">5–12 bar</div>
-                <div class="brand-intro__stat-label">Gas quench pressure</div>
+                <div class="brand-intro__stat-value" data-count="1500+">1500+</div>
+                <div class="brand-intro__stat-label">Furnaces worldwide</div>
               </div>
               <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value">1500 °C</div>
-                <div class="brand-intro__stat-label">Max temperature option</div>
+                <div class="brand-intro__stat-value" data-count="25+ years">25+ years</div>
+                <div class="brand-intro__stat-label">Average furnace life</div>
               </div>
             </div>
           </div>
@@ -3620,7 +4327,7 @@
         <div
           style="display:flex; justify-content:space-between; align-items:center; margin:1.75rem 0 1rem; flex-wrap:wrap; gap:0.5rem;">
           <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">Vacuum furnaces</h3>
-          <p class="catlink" style="margin:0;"><a href="#" data-open-all>See all BMI machines ↓</a></p>
+          <p class="catlink" style="margin:0;"><a href="#/bmi">See all BMI machines →</a></p>
         </div>
 
         <div class="families">
@@ -3691,7 +4398,8 @@
                     exchangers and aluminium assemblies.</span></a></li>
             </ul>
           </details>
-          <details data-cat="Thermochemical treatment furnaces" class="fade-right" data-anim="fade-right" data-anim-delay="4">
+          <details data-cat="Thermochemical treatment furnaces" class="fade-right" data-anim="fade-right"
+            data-anim-delay="4">
             <summary>
               <span class="family-thumb"><img src="assets/family-thumbs/bmi_thermo.jpg"
                   alt="BMI thermochemical treatment furnace"></span>
@@ -3766,7 +4474,7 @@
         <div
           style="display:flex; justify-content:space-between; align-items:center; margin:1.75rem 0 1rem; flex-wrap:wrap; gap:0.5rem;">
           <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">Ultrasonic cleaning systems</h3>
-          <p class="catlink" style="margin:0;"><a href="#" data-open-all>See all Novatec machines ↓</a></p>
+          <p class="catlink" style="margin:0;"><a href="#/novatec">See all Novatec machines →</a></p>
         </div>
 
         <div class="families">
@@ -3872,7 +4580,7 @@
         <div class="brand-intro fade-up">
           <div>
             <div class="brand-divider">
-              <img src="assets/logos/huasheng.jpg" alt="Huasheng Nanotechnology">
+              <img src="assets/logos/huasheng.png" alt="Huasheng Nanotechnology">
             </div>
             <h2>Guangdong Huasheng Nanotechnology, Dongguan, China</h2>
             <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Founded in 2012,
@@ -3895,10 +4603,10 @@
               </div>
               <div class="brand-intro__stat">
                 <div class="brand-intro__stat-value" data-count="120+">120+</div>
-                <div class="brand-intro__stat-label">Patents</div>
+                <div class="brand-intro__stat-label">Intellectual property rights</div>
               </div>
               <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value">30,000 m²</div>
+                <div class="brand-intro__stat-value">30,000+ <sub>m²</sub></div>
                 <div class="brand-intro__stat-label">Manufacturing centre</div>
               </div>
             </div>
@@ -3907,8 +4615,8 @@
 
         <div
           style="display:flex; justify-content:space-between; align-items:center; margin:1.75rem 0 1rem; flex-wrap:wrap; gap:0.5rem;">
-          <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">Vacuum coating equipment</h3>
-          <p class="catlink" style="margin:0;"><a href="#" data-open-all>See all Huasheng machines ↓</a></p>
+          <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">PVD coating Equipments</h3>
+          <p class="catlink" style="margin:0;"><a href="#/huasheng">See all Huasheng machines →</a></p>
         </div>
 
         <div class="families">
@@ -3979,7 +4687,7 @@
           <details data-cat="Optical coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="4">
             <summary>
               <span class="family-thumb"><img src="assets/family-thumbs/hs_mc1000.jpg"
-                  alt="Huasheng MC1000 coating machine"></span>
+                  alt="Huasheng optical coating equipment"></span>
               <div class="family-head">
                 <span class="t">Optical coating equipment<span class="family-count-badge">2
                     products</span><small>Evaporation and magnetron sputtering</small></span>
@@ -3998,7 +4706,7 @@
           <details data-cat="CVD coating equipment" class="fade-left" data-anim="fade-left" data-anim-delay="5">
             <summary>
               <span class="family-thumb"><img src="assets/family-thumbs/hs_ma1500.jpg"
-                  alt="Huasheng MA1500 coating machine"></span>
+                  alt="Huasheng CVD and aluminizing coating equipment"></span>
               <div class="family-head">
                 <span class="t">CVD coating equipment<span class="family-count-badge">2 products</span><small>CVD and
                     CVA aluminizing</small></span>
@@ -4171,7 +4879,7 @@
                 <p>
                   #384, Second Floor,<br>
                   9th Main Road, Sector 7, HSR Layout,<br>
-                  Bangalore, India 560102
+                  Bangalore, Karnataka 560102, India
                 </p>
                 <p style="margin-top:0.75rem;">
                   Email: <a href="mailto:enquiry-equipment@greets.co.in">enquiry-equipment@greets.co.in</a>
@@ -4180,8 +4888,9 @@
             </div>
           </div>
 
-          <div class="contact-form-card hud-corner mt-2">
-            <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off" novalidate>
+          <div class="contact-form-card hud-corner">
+            <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off"
+              novalidate>
               <input type="hidden" name="access_key" value="0554f1da-4bb4-4c4e-85fe-523711ed17e6">
               <input type="hidden" name="from_name" value="Greets Equipment Website">
               <input type="hidden" name="subject" value="New Equipment Enquiry from Greets Website">
@@ -4202,8 +4911,8 @@
                   <input type="email" id="email" name="email" autocomplete="off" required>
                 </div>
                 <div class="form-field">
-                  <label for="phone">Phone</label>
-                  <input type="tel" id="phone" name="phone" autocomplete="off">
+                  <label for="phone">Phone *</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="off" required>
                 </div>
               </div>
 
@@ -4233,11 +4942,12 @@
                 </div>
               </div>
 
-              <!-- Honeypot: a real visitor never sees or fills this, so a filled
-                 field means a bot and the submission is dropped silently. -->
-              <div class="hp-field" aria-hidden="true">
-                <label for="website">Website</label>
-                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              <!-- Honeypot spam trap: completely hidden from humans, tab order, and autofill -->
+              <div class="hp-field" aria-hidden="true"
+                style="position:absolute;left:-9999px;top:-9999px;opacity:0;pointer-events:none;width:0;height:0;z-index:-9999;">
+                <label for="form_website_hp" style="display:none !important;">Please leave this field empty</label>
+                <input type="text" id="form_website_hp" name="website" tabindex="-1" autocomplete="new-password"
+                  inputmode="none" aria-hidden="true" data-lpignore="true" data-form-type="other" value="">
               </div>
 
               <button type="submit" class="btn btn--primary btn--lg"
@@ -4252,8 +4962,17 @@
 
               <p class="form-status" id="enquiry-status" role="status" aria-live="polite" hidden></p>
 
-              <div class="form-note">
-                Sent straight to our Bangalore office. We reply within one working day.
+              <div class="form-privacy-card">
+                <span class="form-privacy-card__icon" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </span>
+                <div class="form-privacy-card__content">
+                  <span>DPDP(Digital Personal Data Protection Act, 2023) Act protected</span>
+                  <a href="privacy.html" class="form-privacy-card__link">Privacy Notice &rarr;</a>
+                </div>
               </div>
             </form>
           </div>
@@ -4262,7 +4981,6 @@
     </section>
 
   </main>
-  <main id="view" class="view" hidden></main>
 
   <!-- Footer -->
   <footer class="footer" data-anim="fade-up">
@@ -4276,7 +4994,7 @@
             <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:52px; width:auto; display:block;">
           </a>
           <p style="font-size:0.88rem; color:var(--steel, #56636B); margin:0; line-height:1.5; max-width:280px;">
-            Authorised dealer in India for Novatec, Huasheng and BMI.
+            Authorised dealer in India for BMI, Novatec and Huasheng.
           </p>
         </div>
 
@@ -4285,19 +5003,32 @@
           <a href="#/bmi" style="color:var(--steel, #56636B); text-decoration:none;">BMI vacuum furnaces</a>
           <a href="#/novatec" style="color:var(--steel, #56636B); text-decoration:none;">Novatec ultrasonic cleaning</a>
           <a href="#/huasheng" style="color:var(--steel, #56636B); text-decoration:none;">Huasheng coating equipment</a>
+          <a href="privacy.html"
+            style="color:var(--steel, #56636B); text-decoration:underline; font-size:0.88rem; margin-top:0.35rem;">Privacy
+            Notice (DPDP)</a>
         </div>
 
         <!-- Column 3: Contact & Location -->
         <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
-          <span style="color:var(--steel, #56636B);">HSR Layout, Bangalore 560102</span>
+          <span style="color:var(--steel, #56636B); font-weight:500;">HSR Layout, Bangalore, Karnataka 560102</span>
+          <div
+            style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.86rem; color:var(--steel, #56636B);">
+            <div>Mr. Pramod Kanse: <a href="tel:+919823386558"
+                style="color:inherit; text-decoration:none; font-weight:600;">+91 98233 86558</a></div>
+            <div>Mr. Manoj Agrawal: <a href="tel:+919429875547"
+                style="color:inherit; text-decoration:none; font-weight:600;">+91 94298 75547</a></div>
+            <div>Ms. Pahal Chawla: <a href="tel:+919871408194"
+                style="color:inherit; text-decoration:none; font-weight:600;">+91 98714 08194</a></div>
+          </div>
           <a href="mailto:enquiry-equipment@greets.co.in"
-            style="color:var(--lime, #02963C); text-decoration:none;">enquiry-equipment@greets.co.in</a>
+            style="color:var(--lime, #02963C); text-decoration:none; font-weight:500;">enquiry-equipment@greets.co.in</a>
         </div>
 
       </div>
       <div class="footer__bottom"
         style="border-top:1px solid var(--line); padding-top:1.25rem; font-size:0.82rem; color:var(--gray-500); display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem;">
-        <span>© 2026 Greets Equipment Pvt. Ltd. All rights reserved.</span>
+        <span>© 2026 Greets Equipment Pvt. Ltd. All rights reserved. · <a href="privacy.html"
+            style="color:inherit; text-decoration:underline;">Privacy Policy</a></span>
         <span>Brand names and logos belong to their respective owners.</span>
       </div>
     </div>
@@ -4315,445 +5046,6 @@
   <script src="products.js" defer></script>
   <script>
     (function () {
-      var resultsEl = document.getElementById('finder-results');
-      if (!resultsEl) return;
-
-      var brandLogos = {
-        'BMI': 'assets/logo-BMI.png',
-        'Novatec': 'assets/logo-novatec.png',
-        'Huasheng': 'assets/logos/huasheng.jpg'
-      };
-
-      var modelThumbMap = {
-        'b8_t': 'assets/catalog/b8t.jpg',
-        'vse8_t': 'assets/catalog/vse8t.jpg',
-        'brazing': 'assets/catalog/bmi_brazing.jpg',
-        'lab': 'assets/catalog/bmi_brazing.jpg',
-        'oil-horizontal': 'assets/catalog/bmi_oil.jpg',
-        'oil-vertical': 'assets/catalog/bmi_oil.jpg',
-        'tempering': 'assets/catalog/bmi_low.jpg',
-        'alu-brazing': 'assets/catalog/bmi_low.jpg',
-        'allcarb': 'assets/catalog/bmi_thermo.jpg',
-        'allnit': 'assets/catalog/bmi_thermo.jpg',
-        'plasma-nitriding': 'assets/catalog/bmi_thermo.jpg',
-        'cool-plus': 'assets/catalog/bmi_thermo.jpg',
-        'pluritank-line': 'assets/catalog/nm_pluri.jpg',
-        'pre-pvd': 'assets/catalog/nm_pluri.jpg',
-        'cleanroom': 'assets/catalog/cleanline.jpg',
-        '2crd-system': 'assets/catalog/crd_green.jpg',
-        'ipc': 'assets/catalog/nm_implants.jpg',
-        'fcps': 'assets/catalog/nm_implants.jpg',
-        'fpi': 'assets/catalog/nm_fpi.jpg',
-        'combined': 'assets/catalog/nm_implants.jpg',
-        'generators': 'assets/catalog/nov_gen.jpg',
-        'plt60v': 'assets/catalog/nov_gen.jpg',
-        'md800': 'assets/catalog/hs_md.jpg',
-        'aip': 'assets/catalog/hs_pvd.jpg',
-        'hipims': 'assets/catalog/hs_pvd.jpg',
-        'hybrid': 'assets/catalog/hs_pvd.jpg',
-        'decorative': 'assets/catalog/hs_pvd.jpg',
-        'pecvd-dlc': 'assets/catalog/hs_dlc.jpg',
-        'tac': 'assets/catalog/hs_dlc.jpg',
-        'hfcvd': 'assets/catalog/hs_diamond.jpg',
-        'evaporation': 'assets/catalog/hs_mc1000.jpg',
-        'sputter-optical': 'assets/catalog/hs_mc1000.jpg',
-        'cvd-systems': 'assets/catalog/hs_ma1500.jpg',
-        'cva': 'assets/catalog/hs_ma1500.jpg',
-        'md800-turnkey': 'assets/catalog/turnkey.jpg'
-      };
-
-      // Model-specific keywords & aliases to guarantee 100% search hit accuracy
-      var modelKeywords = {
-        'b8t': 'b8t b8_t b8-t b8 t front loading vacuum furnace gas quenching hardening brazing',
-        'vse8t': 'vse8t vse8_t vse8-t vse8 t bottom loading vertical tall delicate parts gas quenching',
-        'brazing': 'vacuum brazing furnace oxide free assemblies join metal',
-        'lab': 'compact laboratory furnace r&d research development small vacuum furnace',
-        'oil-horizontal': 'vacuum oil quenching furnace horizontal integrated oil quench liquid quench',
-        'oil-vertical': 'vacuum oil quenching furnace vertical long parts hanging shaft',
-        'tempering': 'vacuum tempering furnace low temperature tempering after hardening annealing',
-        'alu-brazing': 'aluminium brazing vacuum furnace alu heat exchangers assemblies',
-        'allcarb': 'allcarb allcarb® all carb lpc low pressure carburizing case hardening gears transmission automotive',
-        'allnit': 'allnit allnit® all nit low pressure nitriding nitrocarburizing wear fatigue resistance',
-        'plasma-nitriding': 'plasma nitriding furnace ion nitriding tools dies engineering parts',
-        'cool-plus': 'cool plus cool-plus coolplus sub-zero subzero deep freeze cryogenic treatment hardened steels',
-        'pluritank-line': 'pluritank pluritank-line multi chamber ultrasonic cleaning line 12 stages serial parts',
-        'pre-pvd': 'pluritank pre-treatment line pre treatment pvd cvd dlc surface preparation degrease cleaning',
-        'cleanroom': 'cleanroom cleaning line low particle semiconductor medical pharma ultrasonic',
-        '2crd-system': '2crd 2crd-system 2 crd 2-crd single chamber precision cleaning system vacuum drying rotating basket',
-        'ipc': 'ipc in-process in process cleaning implants orthopaedic medical surgical',
-        'fcps': 'fcps fcs final cleaning passivation cleanroom medical implants orthopaedic',
-        'fpi': 'fpi fluorescent penetrant inspection line crack detection ndt testing automated',
-        'combined': 'combined turnkey implant lines urs complete automated medical implant cleaning plant',
-        'generators': 'ultrasonic generators transducers piezo submersibles cleaning tanks building upgrading',
-        'plt60v': 'plt60v plt 60v plt-60v pressure cycle unit pressure change internal channels complex parts',
-        'md800': 'md800 md 800 md-800 arc coating machine high rate coater tool coating production cutting tools',
-        'aip': 'aip arc coating equipment hard nitride cutting tools drills endmills inserts hobs',
-        'hipims': 'hipims high power impulse magnetron sputtering dense smooth droplet free coatings',
-        'hybrid': 'hybrid coating equipment arc and sputtering in one chamber multi layer',
-        'decorative': 'decorative coating equipment colour color pvd finishes watches jewellery sanitary hardware',
-        'pecvd-dlc': 'pecvd dlc coating equipment low friction components diamond like carbon wear resistance',
-        'tac': 'ta-c tac ta c tetrahedral amorphous carbon hydrogen free carbon coatings extreme hardness',
-        'hfcvd': 'hfcvd diamond coating equipment hot filament chemical vapour deposition diamond films carbide tools',
-        'evaporation': 'evaporation optical coating equipment anti reflection anti-reflection filter multilayer glass lens',
-        'sputter-optical': 'magnetron sputtering optical coating equipment multilayer optical films precision optics',
-        'cvd-systems': 'cvd coating systems chemical vapour deposition thick wear resistant cutting tools',
-        'cva': 'cva aluminizing systems gas phase aluminide diffusion high temperature aero turbine blades',
-        'md800-turnkey': 'turnkey coating solutions md800 turnkey complete plant tool coating centre jobshop'
-      };
-
-      var modelLinks = Array.prototype.slice.call(document.querySelectorAll('.families .models li a[data-brand]'));
-      var items = modelLinks.map(function (a) {
-        var name = a.querySelector('b') ? a.querySelector('b').textContent.trim() : '';
-        var sub = a.querySelector('span') ? a.querySelector('span').textContent.trim() : '';
-        var brand = a.dataset.brand || '';
-        var process = a.dataset.process || '';
-        var category = a.dataset.category || '';
-        var href = a.getAttribute('href') || '';
-
-        var detailsEl = a.closest('details');
-        var catThumb = detailsEl ? detailsEl.querySelector('.family-thumb img') : null;
-        var thumb = catThumb ? catThumb.getAttribute('src') : '';
-
-        var hrefKey = href.split('/').pop() || '';
-        if (modelThumbMap[hrefKey]) {
-          thumb = modelThumbMap[hrefKey];
-        } else {
-          var nameLow = name.toLowerCase();
-          for (var key in modelThumbMap) {
-            if (nameLow.indexOf(key.replace(/[-_]/g, ' ')) !== -1 || nameLow.indexOf(key) !== -1) {
-              thumb = modelThumbMap[key];
-              break;
-            }
-          }
-        }
-
-        var extraKw = modelKeywords[hrefKey] || '';
-
-        return {
-          name: name,
-          sub: sub,
-          brand: brand,
-          process: process,
-          category: category,
-          href: href,
-          thumb: thumb,
-          logo: brandLogos[brand] || '',
-          keywords: extraKw
-        };
-      });
-
-      // Populate category select options
-      var categorySelect = document.getElementById('finder-category');
-      var seenCats = [];
-      items.forEach(function (it) {
-        if (seenCats.indexOf(it.category) === -1) seenCats.push(it.category);
-      });
-      seenCats.forEach(function (cat) {
-        var opt = document.createElement('option');
-        opt.value = cat;
-        opt.textContent = cat;
-        categorySelect.appendChild(opt);
-      });
-
-      var industryBrands = {
-        tools: ['BMI', 'Novatec', 'Huasheng'],
-        jobshop: ['Novatec', 'Huasheng'],
-        dies: ['BMI', 'Novatec', 'Huasheng'],
-        steel: ['BMI', 'Novatec'],
-        power: ['BMI', 'Novatec', 'Huasheng'],
-        oilgas: ['BMI', 'Novatec', 'Huasheng'],
-        auto: ['BMI', 'Novatec', 'Huasheng'],
-        aero: ['BMI', 'Novatec', 'Huasheng'],
-        medical: ['BMI', 'Novatec'],
-        semi: ['Novatec', 'Huasheng'],
-        optics: ['Novatec', 'Huasheng'],
-        watch: ['Novatec', 'Huasheng']
-      };
-
-      // Synonym & application dictionary
-      var SYNONYMS = [
-        { keys: ['mould', 'mold', 'die', 'dies', 'diecast', 'die cast', 'press tool', 'presstool', 'forging die', 'punch'], tag: 'i:dies' },
-        { keys: ['hob', 'hobs', 'hobbing', 'shaper', 'broach', 'drill', 'drills', 'endmill', 'end mill', 'insert', 'inserts', 'tap', 'cutter', 'cutting tool', 'cutting tools', 'milling', 'tool', 'tools'], tag: 'i:tools' },
-        { keys: ['car', 'automotive', 'auto', 'vehicle', 'gearbox', 'transmission', 'engine', 'piston'], tag: 'i:auto' },
-        { keys: ['aerospace', 'aircraft', 'aviation', 'defence', 'defense', 'military', 'turbine blade', 'turbine'], tag: 'i:aero' },
-        { keys: ['implant', 'implants', 'medical', 'orthopaedic', 'orthopedic', 'surgical', 'dental'], tag: 'i:medical' },
-        { keys: ['semiconductor', 'wafer', 'electronics', 'electronic', 'chip'], tag: 'i:semi' },
-        { keys: ['lens', 'optics', 'optic', 'eyewear', 'spectacle', 'glass', 'optical'], tag: 'i:optics' },
-        { keys: ['watch', 'watches', 'jewel', 'jewellery', 'jewelry', 'decorative', 'sanitary', 'faucet', 'hardware finish', 'colour', 'color'], tag: 'i:watch' },
-        { keys: ['job shop', 'jobshop', 'coating service', 'coating centre', 'coater'], tag: 'i:jobshop' },
-        { keys: ['steel', 'forging', 'metal', 'heat treater', 'alloy', 'foundry'], tag: 'i:steel' },
-        { keys: ['wind', 'solar', 'thermal power', 'power plant', 'power'], tag: 'i:power' },
-        { keys: ['oil', 'gas', 'valve', 'pump', 'drilling', 'petro', 'refinery'], tag: 'i:oilgas' },
-        { keys: ['nitriding', 'nitrocarburizing', 'ion nitriding'], tag: 'p:harden' },
-        { keys: ['carburizing', 'case hardening', 'lpc'], tag: 'p:harden' },
-        { keys: ['hardening', 'quenching', 'annealing', 'sintering', 'vacuum furnace', 'furnace'], tag: 'p:harden' },
-        { keys: ['tempering'], tag: 'p:harden' },
-        { keys: ['brazing'], tag: 'p:harden' },
-        { keys: ['cryo', 'sub-zero', 'subzero', 'deep freeze'], tag: 'p:harden' },
-        { keys: ['ultrasonic', 'degreasing', 'pre treatment', 'pretreat', 'vacuum dry'], tag: 'p:clean' },
-        { keys: ['passivation'], tag: 'p:clean' },
-        { keys: ['fpi', 'fluorescent penetrant', 'crack detection', 'ndt'], tag: 'p:clean' },
-        { keys: ['coating', 'surface treatment'], tag: 'p:coat' },
-        { keys: ['pvd', 'hipims', 'tialn', 'alcrn', 'physical vapour'], tag: 'p:coat' },
-        { keys: ['dlc', 'diamond-like', 'ta-c', 'tac', 'ta c', 'low friction'], tag: 'p:coat' },
-        { keys: ['diamond', 'hfcvd'], tag: 'p:coat' },
-        { keys: ['cvd', 'aluminizing', 'cva'], tag: 'p:coat' },
-        { keys: ['turnkey plant', 'complete line'], tag: 'p:coat' }
-      ];
-
-      function normalize(str) {
-        if (!str) return '';
-        return str.toLowerCase()
-          .replace(/[®™©]/g, '')
-          .replace(/[\r\n\t]+/g, ' ')
-          .replace(/[_\-\/\.\,\:\;\(\)\[\]"']/g, ' ')
-          .replace(/\s+/g, ' ')
-          .trim();
-      }
-
-      function stripPunct(str) {
-        if (!str) return '';
-        return str.toLowerCase().replace(/[^a-z0-9]/g, '');
-      }
-
-      function scoreItem(item, rawQ) {
-        if (!rawQ) return 1;
-        var q = rawQ.toLowerCase().trim();
-        if (!q) return 1;
-
-        var normQ = normalize(q);
-        var stripQ = stripPunct(q);
-        var qTokens = normQ.split(' ').filter(function (t) { return t.length > 0; });
-
-        var hrefKey = item.href.split('/').pop() || '';
-        var extraKw = modelKeywords[hrefKey] || '';
-
-        var nameNorm = normalize(item.name);
-        var nameStrip = stripPunct(item.name);
-        var subNorm = normalize(item.sub);
-        var catNorm = normalize(item.category);
-        var brandNorm = normalize(item.brand);
-        var kwNorm = normalize(extraKw);
-
-        var rawBlob = (item.name + ' ' + item.brand + ' ' + item.category + ' ' + item.process + ' ' + item.sub + ' ' + extraKw).toLowerCase();
-        var normBlob = ' ' + normalize(rawBlob) + ' ';
-        var stripBlob = stripPunct(rawBlob);
-
-        var score = 0;
-
-        // 1. Exact or prefix match on title
-        if (nameNorm === normQ || nameStrip === stripQ) {
-          score += 1500;
-        } else if (nameNorm.startsWith(normQ)) {
-          score += 1000;
-        } else if (nameNorm.indexOf(normQ) !== -1) {
-          score += 700;
-        } else if (stripQ.length >= 3 && nameStrip.indexOf(stripQ) !== -1) {
-          score += 650;
-        }
-
-        // 2. Multi-token scoring on title
-        if (qTokens.length > 0) {
-          var titleTokensMatched = 0;
-          qTokens.forEach(function (token) {
-            if (token.length >= 2 && nameNorm.indexOf(token) !== -1) {
-              score += 150;
-              titleTokensMatched++;
-            }
-          });
-          if (titleTokensMatched === qTokens.length) {
-            score += 400;
-          }
-        }
-
-        // 3. Subtitle / description scoring
-        if (subNorm.indexOf(normQ) !== -1) {
-          score += 250;
-        }
-
-        // 4. Model code & keywords scoring
-        if (kwNorm.indexOf(normQ) !== -1) {
-          score += 200;
-        } else if (stripQ.length >= 2 && stripPunct(extraKw).indexOf(stripQ) !== -1) {
-          score += 180;
-        }
-
-        // 5. Category & Brand match
-        if (catNorm.indexOf(normQ) !== -1) score += 120;
-        if (brandNorm === normQ) score += 100;
-
-        // 6. General blob match
-        if (score === 0) {
-          if (normBlob.indexOf(' ' + normQ + ' ') !== -1 || normBlob.indexOf(normQ) !== -1) {
-            score += 80;
-          } else if (stripQ.length >= 2 && stripBlob.indexOf(stripQ) !== -1) {
-            score += 70;
-          }
-        }
-
-        // 7. Multi-word all token match in blob
-        if (qTokens.length > 1) {
-          var allTokensInBlob = qTokens.every(function (token) {
-            if (token.length === 1) return normBlob.indexOf(' ' + token + ' ') !== -1;
-            var sTok = stripPunct(token);
-            return normBlob.indexOf(token) !== -1 || (sTok.length >= 2 && stripBlob.indexOf(sTok) !== -1);
-          });
-          if (allTokensInBlob) score += 60;
-        }
-
-        // 8. Synonym match
-        var matchedProcesses = [];
-        var matchedIndustries = [];
-
-        for (var i = 0; i < SYNONYMS.length; i++) {
-          var synRule = SYNONYMS[i];
-          var hit = synRule.keys.some(function (k) {
-            var normK = normalize(k);
-            var stripK = stripPunct(k);
-            if (normQ === normK || stripQ === stripK) return true;
-            if (normQ === normK + 's' || normQ + 's' === normK) return true;
-            if (normK.indexOf(' ') !== -1 && (' ' + normQ + ' ').indexOf(' ' + normK + ' ') !== -1) return true;
-            if (normK.indexOf(' ') === -1 && qTokens.indexOf(normK) !== -1) return true;
-            return false;
-          });
-          if (hit) {
-            var tag = synRule.tag;
-            if (tag.startsWith('p:')) matchedProcesses.push(tag.slice(2).toLowerCase());
-            if (tag.startsWith('i:')) matchedIndustries.push(tag.slice(2));
-          }
-        }
-
-        if (matchedProcesses.length > 0) {
-          var procMatch = matchedProcesses.indexOf(item.process.toLowerCase()) !== -1;
-          if (matchedIndustries.length > 0) {
-            var indMatch = matchedIndustries.some(function (ind) {
-              return (industryBrands[ind] || []).indexOf(item.brand) !== -1;
-            });
-            if (procMatch && indMatch) score += 40;
-          } else if (procMatch) {
-            score += 30;
-          }
-        } else if (matchedIndustries.length > 0) {
-          var indMatch = matchedIndustries.some(function (ind) {
-            return (industryBrands[ind] || []).indexOf(item.brand) !== -1;
-          });
-          if (indMatch) score += 20;
-        }
-
-        return score;
-      }
-
-      var qInput = document.getElementById('finder-q');
-      var brandBar = document.getElementById('finder-brand');
-      var processBar = document.getElementById('finder-process');
-      var industrySelect = document.getElementById('finder-industry');
-      var countEl = document.getElementById('finder-count');
-
-      var state = { q: '', brand: 'all', process: 'all', industry: '', category: '' };
-
-      function render() {
-        var q = state.q;
-        var scored = [];
-
-        items.forEach(function (it) {
-          if (state.brand !== 'all' && it.brand.toLowerCase() !== state.brand.toLowerCase()) return;
-          if (state.process !== 'all' && it.process.toLowerCase() !== state.process.toLowerCase()) return;
-          if (state.category && it.category !== state.category) return;
-          if (state.industry) {
-            var allowed = industryBrands[state.industry] || [];
-            if (allowed.indexOf(it.brand) === -1) return;
-          }
-          var score = q ? scoreItem(it, q) : 1;
-          if (score > 0) {
-            scored.push({ item: it, score: score });
-          }
-        });
-
-        if (q) {
-          scored.sort(function (a, b) {
-            return b.score - a.score;
-          });
-        }
-
-        var filtered = scored.map(function (s) { return s.item; });
-
-        countEl.textContent = filtered.length + (filtered.length === 1 ? ' system' : ' systems');
-
-        if (!filtered.length) {
-          resultsEl.innerHTML = '<div class="finder-empty">No systems match that search. Try a different term or clear the filters.</div>';
-          return;
-        }
-
-        resultsEl.innerHTML = filtered.map(function (it) {
-          var logoHtml = it.logo
-            ? '<img src="' + it.logo + '" alt="' + it.brand + '">'
-            : '<span class="finder-result__brand-tag">' + it.brand + '</span>';
-
-          var thumbHtml = it.thumb
-            ? '<span class="finder-result__thumb"><img src="' + it.thumb + '" alt="' + it.name + '" loading="lazy"></span>'
-            : '<span class="finder-result__thumb"></span>';
-
-          return '<a class="finder-result" href="' + it.href + '">' +
-            thumbHtml +
-            '<span class="finder-result__info">' +
-            '<span class="finder-result__name">' + it.name + '</span>' +
-            '<span class="finder-result__sub">' + it.sub + '</span>' +
-            '</span>' +
-            '<span class="finder-result__category">' + it.category + '</span>' +
-            '<span class="finder-result__brand-logo">' + logoHtml + '</span>' +
-            '<span class="finder-result__arrow">›</span>' +
-            '</a>';
-        }).join('');
-      }
-
-      if (qInput) qInput.addEventListener('input', function (e) { state.q = e.target.value; render(); });
-
-      document.querySelectorAll('.finder-qchip').forEach(function (chip) {
-        chip.addEventListener('click', function () {
-          state.q = chip.dataset.q;
-          if (qInput) qInput.value = state.q;
-          render();
-        });
-      });
-
-      if (brandBar) brandBar.querySelectorAll('.filter-chip').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          brandBar.querySelectorAll('.filter-chip').forEach(function (b) { b.classList.remove('active'); });
-          btn.classList.add('active');
-          state.brand = btn.dataset.brand;
-          render();
-        });
-      });
-
-      if (processBar) processBar.querySelectorAll('.filter-chip').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          processBar.querySelectorAll('.filter-chip').forEach(function (b) { b.classList.remove('active'); });
-          btn.classList.add('active');
-          state.process = btn.dataset.process;
-          render();
-        });
-      });
-
-      if (industrySelect) industrySelect.addEventListener('change', function (e) { state.industry = e.target.value; render(); });
-      if (categorySelect) categorySelect.addEventListener('change', function (e) { state.category = e.target.value; render(); });
-
-      // Clicking an industry card filters the finder
-      document.querySelectorAll('.industry-card-v2[data-ind]').forEach(function (card) {
-        card.addEventListener('click', function (e) {
-          e.preventDefault();
-          var ind = card.dataset.ind;
-          if (industrySelect) industrySelect.value = ind;
-          state.industry = ind;
-          render();
-          var finderSection = document.getElementById('finder');
-          if (finderSection) {
-            var headerHeight = document.querySelector('.header')?.offsetHeight || 72;
-            var y = finderSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-            window.scrollTo({ top: y, behavior: 'smooth' });
-          }
-        });
-      });
-
       // A category card drops its machine list below the card as a floating
       // panel, so the sections underneath must not cover it and a panel that
       // opens near the bottom of the screen is scrolled into view.
@@ -4798,9 +5090,6 @@
           }
         });
       });
-
-      // Initial render of all products
-      render();
     })();
   </script>
   <script>

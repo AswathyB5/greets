@@ -335,11 +335,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (reason) console.warn('[enquiry] send failed:', reason);
     };
 
-    /* — Form Validation & Error Display — */
+    /* — Comprehensive Form Validation & Error Display — */
     const clearError = (field) => {
       const container = field.closest('.form-field');
       if (container) {
         container.classList.remove('has-error');
+        field.removeAttribute('aria-invalid');
         const err = container.querySelector('.field-error-msg');
         if (err) err.remove();
       }
@@ -350,6 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (container) {
         clearError(field);
         container.classList.add('has-error');
+        field.setAttribute('aria-invalid', 'true');
         const err = document.createElement('span');
         err.className = 'field-error-msg';
         err.textContent = message;
@@ -357,58 +359,94 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
+    const validateField = (field) => {
+      const name = field.name || field.id;
+      const val = (field.value || '').trim();
+
+      if (name === 'name') {
+        if (!val) {
+          setError(field, 'Please enter your name');
+          return false;
+        }
+        if (val.length < 2) {
+          setError(field, 'Name must be at least 2 characters');
+          return false;
+        }
+        if (!/[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]/.test(val)) {
+          setError(field, 'Please enter a valid name with letters');
+          return false;
+        }
+      }
+
+      if (name === 'company') {
+        if (val && val.length < 2) {
+          setError(field, 'Company name must be at least 2 characters');
+          return false;
+        }
+      }
+
+      if (name === 'email') {
+        const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
+        if (!val) {
+          setError(field, 'Please enter your email address');
+          return false;
+        }
+        if (!emailRegex.test(val)) {
+          setError(field, 'Please enter a valid email address (e.g. name@company.com)');
+          return false;
+        }
+      }
+
+      if (name === 'phone') {
+        if (!val) {
+          setError(field, 'Please enter your phone number');
+          return false;
+        }
+        const digits = val.replace(/\D/g, '');
+        const phoneRegex = /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\./0-9]{5,16}$/;
+        if (digits.length < 7 || digits.length > 15 || !phoneRegex.test(val)) {
+          setError(field, 'Please enter a valid phone number (7 to 15 digits)');
+          return false;
+        }
+      }
+
+      if (name === 'city') {
+        if (val && val.length < 2) {
+          setError(field, 'City name must be at least 2 characters');
+          return false;
+        }
+      }
+
+      if (name === 'process') {
+        if (!val) {
+          setError(field, 'Please select a process');
+          return false;
+        }
+      }
+
+      if (name === 'details') {
+        if (val && val.length > 3000) {
+          setError(field, 'Description cannot exceed 3,000 characters');
+          return false;
+        }
+      }
+
+      clearError(field);
+      return true;
+    };
+
     const validateForm = () => {
       let isValid = true;
       let firstInvalid = null;
 
-      const nameInput = contactForm.querySelector('#name');
-      const emailInput = contactForm.querySelector('#email');
-      const phoneInput = contactForm.querySelector('#phone');
-
-      // Validate Name
-      if (nameInput) {
-        const val = nameInput.value.trim();
-        if (!val) {
-          setError(nameInput, 'Please enter your name');
+      const fieldsToValidate = contactForm.querySelectorAll('#name, #email, #company, #phone, #process, #city, #details');
+      fieldsToValidate.forEach((field) => {
+        const fieldValid = validateField(field);
+        if (!fieldValid) {
           isValid = false;
-          if (!firstInvalid) firstInvalid = nameInput;
-        } else if (val.length < 2) {
-          setError(nameInput, 'Name must be at least 2 characters');
-          isValid = false;
-          if (!firstInvalid) firstInvalid = nameInput;
-        } else {
-          clearError(nameInput);
+          if (!firstInvalid) firstInvalid = field;
         }
-      }
-
-      // Validate Email
-      if (emailInput) {
-        const val = emailInput.value.trim();
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!val) {
-          setError(emailInput, 'Please enter your email address');
-          isValid = false;
-          if (!firstInvalid) firstInvalid = emailInput;
-        } else if (!emailRegex.test(val)) {
-          setError(emailInput, 'Please enter a valid email address (e.g. name@company.com)');
-          isValid = false;
-          if (!firstInvalid) firstInvalid = emailInput;
-        } else {
-          clearError(emailInput);
-        }
-      }
-
-      // Validate Phone (optional, but if provided check format/length)
-      if (phoneInput && phoneInput.value.trim()) {
-        const val = phoneInput.value.trim();
-        if (val.length < 6) {
-          setError(phoneInput, 'Please enter a valid phone number');
-          isValid = false;
-          if (!firstInvalid) firstInvalid = phoneInput;
-        } else {
-          clearError(phoneInput);
-        }
-      }
+      });
 
       if (firstInvalid) {
         firstInvalid.focus();
@@ -417,8 +455,14 @@ document.addEventListener('DOMContentLoaded', () => {
       return isValid;
     };
 
-    // Live validation clearance on user typing
+    // Live validation: validate on blur, clear on input/change
     contactForm.querySelectorAll('input, select, textarea').forEach((input) => {
+      if (input.name === 'website' || input.type === 'hidden') return;
+      input.addEventListener('blur', () => {
+        if (input.value.trim() || input.hasAttribute('required')) {
+          validateField(input);
+        }
+      });
       input.addEventListener('input', () => clearError(input));
       input.addEventListener('change', () => clearError(input));
     });

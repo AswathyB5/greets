@@ -618,31 +618,38 @@ p {
 .header__hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
   width: 28px;
-  padding: 4px 0;
+  height: 20px;
+  padding: 0;
   cursor: pointer;
   z-index: 1010;
+  background: transparent !important;
+  border: none !important;
+  outline: none;
+  box-shadow: none;
 }
 
 .header__hamburger span {
-  display: block;
-  height: 2px;
-  background: var(--gray-800);
+  display: block !important;
+  width: 100% !important;
+  height: 2.5px !important;
+  background: #000000 !important;
+  background-color: #000000 !important;
   border-radius: 2px;
-  transition: all 0.3s var(--ease-out);
+  transition: transform 0.3s var(--ease-out), opacity 0.3s var(--ease-out);
 }
 
 .header__hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: translateY(8.75px) rotate(45deg) !important;
 }
 
 .header__hamburger.open span:nth-child(2) {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .header__hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: translateY(-8.75px) rotate(-45deg) !important;
 }
 
 /* Mobile nav overlay */
@@ -4920,7 +4927,7 @@ h1[tabindex="-1"]:focus {
 
 .mcols {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.95rem;
 }
 
@@ -5699,8 +5706,8 @@ input, select, textarea {
 
   .header__hamburger {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column !important;
+    justify-content: space-between !important;
   }
 
   .mobile-nav {
@@ -5899,6 +5906,23 @@ input, select, textarea {
   .contact-form-card {
     padding: 1.5rem 1.25rem;
     border-radius: var(--radius-lg);
+  }
+
+  .hp-field {
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    z-index: -9999 !important;
   }
 
   /* Inner Pages: Technical Specs, Key Features, Breadcrumbs */
@@ -6568,4 +6592,53 @@ body.greets-modal-open {
   0%, 100% { transform: translateX(0); }
   20%, 60% { transform: translateX(-4px); }
   40%, 80% { transform: translateX(4px); }
+}
+
+/* — Form Privacy Notice Card (DPDP Act Compliance) — */
+.form-privacy-card {
+  margin-top: 0.65rem;
+  background: #F8FAF9;
+  border: 1px solid rgba(2, 150, 60, 0.2);
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  line-height: 1.4;
+  color: var(--steel);
+}
+
+.form-privacy-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(2, 150, 60, 0.12);
+  color: var(--lime);
+  flex-shrink: 0;
+}
+
+.form-privacy-card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.form-privacy-card__link {
+  color: var(--accent-text);
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.form-privacy-card__link:hover {
+  color: var(--ink);
 }
