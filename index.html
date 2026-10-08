@@ -10,6 +10,7 @@
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/png" href="assets/greetsfavicon.png">
   <link rel="apple-touch-icon" href="assets/greetsfavicon.png">
+  <link rel="preload" as="image" href="assets/hero-img.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <style>
     /* ============================================================
@@ -163,16 +164,10 @@
     .hero--light {
       position: relative;
       background-color: var(--paper) !important;
-      /* Image lives on the section instead of the <img> so it can be fixed to
-         the viewport and stay attached while the page scrolls. */
-      background-image: url("assets/hero-img.png");
+      background-image: url("assets/hero-img.webp"), url("assets/hero-img.png");
       background-size: cover;
       background-position: center 36%;
       background-repeat: no-repeat;
-      background-attachment: fixed;
-      /* 72px clears the fixed header; the extra top padding plus a zero
-         bottom shifts the centred text card slightly below the optical
-         middle so it sits centred in the area the user actually sees. */
       padding: 104px 0 0 !important;
       min-height: 100vh !important;
       min-height: 100dvh !important;
@@ -181,6 +176,18 @@
       justify-content: center;
       overflow: hidden;
       border-bottom: 1px solid var(--line);
+    }
+
+    @media (min-width: 901px) {
+      .hero--light {
+        background-attachment: fixed;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero--light {
+        background-attachment: scroll;
+      }
     }
 
     .hero--light::before {
@@ -3740,6 +3747,77 @@
       transform: translateY(0);
     }
 
+    /* Smart Fallback Banner (Option 1) */
+    .brand-fallback-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 18px;
+      background: #FFFDF5;
+      border-bottom: 1.5px solid #F5E8BA;
+      color: #7A5B04;
+      font-size: 0.88rem;
+    }
+
+    .brand-fallback-msg {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      line-height: 1.45;
+    }
+
+    .brand-fallback-msg svg {
+      flex-shrink: 0;
+      color: #B58406;
+    }
+
+    .brand-fallback-msg b {
+      color: #4A3700;
+      font-weight: 700;
+    }
+
+    .btn-switch-all-brands {
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 650;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid #B58406;
+      background: #FFFFFF;
+      color: #7A5B04;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.18s ease;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+
+    .btn-switch-all-brands:hover {
+      background: #7A5B04;
+      color: #FFFFFF;
+      border-color: #7A5B04;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(122, 91, 4, 0.2);
+    }
+
+    .fallback-note {
+      font-weight: 500;
+      color: #7A5B04;
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 768px) {
+      .brand-fallback-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+
     @media (max-width: 1100px) {
       .finder-filters {
         flex-wrap: wrap;
@@ -3790,8 +3868,8 @@
       </a>
       <div class="navgroup" id="navgroup"><span class="nav-ind" id="nav-ind" aria-hidden="true"></span>
         <a class="navlink navhome" href="#hero" data-spy="home">Home</a>
-        <button type="button" class="mega-btn" id="mega-btn" data-spy="products" aria-expanded="false"
-          aria-controls="mega">Products</button>
+        <a class="navlink mega-btn" id="mega-btn" href="#finder" data-spy="products" aria-expanded="false"
+          aria-controls="mega">Products</a>
         <nav class="header__nav main" aria-label="Main">
           <a class="navlink" href="#industries" data-spy="industries">Industries</a>
           <a class="navlink" href="#why" data-spy="why">Why buy through Greets</a>
@@ -3816,7 +3894,20 @@
   <!-- Mobile Nav -->
   <nav class="mobile-nav" id="mobile-nav">
     <a href="#hero" class="active">Home</a>
-    <a href="#finder">Products</a>
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-toggle" id="mobile-products-toggle" aria-expanded="false">
+        <span>Products</span>
+        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="mobile-products-panel" id="mobile-products-panel">
+        <a href="#finder" class="mobile-all-products-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Find a system &mdash; All products</span>
+        </a>
+      </div>
+    </div>
     <a href="#industries">Industries</a>
     <a href="#why">Why buy through Greets</a>
     <a href="contact.html">Contact</a>

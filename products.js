@@ -1405,6 +1405,35 @@
         return (STEP_OF(a.p) - STEP_OF(b.p)) || (b.sc - a.sc);
       });
 
+      // Smart Fallback (Option 1): If 0 matches under active brand/filter, check across all brands
+      let isFallback = false;
+      let fallbackFromBrand = null;
+      if (!scored.length && raw && (brand !== "all" || cat)) {
+        let fallbackList = IDX.filter(function (p) {
+          return (!ind || p.i.includes(ind));
+        });
+        let fallbackScored = fallbackList.map(function (p) {
+          return Object.assign({ p: p }, scoreOf(p, u, rawLower));
+        }).filter(function (x) { return x.sc > 0; });
+
+        if (rawLower.length > 1) {
+          const fbTop = Math.max.apply(Math, [0].concat(fallbackScored.map(function (x) { return x.sc; })));
+          fallbackScored = fallbackScored.filter(function (x) { return x.sc >= Math.min(3, fbTop); });
+        }
+
+        if (fallbackScored.length > 0) {
+          isFallback = true;
+          fallbackFromBrand = brand;
+          scored = fallbackScored;
+          scored.sort(function (a, b) {
+            if (rawLower.length === 1) {
+              return (b.sc - a.sc) || (STEP_OF(a.p) - STEP_OF(b.p));
+            }
+            return (STEP_OF(a.p) - STEP_OF(b.p)) || (b.sc - a.sc);
+          });
+        }
+      }
+
       const rowHtml = function (x) {
         const p = x.p, th = thumbOf(p), lg = logo(p.bid);
         return '<a class="result" role="listitem" href="' + p.href + '">' +
@@ -1416,6 +1445,21 @@
           '<span class="b">' + (lg ? '<img src="' + lg + '" alt="' + esc(p.b) + '">' : esc(p.b)) + '</span>' +
           '<span class="r-go" aria-hidden="true">›</span></a>';
       };
+
+      let fallbackBanner = '';
+      if (isFallback) {
+        const otherBrandNames = Array.from(new Set(scored.map(function (x) { return x.p.b; }))).join(" & ");
+        fallbackBanner = '<div class="brand-fallback-banner">' +
+          '<div class="brand-fallback-msg">' +
+          '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>' +
+          '<span>No systems match <b>“' + esc(raw) + '”</b> under <b>' + esc(fallbackFromBrand !== "all" ? fallbackFromBrand : "selected filter") + '</b>. Showing <b>' + scored.length + '</b> matches from <b>' + esc(otherBrandNames) + '</b>:</span>' +
+          '</div>' +
+          '<button type="button" class="btn-switch-all-brands" id="switch-all-brands">' +
+          '<span>Switch to all brands</span>' +
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>' +
+          '</button>' +
+          '</div>';
+      }
 
       if (!scored.length) {
         res.innerHTML = '<div class="empty-state">' +
@@ -1430,7 +1474,7 @@
           [2, "Clean", "Novatec cleaning systems"],
           [3, "Coat", "Huasheng coating equipment"]
         ];
-        res.innerHTML = steps.map(function (stepArr) {
+        res.innerHTML = fallbackBanner + steps.map(function (stepArr) {
           const n = stepArr[0], v = stepArr[1], sub = stepArr[2];
           const g = scored.filter(function (x) { return STEP_OF(x.p) === n; });
           return g.length
@@ -1438,7 +1482,7 @@
             : "";
         }).join("");
       } else {
-        res.innerHTML = scored.map(rowHtml).join("");
+        res.innerHTML = fallbackBanner + scored.map(rowHtml).join("");
       }
 
       const n = scored.length;
@@ -1458,15 +1502,15 @@
       }
 
       const active = [
-        brand !== "all" ? brand : null,
+        (brand !== "all" && !isFallback) ? brand : null,
         ind ? (IND.find(function (z) { return z.id === ind; }) || {}).n : null,
-        (cat && fCat && fCat.selectedIndex >= 0) ? fCat.options[fCat.selectedIndex].text : null
+        (cat && fCat && fCat.selectedIndex >= 0 && !isFallback) ? fCat.options[fCat.selectedIndex].text : null
       ].filter(Boolean);
 
       if (active.length) {
         head += ' <span class="fchips">' + active.map(esc).join(", ") + '</span>';
       }
-      if (raw || active.length) {
+      if (raw || active.length || isFallback) {
         head += '<button type="button" id="clr">Reset filters</button>';
       }
       if (st) st.innerHTML = head;
@@ -1487,6 +1531,16 @@
       if (c) c.onclick = resetAll;
       const emptyClr = document.getElementById("empty-clr");
       if (emptyClr) emptyClr.onclick = resetAll;
+      const switchBtn = document.getElementById("switch-all-brands");
+      if (switchBtn) {
+        switchBtn.onclick = function () {
+          brand = "all";
+          if (fCat) fCat.value = "";
+          fillCats();
+          syncButtons();
+          render();
+        };
+      }
     }
 
     // Populate logo buttons
@@ -1583,50 +1637,71 @@
   })();
 
   /* ----------------------------------------------------------------
-      Product mega menu
+      Product mega menu & mobile navigation
       ---------------------------------------------------------------- */
   (function () {
     var mega = document.getElementById("mega");
     var megaBtn = document.getElementById("mega-btn");
-    if (!mega || !megaBtn) return;
+    if (mega && megaBtn) {
+      mega.innerHTML = '<div class="mega-grid">' + CATALOG.map(function (b) {
+        return '<div><a class="mega-brand" href="#/' + b.id + '">' +
+          '<img src="' + logo(b.id) + '" alt="' + esc(b.name) + '"></a><ul>' +
+          b.cats.map(function (c) {
+            return '<li><a href="#/' + b.id + '/' + c.id + '">' + esc(c.name) + '</a></li>';
+          }).join("") +
+          '</ul></div>';
+      }).join("") + '</div>';
 
-    mega.innerHTML = '<div class="mega-grid">' + CATALOG.map(function (b) {
-      return '<div><a class="mega-brand" href="#/' + b.id + '">' +
-        '<img src="' + logo(b.id) + '" alt="' + esc(b.name) + '"></a><ul>' +
-        b.cats.map(function (c) {
-          return '<li><a href="#/' + b.id + '/' + c.id + '">' + esc(c.name) + '</a></li>';
-        }).join("") +
-        '</ul></div>';
-    }).join("") + '</div>';
+      function closeMega() {
+        if (mega.hidden) return;
+        mega.hidden = true;
+        megaBtn.setAttribute("aria-expanded", "false");
+      }
 
-    function closeMega() {
-      if (mega.hidden) return;
-      mega.hidden = true;
-      megaBtn.setAttribute("aria-expanded", "false");
+      megaBtn.addEventListener("click", function () {
+        if (!mega.hidden) {
+          closeMega();
+          return;
+        }
+        mega.hidden = false;
+        megaBtn.setAttribute("aria-expanded", "true");
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeMega();
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!mega.hidden && !mega.contains(e.target) && e.target !== megaBtn) {
+          closeMega();
+        }
+      });
+
+      mega.addEventListener("click", function (e) {
+        if (e.target.closest("a")) closeMega();
+      });
     }
 
-    megaBtn.addEventListener("click", function () {
-      if (!mega.hidden) {
-        closeMega();
-        return;
-      }
-      mega.hidden = false;
-      megaBtn.setAttribute("aria-expanded", "true");
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeMega();
-    });
-
-    document.addEventListener("click", function (e) {
-      if (!mega.hidden && !mega.contains(e.target) && e.target !== megaBtn) {
-        closeMega();
-      }
-    });
-
-    mega.addEventListener("click", function (e) {
-      if (e.target.closest("a")) closeMega();
-    });
+    // Populate mobile products panel
+    var mobPanel = document.getElementById("mobile-products-panel");
+    if (mobPanel) {
+      mobPanel.innerHTML = '<a href="#finder" class="mobile-all-products-link">' +
+        '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
+        '<span>Find a system &mdash; All products</span>' +
+        '</a>' +
+        CATALOG.map(function (b) {
+          return '<div class="mobile-brand-group">' +
+            '<a class="mobile-brand-title" href="#/' + b.id + '">' +
+            (logo(b.id) ? '<img src="' + logo(b.id) + '" alt="' + esc(b.name) + '">' : '') +
+            '<span>' + esc(b.name) + '</span>' +
+            '</a>' +
+            '<ul class="mobile-cat-list">' +
+            b.cats.map(function (c) {
+              return '<li><a href="#/' + b.id + '/' + c.id + '">' + esc(c.name) + '</a></li>';
+            }).join("") +
+            '</ul></div>';
+        }).join("");
+    }
   })();
 
   /* ----------------------------------------------------------------

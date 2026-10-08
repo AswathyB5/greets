@@ -24,14 +24,27 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileNav.classList.toggle('open');
       document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
     });
-    // Close on link click
-    mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
+    // Close on link click (delegated so dynamic product links close cleanly)
+    mobileNav.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link) {
         hamburger.classList.remove('open');
         mobileNav.classList.remove('open');
         document.body.style.overflow = '';
-      });
+      }
     });
+
+    // Mobile products accordion toggle
+    const prodToggle = mobileNav.querySelector('#mobile-products-toggle');
+    const prodPanel = mobileNav.querySelector('#mobile-products-panel');
+    if (prodToggle && prodPanel) {
+      prodToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = prodPanel.classList.toggle('open');
+        prodToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
   }
 
   /* — Intersection Observer for fade-up animations — */
