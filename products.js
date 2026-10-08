@@ -40,8 +40,8 @@
     hs_diamond: "assets/catalog/hs_diamond.jpg",
     hs_mc1000: "assets/catalog/hs_mc1000.jpg",
     hs_optical: "assets/catalog/hs_mc1000.jpg",
-    hs_ma1500: "assets/catalog/hs_ma1500.jpg",
-    hs_cvd: "assets/catalog/hs_ma1500.jpg",
+    hs_md1500: "assets/catalog/hs_md1500.jpg",
+    hs_cvd: "assets/catalog/hs_md1500.jpg",
     hs_md: "assets/catalog/hs_md.jpg",
     ma800: "assets/catalog/hs_md.jpg",
     turnkey: "assets/catalog/turnkey.jpg",
@@ -507,15 +507,15 @@
           url: "https://www.hscoat.com/pvd-coating-equipment/",
           machines: [
             {
-              id: "md800", name: "MD800 arc coating machine", tag: "Arc coating", photo: "hs_md", photoAlt: "Huasheng MA800Plus arc coating machine",
+              id: "md800", name: "MD800 PLUS arc coating machine", tag: "Arc coating", photo: "hs_md", photoAlt: "Huasheng MD800 PLUS arc coating machine",
               gallery: [["hs_md", "Huasheng MD series coating machine"]],
               short: "High-rate arc coater for tool coating production.",
-              desc: "The MD800 is the arc coating machine at the heart of Huasheng's turnkey tool-coating plant. Low-voltage, high-current arc discharge evaporates and ionises the target material, which is deposited on the tools under an electric field, giving a high deposition rate and strong coating adhesion.",
+              desc: "The MD800 PLUS is the arc coating machine at the heart of Huasheng's turnkey tool-coating plant. Low-voltage, high-current arc discharge evaporates and ionises the target material, which is deposited on the tools under an electric field, giving a high deposition rate and strong coating adhesion.",
               features: ["Arc coating with high deposition rate", "High ionisation rate and good coverage on complex shapes", "Very high impact resistance of coatings", "Fully automatic operation"],
               specs: [["Technology", "Arc coating"], ["Capacity", "12,000 pcs per batch (APMT1135 inserts)"], ["Operation", "Fully automatic"]],
               process: ["TiAlN, AlCrN and similar hard coatings", "Inserts, drills and end mills"],
               url: "https://www.hscoat.com/aip-coating-equipment/",
-              k: "pvd arc aip tialn inserts drills end mills md800 turnkey",
+              k: "pvd arc aip tialn inserts drills end mills md800 md800 plus turnkey",
               i: ["tools"],
             },
             {
@@ -675,16 +675,16 @@
         },
         {
           id: "turnkey", photo: "turnkey", photoAlt: "Layout of the Huasheng turnkey coating plant",
-          name: "Turnkey coating solutions", sub: "Complete MD800 tool-coating plant",
+          name: "Turnkey coating solutions", sub: "Complete MD800 PLUS tool-coating plant",
           desc: "A complete tool-coating centre from Huasheng: cleaning, coating, maintenance, utilities and quality control, laid out and commissioned as one plant.",
           url: "https://www.hscoat.com/turnkey-solution/",
           machines: [
             {
               id: "md800-turnkey", photo: "turnkey", photoAlt: "Layout of the Huasheng turnkey coating plant",
-              gallery: [["cleanline", "Fully automatic ultrasonic cleaning line"], ["hs_md", "MA800Plus arc coating machine"]],
-              name: "MD800 turnkey coating centre",
+              gallery: [["cleanline", "Fully automatic ultrasonic cleaning line"], ["hs_md", "Huasheng MD800 PLUS arc coating machine"]],
+              name: "MD800 PLUS turnkey coating centre",
               short: "Complete plant for in-house tool coating.",
-              desc: "Huasheng's turnkey coating solution gives a tool maker full control of its own coating process, from incoming tools to inspected, coated product. The plant is built around the MD800 arc coater, with a fully automatic ultrasonic cleaning line, blasting equipment for target and liner maintenance, utilities and quality-control instruments. Owning the process keeps coating know-how in-house, allows your own coating recipes, and cuts turnaround to as little as the same day.",
+              desc: "Huasheng's turnkey coating solution gives a tool maker full control of its own coating process, from incoming tools to inspected, coated product. The plant is built around the MD800 PLUS arc coater, with a fully automatic ultrasonic cleaning line, blasting equipment for target and liner maintenance, utilities and quality-control instruments. Owning the process keeps coating know-how in-house, allows your own coating recipes, and cuts turnaround to as little as the same day.",
               features: [
                 "Full control of your coating process and know-how",
                 "Open technology to develop your own coatings",
@@ -693,7 +693,7 @@
               ],
               specs: [
                 ["Cleaning", "Fully automatic ultrasonic cleaning line, 14,000 pcs/h (APMT1135)"],
-                ["Coating", "MD800 arc coater, 12,000 pcs per batch (APMT1135)"],
+                ["Coating", "MD800 PLUS arc coater, 12,000 pcs per batch (APMT1135)"],
                 ["Target maintenance", "9060A manual sandblaster, about 2 min per target"],
                 ["Liner maintenance", "1212F pressurised sandblaster, about 4 h per set"],
                 ["Cooling", "MCW-600 air-cooled chiller, 60 kW, R407C, 380 V 50 Hz"],
@@ -703,7 +703,7 @@
               ],
               process: ["Cleaning", "Coating", "Target and liner maintenance", "Inspection and dispatch"],
               url: "https://www.hscoat.com/turnkey-solution/",
-              k: "turnkey plant job shop coating centre md800",
+              k: "turnkey plant job shop coating centre md800 md800 plus",
               i: ["tools"],
             },
           ],
