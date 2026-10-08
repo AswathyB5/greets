@@ -1,3 +1,5 @@
 # Staging environment - block all crawlers from indexing
 User-agent: *
 Disallow: /
+
+Sitemap: https://greets.co.in/sitemap.xml

@@ -13,7 +13,7 @@
   const LOGO_PATHS = {
     bmi: "assets/logo-BMI.png",
     novatec: "assets/logo-novatec.png",
-    huasheng: "assets/logos/huasheng.png",
+    huasheng: "assets/Huasheng.png",
   };
 
   /* ----------------------------------------------------------------
@@ -758,7 +758,7 @@
         IDX.push({
           n: m.name, b: b.name, bid: b.id, cid: c.id, mid: m.id,
           s: m.short || "", f: c.name, k: m.k || "",
-          i: m.i || [], href: "#/" + b.id + "/" + c.id + "/" + m.id,
+          i: m.i || [], href: b.id + "/" + c.id + "/" + m.id + "/",
           _m: m, _c: c, _b: b,
         });
       });
@@ -860,7 +860,7 @@
 
       '<div class="cards">' +
       b.cats.map(function (c) {
-        return '<a class="card" href="#/' + b.id + '/' + c.id + '">' +
+        return '<a class="card" href="' + b.id + '/' + c.id + '/">' +
           '<b>' + esc(c.name) + '</b>' +
           '<span>' + esc(c.sub) + '</span>' +
           '<div class="card-badge-line"><span class="cat-pill-count">' + c.machines.length + (c.machines.length === 1 ? " product range" : " product ranges") + '</span></div>' +
@@ -1644,10 +1644,10 @@
     var megaBtn = document.getElementById("mega-btn");
     if (mega && megaBtn) {
       mega.innerHTML = '<div class="mega-grid">' + CATALOG.map(function (b) {
-        return '<div><a class="mega-brand" href="#/' + b.id + '">' +
+        return '<div><a class="mega-brand" href="' + b.id + '/">' +
           '<img src="' + logo(b.id) + '" alt="' + esc(b.name) + '"></a><ul>' +
           b.cats.map(function (c) {
-            return '<li><a href="#/' + b.id + '/' + c.id + '">' + esc(c.name) + '</a></li>';
+            return '<li><a href="' + b.id + '/' + c.id + '/">' + esc(c.name) + '</a></li>';
           }).join("") +
           '</ul></div>';
       }).join("") + '</div>';
@@ -1691,7 +1691,7 @@
         '</a>' +
         CATALOG.map(function (b) {
           return '<div class="mobile-brand-group">' +
-            '<a class="mobile-brand-title" href="#/' + b.id + '">' +
+            '<a class="mobile-brand-title" href="' + b.id + '/">' +
             (logo(b.id) ? '<img src="' + logo(b.id) + '" alt="' + esc(b.name) + '">' : '') +
             '<span>' + esc(b.name) + '</span>' +
             '</a>' +
