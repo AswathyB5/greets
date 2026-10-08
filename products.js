@@ -39,7 +39,9 @@
     hs_dlc: "assets/catalog/hs_dlc.jpg",
     hs_diamond: "assets/catalog/hs_diamond.jpg",
     hs_mc1000: "assets/catalog/hs_mc1000.jpg",
+    hs_optical: "assets/catalog/hs_mc1000.jpg",
     hs_ma1500: "assets/catalog/hs_ma1500.jpg",
+    hs_cvd: "assets/catalog/hs_ma1500.jpg",
     hs_md: "assets/catalog/hs_md.jpg",
     ma800: "assets/catalog/hs_md.jpg",
     turnkey: "assets/catalog/turnkey.jpg",
@@ -88,7 +90,7 @@
   const CATALOG = [
     {
       id: "bmi", photo: "bmi_brand", photoAlt: "BMI vacuum furnace installation",
-      name: "BMI", full: "Fours Industriels BMI", country: "France", site: "https://www.bmi-fours.com",
+      name: "BMI", full: "Fours Industriels B.M.I.", country: "France", site: "https://www.bmi-fours.com",
       intro: "Vacuum furnaces for hardening, brazing, tempering and thermochemical treatment, designed and built in France since the early 1980s.",
       cats: [
         {
@@ -494,7 +496,7 @@
       ],
     },
     {
-      id: "huasheng", photo: "lineup", photoAlt: "Huasheng coating machines: HA802, MA1500, HiPIMS, TC802 and MC1000",
+      id: "huasheng", photo: "lineup", photoAlt: "Huasheng coating machine lineup",
       name: "Huasheng", full: "Guangdong Huasheng Nanotechnology Co., Ltd.", country: "China", site: "https://www.hscoat.com",
       intro: "PVD, DLC, diamond, optical and CVD coating equipment, plus complete turnkey coating plants.",
       cats: [
@@ -612,13 +614,13 @@
           ],
         },
         {
-          id: "optical", photo: "hs_mc1000", photoAlt: "Huasheng optical coating equipment",
+          id: "optical", photo: "hs_optical", photoAlt: "Huasheng optical coating equipment",
           name: "Optical coating equipment", sub: "Evaporation and magnetron sputtering",
           desc: "Systems for optical thin films on lenses and optical components.",
           url: "https://www.hscoat.com/optical-coating-equipment/",
           machines: [
             {
-              id: "evaporation", photo: "hs_mc1000", photoAlt: "Huasheng evaporation optical coating equipment",
+              id: "evaporation", photo: "hs_optical", photoAlt: "Huasheng evaporation optical coating equipment",
               name: "Evaporation optical coating equipment",
               short: "Anti-reflection and filter coatings.",
               desc: "Evaporation systems for anti-reflection and filter coatings on lenses and optics.",
@@ -629,7 +631,7 @@
               i: ["optics"],
             },
             {
-              id: "sputter-optical", photo: "hs_mc1000", photoAlt: "Huasheng magnetron sputtering optical coating equipment",
+              id: "sputter-optical", photo: "hs_optical", photoAlt: "Huasheng magnetron sputtering optical coating equipment",
               name: "Magnetron sputtering optical coating equipment",
               short: "Precise multilayer optical films.",
               desc: "Magnetron sputtering systems for precise multilayer optical films.",
@@ -642,13 +644,13 @@
           ],
         },
         {
-          id: "cvd", photo: "hs_ma1500", photoAlt: "Huasheng CVD and aluminizing coating equipment",
+          id: "cvd", photo: "hs_cvd", photoAlt: "Huasheng CVD and aluminizing coating equipment",
           name: "CVD coating equipment", sub: "CVD and CVA aluminizing",
           desc: "Chemical vapour deposition systems for thick wear-resistant and high-temperature coatings.",
           url: "https://www.hscoat.com/cvd-coating-equipment/",
           machines: [
             {
-              id: "cvd-systems", photo: "hs_ma1500", photoAlt: "Huasheng CVD coating system",
+              id: "cvd-systems", photo: "hs_cvd", photoAlt: "Huasheng CVD coating system",
               name: "CVD coating systems",
               short: "Thick wear-resistant coatings.",
               desc: "CVD systems for thick wear-resistant coatings, typically on turning inserts.",
@@ -659,7 +661,7 @@
               i: ["tools"],
             },
             {
-              id: "cva", photo: "hs_ma1500", photoAlt: "Huasheng CVA aluminizing system",
+              id: "cva", photo: "hs_cvd", photoAlt: "Huasheng CVA aluminizing system",
               name: "CVA aluminizing systems",
               short: "Aluminide coatings for high-temperature parts.",
               desc: "Chemical vapour aluminizing systems for aluminide coatings that protect parts against high-temperature oxidation.",
@@ -839,7 +841,7 @@
       '<div class="brand-title-group">' +
       '<span class="plate big"><img src="' + logo(b.id) + '" alt="' + esc(b.name) + '"></span>' +
       '<div>' +
-      '<h1>' + esc(b.name) + ' Equipment Range</h1>' +
+      '<h1>' + esc(b.name) + ' equipment range</h1>' +
       '<p class="brand-sub-full">' + esc(b.full) + '</p>' +
       '</div>' +
       '</div>' +
@@ -847,7 +849,7 @@
       '<div class="cta-row">' +
       enquire(b.id, b.name + " Range", "Enquire for " + b.name + " in India") +
       '<a href="' + b.site + '" target="_blank" rel="noopener" class="btn btn--ghost">' +
-      '<span>Visit Official Website</span>' + SVG_EXT +
+      '<span>Visit official website</span>' + SVG_EXT +
       '</a>' +
       '</div>' +
       '</div>' +
@@ -861,7 +863,7 @@
         return '<a class="card" href="#/' + b.id + '/' + c.id + '">' +
           '<b>' + esc(c.name) + '</b>' +
           '<span>' + esc(c.sub) + '</span>' +
-          '<div class="card-badge-line"><span class="cat-pill-count">' + c.machines.length + (c.machines.length === 1 ? " Product Range" : " Product Ranges") + '</span></div>' +
+          '<div class="card-badge-line"><span class="cat-pill-count">' + c.machines.length + (c.machines.length === 1 ? " product range" : " product ranges") + '</span></div>' +
           '</a>';
       }).join("") +
       '</div>' +
@@ -886,9 +888,9 @@
       '<h1>' + esc(c.name) + '</h1>' +
       '<p class="lede">' + esc(c.desc) + '</p>' +
       '<div class="cta-row">' +
-      enquire(b.id, c.name, "Enquire About " + c.name) +
+      enquire(b.id, c.name, "Enquire about " + c.name) +
       '<a class="btn btn--ghost" href="' + c.url + '" target="_blank" rel="noopener">' +
-      '<span>See Range on ' + esc(b.name) + ' Website</span>' + SVG_EXT +
+      '<span>See range on ' + esc(b.name) + ' website</span>' + SVG_EXT +
       '</a>' +
       '</div>' +
       '</div>' +
@@ -903,7 +905,7 @@
         return '<a class="card machine-item-card" href="#/' + b.id + '/' + c.id + '/' + m.id + '">' +
                     '<b>' + esc(m.name) + '</b>' +
           '<span>' + esc(m.short || m.desc) + '</span>' +
-          '<em>View Details & Technical Data</em>' +
+          '<em>View details & technical data</em>' +
           '</a>';
       }).join("") +
       '</div>';
@@ -954,7 +956,7 @@
         '<p class="note">* Manufacturer figures; exact values depend on configuration.</p>';
     } else {
       specs = '<div class="ondemand">' +
-        '<b>Datasheet on Request</b>' +
+        '<b>Datasheet on request</b>' +
         '<p>This machine is configured to your part specs and throughput. Contact Greets Equipment for technical proposal.</p>' +
         enquire(b.id, m.name + " datasheet", "Enquire about this") +
         '</div>';
@@ -976,10 +978,10 @@
       '<a class="btn btn--ghost" href="' + (m.url || c.url) + '" target="_blank" rel="noopener"><span>View on ' + esc(b.name) + ' website</span>' + SVG_EXT + '</a>' +
       '</div>' +
       '<div class="mcols">' +
-      '<section class="mcol-card"><h2>Key Features</h2><ul class="feat">' + m.features.map(function (f) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(f) + '</span></li>'; }).join("") + '</ul></section>' +
+      '<section class="mcol-card"><h2>Key features</h2><ul class="feat">' + m.features.map(function (f) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(f) + '</span></li>'; }).join("") + '</ul></section>' +
       '</div>' +
       (m.i && m.i.length
-        ? '<p class="ind-para"><strong>Target Industries:</strong> ' + m.i.map(function (x) {
+        ? '<p class="ind-para"><strong>Target industries:</strong> ' + m.i.map(function (x) {
           var indObj = IND.find(function (z) { return z.id === x; });
           return indObj ? esc(indObj.n) : "";
         }).filter(Boolean).join(", ") + '.</p>'
@@ -988,7 +990,7 @@
       '</div>' +
       '<div class="mright">' +
       photo +
-      '<section class="mspec"><div class="mspec-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><h2>Technical Specifications</h2></div>' + specs + '</section>' +
+      '<section class="mspec"><div class="mspec-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><h2>Technical specifications</h2></div>' + specs + '</section>' +
       '</div>' +
       '</div>' +
       '</div>';
@@ -1058,8 +1060,9 @@
         if (t) {
           requestAnimationFrame(function () {
             var headerHeight = document.querySelector('.header')?.offsetHeight || 72;
-            var y = t.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
-            window.scrollTo({ top: y, behavior: 'smooth' });
+            var targetEl = t.querySelector('.wrap.container') || t;
+            var y = targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+            window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
           });
         } else {
           window.scrollTo(0, 0);
@@ -1224,8 +1227,9 @@
   }
 
   function understand(q) {
-    const text = " " + q.toLowerCase().replace(/[^a-z0-9\- ]/g, " ").replace(/\s+/g, " ") + " ";
-    const words = text.trim().split(" ").filter(function (w) { return w.length > 1; });
+    const rawLower = (q || "").toLowerCase().trim();
+    const text = " " + rawLower.replace(/[^a-z0-9\- ]/g, " ").replace(/\s+/g, " ") + " ";
+    const words = text.trim().split(" ").filter(function (w) { return w.length > 0; });
     const inds = new Set(), procs = new Set(), used = new Set();
     SYN.forEach(function (pair) {
       const keys = pair[0], c = pair[1];
@@ -1246,6 +1250,7 @@
       });
     });
     return {
+      raw: rawLower,
       words: words,
       inds: Array.from(inds),
       procs: Array.from(procs),
@@ -1257,31 +1262,77 @@
     return ({ bmi: 1, novatec: 2, huasheng: 3 })[p.bid] || 1;
   };
 
-  function scoreOf(p, u) {
+  function scoreOf(p, u, rawLower) {
     let sc = 0, why = [];
     const blob = (p.n + " " + p.b + " " + p.f + " " + p.s + " " + p.k).toLowerCase();
+    const pNameLower = p.n.toLowerCase();
+    const pBrandLower = p.b.toLowerCase();
+    const pCatLower = p.f.toLowerCase();
+
+    // If query is a single character (letter/number), match products whose name OR category starts with that letter
+    if (rawLower && rawLower.length === 1) {
+      const ch = rawLower;
+      const cleanName = pNameLower.replace(/^[^a-z0-9]+/i, "");
+      const cleanCat = pCatLower.replace(/^[^a-z0-9]+/i, "");
+
+      // 1. Machine name starts with this letter (top priority)
+      if (cleanName.startsWith(ch)) {
+        return { sc: 20, why: [] };
+      }
+      // 2. Category name starts with this letter
+      if (cleanCat.startsWith(ch)) {
+        return { sc: 15, why: [p.f] };
+      }
+      return { sc: 0, why: [] };
+    }
+
+    // Direct phrase / substring matches (case-insensitive)
+    if (rawLower && rawLower.length > 1) {
+      if (pNameLower.startsWith(rawLower)) {
+        sc += 16;
+      } else if (pNameLower.includes(rawLower)) {
+        sc += 10;
+      } else if (blob.includes(rawLower)) {
+        sc += 6;
+      }
+    }
+
     u.inds.forEach(function (i) {
       if (p.i.includes(i)) {
-        sc += 3;
+        sc += 4;
         var indObj = IND.find(function (z) { return z.id === i; });
         if (indObj) why.push(indObj.n);
       }
     });
+
     let procHit = false;
     u.procs.forEach(function (pr) {
       if ((PROC[pr] || []).includes(p.mid)) {
-        sc += 5;
+        sc += 6;
         procHit = true;
         if (PROC_LABEL[pr]) why.push(PROC_LABEL[pr]);
       }
     });
+
     u.words.forEach(function (w) {
-      if (p.n.toLowerCase().includes(w)) sc += 4;
+      if (pNameLower.startsWith(w)) sc += 6;
+      else if (pNameLower.includes(w)) sc += 4;
       else if (blob.includes(w)) sc += 2;
     });
+
     // when both an application and a process are asked for, favour machines matching both
-    if (u.procs.length && !procHit) sc = 0;
-    if (u.inds.length && u.procs.length && !(u.inds.some(function (i) { return p.i.includes(i); }))) sc = Math.min(sc, 1);
+    if (u.procs.length && !procHit) {
+      if (!blob.includes(rawLower) && !u.words.some(function (w) { return pNameLower.includes(w); })) {
+        sc = 0;
+      } else {
+        sc = Math.max(1, sc - 3);
+      }
+    }
+    if (u.inds.length && u.procs.length && !(u.inds.some(function (i) { return p.i.includes(i); }))) {
+      if (!blob.includes(rawLower) && !u.words.some(function (w) { return pNameLower.includes(w); })) {
+        sc = Math.min(sc, 1);
+      }
+    }
     return { sc: sc, why: Array.from(new Set(why)) };
   }
 
@@ -1332,22 +1383,25 @@
 
     function render() {
       if (!res) return;
-      const raw = q ? q.value.trim() : "", cat = fCat ? fCat.value : "", u = understand(raw);
+      const raw = q ? q.value.trim() : "", rawLower = raw.toLowerCase(), cat = fCat ? fCat.value : "", u = understand(raw);
       let list = IDX.filter(function (p) {
         return (brand === "all" || p.b === brand) &&
           (!ind || p.i.includes(ind)) &&
           (!cat || (p.bid + "/" + p.cid) === cat);
       });
       let scored = list.map(function (p) {
-        return Object.assign({ p: p }, raw ? scoreOf(p, u) : { sc: 1, why: [] });
+        return Object.assign({ p: p }, raw ? scoreOf(p, u, rawLower) : { sc: 1, why: [] });
       }).filter(function (x) { return x.sc > 0; });
 
-      if (raw) {
+      if (raw && rawLower.length > 1) {
         const top = Math.max.apply(Math, [0].concat(scored.map(function (x) { return x.sc; })));
         scored = scored.filter(function (x) { return x.sc >= Math.min(3, top); });
       }
 
       scored.sort(function (a, b) {
+        if (rawLower.length === 1) {
+          return (b.sc - a.sc) || (STEP_OF(a.p) - STEP_OF(b.p));
+        }
         return (STEP_OF(a.p) - STEP_OF(b.p)) || (b.sc - a.sc);
       });
 
@@ -1364,7 +1418,12 @@
       };
 
       if (!scored.length) {
-        res.innerHTML = '<p class="empty">No systems match. Try an application such as “moulds”, “hobs” or “implants”, a process such as “nitriding” or “DLC”, or <a href="#contact">ask Greets</a>.</p>';
+        res.innerHTML = '<div class="empty-state">' +
+          '<p class="empty">No systems match your search or filters. Try an application such as “moulds”, “hobs” or “implants”, a process such as “nitriding” or “DLC”, or <a href="#contact">ask Greets</a>.</p>' +
+          '<button type="button" class="btn-clear-filters" id="empty-clr">' +
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>' +
+          '<span>Clear all filters</span></button>' +
+          '</div>';
       } else if (raw) {
         const steps = [
           [1, "Harden", "BMI vacuum furnaces"],
@@ -1412,19 +1471,22 @@
       }
       if (st) st.innerHTML = head;
 
+      const resetAll = function () {
+        brand = "all";
+        ind = null;
+        if (q) q.value = "";
+        if (fInd) fInd.value = "";
+        fillCats();
+        if (fCat) fCat.value = "";
+        syncButtons();
+        render();
+        if (q) q.focus();
+      };
+
       const c = document.getElementById("clr");
-      if (c) {
-        c.onclick = function () {
-          brand = "all";
-          ind = null;
-          if (q) q.value = "";
-          if (fInd) fInd.value = "";
-          fillCats();
-          if (fCat) fCat.value = "";
-          syncButtons();
-          render();
-        };
-      }
+      if (c) c.onclick = resetAll;
+      const emptyClr = document.getElementById("empty-clr");
+      if (emptyClr) emptyClr.onclick = resetAll;
     }
 
     // Populate logo buttons
@@ -1437,8 +1499,16 @@
     });
 
     if (q) q.addEventListener("input", render);
+
+    // Clear brand filter automatically when clicking an example term
     document.querySelectorAll(".qchip").forEach(function (c) {
       c.addEventListener("click", function () {
+        brand = "all";
+        ind = null;
+        if (fInd) fInd.value = "";
+        fillCats();
+        if (fCat) fCat.value = "";
+        syncButtons();
         if (q) {
           q.value = c.textContent.trim();
           render();
@@ -1483,8 +1553,9 @@
     });
 
     // Clicking an industry card in the industries section filters the finder
-    document.querySelectorAll(".industry-card-v2[data-ind], .ind[data-ind]").forEach(function (b) {
-      b.addEventListener("click", function (e) {
+    document.addEventListener("click", function (e) {
+      var b = e.target.closest(".industry-card-v2[data-ind], .ind[data-ind], [data-ind]");
+      if (b && b.dataset.ind) {
         e.preventDefault();
         ind = b.dataset.ind;
         if (fInd) fInd.value = ind;
@@ -1496,11 +1567,15 @@
         render();
         var finderSection = document.getElementById("finder");
         if (finderSection) {
-          var headerHeight = document.querySelector(".header") ? document.querySelector(".header").offsetHeight : 72;
-          var y = finderSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
-          window.scrollTo({ top: y, behavior: "smooth" });
+          requestAnimationFrame(function () {
+            var header = document.querySelector(".header");
+            var headerHeight = header ? header.offsetHeight : 72;
+            var card = finderSection.querySelector(".wrap.container") || finderSection;
+            var y = card.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+            window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+          });
         }
-      });
+      }
     });
 
     fillCats();

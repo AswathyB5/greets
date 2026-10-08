@@ -6642,3 +6642,59 @@ body.greets-modal-open {
 .form-privacy-card__link:hover {
   color: var(--ink);
 }
+
+/* ===================================================================
+   FINDER EMPTY STATE & CLEAR FILTERS
+   =================================================================== */
+.empty-state {
+  padding: 36px 20px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.empty-state .empty {
+  padding: 0;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.55;
+  color: #56636B;
+  font-size: 0.92rem;
+}
+
+.empty-state .empty a {
+  color: #027A35;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.btn-clear-filters {
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 650;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1.5px solid #027A35;
+  background: rgba(2, 150, 60, 0.08);
+  color: #027A35;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.18s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.btn-clear-filters:hover {
+  background: #027A35;
+  color: #FFFFFF;
+  box-shadow: 0 3px 10px rgba(2, 150, 60, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-clear-filters:active {
+  transform: translateY(0);
+}

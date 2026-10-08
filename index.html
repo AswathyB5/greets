@@ -7,6 +7,7 @@
   <title>Greets Equipment – Authorised Dealer in India for BMI, Novatec and Huasheng</title>
   <meta name="description"
     content="One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/png" href="assets/greetsfavicon.png">
   <link rel="apple-touch-icon" href="assets/greetsfavicon.png">
   <link rel="stylesheet" href="styles.css">
@@ -3150,6 +3151,7 @@
       border-bottom: none;
       position: relative;
       isolation: isolate;
+      scroll-margin-top: 80px;
     }
 
     /* White card */
@@ -3693,6 +3695,51 @@
       text-decoration: underline;
     }
 
+    .empty-state {
+      padding: 36px 20px 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .empty-state .empty {
+      padding: 0;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.55;
+    }
+
+    .btn-clear-filters {
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 650;
+      padding: 8px 20px;
+      border-radius: 999px;
+      border: 1.5px solid #027A35;
+      background: rgba(2, 150, 60, 0.08);
+      color: #027A35;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.18s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    .btn-clear-filters:hover {
+      background: #027A35;
+      color: #FFFFFF;
+      box-shadow: 0 3px 10px rgba(2, 150, 60, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .btn-clear-filters:active {
+      transform: translateY(0);
+    }
+
     @media (max-width: 1100px) {
       .finder-filters {
         flex-wrap: wrap;
@@ -3801,7 +3848,7 @@
               choice and import to installation, training and service.</p>
             <div class="hero__actions" data-anim="fade-up" data-anim-delay="2">
               <a href="#finder" class="btn btn--primary btn--lg">
-                Find A System
+                Find a system
                 <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
@@ -3810,7 +3857,7 @@
               </a>
               <a href="#partners" class="btn btn--outline btn--lg"
                 style="color:var(--gray-800); border-color:rgba(0,0,0,0.15); background:rgba(255,255,255,0.85);">
-                Our Partners
+                Our partners
               </a>
             </div>
           </div>
@@ -3832,7 +3879,7 @@
           <!-- 1 HARDEN: BMI -->
           <div class="partner-card-light hud-corner" data-brand="bmi" data-anim="fade-up" data-anim-delay="1">
             <div class="partner-card-light__img">
-              <img src="assets/catalog/b8t.jpg" alt="BMI Vacuum Furnace">
+              <img src="assets/catalog/b8t.jpg" alt="BMI vacuum furnace">
               <div class="partner-card-light__flag-badge">
                 France · BMI
               </div>
@@ -3843,12 +3890,12 @@
                   <span class="bc-n">1</span> Harden
                 </div>
                 <div class="partner-brand-logo">
-                  <img src="assets/logo-BMI.png" alt="Fours Industriels BMI">
+                  <img src="assets/logo-BMI.png" alt="Fours Industriels B.M.I.">
                 </div>
               </div>
               <div class="partner-card-light__content">
                 <h5>Vacuum furnaces</h5>
-                <p>Fours Industriels BMI, France</p>
+                <p>Fours Industriels B.M.I., France</p>
               </div>
               <a href="#/bmi" class="btn btn--ghost">
                 Explore BMI furnaces <span class="arrow">→</span>
@@ -3859,7 +3906,7 @@
           <!-- 2 CLEAN: Novatec -->
           <div class="partner-card-light hud-corner" data-brand="novatec" data-anim="fade-up" data-anim-delay="2">
             <div class="partner-card-light__img">
-              <img src="assets/catalog/nov_main.jpg" alt="Novatec Ultrasonic Cleaning System">
+              <img src="assets/catalog/nov_main.jpg" alt="Novatec ultrasonic cleaning system">
               <div class="partner-card-light__flag-badge">
                 Italy · Novatec
               </div>
@@ -3886,7 +3933,7 @@
           <!-- 3 COAT: Huasheng -->
           <div class="partner-card-light hud-corner" data-brand="huasheng" data-anim="fade-up" data-anim-delay="3">
             <div class="partner-card-light__img">
-              <img src="assets/catalog/hs_pvd.jpg" alt="Huasheng PVD Coating System">
+              <img src="assets/catalog/hs_pvd.jpg" alt="Huasheng PVD coating system">
               <div class="partner-card-light__flag-badge">
                 China · Huasheng
               </div>
@@ -4291,9 +4338,9 @@
         <div class="brand-intro fade-left">
           <div>
             <div class="brand-divider">
-              <img src="assets/logo-BMI.png" alt="Fours Industriels BMI">
+              <img src="assets/logo-BMI.png" alt="Fours Industriels B.M.I.">
             </div>
-            <h2>Fours Industriels BMI, Saint-Quentin-Fallavier, France</h2>
+            <h2>Fours Industriels B.M.I., Saint-Quentin-Fallavier, France</h2>
             <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Vacuum furnace
               specialists since the early 1980s, building standard and custom furnaces for aerospace,
               automotive, medical, tooling and heat-treatment shops. BMI's patented rotating gas flow gives uniform
@@ -4615,7 +4662,7 @@
 
         <div
           style="display:flex; justify-content:space-between; align-items:center; margin:1.75rem 0 1rem; flex-wrap:wrap; gap:0.5rem;">
-          <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">PVD coating Equipments</h3>
+          <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">PVD, DLC and diamond coating equipment</h3>
           <p class="catlink" style="margin:0;"><a href="#/huasheng">See all Huasheng machines →</a></p>
         </div>
 
