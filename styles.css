@@ -4374,28 +4374,32 @@ h1[tabindex="-1"]:focus {
 }
 
 .navgroup .navlink,
-.navgroup .mega-btn {
+.navgroup .mega-btn,
+.navgroup a {
   position: relative;
   z-index: 1;
-  padding: 8px 14px;
+  padding: 0.5rem 1.1rem;
   border-radius: 10px;
   border: 0;
   background: transparent;
   box-shadow: none;
-  font-weight: 600;
+  font-size: 0.88rem;
+  font-weight: 500;
   color: var(--steel);
   text-decoration: none;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 .navgroup .mega-btn {
   font: inherit;
-  font-weight: 600;
+  font-size: 0.88rem;
+  font-weight: 500;
   color: var(--steel);
 }
 
 .navgroup .navlink:hover,
-.navgroup .mega-btn:hover {
+.navgroup .mega-btn:hover,
+.navgroup a:hover {
   color: var(--ink);
 }
 

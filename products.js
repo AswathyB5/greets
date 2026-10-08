@@ -1564,7 +1564,7 @@
         if (fCat) fCat.value = "";
         syncButtons();
         if (q) {
-          q.value = c.textContent.trim();
+          q.value = c.textContent.replace(/\s+/g, " ").trim();
           render();
           q.focus();
         }
