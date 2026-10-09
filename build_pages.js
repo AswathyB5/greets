@@ -561,6 +561,67 @@ CATALOG.forEach(b => {
           </nav>
         ` : '';
 
+        let lineLayoutHtml = '';
+        if (m.lineLayout) {
+          const ll = m.lineLayout;
+          lineLayoutHtml = `
+            <section class="m-models-section m-linelayout-section" style="margin-top: 2.25rem;">
+              <div class="m-models-head">
+                <div class="m-models-head__title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <div>
+                    <h2>${esc(ll.title)}</h2>
+                    <p>Process station sequence, ancillary utilities & layout footprint (${esc(ll.reference)})</p>
+                  </div>
+                </div>
+                <span class="m-models-count">${ll.stations.length} Process Stations</span>
+              </div>
+
+              <div class="m-linelayout-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem; margin-bottom:1.5rem;">
+                <div class="mcol-card" style="margin:0;">
+                  <h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Key Dimensions</h3>
+                  <table class="spec" style="font-size:0.88rem;">
+                    <tbody>
+                      ${ll.dimensions.map(d => `<tr><th scope="row">${esc(d[0])}</th><td>${esc(d[1])}</td></tr>`).join('')}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="mcol-card" style="margin:0;">
+                  <h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Ancillary Equipment &amp; Utilities</h3>
+                  <ul class="feat" style="font-size:0.88rem;">
+                    ${ll.ancillary.map(a => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(a)}</span></li>`).join('')}
+                  </ul>
+                </div>
+              </div>
+
+              <div class="m-models-table-wrap">
+                <table class="m-models-table">
+                  <thead>
+                    <tr>
+                      <th scope="col" style="width:110px;">Position</th>
+                      <th scope="col">Station Description</th>
+                      <th scope="col">Process Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${ll.stations.map(st => `
+                      <tr>
+                        <td><span class="pill-orientation" style="font-weight:700;">${esc(st.pos)}</span></td>
+                        <td class="td-model" style="font-weight:600; color:var(--ink);">${esc(st.station)}</td>
+                        <td>${st.notes ? `<span class="pill-orientation">${esc(st.notes)}</span>` : '<span style="color:var(--steel);">—</span>'}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          `;
+        }
+
         let modelsTableHtml = '';
         if (m.models && m.models.length) {
           const isDeco = m.models[0].chamberSize !== undefined || m.models[0].arcTargets !== undefined || m.models[0].otherTargets !== undefined;
@@ -813,6 +874,7 @@ CATALOG.forEach(b => {
           </div>
         </div>
         ${modelsTableHtml}
+${lineLayoutHtml}
       </div>
     </div>
   </main>

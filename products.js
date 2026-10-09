@@ -1416,6 +1416,93 @@
         "machines": [
           {
             "id": "pluritank-line",
+            "lineLayout": {
+  "title": "PLURITANK 1400 — Multi-Stage Process Line Layout",
+  "reference": "Novatec GA drawing 5298.3.0-26CO",
+  "dimensions": [
+    [
+      "Internal tank",
+      "700 × 1200 × 1650 h mm (approx. 1386 litres)"
+    ],
+    [
+      "External basket",
+      "540 × 1090 × 1540 h mm"
+    ],
+    [
+      "Line footprint",
+      "19500 × 7000 mm"
+    ],
+    [
+      "Width options",
+      "Supplied in two overall widths. The tank size is the same in both."
+    ]
+  ],
+  "stations": [
+    {
+      "pos": "C",
+      "station": "Motorised loading conveyor",
+      "notes": "Infeed load station"
+    },
+    {
+      "pos": "1",
+      "station": "Ultrasonic cleaning tank with basket agitation",
+      "notes": "Primary ultrasonic wash"
+    },
+    {
+      "pos": "2",
+      "station": "Rinsing tank with turbulent flow",
+      "notes": "Turbulent flow rinse"
+    },
+    {
+      "pos": "3",
+      "station": "Ultrasonic cleaning tank with basket agitation",
+      "notes": "Secondary ultrasonic wash"
+    },
+    {
+      "pos": "4",
+      "station": "Rinsing tank with turbulent flow",
+      "notes": "Intermediate cascade rinse"
+    },
+    {
+      "pos": "5",
+      "station": "Ultrasonic cleaning tank with basket agitation",
+      "notes": "Final precision ultrasonic wash"
+    },
+    {
+      "pos": "6",
+      "station": "Rinsing tank with turbulent flow",
+      "notes": "Cascade flow rinse"
+    },
+    {
+      "pos": "7",
+      "station": "DI water ultrasonic rinsing tank",
+      "notes": "Demineralised ultrasonic rinse"
+    },
+    {
+      "pos": "8 – 9",
+      "station": "DI water rinsing tank with slow drain system",
+      "notes": "Cascades back to tank 7"
+    },
+    {
+      "pos": "10 – 14",
+      "station": "Hot air tunnel dryer",
+      "notes": "5 drying positions"
+    },
+    {
+      "pos": "S",
+      "station": "Motorised unloading conveyor",
+      "notes": "Outfeed unload station"
+    }
+  ],
+  "ancillary": [
+    "General control board",
+    "WT1 buffer tank, filter holder and pump",
+    "Two pump and filter groups",
+    "DEMI 100/4 demineralised water plant",
+    "Exhaust fan",
+    "CS1 loading and unloading operators zone"
+  ]
+},
             "photo": "nm_pluri",
             "photoAlt": "Novatec PLURITANK automatic ultrasonic cleaning system",
             "gallery": [
@@ -5131,6 +5218,43 @@
         '</div>';
     }
 
+    var lineLayoutHtml = '';
+    if (m.lineLayout) {
+      var ll = m.lineLayout;
+      lineLayoutHtml = '<section class="m-models-section m-linelayout-section" style="margin-top: 2.25rem;">' +
+        '<div class="m-models-head">' +
+        '<div class="m-models-head__title">' +
+        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>' +
+        '<div>' +
+        '<h2>' + esc(ll.title) + '</h2>' +
+        '<p>Process station sequence, ancillary utilities & layout footprint (' + esc(ll.reference) + ')</p>' +
+        '</div>' +
+        '</div>' +
+        '<span class="m-models-count">' + ll.stations.length + ' Process Stations</span>' +
+        '</div>' +
+        '<div class="m-linelayout-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem; margin-bottom:1.5rem;">' +
+        '<div class="mcol-card" style="margin:0;">' +
+        '<h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Key Dimensions</h3>' +
+        '<table class="spec" style="font-size:0.88rem;"><tbody>' +
+        ll.dimensions.map(function(d) { return '<tr><th scope="row">' + esc(d[0]) + '</th><td>' + esc(d[1]) + '</td></tr>'; }).join('') +
+        '</tbody></table></div>' +
+        '<div class="mcol-card" style="margin:0;">' +
+        '<h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Ancillary Equipment &amp; Utilities</h3>' +
+        '<ul class="feat" style="font-size:0.88rem;">' +
+        ll.ancillary.map(function(a) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(a) + '</span></li>'; }).join('') +
+        '</ul></div></div>' +
+        '<div class="m-models-table-wrap">' +
+        '<table class="m-models-table"><thead><tr>' +
+        '<th scope="col" style="width:110px;">Position</th><th scope="col">Station Description</th><th scope="col">Process Notes</th>' +
+        '</tr></thead><tbody>' +
+        ll.stations.map(function(st) {
+          return '<tr><td><span class="pill-orientation" style="font-weight:700;">' + esc(st.pos) + '</span></td>' +
+            '<td class="td-model" style="font-weight:600; color:var(--ink);">' + esc(st.station) + '</td>' +
+            '<td>' + (st.notes ? '<span class="pill-orientation">' + esc(st.notes) + '</span>' : '<span style="color:var(--steel);">—</span>') + '</td></tr>';
+        }).join('') +
+        '</tbody></table></div></section>';
+    }
+
     var modelsTableHtml = '';
     if (m.models && m.models.length) {
       var isDeco = m.models[0].chamberSize !== undefined || m.models[0].arcTargets !== undefined || m.models[0].otherTargets !== undefined;
@@ -5273,7 +5397,7 @@
       '<section class="mspec"><div class="mspec-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><h2>Technical specifications</h2></div>' + specs + '</section>' +
       '</div>' +
       '</div>' +
-      modelsTableHtml +
+      modelsTableHtml + lineLayoutHtml +
       '</div>';
 
     document.getElementById("view").innerHTML = '<div class="wrap">' + html + '</div>';
