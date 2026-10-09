@@ -167,12 +167,45 @@ document.addEventListener('DOMContentLoaded', () => {
       statusEl.hidden = false;
     };
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const paramPage = urlParams.get('page') || urlParams.get('product') || '';
+    const paramCat = urlParams.get('category') || urlParams.get('cat') || '';
+    const paramBrand = urlParams.get('brand') || '';
+    const paramSource = urlParams.get('source') || '';
+
+    const elEnquiryPage = contactForm.querySelector('#enquiry_page');
+    const elEnquiryCat = contactForm.querySelector('#enquiry_category');
+    const elEnquiryBrand = contactForm.querySelector('#enquiry_brand');
+    const elPageSource = contactForm.querySelector('#page_source');
+
+    if (paramPage && elEnquiryPage) elEnquiryPage.value = paramPage;
+    if (paramCat && elEnquiryCat) elEnquiryCat.value = paramCat;
+    if (paramBrand && elEnquiryBrand) elEnquiryBrand.value = paramBrand;
+    if (elPageSource) elPageSource.value = paramPage || paramCat || paramSource || '';
+
+    const elDetails = contactForm.querySelector('#details');
+    if (elDetails && paramPage && !elDetails.value.trim()) {
+      elDetails.placeholder = `Enquiry for ${paramPage}. Please mention component types, materials, batch volume...`;
+    }
+
+    const elProcess = contactForm.querySelector('#process');
+    if (elProcess && (paramBrand === 'Huasheng' || paramCat.toLowerCase().includes('coating') || paramPage.toLowerCase().includes('deco') || paramPage.toLowerCase().includes('coating'))) {
+      elProcess.value = 'PVD / DLC / diamond coating (Huasheng)';
+    } else if (elProcess && (paramBrand === 'BMI' || paramCat.toLowerCase().includes('furnace') || paramCat.toLowerCase().includes('quenching') || paramCat.toLowerCase().includes('nitriding') || paramCat.toLowerCase().includes('temperature'))) {
+      elProcess.value = 'Vacuum heat treatment (BMI)';
+    } else if (elProcess && (paramBrand === 'Novatec' || paramCat.toLowerCase().includes('cleaning') || paramCat.toLowerCase().includes('pluritank') || paramCat.toLowerCase().includes('2crd'))) {
+      elProcess.value = 'Ultrasonic cleaning (Novatec)';
+    }
+
     const summaryOf = (p) => [
       'Name: ' + (p.name || ''),
       'Company: ' + (p.company || 'N/A'),
       'Email: ' + (p.email || ''),
       'Phone: ' + (p.phone || 'N/A'),
       'Process: ' + (p.process || 'N/A'),
+      'Enquiry Page: ' + (p.enquiry_page || p.page_source || 'Website general'),
+      'Category: ' + (p.enquiry_category || 'N/A'),
+      'Brand: ' + (p.enquiry_brand || 'N/A'),
       'City: ' + (p.city || 'N/A'),
       '',
       'Parts, material and volumes:',
@@ -496,11 +529,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const process = get('process');
       const city = get('city');
       const details = get('details');
+      const enquiry_page = get('enquiry_page') || get('page_source');
+      const enquiry_category = get('enquiry_category');
+      const enquiry_brand = get('enquiry_brand');
+      const page_source = get('page_source') || enquiry_page;
 
       // Honeypot: pretend it worked, show popup, but send nothing.
       const honey = contactForm.querySelector('input[name="website"]') || contactForm.querySelector('input[name="botcheck"]');
       if (honey && honey.value) {
-        showConfirmationModal({ name, company, email, process, city });
+        showConfirmationModal({ name, company, email, process, city, enquiry_page });
         contactForm.reset();
         contactForm.querySelectorAll('.form-field').forEach(f => f.classList.remove('has-error'));
         return;
@@ -508,7 +545,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const payload = {
         access_key: WEB3FORMS_ACCESS_KEY,
-        subject: `New Equipment Enquiry from ${name}${company ? ' (' + company + ')' : ''}`,
+        subject: `New Equipment Enquiry: ${enquiry_page || process || 'General'} from ${name}${company ? ' (' + company + ')' : ''}`,
         from_name: 'Greets Equipment Website',
         replyto: email,
         name: name,
@@ -518,12 +555,19 @@ document.addEventListener('DOMContentLoaded', () => {
         process: process,
         city: city,
         details: details,
+        enquiry_page: enquiry_page,
+        enquiry_category: enquiry_category,
+        enquiry_brand: enquiry_brand,
+        page_source: page_source,
         message: [
           'Name: ' + name,
           'Company: ' + (company || 'N/A'),
           'Email: ' + email,
           'Phone: ' + (phone || 'N/A'),
-          'Process: ' + (process || 'N/A'),
+          'Process / Equipment: ' + (process || 'N/A'),
+          'Source Page / Product: ' + (enquiry_page || page_source || 'Website general'),
+          'Category: ' + (enquiry_category || 'N/A'),
+          'Brand: ' + (enquiry_brand || 'N/A'),
           'City: ' + (city || 'N/A'),
           '',
           'Parts, material and volumes:',

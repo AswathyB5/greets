@@ -4740,6 +4740,17 @@ h1[tabindex="-1"]:focus {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
+.oem-desc-chip {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: #EBF5E9;
+  color: #027A35;
+  border: 1px solid rgba(2, 150, 60, 0.25);
+  box-shadow: 0 1px 4px rgba(2, 150, 60, 0.08);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
 /* ── Header Banner (Brand & Category Pages) ── */
 .phead {
   background: linear-gradient(135deg, #FFFFFF 0%, #F9FAF7 60%, #EEF4EB 100%);
@@ -4932,10 +4943,22 @@ h1[tabindex="-1"]:focus {
   box-shadow: 0 4px 14px rgba(2, 150, 60, 0.15);
 }
 
+.mright {
+  position: sticky;
+  top: 88px;
+  animation: animFadeRight 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+}
+
 .mcols {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.95rem;
+}
+
+@media (max-width: 680px) {
+  .mcols {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 .mcols .mcol-card:first-child {
@@ -6835,4 +6858,300 @@ body.greets-modal-open {
 
 .btn-clear-filters:active {
   transform: translateY(0);
+}
+
+/* ── Standard Models Matrix & Specifications Section ── */
+.m-models-section {
+  margin-top: 2.25rem;
+  margin-bottom: 4.5rem;
+  background: #FFFFFF;
+  border: 1.5px solid rgba(211, 216, 212, 0.9);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px -6px rgba(27, 35, 40, 0.08);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  animation: animFadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+}
+
+.m-models-section:hover {
+  border-color: rgba(2, 150, 60, 0.4);
+  box-shadow: 0 8px 28px -6px rgba(2, 150, 60, 0.15);
+}
+
+.m-models-head {
+  padding: 1rem 1.4rem;
+  background: linear-gradient(135deg, #FAFAF7 0%, #EFF5EC 100%);
+  border-bottom: 1.5px solid rgba(2, 150, 60, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.m-models-head__title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.m-models-head__title svg {
+  flex-shrink: 0;
+  stroke: var(--lime) !important;
+  color: var(--lime);
+}
+
+.m-models-head__title h2 {
+  font-size: 1.08rem;
+  font-weight: 750;
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.m-models-head__title p {
+  font-size: 0.82rem;
+  color: var(--steel);
+  margin: 0.15rem 0 0;
+  line-height: 1.35;
+}
+
+.m-models-count {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #027A35;
+  background: rgba(2, 150, 60, 0.12);
+  border: 1px solid rgba(2, 150, 60, 0.28);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.m-models-table-wrap {
+  width: 100%;
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+.m-models-table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.m-models-table thead th {
+  background: #F4F7F2;
+  padding: 0.65rem 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #2F4237;
+  border-bottom: 1.5px solid #E1E7DE;
+  vertical-align: bottom;
+}
+
+.m-models-table thead th.th-action {
+  text-align: right;
+  padding-right: 0.75rem;
+  white-space: nowrap;
+}
+
+.m-models-table tbody tr {
+  transition: background 0.18s ease;
+  border-bottom: 1px solid #EBF0E8;
+}
+
+.m-models-table tbody tr:nth-child(even) {
+  background: #FBFDFB;
+}
+
+.m-models-table tbody tr:hover {
+  background: rgba(2, 150, 60, 0.06) !important;
+}
+
+.m-models-table tbody td {
+  padding: 0.55rem 0.5rem;
+  color: var(--ink);
+  vertical-align: middle;
+}
+
+.m-models-table tbody td.td-model {
+  font-weight: 700;
+  padding-left: 0.75rem;
+  white-space: nowrap;
+}
+
+.m-models-table thead th:first-child {
+  padding-left: 0.75rem;
+  white-space: nowrap;
+}
+
+.model-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  background: #EEF6EA;
+  color: #027A35;
+  padding: 0.15rem 0.42rem;
+  border-radius: 5px;
+  border: 1px solid rgba(2, 150, 60, 0.25);
+  box-shadow: 0 1px 2px rgba(2, 150, 60, 0.05);
+  white-space: nowrap;
+}
+
+.pill-orientation {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.70rem;
+  font-weight: 650;
+  color: #027A35;
+  background: #EEF6EA;
+  padding: 0.14rem 0.42rem;
+  border-radius: 999px;
+  border: 1px solid rgba(2, 150, 60, 0.2);
+  line-height: 1.25;
+}
+
+.m-models-table .td-highlight {
+  font-weight: 700;
+  color: #0E1C14;
+  font-variant-numeric: tabular-nums;
+}
+
+.m-models-table .td-dim {
+  font-weight: 600;
+  color: #2D3E34;
+  font-variant-numeric: tabular-nums;
+}
+
+.m-models-table .td-action {
+  text-align: right;
+  padding-right: 0.75rem;
+  white-space: nowrap;
+}
+
+.btn-model-enquire {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: #027A35;
+  color: #FFFFFF !important;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.70rem;
+  padding: 0.24rem 0.55rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid rgba(2, 122, 53, 0.3);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(2, 122, 53, 0.2);
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-model-enquire span {
+  color: #FFFFFF !important;
+}
+
+.btn-model-enquire:hover {
+  background: #026029;
+  color: #FFFFFF !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(2, 122, 53, 0.35);
+}
+
+.btn-model-enquire:active {
+  transform: translateY(0);
+}
+
+.btn-model-enquire svg {
+  width: 13px;
+  height: 13px;
+  stroke: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+@media (max-width: 900px) {
+  .m-models-table {
+    font-size: 0.72rem;
+  }
+  .m-models-table thead th,
+  .m-models-table tbody td {
+    padding: 0.5rem 0.35rem;
+  }
+  .model-badge {
+    font-size: 0.70rem;
+    padding: 0.12rem 0.35rem;
+  }
+  .btn-model-enquire {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.45rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .m-models-table {
+    font-size: 0.68rem;
+  }
+  .m-models-table thead th,
+  .m-models-table tbody td {
+    padding: 0.4rem 0.25rem;
+  }
+  .m-models-head {
+    padding: 0.75rem 0.85rem;
+  }
+}
+
+/* ===================================================================
+   GLOBAL FOOTER SPACING & SEPARATION PROTECTION
+   Ensures clean, balanced separation above the footer without
+   excessive dead space.
+   =================================================================== */
+footer.footer,
+.footer {
+  position: relative;
+  margin-top: 2.75rem !important;
+  padding: 2.5rem 0 2rem !important;
+  background: #FFFFFF !important;
+  border-top: 4px solid var(--lime, #02963C) !important;
+  clear: both;
+  z-index: 10;
+}
+
+.page-main-wrap {
+  padding-bottom: 1.5rem !important;
+}
+
+.mpage {
+  padding-bottom: 1rem;
+}
+
+.m-models-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-main,
+.privacy-main {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  footer.footer,
+  .footer {
+    margin-top: 2rem !important;
+    padding: 2rem 0 1.5rem !important;
+  }
+  .page-main-wrap {
+    padding-bottom: 1rem !important;
+  }
 }

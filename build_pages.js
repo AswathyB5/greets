@@ -151,38 +151,53 @@ function getFooterHtml(depth = 0) {
   const root = depth === 0 ? './' : '../'.repeat(depth);
   return `
   <!-- Footer -->
-  <footer class="footer" style="background:#1B2328; color:#E9EDE8; padding:3.5rem 0 2rem; margin-top:3rem;">
+  <footer class="footer" data-anim="fade-up">
     <div class="container">
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:2.5rem; margin-bottom:2.5rem;">
-        <div>
-          <img src="${root}assets/logo-greets.png" alt="Greets Equipment" style="max-height:40px; margin-bottom:1rem; filter:brightness(0) invert(1);">
-          <p style="color:#A9B4B0; font-size:0.92rem; line-height:1.6;">
-            Authorised partner in India for BMI vacuum furnaces, Novatec ultrasonic cleaning systems and Huasheng PVD/DLC/diamond coating equipment.
+      <div
+        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:2.5rem 3.5rem; align-items:flex-start; margin-bottom:2.5rem;">
+
+        <!-- Column 1: Logo + Tagline -->
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <a href="${root}index.html" style="display:inline-block; line-height:1;">
+            <img src="${root}assets/logo-greets.png" alt="Greets Equipment" style="height:52px; width:auto; display:block;">
+          </a>
+          <p style="font-size:0.88rem; color:var(--steel, #56636B); margin:0; line-height:1.5; max-width:280px;">
+            Authorised dealer in India for BMI, Novatec and Huasheng.
           </p>
         </div>
-        <div>
-          <h4 style="color:#FFFFFF; font-size:1rem; margin-bottom:1rem; font-weight:700;">Equipment &amp; Brands</h4>
-          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
-            <li><a href="${root}bmi/" style="color:#A9B4B0; text-decoration:none;">BMI Vacuum Furnaces (France)</a></li>
-            <li><a href="${root}novatec/" style="color:#A9B4B0; text-decoration:none;">Novatec Ultrasonic Cleaning (Italy)</a></li>
-            <li><a href="${root}huasheng/" style="color:#A9B4B0; text-decoration:none;">Huasheng PVD &amp; DLC Coating (China)</a></li>
-            <li><a href="${root}index.html#finder" style="color:#02963C; text-decoration:none; font-weight:600;">Find a system (Search all) &rarr;</a></li>
-          </ul>
+
+        <!-- Column 2: Products Links -->
+        <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
+          <a href="${root}bmi/" style="color:var(--steel, #56636B); text-decoration:none;">BMI vacuum furnaces</a>
+          <a href="${root}novatec/" style="color:var(--steel, #56636B); text-decoration:none;">Novatec ultrasonic cleaning</a>
+          <a href="${root}huasheng/" style="color:var(--steel, #56636B); text-decoration:none;">Huasheng coating equipment</a>
+          <a href="${root}privacy.html"
+            style="color:var(--steel, #56636B); text-decoration:underline; font-size:0.88rem; margin-top:0.35rem;">Privacy
+            Notice (DPDP)</a>
         </div>
-        <div>
-          <h4 style="color:#FFFFFF; font-size:1rem; margin-bottom:1rem; font-weight:700;">Bangalore Office</h4>
-          <p style="color:#A9B4B0; font-size:0.9rem; line-height:1.6; margin-bottom:0.75rem;">
-            #384, Second Floor, 9th Main Road, Sector 7, HSR Layout, Bangalore 560102, India
-          </p>
-          <p style="color:#A9B4B0; font-size:0.9rem;">
-            Email: <a href="mailto:enquiry-equipment@greets.co.in" style="color:#02963C;">enquiry-equipment@greets.co.in</a><br>
-            Phone: <a href="tel:+919823386558" style="color:#E9EDE8;">+91 98233 86558</a>
-          </p>
+
+        <!-- Column 3: Contact & Location -->
+        <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
+          <span style="color:var(--steel, #56636B); font-weight:500;">HSR Layout, Bangalore, Karnataka 560102</span>
+          <div
+            style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.86rem; color:var(--steel, #56636B);">
+            <div>Mr. Pramod Kanse: <a href="tel:+919823386558"
+                style="color:inherit; text-decoration:none; font-weight:600;">+91 98233 86558</a></div>
+            <div>Mr. Manoj Agrawal: <a href="tel:+919429875547"
+                style="color:inherit; text-decoration:none; font-weight:600;">+91 94298 75547</a></div>
+            <div>Ms. Pahal Chawla: <a href="tel:+919871408194"
+                style="color:inherit; text-decoration:none; font-weight:600;">+91 98714 08194</a></div>
+          </div>
+          <a href="mailto:enquiry-equipment@greets.co.in"
+            style="color:var(--lime, #02963C); text-decoration:none; font-weight:500;">enquiry-equipment@greets.co.in</a>
         </div>
+
       </div>
-      <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:0.85rem; color:#88958F;">
-        <div>&copy; ${new Date().getFullYear()} Greets Equipment Pvt. Ltd. All rights reserved.</div>
-        <div><a href="${root}privacy.html" style="color:#A9B4B0; text-decoration:underline;">Privacy Notice (DPDP Act)</a></div>
+      <div class="footer__bottom"
+        style="border-top:1px solid var(--line); padding-top:1.25rem; font-size:0.82rem; color:var(--gray-500); display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem;">
+        <span>© ${new Date().getFullYear()} Greets Equipment Pvt. Ltd. All rights reserved. · <a href="${root}privacy.html"
+            style="color:inherit; text-decoration:underline;">Privacy Policy</a></span>
+        <span>Brand names and logos belong to their respective owners.</span>
       </div>
     </div>
   </footer>
@@ -546,6 +561,96 @@ CATALOG.forEach(b => {
           </nav>
         ` : '';
 
+        let modelsTableHtml = '';
+        if (m.models && m.models.length) {
+          const isCoating = m.models[0].tech !== undefined;
+          const isCleaning = m.models[0].chamber !== undefined || m.models[0].notes !== undefined;
+          const headers = isCoating
+            ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
+            : (isCleaning
+              ? ["Model", "Usable Tank / Chamber", "Overall Size", "Max Load", "Version / Notes", "Action"]
+              : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]);
+
+          modelsTableHtml = `
+            <section class="m-models-section">
+              <div class="m-models-head">
+                <div class="m-models-head__title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  <div>
+                    <h2>Standard Model Range & Technical Parameters</h2>
+                    <p>${isCoating ? 'Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times' : (isCleaning ? 'Published per-model usable chamber/tank capacities, overall dimensions, and configurations' : 'Published per-model load ratings, dimensions, maximum temperatures, and vacuum levels')}</p>
+                  </div>
+                </div>
+                <span class="m-models-count">${m.models.length} Models in Family</span>
+              </div>
+              <div class="m-models-table-wrap">
+                <table class="m-models-table">
+                  <thead>
+                    <tr>
+                      ${headers.map((h, idx) => `<th scope="col"${idx === headers.length - 1 ? ' class="th-action"' : ''}>${esc(h)}</th>`).join('')}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${m.models.map(mod => {
+                      const enquireHref = `${rootRel}contact.html?page=${encodeURIComponent(m.name + ' - ' + mod.model)}&category=${encodeURIComponent(c.name)}&brand=${encodeURIComponent(b.name)}`;
+                      if (isCoating) {
+                        return `
+                          <tr>
+                            <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
+                            <td><span class="pill-orientation">${esc(mod.tech || '—')}</span></td>
+                            <td class="td-dim">${esc(mod.area || '—')}</td>
+                            <td>${esc(mod.temp || '—')}</td>
+                            <td class="td-highlight">${esc(mod.load || '—')}</td>
+                            <td>${esc(mod.size || '—')}</td>
+                            <td>${esc(mod.time || '—')}</td>
+                            <td class="td-action">
+                              <a href="${enquireHref}" class="btn-model-enquire">
+                                <span>Enquire</span>${SVG_ARROW}
+                              </a>
+                            </td>
+                          </tr>
+                        `;
+                      }
+                      if (isCleaning) {
+                        return `
+                          <tr>
+                            <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
+                            <td class="td-dim">${esc(mod.chamber || '—')}</td>
+                            <td>${esc(mod.size || '—')}</td>
+                            <td class="td-highlight">${esc(mod.load || '—')}</td>
+                            <td><span class="pill-orientation">${esc(mod.notes || '—')}</span></td>
+                            <td class="td-action">
+                              <a href="${enquireHref}" class="btn-model-enquire">
+                                <span>Enquire</span>${SVG_ARROW}
+                              </a>
+                            </td>
+                          </tr>
+                        `;
+                      }
+                      return `
+                        <tr>
+                          <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
+                          <td><span class="pill-orientation">${esc(mod.orientation)}</span></td>
+                          <td class="td-highlight">${esc(mod.load)}</td>
+                          <td class="td-dim">${esc(mod.dimensions)}</td>
+                          <td>${esc(mod.temp)}</td>
+                          <td>${esc(mod.vacuum)}</td>
+                          <td>${esc(mod.pressure)}</td>
+                          <td class="td-action">
+                            <a href="${enquireHref}" class="btn-model-enquire">
+                              <span>Enquire</span>${SVG_ARROW}
+                            </a>
+                          </td>
+                        </tr>
+                      `;
+                    }).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          `;
+        }
+
         const targetInds = (m.i && m.i.length) ? `
           <p class="ind-para"><strong>Target industries:</strong> ${m.i.map(x => {
             const indObj = IND.find(z => z.id === x);
@@ -598,11 +703,12 @@ CATALOG.forEach(b => {
               <span class="flag-chip">${esc(b.country)}</span>
               <span class="oem-chip">${esc(b.name)}</span>
               ${m.tag ? `<span class="tag-chip">${esc(m.tag)}</span>` : ''}
+              ${m.bmi_desc ? `<span class="tag-chip oem-desc-chip" title="Manufacturer designation">${esc(m.bmi_desc)}</span>` : ''}
             </div>
             <h1>${esc(m.name)}</h1>
             <p class="lede">${esc(m.desc)}</p>
             <div class="cta-row">
-              <a href="${rootRel}contact.html" class="btn btn--primary btn--lg">
+              <a href="${rootRel}contact.html?page=${encodeURIComponent(m.name)}&category=${encodeURIComponent(c.name)}&brand=${encodeURIComponent(b.name)}" class="btn btn--primary btn--lg">
                 <span>Enquire about this</span>${SVG_ARROW}
               </a>
               <a class="btn btn--ghost" href="${m.url || c.url}" target="_blank" rel="noopener">
@@ -612,11 +718,57 @@ CATALOG.forEach(b => {
 
             <div class="mcols">
               <section class="mcol-card">
-                <h2>Key features</h2>
+                <h2>Key Technical Features</h2>
                 <ul class="feat">
                   ${m.features.map(f => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(f)}</span></li>`).join('')}
                 </ul>
               </section>
+              ${m.benefits && m.benefits.length ? `
+              <section class="mcol-card">
+                <h2>Key Advantages &amp; Benefits</h2>
+                <ul class="feat">
+                  ${m.benefits.map(b => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(b)}</span></li>`).join('')}
+                </ul>
+              </section>
+              ` : ''}
+              ${m.config ? `
+              <section class="mcol-card"${m.thermochemical ? '' : ' style="grid-column: 1 / -1;"'}>
+                <h2>Configuration</h2>
+                <p style="margin-top:0.4rem; font-size:0.92rem; color:var(--ink); font-weight:550;">${esc(m.config)}</p>
+              </section>
+              ` : ''}
+              ${m.thermochemical ? `
+              <section class="mcol-card"${m.config ? '' : ' style="grid-column: 1 / -1;"'}>
+                <h2>Thermochemical Options</h2>
+                <p style="margin-top:0.4rem; font-size:0.92rem; color:var(--lime); font-weight:600;">${esc(m.thermochemical)}</p>
+              </section>
+              ` : ''}
+              ${m.process && m.process.length ? `
+              <section class="mcol-card" style="grid-column: 1 / -1;">
+                <h2>Supported Processes &amp; Treatments</h2>
+                <div class="pills" style="margin-top:0.35rem;">
+                  ${m.process.map(p => `<span>${esc(p)}</span>`).join('')}
+                </div>
+              </section>
+              ` : ''}
+              ${m.options && m.options.length ? `
+              <section class="mcol-card" style="grid-column: 1 / -1;">
+                <h2>Main Options &amp; Peripherals</h2>
+                <ul class="feat feat--options">
+                  ${m.options.map(o => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(o)}</span></li>`).join('')}
+                </ul>
+              </section>
+              ` : ''}
+              ${m.site_reqs && m.site_reqs.length ? `
+              <section class="mcol-card" style="grid-column: 1 / -1;">
+                <h2>Installation &amp; Site Requirements</h2>
+                <table class="spec" style="margin-top:0.75rem;">
+                  <tbody>
+                    ${m.site_reqs.map(r => `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`).join('')}
+                  </tbody>
+                </table>
+              </section>
+              ` : ''}
             </div>
 
             ${targetInds}
@@ -637,6 +789,7 @@ CATALOG.forEach(b => {
             </section>
           </div>
         </div>
+        ${modelsTableHtml}
       </div>
     </div>
   </main>
