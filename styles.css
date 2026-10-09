@@ -5025,6 +5025,10 @@ h1[tabindex="-1"]:focus {
   gap: 0.35rem;
 }
 
+.mcol-card--full {
+  grid-column: 1 / -1 !important;
+}
+
 .feat li {
   list-style: none !important;
   position: relative;

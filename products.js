@@ -1493,6 +1493,98 @@
               "watch",
               "semi",
               "tools"
+            ],
+            "models": [
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 50",
+                "chamber": "300 × 400 × 420 h (50 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLT 60V",
+                "chamber": "60 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Two-chamber pressure-cycle unit, listed under Components",
+                "source": "Novatec website"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 65",
+                "chamber": "330 × 490 × 400 deep (65 L)",
+                "size": "approx. 9150 × 4550 × 2880 h",
+                "load": "50 kg per basket",
+                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 80",
+                "chamber": "400 × 500 × 400 h (80 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 110",
+                "chamber": "400 × 500 × 550 h (110 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "120 kg per basket",
+                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140 EP",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 210",
+                "chamber": "500 × 700 × 600 h (210 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1400",
+                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
+                "size": "19500 × 7000 (line footprint)",
+                "load": "Not published",
+                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
+                "source": "Novatec GA drawing 5298.3.0-26CO"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1500",
+                "chamber": "approx. 1500 L",
+                "size": "16550 × 7725, 3585 h",
+                "load": "Not published",
+                "notes": "12 process stations",
+                "source": "Novatec GA drawing 5183.4.0-24CO"
+              }
             ]
           },
           {
@@ -1534,6 +1626,98 @@
             "k": "pvd pre-treatment coating cleaning pluritank tools inserts",
             "i": [
               "tools"
+            ],
+            "models": [
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 50",
+                "chamber": "300 × 400 × 420 h (50 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLT 60V",
+                "chamber": "60 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Two-chamber pressure-cycle unit, listed under Components",
+                "source": "Novatec website"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 65",
+                "chamber": "330 × 490 × 400 deep (65 L)",
+                "size": "approx. 9150 × 4550 × 2880 h",
+                "load": "50 kg per basket",
+                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 80",
+                "chamber": "400 × 500 × 400 h (80 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 110",
+                "chamber": "400 × 500 × 550 h (110 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "120 kg per basket",
+                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140 EP",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 210",
+                "chamber": "500 × 700 × 600 h (210 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1400",
+                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
+                "size": "19500 × 7000 (line footprint)",
+                "load": "Not published",
+                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
+                "source": "Novatec GA drawing 5298.3.0-26CO"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1500",
+                "chamber": "approx. 1500 L",
+                "size": "16550 × 7725, 3585 h",
+                "load": "Not published",
+                "notes": "12 process stations",
+                "source": "Novatec GA drawing 5183.4.0-24CO"
+              }
             ]
           },
           {
@@ -1586,6 +1770,98 @@
             "i": [
               "semi",
               "medical"
+            ],
+            "models": [
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 50",
+                "chamber": "300 × 400 × 420 h (50 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLT 60V",
+                "chamber": "60 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Two-chamber pressure-cycle unit, listed under Components",
+                "source": "Novatec website"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 65",
+                "chamber": "330 × 490 × 400 deep (65 L)",
+                "size": "approx. 9150 × 4550 × 2880 h",
+                "load": "50 kg per basket",
+                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 80",
+                "chamber": "400 × 500 × 400 h (80 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 110",
+                "chamber": "400 × 500 × 550 h (110 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "120 kg per basket",
+                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140 EP",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 210",
+                "chamber": "500 × 700 × 600 h (210 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1400",
+                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
+                "size": "19500 × 7000 (line footprint)",
+                "load": "Not published",
+                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
+                "source": "Novatec GA drawing 5298.3.0-26CO"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1500",
+                "chamber": "approx. 1500 L",
+                "size": "16550 × 7725, 3585 h",
+                "load": "Not published",
+                "notes": "12 process stations",
+                "source": "Novatec GA drawing 5183.4.0-24CO"
+              }
             ]
           }
         ]
@@ -1667,67 +1943,85 @@
             ],
             "models": [
               {
+                "family": "2CRD",
                 "model": "2CRD-100",
                 "chamber": "300 × 400 × 300 h",
                 "size": "1800 × 1800 × 2100 h",
-                "load": "—",
-                "notes": "Static (2CRD brochure)"
+                "load": "Not published",
+                "notes": "Static",
+                "source": "Novatec 2CRD brochure"
               },
               {
+                "family": "2CRD",
                 "model": "2CRD-100-ROT",
                 "chamber": "300 × 400 × 300 h",
                 "size": "1800 × 1800 × 2100 h",
-                "load": "—",
-                "notes": "Rotation and tilting"
+                "load": "Not published",
+                "notes": "Rotation and tilting",
+                "source": "Novatec website"
               },
               {
+                "family": "2CRD",
                 "model": "2CRD-200",
                 "chamber": "400 × 600 × 430 h",
                 "size": "2600 × 2000 × 2100 h",
-                "load": "—",
-                "notes": "Static (2CRD brochure)"
+                "load": "Not published",
+                "notes": "Static",
+                "source": "Novatec 2CRD brochure"
               },
               {
+                "family": "2CRD",
                 "model": "2CRD-200-ROT",
                 "chamber": "400 × 600 × 430 h",
                 "size": "2600 × 2000 × 2100 h",
-                "load": "—",
-                "notes": "Rotation and tilting"
+                "load": "Not published",
+                "notes": "Rotation and tilting",
+                "source": "Novatec website"
               },
               {
+                "family": "2CRD",
                 "model": "2CRD-400",
-                "chamber": "—",
+                "chamber": "Not published",
                 "size": "approx. 3200 × 2000 × 2100 h",
-                "load": "—",
-                "notes": "Static (GA drawing 2CRD400)"
+                "load": "Not published",
+                "notes": "Static",
+                "source": "Novatec GA drawing 2CRD400"
               },
               {
+                "family": "2CRD",
                 "model": "2CRD-400-ROT",
-                "chamber": "—",
+                "chamber": "Not published",
                 "size": "approx. 3200 × 2000 × 2100 h",
-                "load": "—",
-                "notes": "Rotation and tilting"
+                "load": "Not published",
+                "notes": "Rotation and tilting",
+                "source": "Novatec website"
               },
               {
+                "family": "2CRD",
                 "model": "2CRD-800",
                 "chamber": "600 × 1050 × 630 h",
                 "size": "3500 × 2000 × 2200 h",
-                "load": "—",
-                "notes": "Static (2CRD brochure)"
+                "load": "Not published",
+                "notes": "Static",
+                "source": "Novatec 2CRD brochure"
               },
               {
+                "family": "2CRD",
                 "model": "2CRD-800-ROT",
                 "chamber": "600 × 1050 × 630 h",
                 "size": "3500 × 2000 × 2200 h",
-                "load": "—",
-                "notes": "Rotation and tilting"
+                "load": "Not published",
+                "notes": "Rotation and tilting",
+                "source": "Novatec website"
               },
               {
+                "family": "2CRD",
                 "model": "2CRD1700",
                 "chamber": "800 × 1200 × 820 h",
-                "size": "4300 × 2100 × 2380 h",
-                "load": "1,000 kg",
-                "notes": "Built to order (Ultrasonic 9600 / 19200 W)"
+                "size": "4300 × 2100 × 2380 h, plus electrical board",
+                "load": "1000 kg",
+                "notes": "Built to order, above the standard range. Ultrasonic 9600 / 19200 W.",
+                "source": "Novatec technical description"
               }
             ],
             "url": "https://novatec.it/en/2crd-vacuum-cleaning",
@@ -1804,6 +2098,89 @@
             "k": "ipc in-process cleaning implants orthopaedic polishing paste 2crd pluritank manufacturing steps",
             "i": [
               "medical"
+            ],
+            "models": [
+              {
+                "family": "2CRD",
+                "model": "2CRD-100",
+                "chamber": "300 × 400 × 300 h",
+                "size": "1800 × 1800 × 2100 h",
+                "load": "Not published",
+                "notes": "Static",
+                "source": "Novatec 2CRD brochure"
+              },
+              {
+                "family": "2CRD",
+                "model": "2CRD-100-ROT",
+                "chamber": "300 × 400 × 300 h",
+                "size": "1800 × 1800 × 2100 h",
+                "load": "Not published",
+                "notes": "Rotation and tilting",
+                "source": "Novatec website"
+              },
+              {
+                "family": "2CRD",
+                "model": "2CRD-200",
+                "chamber": "400 × 600 × 430 h",
+                "size": "2600 × 2000 × 2100 h",
+                "load": "Not published",
+                "notes": "Static",
+                "source": "Novatec 2CRD brochure"
+              },
+              {
+                "family": "2CRD",
+                "model": "2CRD-200-ROT",
+                "chamber": "400 × 600 × 430 h",
+                "size": "2600 × 2000 × 2100 h",
+                "load": "Not published",
+                "notes": "Rotation and tilting",
+                "source": "Novatec website"
+              },
+              {
+                "family": "2CRD",
+                "model": "2CRD-400",
+                "chamber": "Not published",
+                "size": "approx. 3200 × 2000 × 2100 h",
+                "load": "Not published",
+                "notes": "Static",
+                "source": "Novatec GA drawing 2CRD400"
+              },
+              {
+                "family": "2CRD",
+                "model": "2CRD-400-ROT",
+                "chamber": "Not published",
+                "size": "approx. 3200 × 2000 × 2100 h",
+                "load": "Not published",
+                "notes": "Rotation and tilting",
+                "source": "Novatec website"
+              },
+              {
+                "family": "2CRD",
+                "model": "2CRD-800",
+                "chamber": "600 × 1050 × 630 h",
+                "size": "3500 × 2000 × 2200 h",
+                "load": "Not published",
+                "notes": "Static",
+                "source": "Novatec 2CRD brochure"
+              },
+              {
+                "family": "2CRD",
+                "model": "2CRD-800-ROT",
+                "chamber": "600 × 1050 × 630 h",
+                "size": "3500 × 2000 × 2200 h",
+                "load": "Not published",
+                "notes": "Rotation and tilting",
+                "source": "Novatec website"
+              },
+              {
+                "family": "2CRD",
+                "model": "2CRD1700",
+                "chamber": "800 × 1200 × 820 h",
+                "size": "4300 × 2100 × 2380 h, plus electrical board",
+                "load": "1000 kg",
+                "notes": "Built to order, above the standard range. Ultrasonic 9600 / 19200 W.",
+                "source": "Novatec technical description"
+              }
             ]
           },
           {
@@ -1869,6 +2246,98 @@
             "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation packing",
             "i": [
               "medical"
+            ],
+            "models": [
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 50",
+                "chamber": "300 × 400 × 420 h (50 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLT 60V",
+                "chamber": "60 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Two-chamber pressure-cycle unit, listed under Components",
+                "source": "Novatec website"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 65",
+                "chamber": "330 × 490 × 400 deep (65 L)",
+                "size": "approx. 9150 × 4550 × 2880 h",
+                "load": "50 kg per basket",
+                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 80",
+                "chamber": "400 × 500 × 400 h (80 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 110",
+                "chamber": "400 × 500 × 550 h (110 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "120 kg per basket",
+                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140 EP",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 210",
+                "chamber": "500 × 700 × 600 h (210 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1400",
+                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
+                "size": "19500 × 7000 (line footprint)",
+                "load": "Not published",
+                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
+                "source": "Novatec GA drawing 5298.3.0-26CO"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1500",
+                "chamber": "approx. 1500 L",
+                "size": "16550 × 7725, 3585 h",
+                "load": "Not published",
+                "notes": "12 process stations",
+                "source": "Novatec GA drawing 5183.4.0-24CO"
+              }
             ]
           },
           {
@@ -2050,6 +2519,53 @@
             "k": "electropolishing ep pluritank stainless titanium medical implants neutralisation",
             "i": [
               "medical"
+            ],
+            "models": [
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 65",
+                "chamber": "330 × 490 × 400 deep (65 L)",
+                "size": "approx. 9150 × 4550 × 2880 h",
+                "load": "50 kg per basket",
+                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "120 kg per basket",
+                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140 EP",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 210",
+                "chamber": "500 × 700 × 600 h (210 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1400",
+                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
+                "size": "19500 × 7000 (line footprint)",
+                "load": "Not published",
+                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
+                "source": "Novatec GA drawing 5298.3.0-26CO"
+              }
             ]
           },
           {
@@ -2107,6 +2623,98 @@
             "k": "custom turnkey combined implants rfid qvs pfc brc cleanroom fcs fcps",
             "i": [
               "medical"
+            ],
+            "models": [
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 50",
+                "chamber": "300 × 400 × 420 h (50 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLT 60V",
+                "chamber": "60 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Two-chamber pressure-cycle unit, listed under Components",
+                "source": "Novatec website"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 65",
+                "chamber": "330 × 490 × 400 deep (65 L)",
+                "size": "approx. 9150 × 4550 × 2880 h",
+                "load": "50 kg per basket",
+                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 80",
+                "chamber": "400 × 500 × 400 h (80 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 110",
+                "chamber": "400 × 500 × 550 h (110 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "120 kg per basket",
+                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 140 EP",
+                "chamber": "140 L",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
+                "source": "Novatec specification"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 210",
+                "chamber": "500 × 700 × 600 h (210 L)",
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Standard tank size",
+                "source": "Novatec PVD brochure"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1400",
+                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
+                "size": "19500 × 7000 (line footprint)",
+                "load": "Not published",
+                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
+                "source": "Novatec GA drawing 5298.3.0-26CO"
+              },
+              {
+                "family": "PLURITANK",
+                "model": "PLURITANK 1500",
+                "chamber": "approx. 1500 L",
+                "size": "16550 × 7725, 3585 h",
+                "load": "Not published",
+                "notes": "12 process stations",
+                "source": "Novatec GA drawing 5183.4.0-24CO"
+              }
             ]
           }
         ]
@@ -2204,11 +2812,13 @@
             ],
             "models": [
               {
+                "family": "PLURITANK",
                 "model": "PLT 60V",
                 "chamber": "60 L",
-                "size": "—",
-                "load": "—",
-                "notes": "Two-chamber pressure-cycle unit"
+                "size": "Not published",
+                "load": "Not published",
+                "notes": "Two-chamber pressure-cycle unit, listed under Components",
+                "source": "Novatec website"
               }
             ],
             "url": "https://novatec.it/en/ultrasonic-components",
@@ -2251,8 +2861,8 @@
             "desc": "4th-generation hybrid coating platform with four targets, controllable plasma, adjustable square wave and ionisation rate. Coating thickness 0.5–30 µm.",
             "features": [
               "Smooth, droplet-free surface finish",
-              "Excellent adhesion",
-              "2 µm/h deposition rate",
+              "Excellent film adhesion",
+              "2 µm/h high deposition rate",
               "Thick coatings up to 30 µm without re-sharpening",
               "Four targets with controllable plasma and adjustable square wave"
             ],
@@ -2291,7 +2901,7 @@
               ],
               [
                 "Typical applications",
-                "Indexable inserts, small cutting tools, applications needing thick coatings without re-sharpening"
+                "Indexable inserts, small cutting tools, applications needing thick coatings without re-sharpening."
               ]
             ],
             "process": [
@@ -2326,13 +2936,13 @@
             "name": "MD200 arc coating machine",
             "tag": "Arc ion plating",
             "short": "Compact arc coater for small-batch cutting-tool production.",
-            "desc": "Part of Huasheng's MD arc ion plating range for cutting-tool production, using Huasheng's lateral etching and multi-arc ion plating. Four arc sources for compact, dedicated production.",
+            "desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi-arc ion plating. Four sizes from MD200 up to MD1500.",
             "features": [
               "High deposition rate and high ionisation rate",
-              "Ultra-high impact resistance",
-              "Fully automatic operation",
-              "Huasheng lateral etching for superior adhesion",
-              "Compact footprint for small-batch tool production"
+              "Ultra-high impact resistance of coatings",
+              "Fully automatic operation with lateral etching",
+              "MD800 PLUS and MD1500 accommodate hobbing tools (D80 × L150)",
+              "MD800 PLUS sits at the centre of the turnkey coating plant; MD1500 handles 72 hobbing tools and 1,000 kg/batch"
             ],
             "specs": [
               [
@@ -2369,7 +2979,7 @@
               ],
               [
                 "Typical applications",
-                "Inserts, end mills, drills"
+                "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
               ]
             ],
             "process": [
@@ -2430,13 +3040,13 @@
             "name": "MD500 arc coating machine",
             "tag": "Arc ion plating",
             "short": "Mid-size arc coater for serial cutting-tool production.",
-            "desc": "Mid-size arc ion plating machine in Huasheng's MD range for cutting-tool production, using lateral etching and 6 multi-arc ion plating sources for high throughput.",
+            "desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi-arc ion plating. Four sizes from MD200 up to MD1500.",
             "features": [
               "High deposition rate and high ionisation rate",
-              "Ultra-high impact resistance",
-              "Fully automatic operation",
-              "6 multi-arc sources for versatile batch loading",
-              "Handles up to 6,000 inserts or 1,800 round tools"
+              "Ultra-high impact resistance of coatings",
+              "Fully automatic operation with lateral etching",
+              "MD800 PLUS and MD1500 accommodate hobbing tools (D80 × L150)",
+              "MD800 PLUS sits at the centre of the turnkey coating plant; MD1500 handles 72 hobbing tools and 1,000 kg/batch"
             ],
             "specs": [
               [
@@ -2473,7 +3083,7 @@
               ],
               [
                 "Typical applications",
-                "Inserts, end mills, drills"
+                "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
               ]
             ],
             "process": [
@@ -2541,15 +3151,13 @@
               ]
             ],
             "short": "Centre of turnkey coating plant, takes hobbing tools (D80 × L150).",
-            "desc": "Flagship arc ion plating machine with 8 arc sources, sitting at the centre of Huasheng's turnkey coating plant. High deposition rate, high ionisation rate, ultra-high impact resistance, and one of only two machines in the range taking hobbing tools (D80 × L150, up to 30 pcs).",
+            "desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi-arc ion plating. Four sizes from MD200 up to MD1500.",
             "features": [
-              "Arc coating with high deposition rate",
-              "High ionisation rate and good coverage on complex shapes",
-              "Very high impact resistance of coatings",
-              "Fully automatic operation",
-              "8 multi-arc sources accommodating 12,000 inserts or 3,600 tools",
-              "Takes hobbing tools (D80 × L150, up to 30 pcs per batch)",
-              "Sits at the centre of Huasheng's turnkey coating plant"
+              "High deposition rate and high ionisation rate",
+              "Ultra-high impact resistance of coatings",
+              "Fully automatic operation with lateral etching",
+              "MD800 PLUS and MD1500 accommodate hobbing tools (D80 × L150)",
+              "MD800 PLUS sits at the centre of the turnkey coating plant; MD1500 handles 72 hobbing tools and 1,000 kg/batch"
             ],
             "specs": [
               [
@@ -2594,7 +3202,7 @@
               ],
               [
                 "Typical applications",
-                "Inserts, end mills, drills, hobbing tools (centre of turnkey plant)"
+                "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
               ]
             ],
             "process": [
@@ -2662,13 +3270,13 @@
             "name": "MD1500 high-capacity vertical arc coating machine",
             "tag": "Heavy production",
             "short": "Production machine for gear cutting tools: 72 hobs and 1000 kg per batch.",
-            "desc": "The production machine for gear cutting tools — 72 hobbing tools and 1000 kg per batch. Built with 16 vertical arc sources, lateral etching, high deposition and ionisation rates, and ultra-high impact resistance.",
+            "desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi-arc ion plating. Four sizes from MD200 up to MD1500.",
             "features": [
-              "Production machine for gear cutting tools: 72 hobs and 1000 kg per batch",
-              "16 vertical arc sources for uniform tall-chamber deposition",
-              "High deposition rate, high ionisation rate, ultra-high impact resistance",
-              "Accommodates up to 28,000 inserts or 5,300 round tools (D6×50L)",
-              "Fully automatic operation for heavy serial production"
+              "High deposition rate and high ionisation rate",
+              "Ultra-high impact resistance of coatings",
+              "Fully automatic operation with lateral etching",
+              "MD800 PLUS and MD1500 accommodate hobbing tools (D80 × L150)",
+              "MD800 PLUS sits at the centre of the turnkey coating plant; MD1500 handles 72 hobbing tools and 1,000 kg/batch"
             ],
             "specs": [
               [
@@ -2705,7 +3313,7 @@
               ],
               [
                 "Typical applications",
-                "Production machine for gear cutting tools — 72 hobbing tools and 1000 kg/batch; inserts, drills"
+                "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
               ],
               [
                 "Power supply",
@@ -2833,13 +3441,12 @@
             "name": "HD500 hybrid arc + HiPIMS coating machine",
             "tag": "Hybrid HiPIMS",
             "short": "30% performance gain over arc alone, for stainless steel & titanium.",
-            "desc": "Hybrid platform combining high-ionisation sputtering with arc processes. Delivers 30% performance gain over arc alone, ultra-low friction, optically graded surface finish, and a HiPIMS surface layer over an arc matrix.",
+            "desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
             "features": [
               "30% performance gain over arc alone",
-              "Ultra-low friction with optically graded surface finish",
-              "HiPIMS surface layer over an arc matrix",
-              "Working temperature up to 700 °C",
-              "Suits hard-to-machine materials such as stainless steel and titanium alloys"
+              "Ultra-low friction coefficient",
+              "Optically graded surface finish",
+              "HiPIMS surface layer over an arc matrix"
             ],
             "specs": [
               [
@@ -2876,7 +3483,7 @@
               ],
               [
                 "Typical applications",
-                "Hard-to-machine materials such as stainless steel and titanium alloys"
+                "Hard-to-machine materials such as stainless steel and titanium alloys."
               ]
             ],
             "process": [
@@ -2920,13 +3527,12 @@
             "name": "HD800 hybrid arc + HiPIMS coating machine",
             "tag": "Hybrid HiPIMS",
             "short": "High-capacity hybrid platform for hard-to-machine materials.",
-            "desc": "Hybrid platform combining high-ionisation sputtering with arc processes. Delivers 30% performance gain over arc alone, ultra-low friction, optically graded surface finish, and a HiPIMS surface layer over an arc matrix for higher batch volumes.",
+            "desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
             "features": [
               "30% performance gain over arc alone",
-              "Ultra-low friction with optically graded surface finish",
-              "HiPIMS surface layer over an arc matrix",
-              "Accommodates up to 12,000 inserts or 3,600 tools",
-              "Suits hard-to-machine materials such as stainless steel and titanium alloys"
+              "Ultra-low friction coefficient",
+              "Optically graded surface finish",
+              "HiPIMS surface layer over an arc matrix"
             ],
             "specs": [
               [
@@ -2963,7 +3569,7 @@
               ],
               [
                 "Typical applications",
-                "Hard-to-machine materials such as stainless steel and titanium alloys"
+                "Hard-to-machine materials such as stainless steel and titanium alloys."
               ]
             ],
             "process": [
@@ -3007,13 +3613,12 @@
             "name": "WCC800 DC + HiPIMS magnetron sputtering machine",
             "tag": "HiPIMS sputtering",
             "short": "Universal wear-resistant coating system using DC + HiPIMS.",
-            "desc": "Universal wear-resistant coating system using DC + HiPIMS magnetron sputtering. Sputter deposition with no peeling or delamination; modular design; suits small batches and complex shapes.",
+            "desc": "Universal wear-resistant coating system using DC + HiPIMS magnetron sputtering.",
             "features": [
-              "Universal wear-resistant coating system using DC + HiPIMS magnetron sputtering",
-              "Sputter deposition with no peeling or delamination",
-              "Modular design; suits small batches and complex shapes",
-              "Deposition temperature under 200 °C",
-              "Ideal for WC/C and TiAlN coatings on tools and medical instruments"
+              "Sputter deposition with zero peeling or delamination",
+              "Modular design for high process flexibility",
+              "Suits small batches and complex geometric shapes",
+              "Deposits WC/C and TiAlN low-friction coatings"
             ],
             "specs": [
               [
@@ -3050,7 +3655,7 @@
               ],
               [
                 "Typical applications",
-                "Components and tools, medical instruments, WC/C and TiAlN coatings"
+                "Components and tools, medical instruments, WC/C and TiAlN coatings."
               ]
             ],
             "process": [
@@ -3085,13 +3690,12 @@
             "name": "Broach coating equipment",
             "tag": "Dedicated vertical arc",
             "short": "Dedicated broach coating equipment with a tall chamber.",
-            "desc": "Dedicated broach coating equipment with a tall chamber. Effective coating area Φ650 × 2000 mm, 1000 kg load, depositing TiN, AlCrN, AlTiN, AlCrSiN on broaches and other long tools.",
+            "desc": "Dedicated broach coating equipment with a tall chamber for long cutting tools.",
             "features": [
-              "Dedicated broach coating equipment with a tall chamber",
               "Effective coating area Φ650 × 2000 mm",
-              "1000 kg load capacity",
-              "Coatings: TiN, AlCrN, AlTiN, AlCrSiN",
-              "Uniform coverage along full tool length"
+              "1,000 kg heavy load capacity",
+              "Deposits TiN, AlCrN, AlTiN, AlCrSiN",
+              "Dedicated multi-axis vertical rotation fixtures"
             ],
             "specs": [
               [
@@ -3128,7 +3732,7 @@
               ],
               [
                 "Typical applications",
-                "Broaches and other long tools"
+                "Broaches and other long tools."
               ]
             ],
             "process": [
@@ -3172,13 +3776,12 @@
             "name": "TC800PLUS ta-C coating machine",
             "tag": "ta-C DLC",
             "short": "ta-C diamond-like carbon, hardness up to 6000 HV.",
-            "desc": "ta-C diamond-like carbon coating platform. Delivers up to 6000 HV hardness, low-temperature deposition under 200 °C, fast heat dissipation, and superior anti-adhesion.",
+            "desc": "ta-C diamond-like carbon coating equipment for ultra-hard, low-friction surface layers.",
             "features": [
-              "Up to 6000 HV coating hardness",
+              "Hardness up to 6000 HV",
               "Low-temperature deposition under 200 °C",
-              "Fast heat dissipation",
-              "Superior anti-adhesion",
-              "High batch load capacity up to 500 kg (2,400 round tools)"
+              "Fast heat dissipation and anti-adhesion properties",
+              "Arc magnetron hybrid ion plating"
             ],
             "specs": [
               [
@@ -3215,7 +3818,7 @@
               ],
               [
                 "Typical applications",
-                "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling"
+                "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
               ]
             ],
             "process": [
@@ -3260,13 +3863,12 @@
             "name": "TC800PLUS-F filtered arc ta-C coating machine",
             "tag": "Filtered arc ta-C",
             "short": "S-shaped magnetic filter that blocks large particles, up to 6000 HV.",
-            "desc": "ta-C diamond-like carbon with S-shaped magnetic filter that blocks large particles. Features hardness up to 6000 HV, low-temperature deposition under 200 °C, fast heat dissipation, and anti-adhesion.",
+            "desc": "ta-C diamond-like carbon with an S-shaped magnetic filter that blocks large particles and droplets.",
             "features": [
-              "S-shaped magnetic filter that blocks large particles",
-              "Up to 6000 HV coating hardness with droplet-free finish",
+              "Hardness up to 6000 HV",
+              "S-shaped magnetic filter blocks macroscopic droplets and particles",
               "Low-temperature deposition under 200 °C",
-              "Fast heat dissipation and anti-adhesion",
-              "High capacity: up to 8,640 micro-tools (D3.175×38.1L)"
+              "Ultra-smooth droplet-free ta-C film"
             ],
             "specs": [
               [
@@ -3303,7 +3905,7 @@
               ],
               [
                 "Typical applications",
-                "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling"
+                "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
               ]
             ],
             "process": [
@@ -3359,13 +3961,12 @@
             "name": "DA600PRO HFCVD diamond coating machine",
             "tag": "HFCVD diamond",
             "short": "Parallel filament array for uniform temperature and 4–30 µm diamond film.",
-            "desc": "Hot-filament CVD diamond coating with a parallel filament array for uniform temperature. Deposition up to 1.0 µm/h; film 4–30 µm; 800 pcs per batch at D3.175; film thickness variation under 15%.",
+            "desc": "Hot filament CVD diamond coating with a parallel filament array for uniform temperature. Not related to CVA aluminizing.",
             "features": [
-              "Hot-filament CVD diamond coating with parallel filament array for uniform temperature",
-              "Deposition up to 1.0 µm/h",
-              "Film thickness 4–30 µm",
-              "800 pcs per batch at D3.175 (500 pcs at D3)",
-              "Film thickness variation under 15%"
+              "Deposition rate up to 1.0 µm/h",
+              "Film thickness 4–30 µm with variation under 15%",
+              "Produces HGR410 and HFR410 diamond grades",
+              "Parallel filament array for uniform temperature distribution"
             ],
             "specs": [
               [
@@ -3402,7 +4003,7 @@
               ],
               [
                 "Typical applications",
-                "Graphite, composites, CFRP, PCB ceramic substrates, AlSi alloys (Si>12%), woodworking"
+                "Graphite, composites, CFRP, PCB ceramic substrates, AlSi alloys (Si>12%), woodworking."
               ]
             ],
             "process": [
@@ -3433,6 +4034,456 @@
         ]
       },
       {
+        "id": "decorative",
+        "photo": "hs_pvd",
+        "photoAlt": "Huasheng decorative coating machines",
+        "name": "Decorative PVD coating equipment",
+        "sub": "DECO H, DECO A, DECO B, DECO G & AF series",
+        "desc": "Decorative PVD and functional coating systems for watches, jewellery, consumer hardware, architectural panels, and touchscreen anti-fingerprint coatings.",
+        "url": "https://www.hscoat.com/decorative-coating-equipment/",
+        "machines": [
+          {
+            "id": "deco-h",
+            "photo": "hs_pvd",
+            "photoAlt": "Huasheng DECO H hybrid decorative coating system",
+            "name": "DECO H multi-arc + HiPIMS decorative coating system",
+            "tag": "Multi-Arc + HiPIMS",
+            "short": "Hardness above 2000 HV and widest colour range for luxury items.",
+            "desc": "Multi-arc plus magnetron sputtering plus HiPIMS. The flagship of the decorative range.",
+            "features": [
+              "Denser film, wider colour range, hardness above 2000 HV",
+              "Lower friction coefficient and brighter colour than mid-frequency sputtering alone",
+              "Superior corrosion and wear resistance",
+              "Flagship hybrid configuration for luxury items"
+            ],
+            "specs": [
+              [
+                "Technology",
+                "Multi-arc + magnetron sputtering + HiPIMS"
+              ],
+              [
+                "Hardness",
+                "> 2000 HV"
+              ],
+              [
+                "Chamber sizes",
+                "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
+              ],
+              [
+                "Effective coating area",
+                "Φ800 × H700 mm to Φ1700 × H950 mm"
+              ],
+              [
+                "Typical applications",
+                "High-end bathroom and hardware, 3C digital, watches, jewellery, luxury goods, eyeglass frames, automotive trim."
+              ]
+            ],
+            "process": [
+              "Luxury watch cases",
+              "Jewellery & accessories",
+              "Eyewear frames",
+              "Gold, Rose Gold, Black, Gunmetal, Blue PVD"
+            ],
+            "models": [
+              {
+                "family": "DECO H",
+                "model": "DECO800H",
+                "chamberSize": "Φ1000 × H1000",
+                "area": "Φ800 × H700",
+                "arcTargets": "6",
+                "otherTargets": "4 cylindrical Φ70 × H1150",
+                "footprint": "3.1 × 2.3 × 2.4 m"
+              },
+              {
+                "family": "DECO H",
+                "model": "DECO1000H",
+                "chamberSize": "Φ1200 × H1250",
+                "area": "Φ1000 × H950",
+                "arcTargets": "10",
+                "otherTargets": "8 cylindrical",
+                "footprint": "3.6 × 3.6 × 2.4 m"
+              },
+              {
+                "family": "DECO H",
+                "model": "DECO1550H",
+                "chamberSize": "Φ1750 × H1250",
+                "area": "Φ1550 × H950",
+                "arcTargets": "10",
+                "otherTargets": "12 cylindrical + 1 column arc",
+                "footprint": "4.2 × 3.6 × 2.4 m"
+              },
+              {
+                "family": "DECO H",
+                "model": "DECO1700H",
+                "chamberSize": "Φ1900 × H1250",
+                "area": "Φ1700 × H950",
+                "arcTargets": "12",
+                "otherTargets": "16 cylindrical + 1 column arc",
+                "footprint": "4.3 × 3.9 × 2.6 m"
+              }
+            ],
+            "url": "https://www.hscoat.com/decorative-coating-equipment/",
+            "k": "deco deco-h decorative hipims watches jewellery gold rose gold luxury",
+            "i": [
+              "watch",
+              "optics",
+              "jobshop"
+            ]
+          },
+          {
+            "id": "deco-a",
+            "photo": "hs_pvd",
+            "photoAlt": "Huasheng DECO A large multi-arc coating system",
+            "name": "DECO A large-capacity multi-arc coating system",
+            "tag": "Large Multi-Arc",
+            "short": "Largest chambers Huasheng builds, with up to 30 arc sources.",
+            "desc": "Multi-arc ion plating. Includes the largest chambers in the decorative range, up to DECO2600A.",
+            "features": [
+              "The largest chambers in the decorative range (up to DECO2600A)",
+              "Gold, rose gold, gun grey, black, coffee, blue and custom colours",
+              "Coats metals, glass, crystal, ceramics and polymers",
+              "High volume throughput for large architectural batches"
+            ],
+            "specs": [
+              [
+                "Technology",
+                "Multi-arc ion plating"
+              ],
+              [
+                "Chamber sizes",
+                "Φ1200 × H1200 mm to Φ2800 × H2400 mm"
+              ],
+              [
+                "Effective coating area",
+                "Φ1000 × H900 mm to Φ2600 × H2100 mm"
+              ],
+              [
+                "Arc sources",
+                "10 to 30 arc sources"
+              ],
+              [
+                "Typical applications",
+                "Volume decorative coating where the largest batch size matters, architectural panels, sanitary fittings."
+              ]
+            ],
+            "process": [
+              "Architectural stainless steel panels",
+              "Elevator trim & doors",
+              "Sanitary fittings & faucets",
+              "Large hardware fixtures"
+            ],
+            "models": [
+              {
+                "family": "DECO A",
+                "model": "DECO1000A",
+                "chamberSize": "Φ1200 × H1200",
+                "area": "Φ1000 × H900",
+                "arcTargets": "10",
+                "otherTargets": "—",
+                "footprint": "3.6 × 3.6 × 2.4 m"
+              },
+              {
+                "family": "DECO A",
+                "model": "DECO1400A",
+                "chamberSize": "Φ1600 × H1800",
+                "area": "Φ1400 × H1500",
+                "arcTargets": "16",
+                "otherTargets": "—",
+                "footprint": "4.2 × 3.6 × 3.0 m"
+              },
+              {
+                "family": "DECO A",
+                "model": "DECO2000A",
+                "chamberSize": "Φ2200 × H1800",
+                "area": "Φ2000 × H1500",
+                "arcTargets": "20",
+                "otherTargets": "—",
+                "footprint": "4.8 × 4.2 × 3.0 m"
+              },
+              {
+                "family": "DECO A",
+                "model": "DECO2600A",
+                "chamberSize": "Φ2800 × H2400",
+                "area": "Φ2600 × H2100",
+                "arcTargets": "30",
+                "otherTargets": "—",
+                "footprint": "5.4 × 4.8 × 3.6 m"
+              }
+            ],
+            "url": "https://www.hscoat.com/decorative-coating-equipment/",
+            "k": "deco-a architectural panels large chamber sanitary fittings multi arc hardware",
+            "i": [
+              "watch",
+              "jobshop",
+              "steel"
+            ]
+          },
+          {
+            "id": "deco-b",
+            "photo": "hs_pvd",
+            "photoAlt": "Huasheng DECO B dark colour coating system",
+            "name": "DECO B dark color multi-arc + magnetron coating system",
+            "tag": "Dark Series PVD",
+            "short": "Dedicated dark, gunmetal, and black colour series.",
+            "desc": "Multi-arc plus magnetron sputtering, set up for the dark colour series.",
+            "features": [
+              "Dedicated dark colours: black, coffee, gun grey, dark titanium",
+              "Depth and colour consistency required for premium finishes",
+              "High wear resistance and corrosion durability",
+              "Multi-arc adhesion with magnetron uniformity"
+            ],
+            "specs": [
+              [
+                "Technology",
+                "Multi-arc + magnetron sputtering"
+              ],
+              [
+                "Finish series",
+                "Dark color series (Gunmetal, Obsidian Black, Graphite)"
+              ],
+              [
+                "Chamber sizes",
+                "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
+              ],
+              [
+                "Effective coating area",
+                "Φ800 × H700 mm to Φ1700 × H950 mm"
+              ],
+              [
+                "Typical applications",
+                "Watches, phone casings, eyewear, dark-finish hardware."
+              ]
+            ],
+            "process": [
+              "Gunmetal & Black PVD",
+              "Consumer electronics",
+              "Automotive interior trim",
+              "Hardware & accessories"
+            ],
+            "models": [
+              {
+                "family": "DECO B",
+                "model": "DECO800B",
+                "chamberSize": "Φ1000 × H1000",
+                "area": "Φ800 × H700",
+                "arcTargets": "6",
+                "otherTargets": "4 cylindrical",
+                "footprint": "3.1 × 2.3 × 2.4 m"
+              },
+              {
+                "family": "DECO B",
+                "model": "DECO1000B",
+                "chamberSize": "Φ1200 × H1250",
+                "area": "Φ1000 × H950",
+                "arcTargets": "10",
+                "otherTargets": "8 cylindrical",
+                "footprint": "3.6 × 3.6 × 2.4 m"
+              },
+              {
+                "family": "DECO B",
+                "model": "DECO1550B",
+                "chamberSize": "Φ1750 × H1250",
+                "area": "Φ1550 × H950",
+                "arcTargets": "10",
+                "otherTargets": "12 cylindrical + 1 column arc",
+                "footprint": "4.2 × 3.6 × 2.4 m"
+              },
+              {
+                "family": "DECO B",
+                "model": "DECO1700B",
+                "chamberSize": "Φ1900 × H1250",
+                "area": "Φ1700 × H950",
+                "arcTargets": "12",
+                "otherTargets": "16 cylindrical + 1 column arc",
+                "footprint": "4.3 × 3.9 × 2.6 m"
+              }
+            ],
+            "url": "https://www.hscoat.com/decorative-coating-equipment/",
+            "k": "deco-b dark series black gunmetal pvd electronics automotive trim",
+            "i": [
+              "watch",
+              "auto",
+              "jobshop"
+            ]
+          },
+          {
+            "id": "deco-g",
+            "photo": "hs_pvd",
+            "photoAlt": "Huasheng DECO G real gold coating system",
+            "name": "DECO G multi-arc + real gold coating system",
+            "tag": "Real Gold PVD",
+            "short": "Multi-arc and magnetron sputtering with real gold furnace.",
+            "desc": "Multi-arc plus magnetron sputtering with a real gold furnace.",
+            "features": [
+              "Furnace gold and titanium gold, plus rose gold, gun ash, coffee and blue",
+              "Integrated real gold evaporation furnace",
+              "High precious metal efficiency with flat and cylindrical targets",
+              "Clean, cyanide-free luxury gold coating"
+            ],
+            "specs": [
+              [
+                "Technology",
+                "Multi-arc + magnetron sputtering + real gold furnace"
+              ],
+              [
+                "Precious metal",
+                "Real gold (18K, 24K, Rose Gold), Titanium gold"
+              ],
+              [
+                "Chamber sizes",
+                "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
+              ],
+              [
+                "Effective coating area",
+                "Φ800 × H700 mm to Φ1700 × H950 mm"
+              ],
+              [
+                "Typical applications",
+                "Jewellery, watch cases and bracelets, gold-finish hardware."
+              ]
+            ],
+            "process": [
+              "Real gold PVD coating",
+              "18K & 24K gold deposition",
+              "Luxury jewellery",
+              "High-end watch cases"
+            ],
+            "models": [
+              {
+                "family": "DECO G",
+                "model": "DECO800G",
+                "chamberSize": "Φ1000 × H1000",
+                "area": "Φ800 × H700",
+                "arcTargets": "6",
+                "otherTargets": "2 cylindrical + 2 flat L1100 × W58 × 1.5",
+                "footprint": "3.1 × 2.3 × 2.4 m"
+              },
+              {
+                "family": "DECO G",
+                "model": "DECO1000G",
+                "chamberSize": "Φ1200 × H1250",
+                "area": "Φ1000 × H950",
+                "arcTargets": "10",
+                "otherTargets": "4 cylindrical + 2 flat",
+                "footprint": "3.6 × 3.6 × 2.4 m"
+              },
+              {
+                "family": "DECO G",
+                "model": "DECO1550G",
+                "chamberSize": "Φ1750 × H1250",
+                "area": "Φ1550 × H950",
+                "arcTargets": "10",
+                "otherTargets": "4 cylindrical + 2 flat",
+                "footprint": "4.2 × 3.6 × 2.4 m"
+              },
+              {
+                "family": "DECO G",
+                "model": "DECO1700G",
+                "chamberSize": "Φ1900 × H1250",
+                "area": "Φ1700 × H950",
+                "arcTargets": "12",
+                "otherTargets": "4 cylindrical + 2 flat",
+                "footprint": "4.3 × 3.9 × 2.6 m"
+              }
+            ],
+            "url": "https://www.hscoat.com/decorative-coating-equipment/",
+            "k": "deco-g real gold 18k 24k jewellery watchcases luxury precious metal",
+            "i": [
+              "watch",
+              "jobshop"
+            ]
+          },
+          {
+            "id": "af-series",
+            "photo": "hs_pvd",
+            "photoAlt": "Huasheng AF anti-fingerprint coating equipment",
+            "name": "AF anti-fingerprint coating equipment",
+            "tag": "Anti-Fingerprint",
+            "short": "Magnetron sputtering and evaporation for AF functional coatings.",
+            "desc": "Magnetron sputtering plus evaporation, for anti-fingerprint coatings.",
+            "features": [
+              "4 cylindrical targets Φ70 × H1150 optional, plus 15 sets of evaporation electrodes",
+              "Same four chamber sizes as DECO H",
+              "High water contact angle (>115°) and oil repellency",
+              "Anti-fingerprint top layers over decorative coatings"
+            ],
+            "specs": [
+              [
+                "Technology",
+                "Magnetron sputtering + thermal evaporation electrodes"
+              ],
+              [
+                "Electrode sets",
+                "15 sets evaporation electrodes + 4 cylindrical targets"
+              ],
+              [
+                "Chamber sizes",
+                "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
+              ],
+              [
+                "Effective coating area",
+                "Φ800 × H700 mm to Φ1700 × H950 mm"
+              ],
+              [
+                "Typical applications",
+                "Anti-fingerprint top layers over decorative coatings, touchscreen glass, optical displays, metal trim."
+              ]
+            ],
+            "process": [
+              "Anti-fingerprint (AF) coating",
+              "Hydrophobic & oleophobic layers",
+              "Touchscreen glass",
+              "Optical displays"
+            ],
+            "models": [
+              {
+                "family": "AF",
+                "model": "AF800",
+                "chamberSize": "Φ1000 × H1000",
+                "area": "Φ800 × H700",
+                "arcTargets": "—",
+                "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
+                "footprint": "Not published"
+              },
+              {
+                "family": "AF",
+                "model": "AF1000",
+                "chamberSize": "Φ1200 × H1250",
+                "area": "Φ1000 × H950",
+                "arcTargets": "—",
+                "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
+                "footprint": "Not published"
+              },
+              {
+                "family": "AF",
+                "model": "AF1550",
+                "chamberSize": "Φ1750 × H1250",
+                "area": "Φ1550 × H950",
+                "arcTargets": "—",
+                "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
+                "footprint": "Not published"
+              },
+              {
+                "family": "AF",
+                "model": "AF1700",
+                "chamberSize": "Φ1900 × H1250",
+                "area": "Φ1700 × H950",
+                "arcTargets": "—",
+                "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
+                "footprint": "Not published"
+              }
+            ],
+            "url": "https://www.hscoat.com/decorative-coating-equipment/",
+            "k": "af anti fingerprint touchscreen display glass oleophobic hydrophobic",
+            "i": [
+              "optics",
+              "semi",
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
         "id": "optical",
         "photo": "hs_optical",
         "photoAlt": "Huasheng optical precision coating systems",
@@ -3442,19 +4493,87 @@
         "url": "https://www.hscoat.com/optical-coating-equipment/",
         "machines": [
           {
+            "id": "opt-t",
+            "photo": "hs_optical",
+            "photoAlt": "Huasheng OPT-T thermal evaporation optical coating equipment",
+            "name": "OPT-T thermal evaporation optical coating equipment",
+            "tag": "Thermal Evaporation",
+            "short": "Thermal evaporation for aluminium, nickel-chromium and silver wires.",
+            "desc": "Thermal evaporation coating equipment for metallic optical and decorative films.",
+            "features": [
+              "Chrome, silver, gold, gun black, semi-transparent NCVM non-conductive film",
+              "Rainbow mirror effects on plastics",
+              "Thermal evaporation of aluminium, nickel chromium and silver wires",
+              "High-throughput planetary dome fixtures"
+            ],
+            "specs": [
+              [
+                "Technology",
+                "Thermal evaporation (Al, NiCr, Ag wire)"
+              ],
+              [
+                "Chamber sizes",
+                "Φ1400 / 1600 / 1800 mm (Height 1600 / 1800 / 2000 mm)"
+              ],
+              [
+                "Evaporation materials",
+                "Aluminium, nickel chromium, silver wire"
+              ],
+              [
+                "Substrate fixtures",
+                "High-capacity planetary dome fixtures"
+              ],
+              [
+                "Typical applications",
+                "OPT-T for plastic decorative parts, automotive reflectors, and optical mirrors."
+              ]
+            ],
+            "process": [
+              "Aluminium mirror coating",
+              "Nickel-chromium reflection layers",
+              "Silver metallisation",
+              "Optical reflectors"
+            ],
+            "models": [
+              {
+                "family": "OPT",
+                "model": "OPT-T",
+                "chamberSize": "Φ1400 / 1600 / 1800, height 1600 / 1800 / 2000",
+                "area": "Planetary dome fixture",
+                "arcTargets": "—",
+                "otherTargets": "Thermal evaporation: Aluminium, nickel chromium and silver wire",
+                "footprint": "Not published"
+              },
+              {
+                "family": "OPT",
+                "model": "OPT-E",
+                "chamberSize": "Φ900, 1100, 1350, 1550, 1800, 2050, 2350, 2700, height 1500",
+                "area": "Planetary dome fixture",
+                "arcTargets": "—",
+                "otherTargets": "Electron beam evaporation: SiO₂, TiO₂, ZrO₂, SiO",
+                "footprint": "Not published"
+              }
+            ],
+            "url": "https://www.hscoat.com/optical-coating-equipment/",
+            "k": "opt-t thermal evaporation aluminium silver mirrors reflectors optical",
+            "i": [
+              "optics",
+              "auto"
+            ]
+          },
+          {
             "id": "opt-e",
             "photo": "hs_optical",
             "photoAlt": "Huasheng OPT-E electron beam evaporation optical coating system",
             "name": "OPT-E electron beam evaporation optical coating equipment",
             "tag": "E-beam optical",
             "short": "Electron beam evaporation for anti-reflection and filter coatings on glass, quartz and silicon wafers.",
-            "desc": "OPT-E is an electron beam evaporation system for high-precision anti-reflection (AR) and filter coatings on glass, quartz and silicon wafers. Provides high deposition uniformity, precise optical film thickness control, and low-loss multi-layer dielectric stacks.",
+            "desc": "Electron beam evaporation coating equipment for precision optical and semiconductor films.",
             "features": [
-              "Electron beam evaporation for precision optical thin films",
-              "Dedicated for anti-reflection (AR) and filter coatings",
-              "Substrates: glass, quartz and silicon wafers",
-              "High film uniformity with crystal / optical monitor rate control",
-              "Multi-layer dielectric and metallic optical coatings"
+              "Precision optical film: AR anti-reflection, HR high reflectivity, optical filters",
+              "Semiconductor electrode and contact layers",
+              "E-beam evaporation of SiO₂, TiO₂, ZrO₂, SiO",
+              "Ultra-precise optical thickness monitoring"
             ],
             "specs": [
               [
@@ -3479,7 +4598,7 @@
               ],
               [
                 "Typical applications",
-                "Precision optics, laser optics, optical sensors, semiconductor optical filters, eyewear"
+                "OPT-E for glass, quartz, silicon wafers and ceramics."
               ]
             ],
             "process": [
@@ -3490,13 +4609,22 @@
             ],
             "models": [
               {
-                "model": "OPT-E",
-                "tech": "Electron beam evaporation",
+                "family": "OPT",
+                "model": "OPT-T",
+                "chamberSize": "Φ1400 / 1600 / 1800, height 1600 / 1800 / 2000",
                 "area": "Planetary dome fixture",
-                "temp": "—",
-                "load": "Glass / quartz / silicon wafers",
-                "size": "—",
-                "time": "Application specific"
+                "arcTargets": "—",
+                "otherTargets": "Thermal evaporation: Aluminium, nickel chromium and silver wire",
+                "footprint": "Not published"
+              },
+              {
+                "family": "OPT",
+                "model": "OPT-E",
+                "chamberSize": "Φ900, 1100, 1350, 1550, 1800, 2050, 2350, 2700, height 1500",
+                "area": "Planetary dome fixture",
+                "arcTargets": "—",
+                "otherTargets": "Electron beam evaporation: SiO₂, TiO₂, ZrO₂, SiO",
+                "footprint": "Not published"
               }
             ],
             "url": "https://www.hscoat.com/optical-coating-equipment/",
@@ -3551,6 +4679,81 @@
             "i": [
               "optics",
               "semi"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "specialty",
+        "photo": "hs_pvd",
+        "photoAlt": "Huasheng specialty powder coating equipment",
+        "name": "Specialty & powder coating equipment",
+        "sub": "POW 100 magnetron sputtering for powders",
+        "desc": "Specialized PVD systems for functional coating of micro-powders, battery cathode/anode particles, and catalyst materials.",
+        "url": "https://www.hscoat.com/pvd-coating-equipment/",
+        "machines": [
+          {
+            "id": "pow-100",
+            "photo": "hs_pvd",
+            "photoAlt": "Huasheng POW 100 powder magnetron sputtering machine",
+            "name": "POW 100 powder magnetron sputtering machine",
+            "tag": "Powder Sputtering",
+            "short": "Magnetron sputtering for fine powders and battery materials (100–3,000 g).",
+            "desc": "Magnetron sputtering for coating powder rather than parts.",
+            "features": [
+              "Coats diamond, metal and ceramic powders",
+              "Sputters iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt",
+              "Specialized tumbling powder chamber (100–3,000 g capacity)",
+              "Uniform nano-encapsulation of fine particles"
+            ],
+            "specs": [
+              [
+                "Technology",
+                "Magnetron sputtering for powders"
+              ],
+              [
+                "Chamber size",
+                "L765 × W675 × H610 mm"
+              ],
+              [
+                "Batch capacity",
+                "100 g to 3,000 g powder loading"
+              ],
+              [
+                "Sputtering targets",
+                "2 cylindrical targets, adjustable to need"
+              ],
+              [
+                "Equipment footprint",
+                "2.8 × 1.2 × 2.2 m"
+              ],
+              [
+                "Typical applications",
+                "Powder metallurgy, diamond tool manufacture, battery active materials, catalyst engineering."
+              ]
+            ],
+            "process": [
+              "Battery active material coating",
+              "Conductive powder metallisation",
+              "Catalyst particle encapsulation",
+              "Nano-surface engineering"
+            ],
+            "models": [
+              {
+                "family": "POW",
+                "model": "POW 100",
+                "chamberSize": "L765 × W675 × H610 mm",
+                "area": "Loading capacity 100 – 3,000 g",
+                "arcTargets": "—",
+                "otherTargets": "2 cylindrical, adjustable to need",
+                "footprint": "2.8 × 1.2 × 2.2 m"
+              }
+            ],
+            "url": "https://www.hscoat.com/pvd-coating-equipment/",
+            "k": "pow powder sputtering battery cathode anode catalyst particles nano coating",
+            "i": [
+              "semi",
+              "power"
             ]
           }
         ]
@@ -3930,13 +5133,16 @@
 
     var modelsTableHtml = '';
     if (m.models && m.models.length) {
-      var isCoating = m.models[0].tech !== undefined;
+      var isDeco = m.models[0].chamberSize !== undefined || m.models[0].arcTargets !== undefined || m.models[0].otherTargets !== undefined;
+      var isCoating = m.models[0].tech !== undefined && !isDeco;
       var isCleaning = m.models[0].chamber !== undefined || m.models[0].notes !== undefined;
-      var headers = isCoating
-        ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
-        : (isCleaning
-          ? ["Model", "Usable Tank / Chamber", "Overall Size", "Max Load", "Version / Notes", "Action"]
-          : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]);
+      var headers = isDeco
+        ? ["Family", "Model", "Chamber Size (mm)", "Effective Area (mm)", "Arc Targets", "Other Targets", "Footprint L×W×H (m)", "Action"]
+        : (isCoating
+          ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
+          : (isCleaning
+            ? ["Family", "Model", "Usable Chamber / Tank (mm)", "Overall Size (mm)", "Max Load", "Version / Notes", "Source / Reference", "Action"]
+            : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]));
 
       modelsTableHtml = '<section class="m-models-section">' +
         '<div class="m-models-head">' +
@@ -3944,7 +5150,7 @@
         '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>' +
         '<div>' +
         '<h2>Standard Model Range & Technical Parameters</h2>' +
-        '<p>' + (isCoating ? 'Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times' : (isCleaning ? 'Published per-model usable chamber/tank capacities, overall dimensions, and configurations' : 'Published per-model load ratings, dimensions, maximum temperatures, and vacuum levels')) + '</p>' +
+        '<p>' + (isDeco ? 'Published per-model chamber dimensions, effective coating zones, target configurations, and footprint dimensions' : (isCoating ? 'Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times' : (isCleaning ? 'Published per-model usable chamber/tank capacities, overall dimensions, and configurations' : 'Published per-model load ratings, dimensions, maximum temperatures, and vacuum levels'))) + '</p>' +
         '</div>' +
         '</div>' +
         '<span class="m-models-count">' + m.models.length + ' Models in Family</span>' +
@@ -3960,6 +5166,22 @@
         '</thead>' +
         '<tbody>' +
         m.models.map(function (mod) {
+          if (isDeco) {
+            return '<tr>' +
+              '<td><span class="pill-orientation" style="font-weight:600;">' + esc(mod.family || 'Huasheng') + '</span></td>' +
+              '<td class="td-model"><span class="model-badge">' + esc(mod.model) + '</span></td>' +
+              '<td class="td-dim">' + esc(mod.chamberSize || '—') + '</td>' +
+              '<td>' + esc(mod.area || '—') + '</td>' +
+              '<td>' + esc(mod.arcTargets || '—') + '</td>' +
+              '<td><span class="pill-orientation">' + esc(mod.otherTargets || '—') + '</span></td>' +
+              '<td>' + esc(mod.footprint || '—') + '</td>' +
+              '<td class="td-action">' +
+              '<button type="button" class="btn-model-enquire" data-enquire="' + esc(b.id) + '" data-label="' + esc(m.name + ' - ' + mod.model) + '">' +
+              '<span>Enquire</span>' + SVG_ARROW +
+              '</button>' +
+              '</td>' +
+              '</tr>';
+          }
           if (isCoating) {
             return '<tr>' +
               '<td class="td-model"><span class="model-badge">' + esc(mod.model) + '</span></td>' +
@@ -3978,11 +5200,13 @@
           }
           if (isCleaning) {
             return '<tr>' +
+              '<td><span class="pill-orientation" style="font-weight:600;">' + esc(mod.family || 'Novatec') + '</span></td>' +
               '<td class="td-model"><span class="model-badge">' + esc(mod.model) + '</span></td>' +
               '<td class="td-dim">' + esc(mod.chamber || '—') + '</td>' +
               '<td>' + esc(mod.size || '—') + '</td>' +
               '<td class="td-highlight">' + esc(mod.load || '—') + '</td>' +
               '<td><span class="pill-orientation">' + esc(mod.notes || '—') + '</span></td>' +
+              '<td style="font-size:0.78rem; color:var(--steel);">' + esc(mod.source || '—') + '</td>' +
               '<td class="td-action">' +
               '<button type="button" class="btn-model-enquire" data-enquire="' + esc(b.id) + '" data-label="' + esc(m.name + ' - ' + mod.model) + '">' +
               '<span>Enquire</span>' + SVG_ARROW +
@@ -4028,7 +5252,7 @@
       '<a class="btn btn--ghost" href="' + (m.url || c.url) + '" target="_blank" rel="noopener"><span>View on ' + esc(b.name) + ' website</span>' + SVG_EXT + '</a>' +
       '</div>' +
       '<div class="mcols">' +
-      '<section class="mcol-card"><h2>Key Technical Features</h2><ul class="feat">' + m.features.map(function (f) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(f) + '</span></li>'; }).join("") + '</ul></section>' +
+      '<section class="mcol-card' + ((!m.benefits || !m.benefits.length) ? ' mcol-card--full' : '') + '"><h2>Key Technical Features</h2><ul class="feat">' + m.features.map(function (f) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(f) + '</span></li>'; }).join("") + '</ul></section>' +
       (m.benefits && m.benefits.length ? '<section class="mcol-card"><h2>Key Advantages &amp; Benefits</h2><ul class="feat">' + m.benefits.map(function (b) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(b) + '</span></li>'; }).join("") + '</ul></section>' : '') +
       (m.config ? '<section class="mcol-card"' + (m.thermochemical ? '' : ' style="grid-column: 1 / -1;"') + '><h2>Configuration</h2><p style="margin-top:0.4rem; font-size:0.92rem; color:var(--ink); font-weight:550;">' + esc(m.config) + '</p></section>' : '') +
       (m.thermochemical ? '<section class="mcol-card"' + (m.config ? '' : ' style="grid-column: 1 / -1;"') + '><h2>Thermochemical Options</h2><p style="margin-top:0.4rem; font-size:0.92rem; color:var(--lime); font-weight:600;">' + esc(m.thermochemical) + '</p></section>' : '') +

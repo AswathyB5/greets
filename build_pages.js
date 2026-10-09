@@ -563,13 +563,16 @@ CATALOG.forEach(b => {
 
         let modelsTableHtml = '';
         if (m.models && m.models.length) {
-          const isCoating = m.models[0].tech !== undefined;
+          const isDeco = m.models[0].chamberSize !== undefined || m.models[0].arcTargets !== undefined || m.models[0].otherTargets !== undefined;
+          const isCoating = m.models[0].tech !== undefined && !isDeco;
           const isCleaning = m.models[0].chamber !== undefined || m.models[0].notes !== undefined;
-          const headers = isCoating
-            ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
-            : (isCleaning
-              ? ["Model", "Usable Tank / Chamber", "Overall Size", "Max Load", "Version / Notes", "Action"]
-              : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]);
+          const headers = isDeco
+            ? ["Family", "Model", "Chamber Size (mm)", "Effective Area (mm)", "Arc Targets", "Other Targets", "Footprint L×W×H (m)", "Action"]
+            : (isCoating
+              ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
+              : (isCleaning
+                ? ["Family", "Model", "Usable Chamber / Tank (mm)", "Overall Size (mm)", "Max Load", "Version / Notes", "Source / Reference", "Action"]
+                : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]));
 
           modelsTableHtml = `
             <section class="m-models-section">
@@ -578,7 +581,7 @@ CATALOG.forEach(b => {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                   <div>
                     <h2>Standard Model Range & Technical Parameters</h2>
-                    <p>${isCoating ? 'Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times' : (isCleaning ? 'Published per-model usable chamber/tank capacities, overall dimensions, and configurations' : 'Published per-model load ratings, dimensions, maximum temperatures, and vacuum levels')}</p>
+                    <p>${isDeco ? 'Published per-model chamber dimensions, effective coating zones, target configurations, and footprint dimensions' : (isCoating ? 'Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times' : (isCleaning ? 'Published per-model usable chamber/tank capacities, overall dimensions, and configurations' : 'Published per-model load ratings, dimensions, maximum temperatures, and vacuum levels'))}</p>
                   </div>
                 </div>
                 <span class="m-models-count">${m.models.length} Models in Family</span>
@@ -593,6 +596,24 @@ CATALOG.forEach(b => {
                   <tbody>
                     ${m.models.map(mod => {
                       const enquireHref = `${rootRel}contact.html?page=${encodeURIComponent(m.name + ' - ' + mod.model)}&category=${encodeURIComponent(c.name)}&brand=${encodeURIComponent(b.name)}`;
+                      if (isDeco) {
+                        return `
+                          <tr>
+                            <td><span class="pill-orientation" style="font-weight:600;">${esc(mod.family || 'Huasheng')}</span></td>
+                            <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
+                            <td class="td-dim">${esc(mod.chamberSize || '—')}</td>
+                            <td>${esc(mod.area || '—')}</td>
+                            <td>${esc(mod.arcTargets || '—')}</td>
+                            <td><span class="pill-orientation">${esc(mod.otherTargets || '—')}</span></td>
+                            <td>${esc(mod.footprint || '—')}</td>
+                            <td class="td-action">
+                              <a href="${enquireHref}" class="btn-model-enquire">
+                                <span>Enquire</span>${SVG_ARROW}
+                              </a>
+                            </td>
+                          </tr>
+                        `;
+                      }
                       if (isCoating) {
                         return `
                           <tr>
@@ -614,11 +635,13 @@ CATALOG.forEach(b => {
                       if (isCleaning) {
                         return `
                           <tr>
+                            <td><span class="pill-orientation" style="font-weight:600;">${esc(mod.family || 'Novatec')}</span></td>
                             <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
                             <td class="td-dim">${esc(mod.chamber || '—')}</td>
                             <td>${esc(mod.size || '—')}</td>
                             <td class="td-highlight">${esc(mod.load || '—')}</td>
                             <td><span class="pill-orientation">${esc(mod.notes || '—')}</span></td>
+                            <td style="font-size:0.78rem; color:var(--steel);">${esc(mod.source || '—')}</td>
                             <td class="td-action">
                               <a href="${enquireHref}" class="btn-model-enquire">
                                 <span>Enquire</span>${SVG_ARROW}
@@ -717,7 +740,7 @@ CATALOG.forEach(b => {
             </div>
 
             <div class="mcols">
-              <section class="mcol-card">
+              <section class="mcol-card${(!m.benefits || !m.benefits.length) ? ' mcol-card--full' : ''}">
                 <h2>Key Technical Features</h2>
                 <ul class="feat">
                   ${m.features.map(f => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(f)}</span></li>`).join('')}
