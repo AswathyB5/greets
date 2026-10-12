@@ -43,6 +43,27 @@ const PHOTOS = extractConst('PHOTOS');
 const IND = extractConst('IND');
 const CATALOG = extractConst('CATALOG');
 
+// Apply exact industry tags from greets-products (20) 1 (1).html
+const T_IND = {
+  jobshop: ["md800", "aip", "hipims", "hybrid", "decorative", "pecvd-dlc", "tac", "hfcvd", "cvd-systems", "md800-turnkey", "pre-pvd", "pluritank-line", "2crd-system", "plasma-nitriding"],
+  dies: ["b8t", "vse8t", "tempering", "allnit", "plasma-nitriding", "cool-plus", "aip", "hybrid", "hipims", "tac", "pre-pvd", "pluritank-line", "2crd-system"],
+  steel: ["b8t", "vse8t", "oil-horizontal", "oil-vertical", "tempering", "allcarb", "allnit", "plasma-nitriding", "brazing", "lab", "pluritank-line"],
+  aero: ["b8t", "vse8t", "brazing", "allcarb", "cool-plus", "fpi", "pluritank-line", "2crd-system", "hipims", "pecvd-dlc", "cva"],
+  power: ["vse8t", "allcarb", "allnit", "brazing", "cva", "pecvd-dlc", "fpi", "pluritank-line"],
+  oilgas: ["vse8t", "oil-vertical", "allnit", "plasma-nitriding", "aip", "hybrid", "pecvd-dlc", "tac", "fpi", "pluritank-line"]
+};
+
+CATALOG.forEach(b => {
+  b.cats.forEach(c => {
+    c.machines.forEach(m => {
+      m.i = m.i || [];
+      for (const k in T_IND) {
+        if (T_IND[k].includes(m.id) && !m.i.includes(k)) m.i.push(k);
+      }
+    });
+  });
+});
+
 const SITE_URL = 'https://greets.co.in';
 
 const SVG_CHECK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
@@ -405,6 +426,7 @@ CATALOG.forEach(b => {
           <div class="brand-badge-row">
             <span class="flag-chip">${esc(b.country)}</span>
             <span class="oem-chip">${esc(b.name)}</span>
+            ${c.family ? `<span class="oem-desc-chip" title="Family">${esc(c.family)}</span>` : ''}
           </div>
           <h1 style="font-size:clamp(1.8rem, 3.5vw, 2.5rem);">${esc(c.name)}</h1>
           <p class="lede">${esc(c.desc)}</p>
@@ -536,10 +558,15 @@ CATALOG.forEach(b => {
           specsHtml = `
             <table class="spec">
               <tbody>
-                ${m.specs.map(r => `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`).join('')}
+                ${m.specs.map(r => {
+                  if (!r[1]) {
+                    return `<tr class="spec-group"><th colspan="2" scope="colgroup">${esc(r[0])}</th></tr>`;
+                  }
+                  return `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`;
+                }).join('')}
               </tbody>
             </table>
-            <p class="note">* Manufacturer figures; exact values depend on configuration.</p>
+            <p class="note">Manufacturer figures; exact values depend on the configuration.</p>
           `;
         } else {
           specsHtml = `
@@ -582,7 +609,7 @@ CATALOG.forEach(b => {
 
               <div class="m-linelayout-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem; margin-bottom:1.5rem;">
                 <div class="mcol-card" style="margin:0;">
-                  <h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Key Dimensions</h3>
+                  <h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Key dimensions</h3>
                   <table class="spec" style="font-size:0.88rem;">
                     <tbody>
                       ${ll.dimensions.map(d => `<tr><th scope="row">${esc(d[0])}</th><td>${esc(d[1])}</td></tr>`).join('')}
@@ -591,7 +618,7 @@ CATALOG.forEach(b => {
                 </div>
 
                 <div class="mcol-card" style="margin:0;">
-                  <h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Ancillary Equipment &amp; Utilities</h3>
+                  <h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Ancillary equipment &amp; utilities</h3>
                   <ul class="feat" style="font-size:0.88rem;">
                     ${ll.ancillary.map(a => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(a)}</span></li>`).join('')}
                   </ul>
@@ -641,7 +668,7 @@ CATALOG.forEach(b => {
                 <div class="m-models-head__title">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                   <div>
-                    <h2>Standard Model Range & Technical Parameters</h2>
+                    <h2>Standard model range &amp; technical parameters</h2>
                     <p>${isDeco ? 'Published per-model chamber dimensions, effective coating zones, target configurations, and footprint dimensions' : (isCoating ? 'Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times' : (isCleaning ? 'Published per-model usable chamber/tank capacities, overall dimensions, and configurations' : 'Published per-model load ratings, dimensions, maximum temperatures, and vacuum levels'))}</p>
                   </div>
                 </div>
@@ -786,8 +813,7 @@ CATALOG.forEach(b => {
             <div class="brand-badge-row">
               <span class="flag-chip">${esc(b.country)}</span>
               <span class="oem-chip">${esc(b.name)}</span>
-              ${m.tag ? `<span class="tag-chip">${esc(m.tag)}</span>` : ''}
-              ${m.bmi_desc ? `<span class="tag-chip oem-desc-chip" title="Manufacturer designation">${esc(m.bmi_desc)}</span>` : ''}
+              ${(m.series || m.family || c.family || m.bmi_desc) ? `<span class="oem-desc-chip" title="${m.series ? 'Series' : 'Family'}">${esc(m.series || m.family || c.family || m.bmi_desc)}</span>` : ''}
             </div>
             <h1>${esc(m.name)}</h1>
             <p class="lede">${esc(m.desc)}</p>
@@ -801,15 +827,40 @@ CATALOG.forEach(b => {
             </div>
 
             <div class="mcols">
+              ${(() => {
+                const famDesc = m.family_desc || m.series_desc;
+                if (!famDesc) return '';
+                const famHeading = m.series ? `${esc(m.series)} series overview` : (m.family ? `${esc(m.family)} family overview` : `${esc(c.name)} overview`);
+                return `
+                <section class="mcol-card" style="grid-column: 1 / -1;">
+                  <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.45rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="14" width="7" height="7"></rect>
+                      <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <h2 style="margin:0; font-size:0.95rem;">${famHeading}</h2>
+                  </div>
+                  <p class="fam-desc" style="margin:0; font-size:0.82rem; color:var(--ink); line-height:1.5;">${esc(famDesc)}</p>
+                </section>
+                `;
+              })()}
+              ${(m.typical_applications || m.typical_use) ? `
+              <section class="mcol-card" style="grid-column: 1 / -1;">
+                <h2>${m.typical_applications ? 'Typical applications' : 'Typical use'}</h2>
+                <p style="margin:0.25rem 0 0; font-size:0.82rem; color:var(--ink); line-height:1.5;">${esc(m.typical_applications || m.typical_use)}</p>
+              </section>
+              ` : ''}
               <section class="mcol-card${(!m.benefits || !m.benefits.length) ? ' mcol-card--full' : ''}">
-                <h2>Key Technical Features</h2>
+                <h2>Key features</h2>
                 <ul class="feat">
                   ${m.features.map(f => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(f)}</span></li>`).join('')}
                 </ul>
               </section>
               ${m.benefits && m.benefits.length ? `
               <section class="mcol-card">
-                <h2>Key Advantages &amp; Benefits</h2>
+                <h2>Key benefits</h2>
                 <ul class="feat">
                   ${m.benefits.map(b => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(b)}</span></li>`).join('')}
                 </ul>
@@ -818,18 +869,18 @@ CATALOG.forEach(b => {
               ${m.config ? `
               <section class="mcol-card"${m.thermochemical ? '' : ' style="grid-column: 1 / -1;"'}>
                 <h2>Configuration</h2>
-                <p style="margin-top:0.4rem; font-size:0.92rem; color:var(--ink); font-weight:550;">${esc(m.config)}</p>
+                <p style="margin-top:0.4rem; font-size:0.82rem; color:var(--ink); font-weight:550;">${esc(m.config)}</p>
               </section>
               ` : ''}
               ${m.thermochemical ? `
               <section class="mcol-card"${m.config ? '' : ' style="grid-column: 1 / -1;"'}>
-                <h2>Thermochemical Options</h2>
-                <p style="margin-top:0.4rem; font-size:0.92rem; color:var(--lime); font-weight:600;">${esc(m.thermochemical)}</p>
+                <h2>Thermochemical options</h2>
+                <p style="margin-top:0.4rem; font-size:0.82rem; color:var(--lime); font-weight:600;">${esc(m.thermochemical)}</p>
               </section>
               ` : ''}
               ${m.process && m.process.length ? `
               <section class="mcol-card" style="grid-column: 1 / -1;">
-                <h2>Supported Processes &amp; Treatments</h2>
+                <h2>Supported processes</h2>
                 <div class="pills" style="margin-top:0.35rem;">
                   ${m.process.map(p => `<span>${esc(p)}</span>`).join('')}
                 </div>
@@ -837,7 +888,7 @@ CATALOG.forEach(b => {
               ` : ''}
               ${m.options && m.options.length ? `
               <section class="mcol-card" style="grid-column: 1 / -1;">
-                <h2>Main Options &amp; Peripherals</h2>
+                <h2>Main options</h2>
                 <ul class="feat feat--options">
                   ${m.options.map(o => `<li><span class="check-ic-wrap">${SVG_CHECK}</span><span>${esc(o)}</span></li>`).join('')}
                 </ul>
@@ -845,7 +896,7 @@ CATALOG.forEach(b => {
               ` : ''}
               ${m.site_reqs && m.site_reqs.length ? `
               <section class="mcol-card" style="grid-column: 1 / -1;">
-                <h2>Installation &amp; Site Requirements</h2>
+                <h2>${esc(m.site_reqs_title || 'Installation & site requirements')}</h2>
                 <table class="spec" style="margin-top:0.75rem;">
                   <tbody>
                     ${m.site_reqs.map(r => `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`).join('')}
@@ -853,9 +904,17 @@ CATALOG.forEach(b => {
                 </table>
               </section>
               ` : ''}
+              ${m.i && m.i.length ? `
+              <section class="mcol-card" style="grid-column: 1 / -1;">
+                <h2>Industries</h2>
+                <p class="indline" style="margin:0.25rem 0 0;">${m.i.map(x => {
+                  const indObj = IND.find(z => z.id === x);
+                  return indObj ? esc(indObj.n) : '';
+                }).filter(Boolean).join(', ')}</p>
+              </section>
+              ` : ''}
             </div>
 
-            ${targetInds}
             ${relnav}
           </div>
 
@@ -867,7 +926,7 @@ CATALOG.forEach(b => {
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                   <polyline points="14 2 14 8 20 8"/>
                 </svg>
-                <h2>Technical specifications</h2>
+                <h2>Technical data</h2>
               </div>
               ${specsHtml}
             </section>

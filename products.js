@@ -121,29 +121,28 @@
               "Gas quenching at 5 to 12 bar abs",
               "Patented rotating volute for uniform cooling",
               "GRAPHTIL® man-machine interface",
-              "Graphite, molybdenum or fibre hot zones",
-              "Clean vacuum heat treatment with zero intergranular oxidation (no IGO)"
+              "Graphite, molybdenum or fibre hot zones"
             ],
             "specs": [
               [
                 "Working zone",
-                "450 × 450 × 600 mm to 1,000 × 1,000 × 1,500 mm"
+                "450 × 450 × 600 mm to 900 × 900 × 1200 mm"
               ],
               [
                 "Load capacity",
-                "200 to 2,000 kg"
+                "200 to 3000 kg"
               ],
               [
                 "Maximum temperature",
-                "1250 °C to 1600 °C"
+                "1250 °C, 1350 °C or 1500 °C"
               ],
               [
                 "Vacuum level",
-                "5 × 10⁻² mbar (high vacuum options available)"
+                "10⁻² mbar, 10⁻⁵ mbar or 10⁻⁶ mbar"
               ],
               [
                 "Quench pressure",
-                "5 bar to 12 bar abs"
+                "5 to 12 bar abs"
               ],
               [
                 "Hot zone",
@@ -239,29 +238,28 @@
               "Gas quenching at 5 to 12 bar abs",
               "Patented rotating volute for uniform cooling",
               "GRAPHTIL® man-machine interface",
-              "Graphite, molybdenum or fibre hot zones",
-              "Treatment of massive loads and elongated parts with minimal distortion"
+              "Graphite, molybdenum or fibre hot zones"
             ],
             "specs": [
               [
                 "Working zone",
-                "Ø 600 × 600 mm to Ø 1,500 × 2,000 mm"
+                "Ø 600 × h 600 mm to Ø 1800 × h 1800 mm"
               ],
               [
                 "Load capacity",
-                "300 to 3,000 kg"
+                "200 to 3000 kg"
               ],
               [
                 "Maximum temperature",
-                "1250 °C to 1600 °C"
+                "1250 °C, 1350 °C or 1500 °C"
               ],
               [
                 "Vacuum level",
-                "5 × 10⁻² mbar"
+                "10⁻² mbar, 10⁻⁵ mbar or 10⁻⁶ mbar"
               ],
               [
                 "Quench pressure",
-                "5 bar to 12 bar abs"
+                "5 to 12 bar abs"
               ],
               [
                 "Control",
@@ -387,9 +385,7 @@
             "features": [
               "Oxide-free brazing under vacuum",
               "Controlled heating and cooling",
-              "Suited to nickel and other brazing alloys",
-              "Cost-effective alternative to a quenching furnace with reduced cycle times",
-              "Very Large Furnace options (titanium fuselage stress relieving)"
+              "Suited to nickel and other brazing alloys"
             ],
             "specs": [
               [
@@ -524,8 +520,7 @@
             "features": [
               "Compact footprint",
               "Vacuum heat treatment at laboratory scale",
-              "Process development and testing",
-              "Versatile furnace supporting full vacuum thermal cycles"
+              "Process development and testing"
             ],
             "specs": [
               [
@@ -641,10 +636,7 @@
             "features": [
               "Vacuum heating without oxidation",
               "Integrated oil quench",
-              "Horizontal loading",
-              "Quick & stable transfer to the oil bath",
-              "Oil bath parameters completely adjustable to suit parts geometry & steel grade",
-              "Zero intergranular corrosion (no IGO)"
+              "Horizontal loading"
             ],
             "specs": [
               [
@@ -795,10 +787,7 @@
             "features": [
               "Vertical loading",
               "Integrated oil quench",
-              "Reduced distortion on long parts (shafts, broaches, landing gear)",
-              "Vacuum heating without oxidation",
-              "Quick & stable transfer to the oil bath",
-              "Completely adjustable oil bath parameters"
+              "Reduced distortion on long parts"
             ],
             "specs": [
               [
@@ -920,9 +909,8 @@
             "desc": "Vacuum tempering furnace for tempering hardened parts with clean surfaces and uniform temperature through the load.",
             "features": [
               "Vacuum or protective atmosphere",
-              "Uniform load temperature and perfect temperature homogeneity",
-              "Clean, bright surfaces",
-              "Compact design with reduced cycle times"
+              "Uniform load temperature",
+              "Clean, bright surfaces"
             ],
             "specs": [
               [
@@ -1044,10 +1032,8 @@
             "short": "For heat exchangers and aluminium assemblies.",
             "desc": "Vacuum furnace for fluxless brazing of aluminium assemblies such as heat exchangers.",
             "features": [
-              "Fluxless aluminium brazing under high vacuum",
-              "Tight temperature uniformity across multiple zones",
-              "Superior joint integrity and surface finish",
-              "No flux required, eliminating contamination and post-process cleaning"
+              "Fluxless aluminium brazing",
+              "Tight temperature uniformity"
             ],
             "specs": [
               [
@@ -1176,9 +1162,8 @@
             "desc": "BMI's ALLCARB® low-pressure carburizing process, run in its vacuum furnaces, case-hardens steel parts such as gears and transmission components without intergranular oxidation.",
             "features": [
               "Low-pressure (vacuum) carburizing",
-              "No intergranular oxidation (zero IGO)",
-              "Can be combined with high-pressure gas quenching",
-              "Deep, uniform carbon penetration in blind holes and narrow root fillets"
+              "No intergranular oxidation",
+              "Can be combined with high-pressure gas quenching"
             ],
             "specs": [
               [
@@ -1217,9 +1202,7 @@
             "desc": "BMI's ALLNIT® low-pressure nitriding process for improving wear and fatigue resistance of steel parts and tools.",
             "features": [
               "Low-pressure nitriding",
-              "Controlled nitrided layer (combination layer and diffusion depth)",
-              "Clean process with low gas consumption",
-              "Uniform treatment on complex geometries"
+              "Controlled nitrided layer"
             ],
             "specs": [
               [
@@ -1260,11 +1243,8 @@
             "short": "Ion nitriding for tools, dies and engineering parts.",
             "desc": "Plasma (ion) nitriding furnace for tools, dies and engineering components. Delivers precise case depth and surface hardness control with zero white layer or controlled compound layer for dies, moulds, automotive gearing, and precision tools.",
             "features": [
-              "Plasma-assisted nitriding with pulsed DC glow discharge",
-              "Selective treatment possible with mechanical masking",
-              "Cold-wall design for excellent thermal control",
-              "Clean process, free from ammonia emissions",
-              "Fully automated operation for cycle consistency and reproducibility"
+              "Plasma-assisted nitriding",
+              "Selective treatment possible"
             ],
             "specs": [
               [
@@ -1373,10 +1353,8 @@
             "short": "Cryogenic treatment of hardened steels.",
             "desc": "The COOL PLUS vacuum furnace performs sub-zero cryogenic treatment, stabilising hardened steels by converting retained austenite.",
             "features": [
-              "Sub-zero cryogenic treatment down to -140 °C / -180 °C",
-              "Dimensional stabilisation of precision components",
-              "Elimination of retained austenite to maximize hardness and wear resistance",
-              "Seamless inline transition between quenching and tempering"
+              "Sub-zero cryogenic treatment",
+              "Dimensional stabilisation"
             ],
             "process": [
               "Deep cryogenic treatment",
@@ -1407,6 +1385,7 @@
     "cats": [
       {
         "id": "pluritank",
+        "family": "PLURITANK",
         "photo": "nov_main",
         "photoAlt": "Novatec PLURITANK multi-chamber cleaning line",
         "name": "Multi-tank ultrasonic cleaning",
@@ -1417,92 +1396,92 @@
           {
             "id": "pluritank-line",
             "lineLayout": {
-  "title": "PLURITANK 1400 — Multi-Stage Process Line Layout",
-  "reference": "Novatec GA drawing 5298.3.0-26CO",
-  "dimensions": [
-    [
-      "Internal tank",
-      "700 × 1200 × 1650 h mm (approx. 1386 litres)"
-    ],
-    [
-      "External basket",
-      "540 × 1090 × 1540 h mm"
-    ],
-    [
-      "Line footprint",
-      "19500 × 7000 mm"
-    ],
-    [
-      "Width options",
-      "Supplied in two overall widths. The tank size is the same in both."
-    ]
-  ],
-  "stations": [
-    {
-      "pos": "C",
-      "station": "Motorised loading conveyor",
-      "notes": "Infeed load station"
-    },
-    {
-      "pos": "1",
-      "station": "Ultrasonic cleaning tank with basket agitation",
-      "notes": "Primary ultrasonic wash"
-    },
-    {
-      "pos": "2",
-      "station": "Rinsing tank with turbulent flow",
-      "notes": "Turbulent flow rinse"
-    },
-    {
-      "pos": "3",
-      "station": "Ultrasonic cleaning tank with basket agitation",
-      "notes": "Secondary ultrasonic wash"
-    },
-    {
-      "pos": "4",
-      "station": "Rinsing tank with turbulent flow",
-      "notes": "Intermediate cascade rinse"
-    },
-    {
-      "pos": "5",
-      "station": "Ultrasonic cleaning tank with basket agitation",
-      "notes": "Final precision ultrasonic wash"
-    },
-    {
-      "pos": "6",
-      "station": "Rinsing tank with turbulent flow",
-      "notes": "Cascade flow rinse"
-    },
-    {
-      "pos": "7",
-      "station": "DI water ultrasonic rinsing tank",
-      "notes": "Demineralised ultrasonic rinse"
-    },
-    {
-      "pos": "8 – 9",
-      "station": "DI water rinsing tank with slow drain system",
-      "notes": "Cascades back to tank 7"
-    },
-    {
-      "pos": "10 – 14",
-      "station": "Hot air tunnel dryer",
-      "notes": "5 drying positions"
-    },
-    {
-      "pos": "S",
-      "station": "Motorised unloading conveyor",
-      "notes": "Outfeed unload station"
-    }
-  ],
-  "ancillary": [
-    "General control board",
-    "WT1 buffer tank, filter holder and pump",
-    "Two pump and filter groups",
-    "DEMI 100/4 demineralised water plant",
-    "Exhaust fan",
-    "CS1 loading and unloading operators zone"
-  ]
-},
+              "title": "PLURITANK 1400 — Multi-Stage Process Line Layout",
+              "reference": "Novatec GA drawing 5298.3.0-26CO",
+              "dimensions": [
+                [
+                  "Internal tank",
+                  "700 × 1200 × 1650 h mm (approx. 1386 litres)"
+                ],
+                [
+                  "External basket",
+                  "540 × 1090 × 1540 h mm"
+                ],
+                [
+                  "Line footprint",
+                  "19500 × 7000 mm"
+                ],
+                [
+                  "Width options",
+                  "Supplied in two overall widths. The tank size is the same in both."
+                ]
+              ],
+              "stations": [
+                {
+                  "pos": "C",
+                  "station": "Motorised loading conveyor",
+                  "notes": "Infeed load station"
+                },
+                {
+                  "pos": "1",
+                  "station": "Ultrasonic cleaning tank with basket agitation",
+                  "notes": "Primary ultrasonic wash"
+                },
+                {
+                  "pos": "2",
+                  "station": "Rinsing tank with turbulent flow",
+                  "notes": "Turbulent flow rinse"
+                },
+                {
+                  "pos": "3",
+                  "station": "Ultrasonic cleaning tank with basket agitation",
+                  "notes": "Secondary ultrasonic wash"
+                },
+                {
+                  "pos": "4",
+                  "station": "Rinsing tank with turbulent flow",
+                  "notes": "Intermediate cascade rinse"
+                },
+                {
+                  "pos": "5",
+                  "station": "Ultrasonic cleaning tank with basket agitation",
+                  "notes": "Final precision ultrasonic wash"
+                },
+                {
+                  "pos": "6",
+                  "station": "Rinsing tank with turbulent flow",
+                  "notes": "Cascade flow rinse"
+                },
+                {
+                  "pos": "7",
+                  "station": "DI water ultrasonic rinsing tank",
+                  "notes": "Demineralised ultrasonic rinse"
+                },
+                {
+                  "pos": "8 – 9",
+                  "station": "DI water rinsing tank with slow drain system",
+                  "notes": "Cascades back to tank 7"
+                },
+                {
+                  "pos": "10 – 14",
+                  "station": "Hot air tunnel dryer",
+                  "notes": "5 drying positions"
+                },
+                {
+                  "pos": "S",
+                  "station": "Motorised unloading conveyor",
+                  "notes": "Outfeed unload station"
+                }
+              ],
+              "ancillary": [
+                "General control board",
+                "WT1 buffer tank, filter holder and pump",
+                "Two pump and filter groups",
+                "DEMI 100/4 demineralised water plant",
+                "Exhaust fan",
+                "CS1 loading and unloading operators zone"
+              ]
+            },
             "photo": "nm_pluri",
             "photoAlt": "Novatec PLURITANK automatic ultrasonic cleaning system",
             "gallery": [
@@ -1516,54 +1495,15 @@
               ]
             ],
             "name": "PLURITANK multi-tank ultrasonic cleaning line",
-            "short": "Configurable modular multi-tank range from 50 to 1,500 litres, up to 14 process stations.",
-            "desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules — ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying — configured to the exact volume and stages the job needs. Range from 50 to 1,500 litres per tank with up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
+            "short": "Serial and large-format parts, up to 12 stages.",
+            "desc": "PLURITANK is Novatec's modular multi-chamber ultrasonic cleaning line. Stages for ultrasonic cleaning, rinsing and drying are combined to suit the part, the contamination and the required cleanliness, with up to 12 stages per line.",
             "features": [
               "Modular, up to 12 stages, with room for future hardware and software upgrades",
               "Multi-frequency ultrasonic groups",
               "User-friendly HMI with multiple programs",
               "Data exchange and traceability",
               "AISI 304/316 stainless construction",
-              "Factory acceptance test with your sample parts",
-              "Modular tank volumes from 50 to 1,500 litres with automatic basket handling"
-            ],
-            "specs": [
-              [
-                "Platform",
-                "PLURITANK modular multi-tank ultrasonic cleaning line"
-              ],
-              [
-                "Tank volume range",
-                "Configurable from 50 to 1,500 litres per tank (built to order)"
-              ],
-              [
-                "Process stations",
-                "Up to 14 process stations, custom configurable"
-              ],
-              [
-                "Process stages",
-                "Ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying"
-              ],
-              [
-                "Basket handling",
-                "Automatic handling from 10 kg to 300 kg and above"
-              ],
-              [
-                "Construction",
-                "AISI 304/316 stainless steel throughout"
-              ],
-              [
-                "Control",
-                "PLC and HMI touch control with multi-recipe programming"
-              ],
-              [
-                "Configuration",
-                "Custom built to job volume and process requirement (no fixed catalogue model numbers)"
-              ],
-              [
-                "Typical applications",
-                "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing"
-              ]
+              "Factory acceptance test with your sample parts"
             ],
             "process": [
               "Ultrasonic immersion cleaning",
@@ -1672,36 +1612,20 @@
                 "notes": "12 process stations",
                 "source": "Novatec GA drawing 5183.4.0-24CO"
               }
-            ]
+            ],
+            "family": "PLURITANK",
+            "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
+            "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
           },
           {
             "id": "pre-pvd",
             "name": "PLURITANK pre-treatment line for PVD coating",
-            "short": "Surface preparation before PVD, CVD and DLC (50 to 1,500 L).",
-            "desc": "A PLURITANK line configured to prepare tools and components for coating. Configurable from 50 to 1,500 litres per tank. Ultrasonic cleaning followed by rinsing and drying removes residues so the coating bonds reliably, batch after batch.",
+            "short": "Surface preparation before PVD, CVD and DLC.",
+            "desc": "A PLURITANK line configured to prepare tools and components for coating. Ultrasonic cleaning followed by rinsing and drying removes residues so the coating bonds reliably, batch after batch.",
             "features": [
-              "Reproducible pre-coating cleanliness for maximum film adhesion",
-              "Multi-stage ultrasonic cleaning, cascade rinsing and vacuum drying cycles",
-              "Matched to coating plant batch capacity (50 to 1,500 litres)",
-              "Stain-free, residue-free surface preparation before vacuum treatment"
-            ],
-            "specs": [
-              [
-                "Platform",
-                "PLURITANK modular multi-tank line"
-              ],
-              [
-                "Tank volume",
-                "50 to 1,500 litres per station (configured to job)"
-              ],
-              [
-                "Process stages",
-                "Ultrasonic cleaning, cascade DI rinsing, vacuum drying"
-              ],
-              [
-                "Typical applications",
-                "Cleaning tools and components before PVD coating, CVD, and DLC"
-              ]
+              "Reproducible pre-coating cleanliness",
+              "Rinsing and drying cycles",
+              "Matched to coating plant capacity"
             ],
             "process": [
               "Pre-PVD cleaning",
@@ -1805,46 +1729,22 @@
                 "notes": "12 process stations",
                 "source": "Novatec GA drawing 5183.4.0-24CO"
               }
-            ]
+            ],
+            "family": "PLURITANK",
+            "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
+            "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
           },
           {
             "id": "cleanroom",
             "photo": "nm_implants",
             "photoAlt": "Novatec cleaning line for cleanroom use",
             "name": "Cleanroom precision cleaning line",
-            "short": "Low-particle cleaning for semiconductor and medical (50 to 1,500 L).",
-            "desc": "Precision cleaning for semiconductor hardware, vacuum-chamber parts and medical devices. Configurable from 50 to 1,500 litres. Cleanroom Class 7 design is available, with ultrapure water rinsing and documentation for validated processes.",
+            "short": "Low-particle cleaning for semiconductor and medical.",
+            "desc": "Precision cleaning for semiconductor hardware, vacuum-chamber parts and medical devices. Cleanroom class 7 design is available, with ultrapure water rinsing and documentation for validated processes.",
             "features": [
               "Cleanroom class 7 design available",
-              "Ultrapure water rinsing (18 MΩ·cm)",
-              "IQ/OQ/PQ documentation for medical and high-purity applications",
-              "Final cleaning before cleanroom packaging and sterilisation"
-            ],
-            "specs": [
-              [
-                "Platform",
-                "PLURITANK cleanroom-configured multi-tank line"
-              ],
-              [
-                "Tank volume range",
-                "50 to 1,500 litres per station"
-              ],
-              [
-                "Cleanroom class",
-                "Class 7 (10,000) available"
-              ],
-              [
-                "Water",
-                "Ultrapure (18 MΩ·cm)"
-              ],
-              [
-                "Validation",
-                "IQ/OQ/PQ documentation available"
-              ],
-              [
-                "Typical applications",
-                "Final cleaning before sterilisation and packing; semiconductor & medical components"
-              ]
+              "Ultrapure water rinsing",
+              "IQ/OQ/PQ documentation for medical"
             ],
             "process": [
               "Precision cleaning",
@@ -1949,12 +1849,16 @@
                 "notes": "12 process stations",
                 "source": "Novatec GA drawing 5183.4.0-24CO"
               }
-            ]
+            ],
+            "family": "PLURITANK",
+            "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
+            "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
           }
         ]
       },
       {
         "id": "2crd",
+        "family": "2CRD",
         "photo": "crd_green",
         "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
         "name": "Vacuum precision cleaning",
@@ -1977,49 +1881,14 @@
               ]
             ],
             "name": "2CRD vacuum precision cleaning system",
-            "short": "One-chamber system for precision cleaning under vacuum.",
-            "desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
+            "short": "Cleaning and vacuum drying in one chamber.",
+            "desc": "The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket. It is especially suited to blind and tapped holes, porous-coated surfaces and complex parts carrying polishing pastes and oils, including medical implants between production steps. Models include the 2CRD400, and the range comes in 8 sizes.",
             "features": [
               "Single chamber: clean, rinse and vacuum dry",
               "Ultrasonic cleaning combined with vacuum processes",
               "Cleans blind and tapped holes and porous-coated surfaces",
-              "Rotating and tilting basket options (-ROT)",
-              "Compact footprint, 8 standard sizes plus custom variants up to 2CRD1700",
-              "Three filtered buffer tanks for closed-loop fluid management"
-            ],
-            "specs": [
-              [
-                "Chamber",
-                "One chamber under vacuum, rotating basket"
-              ],
-              [
-                "Buffer tanks",
-                "3 filtered buffer tanks"
-              ],
-              [
-                "Movement",
-                "Available static, or with rotation and tilting (-ROT)"
-              ],
-              [
-                "Standard variants",
-                "8 models: 2CRD-100, 200, 400, 800 (Static & -ROT)"
-              ],
-              [
-                "Extended sizes",
-                "Built to order up to 2CRD1700"
-              ],
-              [
-                "Process",
-                "Cleaning, rinsing and vacuum drying in one chamber"
-              ],
-              [
-                "Ultrasonics",
-                "Multi-frequency with vacuum assistance"
-              ],
-              [
-                "Typical applications",
-                "Blind and tapped holes, porous coated surfaces and complex geometries. Removing polishing pastes and oils"
-              ]
+              "Rotating basket",
+              "Compact footprint, 8 sizes"
             ],
             "process": [
               "Blind and tapped holes",
@@ -2118,7 +1987,10 @@
               "semi",
               "watch",
               "auto"
-            ]
+            ],
+            "family": "2CRD",
+            "family_desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
+            "typical_use": "Blind and tapped holes, porous coated surfaces and complex geometries. Removing polishing pastes and oils."
           }
         ]
       },
@@ -2133,6 +2005,7 @@
         "machines": [
           {
             "id": "ipc",
+            "family": "IPC - In-process cleaning",
             "photo": "nm_implants",
             "photoAlt": "Novatec IPC in-process cleaning system for implants",
             "gallery": [
@@ -2147,34 +2020,15 @@
             ],
             "name": "IPC in-process cleaning",
             "tag": "One-chamber or in-line",
-            "short": "Cleaning between production processes (2CRD or PLURITANK).",
-            "desc": "Cleaning between production processes. Supplied either as a one-chamber system (2CRD) or as an in-line system (PLURITANK).",
+            "short": "Cleaning implants between production steps.",
+            "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Novatec offers it as a one-chamber 2CRD vacuum system for blind holes, porous coatings and complex shapes, or as an in-line PLURITANK system for higher volumes and a wider mix of parts.",
             "features": [
               "One-chamber 2CRD vacuum systems or in-line PLURITANK systems",
               "Ultrasonic cleaning combined with vacuum processes",
               "Handles blind and tapped holes and porous-coated surfaces",
               "Multi-frequency ultrasonic groups",
               "Data exchange and traceability",
-              "Modular for future hardware and software upgrades",
-              "Removes polishing pastes, machining oils and particulate residues"
-            ],
-            "specs": [
-              [
-                "Execution",
-                "One-chamber system (2CRD) or in-line system (PLURITANK)"
-              ],
-              [
-                "Process",
-                "Degreasing, ultrasonic cleaning, rinsing, vacuum drying"
-              ],
-              [
-                "Traceability",
-                "Data exchange and logging"
-              ],
-              [
-                "Typical applications",
-                "Medical implants between manufacturing steps"
-              ]
+              "Modular for future hardware and software upgrades"
             ],
             "process": [
               "Medical implants between manufacturing steps",
@@ -2268,10 +2122,13 @@
                 "notes": "Built to order, above the standard range. Ultrasonic 9600 / 19200 W.",
                 "source": "Novatec technical description"
               }
-            ]
+            ],
+            "family_desc": "Cleaning between production processes. Supplied either as a one-chamber system (2CRD) or as an in-line system (PLURITANK).",
+            "typical_use": "Medical implants between manufacturing steps."
           },
           {
             "id": "fcps",
+            "family": "FCS / FCPS",
             "photo": "nm_fpi",
             "photoAlt": "Novatec final cleaning line with unload air lock to cleanroom",
             "gallery": [
@@ -2289,39 +2146,16 @@
               ]
             ],
             "name": "FCS / FCPS final cleaning and passivation",
-            "tag": "Cleanroom air lock",
-            "short": "Final cleaning, or combined final cleaning and passivation, into cleanroom.",
-            "desc": "Final cleaning, or combined final cleaning and passivation, with an unload air lock into the cleanroom.",
+            "tag": "Cleanroom unload",
+            "short": "Final cleaning, with optional passivation, into the cleanroom.",
+            "desc": "After in-process cleaning, implants need a final clean to remove dust and handling residues before sterilisation and packaging. The FCS (final cleaning system) or FCPS (combined final cleaning and passivation system) is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.",
             "features": [
-              "Final cleaning, or combined final cleaning and passivation (FCS / FCPS)",
+              "Final cleaning, or combined final cleaning and passivation",
               "Unload air lock directly into the cleanroom",
               "Support with final qualification (IQ, OQ)",
-              "Material and calibration certificates included",
+              "Material and calibration certificates",
               "Multi-frequency ultrasonic groups",
-              "Data exchange and traceability",
-              "Removes particulate and bioburden before sterilisation"
-            ],
-            "specs": [
-              [
-                "Variants",
-                "FCS (final cleaning) / FCPS (final cleaning + passivation)"
-              ],
-              [
-                "Cleanroom interface",
-                "Unload air lock into cleanroom"
-              ],
-              [
-                "Validation",
-                "IQ / OQ qualification support"
-              ],
-              [
-                "Documentation",
-                "Material and calibration certificates"
-              ],
-              [
-                "Typical applications",
-                "Removing dust and handling residues before sterilisation and packing in a cleanroom"
-              ]
+              "Data exchange and traceability"
             ],
             "process": [
               "Final cleaning before sterilisation and packing",
@@ -2425,35 +2259,24 @@
                 "notes": "12 process stations",
                 "source": "Novatec GA drawing 5183.4.0-24CO"
               }
-            ]
+            ],
+            "family_desc": "Final cleaning, or combined final cleaning and passivation, with an unload air lock into the cleanroom.",
+            "typical_use": "Removing dust and handling residues before sterilisation and packing in a cleanroom."
           },
           {
             "id": "pfc",
+            "family": "PFC",
             "photo": "nm_implants",
             "photoAlt": "Novatec PFC spray cleaning system",
             "name": "PFC spray cleaning system",
             "tag": "Spray cleaning",
             "short": "Spray cleaning system with unload air lock to cleanroom.",
-            "desc": "Spray cleaning system with unload air lock to cleanroom.",
+            "desc": "The PFC is Novatec's dedicated aqueous spray cleaning module equipped with high-pressure spray manifolds, multi-stage fine filtration, and an automated cleanroom unload air lock. Specially designed for final washing of medical implants and delicate components without immersion bath carryover.",
             "features": [
               "High-impact spray cleaning system",
               "Unload air lock directly into the cleanroom",
               "Integrated filtration and cascade rinsing",
               "Dedicated for medical implant lines"
-            ],
-            "specs": [
-              [
-                "Technology",
-                "Aqueous spray cleaning with filtration"
-              ],
-              [
-                "Cleanroom interface",
-                "Unload air lock to cleanroom"
-              ],
-              [
-                "Typical applications",
-                "Medical implant lines"
-              ]
             ],
             "process": [
               "Medical implant lines",
@@ -2464,10 +2287,13 @@
             "k": "pfc spray cleaning system air lock cleanroom medical implant lines",
             "i": [
               "medical"
-            ]
+            ],
+            "family_desc": "Spray cleaning system with unload air lock to cleanroom.",
+            "typical_use": "Medical implant lines."
           },
           {
             "id": "fpi",
+            "family": "FPI - Fluorescent penetrant inspection",
             "photo": "nm_fpi",
             "photoAlt": "3D layout of a Novatec PLURITANK FPI line",
             "gallery": [
@@ -2485,32 +2311,14 @@
               ]
             ],
             "name": "FPI fluorescent penetrant inspection line",
-            "tag": "PLURITANK FPI",
-            "short": "Combined cleaning, preparation and FPI treatment in one line.",
-            "desc": "Combined ultrasonic cleaning, surface preparation and FPI treatment in one automated line, built on the PLURITANK platform.",
+            "tag": "PLURITANK",
+            "short": "Automated cleaning and crack detection.",
+            "desc": "An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process. It is used to validate medical implants during manufacturing by revealing flaws, cracks and signs of fatigue, with automated part transfer for high throughput and a stable process.",
             "features": [
               "Cleaning, preparation and FPI in one automated line",
               "Reveals flaws, cracks and fatigue signs",
-              "Automated part transfer for high throughput and repeatability",
-              "Custom-designed to customer specification and ASTM standards"
-            ],
-            "specs": [
-              [
-                "Platform",
-                "PLURITANK automated line"
-              ],
-              [
-                "Inspection process",
-                "Combined ultrasonic cleaning, preparation and FPI inspection"
-              ],
-              [
-                "Detection",
-                "Fluorescent penetrant, UV inspection for crack and flaw detection"
-              ],
-              [
-                "Typical applications",
-                "Revealing flaws, cracks and fatigue signs on medical implants"
-              ]
+              "Automated part transfer for high throughput",
+              "Custom-designed to the customer's specification"
             ],
             "process": [
               "Revealing flaws, cracks and fatigue signs",
@@ -2522,36 +2330,25 @@
             "i": [
               "medical",
               "aero"
-            ]
+            ],
+            "family_desc": "Combined ultrasonic cleaning, surface preparation and FPI treatment in one automated line, built on the PLURITANK platform.",
+            "typical_use": "Revealing flaws, cracks and fatigue signs on medical implants."
           },
           {
             "id": "qvs-brc",
+            "family": "QVS / BRC",
             "photo": "nm_implants",
             "photoAlt": "Novatec QVS and BRC automation modules",
             "name": "QVS / BRC quality verification & basket return conveyor",
             "tag": "Automation",
             "short": "Quality verification stations and basket return air lock conveyor.",
-            "desc": "Quality verification stations, and basket return air lock conveyor. The modules that link a combined medical line together.",
+            "desc": "Quality Verification Stations (QVS) combined with Basket Return Conveyor (BRC) air locks. These specialised transfer, inspection, and air lock modules link individual cleaning, passivation, and cleanroom packaging stations into a seamless, contamination-free automated medical implant production loop.",
             "features": [
               "QVS: Quality verification stations",
               "BRC: Basket return air lock conveyor",
               "The modules that link a combined medical line together",
               "Part of a full automatic medical implant line",
               "Automated barcode/RFID tracking and data exchange"
-            ],
-            "specs": [
-              [
-                "Components",
-                "QVS (Quality verification stations) & BRC (Basket return air lock conveyor)"
-              ],
-              [
-                "Function",
-                "Links combined medical cleaning and passivation lines into one continuous automated system"
-              ],
-              [
-                "Typical applications",
-                "Part of a full automatic medical implant line"
-              ]
             ],
             "process": [
               "Full automatic medical implant lines",
@@ -2562,39 +2359,24 @@
             "k": "qvs brc quality verification basket return air lock conveyor medical implant line",
             "i": [
               "medical"
-            ]
+            ],
+            "family_desc": "Quality verification stations, and basket return air lock conveyor. The modules that link a combined medical line together.",
+            "typical_use": "Part of a full automatic medical implant line."
           },
           {
             "id": "ep",
+            "family": "Electropolishing (EP)",
             "photo": "nm_implants",
             "photoAlt": "Novatec PLURITANK electropolishing line",
             "name": "Electropolishing line (EP)",
             "tag": "PLURITANK EP",
             "short": "Electropolishing line built on PLURITANK platform.",
-            "desc": "An electropolishing line built on the PLURITANK platform, adding an electropolish tank plus neutralisation and recovery rinsing.",
+            "desc": "The Novatec Electropolishing (EP) line is a multi-stage automated treatment line built on the PLURITANK platform. It incorporates dedicated acid electropolishing baths, chemical neutralisation, cascade recovery rinse tanks, and hot-air drying to deliver mirror-smooth, passivated finishes on stainless steel and titanium medical implants.",
             "features": [
               "Electropolishing line built on the PLURITANK platform",
               "Adds dedicated electropolish tank plus neutralisation and recovery rinsing",
               "Multi-stage cascade DI water rinsing and drying",
               "Delivers burr-free, passivated, micro-smooth implant surfaces"
-            ],
-            "specs": [
-              [
-                "Platform",
-                "PLURITANK platform with electropolish station"
-              ],
-              [
-                "Process tanks",
-                "Electropolish bath, neutralisation tank, cascade recovery rinsing, drying"
-              ],
-              [
-                "Materials",
-                "Stainless steel and titanium medical implants"
-              ],
-              [
-                "Typical applications",
-                "Stainless steel and titanium medical implants"
-              ]
             ],
             "process": [
               "Stainless steel medical implants",
@@ -2653,10 +2435,13 @@
                 "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
                 "source": "Novatec GA drawing 5298.3.0-26CO"
               }
-            ]
+            ],
+            "family_desc": "An electropolishing line built on the PLURITANK platform, adding an electropolish tank plus neutralisation and recovery rinsing.",
+            "typical_use": "Stainless steel and titanium medical implants."
           },
           {
             "id": "combined",
+            "family": "Combined medical lines",
             "photo": "nm_implants",
             "photoAlt": "Layout of a combined Novatec implant cleaning project",
             "gallery": [
@@ -2666,39 +2451,17 @@
               ]
             ],
             "name": "Custom combined implant lines, built to the customer's specification",
-            "tag": "Custom engineered",
-            "short": "Complete automated implant cleaning plant built to customer specification.",
-            "desc": "For larger projects Novatec designs the whole cleaning area to the customer's specification, linking the individual systems with conveyors and full automatic management. A typical line includes automatic basket loading with scanners and RFID, IPC one-chamber vacuum systems, quality verification stations (QVS), a combined final cleaning and passivation system (FCPS), spray cleaning (PFC) with an unload air lock, and a basket return conveyor (BRC), all with data exchange for traceability.",
+            "tag": "All-in project",
+            "short": "Complete, automated implant cleaning plant.",
+            "desc": "For larger projects Novatec designs the whole cleaning area to the customer's URS, linking the individual systems with conveyors and full automatic management. A typical line includes automatic basket loading with scanners and RFID, IPC one-chamber vacuum systems, quality verification stations, a combined final cleaning and passivation system, spray cleaning with an unload air lock, and a basket return conveyor, all with data exchange for traceability.",
             "features": [
               "Automatic basket loading station with scanners and RFID",
-              "IPC one-chamber vacuum systems (2CRD)",
+              "IPC one-chamber vacuum systems",
               "QVS quality verification stations",
               "FCPS final cleaning and passivation with air lock to cleanroom",
               "PFC spray cleaning system with unload air lock",
               "BRC basket return air-lock conveyor",
               "Full automatic management and data exchange for traceability"
-            ],
-            "specs": [
-              [
-                "Scope",
-                "Complete cleaning area, built to customer specification"
-              ],
-              [
-                "Components",
-                "Basket loading, IPC, QVS, FCPS, PFC, BRC"
-              ],
-              [
-                "Automation",
-                "Full automatic with conveyors and cleanroom air locks"
-              ],
-              [
-                "Traceability",
-                "Data exchange and batch logging"
-              ],
-              [
-                "Typical applications",
-                "Turnkey automated plants for orthopaedic & medical implant manufacturing"
-              ]
             ],
             "process": [
               "In-process cleaning",
@@ -2802,12 +2565,15 @@
                 "notes": "12 process stations",
                 "source": "Novatec GA drawing 5183.4.0-24CO"
               }
-            ]
+            ],
+            "family_desc": "Full automatic turnkey medical implant cleaning plants built to customer User Requirement Specification (URS), integrating basket loading, IPC, QVS, FCPS, PFC, and BRC with cleanroom air locks.",
+            "typical_use": "Turnkey automated plants for orthopaedic & medical implant manufacturing."
           }
         ]
       },
       {
         "id": "components",
+        "family": "Ultrasonic components",
         "photo": "nov_gen",
         "photoAlt": "Novatec ultrasonic generators",
         "name": "Components",
@@ -2826,32 +2592,11 @@
               ]
             ],
             "name": "Ultrasonic generators and transducers",
-            "short": "Generators and transducers, multi-frequency ultrasonic groups.",
-            "desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
+            "short": "For building or upgrading cleaning tanks.",
+            "desc": "Ultrasonic generators and transducers for building new cleaning tanks or upgrading existing ones.",
             "features": [
               "Generators and transducers",
-              "For new tanks or retrofits",
-              "Multi-frequency ultrasonic groups",
-              "Digital generators with automatic frequency tuning",
-              "Supplied with the lines, or separately"
-            ],
-            "specs": [
-              [
-                "Scope",
-                "Digital ultrasonic generators and immersible transducers"
-              ],
-              [
-                "Frequencies",
-                "Multi-frequency ultrasonic groups"
-              ],
-              [
-                "Supply options",
-                "Supplied with the lines, or separately for new tanks or retrofits"
-              ],
-              [
-                "Typical applications",
-                "Supplied with the lines, or separately"
-              ]
+              "For new tanks or retrofits"
             ],
             "process": [
               "Ultrasonic cleaning",
@@ -2860,37 +2605,19 @@
             ],
             "url": "https://novatec.it/en/ultrasonic-components",
             "k": "generators transducers ultrasonic components multi-frequency",
-            "i": []
+            "i": [],
+            "family": "Ultrasonic components",
+            "family_desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
+            "typical_use": "Supplied with the lines, or separately."
           },
           {
             "id": "plt60v",
             "name": "PLT 60V two-chamber pressure-cycle unit",
-            "short": "Two-chamber pressure-cycle unit for internal channels.",
-            "desc": "The PLT 60V two-chamber pressure-cycle unit uses pressure cycling to clean internal channels and cavities that ultrasound alone struggles to reach.",
+            "short": "Pressure-change cleaning for internal channels.",
+            "desc": "The PLT 60V uses pressure cycling to clean internal channels and cavities that ultrasound alone struggles to reach.",
             "features": [
               "Pressure-cycle cleaning",
-              "Reaches internal channels and cavities that ultrasound alone struggles to reach",
-              "Two-chamber pressure-cycle unit",
-              "Effective on complex hydraulic blocks and medical cannulations",
-              "Supplied with the lines, or separately"
-            ],
-            "specs": [
-              [
-                "Chamber configuration",
-                "Two-chamber pressure-cycle unit (60 L)"
-              ],
-              [
-                "Process",
-                "Pressure-change cleaning for internal channels"
-              ],
-              [
-                "Supply options",
-                "Supplied with the lines, or separately"
-              ],
-              [
-                "Typical applications",
-                "Internal channels, cavities and complex geometries"
-              ]
+              "Reaches internal channels and cavities"
             ],
             "process": [
               "Pressure-change cleaning",
@@ -2913,7 +2640,10 @@
             "i": [
               "auto",
               "medical"
-            ]
+            ],
+            "family": "Ultrasonic components",
+            "family_desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
+            "typical_use": "Supplied with the lines, or separately."
           }
         ]
       }
@@ -2940,18 +2670,18 @@
         "machines": [
           {
             "id": "gfour",
+            "series": "GFOUR",
             "photo": "hs_pvd",
             "photoAlt": "Huasheng GFOUR hybrid coating machine",
             "name": "GFOUR 4th-generation hybrid coating machine",
             "tag": "Hybrid PVD",
-            "short": "Controllable plasma and thick coatings up to 30 µm.",
-            "desc": "4th-generation hybrid coating platform with four targets, controllable plasma, adjustable square wave and ionisation rate. Coating thickness 0.5–30 µm.",
+            "short": "4th-gen hybrid: 4 targets, controllable plasma, square wave.",
+            "desc": "The GFOUR is Huasheng's 4th-generation hybrid coating machine featuring four independent target stations, controllable plasma density, and adjustable square-wave pulse bias. It allows simultaneous or sequential deposition of multi-layer, gradient, and nanocomposite coating architectures for high-end cutting tools and demanding mechanical components.",
             "features": [
-              "Smooth, droplet-free surface finish",
-              "Excellent film adhesion",
-              "2 µm/h high deposition rate",
-              "Thick coatings up to 30 µm without re-sharpening",
-              "Four targets with controllable plasma and adjustable square wave"
+              "Smooth, droplet-free surface",
+              "Excellent adhesion",
+              "2 µm/h deposition",
+              "Thick coatings up to 30 µm"
             ],
             "specs": [
               [
@@ -3014,22 +2744,25 @@
               "tools",
               "auto",
               "dies"
-            ]
+            ],
+            "series_desc": "4th-generation hybrid coating platform with four targets, controllable plasma, adjustable square wave and ionisation rate. Coating thickness 0.5-30 µm.",
+            "typical_applications": "Indexable inserts, small cutting tools, applications needing thick coatings without re-sharpening."
           },
           {
             "id": "md200",
+            "series": "MD",
             "photo": "hs_md",
             "photoAlt": "Huasheng MD200 arc coating machine",
             "name": "MD200 arc coating machine",
             "tag": "Arc ion plating",
-            "short": "Compact arc coater for small-batch cutting-tool production.",
-            "desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi-arc ion plating. Four sizes from MD200 up to MD1500.",
+            "short": "Compact arc coater for small-batch and regrinding shops.",
+            "desc": "The MD200 is Huasheng's compact arc coating machine engineered for small-batch tool manufacturing, R&D trials, and fast-turnaround tool regrinding shops. Utilising lateral etching and advanced multi-arc ion plating, it delivers industrial-grade TiAlN and AlCrN coatings on cutting tools with minimal power consumption and a compact footprint.",
             "features": [
-              "High deposition rate and high ionisation rate",
-              "Ultra-high impact resistance of coatings",
-              "Fully automatic operation with lateral etching",
-              "MD800 PLUS and MD1500 accommodate hobbing tools (D80 × L150)",
-              "MD800 PLUS sits at the centre of the turnkey coating plant; MD1500 handles 72 hobbing tools and 1,000 kg/batch"
+              "High deposition rate",
+              "High ionisation rate",
+              "Ultra-high impact resistance",
+              "Fully automatic",
+              "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
             ],
             "specs": [
               [
@@ -3118,22 +2851,25 @@
             "k": "md200 arc aip pvd tialn alcrn inserts drills",
             "i": [
               "tools"
-            ]
+            ],
+            "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
+            "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
           },
           {
             "id": "md500",
+            "series": "MD",
             "photo": "hs_md",
             "photoAlt": "Huasheng MD500 arc coating machine",
             "name": "MD500 arc coating machine",
             "tag": "Arc ion plating",
             "short": "Mid-size arc coater for serial cutting-tool production.",
-            "desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi-arc ion plating. Four sizes from MD200 up to MD1500.",
+            "desc": "The MD500 is Huasheng's mid-size arc coating machine designed for flexible medium-volume cutting tool and mould production. It incorporates Huasheng's proprietary lateral etching technology and multi-arc sources to coat drills, milling cutters, and inserts with outstanding uniformity and adhesion.",
             "features": [
-              "High deposition rate and high ionisation rate",
-              "Ultra-high impact resistance of coatings",
-              "Fully automatic operation with lateral etching",
-              "MD800 PLUS and MD1500 accommodate hobbing tools (D80 × L150)",
-              "MD800 PLUS sits at the centre of the turnkey coating plant; MD1500 handles 72 hobbing tools and 1,000 kg/batch"
+              "High deposition rate",
+              "High ionisation rate",
+              "Ultra-high impact resistance",
+              "Fully automatic",
+              "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
             ],
             "specs": [
               [
@@ -3223,10 +2959,13 @@
             "i": [
               "tools",
               "dies"
-            ]
+            ],
+            "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
+            "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
           },
           {
             "id": "md800",
+            "series": "MD",
             "name": "MD800 PLUS arc coating machine",
             "tag": "Arc coating",
             "photo": "hs_md",
@@ -3237,59 +2976,27 @@
                 "Huasheng MD series coating machine"
               ]
             ],
-            "short": "Centre of turnkey coating plant, takes hobbing tools (D80 × L150).",
-            "desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi-arc ion plating. Four sizes from MD200 up to MD1500.",
+            "short": "High-rate arc coater for tool coating production.",
+            "desc": "The MD800 PLUS is the arc coating machine at the heart of Huasheng's turnkey tool-coating plant. Low-voltage, high-current arc discharge evaporates and ionises the target material, which is deposited on the tools under an electric field, giving a high deposition rate and strong coating adhesion. Configured for high-throughput production of inserts, end mills, drills, and hob cutters.",
             "features": [
-              "High deposition rate and high ionisation rate",
-              "Ultra-high impact resistance of coatings",
-              "Fully automatic operation with lateral etching",
-              "MD800 PLUS and MD1500 accommodate hobbing tools (D80 × L150)",
-              "MD800 PLUS sits at the centre of the turnkey coating plant; MD1500 handles 72 hobbing tools and 1,000 kg/batch"
+              "High deposition rate",
+              "High ionisation rate",
+              "Ultra-high impact resistance",
+              "Fully automatic",
+              "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
             ],
             "specs": [
               [
                 "Technology",
-                "Arc ion plating (AIP)"
-              ],
-              [
-                "Operation",
-                "Fully automatic PLC + touch HMI"
-              ],
-              [
-                "Coating technology",
-                "Arc ion plating (8 arc sources)"
-              ],
-              [
-                "Chamber volume",
-                "1.0 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ650 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "600 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "3750 × 2400 × 2500 mm"
+                "Arc coating"
               ],
               [
                 "Capacity",
-                "10 trees (12,000 inserts / 3,600 tools / 30 hobs)"
+                "12,000 pcs per batch (APMT1135 inserts)"
               ],
               [
-                "Max. load",
-                "500 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "AlTiN 6–8 h"
-              ],
-              [
-                "Typical applications",
-                "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
+                "Operation",
+                "Fully automatic"
               ]
             ],
             "process": [
@@ -3342,10 +3049,13 @@
               "tools",
               "auto",
               "jobshop"
-            ]
+            ],
+            "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
+            "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
           },
           {
             "id": "md1500",
+            "series": "MD",
             "photo": "hs_md1500",
             "photoAlt": "Line drawing of Huasheng MD1500 layout",
             "gallery": [
@@ -3357,15 +3067,19 @@
             "name": "MD1500 high-capacity vertical arc coating machine",
             "tag": "Heavy production",
             "short": "Production machine for gear cutting tools: 72 hobs and 1000 kg per batch.",
-            "desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi-arc ion plating. Four sizes from MD200 up to MD1500.",
+            "desc": "The MD1500 is Huasheng's heavy-duty, high-capacity vertical arc coating machine engineered for high-volume manufacturing and large-format cutting tools, including long broaches and gear hobs up to 72 pieces or 1,000 kg per batch. Built with heavy-load rotary fixtures and high-power multi-arc cathode arrays.",
             "features": [
-              "High deposition rate and high ionisation rate",
-              "Ultra-high impact resistance of coatings",
-              "Fully automatic operation with lateral etching",
-              "MD800 PLUS and MD1500 accommodate hobbing tools (D80 × L150)",
-              "MD800 PLUS sits at the centre of the turnkey coating plant; MD1500 handles 72 hobbing tools and 1,000 kg/batch"
+              "High deposition rate",
+              "High ionisation rate",
+              "Ultra-high impact resistance",
+              "Fully automatic",
+              "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
             ],
             "specs": [
+              [
+                "Machine",
+                ""
+              ],
               [
                 "Coating technology",
                 "Arc ion plating (16 arc sources, vertical)"
@@ -3403,8 +3117,12 @@
                 "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
               ],
               [
+                "MD1500 utilities",
+                ""
+              ],
+              [
                 "Power supply",
-                "3 × 380/220 V (3L+N+PE), 3 × 300 A, 170 kW, 50/60 Hz"
+                "3 x 380/220 V (3L+N+PE), 3 x 300 A, 170 kW, 50/60 Hz"
               ],
               [
                 "Average consumption",
@@ -3412,33 +3130,34 @@
               ],
               [
                 "Cooling water",
-                "5–5.5 bar at 22–24 °C; max heat discharge about 90 kW; flow 120 L/min; ullage 10 L per batch"
+                "5-5.5 bar at 22-24 °C. Max heat discharge about 90 kW, flow 120 L/min, ullage 10 L per batch."
               ],
               [
                 "Compressed air",
-                "5–6.5 bar"
+                "5 - 6.5 bar"
               ],
               [
                 "Process gas",
-                "Ar / N₂ / H₂ at 1.0–1.2 bar, minimum purity 99.992%"
+                "Ar / N2 / H2 at 1.0 - 1.2 bar, minimum purity 99.992%"
               ],
               [
                 "Gas per batch",
-                "Ar 350 L, N₂ 1100 L, ordinary N₂ 1000 L"
+                "Ar 350 L, N2 1100 L, ordinary N2 1000 L"
               ],
               [
                 "Room required",
-                "8100 × 5500 mm, keeping an 800 mm safety passage around the machine"
+                "8100 x 5500 mm, keeping an 800 mm safety passage around the machine"
               ],
               [
                 "Arc source power supply",
-                "HDP400: 73 V, 12 kW, 0.1–500 Hz, duty cycle 5–95%, 50–300 A"
+                "HDP400: 73 V, 12 kW, 0.1-500 Hz, duty cycle 5-95%, 50-300 A"
               ]
             ],
+            "site_reqs_title": "MD1500 utilities",
             "site_reqs": [
               [
                 "Power supply",
-                "3 × 380/220 V (3L+N+PE), 3 × 300 A, 170 kW, 50/60 Hz"
+                "3 x 380/220 V (3L+N+PE), 3 x 300 A, 170 kW, 50/60 Hz"
               ],
               [
                 "Average consumption",
@@ -3446,27 +3165,27 @@
               ],
               [
                 "Cooling water",
-                "5–5.5 bar at 22–24 °C; max heat discharge about 90 kW; flow 120 L/min; ullage 10 L per batch"
+                "5-5.5 bar at 22-24 °C. Max heat discharge about 90 kW, flow 120 L/min, ullage 10 L per batch."
               ],
               [
                 "Compressed air",
-                "5–6.5 bar"
+                "5 - 6.5 bar"
               ],
               [
                 "Process gas",
-                "Ar / N₂ / H₂ at 1.0–1.2 bar, minimum purity 99.992%"
+                "Ar / N2 / H2 at 1.0 - 1.2 bar, minimum purity 99.992%"
               ],
               [
                 "Gas per batch",
-                "Ar 350 L, N₂ 1100 L, ordinary N₂ 1000 L"
+                "Ar 350 L, N2 1100 L, ordinary N2 1000 L"
               ],
               [
                 "Room required",
-                "8100 × 5500 mm, keeping an 800 mm safety passage around the machine"
+                "8100 x 5500 mm, keeping an 800 mm safety passage around the machine"
               ],
               [
                 "Arc source power supply",
-                "HDP400: 73 V, 12 kW, 0.1–500 Hz, duty cycle 5–95%, 50–300 A"
+                "HDP400: 73 V, 12 kW, 0.1-500 Hz, duty cycle 5-95%, 50-300 A"
               ]
             ],
             "process": [
@@ -3519,19 +3238,22 @@
               "tools",
               "auto",
               "jobshop"
-            ]
+            ],
+            "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
+            "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
           },
           {
             "id": "hd500",
+            "series": "HD",
             "photo": "hs_pvd",
             "photoAlt": "Huasheng HD500 hybrid coating machine",
             "name": "HD500 hybrid arc + HiPIMS coating machine",
             "tag": "Hybrid HiPIMS",
             "short": "30% performance gain over arc alone, for stainless steel & titanium.",
-            "desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
+            "desc": "The HD500 is Huasheng's hybrid arc + HiPIMS coating machine, combining high-ionisation HiPIMS sputtering with high-rate arc deposition in a single chamber. Engineered for precision cutting tools machining difficult materials such as stainless steel, titanium, and aerospace superalloys, delivering up to 30% longer tool life over standard arc coatings.",
             "features": [
               "30% performance gain over arc alone",
-              "Ultra-low friction coefficient",
+              "Ultra-low friction",
               "Optically graded surface finish",
               "HiPIMS surface layer over an arc matrix"
             ],
@@ -3605,19 +3327,22 @@
               "tools",
               "aero",
               "auto"
-            ]
+            ],
+            "series_desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
+            "typical_applications": "Hard-to-machine materials such as stainless steel and titanium alloys."
           },
           {
             "id": "hd800",
+            "series": "HD",
             "photo": "hs_pvd",
             "photoAlt": "Huasheng HD800 hybrid coating machine",
             "name": "HD800 hybrid arc + HiPIMS coating machine",
             "tag": "Hybrid HiPIMS",
             "short": "High-capacity hybrid platform for hard-to-machine materials.",
-            "desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
+            "desc": "The HD800 is Huasheng's high-capacity hybrid coating platform combining high-power impulse magnetron sputtering (HiPIMS) and multi-arc discharge. It produces ultra-dense, droplet-free, ultra-smooth coatings on high-performance cutting tools, forming dies, and precision mechanical components with excellent thermal stability.",
             "features": [
               "30% performance gain over arc alone",
-              "Ultra-low friction coefficient",
+              "Ultra-low friction",
               "Optically graded surface finish",
               "HiPIMS surface layer over an arc matrix"
             ],
@@ -3691,21 +3416,23 @@
               "tools",
               "aero",
               "auto"
-            ]
+            ],
+            "series_desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
+            "typical_applications": "Hard-to-machine materials such as stainless steel and titanium alloys."
           },
           {
             "id": "wcc800",
+            "series": "WCC",
             "photo": "hs_pvd",
             "photoAlt": "Huasheng WCC800 sputtering machine",
             "name": "WCC800 DC + HiPIMS magnetron sputtering machine",
             "tag": "HiPIMS sputtering",
             "short": "Universal wear-resistant coating system using DC + HiPIMS.",
-            "desc": "Universal wear-resistant coating system using DC + HiPIMS magnetron sputtering.",
+            "desc": "The WCC800 is Huasheng's universal wear-resistant coating system combining DC magnetron sputtering and HiPIMS technology. Tailored for precision components, forming tools, and friction-sensitive parts requiring smooth, low-stress, wear-resistant coatings.",
             "features": [
-              "Sputter deposition with zero peeling or delamination",
-              "Modular design for high process flexibility",
-              "Suits small batches and complex geometric shapes",
-              "Deposits WC/C and TiAlN low-friction coatings"
+              "Sputter deposition with no peeling or delamination",
+              "Modular design",
+              "Suits small batches and complex shapes"
             ],
             "specs": [
               [
@@ -3768,21 +3495,23 @@
               "auto",
               "medical",
               "tools"
-            ]
+            ],
+            "series_desc": "Universal wear-resistant coating system using DC + HiPIMS magnetron sputtering.",
+            "typical_applications": "Components and tools, medical instruments, WC/C and TiAlN coatings."
           },
           {
             "id": "broach",
+            "series": "Special",
             "photo": "hs_pvd",
             "photoAlt": "Huasheng dedicated broach coating equipment",
             "name": "Broach coating equipment",
             "tag": "Dedicated vertical arc",
             "short": "Dedicated broach coating equipment with a tall chamber.",
-            "desc": "Dedicated broach coating equipment with a tall chamber for long cutting tools.",
+            "desc": "Dedicated vertical arc coating equipment specially designed by Huasheng for extra-long cutting tools, such as broaches, long drills, and form cutters. Features an extended vertical working zone, multi-zone heating, and distributed arc cathodes for uniform coating thickness along the entire length.",
             "features": [
-              "Effective coating area Φ650 × 2000 mm",
-              "1,000 kg heavy load capacity",
-              "Deposits TiN, AlCrN, AlTiN, AlCrSiN",
-              "Dedicated multi-axis vertical rotation fixtures"
+              "Effective coating area Φ650 x 2000 mm",
+              "1000 kg load",
+              "Coatings TiN, AlCrN, AlTiN, AlCrSiN"
             ],
             "specs": [
               [
@@ -3843,7 +3572,9 @@
             "i": [
               "tools",
               "auto"
-            ]
+            ],
+            "series_desc": "Dedicated broach coating equipment with a tall chamber.",
+            "typical_applications": "Broaches and other long tools."
           }
         ]
       },
@@ -3858,17 +3589,18 @@
         "machines": [
           {
             "id": "tc800plus",
+            "series": "TC",
             "photo": "hs_dlc",
             "photoAlt": "Huasheng TC800PLUS ta-C coating system",
             "name": "TC800PLUS ta-C coating machine",
             "tag": "ta-C DLC",
             "short": "ta-C diamond-like carbon, hardness up to 6000 HV.",
-            "desc": "ta-C diamond-like carbon coating equipment for ultra-hard, low-friction surface layers.",
+            "desc": "The TC800PLUS is Huasheng's dedicated tetrahedral amorphous carbon (ta-C) diamond-like carbon coating system. Operating with high-density plasma deposition, it creates hydrogen-free carbon films with diamond-like hardness up to 6000 HV and an ultra-low friction coefficient, ideal for non-ferrous machining, aluminium cutting tools, and high-wear sliding components.",
             "features": [
-              "Hardness up to 6000 HV",
+              "Up to 6000 HV",
               "Low-temperature deposition under 200 °C",
-              "Fast heat dissipation and anti-adhesion properties",
-              "Arc magnetron hybrid ion plating"
+              "Fast heat dissipation",
+              "Anti-adhesion"
             ],
             "specs": [
               [
@@ -3941,21 +3673,24 @@
               "tools",
               "auto",
               "semi"
-            ]
+            ],
+            "series_desc": "ta-C diamond-like carbon. The -F version adds an S-shaped magnetic filter that blocks large particles.",
+            "typical_applications": "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
           },
           {
             "id": "tc800plus-f",
+            "series": "TC",
             "photo": "hs_dlc",
             "photoAlt": "Huasheng TC800PLUS-F filtered arc ta-C coating system",
             "name": "TC800PLUS-F filtered arc ta-C coating machine",
             "tag": "Filtered arc ta-C",
             "short": "S-shaped magnetic filter that blocks large particles, up to 6000 HV.",
-            "desc": "ta-C diamond-like carbon with an S-shaped magnetic filter that blocks large particles and droplets.",
+            "desc": "The TC800PLUS-F is Huasheng's filtered arc ta-C coating system equipped with an S-shaped magnetic filter. The magnetic filter removes macroscopic droplets and neutral particles from the plasma stream, depositing defect-free, ultra-smooth, hydrogen-free carbon films with hardness up to 6000 HV.",
             "features": [
-              "Hardness up to 6000 HV",
-              "S-shaped magnetic filter blocks macroscopic droplets and particles",
+              "Up to 6000 HV",
               "Low-temperature deposition under 200 °C",
-              "Ultra-smooth droplet-free ta-C film"
+              "Fast heat dissipation",
+              "Anti-adhesion"
             ],
             "specs": [
               [
@@ -4028,7 +3763,9 @@
               "tools",
               "semi",
               "optics"
-            ]
+            ],
+            "series_desc": "ta-C diamond-like carbon. The -F version adds an S-shaped magnetic filter that blocks large particles.",
+            "typical_applications": "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
           }
         ]
       },
@@ -4043,54 +3780,119 @@
         "machines": [
           {
             "id": "da600pro",
+            "series": "DA",
             "photo": "hs_diamond",
             "photoAlt": "Huasheng DA600PRO HFCVD diamond coating system",
             "name": "DA600PRO HFCVD diamond coating machine",
             "tag": "HFCVD diamond",
             "short": "Parallel filament array for uniform temperature and 4–30 µm diamond film.",
-            "desc": "Hot filament CVD diamond coating with a parallel filament array for uniform temperature. Not related to CVA aluminizing.",
+            "desc": "The DA600PRO is Huasheng's advanced hot-filament CVD (HFCVD) diamond coating machine. Equipped with a parallel filament array for highly uniform chamber temperature, it deposits microcrystalline and nanocrystalline diamond coatings (4–30 µm) on cemented carbide inserts, end mills, and drills for high-speed machining of graphite, carbon composites, and high-silicon aluminium alloys.",
             "features": [
-              "Deposition rate up to 1.0 µm/h",
-              "Film thickness 4–30 µm with variation under 15%",
-              "Produces HGR410 and HFR410 diamond grades",
-              "Parallel filament array for uniform temperature distribution"
+              "Deposition up to 1.0 µm/h",
+              "Film 4-30 µm",
+              "Film thickness variation under 15%",
+              "Produces the HGR410 and HFR410 diamond grades"
             ],
             "specs": [
               [
+                "Machine",
+                ""
+              ],
+              [
                 "Coating technology",
-                "Hot-filament CVD diamond (parallel filament array)"
+                "Hot filament CVD (HFCVD) diamond. Not related to CVA aluminizing."
+              ],
+              [
+                "Equipment size",
+                "Length 2600 × width 1200 × height 2700 mm"
               ],
               [
                 "Chamber volume",
                 "0.16 m³"
               ],
               [
-                "Effective coating area",
+                "Coating area",
                 "300 × 300 mm"
               ],
               [
-                "Film thickness",
-                "4–30 µm (variation <15%)"
+                "Maximum paintable end mills",
+                "D16 × 150 mm"
+              ],
+              [
+                "Capacity",
+                "500 pcs at D3"
+              ],
+              [
+                "Process time",
+                "16 – 33 hours"
               ],
               [
                 "Deposition rate",
                 "Up to 1.0 µm/h"
               ],
               [
-                "Equipment size (L×W×H)",
-                "2600 × 1200 × 2700 mm"
+                "Film thickness",
+                "4 – 30 µm"
               ],
               [
-                "Capacity",
-                "500 pcs (D3) / 800 pcs (D3.175)"
+                "Electrical and services",
+                ""
               ],
               [
-                "Process time",
-                "16–33 h"
+                "Voltage",
+                "3 × 380/220 V (3L+N+PE)"
               ],
               [
-                "Typical applications",
-                "Graphite, composites, CFRP, PCB ceramic substrates, AlSi alloys (Si>12%), woodworking."
+                "Current",
+                "75 A"
+              ],
+              [
+                "Power",
+                "50 kW"
+              ],
+              [
+                "Frequency",
+                "50/60 Hz"
+              ],
+              [
+                "Cooling water",
+                "22–26 °C at 5–5.5 bar. Max heat emission about 20 kW, flow 35 L/min."
+              ],
+              [
+                "Compressed air",
+                "5 – 6.5 bar"
+              ],
+              [
+                "Process gas",
+                "H2 / Ar / CH4 at 1.0 – 1.2 bar"
+              ],
+              [
+                "Average consumption",
+                "About 18 kW/h, batch duration about 2.5 h, subject to process"
+              ],
+              [
+                "Process gas purity and consumption",
+                ""
+              ],
+              [
+                "Minimum purity",
+                "H2 99.995%, Ar 99.995%, CH4 99.6%"
+              ],
+              [
+                "Consumption per batch",
+                "H2 2.5 L, Ar 12 L, CH4 0.5 L"
+              ],
+              [
+                "Diamond coating grades produced (coatings, not machines)",
+                ""
+              ],
+              [
+                "HGR410",
+                "Carbon. Microhardness 80–100 GPa. Thickness 9±1 µm. Dry friction coefficient 0.2. Coating temperature above 500 °C, oxidation temperature 650 °C. For graphite, zirconia, ceramics and metal carbides."
+              ],
+              [
+                "HFR410",
+                "Carbon. Microhardness 80–100 GPa. Thickness 10±2 µm. Dry friction coefficient 0.2. Coating temperature above 500 °C, oxidation temperature 650 °C. For PCB boards, high-silicon aluminium, CFRP and other composite materials."
               ]
             ],
             "process": [
@@ -4116,7 +3918,9 @@
             "i": [
               "tools",
               "aero"
-            ]
+            ],
+            "series_desc": "Hot filament CVD diamond coating with a parallel filament array for uniform temperature. Not related to CVA aluminizing.",
+            "typical_applications": "Graphite, composites, CFRP, PCB ceramic substrates, AlSi alloys (Si>12%), woodworking."
           }
         ]
       },
@@ -4136,12 +3940,10 @@
             "name": "DECO H multi-arc + HiPIMS decorative coating system",
             "tag": "Multi-Arc + HiPIMS",
             "short": "Hardness above 2000 HV and widest colour range for luxury items.",
-            "desc": "Multi-arc plus magnetron sputtering plus HiPIMS. The flagship of the decorative range.",
+            "desc": "The DECO H is Huasheng's flagship decorative coating system, combining multi-arc ion plating, magnetron sputtering, and HiPIMS. Delivers ultra-hard (HV > 2000), wear-resistant luxury colour finishes for watches, fine jewellery, and premium consumer hardware.",
             "features": [
               "Denser film, wider colour range, hardness above 2000 HV",
-              "Lower friction coefficient and brighter colour than mid-frequency sputtering alone",
-              "Superior corrosion and wear resistance",
-              "Flagship hybrid configuration for luxury items"
+              "Lower friction coefficient, brighter colour and better corrosion resistance than mid frequency sputtering alone"
             ],
             "specs": [
               [
@@ -4215,7 +4017,10 @@
               "watch",
               "optics",
               "jobshop"
-            ]
+            ],
+            "series": "DECO H",
+            "series_desc": "Multi arc plus magnetron sputtering plus HIPIMS. The flagship of the decorative range.",
+            "typical_applications": "High-end bathroom and hardware, 3C digital, watches, jewellery, luxury goods, eyeglass frames, automotive trim."
           },
           {
             "id": "deco-a",
@@ -4224,12 +4029,9 @@
             "name": "DECO A large-capacity multi-arc coating system",
             "tag": "Large Multi-Arc",
             "short": "Largest chambers Huasheng builds, with up to 30 arc sources.",
-            "desc": "Multi-arc ion plating. Includes the largest chambers in the decorative range, up to DECO2600A.",
+            "desc": "The DECO A is Huasheng's high-capacity large-volume multi-arc coating system designed for architectural hardware, sanitary fittings, stainless steel sheets, and consumer appliances, with chamber sizes available up to DECO2600A.",
             "features": [
-              "The largest chambers in the decorative range (up to DECO2600A)",
-              "Gold, rose gold, gun grey, black, coffee, blue and custom colours",
-              "Coats metals, glass, crystal, ceramics and polymers",
-              "High volume throughput for large architectural batches"
+              "Gold, rose gold, gun grey, black, coffee, blue and custom colours on metals, glass, crystal, ceramics and polymers"
             ],
             "specs": [
               [
@@ -4303,7 +4105,10 @@
               "watch",
               "jobshop",
               "steel"
-            ]
+            ],
+            "series": "DECO A",
+            "series_desc": "Multi arc ion plating. Includes the largest chambers in the decorative range, up to DECO2600A.",
+            "typical_applications": "Volume decorative coating where the largest batch size matters."
           },
           {
             "id": "deco-b",
@@ -4312,12 +4117,9 @@
             "name": "DECO B dark color multi-arc + magnetron coating system",
             "tag": "Dark Series PVD",
             "short": "Dedicated dark, gunmetal, and black colour series.",
-            "desc": "Multi-arc plus magnetron sputtering, set up for the dark colour series.",
+            "desc": "The DECO B is Huasheng's multi-arc plus magnetron sputtering system dedicated to the dark, gunmetal, and deep black colour series on watches, phone casings, eyewear, and premium dark-finish hardware.",
             "features": [
-              "Dedicated dark colours: black, coffee, gun grey, dark titanium",
-              "Depth and colour consistency required for premium finishes",
-              "High wear resistance and corrosion durability",
-              "Multi-arc adhesion with magnetron uniformity"
+              "Dark colours - black, coffee, gun grey - with the depth and consistency those shades need"
             ],
             "specs": [
               [
@@ -4391,7 +4193,10 @@
               "watch",
               "auto",
               "jobshop"
-            ]
+            ],
+            "series": "DECO B",
+            "series_desc": "Multi arc plus magnetron sputtering, set up for the dark colour series.",
+            "typical_applications": "Watches, phone casings, eyewear, dark-finish hardware."
           },
           {
             "id": "deco-g",
@@ -4400,12 +4205,9 @@
             "name": "DECO G multi-arc + real gold coating system",
             "tag": "Real Gold PVD",
             "short": "Multi-arc and magnetron sputtering with real gold furnace.",
-            "desc": "Multi-arc plus magnetron sputtering with a real gold furnace.",
+            "desc": "The DECO G is Huasheng's multi-arc plus magnetron sputtering system equipped with a specialised real gold evaporation furnace for genuine gold and gold alloy colour deposition on luxury goods, watch cases, and jewellery.",
             "features": [
-              "Furnace gold and titanium gold, plus rose gold, gun ash, coffee and blue",
-              "Integrated real gold evaporation furnace",
-              "High precious metal efficiency with flat and cylindrical targets",
-              "Clean, cyanide-free luxury gold coating"
+              "Furnace gold and titanium gold, plus rose gold, gun ash, coffee and blue"
             ],
             "specs": [
               [
@@ -4478,7 +4280,10 @@
             "i": [
               "watch",
               "jobshop"
-            ]
+            ],
+            "series": "DECO G",
+            "series_desc": "Multi arc plus magnetron sputtering with a real gold furnace.",
+            "typical_applications": "Jewellery, watch cases and bracelets, gold-finish hardware."
           },
           {
             "id": "af-series",
@@ -4487,12 +4292,10 @@
             "name": "AF anti-fingerprint coating equipment",
             "tag": "Anti-Fingerprint",
             "short": "Magnetron sputtering and evaporation for AF functional coatings.",
-            "desc": "Magnetron sputtering plus evaporation, for anti-fingerprint coatings.",
+            "desc": "The AF series combines magnetron sputtering and evaporation for deposition of functional anti-fingerprint, hydrophobic, and oleophobic coatings on smartphone display glass, automotive touchscreens, optical filters, and metallic trim.",
             "features": [
-              "4 cylindrical targets Φ70 × H1150 optional, plus 15 sets of evaporation electrodes",
-              "Same four chamber sizes as DECO H",
-              "High water contact angle (>115°) and oil repellency",
-              "Anti-fingerprint top layers over decorative coatings"
+              "4 cylindrical targets Φ70 x H1150, optional, plus 15 sets of evaporation electrodes",
+              "Same four chamber sizes as DECO H"
             ],
             "specs": [
               [
@@ -4566,7 +4369,10 @@
               "optics",
               "semi",
               "watch"
-            ]
+            ],
+            "series": "AF",
+            "series_desc": "Magnetron sputtering plus evaporation, for anti-fingerprint coatings.",
+            "typical_applications": "Anti-fingerprint top layers over decorative coatings."
           }
         ]
       },
@@ -4586,12 +4392,9 @@
             "name": "OPT-T thermal evaporation optical coating equipment",
             "tag": "Thermal Evaporation",
             "short": "Thermal evaporation for aluminium, nickel-chromium and silver wires.",
-            "desc": "Thermal evaporation coating equipment for metallic optical and decorative films.",
+            "desc": "The OPT-T is Huasheng's thermal evaporation optical coating equipment for high-rate metallic reflective films, mirror coatings, and decorative optical layers using tungsten filament or boat evaporation on plastics, glass, and reflectors.",
             "features": [
-              "Chrome, silver, gold, gun black, semi-transparent NCVM non-conductive film",
-              "Rainbow mirror effects on plastics",
-              "Thermal evaporation of aluminium, nickel chromium and silver wires",
-              "High-throughput planetary dome fixtures"
+              "Chrome, silver, gold, gun black, semi-transparent NCVM non-conductive film and rainbow mirror effects on plastics"
             ],
             "specs": [
               [
@@ -4646,7 +4449,10 @@
             "i": [
               "optics",
               "auto"
-            ]
+            ],
+            "series": "OPT",
+            "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
+            "typical_applications": "OPT-T for plastic decorative parts."
           },
           {
             "id": "opt-e",
@@ -4655,12 +4461,9 @@
             "name": "OPT-E electron beam evaporation optical coating equipment",
             "tag": "E-beam optical",
             "short": "Electron beam evaporation for anti-reflection and filter coatings on glass, quartz and silicon wafers.",
-            "desc": "Electron beam evaporation coating equipment for precision optical and semiconductor films.",
+            "desc": "The OPT-E is Huasheng's electron beam (E-beam) evaporation optical coating machine for precision anti-reflection (AR) coatings, dielectric filters, and multilayer optical films on glass, quartz, and semiconductor wafers.",
             "features": [
-              "Precision optical film: AR anti-reflection, HR high reflectivity, optical filters",
-              "Semiconductor electrode and contact layers",
-              "E-beam evaporation of SiO₂, TiO₂, ZrO₂, SiO",
-              "Ultra-precise optical thickness monitoring"
+              "Precision optical film - AR anti-reflection, HR high reflectivity, filters, semiconductor electrode and contact layers"
             ],
             "specs": [
               [
@@ -4719,7 +4522,10 @@
             "i": [
               "optics",
               "semi"
-            ]
+            ],
+            "series": "OPT",
+            "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
+            "typical_applications": "OPT-E for glass, quartz, silicon wafers and ceramics."
           },
           {
             "id": "sputter-optical",
@@ -4728,14 +4534,10 @@
             "name": "Magnetron sputtering optical coating equipment",
             "tag": "Optical sputtering",
             "short": "Precise multilayer optical films on flat and curved substrates.",
-            "desc": "Magnetron sputtering optical coating equipment for high-density, low-scatter multilayer optical films and hard protective optical coatings.",
+            "desc": "Magnetron sputtering optical coating equipment for high-density, low-scatter multilayer optical films, narrowband filters, and hard protective optical coatings on glass, quartz, and optical polymer substrates.",
             "features": [
               "Precise layer control",
-              "Multilayer films",
-              "Magnetron sputtering for dense, shift-free optical stacks",
-              "Excellent adhesion and environmental durability",
-              "High repeatability for multi-layer optical bandpass filters",
-              "Planar and rotary target configurations"
+              "Multilayer films"
             ],
             "specs": [
               [
@@ -4766,7 +4568,10 @@
             "i": [
               "optics",
               "semi"
-            ]
+            ],
+            "series": "OPT",
+            "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
+            "typical_applications": "Glass, optical polymers, semiconductors, narrowband optical filters."
           }
         ]
       },
@@ -4786,12 +4591,9 @@
             "name": "POW 100 powder magnetron sputtering machine",
             "tag": "Powder Sputtering",
             "short": "Magnetron sputtering for fine powders and battery materials (100–3,000 g).",
-            "desc": "Magnetron sputtering for coating powder rather than parts.",
+            "desc": "The POW 100 is Huasheng's dedicated powder magnetron sputtering system designed to coat micro- and nano-powders (100–3,000 g batches) for battery active cathode/anode materials, conductive fillers, and catalyst particle encapsulation.",
             "features": [
-              "Coats diamond, metal and ceramic powders",
-              "Sputters iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt",
-              "Specialized tumbling powder chamber (100–3,000 g capacity)",
-              "Uniform nano-encapsulation of fine particles"
+              "Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt"
             ],
             "specs": [
               [
@@ -4841,7 +4643,10 @@
             "i": [
               "semi",
               "power"
-            ]
+            ],
+            "series": "POW",
+            "series_desc": "Magnetron sputtering for coating powder rather than parts.",
+            "typical_applications": "Powder metallurgy, diamond tool manufacture."
           }
         ]
       },
@@ -4875,8 +4680,7 @@
               "Full control of your coating process and know-how",
               "Open technology to develop your own coatings",
               "Same-day coating turnaround possible",
-              "Universal process flow for many tool types",
-              "Built around the MD800 PLUS arc coater with automatic ultrasonic cleaning line"
+              "Universal process flow for many tool types"
             ],
             "specs": [
               [
@@ -4885,7 +4689,7 @@
               ],
               [
                 "Coating",
-                "MD800 PLUS arc coater, 12,000 pcs per batch (APMT1135)"
+                "MD800 arc coater, 12,000 pcs per batch (APMT1135)"
               ],
               [
                 "Target maintenance",
@@ -4960,7 +4764,10 @@
             "k": "turnkey plant job shop coating centre md800 md800 plus",
             "i": [
               "tools"
-            ]
+            ],
+            "family": "Turnkey",
+            "family_desc": "Huasheng Turnkey Coating Centres provide complete in-house coating plants encompassing incoming tool ultrasonic cleaning, MD800 PLUS coating coater, target and liner sandblasting maintenance, water purification, air compression, and metallurgical quality control instruments.",
+            "typical_applications": "Turnkey in-house coating plants for tool regrinding shops and cutting tool manufacturers."
           }
         ]
       }
@@ -5140,6 +4947,7 @@
       '<div class="brand-badge-row">' +
       '<span class="flag-chip">' + esc(b.country) + '</span>' +
       '<span class="oem-chip">' + esc(b.name) + '</span>' +
+      (c.family ? '<span class="oem-desc-chip" title="Family">' + esc(c.family) + '</span>' : '') +
       '</div>' +
       '<h1>' + esc(c.name) + '</h1>' +
       '<p class="lede">' + esc(c.desc) + '</p>' +
@@ -5207,9 +5015,14 @@
     var specs;
     if (m.specs && m.specs.length) {
       specs = '<table class="spec"><tbody>' +
-        m.specs.map(function (r) { return '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td></tr>'; }).join("") +
+        m.specs.map(function (r) {
+          if (!r[1]) {
+            return '<tr class="spec-group"><th colspan="2" scope="colgroup">' + esc(r[0]) + '</th></tr>';
+          }
+          return '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td></tr>';
+        }).join("") +
         '</tbody></table>' +
-        '<p class="note">* Manufacturer figures; exact values depend on configuration.</p>';
+        '<p class="note">Manufacturer figures; exact values depend on the configuration.</p>';
     } else {
       specs = '<div class="ondemand">' +
         '<b>Datasheet on request</b>' +
@@ -5234,12 +5047,12 @@
         '</div>' +
         '<div class="m-linelayout-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem; margin-bottom:1.5rem;">' +
         '<div class="mcol-card" style="margin:0;">' +
-        '<h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Key Dimensions</h3>' +
+        '<h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Key dimensions</h3>' +
         '<table class="spec" style="font-size:0.88rem;"><tbody>' +
         ll.dimensions.map(function(d) { return '<tr><th scope="row">' + esc(d[0]) + '</th><td>' + esc(d[1]) + '</td></tr>'; }).join('') +
         '</tbody></table></div>' +
         '<div class="mcol-card" style="margin:0;">' +
-        '<h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Ancillary Equipment &amp; Utilities</h3>' +
+        '<h3 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">Ancillary equipment &amp; utilities</h3>' +
         '<ul class="feat" style="font-size:0.88rem;">' +
         ll.ancillary.map(function(a) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(a) + '</span></li>'; }).join('') +
         '</ul></div></div>' +
@@ -5273,7 +5086,7 @@
         '<div class="m-models-head__title">' +
         '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>' +
         '<div>' +
-        '<h2>Standard Model Range & Technical Parameters</h2>' +
+        '<h2>Standard model range &amp; technical parameters</h2>' +
         '<p>' + (isDeco ? 'Published per-model chamber dimensions, effective coating zones, target configurations, and footprint dimensions' : (isCoating ? 'Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times' : (isCleaning ? 'Published per-model usable chamber/tank capacities, overall dimensions, and configurations' : 'Published per-model load ratings, dimensions, maximum temperatures, and vacuum levels'))) + '</p>' +
         '</div>' +
         '</div>' +
@@ -5366,8 +5179,7 @@
       '<div class="brand-badge-row">' +
       '<span class="flag-chip">' + esc(b.country) + '</span>' +
       '<span class="oem-chip">' + esc(b.name) + '</span>' +
-      (m.tag ? '<span class="tag-chip">' + esc(m.tag) + '</span>' : '') +
-      (m.bmi_desc ? '<span class="tag-chip oem-desc-chip" title="Manufacturer designation">' + esc(m.bmi_desc) + '</span>' : '') +
+      ((m.series || m.family || c.family || m.bmi_desc) ? '<span class="oem-desc-chip" title="' + (m.series ? 'Series' : 'Family') + '">' + esc(m.series || m.family || c.family || m.bmi_desc) + '</span>' : '') +
       '</div>' +
       '<h1>' + esc(m.name) + '</h1>' +
       '<p class="lede">' + esc(m.desc) + '</p>' +
@@ -5376,25 +5188,35 @@
       '<a class="btn btn--ghost" href="' + (m.url || c.url) + '" target="_blank" rel="noopener"><span>View on ' + esc(b.name) + ' website</span>' + SVG_EXT + '</a>' +
       '</div>' +
       '<div class="mcols">' +
-      '<section class="mcol-card' + ((!m.benefits || !m.benefits.length) ? ' mcol-card--full' : '') + '"><h2>Key Technical Features</h2><ul class="feat">' + m.features.map(function (f) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(f) + '</span></li>'; }).join("") + '</ul></section>' +
-      (m.benefits && m.benefits.length ? '<section class="mcol-card"><h2>Key Advantages &amp; Benefits</h2><ul class="feat">' + m.benefits.map(function (b) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(b) + '</span></li>'; }).join("") + '</ul></section>' : '') +
-      (m.config ? '<section class="mcol-card"' + (m.thermochemical ? '' : ' style="grid-column: 1 / -1;"') + '><h2>Configuration</h2><p style="margin-top:0.4rem; font-size:0.92rem; color:var(--ink); font-weight:550;">' + esc(m.config) + '</p></section>' : '') +
-      (m.thermochemical ? '<section class="mcol-card"' + (m.config ? '' : ' style="grid-column: 1 / -1;"') + '><h2>Thermochemical Options</h2><p style="margin-top:0.4rem; font-size:0.92rem; color:var(--lime); font-weight:600;">' + esc(m.thermochemical) + '</p></section>' : '') +
-      (m.process && m.process.length ? '<section class="mcol-card" style="grid-column: 1 / -1;"><h2>Supported Processes &amp; Treatments</h2><div class="pills" style="margin-top:0.35rem;">' + m.process.map(function (p) { return '<span>' + esc(p) + '</span>'; }).join("") + '</div></section>' : '') +
-      (m.options && m.options.length ? '<section class="mcol-card" style="grid-column: 1 / -1;"><h2>Main Options &amp; Peripherals</h2><ul class="feat feat--options">' + m.options.map(function (o) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(o) + '</span></li>'; }).join("") + '</ul></section>' : '') +
-      (m.site_reqs && m.site_reqs.length ? '<section class="mcol-card" style="grid-column: 1 / -1;"><h2>Installation &amp; Site Requirements</h2><table class="spec" style="margin-top:0.75rem;"><tbody>' + m.site_reqs.map(function (r) { return '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td></tr>'; }).join("") + '</tbody></table></section>' : '') +
+      (function() {
+        var famDesc = m.family_desc || m.series_desc;
+        if (!famDesc) return '';
+        var famHeading = m.series ? (esc(m.series) + ' series overview') : (m.family ? (esc(m.family) + ' family overview') : (esc(c.name) + ' overview'));
+        return '<section class="mcol-card" style="grid-column: 1 / -1;">' +
+          '<div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.45rem;">' +
+          '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">' +
+          '<rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>' +
+          '</svg>' +
+          '<h2 style="margin:0; font-size:0.95rem;">' + famHeading + '</h2>' +
+          '</div>' +
+          '<p class="fam-desc" style="margin:0; font-size:0.82rem; color:var(--ink); line-height:1.5;">' + esc(famDesc) + '</p>' +
+          '</section>';
+      })() +
+      ((m.typical_applications || m.typical_use) ? '<section class="mcol-card" style="grid-column: 1 / -1;"><h2>' + (m.typical_applications ? 'Typical applications' : 'Typical use') + '</h2><p style="margin:0.25rem 0 0; font-size:0.82rem; color:var(--ink); line-height:1.5;">' + esc(m.typical_applications || m.typical_use) + '</p></section>' : '') +
+      '<section class="mcol-card' + ((!m.benefits || !m.benefits.length) ? ' mcol-card--full' : '') + '"><h2>Key features</h2><ul class="feat">' + m.features.map(function (f) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(f) + '</span></li>'; }).join("") + '</ul></section>' +
+      (m.benefits && m.benefits.length ? '<section class="mcol-card"><h2>Key benefits</h2><ul class="feat">' + m.benefits.map(function (b) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(b) + '</span></li>'; }).join("") + '</ul></section>' : '') +
+      (m.config ? '<section class="mcol-card"' + (m.thermochemical ? '' : ' style="grid-column: 1 / -1;"') + '><h2>Configuration</h2><p style="margin-top:0.4rem; font-size:0.82rem; color:var(--ink); font-weight:550;">' + esc(m.config) + '</p></section>' : '') +
+      (m.thermochemical ? '<section class="mcol-card"' + (m.config ? '' : ' style="grid-column: 1 / -1;"') + '><h2>Thermochemical options</h2><p style="margin-top:0.4rem; font-size:0.82rem; color:var(--lime); font-weight:600;">' + esc(m.thermochemical) + '</p></section>' : '') +
+      (m.process && m.process.length ? '<section class="mcol-card" style="grid-column: 1 / -1;"><h2>Supported processes</h2><div class="pills" style="margin-top:0.35rem;">' + m.process.map(function (p) { return '<span>' + esc(p) + '</span>'; }).join("") + '</div></section>' : '') +
+      (m.options && m.options.length ? '<section class="mcol-card" style="grid-column: 1 / -1;"><h2>Main options</h2><ul class="feat feat--options">' + m.options.map(function (o) { return '<li><span class="check-ic-wrap">' + SVG_CHECK + '</span><span>' + esc(o) + '</span></li>'; }).join("") + '</ul></section>' : '') +
+      (m.site_reqs && m.site_reqs.length ? '<section class="mcol-card" style="grid-column: 1 / -1;"><h2>' + esc(m.site_reqs_title || 'Installation & site requirements') + '</h2><table class="spec" style="margin-top:0.75rem;"><tbody>' + m.site_reqs.map(function (r) { return '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td></tr>'; }).join("") + '</tbody></table></section>' : '') +
+      (m.i && m.i.length ? '<section class="mcol-card" style="grid-column: 1 / -1;"><h2>Industries</h2><p class="indline" style="margin:0.25rem 0 0;">' + m.i.map(function (x) { var indObj = IND.find(function (z) { return z.id === x; }); return indObj ? esc(indObj.n) : ""; }).filter(Boolean).join(", ") + '</p></section>' : '') +
       '</div>' +
-      (m.i && m.i.length
-        ? '<p class="ind-para"><strong>Target industries:</strong> ' + m.i.map(function (x) {
-          var indObj = IND.find(function (z) { return z.id === x; });
-          return indObj ? esc(indObj.n) : "";
-        }).filter(Boolean).join(", ") + '.</p>'
-        : '') +
       relnav +
       '</div>' +
       '<div class="mright">' +
       photo +
-      '<section class="mspec"><div class="mspec-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><h2>Technical specifications</h2></div>' + specs + '</section>' +
+      '<section class="mspec"><div class="mspec-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><h2>Technical data</h2></div>' + specs + '</section>' +
       '</div>' +
       '</div>' +
       modelsTableHtml + lineLayoutHtml +
