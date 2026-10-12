@@ -5006,6 +5006,7 @@ h1[tabindex="-1"]:focus {
   opacity: 1;
 }
 
+.mcol-card h2,
 .mcols h2 {
   font-size: 0.95rem;
   font-weight: 700;
@@ -5014,6 +5015,9 @@ h1[tabindex="-1"]:focus {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  font-family: inherit;
+  line-height: 1.3;
+  letter-spacing: normal;
 }
 
 .mcols .sub2 {
