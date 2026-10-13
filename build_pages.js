@@ -329,6 +329,19 @@ CATALOG.forEach(b => {
             </div>
           </div>
           <p class="lede">${esc(b.intro)}</p>
+          ${b.strengths && b.strengths.length ? `
+            <div class="brand-strengths" style="margin: 1.25rem 0 1.5rem; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1.15rem 1.25rem;">
+              <h3 style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin: 0 0 0.75rem; font-weight: 700;">Core strengths</h3>
+              <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem;">
+                ${b.strengths.map(s => `
+                  <li style="display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.94rem; color: var(--ink); line-height: 1.45;">
+                    <span style="flex-shrink:0; margin-top:2px;">${SVG_CHECK}</span>
+                    <span>${esc(s)}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+          ` : ''}
           <div class="cta-row">
             <a href="${root}contact.html" class="btn btn--primary btn--lg">
               <span>Enquire for ${esc(b.name)} in India</span>${SVG_ARROW}
@@ -537,7 +550,7 @@ CATALOG.forEach(b => {
               <div class="mshot-stage">
                 <img id="mshot-main" src="${rootRel}${PHOTOS[shots[0][0]]}" alt="${esc(shots[0][1])}">
               </div>
-              <figcaption id="mshot-cap">${shots.length > 1 ? esc(shots[0][1]) : esc(m.name)}</figcaption>
+              <figcaption id="mshot-cap">${m.caption ? esc(m.caption) : (shots.length > 1 ? esc(shots[0][1]) : esc(m.name))}</figcaption>
               ${shots.length > 1 ? `
                 <div class="mthumbs">
                   ${shots.map((g, k) => `
@@ -659,7 +672,7 @@ CATALOG.forEach(b => {
             : (isCoating
               ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
               : (isCleaning
-                ? ["Family", "Model", "Usable Chamber / Tank (mm)", "Overall Size (mm)", "Max Load", "Version / Notes", "Source / Reference", "Action"]
+                ? ["Family", "Model", "Usable Chamber / Tank (mm)", "Overall Size (mm)", "Max Load", "Version / Notes", "Action"]
                 : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]));
 
           modelsTableHtml = `
@@ -729,7 +742,6 @@ CATALOG.forEach(b => {
                             <td>${esc(mod.size || '—')}</td>
                             <td class="td-highlight">${esc(mod.load || '—')}</td>
                             <td><span class="pill-orientation">${esc(mod.notes || '—')}</span></td>
-                            <td style="font-size:0.78rem; color:var(--steel);">${esc(mod.source || '—')}</td>
                             <td class="td-action">
                               <a href="${enquireHref}" class="btn-model-enquire">
                                 <span>Enquire</span>${SVG_ARROW}

@@ -12,6 +12,20 @@
   <link rel="apple-touch-icon" href="assets/greetsfavicon.png">
   <link rel="preload" as="image" href="assets/hero-img.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://greets.co.in"
+      }
+    ]
+  }
+  </script>
   <style>
     /* ============================================================
        greets-products (20).html Cohesive Color Combo & Design System
@@ -3859,6 +3873,94 @@
         width: 100%;
       }
     }
+
+    /* ── Home Page Breadcrumb Bar ── */
+    .home-crumb-wrap {
+      position: absolute;
+      top: 84px;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      pointer-events: auto;
+    }
+
+    .home-crumbrow {
+      margin-bottom: 0 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      width: auto !important;
+      background: transparent !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      animation: animFadeDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .home-crumbrow .crumbs {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin: 0 !important;
+    }
+
+    .home-crumbrow .crumb-current,
+    .home-crumbrow span[aria-current="page"] {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.35rem !important;
+      background: rgba(235, 246, 238, 0.95) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(2, 150, 60, 0.25) !important;
+      border-radius: 6px !important;
+      padding: 0.2rem 0.6rem !important;
+      font-size: 0.86rem !important;
+      font-weight: 700 !important;
+      color: var(--ink) !important;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
+      word-break: normal !important;
+    }
+
+    .home-crumbrow .crumb-home {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.35rem !important;
+      background: rgba(255, 255, 255, 0.9) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(211, 216, 212, 0.85) !important;
+      border-radius: 6px !important;
+      padding: 0.2rem 0.55rem !important;
+      font-size: 0.86rem !important;
+      font-weight: 500 !important;
+      color: var(--steel) !important;
+      text-decoration: none !important;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
+      transition: all 0.2s ease !important;
+    }
+
+    .home-crumbrow .crumb-home:hover {
+      border-color: var(--lime) !important;
+      color: var(--lime) !important;
+      background: rgba(235, 246, 238, 0.95) !important;
+    }
+
+    .home-crumbrow .crumb-sep {
+      color: rgba(27, 35, 40, 0.45) !important;
+      font-weight: 600 !important;
+      padding: 0 0.15rem !important;
+    }
+
+    @media (max-width: 768px) {
+      .home-crumb-wrap {
+        top: 78px;
+      }
+      .hero--light {
+        padding-top: 136px !important;
+      }
+    }
   </style>
 </head>
 
@@ -3930,6 +4032,23 @@
   <main id="top">
     <section class="hero hero--light" id="hero">
       <div class="hero__bg" role="img" aria-label="Greets surface-engineering equipment"></div>
+
+      <!-- Home Page Breadcrumb Trail -->
+      <div class="home-crumb-wrap" id="home-crumb-wrap">
+        <div class="container">
+          <div class="crumbrow home-crumbrow">
+            <nav class="crumbs" id="home-crumbs" aria-label="Breadcrumb">
+              <span class="crumb-current" aria-current="page">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                Home
+              </span>
+            </nav>
+          </div>
+        </div>
+      </div>
 
       <div class="container" style="position:relative; z-index:2;">
         <div class="hero-inner">
@@ -4464,10 +4583,6 @@
               <div class="brand-intro__stat">
                 <div class="brand-intro__stat-value" data-count="1500+">1500+</div>
                 <div class="brand-intro__stat-label">Furnaces worldwide</div>
-              </div>
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value" data-count="25+ years">25+ years</div>
-                <div class="brand-intro__stat-label">Average furnace life</div>
               </div>
             </div>
           </div>
@@ -5199,6 +5314,39 @@
 
   <script src="main.js"></script>
   <script src="products.js" defer></script>
+  <script>
+    (function () {
+      function updateHomeBreadcrumbs() {
+        var crumbsEl = document.getElementById("home-crumbs");
+        if (!crumbsEl) return;
+        var h = (location.hash || "").toLowerCase();
+        var svgHome = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
+        var homeLink = '<a href="#hero" class="crumb-home">' + svgHome + ' Home</a>';
+        var sep = ' <span class="crumb-sep" aria-hidden="true">/</span> ';
+
+        var map = {
+          "#finder": "Products",
+          "#industries": "Industries",
+          "#why": "Why buy through Greets",
+          "#partners": "Partners",
+          "#contact": "Contact"
+        };
+
+        if (map[h]) {
+          crumbsEl.innerHTML = homeLink + sep + '<span class="crumb-current" aria-current="page">' + map[h] + '</span>';
+        } else {
+          crumbsEl.innerHTML = '<span class="crumb-current" aria-current="page">' + svgHome + ' Home</span>';
+        }
+      }
+
+      window.addEventListener("hashchange", updateHomeBreadcrumbs);
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", updateHomeBreadcrumbs);
+      } else {
+        updateHomeBreadcrumbs();
+      }
+    })();
+  </script>
   <script>
     (function () {
       // A category card drops its machine list below the card as a floating

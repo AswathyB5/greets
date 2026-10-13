@@ -111,6 +111,7 @@
               "id": "b8t",
               "photo": "b8t",
               "photoAlt": "BMI horizontal vacuum gas quenching furnace",
+              "caption": "Vacuum gas quenching furnace, horizontal",
               "name": "B8_T vacuum gas quenching furnace",
               "tag": "Horizontal",
               "bmi_desc": "HIGH TEMPERATURE VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
@@ -130,11 +131,11 @@
                 ],
                 [
                   "Load capacity",
-                  "200 to 3000 kg"
+                  "200 to 4000 kg"
                 ],
                 [
                   "Maximum temperature",
-                  "1250 °C, 1350 °C or 1500 °C"
+                  "1250 °C to 1600 °C"
                 ],
                 [
                   "Vacuum level",
@@ -228,6 +229,7 @@
               "id": "vse8t",
               "photo": "vse8t",
               "photoAlt": "BMI vertical vacuum furnace",
+              "caption": "Vacuum gas quenching furnace, vertical",
               "name": "VSE8_T vacuum gas quenching furnace",
               "tag": "Vertical",
               "bmi_desc": "HIGH TEMPERATURE VERTICAL VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
@@ -1382,6 +1384,12 @@
       "country": "Italy",
       "site": "https://novatec.it/en",
       "intro": "Industrial ultrasonic cleaning systems engineered, built and tested in Italy since 1993.",
+      "strengths": [
+        "Customised solutions built to each customer's specification.",
+        "Ultrasonic technology and automation produced in house in Italy, not bought in.",
+        "Long-term stability.",
+        "Price to performance ratio."
+      ],
       "cats": [
         {
           "id": "pluritank",
@@ -1526,8 +1534,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 50",
                   "chamber": "300 × 400 × 420 h (50 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1535,8 +1543,8 @@
                   "family": "PLURITANK",
                   "model": "PLT 60V",
                   "chamber": "60 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Two-chamber pressure-cycle unit, listed under Components",
                   "source": "Novatec website"
                 },
@@ -1553,8 +1561,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 80",
                   "chamber": "400 × 500 × 400 h (80 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1562,8 +1570,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 110",
                   "chamber": "400 × 500 × 550 h (110 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1571,7 +1579,7 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140",
                   "chamber": "140 L",
-                  "size": "Not published",
+                  "size": "On request",
                   "load": "120 kg per basket",
                   "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
                   "source": "Novatec specification"
@@ -1580,8 +1588,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140 EP",
                   "chamber": "140 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
                   "source": "Novatec specification"
                 },
@@ -1589,8 +1597,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 210",
                   "chamber": "500 × 700 × 600 h (210 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1599,7 +1607,7 @@
                   "model": "PLURITANK 1400",
                   "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
                   "size": "19500 × 7000 (line footprint)",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
                   "source": "Novatec GA drawing 5298.3.0-26CO"
                 },
@@ -1608,7 +1616,7 @@
                   "model": "PLURITANK 1500",
                   "chamber": "approx. 1500 L",
                   "size": "16550 × 7725, 3585 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "12 process stations",
                   "source": "Novatec GA drawing 5183.4.0-24CO"
                 }
@@ -1643,8 +1651,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 50",
                   "chamber": "300 × 400 × 420 h (50 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1652,8 +1660,8 @@
                   "family": "PLURITANK",
                   "model": "PLT 60V",
                   "chamber": "60 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Two-chamber pressure-cycle unit, listed under Components",
                   "source": "Novatec website"
                 },
@@ -1670,8 +1678,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 80",
                   "chamber": "400 × 500 × 400 h (80 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1679,8 +1687,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 110",
                   "chamber": "400 × 500 × 550 h (110 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1688,7 +1696,7 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140",
                   "chamber": "140 L",
-                  "size": "Not published",
+                  "size": "On request",
                   "load": "120 kg per basket",
                   "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
                   "source": "Novatec specification"
@@ -1697,8 +1705,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140 EP",
                   "chamber": "140 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
                   "source": "Novatec specification"
                 },
@@ -1706,8 +1714,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 210",
                   "chamber": "500 × 700 × 600 h (210 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1716,7 +1724,7 @@
                   "model": "PLURITANK 1400",
                   "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
                   "size": "19500 × 7000 (line footprint)",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
                   "source": "Novatec GA drawing 5298.3.0-26CO"
                 },
@@ -1725,7 +1733,7 @@
                   "model": "PLURITANK 1500",
                   "chamber": "approx. 1500 L",
                   "size": "16550 × 7725, 3585 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "12 process stations",
                   "source": "Novatec GA drawing 5183.4.0-24CO"
                 }
@@ -1763,8 +1771,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 50",
                   "chamber": "300 × 400 × 420 h (50 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1772,8 +1780,8 @@
                   "family": "PLURITANK",
                   "model": "PLT 60V",
                   "chamber": "60 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Two-chamber pressure-cycle unit, listed under Components",
                   "source": "Novatec website"
                 },
@@ -1790,8 +1798,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 80",
                   "chamber": "400 × 500 × 400 h (80 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1799,8 +1807,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 110",
                   "chamber": "400 × 500 × 550 h (110 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1808,7 +1816,7 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140",
                   "chamber": "140 L",
-                  "size": "Not published",
+                  "size": "On request",
                   "load": "120 kg per basket",
                   "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
                   "source": "Novatec specification"
@@ -1817,8 +1825,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140 EP",
                   "chamber": "140 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
                   "source": "Novatec specification"
                 },
@@ -1826,8 +1834,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 210",
                   "chamber": "500 × 700 × 600 h (210 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -1836,7 +1844,7 @@
                   "model": "PLURITANK 1400",
                   "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
                   "size": "19500 × 7000 (line footprint)",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
                   "source": "Novatec GA drawing 5298.3.0-26CO"
                 },
@@ -1845,7 +1853,7 @@
                   "model": "PLURITANK 1500",
                   "chamber": "approx. 1500 L",
                   "size": "16550 × 7725, 3585 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "12 process stations",
                   "source": "Novatec GA drawing 5183.4.0-24CO"
                 }
@@ -1882,7 +1890,7 @@
               ],
               "name": "2CRD vacuum precision cleaning system",
               "short": "Cleaning and vacuum drying in one chamber.",
-              "desc": "The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket. It is especially suited to blind and tapped holes, porous-coated surfaces and complex parts carrying polishing pastes and oils, including medical implants between production steps. Models include the 2CRD400, and the range comes in 8 sizes.",
+              "desc": "The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket. It is especially suited to blind and tapped holes, porous-coated surfaces and complex parts carrying polishing pastes and oils, including medical implants between production steps. Eight standard variants - 2CRD-100, 200, 400 and 800, each static or -ROT with rotation and tilting - plus the 2CRD1700 built to order.",
               "features": [
                 "Single chamber: clean, rinse and vacuum dry",
                 "Ultrasonic cleaning combined with vacuum processes",
@@ -1903,7 +1911,7 @@
                   "model": "2CRD-100",
                   "chamber": "300 × 400 × 300 h",
                   "size": "1800 × 1800 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Static",
                   "source": "Novatec 2CRD brochure"
                 },
@@ -1912,7 +1920,7 @@
                   "model": "2CRD-100-ROT",
                   "chamber": "300 × 400 × 300 h",
                   "size": "1800 × 1800 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Rotation and tilting",
                   "source": "Novatec website"
                 },
@@ -1921,7 +1929,7 @@
                   "model": "2CRD-200",
                   "chamber": "400 × 600 × 430 h",
                   "size": "2600 × 2000 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Static",
                   "source": "Novatec 2CRD brochure"
                 },
@@ -1930,25 +1938,25 @@
                   "model": "2CRD-200-ROT",
                   "chamber": "400 × 600 × 430 h",
                   "size": "2600 × 2000 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Rotation and tilting",
                   "source": "Novatec website"
                 },
                 {
                   "family": "2CRD",
                   "model": "2CRD-400",
-                  "chamber": "Not published",
+                  "chamber": "On request",
                   "size": "approx. 3200 × 2000 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Static",
                   "source": "Novatec GA drawing 2CRD400"
                 },
                 {
                   "family": "2CRD",
                   "model": "2CRD-400-ROT",
-                  "chamber": "Not published",
+                  "chamber": "On request",
                   "size": "approx. 3200 × 2000 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Rotation and tilting",
                   "source": "Novatec website"
                 },
@@ -1957,7 +1965,7 @@
                   "model": "2CRD-800",
                   "chamber": "600 × 1050 × 630 h",
                   "size": "3500 × 2000 × 2200 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Static",
                   "source": "Novatec 2CRD brochure"
                 },
@@ -1966,7 +1974,7 @@
                   "model": "2CRD-800-ROT",
                   "chamber": "600 × 1050 × 630 h",
                   "size": "3500 × 2000 × 2200 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Rotation and tilting",
                   "source": "Novatec website"
                 },
@@ -2046,7 +2054,7 @@
                   "model": "2CRD-100",
                   "chamber": "300 × 400 × 300 h",
                   "size": "1800 × 1800 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Static",
                   "source": "Novatec 2CRD brochure"
                 },
@@ -2055,7 +2063,7 @@
                   "model": "2CRD-100-ROT",
                   "chamber": "300 × 400 × 300 h",
                   "size": "1800 × 1800 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Rotation and tilting",
                   "source": "Novatec website"
                 },
@@ -2064,7 +2072,7 @@
                   "model": "2CRD-200",
                   "chamber": "400 × 600 × 430 h",
                   "size": "2600 × 2000 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Static",
                   "source": "Novatec 2CRD brochure"
                 },
@@ -2073,25 +2081,25 @@
                   "model": "2CRD-200-ROT",
                   "chamber": "400 × 600 × 430 h",
                   "size": "2600 × 2000 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Rotation and tilting",
                   "source": "Novatec website"
                 },
                 {
                   "family": "2CRD",
                   "model": "2CRD-400",
-                  "chamber": "Not published",
+                  "chamber": "On request",
                   "size": "approx. 3200 × 2000 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Static",
                   "source": "Novatec GA drawing 2CRD400"
                 },
                 {
                   "family": "2CRD",
                   "model": "2CRD-400-ROT",
-                  "chamber": "Not published",
+                  "chamber": "On request",
                   "size": "approx. 3200 × 2000 × 2100 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Rotation and tilting",
                   "source": "Novatec website"
                 },
@@ -2100,7 +2108,7 @@
                   "model": "2CRD-800",
                   "chamber": "600 × 1050 × 630 h",
                   "size": "3500 × 2000 × 2200 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Static",
                   "source": "Novatec 2CRD brochure"
                 },
@@ -2109,7 +2117,7 @@
                   "model": "2CRD-800-ROT",
                   "chamber": "600 × 1050 × 630 h",
                   "size": "3500 × 2000 × 2200 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "Rotation and tilting",
                   "source": "Novatec website"
                 },
@@ -2173,8 +2181,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 50",
                   "chamber": "300 × 400 × 420 h (50 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2182,8 +2190,8 @@
                   "family": "PLURITANK",
                   "model": "PLT 60V",
                   "chamber": "60 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Two-chamber pressure-cycle unit, listed under Components",
                   "source": "Novatec website"
                 },
@@ -2200,8 +2208,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 80",
                   "chamber": "400 × 500 × 400 h (80 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2209,8 +2217,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 110",
                   "chamber": "400 × 500 × 550 h (110 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2218,7 +2226,7 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140",
                   "chamber": "140 L",
-                  "size": "Not published",
+                  "size": "On request",
                   "load": "120 kg per basket",
                   "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
                   "source": "Novatec specification"
@@ -2227,8 +2235,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140 EP",
                   "chamber": "140 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
                   "source": "Novatec specification"
                 },
@@ -2236,8 +2244,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 210",
                   "chamber": "500 × 700 × 600 h (210 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2246,7 +2254,7 @@
                   "model": "PLURITANK 1400",
                   "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
                   "size": "19500 × 7000 (line footprint)",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
                   "source": "Novatec GA drawing 5298.3.0-26CO"
                 },
@@ -2255,7 +2263,7 @@
                   "model": "PLURITANK 1500",
                   "chamber": "approx. 1500 L",
                   "size": "16550 × 7725, 3585 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "12 process stations",
                   "source": "Novatec GA drawing 5183.4.0-24CO"
                 }
@@ -2403,7 +2411,7 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140",
                   "chamber": "140 L",
-                  "size": "Not published",
+                  "size": "On request",
                   "load": "120 kg per basket",
                   "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
                   "source": "Novatec specification"
@@ -2412,8 +2420,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140 EP",
                   "chamber": "140 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
                   "source": "Novatec specification"
                 },
@@ -2421,8 +2429,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 210",
                   "chamber": "500 × 700 × 600 h (210 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2431,7 +2439,7 @@
                   "model": "PLURITANK 1400",
                   "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
                   "size": "19500 × 7000 (line footprint)",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
                   "source": "Novatec GA drawing 5298.3.0-26CO"
                 }
@@ -2479,8 +2487,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 50",
                   "chamber": "300 × 400 × 420 h (50 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2488,8 +2496,8 @@
                   "family": "PLURITANK",
                   "model": "PLT 60V",
                   "chamber": "60 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Two-chamber pressure-cycle unit, listed under Components",
                   "source": "Novatec website"
                 },
@@ -2506,8 +2514,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 80",
                   "chamber": "400 × 500 × 400 h (80 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2515,8 +2523,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 110",
                   "chamber": "400 × 500 × 550 h (110 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2524,7 +2532,7 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140",
                   "chamber": "140 L",
-                  "size": "Not published",
+                  "size": "On request",
                   "load": "120 kg per basket",
                   "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
                   "source": "Novatec specification"
@@ -2533,8 +2541,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 140 EP",
                   "chamber": "140 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
                   "source": "Novatec specification"
                 },
@@ -2542,8 +2550,8 @@
                   "family": "PLURITANK",
                   "model": "PLURITANK 210",
                   "chamber": "500 × 700 × 600 h (210 L)",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Standard tank size",
                   "source": "Novatec PVD brochure"
                 },
@@ -2552,7 +2560,7 @@
                   "model": "PLURITANK 1400",
                   "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
                   "size": "19500 × 7000 (line footprint)",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
                   "source": "Novatec GA drawing 5298.3.0-26CO"
                 },
@@ -2561,7 +2569,7 @@
                   "model": "PLURITANK 1500",
                   "chamber": "approx. 1500 L",
                   "size": "16550 × 7725, 3585 h",
-                  "load": "Not published",
+                  "load": "On request",
                   "notes": "12 process stations",
                   "source": "Novatec GA drawing 5183.4.0-24CO"
                 }
@@ -2629,8 +2637,8 @@
                   "family": "PLURITANK",
                   "model": "PLT 60V",
                   "chamber": "60 L",
-                  "size": "Not published",
-                  "load": "Not published",
+                  "size": "On request",
+                  "load": "On request",
                   "notes": "Two-chamber pressure-cycle unit, listed under Components",
                   "source": "Novatec website"
                 }
@@ -4910,6 +4918,19 @@
       '</div>' +
       '</div>' +
       '<p class="lede">' + esc(b.intro) + '</p>' +
+      (b.strengths && b.strengths.length ? (
+        '<div class="brand-strengths" style="margin: 1.25rem 0 1.5rem; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1.15rem 1.25rem;">' +
+        '<h3 style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin: 0 0 0.75rem; font-weight: 700;">Core strengths</h3>' +
+        '<ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem;">' +
+        b.strengths.map(function (s) {
+          return '<li style="display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.94rem; color: var(--ink); line-height: 1.45;">' +
+            '<span style="flex-shrink:0; margin-top:2px;">' + SVG_CHECK + '</span>' +
+            '<span>' + esc(s) + '</span>' +
+            '</li>';
+        }).join('') +
+        '</ul>' +
+        '</div>'
+      ) : '') +
       '<div class="cta-row">' +
       enquire(b.id, b.name + " Range", "Enquire for " + b.name + " in India") +
       '<a href="' + b.site + '" target="_blank" rel="noopener" class="btn btn--ghost">' +
@@ -4993,7 +5014,7 @@
     if (shots.length) {
       photo = '<figure class="mshot">' +
         '<div class="mshot-stage"><img id="mshot-main" src="' + PHOTOS[shots[0][0]] + '" alt="' + esc(shots[0][1]) + '"></div>' +
-        '<figcaption id="mshot-cap">' + (shots.length > 1 ? esc(shots[0][1]) : esc(m.name)) + '</figcaption>';
+        '<figcaption id="mshot-cap">' + (m.caption ? esc(m.caption) : (shots.length > 1 ? esc(shots[0][1]) : esc(m.name))) + '</figcaption>';
       if (shots.length > 1) {
         photo += '<div class="mthumbs">' + shots.map(function (g, k) {
           return '<button type="button" class="mthumb" data-src="' + g[0] + '" data-cap="' + esc(g[1]) + '" aria-label="' + esc(g[1]) + '"' + (k === 0 ? ' aria-current="true"' : '') + '>' +
@@ -5079,7 +5100,7 @@
         : (isCoating
           ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
           : (isCleaning
-            ? ["Family", "Model", "Usable Chamber / Tank (mm)", "Overall Size (mm)", "Max Load", "Version / Notes", "Source / Reference", "Action"]
+            ? ["Family", "Model", "Usable Chamber / Tank (mm)", "Overall Size (mm)", "Max Load", "Version / Notes", "Action"]
             : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]));
 
       modelsTableHtml = '<section class="m-models-section">' +
@@ -5144,7 +5165,6 @@
               '<td>' + esc(mod.size || '—') + '</td>' +
               '<td class="td-highlight">' + esc(mod.load || '—') + '</td>' +
               '<td><span class="pill-orientation">' + esc(mod.notes || '—') + '</span></td>' +
-              '<td style="font-size:0.78rem; color:var(--steel);">' + esc(mod.source || '—') + '</td>' +
               '<td class="td-action">' +
               '<button type="button" class="btn-model-enquire" data-enquire="' + esc(b.id) + '" data-label="' + esc(m.name + ' - ' + mod.model) + '">' +
               '<span>Enquire</span>' + SVG_ARROW +
