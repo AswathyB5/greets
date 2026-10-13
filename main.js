@@ -45,6 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
         prodToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
     }
+
+    // Mobile industries accordion toggle
+    const indToggle = mobileNav.querySelector('#mobile-industries-toggle');
+    const indPanel = mobileNav.querySelector('#mobile-industries-panel');
+    if (indToggle && indPanel) {
+      indToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = indPanel.classList.toggle('open');
+        indToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
   }
 
   /* — Intersection Observer for fade-up animations — */

@@ -3906,7 +3906,8 @@
     }
 
     .home-crumbrow .crumb-current,
-    .home-crumbrow span[aria-current="page"] {
+    .home-crumbrow span[aria-current="page"],
+    .home-crumbrow a[aria-current="page"] {
       display: inline-flex !important;
       align-items: center !important;
       gap: 0.35rem !important;
@@ -3921,6 +3922,15 @@
       color: var(--ink) !important;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
       word-break: normal !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+    }
+
+    .home-crumbrow a.crumb-current:hover {
+      border-color: var(--lime) !important;
+      color: var(--lime) !important;
+      background: rgba(225, 243, 230, 0.98) !important;
     }
 
     .home-crumbrow .crumb-home {
@@ -3938,6 +3948,7 @@
       color: var(--steel) !important;
       text-decoration: none !important;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
+      cursor: pointer !important;
       transition: all 0.2s ease !important;
     }
 
@@ -3976,8 +3987,9 @@
         <a class="navlink navhome" href="#hero" data-spy="home">Home</a>
         <a class="navlink mega-btn" id="mega-btn" href="#finder" data-spy="products" aria-expanded="false"
           aria-controls="mega">Products</a>
+        <a class="navlink mega-btn" id="mega-ind-btn" href="#industries" data-spy="industries" aria-expanded="false"
+          aria-controls="mega-ind">Industries</a>
         <nav class="header__nav main" aria-label="Main">
-          <a class="navlink" href="#industries" data-spy="industries">Industries</a>
           <a class="navlink" href="#why" data-spy="why">Why buy through Greets</a>
           <a class="navlink" href="contact.html" data-spy="contact">Contact</a>
         </nav>
@@ -3995,6 +4007,7 @@
       </button>
     </div>
     <div class="mega" id="mega" hidden></div>
+    <div class="mega mega--ind" id="mega-ind" hidden></div>
   </header>
 
   <!-- Mobile Nav -->
@@ -4019,7 +4032,16 @@
         </a>
       </div>
     </div>
-    <a href="#industries">Industries</a>
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-toggle" id="mobile-industries-toggle" aria-expanded="false">
+        <span>Industries</span>
+        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="mobile-products-panel" id="mobile-industries-panel"></div>
+    </div>
     <a href="#why">Why buy through Greets</a>
     <a href="contact.html">Contact</a>
     <a href="contact.html" class="btn btn--primary">Talk to Greets</a>
@@ -4038,13 +4060,13 @@
         <div class="container">
           <div class="crumbrow home-crumbrow">
             <nav class="crumbs" id="home-crumbs" aria-label="Breadcrumb">
-              <span class="crumb-current" aria-current="page">
+              <a href="index.html" class="crumb-home" aria-current="page">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                   <polyline points="9 22 9 12 15 12 15 22"/>
                 </svg>
                 Home
-              </span>
+              </a>
             </nav>
           </div>
         </div>
@@ -5321,7 +5343,7 @@
         if (!crumbsEl) return;
         var h = (location.hash || "").toLowerCase();
         var svgHome = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
-        var homeLink = '<a href="#hero" class="crumb-home">' + svgHome + ' Home</a>';
+        var homeLink = '<a href="index.html" class="crumb-home">' + svgHome + ' Home</a>';
         var sep = ' <span class="crumb-sep" aria-hidden="true">/</span> ';
 
         var map = {
@@ -5333,18 +5355,35 @@
         };
 
         if (map[h]) {
-          crumbsEl.innerHTML = homeLink + sep + '<span class="crumb-current" aria-current="page">' + map[h] + '</span>';
+          crumbsEl.innerHTML = homeLink + sep + '<a href="' + h + '" class="crumb-current" aria-current="page">' + map[h] + '</a>';
         } else {
-          crumbsEl.innerHTML = '<span class="crumb-current" aria-current="page">' + svgHome + ' Home</span>';
+          crumbsEl.innerHTML = '<a href="index.html" class="crumb-home" aria-current="page">' + svgHome + ' Home</a>';
         }
       }
 
+      window.updateHomeBreadcrumbs = updateHomeBreadcrumbs;
       window.addEventListener("hashchange", updateHomeBreadcrumbs);
       if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", updateHomeBreadcrumbs);
       } else {
         updateHomeBreadcrumbs();
       }
+
+      // Clicking Home in breadcrumb smoothly redirects / scrolls to top and clears hash
+      document.addEventListener("click", function (e) {
+        var ch = e.target.closest("#home-crumbs .crumb-home");
+        if (ch) {
+          if (location.hash) {
+            e.preventDefault();
+            history.pushState("", document.title, window.location.pathname);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            updateHomeBreadcrumbs();
+          } else {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }
+      });
     })();
   </script>
   <script>

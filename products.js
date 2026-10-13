@@ -6086,12 +6086,15 @@
   })();
 
   /* ----------------------------------------------------------------
-      Product mega menu & mobile navigation
+      Product & Industries mega menu & mobile navigation
       ---------------------------------------------------------------- */
   (function () {
     var mega = document.getElementById("mega");
     var megaBtn = document.getElementById("mega-btn");
-    if (mega && megaBtn) {
+    var megaInd = document.getElementById("mega-ind");
+    var megaIndBtn = document.getElementById("mega-ind-btn");
+
+    if (mega) {
       mega.innerHTML = '<div class="mega-grid">' + CATALOG.map(function (b) {
         return '<div><a class="mega-brand" href="' + b.id + '/">' +
           '<img src="' + logo(b.id) + '" alt="' + esc(b.name) + '"></a><ul>' +
@@ -6100,34 +6103,86 @@
           }).join("") +
           '</ul></div>';
       }).join("") + '</div>';
+    }
 
-      function closeMega() {
-        if (mega.hidden) return;
+    if (megaInd) {
+      var cols = [
+        { title: "Tooling & Metalworking", items: [IND[0], IND[1], IND[2], IND[3]] },
+        { title: "Energy, Auto & Aerospace", items: [IND[4], IND[5], IND[6], IND[7]] },
+        { title: "Precision, Medical & Optics", items: [IND[8], IND[9], IND[10], IND[11]] }
+      ];
+
+      megaInd.innerHTML = '<div class="mega-grid">' + cols.map(function (col) {
+        return '<div>' +
+          '<div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">' + esc(col.title) + '</div>' +
+          '<ul>' +
+          col.items.map(function (item) {
+            return '<li><a href="#finder" data-ind="' + item.id + '">' +
+              esc(item.n) +
+              '</a></li>';
+          }).join("") +
+          '</ul></div>';
+      }).join("") + '</div>';
+    }
+
+    function closeAllMega() {
+      if (mega && !mega.hidden) {
         mega.hidden = true;
-        megaBtn.setAttribute("aria-expanded", "false");
+        if (megaBtn) megaBtn.setAttribute("aria-expanded", "false");
       }
+      if (megaInd && !megaInd.hidden) {
+        megaInd.hidden = true;
+        if (megaIndBtn) megaIndBtn.setAttribute("aria-expanded", "false");
+      }
+    }
 
-      megaBtn.addEventListener("click", function () {
+    if (mega && megaBtn) {
+      megaBtn.addEventListener("click", function (e) {
+        e.preventDefault();
         if (!mega.hidden) {
-          closeMega();
+          closeAllMega();
           return;
         }
+        closeAllMega();
         mega.hidden = false;
         megaBtn.setAttribute("aria-expanded", "true");
       });
+    }
 
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") closeMega();
-      });
-
-      document.addEventListener("click", function (e) {
-        if (!mega.hidden && !mega.contains(e.target) && e.target !== megaBtn) {
-          closeMega();
+    if (megaInd && megaIndBtn) {
+      megaIndBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (!megaInd.hidden) {
+          closeAllMega();
+          return;
         }
+        closeAllMega();
+        megaInd.hidden = false;
+        megaIndBtn.setAttribute("aria-expanded", "true");
       });
+    }
 
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeAllMega();
+    });
+
+    document.addEventListener("click", function (e) {
+      var isOutsideMega = mega && !mega.hidden && !mega.contains(e.target) && e.target !== megaBtn;
+      var isOutsideInd = megaInd && !megaInd.hidden && !megaInd.contains(e.target) && e.target !== megaIndBtn;
+      if (isOutsideMega || isOutsideInd) {
+        if (e.target === megaBtn || e.target === megaIndBtn) return;
+        closeAllMega();
+      }
+    });
+
+    if (mega) {
       mega.addEventListener("click", function (e) {
-        if (e.target.closest("a")) closeMega();
+        if (e.target.closest("a")) closeAllMega();
+      });
+    }
+    if (megaInd) {
+      megaInd.addEventListener("click", function (e) {
+        if (e.target.closest("a")) closeAllMega();
       });
     }
 
@@ -6147,6 +6202,32 @@
             '<ul class="mobile-cat-list">' +
             b.cats.map(function (c) {
               return '<li><a href="#/' + b.id + '/' + c.id + '">' + esc(c.name) + '</a></li>';
+            }).join("") +
+            '</ul></div>';
+        }).join("");
+    }
+
+    // Populate mobile industries panel
+    var mobIndPanel = document.getElementById("mobile-industries-panel");
+    if (mobIndPanel) {
+      var indCols = [
+        { title: "Tooling & Metalworking", items: [IND[0], IND[1], IND[2], IND[3]] },
+        { title: "Energy, Auto & Aerospace", items: [IND[4], IND[5], IND[6], IND[7]] },
+        { title: "Precision, Medical & Optics", items: [IND[8], IND[9], IND[10], IND[11]] }
+      ];
+
+      mobIndPanel.innerHTML = '<a href="#industries" class="mobile-all-products-link">' +
+        '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>' +
+        '<span>Industries overview &mdash; All 12 sectors</span>' +
+        '</a>' +
+        indCols.map(function (col) {
+          return '<div class="mobile-brand-group">' +
+            '<div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;">' +
+            '<span>' + esc(col.title) + '</span>' +
+            '</div>' +
+            '<ul class="mobile-cat-list">' +
+            col.items.map(function (item) {
+              return '<li><a href="#finder" data-ind="' + item.id + '">' + esc(item.n) + '</a></li>';
             }).join("") +
             '</ul></div>';
         }).join("");
