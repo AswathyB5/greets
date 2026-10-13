@@ -764,7 +764,6 @@
       border-top: 1px solid var(--line) !important;
       border-bottom: 1px solid var(--line) !important;
       position: relative;
-      padding: 1.1rem 0 1.25rem !important;
     }
 
     #industries::before {
@@ -779,9 +778,10 @@
 
     .industry-grid-v2 {
       display: grid;
-      /* Four across on desktop: 3 rows fit neatly inside a single screen */
+      /* Four across on desktop: wider cards, and the shorter card height below
+         keeps three rows inside a single screen. */
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0.5rem 0.75rem;
+      gap: 1.25rem;
       position: relative;
       z-index: 1;
     }
@@ -806,63 +806,50 @@
 
     .industry-card-v2 {
       position: relative;
-      display: flex;
-      flex-direction: column;
-      padding: 0.65rem 0.8rem 0.55rem;
-      border-radius: 10px;
+      /* Icon and heading share the first row; copy and brand chips span the
+         full card width underneath. */
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      column-gap: 0.7rem;
+      row-gap: 0.45rem;
+      align-content: start;
+      padding: 1.15rem 1.15rem 1rem;
+      border-radius: var(--radius-lg, 14px);
       background: linear-gradient(180deg, #FFFFFF 0%, #FAFBF8 100%);
       border: 1px solid var(--line);
-      box-shadow: 0 4px 10px -7px rgba(20, 30, 35, 0.1), 0 1px 2px rgba(0, 0, 0, 0.02);
+      box-shadow: 0 10px 24px -18px rgba(20, 30, 35, 0.16), 0 2px 6px rgba(0, 0, 0, 0.02);
       text-decoration: none;
       overflow: hidden;
-      transition: opacity .85s cubic-bezier(.22, 1, .36, 1), translate .85s cubic-bezier(.34, 1.42, .5, 1), scale .85s cubic-bezier(.34, 1.42, .5, 1), transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      transition: opacity .85s cubic-bezier(.22, 1, .36, 1), translate .85s cubic-bezier(.34, 1.42, .5, 1), scale .85s cubic-bezier(.34, 1.42, .5, 1), transform .35s cubic-bezier(.2, .8, .2, 1), box-shadow .35s ease, border-color .25s ease, background .25s ease;
     }
 
     .industry-card-v2:hover {
-      transform: translateY(-3px);
+      transform: translateY(-8px) scale(1.012);
       background: #FFFFFF;
       border-color: var(--c2, var(--ink)) !important;
-      box-shadow: 0 12px 22px -8px rgba(20, 30, 35, 0.2), 0 0 0 1px rgba(2, 150, 60, .06);
+      box-shadow: 0 26px 44px -18px rgba(20, 30, 35, 0.28), 0 0 0 1px rgba(2, 150, 60, .06);
     }
 
     .industry-card-v2__top {
+      grid-area: 1 / 1;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 0.25rem;
+      justify-content: flex-start;
+      margin-bottom: 0;
     }
 
     .industry-card-v2 h5 {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--ink);
-      margin: 0 0 0.12rem 0;
-      line-height: 1.25;
-      transition: color 0.2s ease;
-    }
-
-    .industry-card-v2:hover h5 {
-      color: var(--accent-text);
+      grid-area: 1 / 2;
+      align-self: center;
+      margin: 0;
     }
 
     .industry-card-v2 p {
-      font-size: 0.74rem;
-      color: var(--steel);
-      line-height: 1.32;
-      margin: 0 0 0.35rem 0;
-      flex-grow: 1;
+      grid-area: 2 / 1 / 3 / 3;
     }
 
     .industry-card-v2__footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: auto;
-      padding-top: 0.35rem;
-      border-top: 1px solid var(--line);
-      width: 100%;
-      gap: 0.35rem;
+      grid-area: 3 / 1 / 4 / 3;
     }
 
     .ind-ic {
@@ -871,12 +858,12 @@
       flex: none;
       display: grid;
       place-items: center;
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
       color: #fff !important;
       background: linear-gradient(145deg, var(--c1, #2FB866) 0%, var(--c2, #02963C) 100%) !important;
-      box-shadow: 0 5px 12px -5px var(--c2, rgba(2, 110, 45, 0.5)), inset 0 1px 0 rgba(255, 255, 255, 0.45) !important;
+      box-shadow: 0 12px 20px -10px var(--c2, rgba(2, 110, 45, 0.6)), inset 0 1px 0 rgba(255, 255, 255, 0.45) !important;
       transition: all 0.25s ease;
     }
 
@@ -902,8 +889,8 @@
 
     .ind-ic svg {
       position: relative;
-      width: 18px;
-      height: 18px;
+      width: 28px;
+      height: 28px;
       color: #fff !important;
     }
 
@@ -961,23 +948,22 @@
     }
 
     .industry-card-v2__num {
-      font-size: 0.65rem;
+      font-size: 0.7rem;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
       color: var(--steel);
       background: var(--paper);
       border: 1px solid var(--line);
-      padding: 0.12rem 0.45rem;
+      padding: 0.2rem 0.55rem;
       border-radius: var(--radius-full);
-      line-height: 1.2;
     }
 
     .industry-card-v2 h5 {
-      font-size: 0.85rem;
+      font-size: 0.98rem;
       font-weight: 700;
       color: var(--ink);
-      margin-bottom: 0.12rem;
-      line-height: 1.25;
+      margin-bottom: 0;
+      line-height: 1.3;
       transition: color 0.2s ease;
     }
 
@@ -986,52 +972,49 @@
     }
 
     .industry-card-v2 p {
-      font-size: 0.74rem;
+      font-size: 0.84rem;
       color: var(--steel);
-      line-height: 1.32;
-      margin: 0 0 0.35rem 0;
+      line-height: 1.6;
       flex: 1;
     }
 
     .industry-card-v2__footer {
-      margin-top: auto;
-      padding-top: 0.35rem;
+      margin-top: 1rem;
+      padding-top: 0.75rem;
       border-top: 1px solid var(--line);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 0.35rem;
+      gap: 0.5rem;
     }
 
     .industry-card-v2__brands {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.25rem;
+      gap: 0.3rem;
     }
 
     .industry-card-v2__brands span {
-      font-size: 0.6rem;
+      font-size: 0.68rem;
       font-weight: 650;
-      letter-spacing: 0.03em;
-      padding: 0.1rem 0.4rem;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.6rem;
       border-radius: 4px;
       background: var(--paper);
       color: var(--steel);
       border: 1px solid var(--line);
-      line-height: 1.2;
     }
 
     .industry-card-v2__arrow {
       color: var(--steel);
-      font-size: 0.95rem;
+      font-size: 1.1rem;
       font-weight: 600;
       transition: transform 0.2s ease, color 0.2s ease;
-      line-height: 1;
     }
 
     .industry-card-v2:hover .industry-card-v2__arrow {
       color: var(--accent-text);
-      transform: translateX(3px);
+      transform: translateX(4px);
     }
 
     /* ── Finder Section (#finder) ── */
@@ -3296,15 +3279,12 @@
       border-radius: 8px;
       padding: 0 16px;
       height: 46px;
-      min-width: 124px;
-      width: 124px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       transition: all 0.18s;
       white-space: nowrap;
-      box-sizing: border-box;
     }
 
     .seg button:hover {
@@ -3318,8 +3298,7 @@
     }
 
     .seg button[data-brand="all"] {
-      min-width: 124px;
-      width: 124px;
+      min-width: 100px;
     }
 
     /* Logo brand buttons */
@@ -3327,32 +3306,26 @@
       background: #FFFFFF;
       padding: 0 14px;
       height: 46px;
-      min-width: 124px;
-      width: 124px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       border-color: #D3D8D4;
-      box-sizing: border-box;
     }
 
     .seg button.logo-btn img {
       display: block;
-      max-height: 28px;
-      max-width: 96px;
+      height: 24px;
       width: auto;
-      height: auto;
+      max-width: 110px;
       object-fit: contain;
     }
 
     .seg button.logo-btn[data-brand="BMI"] img {
-      max-height: 28px;
-      max-width: 96px;
+      height: 32px;
     }
 
     .seg button.logo-btn[data-brand="Huasheng"] img {
-      max-height: 28px;
-      max-width: 96px;
+      height: 30px;
     }
 
     .seg button.logo-btn[aria-pressed="true"] {
@@ -3661,20 +3634,12 @@
       text-align: left;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      width: 105px;
-      min-width: 105px;
-      max-width: 105px;
-      height: 32px;
-      flex-shrink: 0;
-      box-sizing: border-box;
     }
 
     .result .b img {
       max-height: 26px;
       max-width: 96px;
       width: auto;
-      height: auto;
       display: block;
       object-fit: contain;
     }
@@ -4092,8 +4057,8 @@
               <span class="dot"></span>
               AUTHORISED DEALER IN INDIA
             </div>
-            <h1 data-anim="zoom-fade">Heat Treatment, Cleaning, and <span class="text-gradient-green">Coating
-                Systems</span>, Supported in India
+            <h1 data-anim="zoom-fade">Heat treatment, cleaning and <span class="text-gradient-green">coating
+                systems</span>, supported in India
             </h1>
             <p class="hero__desc" data-anim="fade-up">One partner in India for your complete surface-engineering line:
               BMI
@@ -4276,9 +4241,9 @@
     <section class="section section--green-tint section--pattern" id="industries"
       style="border-top:1px solid rgba(22,163,74,0.12);">
       <div class="container">
-        <div class="text-center mb-3" data-anim="fade-left">
-          <h2 style="font-size:1.65rem; margin-bottom:0.2rem;">Industries we serve</h2>
-          <p class="lead max-w-lg mx-auto" style="margin-top:0.25rem; margin-bottom:0.75rem; color:var(--gray-600); font-size:0.88rem;">Choose an industry to see
+        <div class="text-center mb-5" data-anim="fade-left">
+          <h2>Industries we serve</h2>
+          <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Choose an industry to see
             the systems that apply to it.</p>
         </div>
 
@@ -4294,13 +4259,11 @@
                   <path d="M8.5 7h7M8.5 11h7" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">01</span>
             </div>
             <h5>Cutting and gear cutting tools</h5>
             <p>Hobs, shaper cutters, inserts, drills and end mills.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4317,13 +4280,11 @@
                   <path d="M4 21.5h16" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">02</span>
             </div>
             <h5>PVD coating service providers</h5>
             <p>Coating job shops and in-house coating centres.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4339,13 +4300,11 @@
                   <path d="M9 11h6" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">03</span>
             </div>
             <h5>Dies and mould manufacturers</h5>
             <p>Press tools, forging dies, die-casting and plastic moulds.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4360,13 +4319,11 @@
                   <path d="M6 15.5v2.2M10 15.5v3M14 15.5v2.2M18 15.5v3" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">04</span>
             </div>
             <h5>Steel and metal processing</h5>
             <p>Commercial heat treaters, steel, alloy and forging plants.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4384,13 +4341,11 @@
                   <path d="M4.7 18.3h14.6M12 15.2v6.1" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">05</span>
             </div>
             <h5>Power: wind, solar and thermal</h5>
             <p>Gearbox parts, turbine blades, shafts and bearings.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4405,13 +4360,11 @@
                   <path d="M3.5 21.5h17M6.5 21.5v-3.2h11v3.2" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">06</span>
             </div>
             <h5>Oil and gas</h5>
             <p>Valves, pumps, drilling tools and wear parts.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4428,13 +4381,11 @@
                     d="M6.6 16.5v1.9a.8.8 0 0 1-.8.8H4.6a.8.8 0 0 1-.8-.8v-1.9M20.2 16.5v1.9a.8.8 0 0 1-.8.8h-1.2a.8.8 0 0 1-.8-.8v-1.9" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">07</span>
             </div>
             <h5>Automotive</h5>
             <p>Gears, transmission, engine and EV components.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4449,13 +4400,11 @@
                     d="M12 2.4c.9 0 1.5.8 1.5 1.8v4.4l6.9 4.1v2l-6.9-2.1v3.2l2.3 1.7v1.3L12 17.7l-3.8 1.1v-1.3l2.3-1.7v-3.2l-6.9 2.1v-2l6.9-4.1V4.2c0-1 .6-1.8 1.5-1.8z" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">08</span>
             </div>
             <h5>Aerospace and defence</h5>
             <p>Turbine parts, brazed assemblies, weapon and vehicle components.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4471,13 +4420,11 @@
                   <path d="M6.2 12.6h2.6l1.3-2.4 1.9 4.2 1.4-2.4h4.4" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">09</span>
             </div>
             <h5>Medical devices and implants</h5>
             <p>Orthopaedic implants, surgical instruments, cleanroom final cleaning.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4494,13 +4441,11 @@
                     d="M9.8 6.8V3.2M14.2 6.8V3.2M9.8 20.8v-3.6M14.2 20.8v-3.6M6.8 9.8H3.2M6.8 14.2H3.2M20.8 9.8h-3.6M20.8 14.2h-3.6" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">10</span>
             </div>
             <h5>Semiconductor and electronics</h5>
             <p>Chamber parts and precision components.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4516,13 +4461,11 @@
                   <path d="M2.6 7.8h2.6M2.6 12h2.2M2.6 16.2h2.6M18.8 7.8h2.6M19.2 12h2.2M18.8 16.2h2.6" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">11</span>
             </div>
             <h5>Optics and eyewear</h5>
             <p>Lenses and optical components.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
 
@@ -4538,13 +4481,11 @@
                   <path d="M9.2 2.8h5.6l-.6 3.1H9.8L9.2 2.8zM9.2 21.2h5.6l-.6-3.1H9.8l-.6 3.1z" />
                 </svg>
               </div>
-              <span class="industry-card-v2__num">12</span>
             </div>
             <h5>Watches, jewellery and decorative</h5>
             <p>Cases, bands, fittings and hardware finishes.</p>
             <div class="industry-card-v2__footer">
               <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
-              <span class="industry-card-v2__arrow" aria-hidden="true">→</span>
             </div>
           </a>
         </div>
