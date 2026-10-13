@@ -133,7 +133,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greets.co.in/novatec/pluritank-multi-tank-ultrasonic-cleaning-line/</loc>
+    <loc>https://greets.co.in/novatec/pluritank-ultrasonic-cleaning-line/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -145,7 +145,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greets.co.in/novatec/cleanroom-precision-cleaning-line/</loc>
+    <loc>https://greets.co.in/novatec/cleanroom-cleaning-line/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -205,7 +205,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greets.co.in/novatec/custom-combined-implant-lines-built-to-the-customer-s-specification/</loc>
+    <loc>https://greets.co.in/novatec/combined-turnkey-implant-lines-urs/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -223,7 +223,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greets.co.in/novatec/plt-60v-two-chamber-pressure-cycle-unit/</loc>
+    <loc>https://greets.co.in/novatec/plt-60v-pressure-cycle-unit/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -259,7 +259,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greets.co.in/huasheng/md800-plus-arc-coating-machine/</loc>
+    <loc>https://greets.co.in/huasheng/md800-arc-coating-machine/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -295,6 +295,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://greets.co.in/huasheng/arc-coating-equipment/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greets.co.in/huasheng/hipims-coating-equipment/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greets.co.in/huasheng/hybrid-coating-equipment/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greets.co.in/huasheng/decorative-coating-equipment/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://greets.co.in/huasheng/dlc/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -313,6 +337,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://greets.co.in/huasheng/pecvd-dlc-coating-equipment/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greets.co.in/huasheng/ta-c-coating-equipment/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://greets.co.in/huasheng/diamond/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -320,6 +356,12 @@
   </url>
   <url>
     <loc>https://greets.co.in/huasheng/da600pro-hfcvd-diamond-coating-machine/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greets.co.in/huasheng/hfcvd-diamond-coating-equipment/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -385,13 +427,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greets.co.in/huasheng/specialty/</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://greets.co.in/huasheng/pow-100-powder-magnetron-sputtering-machine/</loc>
+    <loc>https://greets.co.in/huasheng/evaporation-optical-coating-equipment/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -403,7 +439,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://greets.co.in/huasheng/md800-plus-turnkey-coating-centre/</loc>
+    <loc>https://greets.co.in/huasheng/md800-turnkey-coating-centre/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greets.co.in/huasheng/cvd/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greets.co.in/huasheng/cvd-coating-systems/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greets.co.in/huasheng/cva-aluminizing-systems/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
