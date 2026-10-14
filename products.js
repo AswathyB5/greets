@@ -5454,34 +5454,136 @@
       });
     });
 
-    // Clicking an industry card in the industries section filters the finder
-    document.addEventListener("click", function (e) {
-      var b = e.target.closest(".industry-card-v2[data-ind], .ind[data-ind], [data-ind]");
-      if (b && b.dataset.ind) {
-        e.preventDefault();
-        ind = b.dataset.ind;
-        if (fInd) fInd.value = ind;
+    const IND_ALIASES = {
+      "cutting-tools": "tools",
+      "cutting_tools": "tools",
+      "tools": "tools",
+      "cutting": "tools",
+      "inserts": "tools",
+      "jobshop": "jobshop",
+      "job-shop": "jobshop",
+      "dies": "dies",
+      "moulds-dies": "dies",
+      "moulds_dies": "dies",
+      "moulds": "dies",
+      "molds": "dies",
+      "forming-tools": "dies",
+      "precision-machining": "tools",
+      "steel": "steel",
+      "commercial-heat-treat": "steel",
+      "heat-treat": "steel",
+      "heattreat": "steel",
+      "power": "power",
+      "energy": "power",
+      "oilgas": "oilgas",
+      "oil-gas": "oilgas",
+      "oil_gas": "oilgas",
+      "oil": "oilgas",
+      "gas": "oilgas",
+      "auto": "auto",
+      "automotive": "auto",
+      "powertrain": "auto",
+      "bearings-gears": "auto",
+      "aero": "aero",
+      "aerospace": "aero",
+      "defence": "aero",
+      "defense": "aero",
+      "medical": "medical",
+      "medical-devices": "medical",
+      "medical_devices": "medical",
+      "implants": "medical",
+      "semi": "semi",
+      "semiconductor": "semi",
+      "electronics": "semi",
+      "optics": "optics",
+      "optical": "optics",
+      "optical-components": "optics",
+      "eyewear": "optics",
+      "watch": "watch",
+      "watches": "watch",
+      "jewellery": "watch",
+      "jewelry": "watch",
+      "decorative": "watch"
+    };
+
+    function resolveInd(id) {
+      if (!id) return null;
+      var clean = String(id).toLowerCase().trim();
+      if (IND_ALIASES[clean]) return IND_ALIASES[clean];
+      var found = IND.find(function (x) { return x.id.toLowerCase() === clean; });
+      return found ? found.id : null;
+    }
+
+    function scrollToFinder() {
+      var finderSection = document.getElementById("finder");
+      if (finderSection) {
+        requestAnimationFrame(function () {
+          var header = document.querySelector(".header");
+          var headerHeight = header ? header.offsetHeight : 72;
+          var card = finderSection.querySelector(".wrap.container") || finderSection;
+          var y = card.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+          window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+        });
+      }
+    }
+
+    function checkUrlInd(shouldScroll) {
+      var queryInd = "";
+      try {
+        var params = new URLSearchParams(window.location.search);
+        queryInd = params.get("ind") || params.get("industry") || "";
+      } catch (e) {
+        var match = window.location.search.match(/[?&]ind=([^&]+)/);
+        if (match) queryInd = decodeURIComponent(match[1]);
+      }
+      if (!queryInd && window.location.hash) {
+        var hashMatch = window.location.hash.match(/[?&]ind=([^&]+)/);
+        if (hashMatch) queryInd = decodeURIComponent(hashMatch[1]);
+      }
+      var resolved = resolveInd(queryInd);
+      if (resolved) {
+        ind = resolved;
+        if (fInd) fInd.value = resolved;
         brand = "all";
         if (q) q.value = "";
         fillCats();
         if (fCat) fCat.value = "";
         syncButtons();
         render();
-        var finderSection = document.getElementById("finder");
-        if (finderSection) {
-          requestAnimationFrame(function () {
-            var header = document.querySelector(".header");
-            var headerHeight = header ? header.offsetHeight : 72;
-            var card = finderSection.querySelector(".wrap.container") || finderSection;
-            var y = card.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
-            window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
-          });
+        if (shouldScroll) {
+          setTimeout(scrollToFinder, 120);
         }
+        return true;
+      }
+      return false;
+    }
+
+    // Clicking an industry card in the industries section filters the finder
+    document.addEventListener("click", function (e) {
+      var b = e.target.closest(".industry-card-v2[data-ind], .ind[data-ind], [data-ind]");
+      if (b && b.dataset.ind) {
+        e.preventDefault();
+        var resolved = resolveInd(b.dataset.ind) || b.dataset.ind;
+        ind = resolved;
+        if (fInd) fInd.value = resolved;
+        brand = "all";
+        if (q) q.value = "";
+        fillCats();
+        if (fCat) fCat.value = "";
+        syncButtons();
+        render();
+        scrollToFinder();
       }
     });
 
     fillCats();
-    render();
+    var hasUrlInd = checkUrlInd(true);
+    if (!hasUrlInd) {
+      render();
+    }
+
+    window.addEventListener("hashchange", function () { checkUrlInd(true); });
+    window.addEventListener("popstate", function () { checkUrlInd(true); });
   })();
 
   /* ----------------------------------------------------------------
