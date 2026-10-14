@@ -428,7 +428,7 @@ CATALOG.forEach(b => {
           <div class="brand-title-group">
             <span class="plate big"><img src="${logoSrc}" alt="${esc(b.name)}"></span>
             <div>
-              <h1 style="font-size:clamp(1.8rem, 3.5vw, 2.6rem);">${esc(b.name)} equipment range</h1>
+              <h1 style="font-size:clamp(1.35rem, 2vw, 1.75rem);">${esc(b.name)} equipment range</h1>
               <p class="brand-sub-full">${esc(b.full)}</p>
             </div>
           </div>
@@ -549,7 +549,7 @@ CATALOG.forEach(b => {
           <p class="lede">${esc(c.desc)}</p>
           <div class="cta-row">
             <a href="${root2}contact.html" class="btn btn--primary btn--lg">
-              <span>Enquire about ${esc(c.name)}</span>${SVG_ARROW}
+              <span>Enquire about ${c.family ? esc(c.family) : (c.name.length > 30 ? 'this range' : esc(c.name))}</span>${SVG_ARROW}
             </a>
             <a class="btn btn--ghost" href="${c.url}" target="_blank" rel="noopener">
               <span>See range on ${esc(b.name)} website</span>${SVG_EXT}
@@ -792,7 +792,7 @@ CATALOG.forEach(b => {
             "Coating technology",
             "Chamber volume (m³)",
             "Effective coating area (mm)",
-            "Max. working temp. (°C)",
+            "Max. working temp. (°c)",
             "Equipment size L x W x H (mm)",
             "Capacity (trees)",
             "Insert load APMT1135 (pcs)",
@@ -1011,7 +1011,7 @@ CATALOG.forEach(b => {
   <main class="page-main-wrap" style="padding-top:84px; min-height:80vh;">
     <div class="wrap">
       <div class="mpage">
-        ${getCrumbsHtml([{ t: b.name, href: `${rootRel}${b.id}/` }, { t: c.name, href: `${rootRel}${b.id}/${c.id}/` }, { t: m.name }], rootRel)}
+        ${getCrumbsHtml([{ t: b.name, href: `${rootRel}${b.id}/` }, { t: c.family || c.name, href: `${rootRel}${b.id}/${c.id}/` }, { t: m.name }], rootRel)}
 
         <div class="mlayout ${m.specs && m.specs.length > 6 ? 'many' : ''}">
           <div class="mleft">

@@ -1530,15 +1530,50 @@
               ]
             ],
             "name": "PLURITANK ultrasonic cleaning line",
-            "short": "Serial and large-format parts, up to 12 stages.",
-            "desc": "PLURITANK is Novatec's modular multi-chamber ultrasonic cleaning line. Stages for ultrasonic cleaning, rinsing and drying are combined to suit the part, the contamination and the required cleanliness, with up to 12 stages per line.",
+            "short": "Serial and large-format parts, up to 14 process stations.",
+            "desc": "PLURITANK is Novatec's modular multi-chamber ultrasonic cleaning line. Process stations for ultrasonic cleaning, rinsing and drying are combined to suit the part, the contamination and the required cleanliness, with up to 14 process stations per line.",
             "features": [
-              "Modular, up to 12 stages, with room for future hardware and software upgrades",
+              "Modular, up to 14 process stations, with room for future hardware and software upgrades",
+              "Configurable tank capacity from 50 to 1,500 litres",
               "Multi-frequency ultrasonic groups",
               "User-friendly HMI with multiple programs",
               "Data exchange and traceability",
               "AISI 304/316 stainless construction",
               "Factory acceptance test with your sample parts"
+            ],
+            "specs": [
+              [
+                "Configuration",
+                "Configurable modular multi-tank ultrasonic cleaning line"
+              ],
+              [
+                "Tank volume range",
+                "50 to 1,500 litres per tank (built to order based on part size)"
+              ],
+              [
+                "Process stations",
+                "Up to 14 process stations per line"
+              ],
+              [
+                "Ultrasonic technology",
+                "Multi-frequency ultrasonic groups (in-house Italian design & manufacture)"
+              ],
+              [
+                "Available process stages",
+                "Ultrasonic immersion, spray wash, multi-stage cascade DI water rinsing, passivation, hot air & vacuum drying"
+              ],
+              [
+                "Basket load capacity",
+                "10 kg to 300+ kg per basket with automatic robot transporter"
+              ],
+              [
+                "Material construction",
+                "AISI 304 / AISI 316 stainless steel throughout"
+              ],
+              [
+                "Control system",
+                "Siemens PLC with touchscreen HMI, multi-program recipe management & data traceability"
+              ]
             ],
             "process": [
               "Ultrasonic immersion cleaning",
@@ -1556,100 +1591,8 @@
               "semi",
               "tools"
             ],
-            "models": [
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 50",
-                "chamber": "300 × 400 × 420 h (50 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLT 60V",
-                "chamber": "60 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Two-chamber pressure-cycle unit, listed under Components",
-                "source": "Novatec website"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 65",
-                "chamber": "330 × 490 × 400 deep (65 L)",
-                "size": "approx. 9150 × 4550 × 2880 h",
-                "load": "50 kg per basket",
-                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 80",
-                "chamber": "400 × 500 × 400 h (80 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 110",
-                "chamber": "400 × 500 × 550 h (110 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "120 kg per basket",
-                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140 EP",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 210",
-                "chamber": "500 × 700 × 600 h (210 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1400",
-                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
-                "size": "19500 × 7000 (line footprint)",
-                "load": "On request",
-                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
-                "source": "Novatec GA drawing 5298.3.0-26CO"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1500",
-                "chamber": "approx. 1500 L",
-                "size": "16550 × 7725, 3585 h",
-                "load": "On request",
-                "notes": "12 process stations",
-                "source": "Novatec GA drawing 5183.4.0-24CO"
-              }
-            ],
             "family": "PLURITANK",
-            "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
+            "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Configurable tank volume from 50 to 1,500 litres with up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
             "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
           },
           {
@@ -1673,98 +1616,7 @@
             "i": [
               "tools"
             ],
-            "models": [
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 50",
-                "chamber": "300 × 400 × 420 h (50 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLT 60V",
-                "chamber": "60 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Two-chamber pressure-cycle unit, listed under Components",
-                "source": "Novatec website"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 65",
-                "chamber": "330 × 490 × 400 deep (65 L)",
-                "size": "approx. 9150 × 4550 × 2880 h",
-                "load": "50 kg per basket",
-                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 80",
-                "chamber": "400 × 500 × 400 h (80 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 110",
-                "chamber": "400 × 500 × 550 h (110 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "120 kg per basket",
-                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140 EP",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 210",
-                "chamber": "500 × 700 × 600 h (210 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1400",
-                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
-                "size": "19500 × 7000 (line footprint)",
-                "load": "On request",
-                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
-                "source": "Novatec GA drawing 5298.3.0-26CO"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1500",
-                "chamber": "approx. 1500 L",
-                "size": "16550 × 7725, 3585 h",
-                "load": "On request",
-                "notes": "12 process stations",
-                "source": "Novatec GA drawing 5183.4.0-24CO"
-              }
-            ],
+            "configNote": "Each PLURITANK line is built to the tank volume the job requires. The number in the PLURITANK name (50, 65, 80, 110, 140, 210, 1400, 1500 …) is the tank volume in litres — not a catalogue model number. Novatec do not publish a fixed model list; instead they configure the line from 50 to 1,500 litres per tank, with up to 14 process stations, to match the part size, basket weight and throughput. Contact Greets for a technical proposal tailored to your application.",
             "family": "PLURITANK",
             "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
             "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
@@ -1793,101 +1645,39 @@
               "semi",
               "medical"
             ],
-            "models": [
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 50",
-                "chamber": "300 × 400 × 420 h (50 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLT 60V",
-                "chamber": "60 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Two-chamber pressure-cycle unit, listed under Components",
-                "source": "Novatec website"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 65",
-                "chamber": "330 × 490 × 400 deep (65 L)",
-                "size": "approx. 9150 × 4550 × 2880 h",
-                "load": "50 kg per basket",
-                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 80",
-                "chamber": "400 × 500 × 400 h (80 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 110",
-                "chamber": "400 × 500 × 550 h (110 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "120 kg per basket",
-                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140 EP",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 210",
-                "chamber": "500 × 700 × 600 h (210 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1400",
-                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
-                "size": "19500 × 7000 (line footprint)",
-                "load": "On request",
-                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
-                "source": "Novatec GA drawing 5298.3.0-26CO"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1500",
-                "chamber": "approx. 1500 L",
-                "size": "16550 × 7725, 3585 h",
-                "load": "On request",
-                "notes": "12 process stations",
-                "source": "Novatec GA drawing 5183.4.0-24CO"
-              }
-            ],
+            "configNote": "Each PLURITANK line is built to the tank volume the job requires. The number in the PLURITANK name is the tank volume in litres — not a catalogue model number. Novatec configure the line from 50 to 1,500 litres per tank, with up to 14 process stations, to match the part size, basket weight and throughput. Contact Greets for a technical proposal tailored to your application.",
             "family": "PLURITANK",
             "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
             "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
+          }
+        ],
+        "applications": [
+          {
+            "id": "ipc",
+            "name": "IPC in-process cleaning",
+            "short": "Cleaning implants between production steps.",
+            "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Supplied as an in-line PLURITANK system for higher volumes and a wider mix of parts, or as a one-chamber 2CRD vacuum system for blind holes and complex shapes.",
+            "url": "https://novatec.it/en/products",
+            "k": "ipc in-process cleaning implants orthopaedic pluritank manufacturing steps",
+            "i": ["medical"]
+          },
+          {
+            "id": "fcps",
+            "name": "FCS / FCPS final cleaning and passivation",
+            "short": "Final cleaning, with optional passivation, into the cleanroom.",
+            "desc": "The FCS (final cleaning system) or FCPS (combined final cleaning and passivation system) is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.",
+            "url": "https://novatec.it/en/products",
+            "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation",
+            "i": ["medical"]
+          },
+          {
+            "id": "fpi",
+            "name": "FPI fluorescent penetrant inspection line",
+            "short": "Automated cleaning and crack detection.",
+            "desc": "An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process. Used to validate medical implants during manufacturing by revealing flaws, cracks and signs of fatigue.",
+            "url": "https://novatec.it/en/products",
+            "k": "fpi fluorescent penetrant inspection ndt cracks fatigue flaws implants pluritank",
+            "i": ["medical", "aero"]
           }
         ]
       },
@@ -2031,6 +1821,17 @@
             "family_desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
             "typical_use": "Blind and tapped holes, porous coated surfaces and complex geometries. Removing polishing pastes and oils."
           }
+        ],
+        "applications": [
+          {
+            "id": "ipc",
+            "name": "IPC in-process cleaning",
+            "short": "Cleaning implants between production steps.",
+            "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. The 2CRD one-chamber vacuum system is especially suited to blind holes, porous-coated surfaces and complex implant shapes.",
+            "url": "https://novatec.it/en/products",
+            "k": "ipc in-process cleaning implants 2crd vacuum blind holes manufacturing steps",
+            "i": ["medical"]
+          }
         ]
       },
       {
@@ -2038,170 +1839,10 @@
         "photo": "nm_implants",
         "photoAlt": "Orthopaedic implants cleaned on Novatec systems",
         "name": "Medical implant processing",
-        "sub": "IPC, FCS/FCPS, PFC, FPI, QVS/BRC, EP & turnkey plants",
-        "desc": "Complete cleaning and surface treatment systems for orthopaedic and medical implant manufacturing. Built to the customer's specification, from in-process machining wash to cleanroom air lock passivation, FPI inspection, electropolishing, and full turnkey lines.",
+        "sub": "PFC, QVS/BRC, EP & turnkey plants",
+        "desc": "Complete cleaning and surface treatment systems for orthopaedic and medical implant manufacturing. Built to the customer's specification, from spray cleaning with cleanroom air lock to electropolishing, quality verification, and full turnkey lines. IPC, FCS/FCPS and FPI are listed as applications under PLURITANK and 2CRD above.",
         "url": "https://novatec.it/en/products",
         "machines": [
-          {
-            "id": "ipc",
-            "family": "IPC - In-process cleaning",
-            "photo": "nm_ipc",
-            "photoAlt": "Novatec PLURITANK in-line cleaning system for implants",
-            "gallery": [
-              [
-                "nm_2crd",
-                "2CRD400 one-chamber vacuum system"
-              ],
-              [
-                "nm_basket",
-                "Implants in a cleaning basket"
-              ]
-            ],
-            "name": "IPC in-process cleaning",
-            "tag": "One-chamber or in-line",
-            "short": "Cleaning implants between production steps.",
-            "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Novatec offers it as a one-chamber 2CRD vacuum system for blind holes, porous coatings and complex shapes, or as an in-line PLURITANK system for higher volumes and a wider mix of parts.",
-            "features": [
-              "One-chamber 2CRD vacuum systems or in-line PLURITANK systems",
-              "Ultrasonic cleaning combined with vacuum processes",
-              "Handles blind and tapped holes and porous-coated surfaces",
-              "Multi-frequency ultrasonic groups",
-              "Data exchange and traceability",
-              "Modular for future hardware and software upgrades"
-            ],
-            "process": [
-              "Medical implants between manufacturing steps",
-              "Removing polishing pastes and oils",
-              "Cleaning after grinding and blasting"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "ipc in-process cleaning implants orthopaedic polishing paste 2crd pluritank manufacturing steps",
-            "i": [
-              "medical"
-            ],
-            "family_desc": "Cleaning between production processes. Supplied either as a one-chamber system (2CRD) or as an in-line system (PLURITANK).",
-            "typical_use": "Medical implants between manufacturing steps."
-          },
-          {
-            "id": "fcps",
-            "family": "FCS / FCPS",
-            "photo": "nm_fcps",
-            "photoAlt": "Novatec final cleaning line with unload air lock to cleanroom",
-            "gallery": [
-              [
-                "nm_brand",
-                "Final cleaning line in a cleanroom"
-              ],
-              [
-                "nm_fcps_b",
-                "Transfer through the line"
-              ],
-              [
-                "nm_fcps_c",
-                "Unloading into the cleanroom"
-              ],
-              [
-                "nm_fcps_d",
-                "Implant basket leaving the line"
-              ]
-            ],
-            "name": "FCS / FCPS final cleaning and passivation",
-            "tag": "Cleanroom unload",
-            "short": "Final cleaning, with optional passivation, into the cleanroom.",
-            "desc": "After in-process cleaning, implants need a final clean to remove dust and handling residues before sterilisation and packaging. The FCS (final cleaning system) or FCPS (combined final cleaning and passivation system) is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.",
-            "features": [
-              "Final cleaning, or combined final cleaning and passivation",
-              "Unload air lock directly into the cleanroom",
-              "Support with final qualification (IQ, OQ)",
-              "Material and calibration certificates",
-              "Multi-frequency ultrasonic groups",
-              "Data exchange and traceability"
-            ],
-            "process": [
-              "Final cleaning before sterilisation and packing",
-              "Citric / nitric passivation",
-              "Cleanroom air lock unload",
-              "Ultrapure water rinsing"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation packing",
-            "i": [
-              "medical"
-            ],
-            "family_desc": "Final cleaning, or combined final cleaning and passivation, with an unload air lock into the cleanroom.",
-            "typical_use": "Removing dust and handling residues before sterilisation and packing in a cleanroom."
-          },
-          {
-            "id": "pfc",
-            "family": "PFC",
-            "photo": "nm_implants",
-            "photoAlt": "Novatec PFC spray cleaning system",
-            "name": "PFC spray cleaning system",
-            "tag": "Spray cleaning",
-            "short": "Spray cleaning system with unload air lock to cleanroom.",
-            "desc": "The PFC is Novatec's dedicated aqueous spray cleaning module equipped with high-pressure spray manifolds, multi-stage fine filtration, and an automated cleanroom unload air lock. Specially designed for final washing of medical implants and delicate components without immersion bath carryover.",
-            "features": [
-              "High-impact spray cleaning system",
-              "Unload air lock directly into the cleanroom",
-              "Integrated filtration and cascade rinsing",
-              "Dedicated for medical implant lines"
-            ],
-            "process": [
-              "Medical implant lines",
-              "Spray cleaning",
-              "Cleanroom air lock unload"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "pfc spray cleaning system air lock cleanroom medical implant lines",
-            "i": [
-              "medical"
-            ],
-            "family_desc": "Spray cleaning system with unload air lock to cleanroom.",
-            "typical_use": "Medical implant lines."
-          },
-          {
-            "id": "fpi",
-            "family": "FPI - Fluorescent penetrant inspection",
-            "photo": "nm_fpi",
-            "photoAlt": "3D layout of a Novatec PLURITANK FPI line",
-            "gallery": [
-              [
-                "nm_fpi_b",
-                "Parts under UV inspection"
-              ],
-              [
-                "nm_fpi_c",
-                "FPI line installation"
-              ],
-              [
-                "nm_fpi_d",
-                "Automated FPI line"
-              ]
-            ],
-            "name": "FPI fluorescent penetrant inspection line",
-            "tag": "PLURITANK",
-            "short": "Automated cleaning and crack detection.",
-            "desc": "An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process. It is used to validate medical implants during manufacturing by revealing flaws, cracks and signs of fatigue, with automated part transfer for high throughput and a stable process.",
-            "features": [
-              "Cleaning, preparation and FPI in one automated line",
-              "Reveals flaws, cracks and fatigue signs",
-              "Automated part transfer for high throughput",
-              "Custom-designed to the customer's specification"
-            ],
-            "process": [
-              "Revealing flaws, cracks and fatigue signs",
-              "Fluorescent penetrant inspection",
-              "Medical implants & aerospace parts"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "fpi fluorescent penetrant inspection ndt cracks fatigue flaws implants pluritank",
-            "i": [
-              "medical",
-              "aero"
-            ],
-            "family_desc": "Combined ultrasonic cleaning, surface preparation and FPI treatment in one automated line, built on the PLURITANK platform.",
-            "typical_use": "Revealing flaws, cracks and fatigue signs on medical implants."
-          },
           {
             "id": "qvs-brc",
             "family": "QVS / BRC",
@@ -2271,7 +1912,7 @@
                 "Implants in custom baskets"
               ]
             ],
-            "name": "Combined turnkey implant lines (URS)",
+            "name": "Combined turnkey implant lines",
             "tag": "All-in project",
             "short": "Complete, automated implant cleaning plant.",
             "desc": "For larger projects Novatec designs the whole cleaning area to the customer's URS, linking the individual systems with conveyors and full automatic management. A typical line includes automatic basket loading with scanners and RFID, IPC one-chamber vacuum systems, quality verification stations, a combined final cleaning and passivation system, spray cleaning with an unload air lock, and a basket return conveyor, all with data exchange for traceability.",
@@ -4955,7 +4596,7 @@
         "Coating technology",
         "Chamber volume (m³)",
         "Effective coating area (mm)",
-        "Max. working temp. (°C)",
+        "Max. working temp. (°c)",
         "Equipment size L x W x H (mm)",
         "Capacity (trees)",
         "Insert load APMT1135 (pcs)",
@@ -5983,7 +5624,7 @@
             '</a>' +
             '<ul class="mobile-cat-list">' +
             b.cats.map(function (c) {
-              return '<li><a href="#/' + b.id + '/' + c.id + '">' + esc(c.name) + '</a></li>';
+              return '<li><a href="' + b.id + '/' + c.id + '/">' + esc(c.name) + '</a></li>';
             }).join("") +
             '</ul></div>';
         }).join("");

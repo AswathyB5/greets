@@ -681,15 +681,20 @@
       background: #FFFFFF;
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 4px 10px;
+      padding: 4px 12px;
       height: 38px;
+      width: 110px;
+      min-width: 110px;
+      max-width: 110px;
+      box-sizing: border-box;
       box-shadow: 0 1px 3px rgba(27, 35, 40, 0.05);
     }
 
     .partner-brand-logo img {
-      height: 24px;
-      max-width: 90px;
+      max-height: 24px;
+      max-width: 86px;
       width: auto;
+      height: auto;
       object-fit: contain;
       display: block;
     }
@@ -1484,11 +1489,12 @@
       }
     }
 
-    /* Narrow screens: everything is already a single column, so the items just
-       follow document order with the link pinned to the left edge. */
-    @media (max-width: 640px) {
+    /* Narrow screens: center brand and logo sections */
+    @media (max-width: 768px) {
       .brand-intro>div {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
+        text-align: center !important;
       }
 
       .brand-intro .brand-divider,
@@ -1496,11 +1502,39 @@
       .brand-intro p,
       .brand-intro__link {
         grid-area: auto;
-        justify-self: start;
+        justify-self: center !important;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      .brand-intro .brand-divider {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-bottom: 0.75rem !important;
+      }
+
+      .brand-intro .brand-divider img {
+        margin: 0 auto !important;
+        display: block !important;
+        max-height: 48px !important;
+        width: auto !important;
+      }
+
+      .brand-intro__link {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
       }
 
       .brand-intro__stats {
         grid-area: auto;
+        justify-self: center !important;
+        margin: 1.25rem auto 0 !important;
+        width: 100% !important;
+        max-width: 380px !important;
       }
     }
 
@@ -1643,10 +1677,10 @@
       cursor: pointer;
       display: flex !important;
       flex-direction: row !important;
-      /* Fixed height and no growth: the card must keep its size when the grid
+      /* Fixed height on desktop: the card keeps its size when the grid
          row grows, otherwise the card in the other column stretches with it. */
       flex: 0 0 var(--family-card-h, 100px);
-      height: var(--family-card-h, 100px) !important;
+      height: var(--family-card-h, 100px);
       align-items: stretch;
       position: relative;
       padding: 0;
@@ -1774,6 +1808,125 @@
       background: var(--lime);
       border-color: var(--lime);
       color: var(--lime-ink);
+    }
+
+    /* ── Mobile Layout for Families & Details Cards (down to 320px) ── */
+    @media (max-width: 640px) {
+      .families {
+        grid-template-columns: 1fr !important;
+        gap: 0.85rem !important;
+      }
+
+      .families details {
+        height: auto !important;
+        align-self: auto !important;
+      }
+
+      .families summary {
+        height: auto !important;
+        min-height: 96px !important;
+        max-height: none !important;
+        flex: 1 1 auto !important;
+        align-items: stretch !important;
+        overflow: visible !important;
+      }
+
+      .family-thumb {
+        width: 82px !important;
+        min-width: 82px !important;
+        max-width: 82px !important;
+        align-self: stretch !important;
+        height: auto !important;
+        min-height: 96px !important;
+        padding: 4px !important;
+      }
+
+      .family-head {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        padding: 0.75rem 2.4rem 0.95rem 0.75rem !important;
+        gap: 0.25rem !important;
+      }
+
+      .families summary .t {
+        font-size: 0.90rem !important;
+        line-height: 1.3 !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        display: block !important;
+      }
+
+      .family-count-badge {
+        font-size: 0.58rem !important;
+        padding: 0.15rem 0.42rem !important;
+        margin-left: 0.35rem !important;
+        white-space: nowrap !important;
+      }
+
+      .families summary .t small {
+        display: block !important;
+        font-size: 0.78rem !important;
+        line-height: 1.4 !important;
+        color: var(--steel) !important;
+        margin-top: 0.35rem !important;
+        margin-bottom: 0.5rem !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+      }
+
+      .families summary .ic {
+        width: 26px !important;
+        height: 26px !important;
+        font-size: 1rem !important;
+        top: 8px !important;
+        right: 8px !important;
+      }
+
+      .families .models li a {
+        padding: 0.85rem 1rem 1rem !important;
+      }
+
+      .families .models li span {
+        margin-top: 0.35rem !important;
+        margin-bottom: 0.35rem !important;
+      }
+    }
+
+    /* Small screens down to 320px */
+    @media (max-width: 380px) {
+      .family-thumb {
+        width: 72px !important;
+        min-width: 72px !important;
+        max-width: 72px !important;
+        padding: 2px !important;
+      }
+
+      .family-head {
+        padding: 0.7rem 2rem 0.95rem 0.65rem !important;
+      }
+
+      .families summary .t {
+        font-size: 0.84rem !important;
+        line-height: 1.25 !important;
+      }
+
+      .families summary .t small {
+        font-size: 0.74rem !important;
+        line-height: 1.35 !important;
+        margin-top: 0.3rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+
+      .families summary .ic {
+        width: 24px !important;
+        height: 24px !important;
+        font-size: 0.9rem !important;
+        top: 6px !important;
+        right: 6px !important;
+      }
     }
 
     /* ── Models List (Expanded Details) ── */
@@ -2307,6 +2460,8 @@
     .form-field {
       display: flex;
       flex-direction: column;
+      min-width: 0;
+      width: 100%;
     }
 
     .form-field label {
@@ -2327,6 +2482,9 @@
       transition: all var(--duration-fast);
       outline: none;
       font-size: 0.92rem;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .form-field input::placeholder,
@@ -2354,6 +2512,10 @@
       background-position: right 1rem center;
       padding-right: 2.5rem;
       cursor: pointer;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     .form-note {
@@ -2556,8 +2718,40 @@
         padding: 0.6rem 0.35rem;
       }
 
+      .contact-main {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .contact-form-card {
+        order: 1;
+        padding: 1.35rem 1.15rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .contact-sidebar {
+        order: 2;
+        width: 100%;
+      }
+
+      .contact-sidebar__card {
+        padding: 1.35rem 1.15rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
       .form-row {
         grid-template-columns: 1fr;
+        gap: 0.85rem;
+        margin-bottom: 0.85rem;
+      }
+
+      .form-field input,
+      .form-field select,
+      .form-field textarea {
+        font-size: 16px; /* Prevents iOS Safari from auto-zooming on focus */
       }
 
       .finder-controls .search-box {
@@ -2569,6 +2763,72 @@
       .brand-intro__stats {
         grid-template-columns: 1fr;
         gap: 0.5rem;
+      }
+
+      .contact-main {
+        gap: 1.15rem;
+      }
+
+      .contact-form-card,
+      .contact-sidebar__card {
+        padding: 1.1rem 0.85rem !important;
+        border-radius: 12px;
+      }
+
+      .contact-form-card h3 {
+        font-size: 1.25rem;
+      }
+
+      .contact-form-card > p {
+        font-size: 0.82rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .form-row {
+        gap: 0.65rem;
+        margin-bottom: 0.65rem;
+      }
+
+      .form-field label {
+        font-size: 0.74rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .form-field input,
+      .form-field select,
+      .form-field textarea {
+        padding: 0.55rem 0.65rem;
+        font-size: 16px; /* 16px prevents iOS auto-zoom */
+        border-radius: 6px;
+      }
+
+      .form-field textarea {
+        min-height: 72px;
+      }
+
+      .form-privacy-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.35rem;
+        padding: 0.5rem 0.65rem;
+        font-size: 0.72rem;
+      }
+
+      .form-privacy-card__content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        width: 100%;
+      }
+
+      .form-privacy-card__link {
+        margin-left: 0;
+      }
+
+      .btn--primary.btn--lg,
+      .contact-form-card .btn--primary {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
       }
     }
 
@@ -3863,19 +4123,142 @@
       .finder-filter-sep {
         margin-left: 0;
       }
-
-      .steps {
-        flex-wrap: wrap;
-      }
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       .finder-controls {
-        flex-direction: column;
+        flex-direction: column !important;
+        gap: 12px !important;
       }
 
+      .finder-controls .search {
+        width: 100% !important;
+      }
+
+      /* Brand buttons centered in mobile 2x2 grid */
       .seg {
-        flex-wrap: wrap;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+        width: 100% !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+      }
+
+      .seg button {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        height: 42px !important;
+        padding: 0 8px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+      }
+
+      .seg button[data-brand="all"] {
+        min-width: 0 !important;
+        width: 100% !important;
+      }
+
+      .seg button.logo-btn {
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 8px !important;
+        justify-content: center !important;
+      }
+
+      .seg button.logo-btn img {
+        margin: 0 auto !important;
+        display: block !important;
+        max-height: 24px !important;
+        max-width: 90px !important;
+      }
+
+      /* 
+         Four rows on mobile:
+         Row 1: All processes & Harden
+         Row 2: Clean & Coat
+         Row 3: Industry dropdown
+         Row 4: Category dropdown
+      */
+      .finder-filters {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+        width: 100% !important;
+        margin-top: 12px !important;
+      }
+
+      .steps {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+        width: 100% !important;
+        margin: 0 !important;
+      }
+
+      .steps button {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: 38px !important;
+        padding: 6px 8px !important;
+        font-size: 0.82rem !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+      }
+
+      .steps button span {
+        flex-shrink: 0;
+      }
+
+      .finder-filter-sep {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+      }
+
+      .fsel {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 8px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      .fsel>span {
+        flex: 0 0 76px !important;
+        min-width: 76px !important;
+        font-size: 0.74rem !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.05em !important;
+        color: #3E4B52 !important;
+        white-space: nowrap !important;
+      }
+
+      .fsel select {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        width: 100% !important;
+        height: 38px !important;
+        box-sizing: border-box !important;
+        padding: 6px 10px !important;
+        border-radius: 8px !important;
+        border: 1.5px solid #D3D8D4 !important;
+        background: #FFFFFF !important;
+        font-size: 0.84rem !important;
       }
 
       .result {
@@ -3885,15 +4268,6 @@
       .r-cat,
       .result .b {
         display: none !important;
-      }
-
-      .fsel select {
-        min-width: 0;
-        width: 100%;
-      }
-
-      .finder-filter-sep {
-        width: 100%;
       }
     }
 
@@ -4029,7 +4403,46 @@
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="mega" id="mega" hidden></div>
+    <div class="mega" id="mega" hidden>
+      <div class="mega-grid">
+        <div>
+          <a class="mega-brand" href="bmi/">
+            <img src="assets/logo-BMI.png" alt="BMI">
+          </a>
+          <ul>
+            <li><a href="bmi/gas-quenching/">Gas quenching furnaces</a></li>
+            <li><a href="bmi/oil-quenching/">Oil quenching furnaces</a></li>
+            <li><a href="bmi/low-temperature/">Low-temperature furnaces</a></li>
+            <li><a href="bmi/thermochemical/">Thermochemical treatment furnaces</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="mega-brand" href="novatec/">
+            <img src="assets/logo-novatec.png" alt="Novatec">
+          </a>
+          <ul>
+            <li><a href="novatec/pluritank/">Multi-tank ultrasonic cleaning</a></li>
+            <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
+            <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
+            <li><a href="novatec/components/">Components</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="mega-brand" href="huasheng/">
+            <img src="assets/Huasheng.png" alt="Huasheng">
+          </a>
+          <ul>
+            <li><a href="huasheng/pvd/">PVD coating equipment</a></li>
+            <li><a href="huasheng/dlc/">DLC &amp; ta-C coating equipment</a></li>
+            <li><a href="huasheng/diamond/">Diamond coating equipment</a></li>
+            <li><a href="huasheng/decorative/">Decorative PVD coating equipment</a></li>
+            <li><a href="huasheng/optical/">Optical coating equipment</a></li>
+            <li><a href="huasheng/cvd/">CVD &amp; CVA coating equipment</a></li>
+            <li><a href="huasheng/turnkey/">Turnkey coating solutions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="mega mega--ind" id="mega-ind" hidden></div>
   </header>
 
@@ -4053,6 +4466,45 @@
           </svg>
           <span>Find a system &mdash; All products</span>
         </a>
+        <div class="mobile-brand-group">
+          <a class="mobile-brand-title" href="bmi/">
+            <img src="assets/logo-BMI.png" alt="BMI">
+            <span>BMI</span>
+          </a>
+          <ul class="mobile-cat-list">
+            <li><a href="bmi/gas-quenching/">Gas quenching furnaces</a></li>
+            <li><a href="bmi/oil-quenching/">Oil quenching furnaces</a></li>
+            <li><a href="bmi/low-temperature/">Low-temperature furnaces</a></li>
+            <li><a href="bmi/thermochemical/">Thermochemical treatment furnaces</a></li>
+          </ul>
+        </div>
+        <div class="mobile-brand-group">
+          <a class="mobile-brand-title" href="novatec/">
+            <img src="assets/logo-novatec.png" alt="Novatec">
+            <span>Novatec</span>
+          </a>
+          <ul class="mobile-cat-list">
+            <li><a href="novatec/pluritank/">Multi-tank ultrasonic cleaning</a></li>
+            <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
+            <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
+            <li><a href="novatec/components/">Components</a></li>
+          </ul>
+        </div>
+        <div class="mobile-brand-group">
+          <a class="mobile-brand-title" href="huasheng/">
+            <img src="assets/Huasheng.png" alt="Huasheng">
+            <span>Huasheng</span>
+          </a>
+          <ul class="mobile-cat-list">
+            <li><a href="huasheng/pvd/">PVD coating equipment</a></li>
+            <li><a href="huasheng/dlc/">DLC &amp; ta-C coating equipment</a></li>
+            <li><a href="huasheng/diamond/">Diamond coating equipment</a></li>
+            <li><a href="huasheng/decorative/">Decorative PVD coating equipment</a></li>
+            <li><a href="huasheng/optical/">Optical coating equipment</a></li>
+            <li><a href="huasheng/cvd/">CVD &amp; CVA coating equipment</a></li>
+            <li><a href="huasheng/turnkey/">Turnkey coating solutions</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="mobile-nav-group">

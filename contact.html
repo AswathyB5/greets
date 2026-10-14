@@ -359,6 +359,8 @@
     .form-field {
       display: flex;
       flex-direction: column;
+      min-width: 0;
+      width: 100%;
     }
 
     .form-field label {
@@ -380,6 +382,9 @@
       outline: none;
       font-size: 0.86rem;
       font-family: inherit;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .form-field input::placeholder,
@@ -407,6 +412,10 @@
       background-position: right 1rem center;
       padding-right: 2.5rem;
       cursor: pointer;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     .form-note {
@@ -597,8 +606,128 @@
     }
 
     @media (max-width: 768px) {
+      .contact-main {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .contact-form-card {
+        order: 1;
+        padding: 1.35rem 1.15rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .contact-sidebar {
+        order: 2;
+        width: 100%;
+      }
+
+      .contact-sidebar__card {
+        padding: 1.35rem 1.15rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
       .form-row {
         grid-template-columns: 1fr;
+        gap: 0.85rem;
+        margin-bottom: 0.85rem;
+      }
+
+      .form-field input,
+      .form-field select,
+      .form-field textarea {
+        font-size: 16px; /* Prevents iOS Safari from auto-zooming on focus */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 0.85rem;
+      }
+
+      .contact-page-hero {
+        padding: calc(64px + 1rem) 0 1.25rem;
+      }
+
+      .contact-page-hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .contact-page-hero p {
+        font-size: 0.92rem;
+      }
+
+      #contact {
+        padding: 1.25rem 0 1rem !important;
+      }
+
+      .contact-main {
+        gap: 1.15rem;
+      }
+
+      .contact-form-card,
+      .contact-sidebar__card {
+        padding: 1.1rem 0.85rem;
+        border-radius: 12px;
+      }
+
+      .contact-form-card h3 {
+        font-size: 1.25rem;
+      }
+
+      .contact-form-card > p {
+        font-size: 0.82rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .form-row {
+        gap: 0.65rem;
+        margin-bottom: 0.65rem;
+      }
+
+      .form-field label {
+        font-size: 0.74rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .form-field input,
+      .form-field select,
+      .form-field textarea {
+        padding: 0.55rem 0.65rem;
+        font-size: 16px; /* 16px prevents iOS auto-zoom */
+        border-radius: 6px;
+      }
+
+      .form-field textarea {
+        min-height: 72px;
+      }
+
+      .form-privacy-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.35rem;
+        padding: 0.5rem 0.65rem;
+        font-size: 0.72rem;
+      }
+
+      .form-privacy-card__content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        width: 100%;
+      }
+
+      .form-privacy-card__link {
+        margin-left: 0;
+      }
+
+      .btn--primary.btn--lg,
+      .contact-form-card .btn--primary {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
       }
     }
 
@@ -663,22 +792,23 @@
             <img src="assets/logo-novatec.png" alt="Novatec">
           </a>
           <ul>
-            <li><a href="novatec/vacuum-precision-cleaning/">Vacuum precision cleaning</a></li>
-            <li><a href="novatec/ultrasonic-cleaning/">Modular ultrasonic cleaning</a></li>
-            <li><a href="novatec/medical-cleaning/">Medical implants processing</a></li>
-            <li><a href="novatec/special-cleaning/">Special applications</a></li>
+            <li><a href="novatec/pluritank/">Multi-tank ultrasonic cleaning</a></li>
+            <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
+            <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
+            <li><a href="novatec/components/">Components</a></li>
           </ul>
         </div>
         <div>
           <a class="mega-brand" href="huasheng/">
-            <img src="assets/logos/huasheng.png" alt="Huasheng">
+            <img src="assets/Huasheng.png" alt="Huasheng">
           </a>
           <ul>
-            <li><a href="huasheng/pvd-coating/">PVD coating systems</a></li>
-            <li><a href="huasheng/dlc-coating/">DLC coating systems</a></li>
-            <li><a href="huasheng/diamond-coating/">CVD diamond coating</a></li>
-            <li><a href="huasheng/optical-coating/">Optical coating systems</a></li>
-            <li><a href="huasheng/cvd-coating/">CVD &amp; CVA coating equipment</a></li>
+            <li><a href="huasheng/pvd/">PVD coating equipment</a></li>
+            <li><a href="huasheng/dlc/">DLC &amp; ta-C coating equipment</a></li>
+            <li><a href="huasheng/diamond/">Diamond coating equipment</a></li>
+            <li><a href="huasheng/decorative/">Decorative PVD coating equipment</a></li>
+            <li><a href="huasheng/optical/">Optical coating equipment</a></li>
+            <li><a href="huasheng/cvd/">CVD &amp; CVA coating equipment</a></li>
             <li><a href="huasheng/turnkey/">Turnkey coating solutions</a></li>
           </ul>
         </div>
@@ -750,23 +880,24 @@
             <span>Novatec</span>
           </a>
           <ul class="mobile-cat-list">
-            <li><a href="novatec/vacuum-precision-cleaning/">Vacuum precision cleaning</a></li>
-            <li><a href="novatec/ultrasonic-cleaning/">Modular ultrasonic cleaning</a></li>
-            <li><a href="novatec/medical-cleaning/">Medical implants processing</a></li>
-            <li><a href="novatec/special-cleaning/">Special applications</a></li>
+            <li><a href="novatec/pluritank/">Multi-tank ultrasonic cleaning</a></li>
+            <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
+            <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
+            <li><a href="novatec/components/">Components</a></li>
           </ul>
         </div>
         <div class="mobile-brand-group">
           <a class="mobile-brand-title" href="huasheng/">
-            <img src="assets/logos/huasheng.png" alt="Huasheng">
+            <img src="assets/Huasheng.png" alt="Huasheng">
             <span>Huasheng</span>
           </a>
           <ul class="mobile-cat-list">
-            <li><a href="huasheng/pvd-coating/">PVD coating systems</a></li>
-            <li><a href="huasheng/dlc-coating/">DLC coating systems</a></li>
-            <li><a href="huasheng/diamond-coating/">CVD diamond coating</a></li>
-            <li><a href="huasheng/optical-coating/">Optical coating systems</a></li>
-            <li><a href="huasheng/cvd-coating/">CVD &amp; CVA coating equipment</a></li>
+            <li><a href="huasheng/pvd/">PVD coating equipment</a></li>
+            <li><a href="huasheng/dlc/">DLC &amp; ta-C coating equipment</a></li>
+            <li><a href="huasheng/diamond/">Diamond coating equipment</a></li>
+            <li><a href="huasheng/decorative/">Decorative PVD coating equipment</a></li>
+            <li><a href="huasheng/optical/">Optical coating equipment</a></li>
+            <li><a href="huasheng/cvd/">CVD &amp; CVA coating equipment</a></li>
             <li><a href="huasheng/turnkey/">Turnkey coating solutions</a></li>
           </ul>
         </div>
