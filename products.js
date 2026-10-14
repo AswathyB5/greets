@@ -4405,48 +4405,49 @@
           },
           {
             "id": "sputter-optical",
-            "photoAlt": "Huasheng magnetron sputtering optical coating system",
-            "name": "Magnetron sputtering optical coating equipment",
-            "tag": "Optical sputtering",
-            "short": "Precise multilayer optical films.",
-            "desc": "Magnetron sputtering optical coating equipment for high-density, low-scatter multilayer optical films, narrowband filters, and hard protective optical coatings on glass, quartz, and optical polymer substrates.",
+            "photoAlt": "Huasheng magnetron sputtering powder coating system",
+            "name": "Magnetron sputtering for coating powder rather than parts",
+            "tag": "Powder sputtering",
+            "short": "Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.",
+            "desc": "Magnetron sputtering for coating powder rather than parts. Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.",
             "features": [
-              "Precise layer control",
-              "Multilayer films"
+              "Magnetron sputtering for coating powder rather than parts",
+              "Coats diamond, metal and ceramic powders",
+              "Deposition of iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt"
             ],
             "specs": [
               [
                 "Coating technology",
-                "Closed-field magnetron sputtering"
+                "Magnetron sputtering for coating powder rather than parts"
               ],
               [
-                "Film properties",
-                "Dense, non-porous, zero-humidity-shift dielectric films"
+                "Coating materials",
+                "Iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt"
               ],
               [
-                "Substrates",
-                "Glass, optical polymers, semiconductors"
+                "Substrate powders",
+                "Diamond, metal and ceramic powders"
               ],
               [
                 "Typical applications",
-                "Narrowband optical filters, AR coatings, durable optical front-surfaces"
+                "Powder metallurgy, diamond tool manufacture"
               ]
             ],
             "process": [
-              "Optical filters",
-              "Precision optics",
-              "Hard optical AR coatings",
-              "Optical sensors & displays"
+              "Powder metallurgy",
+              "Diamond tool manufacture",
+              "Diamond powder coating",
+              "Ceramic & metal powders"
             ],
             "url": "https://www.hscoat.com/optical-coating-equipment/",
-            "k": "sputter-optical magnetron sputtering optical coating precision multilayer filters",
+            "k": "sputter-optical magnetron sputtering coating powder diamond metal ceramic powder metallurgy diamond tool manufacture",
             "i": [
-              "optics",
-              "semi"
+              "tools",
+              "steel"
             ],
             "series": "OPT",
-            "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
-            "typical_applications": "Glass, optical polymers, semiconductors, narrowband optical filters."
+            "series_desc": "Magnetron sputtering for coating powder rather than parts.",
+            "typical_applications": "Powder metallurgy, diamond tool manufacture."
           }
         ]
       },
