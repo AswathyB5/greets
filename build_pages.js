@@ -66,6 +66,38 @@ CATALOG.forEach(b => {
 
 const SITE_URL = 'https://greets.co.in';
 
+const HUASHENG_COATING_TABLE = [
+  { series: "GFOUR", model: "GFOUR", tech: "4th-generation hybrid coating", cat: "PVD - hybrid", vol: "0.76", area: "Φ500 x 400", temp: "650", size: "4850 x 1600 x 2400", trees: "7", insertLoad: "8400", roundToolLoad: "2520", hobbingLoad: "—", maxLoad: "300", spindle: "130", time: "AlTiN 6-8", machineId: "gfour" },
+  { series: "MD", model: "MD200", tech: "Arc ion plating (4 arc sources)", cat: "PVD - arc", vol: "0.50", area: "Φ310 x 400", temp: "500", size: "3400 x 2000 x 2500", trees: "3", insertLoad: "3600", roundToolLoad: "1000", hobbingLoad: "—", maxLoad: "200", spindle: "130", time: "AlTiN 6-8", machineId: "md200" },
+  { series: "MD", model: "MD500", tech: "Arc ion plating (6 arc sources)", cat: "PVD - arc", vol: "0.70", area: "Φ410 x 400", temp: "600", size: "3400 x 2150 x 2500", trees: "5", insertLoad: "6000", roundToolLoad: "1800", hobbingLoad: "—", maxLoad: "300", spindle: "130", time: "AlTiN 6-8", machineId: "md500" },
+  { series: "MD", model: "MD800 PLUS", tech: "Arc ion plating (8 arc sources)", cat: "PVD - arc", vol: "1.00", area: "Φ650 x 400", temp: "600", size: "3750 x 2400 x 2500", trees: "10", insertLoad: "12000", roundToolLoad: "3600", hobbingLoad: "30", maxLoad: "500", spindle: "130", time: "AlTiN 6-8", machineId: "md800" },
+  { series: "MD", model: "MD1500", tech: "Arc ion plating (16 arc sources, vertical)", cat: "PVD - arc", vol: "1.80", area: "Φ720 x 900", temp: "600", size: "4860 x 2300 x 2660", trees: "12", insertLoad: "28000", roundToolLoad: "5300 (D6x50L)", hobbingLoad: "72", maxLoad: "1000", spindle: "130", time: "AlTiN 6-8", machineId: "md1500" },
+  { series: "HD", model: "HD500", tech: "Hybrid arc + magnetron (HiPIMS)", cat: "PVD - hybrid", vol: "0.70", area: "Φ410 x 400", temp: "700", size: "3400 x 1600 x 2600", trees: "5", insertLoad: "6000", roundToolLoad: "1800", hobbingLoad: "—", maxLoad: "200", spindle: "130", time: "AlTiN 6-8", machineId: "hd500" },
+  { series: "HD", model: "HD800", tech: "Hybrid arc + magnetron (HiPIMS)", cat: "PVD - hybrid", vol: "1.00", area: "Φ650 x 400", temp: "600", size: "3750 x 2400 x 2500", trees: "10", insertLoad: "12000", roundToolLoad: "3600", hobbingLoad: "—", maxLoad: "300", spindle: "130", time: "AlTiN 6-8", machineId: "hd800" },
+  { series: "DA", model: "DA600PRO", tech: "Hot filament CVD (HFCVD) diamond", cat: "Diamond", vol: "0.16", area: "300 x 300", temp: "—", size: "2600 x 1200 x 2700", trees: "—", insertLoad: "—", roundToolLoad: "500 (D3)", hobbingLoad: "—", maxLoad: "—", spindle: "—", time: "16-33", machineId: "da600pro" },
+  { series: "TC", model: "TC800PLUS", tech: "Arc magnetron hybrid ion plating (ta-C)", cat: "DLC / ta-C", vol: "1.00", area: "Φ650 x 400", temp: "200", size: "3750 x 1800 x 2300", trees: "10", insertLoad: "—", roundToolLoad: "2400", hobbingLoad: "—", maxLoad: "500", spindle: "130", time: "3-6", machineId: "tc800plus" },
+  { series: "TC", model: "TC800PLUS-F", tech: "Filtered arc ta-C (S-shaped filter)", cat: "DLC / ta-C", vol: "1.00", area: "Φ650 x 400", temp: "200", size: "4950 x 3400 x 2600", trees: "—", insertLoad: "—", roundToolLoad: "8640 (D3.175x38.1L)", hobbingLoad: "—", maxLoad: "350", spindle: "130", time: "3-6", machineId: "tc800plus-f" },
+  { series: "WCC", model: "WCC800", tech: "DC + HiPIMS magnetron sputtering (WC/C, TiAlN)", cat: "PVD - HiPIMS", vol: "1.00", area: "Φ650 x 400", temp: "<200 (deposition)", size: "4850 x 1600 x 2400", trees: "8", insertLoad: "—", roundToolLoad: "—", hobbingLoad: "—", maxLoad: "350", spindle: "170", time: "4-5", machineId: "wcc800" },
+  { series: "Special", model: "Broach coating equipment", tech: "Arc, dedicated to broaches", cat: "PVD - arc", vol: "2.50", area: "Φ650 x 2000", temp: "450", size: "3750 x 1800 x 2960", trees: "10", insertLoad: "—", roundToolLoad: "—", hobbingLoad: "—", maxLoad: "1000", spindle: "—", time: "7-9", machineId: "broach" }
+];
+
+const HUASHENG_COATING_IDS = HUASHENG_COATING_TABLE.map(x => x.machineId);
+
+const OMIT_SPEC_KEYS = [
+  "Coating technology",
+  "Technology",
+  "Chamber volume",
+  "Effective coating area",
+  "Effective area",
+  "Max. working temperature",
+  "Equipment size (L×W×H)",
+  "Equipment size",
+  "Capacity",
+  "Max. load",
+  "Process time",
+  "Operation"
+];
+
 const SVG_CHECK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
 const SVG_ARROW = '<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
 const SVG_EXT = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
@@ -98,8 +130,9 @@ function getHeaderHtml(depth = 0) {
         <a class="navlink navhome" href="${root}index.html#hero" data-spy="home">Home</a>
         <a class="navlink mega-btn" id="mega-btn" href="${root}index.html#finder" data-spy="products" aria-expanded="false"
           aria-controls="mega">Products</a>
+        <a class="navlink mega-btn" id="mega-ind-btn" href="${root}index.html#industries" data-spy="industries" aria-expanded="false"
+          aria-controls="mega-ind">Industries</a>
         <nav class="header__nav main" aria-label="Main">
-          <a class="navlink" href="${root}index.html#industries" data-spy="industries">Industries</a>
           <a class="navlink" href="${root}index.html#why" data-spy="why">Why buy through Greets</a>
           <a class="navlink" href="${root}contact.html" data-spy="contact">Contact</a>
         </nav>
@@ -128,6 +161,37 @@ function getHeaderHtml(depth = 0) {
             </ul>
           </div>
         `).join('')}
+      </div>
+    </div>
+    <div class="mega mega--ind" id="mega-ind" hidden>
+      <div class="mega-grid">
+        <div>
+          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Tooling &amp; Metalworking</div>
+          <ul>
+            <li><a href="${root}index.html?ind=cutting-tools#finder" data-ind="cutting-tools">Cutting tools &amp; inserts</a></li>
+            <li><a href="${root}index.html?ind=moulds-dies#finder" data-ind="moulds-dies">Moulds &amp; dies</a></li>
+            <li><a href="${root}index.html?ind=forming-tools#finder" data-ind="forming-tools">Punches &amp; forming tools</a></li>
+            <li><a href="${root}index.html?ind=precision-machining#finder" data-ind="precision-machining">Precision machining</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Energy, Auto &amp; Aerospace</div>
+          <ul>
+            <li><a href="${root}index.html?ind=automotive#finder" data-ind="automotive">Automotive &amp; powertrain</a></li>
+            <li><a href="${root}index.html?ind=aerospace#finder" data-ind="aerospace">Aerospace &amp; defence</a></li>
+            <li><a href="${root}index.html?ind=oil-gas#finder" data-ind="oil-gas">Oil &amp; gas / power gen</a></li>
+            <li><a href="${root}index.html?ind=bearings-gears#finder" data-ind="bearings-gears">Bearings &amp; gears</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Precision, Medical &amp; Optics</div>
+          <ul>
+            <li><a href="${root}index.html?ind=medical-devices#finder" data-ind="medical-devices">Medical devices &amp; implants</a></li>
+            <li><a href="${root}index.html?ind=optical-components#finder" data-ind="optical-components">Optical components</a></li>
+            <li><a href="${root}index.html?ind=semiconductor#finder" data-ind="semiconductor">Semiconductor &amp; electronics</a></li>
+            <li><a href="${root}index.html?ind=commercial-heat-treat#finder" data-ind="commercial-heat-treat">Commercial heat treatment &amp; job coaters</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -160,7 +224,47 @@ function getHeaderHtml(depth = 0) {
         `).join('')}
       </div>
     </div>
-    <a href="${root}index.html#industries">Industries</a>
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-toggle" id="mobile-industries-toggle" aria-expanded="false">
+        <span>Industries</span>
+        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="mobile-products-panel" id="mobile-industries-panel">
+        <a href="${root}index.html#industries" class="mobile-all-products-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Industries overview &mdash; All 12 sectors</span>
+        </a>
+        <div class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Tooling &amp; Metalworking</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="${root}index.html?ind=cutting-tools#finder" data-ind="cutting-tools">Cutting tools &amp; inserts</a></li>
+            <li><a href="${root}index.html?ind=moulds-dies#finder" data-ind="moulds-dies">Moulds &amp; dies</a></li>
+            <li><a href="${root}index.html?ind=forming-tools#finder" data-ind="forming-tools">Punches &amp; forming tools</a></li>
+            <li><a href="${root}index.html?ind=precision-machining#finder" data-ind="precision-machining">Precision machining</a></li>
+          </ul>
+        </div>
+        <div class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Energy, Auto &amp; Aerospace</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="${root}index.html?ind=automotive#finder" data-ind="automotive">Automotive &amp; powertrain</a></li>
+            <li><a href="${root}index.html?ind=aerospace#finder" data-ind="aerospace">Aerospace &amp; defence</a></li>
+            <li><a href="${root}index.html?ind=oil-gas#finder" data-ind="oil-gas">Oil &amp; gas / power gen</a></li>
+            <li><a href="${root}index.html?ind=bearings-gears#finder" data-ind="bearings-gears">Bearings &amp; gears</a></li>
+          </ul>
+        </div>
+        <div class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Precision, Medical &amp; Optics</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="${root}index.html?ind=medical-devices#finder" data-ind="medical-devices">Medical devices &amp; implants</a></li>
+            <li><a href="${root}index.html?ind=optical-components#finder" data-ind="optical-components">Optical components</a></li>
+            <li><a href="${root}index.html?ind=semiconductor#finder" data-ind="semiconductor">Semiconductor &amp; electronics</a></li>
+            <li><a href="${root}index.html?ind=commercial-heat-treat#finder" data-ind="commercial-heat-treat">Commercial heat treatment &amp; job coaters</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <a href="${root}index.html#why">Why buy through Greets</a>
     <a href="${root}contact.html">Contact</a>
     <a href="${root}contact.html" class="btn btn--primary">Talk to Greets</a>
@@ -566,21 +670,39 @@ CATALOG.forEach(b => {
           photoHtml = `<div class="mshot empty"><span>Machine photo from ${esc(b.name)} dealer kit</span></div>`;
         }
 
+        const isHuashengCoatingMachine = b.id === 'huasheng' && (
+          HUASHENG_COATING_IDS.includes(m.id) ||
+          (m.models && m.models[0] && m.models[0].tech && !m.models[0].chamberSize)
+        );
+
         let specsHtml = '';
         if (m.specs && m.specs.length) {
-          specsHtml = `
-            <table class="spec">
-              <tbody>
-                ${m.specs.map(r => {
-                  if (!r[1]) {
-                    return `<tr class="spec-group"><th colspan="2" scope="colgroup">${esc(r[0])}</th></tr>`;
-                  }
-                  return `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`;
-                }).join('')}
-              </tbody>
-            </table>
-            <p class="note">Manufacturer figures; exact values depend on the configuration.</p>
-          `;
+          let filteredSpecs = m.specs;
+          if (isHuashengCoatingMachine) {
+            filteredSpecs = m.specs.filter(r => !OMIT_SPEC_KEYS.includes(r[0]));
+          }
+          if (filteredSpecs.length) {
+            specsHtml = `
+              <table class="spec">
+                <tbody>
+                  ${filteredSpecs.map(r => {
+                    if (!r[1]) {
+                      return `<tr class="spec-group"><th colspan="2" scope="colgroup">${esc(r[0])}</th></tr>`;
+                    }
+                    return `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`;
+                  }).join('')}
+                </tbody>
+              </table>
+              <p class="note">Manufacturer figures; exact values depend on the configuration.</p>
+            `;
+          } else {
+            specsHtml = `
+              <div class="ondemand" style="padding:0.85rem 1rem;">
+                <b>Full specifications below</b>
+                <p>See the complete technical parameter table below for chamber volume, dimensions, capacities, and process times.</p>
+              </div>
+            `;
+          }
         } else {
           specsHtml = `
             <div class="ondemand">
@@ -663,14 +785,85 @@ CATALOG.forEach(b => {
         }
 
         let modelsTableHtml = '';
-        if (m.models && m.models.length) {
+        if (isHuashengCoatingMachine) {
+          const headers = [
+            "Series",
+            "Model",
+            "Coating technology",
+            "Chamber volume (m³)",
+            "Effective coating area (mm)",
+            "Max. working temp. (°C)",
+            "Equipment size L x W x H (mm)",
+            "Capacity (trees)",
+            "Insert load APMT1135 (pcs)",
+            "Round tool load (pcs)",
+            "Hobbing tool load D80xL150 (pcs)",
+            "Max. load (kg)",
+            "Spindle Ø (mm)",
+            "Process time (h)",
+            "Action"
+          ];
+
+          modelsTableHtml = `
+            <section class="m-models-section">
+              <div class="m-models-head">
+                <div class="m-models-head__title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  <div>
+                    <h2>Standard model range &amp; technical parameters</h2>
+                    <p>Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times</p>
+                  </div>
+                </div>
+                <span class="m-models-count">${HUASHENG_COATING_TABLE.length} Models in Range</span>
+              </div>
+              <div class="m-models-table-wrap" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+                <table class="m-models-table" style="min-width: 1400px;">
+                  <thead>
+                    <tr>
+                      ${headers.map((h, idx) => `<th scope="col"${idx === headers.length - 1 ? ' class="th-action"' : ''}>${esc(h)}</th>`).join('')}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${HUASHENG_COATING_TABLE.map(row => {
+                      const isCurrent = row.machineId === m.id || (row.model.toLowerCase() === m.name.toLowerCase()) || (m.name.toLowerCase().indexOf(row.model.toLowerCase()) === 0);
+                      const enquireHref = `${rootRel}contact.html?page=${encodeURIComponent(row.model)}&category=${encodeURIComponent(row.cat)}&brand=Huasheng`;
+                      return `
+                        <tr${isCurrent ? ' class="row-current" style="background: rgba(2, 150, 60, 0.08); font-weight: 600;"' : ''}>
+                          <td><span class="pill-orientation" style="font-weight:700;">${esc(row.series)}</span></td>
+                          <td class="td-model"><span class="model-badge">${esc(row.model)}</span></td>
+                          <td>${esc(row.tech)}</td>
+                          <td class="td-highlight">${esc(row.vol)}</td>
+                          <td class="td-dim">${esc(row.area)}</td>
+                          <td>${esc(row.temp)}</td>
+                          <td>${esc(row.size)}</td>
+                          <td class="td-highlight">${esc(row.trees)}</td>
+                          <td>${esc(row.insertLoad)}</td>
+                          <td>${esc(row.roundToolLoad)}</td>
+                          <td>${esc(row.hobbingLoad)}</td>
+                          <td class="td-highlight">${esc(row.maxLoad)}</td>
+                          <td>${esc(row.spindle)}</td>
+                          <td>${esc(row.time)}</td>
+                          <td class="td-action">
+                            <a href="${enquireHref}" class="btn-model-enquire">
+                              <span>Enquire</span>${SVG_ARROW}
+                            </a>
+                          </td>
+                        </tr>
+                      `;
+                    }).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          `;
+        } else if (m.models && m.models.length && c.id !== 'medical-implants') {
           const isDeco = m.models[0].chamberSize !== undefined || m.models[0].arcTargets !== undefined || m.models[0].otherTargets !== undefined;
           const isCoating = m.models[0].tech !== undefined && !isDeco;
           const isCleaning = m.models[0].chamber !== undefined || m.models[0].notes !== undefined;
           const headers = isDeco
-            ? ["Family", "Model", "Chamber Size (mm)", "Effective Area (mm)", "Arc Targets", "Other Targets", "Footprint L×W×H (m)", "Action"]
+            ? ["Family", "Model", "Chamber Size (mm)", "Effective coating area (mm)", "Arc Targets", "Other Targets", "Footprint L×W×H (m)", "Action"]
             : (isCoating
-              ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
+              ? ["Model", "Technology", "Effective coating area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
               : (isCleaning
                 ? ["Family", "Model", "Usable Chamber / Tank (mm)", "Overall Size (mm)", "Max Load", "Version / Notes", "Action"]
                 : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]));

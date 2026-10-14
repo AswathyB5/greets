@@ -626,9 +626,9 @@
       </a>
       <div class="navgroup" id="navgroup">
         <a class="navlink navhome" href="index.html#hero">Home</a>
-        <a class="navlink" href="index.html#finder">Products</a>
+        <a class="navlink mega-btn" id="mega-btn" href="index.html#finder" aria-expanded="false" aria-controls="mega">Products</a>
+        <a class="navlink mega-btn" id="mega-ind-btn" href="index.html#industries" aria-expanded="false" aria-controls="mega-ind">Industries</a>
         <nav class="header__nav main" aria-label="Main">
-          <a class="navlink" href="index.html#industries">Industries</a>
           <a class="navlink" href="index.html#why">Why buy through Greets</a>
           <a class="navlink is-active" href="contact.html" aria-current="page">Contact</a>
         </nav>
@@ -644,6 +644,76 @@
       <button class="header__hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
+    </div>
+    <div class="mega" id="mega" hidden>
+      <div class="mega-grid">
+        <div>
+          <a class="mega-brand" href="bmi/">
+            <img src="assets/logo-BMI.png" alt="BMI">
+          </a>
+          <ul>
+            <li><a href="bmi/gas-quenching/">Gas quenching furnaces</a></li>
+            <li><a href="bmi/oil-quenching/">Oil quenching furnaces</a></li>
+            <li><a href="bmi/low-temperature/">Low-temperature furnaces</a></li>
+            <li><a href="bmi/thermochemical/">Thermochemical treatment furnaces</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="mega-brand" href="novatec/">
+            <img src="assets/logo-novatec.png" alt="Novatec">
+          </a>
+          <ul>
+            <li><a href="novatec/vacuum-precision-cleaning/">Vacuum precision cleaning</a></li>
+            <li><a href="novatec/ultrasonic-cleaning/">Modular ultrasonic cleaning</a></li>
+            <li><a href="novatec/medical-cleaning/">Medical implants processing</a></li>
+            <li><a href="novatec/special-cleaning/">Special applications</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="mega-brand" href="huasheng/">
+            <img src="assets/logos/huasheng.png" alt="Huasheng">
+          </a>
+          <ul>
+            <li><a href="huasheng/pvd-coating/">PVD coating systems</a></li>
+            <li><a href="huasheng/dlc-coating/">DLC coating systems</a></li>
+            <li><a href="huasheng/diamond-coating/">CVD diamond coating</a></li>
+            <li><a href="huasheng/optical-coating/">Optical coating systems</a></li>
+            <li><a href="huasheng/cvd-coating/">CVD &amp; CVA coating equipment</a></li>
+            <li><a href="huasheng/turnkey/">Turnkey coating solutions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mega mega--ind" id="mega-ind" hidden>
+      <div class="mega-grid">
+        <div>
+          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Tooling &amp; Metalworking</div>
+          <ul>
+            <li><a href="index.html?ind=cutting-tools#finder" data-ind="cutting-tools">Cutting tools &amp; inserts</a></li>
+            <li><a href="index.html?ind=moulds-dies#finder" data-ind="moulds-dies">Moulds &amp; dies</a></li>
+            <li><a href="index.html?ind=forming-tools#finder" data-ind="forming-tools">Punches &amp; forming tools</a></li>
+            <li><a href="index.html?ind=precision-machining#finder" data-ind="precision-machining">Precision machining</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Energy, Auto &amp; Aerospace</div>
+          <ul>
+            <li><a href="index.html?ind=automotive#finder" data-ind="automotive">Automotive &amp; powertrain</a></li>
+            <li><a href="index.html?ind=aerospace#finder" data-ind="aerospace">Aerospace &amp; defence</a></li>
+            <li><a href="index.html?ind=oil-gas#finder" data-ind="oil-gas">Oil &amp; gas / power gen</a></li>
+            <li><a href="index.html?ind=bearings-gears#finder" data-ind="bearings-gears">Bearings &amp; gears</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Precision, Medical &amp; Optics</div>
+          <ul>
+            <li><a href="index.html?ind=medical-devices#finder" data-ind="medical-devices">Medical devices &amp; implants</a></li>
+            <li><a href="index.html?ind=optical-components#finder" data-ind="optical-components">Optical components</a></li>
+            <li><a href="index.html?ind=semiconductor#finder" data-ind="semiconductor">Semiconductor &amp; electronics</a></li>
+            <li><a href="index.html?ind=commercial-heat-treat#finder" data-ind="commercial-heat-treat">Commercial heat treatment &amp; job coaters</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -663,52 +733,86 @@
           <span>Find a system &mdash; All products</span>
         </a>
         <div class="mobile-brand-group">
-          <a class="mobile-brand-title" href="index.html#/bmi">
+          <a class="mobile-brand-title" href="bmi/">
             <img src="assets/logo-BMI.png" alt="BMI">
             <span>BMI</span>
           </a>
           <ul class="mobile-cat-list">
-            <li><a href="index.html#/bmi/gas-quenching">Gas quenching furnaces</a></li>
-            <li><a href="index.html#/bmi/nitriding">Nitriding &amp; nitrocarburizing</a></li>
-            <li><a href="index.html#/bmi/oil-quenching">Oil quenching furnaces</a></li>
-            <li><a href="index.html#/bmi/dual-chamber">Dual-chamber furnaces</a></li>
-            <li><a href="index.html#/bmi/vacuum-brazing">Vacuum brazing furnaces</a></li>
-            <li><a href="index.html#/bmi/vacuum-tempering">Vacuum tempering furnaces</a></li>
-            <li><a href="index.html#/bmi/cryogenics">Sub-zero &amp; cryogenic treatment</a></li>
-            <li><a href="index.html#/bmi/sintering-mim">Sintering &amp; MIM furnaces</a></li>
+            <li><a href="bmi/gas-quenching/">Gas quenching furnaces</a></li>
+            <li><a href="bmi/oil-quenching/">Oil quenching furnaces</a></li>
+            <li><a href="bmi/low-temperature/">Low-temperature furnaces</a></li>
+            <li><a href="bmi/thermochemical/">Thermochemical treatment furnaces</a></li>
           </ul>
         </div>
         <div class="mobile-brand-group">
-          <a class="mobile-brand-title" href="index.html#/novatec">
-            <img src="assets/logo-novatec.png" alt="Pluritec">
-            <span>Pluritec</span>
+          <a class="mobile-brand-title" href="novatec/">
+            <img src="assets/logo-novatec.png" alt="Novatec">
+            <span>Novatec</span>
           </a>
           <ul class="mobile-cat-list">
-            <li><a href="index.html#/novatec/pluritank">Multi-tank modular cleaning lines</a></li>
-            <li><a href="index.html#/novatec/pre-pvd">Pre-PVD / CVD precision cleaning</a></li>
-            <li><a href="index.html#/novatec/implants">Medical implant &amp; device cleaning</a></li>
-            <li><a href="index.html#/novatec/aerospace-fpi">Aerospace FPI &amp; NDT lines</a></li>
-            <li><a href="index.html#/novatec/continuous">Continuous wire, strip &amp; tube cleaning</a></li>
-            <li><a href="index.html#/novatec/generators">Ultrasonic generators &amp; transducers</a></li>
+            <li><a href="novatec/vacuum-precision-cleaning/">Vacuum precision cleaning</a></li>
+            <li><a href="novatec/ultrasonic-cleaning/">Modular ultrasonic cleaning</a></li>
+            <li><a href="novatec/medical-cleaning/">Medical implants processing</a></li>
+            <li><a href="novatec/special-cleaning/">Special applications</a></li>
           </ul>
         </div>
         <div class="mobile-brand-group">
-          <a class="mobile-brand-title" href="index.html#/huasheng">
+          <a class="mobile-brand-title" href="huasheng/">
             <img src="assets/logos/huasheng.png" alt="Huasheng">
             <span>Huasheng</span>
           </a>
           <ul class="mobile-cat-list">
-            <li><a href="index.html#/huasheng/pvd">PVD arc &amp; magnetron coating systems</a></li>
-            <li><a href="index.html#/huasheng/dlc">PECVD / DLC coating systems</a></li>
-            <li><a href="index.html#/huasheng/diamond">Diamond &amp; ta-C coating systems</a></li>
-            <li><a href="index.html#/huasheng/optical">Optical precision coating systems</a></li>
-            <li><a href="index.html#/huasheng/cvd">CVD &amp; CVA aluminising systems</a></li>
-            <li><a href="index.html#/huasheng/turnkey">Turnkey PVD coating plants</a></li>
+            <li><a href="huasheng/pvd-coating/">PVD coating systems</a></li>
+            <li><a href="huasheng/dlc-coating/">DLC coating systems</a></li>
+            <li><a href="huasheng/diamond-coating/">CVD diamond coating</a></li>
+            <li><a href="huasheng/optical-coating/">Optical coating systems</a></li>
+            <li><a href="huasheng/cvd-coating/">CVD &amp; CVA coating equipment</a></li>
+            <li><a href="huasheng/turnkey/">Turnkey coating solutions</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <a href="index.html#industries">Industries</a>
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-toggle" id="mobile-industries-toggle" aria-expanded="false">
+        <span>Industries</span>
+        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="mobile-products-panel" id="mobile-industries-panel">
+        <a href="index.html#industries" class="mobile-all-products-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Industries overview &mdash; All 12 sectors</span>
+        </a>
+        <div class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Tooling &amp; Metalworking</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="index.html?ind=cutting-tools#finder" data-ind="cutting-tools">Cutting tools &amp; inserts</a></li>
+            <li><a href="index.html?ind=moulds-dies#finder" data-ind="moulds-dies">Moulds &amp; dies</a></li>
+            <li><a href="index.html?ind=forming-tools#finder" data-ind="forming-tools">Punches &amp; forming tools</a></li>
+            <li><a href="index.html?ind=precision-machining#finder" data-ind="precision-machining">Precision machining</a></li>
+          </ul>
+        </div>
+        <div class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Energy, Auto &amp; Aerospace</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="index.html?ind=automotive#finder" data-ind="automotive">Automotive &amp; powertrain</a></li>
+            <li><a href="index.html?ind=aerospace#finder" data-ind="aerospace">Aerospace &amp; defence</a></li>
+            <li><a href="index.html?ind=oil-gas#finder" data-ind="oil-gas">Oil &amp; gas / power gen</a></li>
+            <li><a href="index.html?ind=bearings-gears#finder" data-ind="bearings-gears">Bearings &amp; gears</a></li>
+          </ul>
+        </div>
+        <div class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Precision, Medical &amp; Optics</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="index.html?ind=medical-devices#finder" data-ind="medical-devices">Medical devices &amp; implants</a></li>
+            <li><a href="index.html?ind=optical-components#finder" data-ind="optical-components">Optical components</a></li>
+            <li><a href="index.html?ind=semiconductor#finder" data-ind="semiconductor">Semiconductor &amp; electronics</a></li>
+            <li><a href="index.html?ind=commercial-heat-treat#finder" data-ind="commercial-heat-treat">Commercial heat treatment &amp; job coaters</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <a href="index.html#why">Why buy through Greets</a>
     <a href="contact.html" class="active">Contact</a>
     <a href="contact.html" class="btn btn--primary">Talk to Greets</a>

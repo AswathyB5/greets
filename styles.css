@@ -7212,3 +7212,15 @@ body:has(#contact) footer.footer {
     padding-bottom: 1rem !important;
   }
 }
+
+.m-models-table tbody tr.row-current {
+  background: rgba(2, 150, 60, 0.09) !important;
+  font-weight: 600;
+}
+
+.m-models-table tbody tr.row-current td.td-model .model-badge {
+  background: var(--lime) !important;
+  color: #FFFFFF !important;
+  border-color: var(--lime) !important;
+  box-shadow: 0 2px 6px rgba(2, 150, 60, 0.25);
+}

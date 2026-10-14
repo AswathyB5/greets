@@ -1896,7 +1896,7 @@
         "family": "2CRD",
         "photo": "crd_green",
         "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
-        "name": "Vacuum precision cleaning",
+        "name": "2CRD Series Single-chamber precision cleaning under vacuum",
         "sub": "2CRD one-chamber systems with rotating basket, 8 sizes",
         "desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
         "url": "https://novatec.it/en/2crd-vacuum-cleaning",
@@ -1919,7 +1919,7 @@
                 "Single-chamber precision cleaning system"
               ]
             ],
-            "name": "2CRD vacuum precision cleaning system",
+            "name": "2CRD Series Single-chamber precision cleaning under vacuum",
             "short": "Cleaning and vacuum drying in one chamber.",
             "desc": "The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket. It is especially suited to blind and tapped holes, porous-coated surfaces and complex parts carrying polishing pastes and oils, including medical implants between production steps. Eight standard variants - 2CRD-100, 200, 400 and 800, each static or -ROT with rotation and tilting - plus the 2CRD1700 built to order.",
             "features": [
@@ -2079,89 +2079,6 @@
             "i": [
               "medical"
             ],
-            "models": [
-              {
-                "family": "2CRD",
-                "model": "2CRD-100",
-                "chamber": "300 × 400 × 300 h",
-                "size": "1800 × 1800 × 2100 h",
-                "load": "On request",
-                "notes": "Static",
-                "source": "Novatec 2CRD brochure"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-100-ROT",
-                "chamber": "300 × 400 × 300 h",
-                "size": "1800 × 1800 × 2100 h",
-                "load": "On request",
-                "notes": "Rotation and tilting",
-                "source": "Novatec website"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-200",
-                "chamber": "400 × 600 × 430 h",
-                "size": "2600 × 2000 × 2100 h",
-                "load": "On request",
-                "notes": "Static",
-                "source": "Novatec 2CRD brochure"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-200-ROT",
-                "chamber": "400 × 600 × 430 h",
-                "size": "2600 × 2000 × 2100 h",
-                "load": "On request",
-                "notes": "Rotation and tilting",
-                "source": "Novatec website"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-400",
-                "chamber": "On request",
-                "size": "approx. 3200 × 2000 × 2100 h",
-                "load": "On request",
-                "notes": "Static",
-                "source": "Novatec GA drawing 2CRD400"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-400-ROT",
-                "chamber": "On request",
-                "size": "approx. 3200 × 2000 × 2100 h",
-                "load": "On request",
-                "notes": "Rotation and tilting",
-                "source": "Novatec website"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-800",
-                "chamber": "600 × 1050 × 630 h",
-                "size": "3500 × 2000 × 2200 h",
-                "load": "On request",
-                "notes": "Static",
-                "source": "Novatec 2CRD brochure"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-800-ROT",
-                "chamber": "600 × 1050 × 630 h",
-                "size": "3500 × 2000 × 2200 h",
-                "load": "On request",
-                "notes": "Rotation and tilting",
-                "source": "Novatec website"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD1700",
-                "chamber": "800 × 1200 × 820 h",
-                "size": "4300 × 2100 × 2380 h, plus electrical board",
-                "load": "1000 kg",
-                "notes": "Built to order, above the standard range. Ultrasonic 9600 / 19200 W.",
-                "source": "Novatec technical description"
-              }
-            ],
             "family_desc": "Cleaning between production processes. Supplied either as a one-chamber system (2CRD) or as an in-line system (PLURITANK).",
             "typical_use": "Medical implants between manufacturing steps."
           },
@@ -2210,98 +2127,6 @@
             "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation packing",
             "i": [
               "medical"
-            ],
-            "models": [
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 50",
-                "chamber": "300 × 400 × 420 h (50 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLT 60V",
-                "chamber": "60 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Two-chamber pressure-cycle unit, listed under Components",
-                "source": "Novatec website"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 65",
-                "chamber": "330 × 490 × 400 deep (65 L)",
-                "size": "approx. 9150 × 4550 × 2880 h",
-                "load": "50 kg per basket",
-                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 80",
-                "chamber": "400 × 500 × 400 h (80 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 110",
-                "chamber": "400 × 500 × 550 h (110 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "120 kg per basket",
-                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140 EP",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 210",
-                "chamber": "500 × 700 × 600 h (210 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1400",
-                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
-                "size": "19500 × 7000 (line footprint)",
-                "load": "On request",
-                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
-                "source": "Novatec GA drawing 5298.3.0-26CO"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1500",
-                "chamber": "approx. 1500 L",
-                "size": "16550 × 7725, 3585 h",
-                "load": "On request",
-                "notes": "12 process stations",
-                "source": "Novatec GA drawing 5183.4.0-24CO"
-              }
             ],
             "family_desc": "Final cleaning, or combined final cleaning and passivation, with an unload air lock into the cleanroom.",
             "typical_use": "Removing dust and handling residues before sterilisation and packing in a cleanroom."
@@ -2432,53 +2257,6 @@
             "i": [
               "medical"
             ],
-            "models": [
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 65",
-                "chamber": "330 × 490 × 400 deep (65 L)",
-                "size": "approx. 9150 × 4550 × 2880 h",
-                "load": "50 kg per basket",
-                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "120 kg per basket",
-                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140 EP",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 210",
-                "chamber": "500 × 700 × 600 h (210 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1400",
-                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
-                "size": "19500 × 7000 (line footprint)",
-                "load": "On request",
-                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
-                "source": "Novatec GA drawing 5298.3.0-26CO"
-              }
-            ],
             "family_desc": "An electropolishing line built on the PLURITANK platform, adding an electropolish tank plus neutralisation and recovery rinsing.",
             "typical_use": "Stainless steel and titanium medical implants."
           },
@@ -2516,98 +2294,6 @@
             "k": "custom turnkey combined implants rfid qvs pfc brc cleanroom fcs fcps",
             "i": [
               "medical"
-            ],
-            "models": [
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 50",
-                "chamber": "300 × 400 × 420 h (50 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLT 60V",
-                "chamber": "60 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Two-chamber pressure-cycle unit, listed under Components",
-                "source": "Novatec website"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 65",
-                "chamber": "330 × 490 × 400 deep (65 L)",
-                "size": "approx. 9150 × 4550 × 2880 h",
-                "load": "50 kg per basket",
-                "notes": "9 process stages. Basket 260 × 390 × 320 h.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 80",
-                "chamber": "400 × 500 × 400 h (80 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 110",
-                "chamber": "400 × 500 × 550 h (110 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "120 kg per basket",
-                "notes": "Basket 340 × 490 × 450 h. 5 baskets per hour, up to 10 with two robots.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 140 EP",
-                "chamber": "140 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Electropolishing line for medical implants. Adds electropolish, neutralisation and recovery rinsing stages.",
-                "source": "Novatec specification"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 210",
-                "chamber": "500 × 700 × 600 h (210 L)",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Standard tank size",
-                "source": "Novatec PVD brochure"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1400",
-                "chamber": "700 × 1200 × 1650 h (approx. 1386 L)",
-                "size": "19500 × 7000 (line footprint)",
-                "load": "On request",
-                "notes": "14 process stations. Basket 540 × 1090 × 1540 h.",
-                "source": "Novatec GA drawing 5298.3.0-26CO"
-              },
-              {
-                "family": "PLURITANK",
-                "model": "PLURITANK 1500",
-                "chamber": "approx. 1500 L",
-                "size": "16550 × 7725, 3585 h",
-                "load": "On request",
-                "notes": "12 process stations",
-                "source": "Novatec GA drawing 5183.4.0-24CO"
-              }
             ],
             "family_desc": "Full automatic turnkey medical implant cleaning plants built to customer User Requirement Specification (URS), integrating basket loading, IPC, QVS, FCPS, PFC, and BRC with cleanroom air locks.",
             "typical_use": "Turnkey automated plants for orthopaedic & medical implant manufacturing."
@@ -4571,7 +4257,7 @@
         "photo": "hs_optical",
         "photoAlt": "Huasheng optical precision coating systems",
         "name": "Optical coating equipment",
-        "sub": "OPT-E electron beam evaporation and magnetron sputtering",
+        "sub": "Evaporation and magnetron sputtering",
         "desc": "Optical coating equipment for high-precision optical films, anti-reflection (AR) and optical filters on glass, quartz and silicon wafers.",
         "url": "https://www.hscoat.com/optical-coating-equipment/",
         "machines": [
@@ -4761,23 +4447,50 @@
             "series": "OPT",
             "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
             "typical_applications": "Glass, optical polymers, semiconductors, narrowband optical filters."
-          },
+          }
+        ]
+      },
+      {
+        "id": "cvd",
+        "photo": "hs_ma1500",
+        "photoAlt": "Huasheng MA1500 coating machine",
+        "name": "CVD & CVA coating equipment",
+        "sub": "CVD and CVA aluminizing",
+        "desc": "Chemical vapour deposition systems for thick wear-resistant and high-temperature coatings.",
+        "url": "https://www.hscoat.com/cvd-coating-equipment/",
+        "machines": [
           {
-            "id": "evaporation",
-            "name": "Evaporation optical coating equipment",
-            "short": "Anti-reflection and filter coatings.",
-            "desc": "Evaporation systems for anti-reflection and filter coatings on lenses and optics.",
+            "id": "cvd-systems",
+            "name": "CVD coating systems",
+            "short": "Thick wear-resistant coatings.",
+            "desc": "CVD systems for thick wear-resistant coatings, typically on turning inserts.",
             "features": [
-              "Anti-reflection coatings",
-              "Filter coatings"
+              "Thick, wear-resistant layers"
             ],
             "process": [
-              "Lens coating"
+              "Turning insert coating"
             ],
-            "url": "https://www.hscoat.com/evaporation-optical-coating-equipment/",
-            "k": "anti-reflection lenses evaporation",
+            "url": "https://www.hscoat.com/cvd-coating-systems/",
+            "k": "cvd inserts turning",
             "i": [
-              "optics"
+              "tools"
+            ]
+          },
+          {
+            "id": "cva",
+            "name": "CVA aluminizing systems",
+            "short": "Aluminide coatings for high-temperature parts.",
+            "desc": "Chemical vapour aluminizing systems for aluminide coatings that protect parts against high-temperature oxidation.",
+            "features": [
+              "High-temperature oxidation resistance"
+            ],
+            "process": [
+              "Turbine and hot-section parts"
+            ],
+            "url": "https://www.hscoat.com/cva-aluminizing-systems/",
+            "k": "aluminide turbine oxidation cva",
+            "i": [
+              "aero"
             ]
           }
         ]
@@ -4787,7 +4500,7 @@
         "photo": "turnkey",
         "photoAlt": "Layout of the Huasheng turnkey coating plant",
         "name": "Turnkey coating solutions",
-        "sub": "Complete MD800 PLUS tool-coating plant",
+        "sub": "Complete MD800 tool-coating plant",
         "desc": "A complete tool-coating centre from Huasheng: cleaning, coating, maintenance, utilities and quality control, laid out and commissioned as one plant.",
         "url": "https://www.hscoat.com/turnkey-solution/",
         "machines": [
@@ -4854,97 +4567,15 @@
               "Target and liner maintenance",
               "Inspection and dispatch"
             ],
-            "models": [
-              {
-                "model": "MD200",
-                "tech": "Arc (4 sources)",
-                "area": "Φ310 × 400 mm",
-                "temp": "500°C",
-                "load": "200 kg (3,600 inserts / 1,000 tools)",
-                "size": "3400 × 2000 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD500",
-                "tech": "Arc (6 sources)",
-                "area": "Φ410 × 400 mm",
-                "temp": "600°C",
-                "load": "300 kg (6,000 inserts / 1,800 tools)",
-                "size": "3400 × 2150 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD800 PLUS",
-                "tech": "Arc (8 sources)",
-                "area": "Φ650 × 400 mm",
-                "temp": "600°C",
-                "load": "500 kg (12,000 inserts / 30 hobs)",
-                "size": "3750 × 2400 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD1500",
-                "tech": "Arc (16 sources, vertical)",
-                "area": "Φ720 × 900 mm",
-                "temp": "600°C",
-                "load": "1,000 kg (28,000 inserts / 72 hobs)",
-                "size": "4860 × 2300 × 2660 mm",
-                "time": "AlTiN 6–8 h"
-              }
-            ],
             "url": "https://www.hscoat.com/turnkey-solution/",
             "k": "turnkey plant job shop coating centre md800 md800 plus",
             "i": [
-              "tools"
+              "tools",
+              "jobshop"
             ],
             "family": "Turnkey",
             "family_desc": "Huasheng Turnkey Coating Centres provide complete in-house coating plants encompassing incoming tool ultrasonic cleaning, MD800 PLUS coating coater, target and liner sandblasting maintenance, water purification, air compression, and metallurgical quality control instruments.",
             "typical_applications": "Turnkey in-house coating plants for tool regrinding shops and cutting tool manufacturers."
-          }
-        ]
-      },
-      {
-        "id": "cvd",
-        "photo": "hs_ma1500",
-        "photoAlt": "Huasheng MA1500 coating machine",
-        "name": "CVD coating equipment",
-        "sub": "CVD and CVA aluminizing",
-        "desc": "Chemical vapour deposition systems for thick wear-resistant and high-temperature coatings.",
-        "url": "https://www.hscoat.com/cvd-coating-equipment/",
-        "machines": [
-          {
-            "id": "cvd-systems",
-            "name": "CVD coating systems",
-            "short": "Thick wear-resistant coatings.",
-            "desc": "CVD systems for thick wear-resistant coatings, typically on turning inserts.",
-            "features": [
-              "Thick, wear-resistant layers"
-            ],
-            "process": [
-              "Turning insert coating"
-            ],
-            "url": "https://www.hscoat.com/cvd-coating-systems/",
-            "k": "cvd inserts turning",
-            "i": [
-              "tools"
-            ]
-          },
-          {
-            "id": "cva",
-            "name": "CVA aluminizing systems",
-            "short": "Aluminide coatings for high-temperature parts.",
-            "desc": "Chemical vapour aluminizing systems for aluminide coatings that protect parts against high-temperature oxidation.",
-            "features": [
-              "High-temperature oxidation resistance"
-            ],
-            "process": [
-              "Turbine and hot-section parts"
-            ],
-            "url": "https://www.hscoat.com/cva-aluminizing-systems/",
-            "k": "aluminide turbine oxidation cva",
-            "i": [
-              "aero"
-            ]
           }
         ]
       }
@@ -5052,6 +4683,38 @@
   const SVG_ARROW = '<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
   const SVG_EXT = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
   const SVG_BACK = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>';
+
+  const HUASHENG_COATING_TABLE = [
+    { series: "GFOUR", model: "GFOUR", tech: "4th-generation hybrid coating", cat: "PVD - hybrid", vol: "0.76", area: "Φ500 x 400", temp: "650", size: "4850 x 1600 x 2400", trees: "7", insertLoad: "8400", roundToolLoad: "2520", hobbingLoad: "—", maxLoad: "300", spindle: "130", time: "AlTiN 6-8", machineId: "gfour" },
+    { series: "MD", model: "MD200", tech: "Arc ion plating (4 arc sources)", cat: "PVD - arc", vol: "0.50", area: "Φ310 x 400", temp: "500", size: "3400 x 2000 x 2500", trees: "3", insertLoad: "3600", roundToolLoad: "1000", hobbingLoad: "—", maxLoad: "200", spindle: "130", time: "AlTiN 6-8", machineId: "md200" },
+    { series: "MD", model: "MD500", tech: "Arc ion plating (6 arc sources)", cat: "PVD - arc", vol: "0.70", area: "Φ410 x 400", temp: "600", size: "3400 x 2150 x 2500", trees: "5", insertLoad: "6000", roundToolLoad: "1800", hobbingLoad: "—", maxLoad: "300", spindle: "130", time: "AlTiN 6-8", machineId: "md500" },
+    { series: "MD", model: "MD800 PLUS", tech: "Arc ion plating (8 arc sources)", cat: "PVD - arc", vol: "1.00", area: "Φ650 x 400", temp: "600", size: "3750 x 2400 x 2500", trees: "10", insertLoad: "12000", roundToolLoad: "3600", hobbingLoad: "30", maxLoad: "500", spindle: "130", time: "AlTiN 6-8", machineId: "md800" },
+    { series: "MD", model: "MD1500", tech: "Arc ion plating (16 arc sources, vertical)", cat: "PVD - arc", vol: "1.80", area: "Φ720 x 900", temp: "600", size: "4860 x 2300 x 2660", trees: "12", insertLoad: "28000", roundToolLoad: "5300 (D6x50L)", hobbingLoad: "72", maxLoad: "1000", spindle: "130", time: "AlTiN 6-8", machineId: "md1500" },
+    { series: "HD", model: "HD500", tech: "Hybrid arc + magnetron (HiPIMS)", cat: "PVD - hybrid", vol: "0.70", area: "Φ410 x 400", temp: "700", size: "3400 x 1600 x 2600", trees: "5", insertLoad: "6000", roundToolLoad: "1800", hobbingLoad: "—", maxLoad: "200", spindle: "130", time: "AlTiN 6-8", machineId: "hd500" },
+    { series: "HD", model: "HD800", tech: "Hybrid arc + magnetron (HiPIMS)", cat: "PVD - hybrid", vol: "1.00", area: "Φ650 x 400", temp: "600", size: "3750 x 2400 x 2500", trees: "10", insertLoad: "12000", roundToolLoad: "3600", hobbingLoad: "—", maxLoad: "300", spindle: "130", time: "AlTiN 6-8", machineId: "hd800" },
+    { series: "DA", model: "DA600PRO", tech: "Hot filament CVD (HFCVD) diamond", cat: "Diamond", vol: "0.16", area: "300 x 300", temp: "—", size: "2600 x 1200 x 2700", trees: "—", insertLoad: "—", roundToolLoad: "500 (D3)", hobbingLoad: "—", maxLoad: "—", spindle: "—", time: "16-33", machineId: "da600pro" },
+    { series: "TC", model: "TC800PLUS", tech: "Arc magnetron hybrid ion plating (ta-C)", cat: "DLC / ta-C", vol: "1.00", area: "Φ650 x 400", temp: "200", size: "3750 x 1800 x 2300", trees: "10", insertLoad: "—", roundToolLoad: "2400", hobbingLoad: "—", maxLoad: "500", spindle: "130", time: "3-6", machineId: "tc800plus" },
+    { series: "TC", model: "TC800PLUS-F", tech: "Filtered arc ta-C (S-shaped filter)", cat: "DLC / ta-C", vol: "1.00", area: "Φ650 x 400", temp: "200", size: "4950 x 3400 x 2600", trees: "—", insertLoad: "—", roundToolLoad: "8640 (D3.175x38.1L)", hobbingLoad: "—", maxLoad: "350", spindle: "130", time: "3-6", machineId: "tc800plus-f" },
+    { series: "WCC", model: "WCC800", tech: "DC + HiPIMS magnetron sputtering (WC/C, TiAlN)", cat: "PVD - HiPIMS", vol: "1.00", area: "Φ650 x 400", temp: "<200 (deposition)", size: "4850 x 1600 x 2400", trees: "8", insertLoad: "—", roundToolLoad: "—", hobbingLoad: "—", maxLoad: "350", spindle: "170", time: "4-5", machineId: "wcc800" },
+    { series: "Special", model: "Broach coating equipment", tech: "Arc, dedicated to broaches", cat: "PVD - arc", vol: "2.50", area: "Φ650 x 2000", temp: "450", size: "3750 x 1800 x 2960", trees: "10", insertLoad: "—", roundToolLoad: "—", hobbingLoad: "—", maxLoad: "1000", spindle: "—", time: "7-9", machineId: "broach" }
+  ];
+
+  const HUASHENG_COATING_IDS = HUASHENG_COATING_TABLE.map(function (x) { return x.machineId; });
+
+  const OMIT_SPEC_KEYS = [
+    "Coating technology",
+    "Technology",
+    "Chamber volume",
+    "Effective coating area",
+    "Effective area",
+    "Max. working temperature",
+    "Equipment size (L×W×H)",
+    "Equipment size",
+    "Capacity",
+    "Max. load",
+    "Process time",
+    "Operation"
+  ];
 
   const crumbs = function (parts) {
     return '<div class="crumbrow">' +
@@ -5214,17 +4877,30 @@
       '</div></nav>'
       : '';
 
+    var isHuashengCoatingMachine = (b.id === 'huasheng' && (HUASHENG_COATING_IDS.includes(m.id) || (m.models && m.models[0] && m.models[0].tech && !m.models[0].chamberSize)));
+
     var specs;
     if (m.specs && m.specs.length) {
-      specs = '<table class="spec"><tbody>' +
-        m.specs.map(function (r) {
-          if (!r[1]) {
-            return '<tr class="spec-group"><th colspan="2" scope="colgroup">' + esc(r[0]) + '</th></tr>';
-          }
-          return '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td></tr>';
-        }).join("") +
-        '</tbody></table>' +
-        '<p class="note">Manufacturer figures; exact values depend on the configuration.</p>';
+      var filteredSpecs = m.specs;
+      if (isHuashengCoatingMachine) {
+        filteredSpecs = m.specs.filter(function (r) { return !OMIT_SPEC_KEYS.includes(r[0]); });
+      }
+      if (filteredSpecs.length) {
+        specs = '<table class="spec"><tbody>' +
+          filteredSpecs.map(function (r) {
+            if (!r[1]) {
+              return '<tr class="spec-group"><th colspan="2" scope="colgroup">' + esc(r[0]) + '</th></tr>';
+            }
+            return '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td></tr>';
+          }).join("") +
+          '</tbody></table>' +
+          '<p class="note">Manufacturer figures; exact values depend on the configuration.</p>';
+      } else {
+        specs = '<div class="ondemand" style="padding:0.75rem 1rem;">' +
+          '<b>Full specifications below</b>' +
+          '<p>See the complete technical parameter table below for chamber volume, dimensions, capacities, and process times.</p>' +
+          '</div>';
+      }
     } else {
       specs = '<div class="ondemand">' +
         '<b>Datasheet on request</b>' +
@@ -5271,14 +4947,82 @@
     }
 
     var modelsTableHtml = '';
-    if (m.models && m.models.length) {
+    if (isHuashengCoatingMachine) {
+      var headers = [
+        "Series",
+        "Model",
+        "Coating technology",
+        "Chamber volume (m³)",
+        "Effective coating area (mm)",
+        "Max. working temp. (°C)",
+        "Equipment size L x W x H (mm)",
+        "Capacity (trees)",
+        "Insert load APMT1135 (pcs)",
+        "Round tool load (pcs)",
+        "Hobbing tool load D80xL150 (pcs)",
+        "Max. load (kg)",
+        "Spindle Ø (mm)",
+        "Process time (h)",
+        "Action"
+      ];
+
+      modelsTableHtml = '<section class="m-models-section">' +
+        '<div class="m-models-head">' +
+        '<div class="m-models-head__title">' +
+        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>' +
+        '<div>' +
+        '<h2>Standard model range &amp; technical parameters</h2>' +
+        '<p>Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times</p>' +
+        '</div>' +
+        '</div>' +
+        '<span class="m-models-count">' + HUASHENG_COATING_TABLE.length + ' Models in Range</span>' +
+        '</div>' +
+        '<div class="m-models-table-wrap" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">' +
+        '<table class="m-models-table" style="min-width: 1400px;">' +
+        '<thead>' +
+        '<tr>' +
+        headers.map(function (h, idx) {
+          return '<th scope="col"' + (idx === headers.length - 1 ? ' class="th-action"' : '') + '>' + esc(h) + '</th>';
+        }).join("") +
+        '</tr>' +
+        '</thead>' +
+        '<tbody>' +
+        HUASHENG_COATING_TABLE.map(function (row) {
+          var isCurrent = row.machineId === m.id || (row.model.toLowerCase() === m.name.toLowerCase()) || (m.name.toLowerCase().indexOf(row.model.toLowerCase()) === 0);
+          return '<tr' + (isCurrent ? ' class="row-current" style="background: rgba(2, 150, 60, 0.08); font-weight: 600;"' : '') + '>' +
+            '<td><span class="pill-orientation" style="font-weight:700;">' + esc(row.series) + '</span></td>' +
+            '<td class="td-model"><span class="model-badge">' + esc(row.model) + '</span></td>' +
+            '<td>' + esc(row.tech) + '</td>' +
+            '<td class="td-highlight">' + esc(row.vol) + '</td>' +
+            '<td class="td-dim">' + esc(row.area) + '</td>' +
+            '<td>' + esc(row.temp) + '</td>' +
+            '<td>' + esc(row.size) + '</td>' +
+            '<td class="td-highlight">' + esc(row.trees) + '</td>' +
+            '<td>' + esc(row.insertLoad) + '</td>' +
+            '<td>' + esc(row.roundToolLoad) + '</td>' +
+            '<td>' + esc(row.hobbingLoad) + '</td>' +
+            '<td class="td-highlight">' + esc(row.maxLoad) + '</td>' +
+            '<td>' + esc(row.spindle) + '</td>' +
+            '<td>' + esc(row.time) + '</td>' +
+            '<td class="td-action">' +
+            '<button type="button" class="btn-model-enquire" data-enquire="' + esc(b.id) + '" data-label="' + esc('Huasheng - ' + row.model) + '">' +
+            '<span>Enquire</span>' + SVG_ARROW +
+            '</button>' +
+            '</td>' +
+            '</tr>';
+        }).join("") +
+        '</tbody>' +
+        '</table>' +
+        '</div>' +
+        '</section>';
+    } else if (m.models && m.models.length && c.id !== 'medical-implants') {
       var isDeco = m.models[0].chamberSize !== undefined || m.models[0].arcTargets !== undefined || m.models[0].otherTargets !== undefined;
       var isCoating = m.models[0].tech !== undefined && !isDeco;
       var isCleaning = m.models[0].chamber !== undefined || m.models[0].notes !== undefined;
       var headers = isDeco
-        ? ["Family", "Model", "Chamber Size (mm)", "Effective Area (mm)", "Arc Targets", "Other Targets", "Footprint L×W×H (m)", "Action"]
+        ? ["Family", "Model", "Chamber Size (mm)", "Effective coating area (mm)", "Arc Targets", "Other Targets", "Footprint L×W×H (m)", "Action"]
         : (isCoating
-          ? ["Model", "Technology", "Effective Area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
+          ? ["Model", "Technology", "Effective coating area", "Max Temp", "Load / Capacity", "Equipment Size (mm)", "Cycle Time", "Action"]
           : (isCleaning
             ? ["Family", "Model", "Usable Chamber / Tank (mm)", "Overall Size (mm)", "Max Load", "Version / Notes", "Action"]
             : ["Model", "Config", "Load", "Dimensions", "Max Temp", "Vacuum", "Cooling", "Action"]));
@@ -5594,7 +5338,7 @@
     pvd: ["md800", "aip", "hipims", "hybrid", "decorative"],
     dlc: ["pecvd-dlc", "tac"],
     diamond: ["hfcvd"],
-    optical: ["evaporation", "sputter-optical"],
+    optical: ["opt-t", "opt-e", "sputter-optical"],
     cvd: ["cvd-systems", "cva"],
     turnkey: ["md800-turnkey", "combined"],
     carbide_tools: ["pre-pvd", "pluritank-line", "2crd-system", "hfcvd", "da600pro", "md800", "aip", "hipims", "hybrid", "tac", "md800-turnkey"]
@@ -5616,7 +5360,7 @@
     dlc: "DLC coating",
     diamond: "diamond coating",
     optical: "optical coating",
-    cvd: "CVD coating",
+    cvd: "CVD & CVA coating",
     turnkey: "turnkey plants",
     carbide_tools: "carbide tooling & drills",
     coat: "coating",
@@ -5652,7 +5396,7 @@
     [["dlc", "diamond-like", "diamond like", "ta-c", "tac", "low friction"], "p:dlc"],
     [["diamond", "hfcvd"], "p:diamond"],
     [["cvd", "aluminiz", "aluminis"], "p:cvd"],
-    [["anti-reflect", "optical coat", "evaporation"], "p:optical"],
+    [["anti-reflect", "optical coat"], "p:optical"],
     [["turnkey", "plant", "complete line", "setup"], "p:turnkey"]
   ];
 
@@ -5714,7 +5458,10 @@
 
     // Carbide tooling: Carbide drills and tools are processed by Novatec (cleaning) and Huasheng (coating).
     // BMI vacuum furnaces do not process carbide tooling.
-    if (rawLower && rawLower.includes("carbide") && p.bid === "bmi") {
+    const isCarbideSearch = u.procs.includes("carbide_tools") ||
+      (rawLower && (rawLower.includes("carbide") || rawLower.includes("drill"))) ||
+      u.words.some(function (w) { return w.includes("carbide") || w.includes("drill"); });
+    if ((p.bid === "bmi" || (p.b && p.b.toLowerCase() === "bmi")) && isCarbideSearch) {
       return { sc: 0, why: [] };
     }
 
@@ -5833,7 +5580,14 @@
     function render() {
       if (!res) return;
       const raw = q ? q.value.trim() : "", rawLower = raw.toLowerCase(), cat = fCat ? fCat.value : "", u = understand(raw);
+      const isCarbide = u.procs.includes("carbide_tools") ||
+        (rawLower && (rawLower.includes("carbide") || rawLower.includes("drill"))) ||
+        u.words.some(function (w) { return w.includes("carbide") || w.includes("drill"); });
+
       let list = IDX.filter(function (p) {
+        if (isCarbide && (p.bid === "bmi" || (p.b && p.b.toLowerCase() === "bmi"))) {
+          return false;
+        }
         return (brand === "all" || p.b === brand) &&
           (!ind || p.i.includes(ind)) &&
           (!cat || (p.bid + "/" + p.cid) === cat);
@@ -5859,6 +5613,9 @@
       let fallbackFromBrand = null;
       if (!scored.length && raw && (brand !== "all" || cat)) {
         let fallbackList = IDX.filter(function (p) {
+          if (isCarbide && (p.bid === "bmi" || (p.b && p.b.toLowerCase() === "bmi"))) {
+            return false;
+          }
           return (!ind || p.i.includes(ind));
         });
         let fallbackScored = fallbackList.map(function (p) {
@@ -6136,29 +5893,53 @@
       }
     }
 
-    if (mega && megaBtn) {
+    function scrollToSection(targetId) {
+      var target = document.getElementById(targetId);
+      if (target) {
+        if (history.pushState) {
+          history.pushState(null, "", "#" + targetId);
+          if (window.updateHomeBreadcrumbs) window.updateHomeBreadcrumbs();
+        } else {
+          window.location.hash = targetId;
+        }
+        var header = document.querySelector(".header");
+        var headerHeight = header ? header.offsetHeight : 72;
+        var y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+        window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+      }
+    }
+
+    if (mega && megaBtn && !megaBtn._hasMegaListener) {
+      megaBtn._hasMegaListener = true;
       megaBtn.addEventListener("click", function (e) {
         e.preventDefault();
+        e.stopPropagation();
         if (!mega.hidden) {
           closeAllMega();
+          scrollToSection("finder");
           return;
         }
         closeAllMega();
         mega.hidden = false;
         megaBtn.setAttribute("aria-expanded", "true");
+        scrollToSection("finder");
       });
     }
 
-    if (megaInd && megaIndBtn) {
+    if (megaInd && megaIndBtn && !megaIndBtn._hasMegaListener) {
+      megaIndBtn._hasMegaListener = true;
       megaIndBtn.addEventListener("click", function (e) {
         e.preventDefault();
+        e.stopPropagation();
         if (!megaInd.hidden) {
           closeAllMega();
+          scrollToSection("industries");
           return;
         }
         closeAllMega();
         megaInd.hidden = false;
         megaIndBtn.setAttribute("aria-expanded", "true");
+        scrollToSection("industries");
       });
     }
 
@@ -6167,10 +5948,10 @@
     });
 
     document.addEventListener("click", function (e) {
-      var isOutsideMega = mega && !mega.hidden && !mega.contains(e.target) && e.target !== megaBtn;
-      var isOutsideInd = megaInd && !megaInd.hidden && !megaInd.contains(e.target) && e.target !== megaIndBtn;
+      if (e.target.closest("#mega-btn") || e.target.closest("#mega-ind-btn")) return;
+      var isOutsideMega = mega && !mega.hidden && !mega.contains(e.target);
+      var isOutsideInd = megaInd && !megaInd.hidden && !megaInd.contains(e.target);
       if (isOutsideMega || isOutsideInd) {
-        if (e.target === megaBtn || e.target === megaIndBtn) return;
         closeAllMega();
       }
     });

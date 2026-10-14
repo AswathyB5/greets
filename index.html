@@ -3277,8 +3277,11 @@
       background: #FFFFFF;
       color: #1B2328;
       border-radius: 8px;
-      padding: 0 16px;
+      padding: 0 14px;
       height: 46px;
+      min-width: 120px;
+      width: 120px;
+      box-sizing: border-box;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
@@ -3298,14 +3301,19 @@
     }
 
     .seg button[data-brand="all"] {
-      min-width: 100px;
+      min-width: 120px;
+      width: 120px;
     }
 
     /* Logo brand buttons */
     .seg button.logo-btn {
       background: #FFFFFF;
-      padding: 0 14px;
+      padding: 0 10px;
       height: 46px;
+      min-width: 120px;
+      width: 120px;
+      max-width: 120px;
+      box-sizing: border-box;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -3316,16 +3324,19 @@
       display: block;
       height: 24px;
       width: auto;
-      max-width: 110px;
+      max-width: 95px;
+      max-height: 28px;
       object-fit: contain;
     }
 
     .seg button.logo-btn[data-brand="BMI"] img {
-      height: 32px;
+      height: 28px;
+      max-height: 28px;
     }
 
     .seg button.logo-btn[data-brand="Huasheng"] img {
-      height: 30px;
+      height: 26px;
+      max-height: 26px;
     }
 
     .seg button.logo-btn[aria-pressed="true"] {
@@ -3338,21 +3349,22 @@
       border-color: #1B2328;
     }
 
-    /* Row 2: process steps + dropdowns */
+    /* Row 2: process steps + dropdowns in the same row */
     .finder-filters {
       display: flex;
-      align-items: flex-end;
-      gap: 10px 18px;
+      align-items: center;
+      gap: 12px 16px;
       margin-top: 14px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     /* Process step pill buttons */
     .steps {
       display: flex;
       gap: 6px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
+      flex-shrink: 0;
     }
 
     .steps button {
@@ -3370,6 +3382,8 @@
       cursor: pointer;
       transition: all 0.18s;
       white-space: nowrap;
+      height: 38px;
+      box-sizing: border-box;
     }
 
     .steps button:hover {
@@ -3399,39 +3413,44 @@
       color: #FFFFFF;
     }
 
-    /* Separator between steps and dropdowns */
+    /* Separator between steps and dropdowns in same row */
     .finder-filter-sep {
       display: flex;
-      gap: 18px;
-      align-items: flex-end;
+      gap: 14px;
+      align-items: center;
       margin-left: auto;
+      flex-shrink: 0;
     }
 
-    /* Dropdown labels + selects stacked */
+    /* Dropdown labels + selects inline */
     .fsel {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
     }
 
     .fsel>span {
-      font-size: 0.7rem;
-      font-weight: 750;
+      font-size: 0.72rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #56636B;
+      letter-spacing: 0.05em;
+      color: #616E75;
     }
 
     .fsel select {
       font: inherit;
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       font-weight: 500;
       color: #1B2328;
       background: #FFFFFF;
       border: 1.5px solid #D3D8D4;
       border-radius: 8px;
-      padding: 8px 32px 8px 12px;
-      min-width: 180px;
+      padding: 7px 28px 7px 11px;
+      min-width: 150px;
+      max-width: 200px;
+      height: 38px;
+      box-sizing: border-box;
       outline: none;
       cursor: pointer;
       appearance: none;
@@ -3836,13 +3855,17 @@
       }
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 860px) {
       .finder-filters {
         flex-wrap: wrap;
       }
 
       .finder-filter-sep {
         margin-left: 0;
+      }
+
+      .steps {
+        flex-wrap: wrap;
       }
     }
 
@@ -4079,9 +4102,7 @@
               <span class="dot"></span>
               AUTHORISED DEALER IN INDIA
             </div>
-            <h1 data-anim="zoom-fade">Heat treatment, cleaning and <span class="text-gradient-green">coating
-                systems</span>, supported in India
-            </h1>
+            <h1 data-anim="zoom-fade">Heat Treatment, Cleaning, and <span class="text-gradient-green">Coating Systems</span>, Supported in India</h1>
             <p class="hero__desc" data-anim="fade-up">One partner in India for your complete surface-engineering line:
               BMI
               vacuum furnaces,
@@ -4189,8 +4210,8 @@
                 </div>
               </div>
               <div class="partner-card-light__content">
-                <h5>PVD, DLC and diamond coating</h5>
-                <p>Huasheng Nanotechnology, China</p>
+                <h5>Huasheng Nanotechnology</h5>
+                <p>Guangdong Huasheng Nanotechnology, Dongguan, China</p>
               </div>
               <a href="huasheng/" class="btn btn--ghost">
                 Explore Huasheng coating <span class="arrow">→</span>
@@ -4555,10 +4576,10 @@
             <button type="button" data-step="huasheng" aria-pressed="false"><span>3</span>Coat</button>
           </div>
           <div class="finder-filter-sep">
-            <label class="fsel"><span>Industry</span><select id="f-ind">
+            <label class="fsel"><span>Industry:</span><select id="f-ind">
                 <option value="">All industries</option>
               </select></label>
-            <label class="fsel"><span>Category</span><select id="f-cat">
+            <label class="fsel"><span>Category:</span><select id="f-cat">
                 <option value="">All categories</option>
               </select></label>
           </div>
@@ -4788,19 +4809,19 @@
                     for semiconductor and medical.</span></a></li>
             </ul>
           </details>
-          <details data-cat="2CRD single-chamber systems" class="fade-right" data-anim="fade-right" data-anim-delay="2">
+          <details data-cat="2CRD Series Single-chamber precision cleaning under vacuum" class="fade-right" data-anim="fade-right" data-anim-delay="2">
             <summary>
               <span class="family-thumb"><img src="assets/family-thumbs/crd_green.jpg"
-                  alt="Novatec 2CRD single-chamber precision cleaning system"></span>
+                  alt="Novatec 2CRD Series Single-chamber precision cleaning under vacuum"></span>
               <div class="family-head">
-                <span class="t">2CRD single-chamber systems<span class="family-count-badge">1
+                <span class="t">2CRD Series Single-chamber precision cleaning under vacuum<span class="family-count-badge">1
                     product</span><small>8 standard variants (static &amp; -ROT), custom to 2CRD1700</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="novatec/2crd/2crd-system/" data-brand="Novatec" data-process="clean"
-                  data-category="2CRD single-chamber systems"><b>2CRD vacuum precision cleaning system</b><span>8
+                  data-category="2CRD Series Single-chamber precision cleaning under vacuum"><b>2CRD Series Single-chamber precision cleaning under vacuum</b><span>8
                     standard variants (100–800 static &amp; -ROT), plus custom up to 2CRD1700.</span></a></li>
             </ul>
           </details>
@@ -4976,53 +4997,54 @@
               <span class="family-thumb"><img src="assets/family-thumbs/hs_mc1000.jpg"
                   alt="Huasheng optical coating equipment"></span>
               <div class="family-head">
-                <span class="t">Optical coating equipment<span class="family-count-badge">2
+                <span class="t">Optical coating equipment<span class="family-count-badge">3
                     products</span><small>Evaporation and magnetron sputtering</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
+              <li><a href="huasheng/optical/opt-t/" data-brand="Huasheng" data-process="coat"
+                  data-category="Optical coating equipment"><b>OPT-T thermal evaporation optical coating equipment</b><span>Thermal
+                    evaporation for aluminium, nickel-chromium and silver wires.</span></a></li>
               <li><a href="huasheng/optical/opt-e/" data-brand="Huasheng" data-process="coat"
-                  data-category="Optical coating equipment"><b>OPT-E electron beam evaporation</b><span>Anti-reflection
+                  data-category="Optical coating equipment"><b>OPT-E electron beam evaporation optical coating equipment</b><span>Anti-reflection
                     and filter coatings on glass, quartz and silicon wafers.</span></a></li>
               <li><a href="huasheng/optical/sputter-optical/" data-brand="Huasheng" data-process="coat"
                   data-category="Optical coating equipment"><b>Magnetron sputtering optical coating
                     equipment</b><span>Precise multilayer optical films.</span></a></li>
             </ul>
           </details>
-          <details data-cat="CVD coating equipment" class="fade-left" data-anim="fade-left" data-anim-delay="5">
+          <details data-cat="CVD &amp; CVA coating equipment" class="fade-left" data-anim="fade-left" data-anim-delay="5">
             <summary>
               <span class="family-thumb"><img src="assets/family-thumbs/hs_ma1500.jpg"
                   alt="Huasheng CVD and aluminizing coating equipment"></span>
               <div class="family-head">
-                <span class="t">CVD coating equipment<span class="family-count-badge">2 products</span><small>CVD and
+                <span class="t">CVD &amp; CVA coating equipment<span class="family-count-badge">2 products</span><small>CVD and
                     CVA aluminizing</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/cvd/cvd-systems/" data-brand="Huasheng" data-process="coat"
-                  data-category="CVD coating equipment"><b>CVD coating systems</b><span>Thick wear-resistant
+                  data-category="CVD &amp; CVA coating equipment"><b>CVD coating systems</b><span>Thick wear-resistant
                     coatings.</span></a></li>
               <li><a href="huasheng/cvd/cva/" data-brand="Huasheng" data-process="coat"
-                  data-category="CVD coating equipment"><b>CVA aluminizing systems</b><span>Aluminide coatings for
+                  data-category="CVD &amp; CVA coating equipment"><b>CVA aluminizing systems</b><span>Aluminide coatings for
                     high-temperature parts.</span></a></li>
             </ul>
           </details>
           <details data-cat="Turnkey coating solutions" class="fade-right" data-anim="fade-right" data-anim-delay="6">
             <summary>
               <span class="family-thumb"><img src="assets/family-thumbs/turnkey.jpg"
-                  alt="Huasheng turnkey coating plant"></span>
+                  alt="Layout of the Huasheng turnkey coating plant"></span>
               <div class="family-head">
-                <span class="t">Turnkey coating solutions<span class="family-count-badge">1
-                    product</span><small>Complete MD800 PLUS tool-coating plant</small></span>
+                <span class="t">Turnkey coating solutions<span class="family-count-badge">1 product</span><small>Complete MD800 tool-coating plant</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/turnkey/md800-turnkey/" data-brand="Huasheng" data-process="coat"
-                  data-category="Turnkey coating solutions"><b>MD800 PLUS turnkey coating centre</b><span>Complete plant
-                    for
+                  data-category="Turnkey coating solutions"><b>MD800 turnkey coating centre</b><span>Complete plant for
                     in-house tool coating.</span></a></li>
             </ul>
           </details>
@@ -5335,7 +5357,7 @@
   </button>
 
   <script src="main.js"></script>
-  <script src="products.js" defer></script>
+  <script src="products.js?v=20261014_3" defer></script>
   <script>
     (function () {
       function updateHomeBreadcrumbs() {

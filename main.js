@@ -59,6 +59,97 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  /* — Desktop Mega menu dropdowns (Products & Industries) — */
+  const mega = document.getElementById('mega');
+  const megaBtn = document.getElementById('mega-btn');
+  const megaInd = document.getElementById('mega-ind');
+  const megaIndBtn = document.getElementById('mega-ind-btn');
+
+  function closeAllMega() {
+    if (mega && !mega.hidden) {
+      mega.hidden = true;
+      if (megaBtn) megaBtn.setAttribute('aria-expanded', 'false');
+    }
+    if (megaInd && !megaInd.hidden) {
+      megaInd.hidden = true;
+      if (megaIndBtn) megaIndBtn.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function scrollToSection(targetId) {
+    const target = document.getElementById(targetId);
+    if (target) {
+      if (history.pushState) {
+        history.pushState(null, '', '#' + targetId);
+        if (window.updateHomeBreadcrumbs) window.updateHomeBreadcrumbs();
+      } else {
+        window.location.hash = targetId;
+      }
+      const header = document.querySelector('.header');
+      const headerHeight = header ? header.offsetHeight : 72;
+      const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+      window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+    }
+  }
+
+  if (mega && megaBtn && !megaBtn._hasMegaListener) {
+    megaBtn._hasMegaListener = true;
+    megaBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!mega.hidden) {
+        closeAllMega();
+        scrollToSection('finder');
+        return;
+      }
+      closeAllMega();
+      mega.hidden = false;
+      megaBtn.setAttribute('aria-expanded', 'true');
+      scrollToSection('finder');
+    });
+  }
+
+  if (megaInd && megaIndBtn && !megaIndBtn._hasMegaListener) {
+    megaIndBtn._hasMegaListener = true;
+    megaIndBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!megaInd.hidden) {
+        closeAllMega();
+        scrollToSection('industries');
+        return;
+      }
+      closeAllMega();
+      megaInd.hidden = false;
+      megaIndBtn.setAttribute('aria-expanded', 'true');
+      scrollToSection('industries');
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAllMega();
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('#mega-btn') || e.target.closest('#mega-ind-btn')) return;
+    const isOutsideMega = mega && !mega.hidden && !mega.contains(e.target);
+    const isOutsideInd = megaInd && !megaInd.hidden && !megaInd.contains(e.target);
+    if (isOutsideMega || isOutsideInd) {
+      closeAllMega();
+    }
+  });
+
+  if (mega) {
+    mega.addEventListener('click', (e) => {
+      if (e.target.closest('a')) closeAllMega();
+    });
+  }
+  if (megaInd) {
+    megaInd.addEventListener('click', (e) => {
+      if (e.target.closest('a')) closeAllMega();
+    });
+  }
+
   /* — Intersection Observer for fade-up animations — */
   const observerOptions = {
     threshold: 0.1,
@@ -89,8 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* — Smooth anchor scrolling — */
-  document.querySelectorAll('a[href^="#"]:not([href^="#/"])').forEach(anchor => {
+  /* — Smooth anchor scrolling (excluding mega buttons) — */
+  document.querySelectorAll('a[href^="#"]:not([href^="#/"]):not(.mega-btn)').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const hash = this.getAttribute('href');
       const viewEl = document.getElementById('view');
