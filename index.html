@@ -573,6 +573,34 @@
       border: 1px solid #02963C !important;
     }
 
+    /* Lap screen spacing refinement: increase space between step text and logo box, especially Support */
+    @media (min-width: 1025px) and (max-width: 1600px) {
+      .partner-card-light .bc-step {
+        font-size: 1.12rem !important;
+        gap: 0.45rem !important;
+      }
+      .partner-card-light .bc-n {
+        width: 25px !important;
+        height: 25px !important;
+        font-size: 0.82rem !important;
+      }
+      .partner-card-light[data-brand="greets"] .bc-step {
+        font-size: 1.02rem !important;
+        gap: 0.35rem !important;
+      }
+      .partner-card-light[data-brand="greets"] .bc-step .bc-n {
+        width: 24px !important;
+        height: 24px !important;
+        font-size: 0.78rem !important;
+      }
+      .partner-card-light .partner-brand-logo {
+        width: 104px !important;
+        min-width: 104px !important;
+        max-width: 104px !important;
+        padding: 4px 8px !important;
+      }
+    }
+
     .partner-card-light {
       display: flex !important;
       flex-direction: column !important;
