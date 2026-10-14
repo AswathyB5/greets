@@ -341,9 +341,9 @@ function getCrumbsHtml(parts, root) {
           </svg> Products
         </a>
         ${parts.map(p => p.href
-          ? ` <span class="crumb-sep" aria-hidden="true">/</span> <a href="${p.href}">${esc(p.t)}</a>`
-          : ` <span class="crumb-sep" aria-hidden="true">/</span> <span class="crumb-current" aria-current="page">${esc(p.t)}</span>`
-        ).join('')}
+    ? ` <span class="crumb-sep" aria-hidden="true">/</span> <a href="${p.href}">${esc(p.t)}</a>`
+    : ` <span class="crumb-sep" aria-hidden="true">/</span> <span class="crumb-current" aria-current="page">${esc(p.t)}</span>`
+  ).join('')}
       </nav>
     </div>
   `;
@@ -568,7 +568,7 @@ CATALOG.forEach(b => {
             <a class="card machine-item-card" href="${root2}${b.id}/${slugify(m.name)}/">
               <b>${esc(m.name)}</b>
               <span>${esc(m.short || m.desc)}</span>
-              <em>View technical specifications &rarr;</em>
+              <em>View technical specifications</em>
             </a>
           `).join('')}
         </div>
@@ -686,11 +686,11 @@ CATALOG.forEach(b => {
               <table class="spec">
                 <tbody>
                   ${filteredSpecs.map(r => {
-                    if (!r[1]) {
-                      return `<tr class="spec-group"><th colspan="2" scope="colgroup">${esc(r[0])}</th></tr>`;
-                    }
-                    return `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`;
-                  }).join('')}
+              if (!r[1]) {
+                return `<tr class="spec-group"><th colspan="2" scope="colgroup">${esc(r[0])}</th></tr>`;
+              }
+              return `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`;
+            }).join('')}
                 </tbody>
               </table>
               <p class="note">Manufacturer figures; exact values depend on the configuration.</p>
@@ -825,9 +825,9 @@ CATALOG.forEach(b => {
                   </thead>
                   <tbody>
                     ${HUASHENG_COATING_TABLE.map(row => {
-                      const isCurrent = row.machineId === m.id || (row.model.toLowerCase() === m.name.toLowerCase()) || (m.name.toLowerCase().indexOf(row.model.toLowerCase()) === 0);
-                      const enquireHref = `${rootRel}contact.html?page=${encodeURIComponent(row.model)}&category=${encodeURIComponent(row.cat)}&brand=Huasheng`;
-                      return `
+            const isCurrent = row.machineId === m.id || (row.model.toLowerCase() === m.name.toLowerCase()) || (m.name.toLowerCase().indexOf(row.model.toLowerCase()) === 0);
+            const enquireHref = `${rootRel}contact.html?page=${encodeURIComponent(row.model)}&category=${encodeURIComponent(row.cat)}&brand=Huasheng`;
+            return `
                         <tr${isCurrent ? ' class="row-current" style="background: rgba(2, 150, 60, 0.08); font-weight: 600;"' : ''}>
                           <td><span class="pill-orientation" style="font-weight:700;">${esc(row.series)}</span></td>
                           <td class="td-model"><span class="model-badge">${esc(row.model)}</span></td>
@@ -850,7 +850,7 @@ CATALOG.forEach(b => {
                           </td>
                         </tr>
                       `;
-                    }).join('')}
+          }).join('')}
                   </tbody>
                 </table>
               </div>
@@ -889,9 +889,9 @@ CATALOG.forEach(b => {
                   </thead>
                   <tbody>
                     ${m.models.map(mod => {
-                      const enquireHref = `${rootRel}contact.html?page=${encodeURIComponent(m.name + ' - ' + mod.model)}&category=${encodeURIComponent(c.name)}&brand=${encodeURIComponent(b.name)}`;
-                      if (isDeco) {
-                        return `
+            const enquireHref = `${rootRel}contact.html?page=${encodeURIComponent(m.name + ' - ' + mod.model)}&category=${encodeURIComponent(c.name)}&brand=${encodeURIComponent(b.name)}`;
+            if (isDeco) {
+              return `
                           <tr>
                             <td><span class="pill-orientation" style="font-weight:600;">${esc(mod.family || 'Huasheng')}</span></td>
                             <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
@@ -907,9 +907,9 @@ CATALOG.forEach(b => {
                             </td>
                           </tr>
                         `;
-                      }
-                      if (isCoating) {
-                        return `
+            }
+            if (isCoating) {
+              return `
                           <tr>
                             <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
                             <td><span class="pill-orientation">${esc(mod.tech || '—')}</span></td>
@@ -925,9 +925,9 @@ CATALOG.forEach(b => {
                             </td>
                           </tr>
                         `;
-                      }
-                      if (isCleaning) {
-                        return `
+            }
+            if (isCleaning) {
+              return `
                           <tr>
                             <td><span class="pill-orientation" style="font-weight:600;">${esc(mod.family || 'Novatec')}</span></td>
                             <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
@@ -942,8 +942,8 @@ CATALOG.forEach(b => {
                             </td>
                           </tr>
                         `;
-                      }
-                      return `
+            }
+            return `
                         <tr>
                           <td class="td-model"><span class="model-badge">${esc(mod.model)}</span></td>
                           <td><span class="pill-orientation">${esc(mod.orientation)}</span></td>
@@ -959,7 +959,7 @@ CATALOG.forEach(b => {
                           </td>
                         </tr>
                       `;
-                    }).join('')}
+          }).join('')}
                   </tbody>
                 </table>
               </div>
@@ -969,9 +969,9 @@ CATALOG.forEach(b => {
 
         const targetInds = (m.i && m.i.length) ? `
           <p class="ind-para"><strong>Target industries:</strong> ${m.i.map(x => {
-            const indObj = IND.find(z => z.id === x);
-            return indObj ? esc(indObj.n) : '';
-          }).filter(Boolean).join(', ')}.</p>
+          const indObj = IND.find(z => z.id === x);
+          return indObj ? esc(indObj.n) : '';
+        }).filter(Boolean).join(', ')}.</p>
         ` : '';
 
         return `<!DOCTYPE html>
@@ -1033,10 +1033,10 @@ CATALOG.forEach(b => {
 
             <div class="mcols">
               ${(() => {
-                const famDesc = m.family_desc || m.series_desc;
-                if (!famDesc) return '';
-                const famHeading = m.series ? `${esc(m.series)} series overview` : (m.family ? `${esc(m.family)} family overview` : `${esc(c.name)} overview`);
-                return `
+            const famDesc = m.family_desc || m.series_desc;
+            if (!famDesc) return '';
+            const famHeading = m.series ? `${esc(m.series)} series overview` : (m.family ? `${esc(m.family)} family overview` : `${esc(c.name)} overview`);
+            return `
                 <section class="mcol-card" style="grid-column: 1 / -1;">
                   <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.45rem;">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
@@ -1050,7 +1050,7 @@ CATALOG.forEach(b => {
                   <p class="fam-desc" style="margin:0; font-size:0.82rem; color:var(--ink); line-height:1.5;">${esc(famDesc)}</p>
                 </section>
                 `;
-              })()}
+          })()}
               ${(m.typical_applications || m.typical_use) ? `
               <section class="mcol-card" style="grid-column: 1 / -1;">
                 <h2>${m.typical_applications ? 'Typical applications' : 'Typical use'}</h2>
@@ -1113,9 +1113,9 @@ CATALOG.forEach(b => {
               <section class="mcol-card" style="grid-column: 1 / -1;">
                 <h2>Industries</h2>
                 <p class="indline" style="margin:0.25rem 0 0;">${m.i.map(x => {
-                  const indObj = IND.find(z => z.id === x);
-                  return indObj ? esc(indObj.n) : '';
-                }).filter(Boolean).join(', ')}</p>
+            const indObj = IND.find(z => z.id === x);
+            return indObj ? esc(indObj.n) : '';
+          }).filter(Boolean).join(', ')}</p>
               </section>
               ` : ''}
             </div>
