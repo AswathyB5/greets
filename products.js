@@ -13,7 +13,7 @@
   const LOGO_PATHS = {
     bmi: "assets/logo-BMI.png",
     novatec: "assets/logo-novatec.png",
-    huasheng: "assets/Huasheng.png",
+    huasheng: "Huasheng-machine-photos/HUASHENG-logo.png",
   };
 
   /* ----------------------------------------------------------------
@@ -29,49 +29,138 @@
     bmi_thermo: "assets/catalog/bmi_thermo.jpg",
     bmi_brand: "assets/catalog/bmi_brand.jpg",
     bmi_gas: "assets/catalog/bmi_gas.jpg",
+    /* BMI 2026 presentation photography */
+    bmi_line_installed: "assets/catalog/BMI-furnace-line-installed.jpg",
+    bmi_horiz_workshop: "assets/catalog/BMI-horizontal-furnace-workshop.jpg",
+    bmi_vert_assembly: "assets/catalog/BMI-vertical-furnace-assembly.jpg",
+    bmi_large_assembly: "assets/catalog/BMI-large-furnace-assembly.jpg",
+    bmi_workshops: "assets/catalog/BMI-furnaces-in-workshop.jpg",
+    bmi_with_trolley: "assets/catalog/BMI-furnace-with-loading-trolley.jpg",
+    bmi_white_trolley: "assets/catalog/BMI-furnace-white-with-trolley.jpg",
+    bmi_vert_portrait: "assets/catalog/BMI-vertical-furnace-portrait.jpg",
+    bmi_hot_zone: "assets/catalog/BMI-hot-zone-head-on.jpg",
+    bmi_door_open_hot_zone: "assets/catalog/BMI-furnace-door-open-hot-zone.jpg",
+    bmi_horiz_door_open: "assets/catalog/BMI-horizontal-furnace-door-open.jpg",
+    bmi_horiz_01: "assets/catalog/BMI-horizontal-furnace-01.jpg",
+    bmi_horiz_02: "assets/catalog/BMI-horizontal-furnace-02.jpg",
+    bmi_control_cabinets: "assets/catalog/BMI-furnace-with-control-cabinets.jpg",
+    bmi_cooling_unit: "assets/catalog/BMI-furnace-with-cooling-unit.jpg",
+    bmi_top_view: "assets/catalog/BMI-furnace-top-view.jpg",
+    bmi_vert_tall: "assets/catalog/BMI-vertical-furnace-tall.jpg",
+    bmi_vert_white: "assets/catalog/BMI-vertical-furnace-white.jpg",
+    bmi_vert_orange: "assets/catalog/BMI-vertical-furnace-orange.jpg",
+    bmi_load_tray: "assets/catalog/BMI-furnace-load-tray-extended.jpg",
+    bmi_long_horiz: "assets/catalog/BMI-long-horizontal-furnace.jpg",
+    bmi_loading_trolley: "assets/catalog/BMI-furnace-loading-trolley.jpg",
+    bmi_hall: "assets/catalog/BMI-furnace-hall.jpg",
+    bmi_white_workshop: "assets/catalog/BMI-furnace-white-workshop.jpg",
+    bmi_early_furnace: "assets/catalog/BMI-historical-early-furnace.jpg",
+    bmi_hot_zone_bw: "assets/catalog/BMI-hot-zone-detail-bw.jpg",
     /* Novatec */
-    nov_main: "assets/catalog/nov_main.jpg",
-    nov_brand: "assets/catalog/nov_brand.jpg",
-    nov_2crd: "assets/catalog/nov_2crd.jpg",
-    nov_gen: "assets/catalog/nov_gen.jpg",
+    nov_main: "assets/catalog/PLURITANK-1400-line-and-loading.jpg",
+    nov_brand: "assets/catalog/PLURITANK-1400-line-overview.jpg",
+    nov_2crd: "assets/catalog/2CRD400-front.jpg",
+    nov_gen: "assets/catalog/ultrasonic-tanks-with-generators.jpg",
     nov_trans: "assets/catalog/nov_trans.jpg",
-    crd_green: "assets/catalog/crd_green.jpg",
-    nm_brand: "assets/catalog/nm_brand.jpg",
-    nm_pluri_cat: "assets/catalog/nm_pluri_cat.jpg",
-    nm_pluri: "assets/catalog/nm_pluri.jpg",
-    nm_2crd: "assets/catalog/nm_2crd.jpg",
-    nm_2crd_b: "assets/catalog/nm_2crd_b.jpg",
-    nm_implants: "assets/catalog/nm_implants.jpg",
-    nm_ipc: "assets/catalog/nm_ipc.jpg",
-    nm_basket: "assets/catalog/nm_basket.jpg",
-    nm_fcps: "assets/catalog/nm_fcps.jpg",
-    nm_fcps_b: "assets/catalog/nm_fcps_b.jpg",
-    nm_fcps_c: "assets/catalog/nm_fcps_c.jpg",
-    nm_fcps_d: "assets/catalog/nm_fcps_d.jpg",
-    nm_fpi: "assets/catalog/nm_fpi.jpg",
-    nm_fpi_b: "assets/catalog/nm_fpi_b.jpg",
-    nm_fpi_c: "assets/catalog/nm_fpi_c.jpg",
-    nm_fpi_d: "assets/catalog/nm_fpi_d.jpg",
-    nm_urs: "assets/catalog/nm_urs.jpg",
-    nm_urs_b: "assets/catalog/nm_urs_b.jpg",
-    nm_clean: "assets/catalog/nm_clean.jpg",
-    nm_hq: "assets/catalog/nm_hq.jpg",
+    crd_green: "assets/catalog/2CRD400-front.jpg",
+    nm_brand: "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
+    nm_pluri_cat: "assets/catalog/PLURITANK-1400-line-overview.jpg",
+    nm_pluri: "assets/catalog/PLURITANK-line-studio.jpg",
+    nm_2crd: "assets/catalog/2CRD400-front.jpg",
+    nm_2crd_b: "assets/catalog/2CRD200-front.jpg",
+    nm_implants: "assets/catalog/MEDICAL-implant-components.jpg",
+    nm_ipc: "assets/catalog/MEDICAL-IPC-2CRD400.jpg",
+    nm_basket: "assets/catalog/MEDICAL-implants-in-basket-01.jpg",
+    nm_fcps: "assets/catalog/MEDICAL-FCPS-cleanroom-line-01.jpg",
+    nm_fcps_b: "assets/catalog/MEDICAL-FCPS-cleanroom-line-02.jpg",
+    nm_fcps_c: "assets/catalog/MEDICAL-FCPS-cleanroom-unload.jpg",
+    nm_fcps_d: "assets/catalog/MEDICAL-FCPS-line-portrait.jpg",
+    nm_fpi: "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
+    nm_fpi_b: "assets/catalog/MEDICAL-FPI-line-installed-01.jpg",
+    nm_fpi_c: "assets/catalog/MEDICAL-FPI-line-installed-02.jpg",
+    nm_fpi_d: "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
+    nm_urs: "assets/catalog/MEDICAL-combined-layout-drawing.jpg",
+    nm_urs_b: "assets/catalog/MEDICAL-implants-in-basket-02.jpg",
+    nm_clean: "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
+    nm_hq: "assets/catalog/NOVATEC-headquarters.jpg",
+    nov_plt1400_overview: "assets/catalog/PLURITANK-1400-line-overview.jpg",
+    nov_plt1400_loading: "assets/catalog/PLURITANK-1400-line-and-loading.jpg",
+    nov_plt1400_gen: "assets/catalog/PLURITANK-1400-ultrasonic-generators.jpg",
+    nov_plt_studio: "assets/catalog/PLURITANK-line-studio.jpg",
+    nov_plt_clean_01: "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
+    nov_plt_clean_02: "assets/catalog/PLURITANK-cleanroom-line-02.jpg",
+    nov_plt_clean_03: "assets/catalog/PLURITANK-cleanroom-line-03.jpg",
+    nov_plt_fume: "assets/catalog/PLURITANK-line-fume-extraction.jpg",
+    nov_plt_enclosed: "assets/catalog/PLURITANK-enclosed-line.jpg",
+    nov_plt_panel: "assets/catalog/PLURITANK-line-control-panel.jpg",
+    nov_plt_guarded: "assets/catalog/PLURITANK-line-guarded.jpg",
+    nov_plt_dryer: "assets/catalog/PLURITANK-line-with-dryer.jpg",
+    nov_plt_gantry: "assets/catalog/PLURITANK-gantry-interior.jpg",
+    nov_plt_tanks: "assets/catalog/PLURITANK-tank-row-interior.jpg",
+    nov_plt_tank_detail: "assets/catalog/PLURITANK-tank-detail.jpg",
+    nov_plt_compact: "assets/catalog/PLURITANK-compact-line.jpg",
+    nov_tanks_gen: "assets/catalog/ultrasonic-tanks-with-generators.jpg",
+    nov_2crd100: "assets/catalog/2CRD100-front.jpg",
+    nov_2crd100r: "assets/catalog/2CRD100-R-front.jpg",
+    nov_2crd200: "assets/catalog/2CRD200-front.jpg",
+    nov_2crd200_load: "assets/catalog/2CRD200-loading.jpg",
+    nov_2crd400: "assets/catalog/2CRD400-front.jpg",
+    nov_2crd800: "assets/catalog/2CRD800-front.jpg",
+    nov_2crd800_saw1: "assets/catalog/2CRD800-saw-blades-01.jpg",
+    nov_2crd800_saw2: "assets/catalog/2CRD800-saw-blades-02.jpg",
+    nov_2crd800_trolley: "assets/catalog/2CRD800-loading-tooling.jpg",
+    nov_2crd_chamber: "assets/catalog/2CRD-vacuum-chamber-interior.jpg",
+    nov_2crd_baskets: "assets/catalog/2CRD-baskets-and-tooling.jpg",
+    nov_med_ipc_2crd: "assets/catalog/MEDICAL-IPC-2CRD400.jpg",
+    nov_med_ipc_plt1: "assets/catalog/MEDICAL-IPC-pluritank-line-01.jpg",
+    nov_med_ipc_plt2: "assets/catalog/MEDICAL-IPC-pluritank-line-02.jpg",
+    nov_med_fcps1: "assets/catalog/MEDICAL-FCPS-cleanroom-line-01.jpg",
+    nov_med_fcps2: "assets/catalog/MEDICAL-FCPS-cleanroom-line-02.jpg",
+    nov_med_fcps_port: "assets/catalog/MEDICAL-FCPS-line-portrait.jpg",
+    nov_med_fcps_unload: "assets/catalog/MEDICAL-FCPS-cleanroom-unload.jpg",
+    nov_med_fpi_draw: "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
+    nov_med_fpi1: "assets/catalog/MEDICAL-FPI-line-installed-01.jpg",
+    nov_med_fpi2: "assets/catalog/MEDICAL-FPI-line-installed-02.jpg",
+    nov_med_basket1: "assets/catalog/MEDICAL-implants-in-basket-01.jpg",
+    nov_med_basket2: "assets/catalog/MEDICAL-implants-in-basket-02.jpg",
+    nov_med_layout: "assets/catalog/MEDICAL-combined-layout-drawing.jpg",
+    nov_med_parts: "assets/catalog/MEDICAL-implant-components.jpg",
+    nov_hq: "assets/catalog/NOVATEC-headquarters.jpg",
     /* Huasheng */
-    hs_pvd: "assets/catalog/hs_pvd.jpg",
-    hs_dlc: "assets/catalog/hs_dlc.jpg",
-    hs_diamond: "assets/catalog/hs_diamond.jpg",
-    hs_mc1000: "assets/catalog/hs_mc1000.jpg",
-    hs_optical: "assets/catalog/hs_mc1000.jpg",
-    hs_md1500: "assets/catalog/hs_md1500.jpg",
-    hs_cvd: "assets/catalog/hs_md1500.jpg",
-    hs_md: "assets/catalog/hs_md.jpg",
-    hs_hipims: "assets/catalog/hs_hipims.jpg",
-    hs_tc802: "assets/catalog/hs_tc802.jpg",
-    hs_ma1500: "assets/catalog/hs_ma1500.jpg",
-    ma800: "assets/catalog/ma800.jpg",
-    turnkey: "assets/catalog/turnkey.jpg",
+    hs_logo: "Huasheng-machine-photos/HUASHENG-logo.png",
+    hs_gfour: "Huasheng-machine-photos/GFOUR.jpg",
+    hs_md200: "Huasheng-machine-photos/MD200.jpg",
+    hs_md500: "Huasheng-machine-photos/MD500.jpg",
+    hs_md800: "Huasheng-machine-photos/MD800-PLUS.jpg",
+    hs_md1500: "Huasheng-machine-photos/MD1500-drawing.jpg",
+    hs_hd500: "Huasheng-machine-photos/HD500.jpg",
+    hs_da600pro: "Huasheng-machine-photos/DA600PRO.jpg",
+    hs_tc800plus: "Huasheng-machine-photos/TC800PLUS.jpg",
+    hs_tc800plus_f: "Huasheng-machine-photos/TC800PLUS-F.jpg",
+    hs_wcc800: "Huasheng-machine-photos/WCC800.jpg",
+    hs_broach: "Huasheng-machine-photos/Broach.jpg",
+    hs_deco_h: "Huasheng-machine-photos/HUASHENG-DECO-H-machine.jpg",
+    hs_deco_a: "Huasheng-machine-photos/HUASHENG-DECO-A-machine.jpg",
+    hs_deco_b: "Huasheng-machine-photos/HUASHENG-DECO-B-machine.jpg",
+    hs_deco_g: "Huasheng-machine-photos/HUASHENG-DECO-G-machine.jpg",
+    hs_af: "Huasheng-machine-photos/HUASHENG-AF-machine.jpg",
+    hs_opt: "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
+    hs_pow: "Huasheng-machine-photos/HUASHENG-POW-machine.jpg",
+    // Compatibility fallbacks
+    hs_pvd: "Huasheng-machine-photos/GFOUR.jpg",
+    hs_dlc: "Huasheng-machine-photos/TC800PLUS.jpg",
+    hs_diamond: "Huasheng-machine-photos/DA600PRO.jpg",
+    hs_mc1000: "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
+    hs_optical: "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
+    hs_cvd: "Huasheng-machine-photos/MD1500-drawing.jpg",
+    hs_md: "Huasheng-machine-photos/MD500.jpg",
+    hs_hipims: "Huasheng-machine-photos/WCC800.jpg",
+    hs_tc802: "Huasheng-machine-photos/TC800PLUS.jpg",
+    hs_ma1500: "Huasheng-machine-photos/MD800-PLUS.jpg",
+    ma800: "Huasheng-machine-photos/MD800-PLUS.jpg",
+    turnkey: "Huasheng-machine-photos/MD800-PLUS.jpg",
     cleanline: "assets/catalog/cleanline.jpg",
-    lineup: "assets/catalog/hs_pvd.jpg",
+    lineup: "Huasheng-machine-photos/GFOUR.jpg",
   };
   /* ----------------------------------------------------------------
      Industries
@@ -113,8 +202,30 @@
   const CATALOG = [
   {
     "id": "bmi",
-    "photo": "bmi_brand",
-    "photoAlt": "BMI vacuum furnace installation",
+    "photo": "bmi_line_installed",
+    "photoAlt": "Row of furnaces installed at a plant",
+    "gallery": [
+      [
+        "bmi_line_installed",
+        "Row of furnaces installed at a plant"
+      ],
+      [
+        "bmi_hot_zone",
+        "Hot zone straight on. Striking - good for a feature panel."
+      ],
+      [
+        "bmi_hall",
+        "Several furnaces in a hall"
+      ],
+      [
+        "bmi_early_furnace",
+        "Early BMI furnace, black and white. Good alongside Since 1947."
+      ],
+      [
+        "bmi_hot_zone_bw",
+        "Hot zone and door, black and white"
+      ]
+    ],
     "name": "BMI",
     "full": "Fours Industriels B.M.I.",
     "country": "France",
@@ -123,8 +234,8 @@
     "cats": [
       {
         "id": "gas-quenching",
-        "photo": "bmi_thermo",
-        "photoAlt": "BMI vacuum furnace with pumping system",
+        "photo": "bmi_horiz_workshop",
+        "photoAlt": "Horizontal vacuum furnace in the works",
         "name": "Gas quenching furnaces",
         "sub": "Hardening, brazing and laboratory furnaces",
         "desc": "Vacuum furnaces that heat parts without oxidation and then cool them with high-pressure gas. BMI's patented rotating gas-flow system gives uniform quenching even on dense or complex loads.",
@@ -132,9 +243,27 @@
         "machines": [
           {
             "id": "b8t",
-            "photo": "b8t",
-            "photoAlt": "BMI horizontal vacuum gas quenching furnace",
-            "caption": "Vacuum gas quenching furnace, horizontal",
+            "photo": "bmi_door_open_hot_zone",
+            "photoAlt": "BMI horizontal vacuum gas quenching furnace with door open",
+            "caption": "BMI horizontal vacuum gas quenching furnace (door open, hot zone visible)",
+            "gallery": [
+              [
+                "bmi_door_open_hot_zone",
+                "Door open, hot zone visible"
+              ],
+              [
+                "bmi_load_tray",
+                "Load tray drawn out of the furnace"
+              ],
+              [
+                "bmi_hot_zone",
+                "Hot zone straight on. Striking - good for a feature panel."
+              ],
+              [
+                "b8t",
+                "BMI horizontal vacuum gas quenching furnace"
+              ]
+            ],
             "name": "B8_T vacuum gas quenching furnace",
             "tag": "Horizontal",
             "bmi_desc": "HIGH TEMPERATURE VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
@@ -150,7 +279,7 @@
             "specs": [
               [
                 "Working zone",
-                "450 × 450 × 600 mm to 900 × 900 × 1200 mm"
+                "450 × 450 × 600 mm to 1000 × 1000 × 1500 mm"
               ],
               [
                 "Load capacity",
@@ -250,9 +379,27 @@
           },
           {
             "id": "vse8t",
-            "photo": "vse8t",
-            "photoAlt": "BMI vertical vacuum furnace",
-            "caption": "Vacuum gas quenching furnace, vertical",
+            "photo": "bmi_vert_assembly",
+            "photoAlt": "BMI vertical vacuum furnace under assembly",
+            "caption": "Vertical furnace under assembly",
+            "gallery": [
+              [
+                "bmi_vert_assembly",
+                "Vertical furnace under assembly"
+              ],
+              [
+                "bmi_vert_white",
+                "Vertical furnace, white"
+              ],
+              [
+                "bmi_vert_orange",
+                "Vertical furnace, orange"
+              ],
+              [
+                "vse8t",
+                "BMI vertical vacuum furnace"
+              ]
+            ],
             "name": "VSE8_T vacuum gas quenching furnace",
             "tag": "Vertical",
             "bmi_desc": "HIGH TEMPERATURE VERTICAL VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
@@ -401,8 +548,27 @@
           },
           {
             "id": "brazing",
-            "photo": "bmi_brazing",
-            "photoAlt": "BMI vacuum furnace with loading truck",
+            "photo": "bmi_large_assembly",
+            "photoAlt": "Large furnace being assembled",
+            "caption": "Large furnace being assembled",
+            "gallery": [
+              [
+                "bmi_large_assembly",
+                "Large furnace being assembled"
+              ],
+              [
+                "bmi_horiz_01",
+                "Horizontal furnace, door closed"
+              ],
+              [
+                "bmi_long_horiz",
+                "Long horizontal furnace"
+              ],
+              [
+                "bmi_brazing",
+                "Furnace with loading trolley"
+              ]
+            ],
             "name": "Vacuum brazing furnace",
             "bmi_desc": "HIGH TEMPERATURE VACUUM BRAZING FURNACE",
             "short": "Oxide-free brazing of assemblies.",
@@ -538,6 +704,9 @@
           },
           {
             "id": "lab",
+            "photo": "bmi_white_workshop",
+            "photoAlt": "Compact vacuum furnace in the works",
+            "caption": "Furnace in the works",
             "name": "Compact laboratory furnace",
             "bmi_desc": "HIGH TEMPERATURE COMPACT VACUUM FURNACE (BMICRO) & BFIRST HIGH TEMPERATURE VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
             "short": "Small vacuum furnace for R&D and process development.",
@@ -644,8 +813,8 @@
       },
       {
         "id": "oil-quenching",
-        "photo": "bmi_oil",
-        "photoAlt": "BMI vacuum furnace installation",
+        "photo": "bmi_workshops",
+        "photoAlt": "Several furnaces in the works",
         "name": "Oil quenching furnaces",
         "sub": "Horizontal and vertical",
         "desc": "Vacuum furnaces with an integrated oil quench for steels that need a faster quench than gas can provide.",
@@ -653,6 +822,19 @@
         "machines": [
           {
             "id": "oil-horizontal",
+            "photo": "bmi_horiz_02",
+            "photoAlt": "Horizontal furnace with pump set",
+            "caption": "Horizontal furnace with pump set",
+            "gallery": [
+              [
+                "bmi_horiz_02",
+                "Horizontal furnace with pump set"
+              ],
+              [
+                "bmi_workshops",
+                "Several furnaces in the works"
+              ]
+            ],
             "tag": "Horizontal",
             "name": "Vacuum oil quenching furnace, horizontal",
             "bmi_desc": "OIL QUENCHING VACUUM FURNACE",
@@ -804,6 +986,19 @@
           },
           {
             "id": "oil-vertical",
+            "photo": "bmi_vert_portrait",
+            "photoAlt": "Vertical furnace (portrait)",
+            "caption": "Vertical furnace (portrait)",
+            "gallery": [
+              [
+                "bmi_vert_portrait",
+                "Vertical furnace (portrait)"
+              ],
+              [
+                "bmi_vert_tall",
+                "Tall vertical furnace"
+              ]
+            ],
             "tag": "Vertical",
             "name": "Vacuum oil quenching furnace, vertical",
             "bmi_desc": "OIL QUENCHING VACUUM FURNACE",
@@ -919,8 +1114,8 @@
       },
       {
         "id": "low-temperature",
-        "photo": "bmi_low",
-        "photoAlt": "BMI vacuum furnaces on the shop floor",
+        "photo": "bmi_with_trolley",
+        "photoAlt": "Furnace with automatic loading trolley",
         "name": "Low-temperature furnaces",
         "sub": "Tempering and aluminium brazing",
         "desc": "Vacuum furnaces for lower-temperature processes such as tempering after hardening and brazing aluminium assemblies.",
@@ -928,6 +1123,19 @@
         "machines": [
           {
             "id": "tempering",
+            "photo": "bmi_horiz_door_open",
+            "photoAlt": "Horizontal furnace, door open",
+            "caption": "Horizontal furnace, door open",
+            "gallery": [
+              [
+                "bmi_horiz_door_open",
+                "Horizontal furnace, door open"
+              ],
+              [
+                "bmi_top_view",
+                "Furnace from above"
+              ]
+            ],
             "name": "Vacuum tempering furnace",
             "bmi_desc": "VACUUM PURGE TEMPERING FURNACE",
             "short": "Tempering after hardening.",
@@ -1052,6 +1260,9 @@
           },
           {
             "id": "alu-brazing",
+            "photo": "bmi_white_trolley",
+            "photoAlt": "Furnace with loading trolley",
+            "caption": "Furnace with loading trolley",
             "name": "Aluminium brazing vacuum furnace",
             "bmi_desc": "VACUUM ALUMINIUM BRAZING FURNACE",
             "short": "For heat exchangers and aluminium assemblies.",
@@ -1173,8 +1384,8 @@
       },
       {
         "id": "thermochemical",
-        "photo": "bmi_thermo",
-        "photoAlt": "BMI vacuum furnace with pumping system",
+        "photo": "bmi_cooling_unit",
+        "photoAlt": "Furnace with cooling unit",
         "name": "Thermochemical treatment furnaces",
         "sub": "Carburizing, nitriding and sub-zero",
         "desc": "Furnaces and BMI's own processes for changing the surface chemistry of steel parts, such as carburizing and nitriding, plus sub-zero treatment.",
@@ -1182,6 +1393,9 @@
         "machines": [
           {
             "id": "allcarb",
+            "photo": "bmi_load_tray",
+            "photoAlt": "Load tray drawn out of the furnace",
+            "caption": "Load tray drawn out of the furnace",
             "name": "ALLCARB® low-pressure carburizing",
             "short": "Case hardening for gears and transmission parts.",
             "desc": "BMI's ALLCARB® low-pressure carburizing process, run in its vacuum furnaces, case-hardens steel parts such as gears and transmission components without intergranular oxidation.",
@@ -1222,6 +1436,9 @@
           },
           {
             "id": "allnit",
+            "photo": "bmi_control_cabinets",
+            "photoAlt": "Furnace with its control cabinets",
+            "caption": "Furnace with its control cabinets",
             "name": "ALLNIT® low-pressure nitriding",
             "short": "Nitriding for wear and fatigue resistance.",
             "desc": "BMI's ALLNIT® low-pressure nitriding process for improving wear and fatigue resistance of steel parts and tools.",
@@ -1262,6 +1479,9 @@
           },
           {
             "id": "plasma-nitriding",
+            "photo": "bmi_vert_tall",
+            "photoAlt": "Tall vertical furnace",
+            "caption": "Tall vertical furnace",
             "name": "Plasma nitriding furnace",
             "tag": "Vertical",
             "bmi_desc": "PLASMA NITRIDING FURNACE",
@@ -1374,6 +1594,9 @@
           },
           {
             "id": "cool-plus",
+            "photo": "bmi_cooling_unit",
+            "photoAlt": "Furnace with cooling unit",
+            "caption": "Furnace with cooling unit",
             "name": "COOL PLUS sub-zero treatment furnace",
             "short": "Cryogenic treatment of hardened steels.",
             "desc": "The COOL PLUS vacuum furnace performs sub-zero cryogenic treatment, stabilising hardened steels by converting retained austenite.",
@@ -1400,8 +1623,30 @@
   },
   {
     "id": "novatec",
-    "photo": "nov_main",
-    "photoAlt": "Novatec PLURITANK multi-chamber ultrasonic cleaning line",
+    "photo": "nov_plt1400_overview",
+    "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
+    "gallery": [
+      [
+        "nov_plt1400_overview",
+        "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line"
+      ],
+      [
+        "nov_2crd400",
+        "2CRD-400 one-chamber precision vacuum cleaning system"
+      ],
+      [
+        "nov_med_fcps1",
+        "FCS / FCPS final cleaning and passivation cleanroom line"
+      ],
+      [
+        "nov_hq",
+        "Novatec S.r.l. headquarters, San Martino di Lupari (Padova), Italy"
+      ],
+      [
+        "nov_2crd800_saw1",
+        "2CRD-800 loaded with circular saw blades"
+      ]
+    ],
     "name": "Novatec",
     "full": "Novatec S.r.l., San Martino di Lupari (Padova)",
     "country": "Italy",
@@ -1417,8 +1662,8 @@
       {
         "id": "pluritank",
         "family": "PLURITANK",
-        "photo": "nov_main",
-        "photoAlt": "Novatec PLURITANK multi-chamber cleaning line",
+        "photo": "nov_plt1400_overview",
+        "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
         "name": "Multi-tank ultrasonic cleaning",
         "sub": "Modular lines up to 14 process stations",
         "desc": "Modular multi-tank ultrasonic cleaning lines configured from separate process modules — ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying. Up to 14 process stations with automatic basket handling from 10 kg to 300 kg and above.",
@@ -1513,20 +1758,40 @@
                 "CS1 loading and unloading operators zone"
               ]
             },
-            "photo": "nov_main",
-            "photoAlt": "Novatec PLURITANK multi-chamber ultrasonic cleaning line",
+            "photo": "nov_plt1400_overview",
+            "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
             "gallery": [
               [
-                "nm_pluri",
-                "PLURITANK automatic ultrasonic cleaning system"
+                "nov_plt1400_overview",
+                "PLURITANK 1400 complete line from above"
               ],
               [
-                "nm_brand",
-                "PLURITANK line in a cleanroom"
+                "nov_plt1400_loading",
+                "PLURITANK 1400 line with motorised loading conveyor"
               ],
               [
-                "nov_brand",
-                "Inside a PLURITANK line"
+                "nov_plt_gantry",
+                "Inside the line - transport gantry over the tanks"
+              ],
+              [
+                "nov_plt_tanks",
+                "Tank row with basket agitation"
+              ],
+              [
+                "nov_plt_panel",
+                "Line with main electrical control cabinet"
+              ],
+              [
+                "nov_plt_fume",
+                "Line with overhead fume extraction"
+              ],
+              [
+                "nov_plt_dryer",
+                "Line with dryer and DI water plant"
+              ],
+              [
+                "nov_plt_tank_detail",
+                "Single tank and basket, close up"
               ]
             ],
             "name": "PLURITANK ultrasonic cleaning line",
@@ -1597,6 +1862,23 @@
           },
           {
             "id": "pre-pvd",
+            "photo": "nov_plt_studio",
+            "photoAlt": "Novatec PLURITANK pre-treatment line for PVD coating",
+            "caption": "Novatec PLURITANK pre-treatment line for PVD coating",
+            "gallery": [
+              [
+                "nov_plt_studio",
+                "Novatec PLURITANK pre-treatment line for PVD coating"
+              ],
+              [
+                "nov_plt_guarded",
+                "PLURITANK line with safety guarding"
+              ],
+              [
+                "nov_plt_gantry",
+                "Transport gantry over the tanks"
+              ]
+            ],
             "name": "PLURITANK pre-treatment line for PVD coating",
             "short": "Surface preparation before PVD, CVD and DLC.",
             "desc": "A PLURITANK line configured to prepare tools and components for coating. Ultrasonic cleaning followed by rinsing and drying removes residues so the coating bonds reliably, batch after batch.",
@@ -1623,8 +1905,27 @@
           },
           {
             "id": "cleanroom",
-            "photo": "nm_clean",
+            "photo": "nov_plt_clean_01",
             "photoAlt": "Novatec cleaning line for cleanroom use",
+            "caption": "Novatec cleaning line for cleanroom use",
+            "gallery": [
+              [
+                "nov_plt_clean_01",
+                "Novatec cleaning line for cleanroom use"
+              ],
+              [
+                "nov_plt_clean_02",
+                "Cleanroom line, opposite angle"
+              ],
+              [
+                "nov_plt_clean_03",
+                "Line in a white cleanroom, operator in shot"
+              ],
+              [
+                "nov_plt_enclosed",
+                "Fully enclosed line with gantry"
+              ]
+            ],
             "name": "Cleanroom cleaning line",
             "short": "Low-particle cleaning for semiconductor and medical.",
             "desc": "Precision cleaning for semiconductor hardware, vacuum-chamber parts and medical devices. Cleanroom class 7 design is available, with ultrapure water rinsing and documentation for validated processes.",
@@ -1684,7 +1985,7 @@
       {
         "id": "2crd",
         "family": "2CRD",
-        "photo": "crd_green",
+        "photo": "nov_2crd400",
         "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
         "name": "2CRD Series Single-chamber precision cleaning under vacuum",
         "sub": "2CRD one-chamber systems with rotating basket, 8 sizes",
@@ -1693,31 +1994,63 @@
         "machines": [
           {
             "id": "2crd-system",
-            "photo": "crd_green",
-            "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
+            "photo": "nov_2crd400",
+            "photoAlt": "Novatec 2CRD400 single-chamber precision cleaning system",
             "gallery": [
               [
-                "nm_2crd",
-                "Novatec 2CRD400 one-chamber vacuum cleaning system"
+                "nov_2crd400",
+                "2CRD-400 one-chamber precision vacuum cleaning system"
               ],
               [
-                "nm_2crd_b",
-                "2CRD one-chamber system"
+                "nov_2crd100",
+                "2CRD-100 precision vacuum cleaning system"
               ],
               [
-                "nov_2crd",
-                "Single-chamber precision cleaning system"
+                "nov_2crd100r",
+                "2CRD-100-ROT (rotation and tilting)"
+              ],
+              [
+                "nov_2crd200",
+                "2CRD-200 precision vacuum cleaning system"
+              ],
+              [
+                "nov_2crd200_load",
+                "2CRD-200 being loaded with cutting tools"
+              ],
+              [
+                "nov_2crd800",
+                "2CRD-800 large-capacity vacuum cleaning system"
+              ],
+              [
+                "nov_2crd800_saw1",
+                "2CRD-800 loaded with circular saw blades"
+              ],
+              [
+                "nov_2crd800_saw2",
+                "2CRD-800 loaded with saw blades, close up"
+              ],
+              [
+                "nov_2crd800_trolley",
+                "2CRD-800 loading trolley with tooling"
+              ],
+              [
+                "nov_2crd_chamber",
+                "Inside the vacuum chamber, basket in place"
+              ],
+              [
+                "nov_2crd_baskets",
+                "Baskets and tool holders"
               ]
             ],
             "name": "2CRD Series Single-chamber precision cleaning under vacuum",
             "short": "Cleaning and vacuum drying in one chamber.",
-            "desc": "The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket. It is especially suited to blind and tapped holes, porous-coated surfaces and complex parts carrying polishing pastes and oils, including medical implants between production steps. Eight standard variants - 2CRD-100, 200, 400 and 800, each static or -ROT with rotation and tilting - plus the 2CRD1700 built to order.",
+            "desc": "The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket. It is especially suited to blind and tapped holes, porous-coated surfaces and complex parts carrying polishing pastes and oils, including medical implants between production steps. Standard range: 2CRD-100, 200, 400 and 800, each static or -ROT with rotation and tilting.",
             "features": [
               "Single chamber: clean, rinse and vacuum dry",
               "Ultrasonic cleaning combined with vacuum processes",
               "Cleans blind and tapped holes and porous-coated surfaces",
               "Rotating basket",
-              "Compact footprint, 8 sizes"
+              "Compact footprint, confirmed 4 sizes (8 standard variants)"
             ],
             "process": [
               "Blind and tapped holes",
@@ -1798,19 +2131,10 @@
                 "load": "On request",
                 "notes": "Rotation and tilting",
                 "source": "Novatec website"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD1700",
-                "chamber": "800 × 1200 × 820 h",
-                "size": "4300 × 2100 × 2380 h, plus electrical board",
-                "load": "1000 kg",
-                "notes": "Built to order, above the standard range. Ultrasonic 9600 / 19200 W.",
-                "source": "Novatec technical description"
               }
             ],
             "url": "https://novatec.it/en/2crd-vacuum-cleaning",
-            "k": "precision cleaning vacuum drying blind holes 2crd 2crd100 2crd200 2crd400 2crd800 2crd1700 rot rotation tilting implants polishing paste buffer tanks",
+            "k": "precision cleaning vacuum drying blind holes 2crd 2crd100 2crd200 2crd400 2crd800 rot rotation tilting implants polishing paste buffer tanks",
             "i": [
               "medical",
               "semi",
@@ -1836,8 +2160,9 @@
       },
       {
         "id": "medical-implants",
-        "photo": "nm_implants",
-        "photoAlt": "Orthopaedic implants cleaned on Novatec systems",
+        "family": "Medical implant processing",
+        "photo": "nov_med_parts",
+        "photoAlt": "Medical implant components after precision cleaning",
         "name": "Medical implant processing",
         "sub": "PFC, QVS/BRC, EP & turnkey plants",
         "desc": "Complete cleaning and surface treatment systems for orthopaedic and medical implant manufacturing. Built to the customer's specification, from spray cleaning with cleanroom air lock to electropolishing, quality verification, and full turnkey lines. IPC, FCS/FCPS and FPI are listed as applications under PLURITANK and 2CRD above.",
@@ -1846,8 +2171,23 @@
           {
             "id": "qvs-brc",
             "family": "QVS / BRC",
-            "photo": "nm_implants",
-            "photoAlt": "Novatec QVS and BRC automation modules",
+            "photo": "nov_med_layout",
+            "photoAlt": "Novatec combined medical line layout showing QVS and BRC",
+            "caption": "Novatec combined medical line layout showing QVS and BRC",
+            "gallery": [
+              [
+                "nov_med_layout",
+                "Novatec combined medical line layout showing QVS and BRC"
+              ],
+              [
+                "nov_med_basket1",
+                "Implants loaded in a basket"
+              ],
+              [
+                "nov_med_fcps_unload",
+                "Unload air lock on the cleanroom side"
+              ]
+            ],
             "name": "QVS / BRC quality verification & basket return conveyor",
             "tag": "Automation",
             "short": "Quality verification stations and basket return air lock conveyor.",
@@ -1875,8 +2215,14 @@
           {
             "id": "ep",
             "family": "Electropolishing (EP)",
-            "photo": "nm_implants",
+            "photo": "nov_plt_compact",
             "photoAlt": "Novatec PLURITANK electropolishing line",
+            "gallery": [
+              [
+                "nov_med_basket2",
+                "Implants in basket, close up"
+              ]
+            ],
             "name": "Electropolishing line (EP)",
             "tag": "PLURITANK EP",
             "short": "Electropolishing line built on PLURITANK platform.",
@@ -1904,12 +2250,37 @@
           {
             "id": "combined",
             "family": "Combined medical lines",
-            "photo": "nm_urs",
-            "photoAlt": "Layout of a combined Novatec implant cleaning project",
+            "photo": "nov_med_layout",
+            "photoAlt": "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks",
+            "caption": "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks",
             "gallery": [
               [
-                "nm_urs_b",
-                "Implants in custom baskets"
+                "nov_med_layout",
+                "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks"
+              ],
+              [
+                "nov_med_fcps1",
+                "FCS / FCPS final cleaning and passivation, cleanroom"
+              ],
+              [
+                "nov_med_fpi1",
+                "FPI fluorescent penetrant inspection line installed"
+              ],
+              [
+                "nov_med_ipc_2crd",
+                "IPC in-process cleaning - 2CRD400 one-chamber vacuum system"
+              ],
+              [
+                "nov_med_basket1",
+                "Implants loaded in a basket"
+              ],
+              [
+                "nov_med_basket2",
+                "Implants in basket, close up"
+              ],
+              [
+                "nov_med_parts",
+                "Medical implant components"
               ]
             ],
             "name": "Combined turnkey implant lines",
@@ -1936,7 +2307,7 @@
             "i": [
               "medical"
             ],
-            "family_desc": "Full automatic turnkey medical implant cleaning plants built to customer User Requirement Specification (URS), integrating basket loading, IPC, QVS, FCPS, PFC, and BRC with cleanroom air locks.",
+            "family_desc": "Full automatic turnkey medical implant cleaning plants built to customer User Requirement Specification, integrating basket loading, IPC, QVS, FCPS, PFC, and BRC with cleanroom air locks.",
             "typical_use": "Turnkey automated plants for orthopaedic & medical implant manufacturing."
           }
         ]
@@ -1944,8 +2315,8 @@
       {
         "id": "components",
         "family": "Ultrasonic components",
-        "photo": "nov_gen",
-        "photoAlt": "Novatec ultrasonic generators",
+        "photo": "nov_plt1400_gen",
+        "photoAlt": "Novatec PLURITANK 1400 ultrasonic generator rack and filtration skids",
         "name": "Components",
         "sub": "Generators, transducers and PLT 60V",
         "desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
@@ -1953,12 +2324,17 @@
         "machines": [
           {
             "id": "generators",
-            "photo": "nov_gen",
-            "photoAlt": "Novatec ultrasonic generators",
+            "photo": "nov_plt1400_gen",
+            "photoAlt": "PLURITANK 1400 generator rack and filtration skids",
+            "caption": "PLURITANK 1400 generator rack and filtration skids",
             "gallery": [
               [
-                "nov_trans",
-                "Immersible ultrasonic transducers"
+                "nov_plt1400_gen",
+                "PLURITANK 1400 generator rack and filtration skids"
+              ],
+              [
+                "nov_tanks_gen",
+                "Bench ultrasonic tanks with separate generators"
               ]
             ],
             "name": "Ultrasonic generators and transducers",
@@ -1982,6 +2358,8 @@
           },
           {
             "id": "plt60v",
+            "photo": "nov_plt_compact",
+            "photoAlt": "Novatec PLT 60V pressure-cycle cleaning unit",
             "name": "PLT 60V pressure-cycle unit",
             "short": "Pressure-change cleaning for internal channels.",
             "desc": "The PLT 60V uses pressure cycling to clean internal channels and cavities that ultrasound alone struggles to reach.",
@@ -2021,8 +2399,30 @@
   },
   {
     "id": "huasheng",
-    "photo": "lineup",
-    "photoAlt": "Huasheng coating machine lineup",
+    "photo": "hs_gfour",
+    "photoAlt": "Huasheng GFOUR hybrid coating machine",
+    "gallery": [
+      [
+        "hs_gfour",
+        "GFOUR 4th-generation hybrid coating machine"
+      ],
+      [
+        "hs_md800",
+        "MD800 PLUS arc coating machine"
+      ],
+      [
+        "hs_da600pro",
+        "DA600PRO hot filament CVD diamond coating machine"
+      ],
+      [
+        "hs_tc800plus",
+        "TC800PLUS ta-C diamond-like carbon coating machine"
+      ],
+      [
+        "hs_deco_h",
+        "DECO H multi-arc + HiPIMS decorative coating system"
+      ]
+    ],
     "name": "Huasheng",
     "full": "Guangdong Huasheng Nanotechnology Co., Ltd.",
     "country": "China",
@@ -2031,7 +2431,7 @@
     "cats": [
       {
         "id": "pvd",
-        "photo": "hs_pvd",
+        "photo": "hs_gfour",
         "photoAlt": "Huasheng PVD coating machines",
         "name": "PVD coating equipment",
         "sub": "Arc, HiPIMS, hybrid and broach systems",
@@ -2041,7 +2441,7 @@
           {
             "id": "gfour",
             "series": "GFOUR",
-            "photo": "hs_pvd",
+            "photo": "hs_gfour",
             "photoAlt": "Huasheng GFOUR hybrid coating machine",
             "name": "GFOUR 4th-generation hybrid coating machine",
             "tag": "Hybrid PVD",
@@ -2121,7 +2521,7 @@
           {
             "id": "md200",
             "series": "MD",
-            "photo": "hs_md",
+            "photo": "hs_md200",
             "photoAlt": "Huasheng MD200 arc coating machine",
             "name": "MD200 arc coating machine",
             "tag": "Arc ion plating",
@@ -2228,7 +2628,7 @@
           {
             "id": "md500",
             "series": "MD",
-            "photo": "hs_md",
+            "photo": "hs_md500",
             "photoAlt": "Huasheng MD500 arc coating machine",
             "name": "MD500 arc coating machine",
             "tag": "Arc ion plating",
@@ -2338,12 +2738,16 @@
             "series": "MD",
             "name": "MD800 arc coating machine",
             "tag": "Arc coating",
-            "photo": "ma800",
-            "photoAlt": "Huasheng MA800Plus arc coating machine",
+            "photo": "hs_md800",
+            "photoAlt": "Huasheng MD800 PLUS arc coating machine",
             "gallery": [
               [
-                "hs_md",
-                "Huasheng MD series coating machine"
+                "hs_md800",
+                "Huasheng MD800 PLUS arc coating machine"
+              ],
+              [
+                "hs_md500",
+                "Huasheng MD500 arc coating machine"
               ]
             ],
             "short": "High-rate arc coater for tool coating production.",
@@ -2428,6 +2832,7 @@
             "series": "MD",
             "photo": "hs_md1500",
             "photoAlt": "Line drawing of Huasheng MD1500 layout",
+            "caption": "MD1500 high-capacity vertical arc coating machine - manufacturer line drawing",
             "gallery": [
               [
                 "hs_md1500",
@@ -2615,8 +3020,9 @@
           {
             "id": "hd500",
             "series": "HD",
-            "photo": "hs_pvd",
-            "photoAlt": "Huasheng HD500 hybrid coating machine",
+            "photo": "hs_hd500",
+            "photoAlt": "Huasheng HD500 hybrid arc + HiPIMS coating machine",
+            "caption": "Huasheng HD500 hybrid arc + HiPIMS coating machine",
             "name": "HD500 hybrid arc + HiPIMS coating machine",
             "tag": "Hybrid HiPIMS",
             "short": "30% performance gain over arc alone, for stainless steel & titanium.",
@@ -2704,8 +3110,9 @@
           {
             "id": "hd800",
             "series": "HD",
-            "photo": "hs_pvd",
-            "photoAlt": "Huasheng HD800 hybrid coating machine",
+            "photo": "hs_hd500",
+            "photoAlt": "Huasheng HD series hybrid arc + HiPIMS coating platform (HD500 configuration shown)",
+            "caption": "Huasheng HD series hybrid arc + HiPIMS coating platform (HD500 configuration shown)",
             "name": "HD800 hybrid arc + HiPIMS coating machine",
             "tag": "Hybrid HiPIMS",
             "short": "High-capacity hybrid platform for hard-to-machine materials.",
@@ -2793,8 +3200,8 @@
           {
             "id": "wcc800",
             "series": "WCC",
-            "photo": "hs_pvd",
-            "photoAlt": "Huasheng WCC800 sputtering machine",
+            "photo": "hs_wcc800",
+            "photoAlt": "Huasheng WCC800 DC + HiPIMS magnetron sputtering machine",
             "name": "WCC800 DC + HiPIMS magnetron sputtering machine",
             "tag": "HiPIMS sputtering",
             "short": "Universal wear-resistant coating system using DC + HiPIMS.",
@@ -2872,7 +3279,7 @@
           {
             "id": "broach",
             "series": "Special",
-            "photo": "hs_pvd",
+            "photo": "hs_broach",
             "photoAlt": "Huasheng dedicated broach coating equipment",
             "name": "Broach coating equipment",
             "tag": "Dedicated vertical arc",
@@ -2948,8 +3355,8 @@
           },
           {
             "id": "aip",
-            "photo": "hs_pvd",
-            "photoAlt": "Huasheng G4PRO arc coating machine",
+            "photo": "hs_md800",
+            "photoAlt": "Huasheng MD800 PLUS arc coating machine",
             "name": "Arc coating equipment",
             "tag": "Arc coating",
             "short": "Hard nitride coatings for cutting tools.",
@@ -2971,8 +3378,8 @@
           },
           {
             "id": "hipims",
-            "photo": "hs_hipims",
-            "photoAlt": "Huasheng HiPIMS coating machine",
+            "photo": "hs_wcc800",
+            "photoAlt": "Huasheng WCC800 HiPIMS coating machine",
             "name": "HiPIMS coating equipment",
             "short": "Dense, smooth, droplet-free coatings.",
             "desc": "High-power impulse magnetron sputtering systems that produce dense, smooth coatings without the droplets typical of arc processes.",
@@ -2994,6 +3401,8 @@
           },
           {
             "id": "hybrid",
+            "photo": "hs_gfour",
+            "photoAlt": "Huasheng hybrid coating equipment",
             "name": "Hybrid coating equipment",
             "short": "Arc and sputtering in one chamber.",
             "desc": "Hybrid systems that combine arc and sputtering sources in one chamber for multilayer coating designs.",
@@ -3013,6 +3422,8 @@
           },
           {
             "id": "decorative",
+            "photo": "hs_deco_h",
+            "photoAlt": "Huasheng decorative coating equipment",
             "name": "Decorative coating equipment",
             "short": "Colour PVD finishes.",
             "desc": "PVD systems for durable colour finishes on hardware, sanitaryware, watches and consumer products.",
@@ -3033,7 +3444,7 @@
       },
       {
         "id": "dlc",
-        "photo": "hs_dlc",
+        "photo": "hs_tc800plus",
         "photoAlt": "Huasheng DLC and ta-C coating systems",
         "name": "DLC & ta-C coating equipment",
         "sub": "ta-C and filtered arc ta-C",
@@ -3043,8 +3454,8 @@
           {
             "id": "tc800plus",
             "series": "TC",
-            "photo": "hs_dlc",
-            "photoAlt": "Huasheng TC800PLUS ta-C coating system",
+            "photo": "hs_tc800plus",
+            "photoAlt": "Huasheng TC800PLUS ta-C coating machine",
             "name": "TC800PLUS ta-C coating machine",
             "tag": "ta-C DLC",
             "short": "ta-C diamond-like carbon, hardness up to 6000 HV.",
@@ -3133,8 +3544,8 @@
           {
             "id": "tc800plus-f",
             "series": "TC",
-            "photo": "hs_dlc",
-            "photoAlt": "Huasheng TC800PLUS-F filtered arc ta-C coating system",
+            "photo": "hs_tc800plus_f",
+            "photoAlt": "Huasheng TC800PLUS-F filtered arc ta-C coating machine",
             "name": "TC800PLUS-F filtered arc ta-C coating machine",
             "tag": "Filtered arc ta-C",
             "short": "S-shaped magnetic filter that blocks large particles, up to 6000 HV.",
@@ -3222,7 +3633,7 @@
           },
           {
             "id": "pecvd-dlc",
-            "photo": "hs_dlc",
+            "photo": "hs_tc800plus",
             "photoAlt": "Huasheng DLC coating system",
             "name": "PECVD DLC coating equipment",
             "short": "Low-friction coatings for components.",
@@ -3244,8 +3655,8 @@
           },
           {
             "id": "tac",
-            "photo": "hs_tc802",
-            "photoAlt": "Huasheng TC802 coating machine",
+            "photo": "hs_tc800plus",
+            "photoAlt": "Huasheng ta-C coating equipment",
             "name": "ta-C coating equipment",
             "short": "Hydrogen-free carbon coatings.",
             "desc": "Systems for hydrogen-free tetrahedral amorphous carbon (ta-C) coatings, used for machining non-ferrous materials and for high-wear parts.",
@@ -3268,7 +3679,7 @@
       },
       {
         "id": "diamond",
-        "photo": "hs_diamond",
+        "photo": "hs_da600pro",
         "photoAlt": "Huasheng HFCVD diamond coating system",
         "name": "Diamond coating equipment",
         "sub": "HFCVD parallel filament array",
@@ -3279,8 +3690,8 @@
             "id": "da600pro",
             "series": "DA",
             "specs_layout": "full",
-            "photo": "hs_diamond",
-            "photoAlt": "Huasheng DA600PRO HFCVD diamond coating system",
+            "photo": "hs_da600pro",
+            "photoAlt": "Huasheng DA600PRO HFCVD diamond coating machine",
             "name": "DA600PRO HFCVD diamond coating machine",
             "tag": "HFCVD diamond",
             "short": "Parallel filament array for uniform temperature and 4–30 µm diamond film.",
@@ -3422,6 +3833,8 @@
           },
           {
             "id": "hfcvd",
+            "photo": "hs_da600pro",
+            "photoAlt": "Huasheng HFCVD diamond coating equipment",
             "name": "HFCVD diamond coating equipment",
             "short": "Diamond films on carbide tools.",
             "desc": "Hot-filament CVD systems that deposit diamond on carbide tools for machining graphite, composites and aluminium-silicon alloys.",
@@ -3443,7 +3856,7 @@
       },
       {
         "id": "decorative",
-        "photo": "hs_pvd",
+        "photo": "hs_deco_h",
         "photoAlt": "Huasheng decorative coating machines",
         "name": "Decorative PVD coating equipment",
         "sub": "DECO H, DECO A, DECO B, DECO G & AF series",
@@ -3452,8 +3865,8 @@
         "machines": [
           {
             "id": "deco-h",
-            "photo": "hs_pvd",
-            "photoAlt": "Huasheng DECO H hybrid decorative coating system",
+            "photo": "hs_deco_h",
+            "photoAlt": "Huasheng DECO H multi-arc + HiPIMS decorative coating system",
             "name": "DECO H multi-arc + HiPIMS decorative coating system",
             "tag": "Multi-Arc + HiPIMS",
             "short": "Hardness above 2000 HV and widest colour range for luxury items.",
@@ -3541,7 +3954,7 @@
           },
           {
             "id": "deco-a",
-            "photo": "hs_pvd",
+            "photo": "hs_deco_a",
             "photoAlt": "Huasheng DECO A large multi-arc coating system",
             "name": "DECO A large-capacity multi-arc coating system",
             "tag": "Large Multi-Arc",
@@ -3629,7 +4042,7 @@
           },
           {
             "id": "deco-b",
-            "photo": "hs_pvd",
+            "photo": "hs_deco_b",
             "photoAlt": "Huasheng DECO B dark colour coating system",
             "name": "DECO B dark color multi-arc + magnetron coating system",
             "tag": "Dark Series PVD",
@@ -3717,7 +4130,7 @@
           },
           {
             "id": "deco-g",
-            "photo": "hs_pvd",
+            "photo": "hs_deco_g",
             "photoAlt": "Huasheng DECO G real gold coating system",
             "name": "DECO G multi-arc + real gold coating system",
             "tag": "Real Gold PVD",
@@ -3804,7 +4217,7 @@
           },
           {
             "id": "af-series",
-            "photo": "hs_pvd",
+            "photo": "hs_af",
             "photoAlt": "Huasheng AF anti-fingerprint coating equipment",
             "name": "AF anti-fingerprint coating equipment",
             "tag": "Anti-Fingerprint",
@@ -3895,7 +4308,7 @@
       },
       {
         "id": "optical",
-        "photo": "hs_optical",
+        "photo": "hs_opt",
         "photoAlt": "Huasheng optical precision coating systems",
         "name": "Optical coating equipment",
         "sub": "Evaporation and magnetron sputtering",
@@ -3904,7 +4317,7 @@
         "machines": [
           {
             "id": "opt-t",
-            "photo": "hs_optical",
+            "photo": "hs_opt",
             "photoAlt": "Huasheng OPT-T thermal evaporation optical coating equipment",
             "name": "OPT-T thermal evaporation optical coating equipment",
             "tag": "Thermal Evaporation",
@@ -3973,7 +4386,7 @@
           },
           {
             "id": "opt-e",
-            "photo": "hs_optical",
+            "photo": "hs_opt",
             "photoAlt": "Huasheng OPT-E electron beam evaporation optical coating system",
             "name": "OPT-E electron beam evaporation optical coating equipment",
             "tag": "E-beam optical",
@@ -4046,6 +4459,7 @@
           },
           {
             "id": "sputter-optical",
+            "photo": "hs_pow",
             "photoAlt": "Huasheng magnetron sputtering powder coating system",
             "name": "Magnetron sputtering for coating powder rather than parts",
             "tag": "Powder sputtering",
@@ -4148,16 +4562,17 @@
         "machines": [
           {
             "id": "md800-turnkey",
-            "photo": "turnkey",
-            "photoAlt": "Layout of the Huasheng turnkey coating plant: cleaning, coating, chiller, sandblasting and quality control",
+            "photo": "hs_md800",
+            "photoAlt": "Huasheng MD800 PLUS turnkey coating centre",
+            "caption": "Huasheng MD800 PLUS turnkey coating centre",
             "gallery": [
+              [
+                "hs_md800",
+                "Huasheng MD800 PLUS arc coating machine"
+              ],
               [
                 "cleanline",
                 "Fully automatic ultrasonic cleaning line"
-              ],
-              [
-                "ma800",
-                "MA800Plus arc coating machine"
               ]
             ],
             "name": "MD800 turnkey coating centre",
@@ -4424,7 +4839,19 @@
       '</div>' +
       '</div>' +
       '<div class="phead-media">' +
-      fig(b, b.name) +
+      (b.gallery && b.gallery.length ? (
+        '<figure class="mphoto brand-mphoto">' +
+        '<div class="mshot-stage"><img id="mshot-main" src="' + PHOTOS[b.gallery[0][0]] + '" alt="' + esc(b.name) + ' installation"></div>' +
+        '<figcaption id="mshot-cap">' + esc(b.gallery[0][1]) + '</figcaption>' +
+        '<div class="mthumbs">' +
+        b.gallery.map(function (g, k) {
+          return '<button type="button" class="mthumb" data-src="' + g[0] + '" data-cap="' + esc(g[1]) + '" aria-label="' + esc(g[1]) + '"' + (k === 0 ? ' aria-current="true"' : '') + '>' +
+            '<img src="' + PHOTOS[g[0]] + '" alt="">' +
+            '</button>';
+        }).join('') +
+        '</div>' +
+        '</figure>'
+      ) : fig(b, b.name)) +
       '</div>' +
       '</div>' +
 

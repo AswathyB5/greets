@@ -456,7 +456,23 @@ CATALOG.forEach(b => {
           </div>
         </div>
         <div class="phead-media">
-          ${brandPhoto ? `<figure class="mphoto"><img src="${brandPhoto}" alt="${esc(b.name)} installation"></figure>` : ''}
+          ${brandPhoto ? `
+            <figure class="mphoto brand-mphoto">
+              <div class="mshot-stage">
+                <img id="mshot-main" src="${brandPhoto}" alt="${esc(b.name)} installation">
+              </div>
+              ${b.gallery && b.gallery.length ? `
+                <figcaption id="mshot-cap">${esc(b.gallery[0][1])}</figcaption>
+                <div class="mthumbs">
+                  ${b.gallery.map((g, k) => `
+                    <button type="button" class="mthumb" data-src="${root}${PHOTOS[g[0]]}" data-cap="${esc(g[1])}" aria-label="${esc(g[1])}" ${k === 0 ? 'aria-current="true"' : ''}>
+                      <img src="${root}${PHOTOS[g[0]]}" alt="">
+                    </button>
+                  `).join('')}
+                </div>
+              ` : ''}
+            </figure>
+          ` : ''}
         </div>
       </header>
 
@@ -481,6 +497,22 @@ CATALOG.forEach(b => {
 
   ${getFooterHtml(1)}
   <script src="${root}main.js" defer></script>
+  ${b.gallery && b.gallery.length ? `
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.mthumb').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var main = document.getElementById('mshot-main');
+          var cap = document.getElementById('mshot-cap');
+          if (main) main.src = btn.dataset.src;
+          if (cap) cap.textContent = btn.dataset.cap;
+          document.querySelectorAll('.mthumb').forEach(function (b) { b.removeAttribute('aria-current'); });
+          btn.setAttribute('aria-current', 'true');
+        });
+      });
+    });
+  </script>
+  ` : ''}
 </body>
 </html>`;
 

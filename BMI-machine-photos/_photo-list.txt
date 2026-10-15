@@ -1,0 +1,51 @@
+BMI / FOURS INDUSTRIELS B.M.I. - furnace photographs for www.greets.co.in
+Source: BMI 2026 presentation (BMI_presentation_2026_EN), supplied by BMI.
+All images: sRGB JPEG, max 2200 px on the long edge, metadata stripped.
+
+IMPORTANT - THESE ARE NOT MODEL-SPECIFIC
+BMI's presentation does not label its photographs with model numbers, so none
+of these can be tied to a particular furnace model. Please use them as general
+range and company images - category headers, the BMI brand page, backgrounds -
+and do NOT caption any of them with a model name such as B85T or VSE84T.
+The model data is in BMI-furnace-range-for-website.xlsx.
+
+LARGE - suitable for a page header or banner
+  BMI-horizontal-furnace-workshop.jpg   Horizontal vacuum furnace in the works (2200 px)
+  BMI-vertical-furnace-assembly.jpg     Vertical furnace under assembly (2200 px)
+  BMI-furnace-line-installed.jpg        Row of furnaces installed at a plant
+  BMI-large-furnace-assembly.jpg        Large furnace being assembled
+  BMI-furnaces-in-workshop.jpg          Several furnaces in the works
+  BMI-furnace-with-loading-trolley.jpg  Furnace with automatic loading trolley
+
+MEDIUM - card or thumbnail size
+  BMI-furnace-white-with-trolley.jpg    Furnace with loading trolley
+  BMI-vertical-furnace-portrait.jpg     Vertical furnace (portrait)
+  BMI-horizontal-furnace-01.jpg         Horizontal furnace, door closed
+  BMI-horizontal-furnace-02.jpg         Horizontal furnace with pump set
+  BMI-horizontal-furnace-door-open.jpg  Horizontal furnace, door open
+  BMI-furnace-door-open-hot-zone.jpg    Door open, hot zone visible
+  BMI-hot-zone-head-on.jpg              Hot zone straight on - striking, good for a feature panel
+  BMI-furnace-with-control-cabinets.jpg Furnace with its control cabinets
+  BMI-furnace-with-cooling-unit.jpg     Furnace with cooling unit
+  BMI-furnace-top-view.jpg              Furnace from above
+  BMI-vertical-furnace-tall.jpg         Tall vertical furnace
+  BMI-vertical-furnace-white.jpg        Vertical furnace, white
+  BMI-vertical-furnace-orange.jpg       Vertical furnace, orange
+  BMI-furnace-load-tray-extended.jpg    Load tray drawn out of the furnace
+  BMI-long-horizontal-furnace.jpg       Long horizontal furnace
+  BMI-furnace-loading-trolley.jpg       Furnace with loading trolley
+  BMI-furnace-hall.jpg                  Several furnaces in a hall
+  BMI-furnace-white-workshop.jpg        Furnace in the works - small, use at thumbnail size
+
+HISTORICAL - for the company story
+  BMI-historical-early-furnace.jpg      Early BMI furnace, black and white.
+                                        Good alongside "Since 1947".
+  BMI-hot-zone-detail-bw.jpg            Hot zone and door, black and white
+
+NOT INCLUDED, AND WHY
+BMI's presentation also contains the logos of their customers, and a diagram
+naming specific aerospace engine programmes. None of that is in this photo
+pack and none of it may go on the website. We are not naming any customer
+anywhere on the site, for any of the three manufacturers. Please do not take
+any customer name or logo from the BMI presentation or from any other
+document we have shared.

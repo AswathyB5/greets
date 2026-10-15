@@ -1,0 +1,70 @@
+NOVATEC S.r.l. - machine photographs for www.greets.co.in
+Source: Novatec factory/installation photo sets (CRDs, PLTs), supplied by Novatec.
+All images: sRGB JPEG, max 2000 px on the long edge, metadata stripped.
+
+PLURITANK - multi-tank ultrasonic cleaning lines
+  PLURITANK-line-studio.jpg             Full line, plain background - suits the category header
+  PLURITANK-cleanroom-line-01.jpg       Long line installed in a clean production hall
+  PLURITANK-cleanroom-line-02.jpg       Same line, opposite angle
+  PLURITANK-cleanroom-line-03.jpg       Line in a white cleanroom, operator in shot
+  PLURITANK-line-fume-extraction.jpg    Line with overhead fume extraction
+  PLURITANK-enclosed-line.jpg           Fully enclosed line with gantry
+  PLURITANK-line-control-panel.jpg      Line with main electrical cabinet
+  PLURITANK-line-guarded.jpg            Line with yellow safety guarding
+  PLURITANK-line-with-dryer.jpg         Line with dryer and DI water plant
+  PLURITANK-gantry-interior.jpg         Inside the line - transport gantry over the tanks
+  PLURITANK-tank-row-interior.jpg       Tank row, close up (portrait)
+  PLURITANK-tank-detail.jpg             Single tank and basket, close up (portrait)
+  PLURITANK-compact-line.jpg            Compact short line (lower resolution - use small)
+  ultrasonic-tanks-with-generators.jpg  Bench tanks with separate ultrasonic generators
+
+PLURITANK 1400 - large multi-tank line (photographed at Novatec's works)
+  PLURITANK-1400-line-overview.jpg          Complete line from above, with main electrical cabinet
+                                            and unloading station. BEST IMAGE IN THE PACK - use this
+                                            as the PLURITANK category header.
+  PLURITANK-1400-line-and-loading.jpg       Along the line, tanks and roller conveyor, operator in shot
+  PLURITANK-1400-ultrasonic-generators.jpg  Generator rack, filtration skids, pumps and air extraction
+
+  The 1400 is a 14-station line: 3 ultrasonic cleaning tanks with basket agitation,
+  3 turbulent-flow rinses, DI ultrasonic rinse, cascade DI rinse and a 5-position
+  hot air tunnel dryer. Internal tank 700 x 1200 x 1650 mm, basket 540 x 1090 x 1540 mm.
+
+2CRD - single-chamber precision cleaning under vacuum
+  2CRD100-front.jpg                     2CRD100
+  2CRD100-R-front.jpg                   2CRD100-R (rotation and tilting)
+  2CRD200-front.jpg                     2CRD200
+  2CRD200-loading.jpg                   2CRD200 being loaded with cutting tools
+  2CRD400-front.jpg                     2CRD400
+  2CRD800-front.jpg                     2CRD800
+  2CRD800-saw-blades-01.jpg             2CRD800 loaded with circular saw blades
+  2CRD800-saw-blades-02.jpg             2CRD800 loaded with saw blades, close up
+  2CRD800-loading-tooling.jpg           2CRD800 loading trolley with tooling (portrait)
+  2CRD-vacuum-chamber-interior.jpg      Inside the vacuum chamber, basket in place
+  2CRD-baskets-and-tooling.jpg          Baskets and tool holders
+
+Note: model name is visible on the machine in the 2CRD photos; please do not
+crop it out, and please caption each photo with the model name above.
+
+MEDICAL IMPLANT SYSTEMS (from Novatec's medical presentation)
+NOTE ON SIZE: these came out of a PowerPoint and are 400-750 px wide,
+not 2000 px like the rest. Use them at card size only - do not use any
+of them as a page banner or stretch them full width.
+
+  MEDICAL-IPC-2CRD400.jpg              IPC in-process cleaning - 2CRD400 one-chamber vacuum system
+  MEDICAL-IPC-pluritank-line-01.jpg    IPC in-line system - PLURITANK
+  MEDICAL-IPC-pluritank-line-02.jpg    IPC in-line system - PLURITANK, wider view
+  MEDICAL-FCPS-cleanroom-line-01.jpg   FCS / FCPS final cleaning and passivation, cleanroom
+  MEDICAL-FCPS-cleanroom-line-02.jpg   FCS / FCPS line, second angle
+  MEDICAL-FCPS-line-portrait.jpg       FCS / FCPS line (portrait)
+  MEDICAL-FCPS-cleanroom-unload.jpg    Unload air lock on the cleanroom side
+  MEDICAL-FPI-system-drawing.jpg       FPI fluorescent penetrant inspection - system drawing
+  MEDICAL-FPI-line-installed-01.jpg    FPI line installed
+  MEDICAL-FPI-line-installed-02.jpg    FPI line installed, second angle
+  MEDICAL-implants-in-basket-01.jpg    Implants loaded in a basket
+  MEDICAL-implants-in-basket-02.jpg    Implants in basket, close up
+  MEDICAL-combined-layout-drawing.jpg  Combined line layout - IPC, QVS, FCPS, PFC, BRC, air locks
+  MEDICAL-implant-components.jpg       Medical implant components (for the industry section)
+  NOVATEC-headquarters.jpg             Novatec head office, S. Martino di Lupari, Italy
+
+CONFIRMED 2CRD RANGE: 2CRD100, 2CRD200, 2CRD400, 2CRD800
+(from Novatec's own exhibition stand graphic - do not list other sizes)

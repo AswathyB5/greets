@@ -1,0 +1,41 @@
+HUASHENG - machine photographs for www.greets.co.in
+Source: Huasheng 2026 catalogues (Cutting Tools & Mould Coating Equipment,
+Deco Coating Equipment, DA600PRO, MD1500), supplied by Huasheng.
+
+CUTTING TOOL AND MOULD COATING
+  GFOUR.jpg              GFOUR
+  MD200.jpg              MD200
+  MD500.jpg              MD500
+  MD800-PLUS.jpg         MD800 PLUS
+  MD1500-drawing.jpg     MD1500 - line drawing, not a photograph. Shows the machine
+                         with the door open and the 12-tree loading rack inside.
+                         Caption it as a drawing, do not present it as a photo.
+  HD500.jpg              HD500
+  DA600PRO.jpg           DA600PRO - hot filament CVD diamond
+  TC800PLUS.jpg          TC800PLUS
+  TC800PLUS-F.jpg        TC800PLUS-F
+  WCC800.jpg             WCC800
+  Broach.jpg             Broach coating equipment
+
+  NO IMAGE AVAILABLE: HD800. Please use the HD500 photograph with a caption that
+  names HD500, or leave the HD800 entry without a picture. Do not label the
+  HD500 photograph as an HD800.
+
+DECORATIVE COATING - one machine image per family
+  HUASHENG-DECO-H-machine.jpg    DECO H family
+  HUASHENG-DECO-A-machine.jpg    DECO A family
+  HUASHENG-DECO-B-machine.jpg    DECO B family
+  HUASHENG-DECO-G-machine.jpg    DECO G family
+  HUASHENG-AF-machine.jpg        AF family
+  HUASHENG-OPT-machine.jpg       OPT family
+  HUASHENG-POW-machine.jpg       POW family
+
+  These are about 1150 x 680 px. Use them as a page or card image, not as a
+  full width banner. The family name is printed on the machine door in each
+  one, so please do not crop the door out.
+
+LOGO
+  HUASHENG-logo.png      Transparent background, 558 x 287. Use this one.
+
+See the 'Photo mapping' tab of Huasheng-coating-range-for-website.xlsx for the
+same list with suggested placement.
