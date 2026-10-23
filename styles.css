@@ -8151,6 +8151,53 @@ body:has(#contact) footer.footer {
    FIND A SYSTEM & BRAND/LOGO MOBILE RESPONSIVENESS & CENTERING
    =================================================================== */
 @media (max-width: 768px) {
+  /* Reduce top spacing of find a system card on mobile */
+  .finder {
+    padding-top: 1.25rem !important;
+    min-height: auto !important;
+  }
+
+  .finder > .wrap.container {
+    padding-top: 1rem !important;
+    margin-top: 0 !important;
+  }
+
+  .finder-head {
+    margin-top: 0 !important;
+  }
+
+  .finder-head h2,
+  #finder-h {
+    margin-top: 0.15rem !important;
+    padding-top: 0 !important;
+  }
+
+  /* Add bottom spacing for BMI, Novatec, Huasheng cards on mobile */
+  .partners-showcase-grid {
+    gap: 2rem !important;
+    margin-bottom: 2.25rem !important;
+  }
+
+  .partner-card-light {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .partner-card-light__body {
+    padding-bottom: 1.75rem !important;
+  }
+
+  .partner-card-light[data-brand="bmi"],
+  .partner-card-light[data-brand="novatec"],
+  .partner-card-light[data-brand="huasheng"] {
+    margin-bottom: 1rem !important;
+  }
+
+  #bmi .families details,
+  #novatec .families details,
+  #huasheng .families details {
+    margin-bottom: 1.15rem !important;
+  }
+
   /* Finder section mobile optimization */
   .finder-controls {
     display: flex !important;
@@ -8304,12 +8351,18 @@ body:has(#contact) footer.footer {
     margin-right: auto !important;
   }
 
-  .brand-intro .brand-divider {
+  .brand-intro .brand-divider,
+  .brand-section .brand-divider,
+  #bmi .brand-divider,
+  #novatec .brand-divider,
+  #huasheng .brand-divider {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
+    margin-top: 1.5rem !important;
     margin-bottom: 0.75rem !important;
+    padding-top: 0.25rem !important;
   }
 
   .brand-intro .brand-divider img {
@@ -8347,8 +8400,12 @@ body:has(#contact) footer.footer {
     width: 100% !important;
   }
 
-  .partner-brand-logo {
-    margin: 0 auto !important;
+  .partner-brand-logo,
+  .partner-card-light .partner-brand-logo,
+  .partner-card-light[data-brand="bmi"] .partner-brand-logo,
+  .partner-card-light[data-brand="novatec"] .partner-brand-logo,
+  .partner-card-light[data-brand="huasheng"] .partner-brand-logo {
+    margin: 0.6rem auto 0 !important;
   }
 
   .partner-card-light__content {
@@ -8415,6 +8472,26 @@ body:has(#contact) footer.footer {
 
   .phead .lede {
     text-align: center !important;
+  }
+
+  .phead .cat-subhead {
+    text-align: center !important;
+  }
+
+  /* Core strengths card and list points left-aligned on mobile */
+  .brand-strengths {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+  }
+
+  .brand-strengths h3,
+  .brand-strengths ul,
+  .brand-strengths li,
+  .brand-strengths li span {
+    text-align: left !important;
+    justify-content: flex-start !important;
   }
 
   .phead .cta-row {

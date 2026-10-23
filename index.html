@@ -12,6 +12,21 @@
   <link rel="apple-touch-icon" href="assets/greetsfavicon.png">
   <link rel="preload" as="image" href="assets/hero-img.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://www.greetsequipment.com/">
+
+  <meta property="og:title" content="Greets Equipment – Authorised Dealer in India for BMI, Novatec and Huasheng">
+  <meta property="og:description"
+    content="One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating.">
+  <meta property="og:url" content="https://www.greetsequipment.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.greetsequipment.com/assets/catalog/BMI-furnace-line-installed.jpg">
+  <meta property="og:site_name" content="Greets Equipment">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Greets Equipment – Authorised Dealer in India for BMI, Novatec and Huasheng">
+  <meta name="twitter:description"
+    content="One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating.">
+  <meta name="twitter:image" content="https://www.greetsequipment.com/assets/catalog/BMI-furnace-line-installed.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -579,20 +594,24 @@
         font-size: 1.12rem !important;
         gap: 0.45rem !important;
       }
+
       .partner-card-light .bc-n {
         width: 25px !important;
         height: 25px !important;
         font-size: 0.82rem !important;
       }
+
       .partner-card-light[data-brand="greets"] .bc-step {
         font-size: 1.02rem !important;
         gap: 0.35rem !important;
       }
+
       .partner-card-light[data-brand="greets"] .bc-step .bc-n {
         width: 24px !important;
         height: 24px !important;
         font-size: 0.78rem !important;
       }
+
       .partner-card-light .partner-brand-logo {
         width: 104px !important;
         min-width: 104px !important;
@@ -1536,12 +1555,18 @@
         margin-right: auto !important;
       }
 
-      .brand-intro .brand-divider {
+      .brand-intro .brand-divider,
+      .brand-section .brand-divider,
+      #bmi .brand-divider,
+      #novatec .brand-divider,
+      #huasheng .brand-divider {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
         width: 100% !important;
+        margin-top: 1.5rem !important;
         margin-bottom: 0.75rem !important;
+        padding-top: 0.25rem !important;
       }
 
       .brand-intro .brand-divider img {
@@ -2779,7 +2804,8 @@
       .form-field input,
       .form-field select,
       .form-field textarea {
-        font-size: 16px; /* Prevents iOS Safari from auto-zooming on focus */
+        font-size: 16px;
+        /* Prevents iOS Safari from auto-zooming on focus */
       }
 
       .finder-controls .search-box {
@@ -2807,7 +2833,7 @@
         font-size: 1.25rem;
       }
 
-      .contact-form-card > p {
+      .contact-form-card>p {
         font-size: 0.82rem;
         margin-bottom: 1.25rem;
       }
@@ -2826,7 +2852,8 @@
       .form-field select,
       .form-field textarea {
         padding: 0.55rem 0.65rem;
-        font-size: 16px; /* 16px prevents iOS auto-zoom */
+        font-size: 16px;
+        /* 16px prevents iOS auto-zoom */
         border-radius: 6px;
       }
 
@@ -4154,6 +4181,62 @@
     }
 
     @media (max-width: 768px) {
+
+      /* Reduce top spacing of find a system card on mobile */
+      .finder {
+        padding-top: 1.25rem !important;
+        min-height: auto !important;
+      }
+
+      .finder>.wrap.container {
+        padding-top: 1rem !important;
+        margin-top: 0 !important;
+      }
+
+      .finder-head {
+        margin-top: 0 !important;
+      }
+
+      .finder-head h2,
+      #finder-h {
+        margin-top: 0.15rem !important;
+        padding-top: 0 !important;
+      }
+
+      /* Add bottom spacing for BMI, Novatec, Huasheng cards on mobile */
+      .partners-showcase-grid {
+        gap: 2rem !important;
+        margin-bottom: 2.25rem !important;
+      }
+
+      .partner-card-light {
+        margin-bottom: 0.75rem !important;
+      }
+
+      .partner-card-light__body {
+        padding-bottom: 1.75rem !important;
+      }
+
+      .partner-card-light[data-brand="bmi"],
+      .partner-card-light[data-brand="novatec"],
+      .partner-card-light[data-brand="huasheng"] {
+        margin-bottom: 1rem !important;
+      }
+
+      #bmi .families details,
+      #novatec .families details,
+      #huasheng .families details {
+        margin-bottom: 1.15rem !important;
+      }
+
+      .partner-brand-logo,
+      .partner-card-light .partner-brand-logo,
+      .partner-card-light[data-brand="bmi"] .partner-brand-logo,
+      .partner-card-light[data-brand="novatec"] .partner-brand-logo,
+      .partner-card-light[data-brand="huasheng"] .partner-brand-logo {
+        margin-top: 0.6rem !important;
+      }
+
       .finder-controls {
         flex-direction: column !important;
         gap: 12px !important;
@@ -4393,6 +4476,7 @@
       .home-crumb-wrap {
         top: 78px;
       }
+
       .hero--light {
         padding-top: 136px !important;
       }
@@ -4449,10 +4533,10 @@
             <img src="assets/logo-novatec.png" alt="Novatec">
           </a>
           <ul>
-            <li><a href="novatec/pluritank/">Multi-tank ultrasonic cleaning</a></li>
+            <li><a href="novatec/pluritank/">PLURITANK Multi-chamber ultrasonic</a></li>
             <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
             <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
-            <li><a href="novatec/components/">Ultrasonic components</a></li>
+            <li><a href="novatec/components/">Components & PLT 60V</a></li>
           </ul>
         </div>
         <div>
@@ -4474,7 +4558,9 @@
     <div class="mega mega--ind" id="mega-ind" hidden>
       <div class="mega-grid">
         <div>
-          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Tooling &amp; Metalworking</div>
+          <div class="mega-brand"
+            style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">
+            Tooling &amp; Metalworking</div>
           <ul>
             <li><a href="#finder" data-ind="tools">Cutting and gear cutting tools</a></li>
             <li><a href="#finder" data-ind="jobshop">PVD coating service providers</a></li>
@@ -4483,7 +4569,9 @@
           </ul>
         </div>
         <div>
-          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Energy, Auto &amp; Aerospace</div>
+          <div class="mega-brand"
+            style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">
+            Energy, Auto &amp; Aerospace</div>
           <ul>
             <li><a href="#finder" data-ind="power">Power: wind, solar and thermal</a></li>
             <li><a href="#finder" data-ind="oilgas">Oil and gas</a></li>
@@ -4492,7 +4580,9 @@
           </ul>
         </div>
         <div>
-          <div class="mega-brand" style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">Precision, Medical &amp; Optics</div>
+          <div class="mega-brand"
+            style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">
+            Precision, Medical &amp; Optics</div>
           <ul>
             <li><a href="#finder" data-ind="medical">Medical devices and implants</a></li>
             <li><a href="#finder" data-ind="semi">Semiconductor and electronics</a></li>
@@ -4542,10 +4632,10 @@
             <span>Novatec</span>
           </a>
           <ul class="mobile-cat-list">
-            <li><a href="novatec/pluritank/">Multi-tank ultrasonic cleaning</a></li>
+            <li><a href="novatec/pluritank/">PLURITANK Multi-chamber ultrasonic</a></li>
             <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
             <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
-            <li><a href="novatec/components/">Ultrasonic components</a></li>
+            <li><a href="novatec/components/">Components & PLT 60V</a></li>
           </ul>
         </div>
         <div class="mobile-brand-group">
@@ -4575,11 +4665,18 @@
       </button>
       <div class="mobile-products-panel" id="mobile-industries-panel">
         <a href="#industries" class="mobile-all-products-link">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+          </svg>
           <span>Industries overview &mdash; All 12 sectors</span>
         </a>
         <div class="mobile-brand-group">
-          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Tooling &amp; Metalworking</span></div>
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Tooling &amp;
+              Metalworking</span></div>
           <ul class="mobile-cat-list">
             <li><a href="#finder" data-ind="tools">Cutting and gear cutting tools</a></li>
             <li><a href="#finder" data-ind="jobshop">PVD coating service providers</a></li>
@@ -4588,7 +4685,8 @@
           </ul>
         </div>
         <div class="mobile-brand-group">
-          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Energy, Auto &amp; Aerospace</span></div>
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Energy, Auto &amp;
+              Aerospace</span></div>
           <ul class="mobile-cat-list">
             <li><a href="#finder" data-ind="power">Power: wind, solar and thermal</a></li>
             <li><a href="#finder" data-ind="oilgas">Oil and gas</a></li>
@@ -4597,7 +4695,8 @@
           </ul>
         </div>
         <div class="mobile-brand-group">
-          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Precision, Medical &amp; Optics</span></div>
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Precision, Medical
+              &amp; Optics</span></div>
           <ul class="mobile-cat-list">
             <li><a href="#finder" data-ind="medical">Medical devices and implants</a></li>
             <li><a href="#finder" data-ind="semi">Semiconductor and electronics</a></li>
@@ -4626,9 +4725,10 @@
           <div class="crumbrow home-crumbrow">
             <nav class="crumbs" id="home-crumbs" aria-label="Breadcrumb">
               <a href="index.html" class="crumb-home" aria-current="page">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                  <polyline points="9 22 9 12 15 12 15 22"/>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>
                 Home
               </a>
@@ -4644,7 +4744,8 @@
               <span class="dot"></span>
               AUTHORISED DEALER IN INDIA
             </div>
-            <h1 data-anim="zoom-fade">Heat Treatment, Cleaning, and <span class="text-gradient-green">Coating Systems</span>, Supported in India</h1>
+            <h1 data-anim="zoom-fade">Heat Treatment, Cleaning, and <span class="text-gradient-green">Coating
+                Systems</span>, Supported in India</h1>
             <p class="hero__desc" data-anim="fade-up">One partner in India for your complete surface-engineering line:
               BMI
               vacuum furnaces,
@@ -5327,43 +5428,48 @@
         </div>
 
         <div class="families">
-          <details data-cat="PLURITANK multi-chamber lines" class="fade-left" data-anim="fade-left" data-anim-delay="1">
+          <details data-cat="PLURITANK Multi-chamber ultrasonic" class="fade-left" data-anim="fade-left"
+            data-anim-delay="1">
             <summary>
               <span class="family-thumb"><img src="assets/catalog/PLURITANK-1400-line-overview.jpg"
                   alt="Novatec PLURITANK multi-chamber cleaning line"></span>
               <div class="family-head">
-                <span class="t">PLURITANK multi-chamber lines<span class="family-count-badge">3
+                <span class="t">PLURITANK Multi-chamber ultrasonic<span class="family-count-badge">3
                     products</span><small>Modular lines up to 14 process stations</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="novatec/pluritank/pluritank-line/" data-brand="Novatec" data-process="clean"
-                  data-category="PLURITANK multi-chamber lines"><b>PLURITANK ultrasonic cleaning line</b><span>Serial
+                  data-category="PLURITANK Multi-chamber ultrasonic"><b>PLURITANK ultrasonic cleaning
+                    line</b><span>Serial
                     and
                     large-format parts, up to 14 process stations.</span></a></li>
               <li><a href="novatec/pluritank/pre-pvd/" data-brand="Novatec" data-process="clean"
-                  data-category="PLURITANK multi-chamber lines"><b>PLURITANK pre-treatment line for PVD
+                  data-category="PLURITANK Multi-chamber ultrasonic"><b>PLURITANK pre-treatment line for PVD
                     coating</b><span>Surface preparation before PVD, CVD and DLC.</span></a></li>
               <li><a href="novatec/pluritank/cleanroom/" data-brand="Novatec" data-process="clean"
-                  data-category="PLURITANK multi-chamber lines"><b>Cleanroom cleaning line</b><span>Low-particle
+                  data-category="PLURITANK Multi-chamber ultrasonic"><b>Cleanroom cleaning line</b><span>Low-particle
                     cleaning
                     for semiconductor and medical.</span></a></li>
             </ul>
           </details>
-          <details data-cat="2CRD Series Single-chamber precision cleaning under vacuum" class="fade-right" data-anim="fade-right" data-anim-delay="2">
+          <details data-cat="2CRD Series Single-chamber precision cleaning under vacuum" class="fade-right"
+            data-anim="fade-right" data-anim-delay="2">
             <summary>
               <span class="family-thumb"><img src="assets/catalog/2CRD400-front.jpg"
                   alt="Novatec 2CRD Series Single-chamber precision cleaning under vacuum"></span>
               <div class="family-head">
-                <span class="t">2CRD Series Single-chamber precision cleaning under vacuum<span class="family-count-badge">1
+                <span class="t">2CRD Series Single-chamber precision cleaning under vacuum<span
+                    class="family-count-badge">1
                     product</span><small>8 standard variants (static &amp; -ROT), custom to 2CRD1700</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="novatec/2crd/2crd-system/" data-brand="Novatec" data-process="clean"
-                  data-category="2CRD Series Single-chamber precision cleaning under vacuum"><b>2CRD Series Single-chamber precision cleaning under vacuum</b><span>8
+                  data-category="2CRD Series Single-chamber precision cleaning under vacuum"><b>2CRD Series
+                    Single-chamber precision cleaning under vacuum</b><span>8
                     standard variants (100–800 static &amp; -ROT), plus custom up to 2CRD1700.</span></a></li>
             </ul>
           </details>
@@ -5386,36 +5492,39 @@
                   data-category="Medical implant processing"><b>FCS / FCPS final cleaning and passivation</b><span>Final
                     cleaning, with optional passivation, into the cleanroom.</span></a></li>
               <li><a href="novatec/medical-implants/ep/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>Electropolishing line (EP)</b><span>Electropolishing line
+                  data-category="Medical implant processing"><b>Electropolishing line (EP)</b><span>Electropolishing
+                    line
                     built on PLURITANK platform.</span></a></li>
               <li><a href="novatec/medical-implants/fpi/" data-brand="Novatec" data-process="clean"
                   data-category="Medical implant processing"><b>FPI fluorescent penetrant inspection
                     line</b><span>Automated cleaning and crack detection.</span></a></li>
               <li><a href="novatec/medical-implants/qvs-brc/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>QVS / BRC quality verification &amp; basket return conveyor</b><span>Quality
+                  data-category="Medical implant processing"><b>QVS / BRC quality verification &amp; basket return
+                    conveyor</b><span>Quality
                     verification stations and basket return air lock conveyor.</span></a></li>
               <li><a href="novatec/medical-implants/combined/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>Combined turnkey implant lines</b><span>Complete, automated
+                  data-category="Medical implant processing"><b>Combined turnkey implant lines</b><span>Complete,
+                    automated
                     implant cleaning plant.</span></a></li>
             </ul>
           </details>
-          <details data-cat="Ultrasonic components" class="fade-right" data-anim="fade-right" data-anim-delay="4">
+          <details data-cat="Components & PLT 60V" class="fade-right" data-anim="fade-right" data-anim-delay="4">
             <summary>
               <span class="family-thumb"><img src="assets/catalog/PLURITANK-1400-ultrasonic-generators.jpg"
                   alt="Novatec ultrasonic generators"></span>
               <div class="family-head">
-                <span class="t">Ultrasonic components<span class="family-count-badge">2
+                <span class="t">Components & PLT 60V<span class="family-count-badge">2
                     products</span><small>Generators, transducers and PLT 60V</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="novatec/components/generators/" data-brand="Novatec" data-process="clean"
-                  data-category="Ultrasonic components"><b>Ultrasonic generators and transducers</b><span>For building
+                  data-category="Components & PLT 60V"><b>Ultrasonic generators and transducers</b><span>For building
                     or
                     upgrading cleaning tanks.</span></a></li>
               <li><a href="novatec/components/plt60v/" data-brand="Novatec" data-process="clean"
-                  data-category="Ultrasonic components"><b>PLT 60V pressure-cycle unit</b><span>Pressure-change cleaning
+                  data-category="Components & PLT 60V"><b>PLT 60V pressure-cycle unit</b><span>Pressure-change cleaning
                     for internal channels.</span></a></li>
             </ul>
           </details>
@@ -5486,31 +5595,45 @@
             </summary>
             <ul class="models">
               <li><a href="huasheng/pvd/gfour/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>GFOUR 4th-generation hybrid coating machine</b><span>4th-gen hybrid: 4 targets, controllable plasma, square wave.</span></a></li>
+                  data-category="PVD coating equipment"><b>GFOUR 4th-generation hybrid coating machine</b><span>4th-gen
+                    hybrid: 4 targets, controllable plasma, square wave.</span></a></li>
               <li><a href="huasheng/pvd/md200/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>MD200 arc coating machine</b><span>Compact arc coater for small-batch and regrinding shops.</span></a></li>
+                  data-category="PVD coating equipment"><b>MD200 arc coating machine</b><span>Compact arc coater for
+                    small-batch and regrinding shops.</span></a></li>
               <li><a href="huasheng/pvd/md500/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>MD500 arc coating machine</b><span>Mid-size arc coater for serial cutting-tool production.</span></a></li>
+                  data-category="PVD coating equipment"><b>MD500 arc coating machine</b><span>Mid-size arc coater for
+                    serial cutting-tool production.</span></a></li>
               <li><a href="huasheng/pvd/md800/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>MD800 arc coating machine</b><span>High-rate arc coater for tool coating production.</span></a></li>
+                  data-category="PVD coating equipment"><b>MD800 arc coating machine</b><span>High-rate arc coater for
+                    tool coating production.</span></a></li>
               <li><a href="huasheng/pvd/md1500/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>MD1500 high-capacity vertical arc coating machine</b><span>Production machine for gear cutting tools: 72 hobs and 1000 kg per batch.</span></a></li>
+                  data-category="PVD coating equipment"><b>MD1500 high-capacity vertical arc coating
+                    machine</b><span>Production machine for gear cutting tools: 72 hobs and 1000 kg per
+                    batch.</span></a></li>
               <li><a href="huasheng/pvd/hd500/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>HD500 hybrid arc + HiPIMS coating machine</b><span>30% performance gain over arc alone, for stainless steel &amp; titanium.</span></a></li>
+                  data-category="PVD coating equipment"><b>HD500 hybrid arc + HiPIMS coating machine</b><span>30%
+                    performance gain over arc alone, for stainless steel &amp; titanium.</span></a></li>
               <li><a href="huasheng/pvd/hd800/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>HD800 hybrid arc + HiPIMS coating machine</b><span>High-capacity hybrid platform for hard-to-machine materials.</span></a></li>
+                  data-category="PVD coating equipment"><b>HD800 hybrid arc + HiPIMS coating
+                    machine</b><span>High-capacity hybrid platform for hard-to-machine materials.</span></a></li>
               <li><a href="huasheng/pvd/wcc800/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>WCC800 DC + HiPIMS magnetron sputtering machine</b><span>Universal wear-resistant coating system using DC + HiPIMS.</span></a></li>
+                  data-category="PVD coating equipment"><b>WCC800 DC + HiPIMS magnetron sputtering
+                    machine</b><span>Universal wear-resistant coating system using DC + HiPIMS.</span></a></li>
               <li><a href="huasheng/pvd/broach/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>Broach coating equipment</b><span>Dedicated broach coating equipment with a tall chamber.</span></a></li>
+                  data-category="PVD coating equipment"><b>Broach coating equipment</b><span>Dedicated broach coating
+                    equipment with a tall chamber.</span></a></li>
               <li><a href="huasheng/pvd/aip/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>Arc coating equipment</b><span>Hard nitride coatings for cutting tools.</span></a></li>
+                  data-category="PVD coating equipment"><b>Arc coating equipment</b><span>Hard nitride coatings for
+                    cutting tools.</span></a></li>
               <li><a href="huasheng/pvd/hipims/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>HiPIMS coating equipment</b><span>Dense, smooth, droplet-free coatings.</span></a></li>
+                  data-category="PVD coating equipment"><b>HiPIMS coating equipment</b><span>Dense, smooth, droplet-free
+                    coatings.</span></a></li>
               <li><a href="huasheng/pvd/hybrid/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>Hybrid coating equipment</b><span>Arc and sputtering in one chamber.</span></a></li>
+                  data-category="PVD coating equipment"><b>Hybrid coating equipment</b><span>Arc and sputtering in one
+                    chamber.</span></a></li>
               <li><a href="huasheng/pvd/decorative/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>Decorative coating equipment</b><span>Colour PVD finishes.</span></a></li>
+                  data-category="PVD coating equipment"><b>Decorative coating equipment</b><span>Colour PVD
+                    finishes.</span></a></li>
             </ul>
           </details>
           <details data-cat="DLC coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="2">
@@ -5518,19 +5641,25 @@
               <span class="family-thumb"><img src="Huasheng-machine-photos/TC800PLUS.jpg"
                   alt="Huasheng DLC coating system"></span>
               <div class="family-head">
-                <span class="t">DLC &amp; ta-C coating equipment<span class="family-count-badge">4 products</span><small>PECVD DLC, ta-C and filtered arc</small></span>
+                <span class="t">DLC &amp; ta-C coating equipment<span class="family-count-badge">4
+                    products</span><small>PECVD DLC, ta-C and filtered arc</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/dlc/tc800plus/" data-brand="Huasheng" data-process="coat"
-                  data-category="DLC coating equipment"><b>TC800PLUS ta-C coating machine</b><span>ta-C diamond-like carbon, hardness up to 6000 HV.</span></a></li>
+                  data-category="DLC coating equipment"><b>TC800PLUS ta-C coating machine</b><span>ta-C diamond-like
+                    carbon, hardness up to 6000 HV.</span></a></li>
               <li><a href="huasheng/dlc/tc800plus-f/" data-brand="Huasheng" data-process="coat"
-                  data-category="DLC coating equipment"><b>TC800PLUS-F filtered arc ta-C coating machine</b><span>S-shaped magnetic filter that blocks large particles, up to 6000 HV.</span></a></li>
+                  data-category="DLC coating equipment"><b>TC800PLUS-F filtered arc ta-C coating
+                    machine</b><span>S-shaped magnetic filter that blocks large particles, up to 6000 HV.</span></a>
+              </li>
               <li><a href="huasheng/dlc/pecvd-dlc/" data-brand="Huasheng" data-process="coat"
-                  data-category="DLC coating equipment"><b>PECVD DLC coating equipment</b><span>Low-friction coatings for components.</span></a></li>
+                  data-category="DLC coating equipment"><b>PECVD DLC coating equipment</b><span>Low-friction coatings
+                    for components.</span></a></li>
               <li><a href="huasheng/dlc/tac/" data-brand="Huasheng" data-process="coat"
-                  data-category="DLC coating equipment"><b>ta-C coating equipment</b><span>Hydrogen-free carbon coatings.</span></a></li>
+                  data-category="DLC coating equipment"><b>ta-C coating equipment</b><span>Hydrogen-free carbon
+                    coatings.</span></a></li>
             </ul>
           </details>
           <details data-cat="Diamond coating equipment" class="fade-left" data-anim="fade-left" data-anim-delay="3">
@@ -5538,37 +5667,47 @@
               <span class="family-thumb"><img src="Huasheng-machine-photos/DA600PRO.jpg"
                   alt="Huasheng diamond coating system"></span>
               <div class="family-head">
-                <span class="t">Diamond coating equipment<span class="family-count-badge">2 products</span><small>HFCVD diamond films</small></span>
+                <span class="t">Diamond coating equipment<span class="family-count-badge">2 products</span><small>HFCVD
+                    diamond films</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/diamond/da600pro/" data-brand="Huasheng" data-process="coat"
-                  data-category="Diamond coating equipment"><b>DA600PRO HFCVD diamond coating machine</b><span>Parallel filament array for uniform temperature and 4–30 µm diamond film.</span></a></li>
+                  data-category="Diamond coating equipment"><b>DA600PRO HFCVD diamond coating machine</b><span>Parallel
+                    filament array for uniform temperature and 4–30 µm diamond film.</span></a></li>
               <li><a href="huasheng/diamond/hfcvd/" data-brand="Huasheng" data-process="coat"
-                  data-category="Diamond coating equipment"><b>HFCVD diamond coating equipment</b><span>Diamond films on carbide tools.</span></a></li>
+                  data-category="Diamond coating equipment"><b>HFCVD diamond coating equipment</b><span>Diamond films on
+                    carbide tools.</span></a></li>
             </ul>
           </details>
-          <details data-cat="Decorative PVD coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="4">
+          <details data-cat="Decorative PVD coating equipment" class="fade-right" data-anim="fade-right"
+            data-anim-delay="4">
             <summary>
               <span class="family-thumb"><img src="Huasheng-machine-photos/HUASHENG-DECO-H-machine.jpg"
                   alt="Huasheng decorative PVD coating equipment"></span>
               <div class="family-head">
-                <span class="t">Decorative PVD coating equipment<span class="family-count-badge">5 products</span><small>Luxury finishes, multi-arc and anti-fingerprint</small></span>
+                <span class="t">Decorative PVD coating equipment<span class="family-count-badge">5
+                    products</span><small>Luxury finishes, multi-arc and anti-fingerprint</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/decorative/deco-h/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>DECO H multi-arc + HiPIMS decorative coating system</b><span>Hardness above 2000 HV and widest colour range for luxury items.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>DECO H multi-arc + HiPIMS decorative coating
+                    system</b><span>Hardness above 2000 HV and widest colour range for luxury items.</span></a></li>
               <li><a href="huasheng/decorative/deco-a/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>DECO A large-capacity multi-arc coating system</b><span>Largest chambers Huasheng builds, with up to 30 arc sources.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>DECO A large-capacity multi-arc coating
+                    system</b><span>Largest chambers Huasheng builds, with up to 30 arc sources.</span></a></li>
               <li><a href="huasheng/decorative/deco-b/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>DECO B dark color multi-arc + magnetron coating system</b><span>Dedicated dark, gunmetal, and black colour series.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>DECO B dark color multi-arc + magnetron coating
+                    system</b><span>Dedicated dark, gunmetal, and black colour series.</span></a></li>
               <li><a href="huasheng/decorative/deco-g/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>DECO G multi-arc + real gold coating system</b><span>Multi-arc and magnetron sputtering with real gold furnace.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>DECO G multi-arc + real gold coating
+                    system</b><span>Multi-arc and magnetron sputtering with real gold furnace.</span></a></li>
               <li><a href="huasheng/decorative/af-series/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>AF anti-fingerprint coating equipment</b><span>Magnetron sputtering and evaporation for AF functional coatings.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>AF anti-fingerprint coating
+                    equipment</b><span>Magnetron sputtering and evaporation for AF functional coatings.</span></a></li>
             </ul>
           </details>
           <details data-cat="Optical coating equipment" class="fade-left" data-anim="fade-left" data-anim-delay="5">
@@ -5583,21 +5722,27 @@
             </summary>
             <ul class="models">
               <li><a href="huasheng/optical/opt-t/" data-brand="Huasheng" data-process="coat"
-                  data-category="Optical coating equipment"><b>OPT-T thermal evaporation optical coating equipment</b><span>Thermal
+                  data-category="Optical coating equipment"><b>OPT-T thermal evaporation optical coating
+                    equipment</b><span>Thermal
                     evaporation for aluminium, nickel-chromium and silver wires.</span></a></li>
               <li><a href="huasheng/optical/opt-e/" data-brand="Huasheng" data-process="coat"
-                  data-category="Optical coating equipment"><b>OPT-E electron beam evaporation optical coating equipment</b><span>Anti-reflection
+                  data-category="Optical coating equipment"><b>OPT-E electron beam evaporation optical coating
+                    equipment</b><span>Anti-reflection
                     and filter coatings on glass, quartz and silicon wafers.</span></a></li>
               <li><a href="huasheng/optical/sputter-optical/" data-brand="Huasheng" data-process="coat"
-                  data-category="Optical coating equipment"><b>Magnetron sputtering for coating powder rather than parts</b><span>Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.</span></a></li>
+                  data-category="Optical coating equipment"><b>Magnetron sputtering for coating powder rather than
+                    parts</b><span>Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel,
+                    copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.</span></a></li>
             </ul>
           </details>
-          <details data-cat="CVD &amp; CVA coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="6">
+          <details data-cat="CVD &amp; CVA coating equipment" class="fade-right" data-anim="fade-right"
+            data-anim-delay="6">
             <summary>
               <span class="family-thumb"><img src="Huasheng-machine-photos/MD1500-drawing.jpg"
                   alt="Huasheng MD1500 vertical arc coating machine (line drawing)"></span>
               <div class="family-head">
-                <span class="t">CVD &amp; CVA coating equipment<span class="family-count-badge">2 products</span><small>CVD and
+                <span class="t">CVD &amp; CVA coating equipment<span class="family-count-badge">2
+                    products</span><small>CVD and
                     CVA aluminizing</small></span>
               </div>
               <span class="ic">+</span>
@@ -5607,7 +5752,8 @@
                   data-category="CVD &amp; CVA coating equipment"><b>CVD coating systems</b><span>Thick wear-resistant
                     coatings.</span></a></li>
               <li><a href="huasheng/cvd/cva/" data-brand="Huasheng" data-process="coat"
-                  data-category="CVD &amp; CVA coating equipment"><b>CVA aluminizing systems</b><span>Aluminide coatings for
+                  data-category="CVD &amp; CVA coating equipment"><b>CVA aluminizing systems</b><span>Aluminide coatings
+                    for
                     high-temperature parts.</span></a></li>
             </ul>
           </details>
@@ -5616,7 +5762,8 @@
               <span class="family-thumb"><img src="Huasheng-machine-photos/MD800-PLUS.jpg"
                   alt="Huasheng MD800 PLUS arc coating machine"></span>
               <div class="family-head">
-                <span class="t">Turnkey coating solutions<span class="family-count-badge">1 product</span><small>Complete MD800 tool-coating plant</small></span>
+                <span class="t">Turnkey coating solutions<span class="family-count-badge">1
+                    product</span><small>Complete MD800 tool-coating plant</small></span>
               </div>
               <span class="ic">+</span>
             </summary>

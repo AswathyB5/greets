@@ -1664,7 +1664,7 @@
         "family": "PLURITANK",
         "photo": "nov_plt1400_overview",
         "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
-        "name": "Multi-tank ultrasonic cleaning",
+        "name": "PLURITANK Multi-chamber ultrasonic",
         "sub": "Modular lines up to 14 process stations",
         "desc": "Modular multi-tank ultrasonic cleaning lines configured from separate process modules — ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying. Up to 14 process stations with automatic basket handling from 10 kg to 300 kg and above.",
         "url": "https://novatec.it/en/multi-chamber-ultrasonic-cleaning",
@@ -1988,7 +1988,7 @@
         "photo": "nov_2crd400",
         "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
         "name": "2CRD Series Single-chamber precision cleaning under vacuum",
-        "sub": "2CRD one-chamber systems with rotating basket, 8 sizes",
+        "sub": "8 standard variants (static & -ROT), custom to 2CRD1700",
         "desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
         "url": "https://novatec.it/en/2crd-vacuum-cleaning",
         "machines": [
@@ -2164,7 +2164,7 @@
         "photo": "nov_med_parts",
         "photoAlt": "Medical implant components after precision cleaning",
         "name": "Medical implant processing",
-        "sub": "PFC, QVS/BRC, EP & turnkey plants",
+        "sub": "Cleaning, passivation, EP, FPI and turnkey lines",
         "desc": "Complete cleaning and surface treatment systems for orthopaedic and medical implant manufacturing. Built to the customer's specification, from spray cleaning with cleanroom air lock to electropolishing, quality verification, and full turnkey lines. IPC, FCS/FCPS and FPI are listed as applications under PLURITANK and 2CRD above.",
         "url": "https://novatec.it/en/products",
         "machines": [
@@ -2428,10 +2428,10 @@
       },
       {
         "id": "components",
-        "family": "Ultrasonic components",
+        "family": "Components & PLT 60V",
         "photo": "nov_plt1400_gen",
         "photoAlt": "Novatec PLURITANK 1400 ultrasonic generator rack and filtration skids",
-        "name": "Ultrasonic components",
+        "name": "Components & PLT 60V",
         "sub": "Generators, transducers and PLT 60V",
         "desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
         "url": "https://novatec.it/en/ultrasonic-components",
@@ -2548,7 +2548,7 @@
         "photo": "hs_gfour",
         "photoAlt": "Huasheng PVD coating machines",
         "name": "PVD coating equipment",
-        "sub": "Arc, HiPIMS, hybrid and broach systems",
+        "sub": "Arc, HiPIMS, hybrid and decorative",
         "desc": "Physical vapour deposition systems for hard, wear-resistant coatings on cutting tools, moulds and precision components.",
         "url": "https://www.hscoat.com/pvd-coating-equipment/",
         "machines": [
@@ -3561,7 +3561,7 @@
         "photo": "hs_tc800plus",
         "photoAlt": "Huasheng DLC and ta-C coating systems",
         "name": "DLC & ta-C coating equipment",
-        "sub": "ta-C and filtered arc ta-C",
+        "sub": "PECVD DLC, ta-C and filtered arc",
         "desc": "Tetrahedral amorphous carbon (ta-C) and filtered arc systems for hydrogen-free carbon coatings with extreme hardness up to 6000 HV.",
         "url": "https://www.hscoat.com/dlc-coating-equipment/",
         "machines": [
@@ -3796,7 +3796,7 @@
         "photo": "hs_da600pro",
         "photoAlt": "Huasheng HFCVD diamond coating system",
         "name": "Diamond coating equipment",
-        "sub": "HFCVD parallel filament array",
+        "sub": "HFCVD diamond films",
         "desc": "Hot-filament CVD systems that grow microcrystalline and nanocrystalline diamond films on carbide tools.",
         "url": "https://www.hscoat.com/diamond-coating-equipment/",
         "machines": [
@@ -3973,7 +3973,7 @@
         "photo": "hs_deco_h",
         "photoAlt": "Huasheng decorative coating machines",
         "name": "Decorative PVD coating equipment",
-        "sub": "DECO H, DECO A, DECO B, DECO G & AF series",
+        "sub": "Luxury finishes, multi-arc and anti-fingerprint",
         "desc": "Decorative PVD and functional coating systems for watches, jewellery, consumer hardware, architectural panels, and touchscreen anti-fingerprint coatings.",
         "url": "https://www.hscoat.com/decorative-coating-equipment/",
         "machines": [
@@ -5835,7 +5835,7 @@
       const rowHtml = function (x) {
         const p = x.p, th = thumbOf(p), lg = logo(p.bid);
         return '<a class="result" role="listitem" href="' + p.href + '">' +
-          '<span class="r-th">' + (th ? '<img src="' + th + '" alt="" loading="lazy">' : '') + '</span>' +
+          '<span class="r-th">' + (th ? '<img src="' + th + '" alt="' + esc(p.n) + '" loading="lazy">' : '') + '</span>' +
           '<span class="r-main"><span class="n">' + esc(p.n) + '</span><span class="r-s">' +
           (x.why.length ? '<em class="r-why">For ' + esc(x.why.slice(0, 2).join(", ")) + '</em> ' : '') +
           esc(p.s) + '</span></span>' +

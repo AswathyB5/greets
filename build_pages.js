@@ -66,6 +66,12 @@ CATALOG.forEach(b => {
 
 const SITE_URL = 'https://www.greetsequipment.com';
 
+const BRAND_CAT_DESC = {
+  bmi: "Vacuum furnaces",
+  novatec: "Ultrasonic cleaning systems",
+  huasheng: "PVD, DLC and diamond coating equipment"
+};
+
 const HUASHENG_COATING_TABLE = [
   { series: "GFOUR", model: "GFOUR", tech: "4th-generation hybrid coating", cat: "PVD - hybrid", vol: "0.76", area: "Φ500 x 400", temp: "650", size: "4850 x 1600 x 2400", trees: "7", insertLoad: "8400", roundToolLoad: "2520", hobbingLoad: "—", maxLoad: "300", spindle: "130", time: "AlTiN 6-8", machineId: "gfour" },
   { series: "MD", model: "MD200", tech: "Arc ion plating (4 arc sources)", cat: "PVD - arc", vol: "0.50", area: "Φ310 x 400", temp: "500", size: "3400 x 2000 x 2500", trees: "3", insertLoad: "3600", roundToolLoad: "1000", hobbingLoad: "—", maxLoad: "200", spindle: "130", time: "AlTiN 6-8", machineId: "md200" },
@@ -351,8 +357,7 @@ function getCrumbsHtml(parts, root) {
 
 const sitemapUrls = [
   { loc: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
-  { loc: `${SITE_URL}/contact.html`, priority: '0.8', changefreq: 'monthly' },
-  { loc: `${SITE_URL}/privacy.html`, priority: '0.5', changefreq: 'yearly' }
+  { loc: `${SITE_URL}/contact.html`, priority: '0.8', changefreq: 'monthly' }
 ];
 
 // 1. Generate Brand Pages
@@ -387,6 +392,8 @@ CATALOG.forEach(b => {
     "description": b.intro
   };
 
+  const brandPhotoUrl = PHOTOS[b.photo] ? `${SITE_URL}/${PHOTOS[b.photo]}` : `${SITE_URL}/assets/catalog/BMI-furnace-line-installed.jpg`;
+
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -403,7 +410,13 @@ CATALOG.forEach(b => {
   <meta property="og:description" content="${esc(metaDesc)}">
   <meta property="og:url" content="${pageUrl}">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="${brandPhotoUrl}">
   <meta property="og:site_name" content="Greets Equipment">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(pageTitle)}">
+  <meta name="twitter:description" content="${esc(metaDesc)}">
+  <meta name="twitter:image" content="${brandPhotoUrl}">
   
   <script type="application/ld+json">
   ${JSON.stringify(breadcrumbsJson)}
@@ -434,13 +447,13 @@ CATALOG.forEach(b => {
           </div>
           <p class="lede">${esc(b.intro)}</p>
           ${b.strengths && b.strengths.length ? `
-            <div class="brand-strengths" style="margin: 1.25rem 0 1.5rem; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1.15rem 1.25rem;">
-              <h3 style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin: 0 0 0.75rem; font-weight: 700;">Core strengths</h3>
-              <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem;">
+            <div class="brand-strengths" style="margin: 1.25rem 0 1.5rem; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1.15rem 1.25rem; text-align: left;">
+              <h3 style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin: 0 0 0.75rem; font-weight: 700; text-align: left;">Core strengths</h3>
+              <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; text-align: left;">
                 ${b.strengths.map(s => `
-                  <li style="display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.94rem; color: var(--ink); line-height: 1.45;">
+                  <li style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 0.6rem; font-size: 0.94rem; color: var(--ink); line-height: 1.45; text-align: left;">
                     <span style="flex-shrink:0; margin-top:2px;">${SVG_CHECK}</span>
-                    <span>${esc(s)}</span>
+                    <span style="text-align: left;">${esc(s)}</span>
                   </li>
                 `).join('')}
               </ul>
@@ -480,7 +493,10 @@ CATALOG.forEach(b => {
       </header>
 
       <section style="margin:2.5rem 0 1.5rem;">
-        <h2 style="font-size:1.4rem; font-weight:750; color:var(--ink); margin-bottom:1.25rem;">Product categories</h2>
+        <div style="margin-bottom:1.25rem;">
+          <h2 style="font-size:1.4rem; font-weight:750; color:var(--ink); margin:0 0 0.35rem;">Product categories</h2>
+          ${BRAND_CAT_DESC[b.id] ? `<p class="brand-cat-sub" style="font-size:1.02rem; font-weight:600; color:var(--steel); margin:0;">${BRAND_CAT_DESC[b.id]}</p>` : ''}
+        </div>
         <div class="cards">
           ${b.cats.map(c => `
             <a class="card" href="${root}${b.id}/${c.id}/">
@@ -533,6 +549,7 @@ CATALOG.forEach(b => {
     const catTitle = `${c.name} – ${b.name} | Greets Equipment India`;
     const catDesc = `${esc(c.desc)} Supplied with Indian installation, commissioning and local technical support by Greets Equipment.`;
     const catPhoto = PHOTOS[c.photo] ? root2 + PHOTOS[c.photo] : (PHOTOS[b.photo] ? root2 + PHOTOS[b.photo] : '');
+    const catPhotoUrl = PHOTOS[c.photo] ? `${SITE_URL}/${PHOTOS[c.photo]}` : (PHOTOS[b.photo] ? `${SITE_URL}/${PHOTOS[b.photo]}` : `${SITE_URL}/assets/catalog/BMI-furnace-line-installed.jpg`);
 
     const catBreadcrumbs = {
       "@context": "https://schema.org",
@@ -560,7 +577,13 @@ CATALOG.forEach(b => {
   <meta property="og:description" content="${esc(catDesc)}">
   <meta property="og:url" content="${catUrl}">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="${catPhotoUrl}">
   <meta property="og:site_name" content="Greets Equipment">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(catTitle)}">
+  <meta name="twitter:description" content="${esc(catDesc)}">
+  <meta name="twitter:image" content="${catPhotoUrl}">
   
   <script type="application/ld+json">
   ${JSON.stringify(catBreadcrumbs)}
@@ -579,8 +602,10 @@ CATALOG.forEach(b => {
             <span class="flag-chip">${esc(b.country)}</span>
             <span class="oem-chip">${esc(b.name)}</span>
             ${c.family ? `<span class="oem-desc-chip" title="Family">${esc(c.family)}</span>` : ''}
+            ${c.sub ? `<span class="oem-desc-chip" title="Category description">${esc(c.sub)}</span>` : ''}
           </div>
           <h1 style="font-size:clamp(1.8rem, 3.5vw, 2.5rem);">${esc(c.name)}</h1>
+          ${c.sub ? `<p class="cat-subhead" style="font-size:1.02rem; font-weight:600; color:var(--lime, #02963C); margin:-0.25rem 0 0.75rem;">${esc(c.sub)}</p>` : ''}
           <p class="lede">${esc(c.desc)}</p>
           <div class="cta-row">
             <a href="${root2}contact.html" class="btn btn--primary btn--lg">
