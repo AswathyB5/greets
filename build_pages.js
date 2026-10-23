@@ -64,7 +64,7 @@ CATALOG.forEach(b => {
   });
 });
 
-const SITE_URL = 'https://greets.co.in';
+const SITE_URL = 'https://www.greetsequipment.com';
 
 const HUASHENG_COATING_TABLE = [
   { series: "GFOUR", model: "GFOUR", tech: "4th-generation hybrid coating", cat: "PVD - hybrid", vol: "0.76", area: "Φ500 x 400", temp: "650", size: "4850 x 1600 x 2400", trees: "7", insertLoad: "8400", roundToolLoad: "2520", hobbingLoad: "—", maxLoad: "300", spindle: "130", time: "AlTiN 6-8", machineId: "gfour" },
@@ -464,11 +464,14 @@ CATALOG.forEach(b => {
               ${b.gallery && b.gallery.length ? `
                 <figcaption id="mshot-cap">${esc(b.gallery[0][1])}</figcaption>
                 <div class="mthumbs">
-                  ${b.gallery.map((g, k) => `
-                    <button type="button" class="mthumb" data-src="${root}${PHOTOS[g[0]]}" data-cap="${esc(g[1])}" aria-label="${esc(g[1])}" ${k === 0 ? 'aria-current="true"' : ''}>
-                      <img src="${root}${PHOTOS[g[0]]}" alt="">
+                  ${b.gallery.map((g, k) => {
+                    const cap = g[1] || '';
+                    const altText = cap.toLowerCase().includes(b.name.toLowerCase()) ? cap : (cap ? `${b.name} - ${cap}` : b.name);
+                    return `
+                    <button type="button" class="mthumb" data-src="${root}${PHOTOS[g[0]]}" data-cap="${esc(cap)}" aria-label="${esc(altText)}" ${k === 0 ? 'aria-current="true"' : ''}>
+                      <img src="${root}${PHOTOS[g[0]]}" alt="${esc(altText)}">
                     </button>
-                  `).join('')}
+                  `;}).join('')}
                 </div>
               ` : ''}
             </figure>
@@ -684,16 +687,19 @@ CATALOG.forEach(b => {
           photoHtml = `
             <figure class="mshot">
               <div class="mshot-stage">
-                <img id="mshot-main" src="${rootRel}${PHOTOS[shots[0][0]]}" alt="${esc(shots[0][1])}">
+                <img id="mshot-main" src="${rootRel}${PHOTOS[shots[0][0]]}" alt="${esc(shots[0][1] && shots[0][1].toLowerCase().includes(m.name.toLowerCase()) ? shots[0][1] : `${m.name} - ${shots[0][1] || ''}`)}">
               </div>
               <figcaption id="mshot-cap">${m.caption ? esc(m.caption) : (shots.length > 1 ? esc(shots[0][1]) : esc(m.name))}</figcaption>
               ${shots.length > 1 ? `
                 <div class="mthumbs">
-                  ${shots.map((g, k) => `
-                    <button type="button" class="mthumb" data-src="${rootRel}${PHOTOS[g[0]]}" data-cap="${esc(g[1])}" aria-label="${esc(g[1])}" ${k === 0 ? 'aria-current="true"' : ''}>
-                      <img src="${rootRel}${PHOTOS[g[0]]}" alt="">
+                  ${shots.map((g, k) => {
+                    const cap = g[1] || '';
+                    const altText = cap.toLowerCase().includes(m.name.toLowerCase()) ? cap : (cap ? `${m.name} - ${cap}` : m.name);
+                    return `
+                    <button type="button" class="mthumb" data-src="${rootRel}${PHOTOS[g[0]]}" data-cap="${esc(cap)}" aria-label="${esc(altText)}" ${k === 0 ? 'aria-current="true"' : ''}>
+                      <img src="${rootRel}${PHOTOS[g[0]]}" alt="${esc(altText)}">
                     </button>
-                  `).join('')}
+                  `;}).join('')}
                 </div>
               ` : ''}
             </figure>
@@ -1183,7 +1189,11 @@ ${lineLayoutHtml}
         btn.addEventListener('click', function () {
           var main = document.getElementById('mshot-main');
           var cap = document.getElementById('mshot-cap');
-          if (main) main.src = btn.dataset.src;
+          if (main) {
+            main.src = btn.dataset.src;
+            var thumbImg = btn.querySelector('img');
+            if (thumbImg && thumbImg.alt) main.alt = thumbImg.alt;
+          }
           if (cap) cap.textContent = btn.dataset.cap;
           document.querySelectorAll('.mthumb').forEach(function (b) { b.removeAttribute('aria-current'); });
           btn.setAttribute('aria-current', 'true');

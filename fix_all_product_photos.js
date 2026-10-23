@@ -193,7 +193,7 @@ let updatedCount = 0;
       const depth = rel.split(path.sep).length - 1;
       const rootRel = '../'.repeat(depth);
       const targetImgSrc = rootRel + matchedPhoto;
-      const targetOgSrc = 'https://greets.co.in/' + matchedPhoto;
+      const targetOgSrc = 'https://www.greetsequipment.com/' + matchedPhoto;
 
       let changed = false;
 

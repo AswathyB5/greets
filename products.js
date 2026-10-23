@@ -21,7 +21,7 @@
      ---------------------------------------------------------------- */
   const PHOTOS = {
     /* BMI */
-    b8t: "assets/catalog/b8t.jpg",
+    b8t: "assets/catalog/BMI-furnace-door-open-hot-zone.jpg",
     vse8t: "assets/catalog/vse8t.jpg",
     bmi_brazing: "assets/catalog/bmi_brazing.jpg",
     bmi_low: "assets/catalog/bmi_low.jpg",
@@ -2169,6 +2169,120 @@
         "url": "https://novatec.it/en/products",
         "machines": [
           {
+            "id": "ipc",
+            "family": "IPC in-process cleaning",
+            "photo": "nov_med_ipc_2crd",
+            "photoAlt": "Novatec IPC in-process cleaning system",
+            "caption": "IPC in-process cleaning system",
+            "gallery": [
+              [
+                "nov_med_ipc_2crd",
+                "IPC in-process cleaning - 2CRD400 one-chamber vacuum system"
+              ],
+              [
+                "nov_med_basket1",
+                "Implants loaded in a basket"
+              ]
+            ],
+            "name": "IPC in-process cleaning",
+            "short": "Cleaning implants between production steps.",
+            "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Supplied as an in-line PLURITANK system for higher volumes and a wider mix of parts, or as a one-chamber 2CRD vacuum system for blind holes and complex shapes.",
+            "features": [
+              "Cleaning implants between production steps",
+              "Removes oils, chips, particles and polishing pastes",
+              "Available as in-line PLURITANK system or 2CRD vacuum system",
+              "Handles blind holes, porous coatings and complex shapes"
+            ],
+            "process": [
+              "In-process cleaning",
+              "Removing polishing pastes and oils",
+              "Blind and tapped holes",
+              "Porous coated surfaces"
+            ],
+            "url": "https://novatec.it/en/products",
+            "k": "ipc in-process cleaning implants orthopaedic pluritank manufacturing steps",
+            "i": [
+              "medical"
+            ],
+            "family_desc": "In-process cleaning removes oils, chips, particles and polishing pastes from implants between production steps.",
+            "typical_use": "Cleaning implants between grinding, blasting and polishing steps."
+          },
+          {
+            "id": "fcps",
+            "family": "FCS / FCPS",
+            "photo": "nov_med_fcps1",
+            "photoAlt": "FCS / FCPS final cleaning and passivation system",
+            "caption": "FCS / FCPS final cleaning and passivation, cleanroom",
+            "gallery": [
+              [
+                "nov_med_fcps1",
+                "FCS / FCPS final cleaning and passivation, cleanroom"
+              ],
+              [
+                "nov_med_fcps_unload",
+                "Unload air lock on the cleanroom side"
+              ]
+            ],
+            "name": "FCS / FCPS final cleaning and passivation",
+            "short": "Final cleaning, with optional passivation, into the cleanroom.",
+            "desc": "The FCS (final cleaning system) or FCPS (combined final cleaning and passivation system) is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.",
+            "features": [
+              "Final cleaning and passivation into cleanroom",
+              "Unloads through an air lock straight into cleanroom",
+              "Free of contaminants, stains, organic and biological residues",
+              "Automated basket handling and validation data logging"
+            ],
+            "process": [
+              "Final cleaning",
+              "Passivation",
+              "Cleanroom air lock unload",
+              "Medical implant packaging prep"
+            ],
+            "url": "https://novatec.it/en/products",
+            "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation",
+            "i": [
+              "medical"
+            ],
+            "family_desc": "Automatic PLURITANK line unloading through an air lock straight into the cleanroom.",
+            "typical_use": "Final cleaning and passivation of orthopaedic implants before cleanroom packaging."
+          },
+          {
+            "id": "fpi",
+            "family": "FPI",
+            "photo": "nov_med_fpi1",
+            "photoAlt": "FPI fluorescent penetrant inspection line installed",
+            "caption": "FPI fluorescent penetrant inspection line installed",
+            "gallery": [
+              [
+                "nov_med_fpi1",
+                "FPI fluorescent penetrant inspection line installed"
+              ]
+            ],
+            "name": "FPI fluorescent penetrant inspection line",
+            "short": "Automated cleaning and crack detection.",
+            "desc": "An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process. Used to validate medical implants during manufacturing by revealing flaws, cracks and signs of fatigue.",
+            "features": [
+              "Automated cleaning and crack detection",
+              "Combines surface cleaning, prep and fluorescent penetrant inspection",
+              "Reveals flaws, micro-cracks and fatigue signs",
+              "Fully automated process for medical implants & aerospace"
+            ],
+            "process": [
+              "Fluorescent penetrant inspection",
+              "Non-destructive testing (NDT)",
+              "Crack and flaw detection",
+              "Pre-inspection surface cleaning"
+            ],
+            "url": "https://novatec.it/en/products",
+            "k": "fpi fluorescent penetrant inspection ndt cracks fatigue flaws implants pluritank",
+            "i": [
+              "medical",
+              "aero"
+            ],
+            "family_desc": "Automatic line combining surface cleaning, preparation and fluorescent penetrant inspection.",
+            "typical_use": "Flaw and crack detection on medical implants and aerospace parts."
+          },
+          {
             "id": "qvs-brc",
             "family": "QVS / BRC",
             "photo": "nov_med_layout",
@@ -2317,7 +2431,7 @@
         "family": "Ultrasonic components",
         "photo": "nov_plt1400_gen",
         "photoAlt": "Novatec PLURITANK 1400 ultrasonic generator rack and filtration skids",
-        "name": "Components",
+        "name": "Ultrasonic components",
         "sub": "Generators, transducers and PLT 60V",
         "desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
         "url": "https://novatec.it/en/ultrasonic-components",
@@ -4554,7 +4668,7 @@
       {
         "id": "turnkey",
         "photo": "turnkey",
-        "photoAlt": "Layout of the Huasheng turnkey coating plant",
+        "photoAlt": "Huasheng MD800 PLUS arc coating machine",
         "name": "Turnkey coating solutions",
         "sub": "Complete MD800 tool-coating plant",
         "desc": "A complete tool-coating centre from Huasheng: cleaning, coating, maintenance, utilities and quality control, laid out and commissioned as one plant.",
@@ -4845,8 +4959,10 @@
         '<figcaption id="mshot-cap">' + esc(b.gallery[0][1]) + '</figcaption>' +
         '<div class="mthumbs">' +
         b.gallery.map(function (g, k) {
-          return '<button type="button" class="mthumb" data-src="' + g[0] + '" data-cap="' + esc(g[1]) + '" aria-label="' + esc(g[1]) + '"' + (k === 0 ? ' aria-current="true"' : '') + '>' +
-            '<img src="' + PHOTOS[g[0]] + '" alt="">' +
+          var cap = g[1] || '';
+          var altText = cap.toLowerCase().indexOf(b.name.toLowerCase()) !== -1 ? cap : (cap ? b.name + ' - ' + cap : b.name);
+          return '<button type="button" class="mthumb" data-src="' + g[0] + '" data-cap="' + esc(cap) + '" aria-label="' + esc(altText) + '"' + (k === 0 ? ' aria-current="true"' : '') + '>' +
+            '<img src="' + PHOTOS[g[0]] + '" alt="' + esc(altText) + '">' +
             '</button>';
         }).join('') +
         '</div>' +
@@ -4924,13 +5040,16 @@
 
     var photo;
     if (shots.length) {
+      var mainAlt = shots[0][1] && shots[0][1].toLowerCase().indexOf(m.name.toLowerCase()) !== -1 ? shots[0][1] : (shots[0][1] ? m.name + ' - ' + shots[0][1] : m.name);
       photo = '<figure class="mshot">' +
-        '<div class="mshot-stage"><img id="mshot-main" src="' + PHOTOS[shots[0][0]] + '" alt="' + esc(shots[0][1]) + '"></div>' +
+        '<div class="mshot-stage"><img id="mshot-main" src="' + PHOTOS[shots[0][0]] + '" alt="' + esc(mainAlt) + '"></div>' +
         '<figcaption id="mshot-cap">' + (m.caption ? esc(m.caption) : (shots.length > 1 ? esc(shots[0][1]) : esc(m.name))) + '</figcaption>';
       if (shots.length > 1) {
         photo += '<div class="mthumbs">' + shots.map(function (g, k) {
-          return '<button type="button" class="mthumb" data-src="' + g[0] + '" data-cap="' + esc(g[1]) + '" aria-label="' + esc(g[1]) + '"' + (k === 0 ? ' aria-current="true"' : '') + '>' +
-            '<img src="' + PHOTOS[g[0]] + '" alt="">' +
+          var cap = g[1] || '';
+          var altText = cap.toLowerCase().indexOf(m.name.toLowerCase()) !== -1 ? cap : (cap ? m.name + ' - ' + cap : m.name);
+          return '<button type="button" class="mthumb" data-src="' + g[0] + '" data-cap="' + esc(cap) + '" aria-label="' + esc(altText) + '"' + (k === 0 ? ' aria-current="true"' : '') + '>' +
+            '<img src="' + PHOTOS[g[0]] + '" alt="' + esc(altText) + '">' +
             '</button>';
         }).join("") + '</div>';
       }
@@ -5365,7 +5484,11 @@
     var thumb = e.target.closest(".mthumb");
     if (thumb) {
       var im = document.getElementById("mshot-main");
-      if (im) { im.src = PHOTOS[thumb.dataset.src]; im.alt = thumb.dataset.cap; }
+      if (im) {
+        im.src = PHOTOS[thumb.dataset.src];
+        var thumbImg = thumb.querySelector("img");
+        im.alt = (thumbImg && thumbImg.alt) || thumb.dataset.cap;
+      }
       var cap = document.getElementById("mshot-cap");
       if (cap) cap.textContent = thumb.dataset.cap;
       view.querySelectorAll(".mthumb").forEach(function (x) { x.removeAttribute("aria-current"); });
