@@ -1,0 +1,39 @@
+# Example nginx setup, ONE server for both the website and the admin.
+# Copy to /etc/nginx/sites-available/greets, change the domain and the website folder, then:
+#   sudo ln -s /etc/nginx/sites-available/greets /etc/nginx/sites-enabled/
+#   sudo nginx -t && sudo systemctl reload nginx
+#   sudo certbot --nginx -d www.greetsequipment.com -d greetsequipment.com -d admin.greetsequipment.com
+
+# 1) The public website: plain files, written by Publish.
+server {
+    server_name www.greetsequipment.com greetsequipment.com;
+    root /var/www/greets;          # the SAME folder as SITE_DIR in admin-server/.env
+    index index.html;
+
+    location / { try_files $uri $uri/ =404; }
+
+    # The website folder also holds the page-builder scripts and notes. Visitors must not download them.
+    location ~* ^/(build_pages|copy_and_build_novatec|fix_all_product_photos|sync_huasheng|update_links)\.js$ { return 404; }
+    location = /notes { return 404; }
+    location ~ /\.(?!well-known) { return 404; }   # .git, .env and other hidden files
+
+    # The website's contact form and editable content call the admin API on its own address
+    # (ADMIN_URL in main.js), so nothing else is needed here. If you prefer ONE address instead,
+    # leave ADMIN_URL empty in main.js and uncomment:
+    # location /api/ { proxy_pass http://127.0.0.1:5000; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; proxy_set_header Host $host; }
+}
+
+# 2) The admin panel on its own address.
+server {
+    server_name admin.greetsequipment.com;
+    client_max_body_size 10m;      # picture uploads travel as text and are up to ~7 MB
+
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_read_timeout 240s;   # Publish rebuilds every page and can take a minute
+    }
+}

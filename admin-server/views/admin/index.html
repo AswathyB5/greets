@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - Greets Admin</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body data-page="dashboard" data-title="Dashboard">
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="main">
+      <header class="topbar" id="topbar"></header>
+      <main class="content">
+        <div class="page-head"><h1>Dashboard</h1></div>
+        <p class="help-hint">New here? <a href="/admin/help.html">Read the short guide: how to use this admin panel</a>. It takes five minutes.</p>
+
+        <div class="cards" id="cards" aria-live="polite">
+          <div class="card"><div class="label">Total products</div><div class="value" id="total-products">-</div></div>
+          <div class="card"><div class="label">Published products</div><div class="value" id="published-products">-</div></div>
+          <div class="card accent"><div class="label">New enquiries</div><div class="value" id="new-enquiries">-</div></div>
+        </div>
+
+        <section class="panel" id="enquiries">
+          <h2>Latest 5 enquiries</h2>
+          <p class="alert" id="error" role="alert" hidden></p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Name</th><th>Company</th><th>Email</th><th>Product</th><th>Status</th><th>Received</th><th></th></tr></thead>
+              <tbody id="enquiry-rows"><tr><td colspan="7" class="empty">Loading...</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="/admin/admin.js"></script>
+  <script src="/admin/dashboard.js"></script>
+</body>
+</html>

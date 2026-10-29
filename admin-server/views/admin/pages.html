@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pages - Greets Admin</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body data-page="pages" data-title="Pages">
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="main">
+      <header class="topbar" id="topbar"></header>
+      <main class="content">
+        <nav class="crumbs" id="crumbs" aria-label="Breadcrumb"></nav>
+        <div class="page-head"><h1 id="heading">Page content</h1></div>
+        <p class="muted" id="intro" style="margin-top:-8px"></p>
+
+        <p class="alert" id="error" role="alert" hidden></p>
+
+        <section class="panel" id="view"></section>
+
+        <div class="save-bar" id="save-bar" hidden>
+          <span id="dirty-label"></span>
+          <button class="btn secondary" type="button" id="discard">Discard</button>
+          <button class="btn" type="button" id="save">Save changes</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="/admin/admin.js"></script>
+  <script src="/admin/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="/static/logo-greets.png" alt="Greets - Green Transformation Solutions">
+    <h1>Admin Login</h1>
+    <p class="sub">Sign in to manage the site.</p>
+
+    <form id="login-form" novalidate>
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" autocomplete="username" required autofocus>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+      <p id="error" class="error" role="alert" hidden></p>
+
+      <button id="submit" type="submit">Sign in</button>
+    </form>
+  </main>
+
+  <script src="/static/login.js"></script>
+</body>
+</html>

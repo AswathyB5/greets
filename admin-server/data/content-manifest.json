@@ -1,0 +1,5612 @@
+[
+ {
+  "key": "global.header.link_1",
+  "page": "global",
+  "section": "header",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.img_1",
+  "page": "global",
+  "section": "header",
+  "type": "image",
+  "label": "Image (logo-greets.png)",
+  "default": "assets/logo-greets.png",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.img_1_alt",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Image description (alt text) for logo-greets.png",
+  "default": "Greets Equipment",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.a_1",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Link text",
+  "default": "Home",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.a_2",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Link text",
+  "default": "Products",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.a_3",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Link text",
+  "default": "Industries",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.a_4",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Link text",
+  "default": "Why buy through Greets",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ],
+  "group": "a.navlink#1@1",
+  "groupKind": "Navlink",
+  "groupNo": 1,
+  "groupLabel": "Why buy through Greets",
+  "cardId": "global.header.c1_1",
+  "listId": "global.header.l1",
+  "repeatable": true
+ },
+ {
+  "key": "global.header.link_6",
+  "page": "global",
+  "section": "header",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "contact.html",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ],
+  "group": "a.navlink#2@1",
+  "groupKind": "Navlink",
+  "groupNo": 2,
+  "groupLabel": "Contact",
+  "cardId": "global.header.c1_2",
+  "listId": "global.header.l1",
+  "repeatable": true
+ },
+ {
+  "key": "global.header.a_5",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Link text",
+  "default": "Contact",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ],
+  "group": "a.navlink#2@1",
+  "groupKind": "Navlink",
+  "groupNo": 2,
+  "groupLabel": "Contact",
+  "cardId": "global.header.c1_2",
+  "listId": "global.header.l1",
+  "repeatable": true
+ },
+ {
+  "key": "global.header.link_7",
+  "page": "global",
+  "section": "header",
+  "type": "link",
+  "label": "Button link (where it goes)",
+  "default": "contact.html",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ],
+  "button": true
+ },
+ {
+  "key": "global.header.span_1",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Button text",
+  "default": "Talk to Greets",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ],
+  "button": true
+ },
+ {
+  "key": "global.header.div_1",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Text",
+  "default": "Tooling & Metalworking",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ],
+  "group": "div.mobile-brand-group#1@2",
+  "groupKind": "Mobile brand group",
+  "groupNo": 1,
+  "groupLabel": "Tooling & Metalworking",
+  "cardId": "global.mobile-industries-panel.c2_1",
+  "listId": "global.mobile-industries-panel.l2",
+  "repeatable": true
+ },
+ {
+  "key": "global.header.div_2",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Text",
+  "default": "Energy, Auto & Aerospace",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ],
+  "group": "div.mobile-brand-group#2@2",
+  "groupKind": "Mobile brand group",
+  "groupNo": 2,
+  "groupLabel": "Energy, Auto & Aerospace",
+  "cardId": "global.mobile-industries-panel.c2_2",
+  "listId": "global.mobile-industries-panel.l2",
+  "repeatable": true
+ },
+ {
+  "key": "global.header.div_3",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Text",
+  "default": "Precision, Medical & Optics",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ],
+  "group": "div.mobile-brand-group#3@2",
+  "groupKind": "Mobile brand group",
+  "groupNo": 3,
+  "groupLabel": "Precision, Medical & Optics",
+  "cardId": "global.mobile-industries-panel.c2_3",
+  "listId": "global.mobile-industries-panel.l2",
+  "repeatable": true
+ },
+ {
+  "key": "index.page.link_3",
+  "page": "index",
+  "section": "page",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "contact.html",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.hero.background",
+  "page": "index",
+  "section": "hero",
+  "type": "image",
+  "label": "Hero background image",
+  "default": "assets/hero-img.webp",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.home-crumb-wrap.link_1",
+  "page": "index",
+  "section": "home-crumb-wrap",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.home-crumb-wrap.text_1",
+  "page": "index",
+  "section": "home-crumb-wrap",
+  "type": "text",
+  "label": "Text",
+  "default": "Home",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.hero.div_1",
+  "page": "index",
+  "section": "hero",
+  "type": "html",
+  "label": "Text",
+  "default": "<span class=\"dot\"></span> AUTHORISED DEALER IN INDIA",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.hero.h1_1",
+  "page": "index",
+  "section": "hero",
+  "type": "html",
+  "label": "Main heading",
+  "default": "Heat Treatment, Cleaning, and <span class=\"text-gradient-green\">Coating Systems</span>, Supported in India",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.hero.p_1",
+  "page": "index",
+  "section": "hero",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating. Greets stays with you from process choice and import to installation, training and service.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.hero.text_1",
+  "page": "index",
+  "section": "hero",
+  "type": "text",
+  "label": "Button text",
+  "default": "Find a system",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.hero.link_1",
+  "page": "index",
+  "section": "hero",
+  "type": "link",
+  "label": "Button link (where it goes)",
+  "default": "#finder",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.hero.a_1",
+  "page": "index",
+  "section": "hero",
+  "type": "text",
+  "label": "Button text",
+  "default": "Our partners",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.hero.link_2",
+  "page": "index",
+  "section": "hero",
+  "type": "link",
+  "label": "Button link (where it goes)",
+  "default": "#partners",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.partners.h2_1",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Heading",
+  "default": "Three world-class partners, one local team in India",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.partners.img_1",
+  "page": "index",
+  "section": "partners",
+  "type": "image",
+  "label": "Image (BMI-furnace-door-open-hot-zone.jpg)",
+  "default": "assets/catalog/BMI-furnace-door-open-hot-zone.jpg",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_1_alt",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Image description (alt text) for BMI-furnace-door-open-hot-zone.jpg",
+  "default": "BMI vacuum furnace",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.div_1",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Text",
+  "default": "France · BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.div_2",
+  "page": "index",
+  "section": "partners",
+  "type": "html",
+  "label": "Text",
+  "default": "<span class=\"bc-n\">1</span> Harden",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_2",
+  "page": "index",
+  "section": "partners",
+  "type": "image",
+  "label": "Image (logo-BMI.png)",
+  "default": "assets/logo-BMI.png",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_2_alt",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Image description (alt text) for logo-BMI.png",
+  "default": "Fours Industriels B.M.I.",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.h5_1",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Vacuum furnaces",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.p_1",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Fours Industriels B.M.I., France",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.link_1",
+  "page": "index",
+  "section": "partners",
+  "type": "link",
+  "label": "Button link (where it goes)",
+  "default": "bmi/",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.a_1",
+  "page": "index",
+  "section": "partners",
+  "type": "html",
+  "label": "Button text",
+  "default": "Explore BMI furnaces <span class=\"arrow\">→</span>",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "div.hud-corner.partner-card-light#1@3",
+  "groupKind": "Partner card light",
+  "groupNo": 1,
+  "groupLabel": "BMI vacuum furnace",
+  "cardId": "index.partners.c10_1",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_3",
+  "page": "index",
+  "section": "partners",
+  "type": "image",
+  "label": "Image (PLURITANK-1400-line-overview.jpg)",
+  "default": "assets/catalog/PLURITANK-1400-line-overview.jpg",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_3_alt",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Image description (alt text) for PLURITANK-1400-line-overview.jpg",
+  "default": "Novatec ultrasonic cleaning system",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.div_3",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Text",
+  "default": "Italy · Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.div_4",
+  "page": "index",
+  "section": "partners",
+  "type": "html",
+  "label": "Text",
+  "default": "<span class=\"bc-n\">2</span> Clean",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_4",
+  "page": "index",
+  "section": "partners",
+  "type": "image",
+  "label": "Image (logo-novatec.png)",
+  "default": "assets/logo-novatec.png",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_4_alt",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Image description (alt text) for logo-novatec.png",
+  "default": "Novatec S.r.l.",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.h5_2",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Ultrasonic cleaning systems",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.p_2",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Novatec S.r.l., Italy",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.link_2",
+  "page": "index",
+  "section": "partners",
+  "type": "link",
+  "label": "Button link (where it goes)",
+  "default": "novatec/",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.a_2",
+  "page": "index",
+  "section": "partners",
+  "type": "html",
+  "label": "Button text",
+  "default": "Explore Novatec cleaning <span class=\"arrow\">→</span>",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "div.hud-corner.partner-card-light#2@3",
+  "groupKind": "Partner card light",
+  "groupNo": 2,
+  "groupLabel": "Novatec ultrasonic cleaning system",
+  "cardId": "index.partners.c10_2",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_5",
+  "page": "index",
+  "section": "partners",
+  "type": "image",
+  "label": "Image (GFOUR.jpg)",
+  "default": "Huasheng-machine-photos/GFOUR.jpg",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_5_alt",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Image description (alt text) for GFOUR.jpg",
+  "default": "Huasheng PVD coating system",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.div_5",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Text",
+  "default": "China · Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.div_6",
+  "page": "index",
+  "section": "partners",
+  "type": "html",
+  "label": "Text",
+  "default": "<span class=\"bc-n\">3</span> Coat",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_6",
+  "page": "index",
+  "section": "partners",
+  "type": "image",
+  "label": "Image (HUASHENG-logo.png)",
+  "default": "Huasheng-machine-photos/HUASHENG-logo.png",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_6_alt",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Image description (alt text) for HUASHENG-logo.png",
+  "default": "Huasheng Nanotechnology",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.h5_3",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Huasheng Nanotechnology",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.p_3",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Guangdong Huasheng Nanotechnology, Dongguan, China",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.link_3",
+  "page": "index",
+  "section": "partners",
+  "type": "link",
+  "label": "Button link (where it goes)",
+  "default": "huasheng/",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.a_3",
+  "page": "index",
+  "section": "partners",
+  "type": "html",
+  "label": "Button text",
+  "default": "Explore Huasheng coating <span class=\"arrow\">→</span>",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "div.hud-corner.partner-card-light#3@3",
+  "groupKind": "Partner card light",
+  "groupNo": 3,
+  "groupLabel": "Huasheng PVD coating system",
+  "cardId": "index.partners.c10_3",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.text_1",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Text",
+  "default": "Installation",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.text_2",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Text",
+  "default": "Training",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.text_3",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Text",
+  "default": "Spares",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.text_4",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Text",
+  "default": "Service",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.div_7",
+  "page": "index",
+  "section": "partners",
+  "type": "html",
+  "label": "Text",
+  "default": "<span class=\"bc-n\">4</span> Support",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_7",
+  "page": "index",
+  "section": "partners",
+  "type": "image",
+  "label": "Image (logo-greets.png)",
+  "default": "assets/logo-greets.png",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.img_7_alt",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Image description (alt text) for logo-greets.png",
+  "default": "Greets Equipment",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.h5_4",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "One local team for all three",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.p_4",
+  "page": "index",
+  "section": "partners",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Greets Equipment Pvt. Ltd., India",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.a_4",
+  "page": "index",
+  "section": "partners",
+  "type": "html",
+  "label": "Button text",
+  "default": "See how we support you <span class=\"arrow\">→</span>",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.partners.link_4",
+  "page": "index",
+  "section": "partners",
+  "type": "link",
+  "label": "Button link (where it goes)",
+  "default": "#why",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "div.hud-corner.partner-card-light#4@3",
+  "groupKind": "Partner card light",
+  "groupNo": 4,
+  "groupLabel": "Installation",
+  "cardId": "index.partners.c10_4",
+  "listId": "index.partners.l10",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h2_1",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Heading",
+  "default": "Industries we serve",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.industries.p_1",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Choose an industry to see the systems that apply to it.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.industries.h5_1",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Cutting and gear cutting tools",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#1@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 1,
+  "groupLabel": "Cutting and gear cutting tools",
+  "cardId": "index.industries.c11_1",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_2",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Hobs, shaper cutters, inserts, drills and end mills.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#1@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 1,
+  "groupLabel": "Cutting and gear cutting tools",
+  "cardId": "index.industries.c11_1",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_1",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#1@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 1,
+  "groupLabel": "Cutting and gear cutting tools",
+  "cardId": "index.industries.c11_1",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_2",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#1@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 1,
+  "groupLabel": "Cutting and gear cutting tools",
+  "cardId": "index.industries.c11_1",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_3",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#1@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 1,
+  "groupLabel": "Cutting and gear cutting tools",
+  "cardId": "index.industries.c11_1",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_2",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "PVD coating service providers",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#2@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 2,
+  "groupLabel": "PVD coating service providers",
+  "cardId": "index.industries.c11_2",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_3",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Coating job shops and in-house coating centres.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#2@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 2,
+  "groupLabel": "PVD coating service providers",
+  "cardId": "index.industries.c11_2",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_4",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#2@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 2,
+  "groupLabel": "PVD coating service providers",
+  "cardId": "index.industries.c11_2",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_5",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#2@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 2,
+  "groupLabel": "PVD coating service providers",
+  "cardId": "index.industries.c11_2",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_6",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#2@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 2,
+  "groupLabel": "PVD coating service providers",
+  "cardId": "index.industries.c11_2",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_3",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Dies and mould manufacturers",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#3@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 3,
+  "groupLabel": "Dies and mould manufacturers",
+  "cardId": "index.industries.c11_3",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_4",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Press tools, forging dies, die-casting and plastic moulds.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#3@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 3,
+  "groupLabel": "Dies and mould manufacturers",
+  "cardId": "index.industries.c11_3",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_7",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#3@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 3,
+  "groupLabel": "Dies and mould manufacturers",
+  "cardId": "index.industries.c11_3",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_8",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#3@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 3,
+  "groupLabel": "Dies and mould manufacturers",
+  "cardId": "index.industries.c11_3",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_9",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#3@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 3,
+  "groupLabel": "Dies and mould manufacturers",
+  "cardId": "index.industries.c11_3",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_4",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Steel and metal processing",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#4@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 4,
+  "groupLabel": "Steel and metal processing",
+  "cardId": "index.industries.c11_4",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_5",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Commercial heat treaters, steel, alloy and forging plants.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#4@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 4,
+  "groupLabel": "Steel and metal processing",
+  "cardId": "index.industries.c11_4",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_10",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#4@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 4,
+  "groupLabel": "Steel and metal processing",
+  "cardId": "index.industries.c11_4",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_11",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#4@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 4,
+  "groupLabel": "Steel and metal processing",
+  "cardId": "index.industries.c11_4",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_5",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Power: wind, solar and thermal",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#5@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 5,
+  "groupLabel": "Power: wind, solar and thermal",
+  "cardId": "index.industries.c11_5",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_6",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Gearbox parts, turbine blades, shafts and bearings.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#5@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 5,
+  "groupLabel": "Power: wind, solar and thermal",
+  "cardId": "index.industries.c11_5",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_12",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#5@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 5,
+  "groupLabel": "Power: wind, solar and thermal",
+  "cardId": "index.industries.c11_5",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_13",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#5@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 5,
+  "groupLabel": "Power: wind, solar and thermal",
+  "cardId": "index.industries.c11_5",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_14",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#5@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 5,
+  "groupLabel": "Power: wind, solar and thermal",
+  "cardId": "index.industries.c11_5",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_6",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Oil and gas",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#6@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 6,
+  "groupLabel": "Oil and gas",
+  "cardId": "index.industries.c11_6",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_7",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Valves, pumps, drilling tools and wear parts.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#6@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 6,
+  "groupLabel": "Oil and gas",
+  "cardId": "index.industries.c11_6",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_15",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#6@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 6,
+  "groupLabel": "Oil and gas",
+  "cardId": "index.industries.c11_6",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_16",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#6@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 6,
+  "groupLabel": "Oil and gas",
+  "cardId": "index.industries.c11_6",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_17",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#6@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 6,
+  "groupLabel": "Oil and gas",
+  "cardId": "index.industries.c11_6",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_7",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Automotive",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#7@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 7,
+  "groupLabel": "Automotive",
+  "cardId": "index.industries.c11_7",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_8",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Gears, transmission, engine and EV components.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#7@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 7,
+  "groupLabel": "Automotive",
+  "cardId": "index.industries.c11_7",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_18",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#7@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 7,
+  "groupLabel": "Automotive",
+  "cardId": "index.industries.c11_7",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_19",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#7@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 7,
+  "groupLabel": "Automotive",
+  "cardId": "index.industries.c11_7",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_20",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#7@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 7,
+  "groupLabel": "Automotive",
+  "cardId": "index.industries.c11_7",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_8",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Aerospace and defence",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#8@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 8,
+  "groupLabel": "Aerospace and defence",
+  "cardId": "index.industries.c11_8",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_9",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Turbine parts, brazed assemblies, weapon and vehicle components.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#8@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 8,
+  "groupLabel": "Aerospace and defence",
+  "cardId": "index.industries.c11_8",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_21",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#8@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 8,
+  "groupLabel": "Aerospace and defence",
+  "cardId": "index.industries.c11_8",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_22",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#8@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 8,
+  "groupLabel": "Aerospace and defence",
+  "cardId": "index.industries.c11_8",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_23",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#8@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 8,
+  "groupLabel": "Aerospace and defence",
+  "cardId": "index.industries.c11_8",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_9",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Medical devices and implants",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#9@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 9,
+  "groupLabel": "Medical devices and implants",
+  "cardId": "index.industries.c11_9",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_10",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Orthopaedic implants, surgical instruments, cleanroom final cleaning.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#9@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 9,
+  "groupLabel": "Medical devices and implants",
+  "cardId": "index.industries.c11_9",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_24",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "BMI",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#9@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 9,
+  "groupLabel": "Medical devices and implants",
+  "cardId": "index.industries.c11_9",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_25",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#9@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 9,
+  "groupLabel": "Medical devices and implants",
+  "cardId": "index.industries.c11_9",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_26",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#9@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 9,
+  "groupLabel": "Medical devices and implants",
+  "cardId": "index.industries.c11_9",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_10",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Semiconductor and electronics",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#10@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 10,
+  "groupLabel": "Semiconductor and electronics",
+  "cardId": "index.industries.c11_10",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_11",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Chamber parts and precision components.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#10@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 10,
+  "groupLabel": "Semiconductor and electronics",
+  "cardId": "index.industries.c11_10",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_27",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#10@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 10,
+  "groupLabel": "Semiconductor and electronics",
+  "cardId": "index.industries.c11_10",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_28",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#10@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 10,
+  "groupLabel": "Semiconductor and electronics",
+  "cardId": "index.industries.c11_10",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_11",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Optics and eyewear",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#11@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 11,
+  "groupLabel": "Optics and eyewear",
+  "cardId": "index.industries.c11_11",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_12",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Lenses and optical components.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#11@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 11,
+  "groupLabel": "Optics and eyewear",
+  "cardId": "index.industries.c11_11",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_29",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#11@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 11,
+  "groupLabel": "Optics and eyewear",
+  "cardId": "index.industries.c11_11",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_30",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#11@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 11,
+  "groupLabel": "Optics and eyewear",
+  "cardId": "index.industries.c11_11",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.h5_12",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Watches, jewellery and decorative",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#12@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 12,
+  "groupLabel": "Watches, jewellery and decorative",
+  "cardId": "index.industries.c11_12",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.p_13",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Cases, bands, fittings and hardware finishes.",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#12@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 12,
+  "groupLabel": "Watches, jewellery and decorative",
+  "cardId": "index.industries.c11_12",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_31",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Novatec",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#12@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 12,
+  "groupLabel": "Watches, jewellery and decorative",
+  "cardId": "index.industries.c11_12",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.industries.span_32",
+  "page": "index",
+  "section": "industries",
+  "type": "text",
+  "label": "Text",
+  "default": "Huasheng",
+  "pages": [
+   "index"
+  ],
+  "group": "a.industry-card-v2#12@4",
+  "groupKind": "Industry card v2",
+  "groupNo": 12,
+  "groupLabel": "Watches, jewellery and decorative",
+  "cardId": "index.industries.c11_12",
+  "listId": "index.industries.l11",
+  "repeatable": true
+ },
+ {
+  "key": "index.finder.h2_1",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Heading",
+  "default": "Find a system",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.finder.span_1",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Sentence above the example words",
+  "default": "Type what you make or the process you need, for example",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.finder.button_1",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Button: Example search word",
+  "default": "moulds",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "button.qchip#1@5",
+  "groupKind": "Qchip",
+  "groupNo": 1,
+  "groupLabel": "moulds",
+  "cardId": "index.finder.c5_1",
+  "listId": "index.finder.l5",
+  "repeatable": false
+ },
+ {
+  "key": "index.finder.button_2",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Button: Example search word",
+  "default": "hob coating",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "button.qchip#2@5",
+  "groupKind": "Qchip",
+  "groupNo": 2,
+  "groupLabel": "hob coating",
+  "cardId": "index.finder.c5_2",
+  "listId": "index.finder.l5",
+  "repeatable": false
+ },
+ {
+  "key": "index.finder.button_3",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Button: Example search word",
+  "default": "implant cleaning",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "button.qchip#3@5",
+  "groupKind": "Qchip",
+  "groupNo": 3,
+  "groupLabel": "implant cleaning",
+  "cardId": "index.finder.c5_3",
+  "listId": "index.finder.l5",
+  "repeatable": false
+ },
+ {
+  "key": "index.finder.button_4",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Button: Example search word",
+  "default": "nitriding",
+  "pages": [
+   "index"
+  ],
+  "button": true,
+  "group": "button.qchip#4@5",
+  "groupKind": "Qchip",
+  "groupNo": 4,
+  "groupLabel": "nitriding",
+  "cardId": "index.finder.c5_4",
+  "listId": "index.finder.l5",
+  "repeatable": false
+ },
+ {
+  "key": "index.finder.input_1",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Input placeholder",
+  "default": "Describe your need: moulds, hob coating, implant cleaning, nitriding…",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.finder.button_5",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Button: all brands",
+  "default": "All brands",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.finder.button_6",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Button: all processes",
+  "default": "All processes",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.finder.button_7",
+  "page": "index",
+  "section": "finder",
+  "type": "html",
+  "label": "Button: Process step 1",
+  "default": "<span>1</span>Harden",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.finder.button_8",
+  "page": "index",
+  "section": "finder",
+  "type": "html",
+  "label": "Button: Process step 2",
+  "default": "<span>2</span>Clean",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.finder.button_9",
+  "page": "index",
+  "section": "finder",
+  "type": "html",
+  "label": "Button: Process step 3",
+  "default": "<span>3</span>Coat",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.finder.span_2",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Label of the industry filter",
+  "default": "Industry:",
+  "pages": [
+   "index"
+  ],
+  "group": "label.fsel#1@6",
+  "groupKind": "Fsel",
+  "groupNo": 1,
+  "groupLabel": "Industry:",
+  "cardId": "index.finder.c6_1",
+  "listId": "index.finder.l6",
+  "repeatable": false
+ },
+ {
+  "key": "index.finder.span_3",
+  "page": "index",
+  "section": "finder",
+  "type": "text",
+  "label": "Label of the category filter",
+  "default": "Category:",
+  "pages": [
+   "index"
+  ],
+  "group": "label.fsel#2@6",
+  "groupKind": "Fsel",
+  "groupNo": 2,
+  "groupLabel": "Category:",
+  "cardId": "index.finder.c6_2",
+  "listId": "index.finder.l6",
+  "repeatable": false
+ },
+ {
+  "key": "index.bmi.img_1",
+  "page": "index",
+  "section": "bmi",
+  "type": "image",
+  "label": "Image (logo-BMI.png)",
+  "default": "assets/logo-BMI.png",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.bmi.img_1_alt",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Image description (alt text) for logo-BMI.png",
+  "default": "Fours Industriels B.M.I.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.bmi.h2_1",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Heading",
+  "default": "Fours Industriels B.M.I., Saint-Quentin-Fallavier, France",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.bmi.p_1",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "French designer & manufacturer since 1947 and specialist in vacuum for more than 50 years, building standard and custom furnaces for aerospace, automotive, medical, tooling and heat-treatment shops. BMI's patented rotating gas flow gives uniform quenching even on dense loads.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.bmi.link_1",
+  "page": "index",
+  "section": "bmi",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "https://bmi-fours.com",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.bmi.text_1",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Text",
+  "default": "Visit bmi-fours.com",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.bmi.div_1",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Text",
+  "default": "1947",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#1@7",
+  "groupKind": "Brand intro stat",
+  "groupNo": 1,
+  "groupLabel": "1947",
+  "cardId": "index.bmi.c12_1",
+  "listId": "index.bmi.l12",
+  "repeatable": true
+ },
+ {
+  "key": "index.bmi.div_2",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Text",
+  "default": "Manufacturer since",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#1@7",
+  "groupKind": "Brand intro stat",
+  "groupNo": 1,
+  "groupLabel": "1947",
+  "cardId": "index.bmi.c12_1",
+  "listId": "index.bmi.l12",
+  "repeatable": true
+ },
+ {
+  "key": "index.bmi.div_3",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Text",
+  "default": "1500+",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#2@7",
+  "groupKind": "Brand intro stat",
+  "groupNo": 2,
+  "groupLabel": "1500+",
+  "cardId": "index.bmi.c12_2",
+  "listId": "index.bmi.l12",
+  "repeatable": true
+ },
+ {
+  "key": "index.bmi.div_4",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Text",
+  "default": "Furnaces worldwide",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#2@7",
+  "groupKind": "Brand intro stat",
+  "groupNo": 2,
+  "groupLabel": "1500+",
+  "cardId": "index.bmi.c12_2",
+  "listId": "index.bmi.l12",
+  "repeatable": true
+ },
+ {
+  "key": "index.bmi.h3_1",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Vacuum furnaces",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.bmi.link_2",
+  "page": "index",
+  "section": "bmi",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "bmi/",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.bmi.a_1",
+  "page": "index",
+  "section": "bmi",
+  "type": "text",
+  "label": "Link text",
+  "default": "See all BMI machines →",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.img_1",
+  "page": "index",
+  "section": "novatec",
+  "type": "image",
+  "label": "Image (logo-novatec.png)",
+  "default": "assets/logo-novatec.png",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.img_1_alt",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Image description (alt text) for logo-novatec.png",
+  "default": "Novatec S.r.l.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.h2_1",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Heading",
+  "default": "Novatec S.r.l., San Martino di Lupari (Padova), Italy",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.p_1",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Italian maker of industrial ultrasonic cleaning systems since 1993, from multi-stage PLURITANK lines to compact 2CRD machines, built to the customer's parts and throughput requirements.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.link_1",
+  "page": "index",
+  "section": "novatec",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "https://novatec.it",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.text_1",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Text",
+  "default": "Visit novatec.it",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.div_1",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Text",
+  "default": "1993",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#1@8",
+  "groupKind": "Brand intro stat",
+  "groupNo": 1,
+  "groupLabel": "1993",
+  "cardId": "index.novatec.c13_1",
+  "listId": "index.novatec.l13",
+  "repeatable": true
+ },
+ {
+  "key": "index.novatec.div_2",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Text",
+  "default": "Founded",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#1@8",
+  "groupKind": "Brand intro stat",
+  "groupNo": 1,
+  "groupLabel": "1993",
+  "cardId": "index.novatec.c13_1",
+  "listId": "index.novatec.l13",
+  "repeatable": true
+ },
+ {
+  "key": "index.novatec.div_3",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Text",
+  "default": "2300+",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#2@8",
+  "groupKind": "Brand intro stat",
+  "groupNo": 2,
+  "groupLabel": "2300+",
+  "cardId": "index.novatec.c13_2",
+  "listId": "index.novatec.l13",
+  "repeatable": true
+ },
+ {
+  "key": "index.novatec.div_4",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Text",
+  "default": "Systems installed",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#2@8",
+  "groupKind": "Brand intro stat",
+  "groupNo": 2,
+  "groupLabel": "2300+",
+  "cardId": "index.novatec.c13_2",
+  "listId": "index.novatec.l13",
+  "repeatable": true
+ },
+ {
+  "key": "index.novatec.div_5",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Text",
+  "default": "45+",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#3@8",
+  "groupKind": "Brand intro stat",
+  "groupNo": 3,
+  "groupLabel": "45+",
+  "cardId": "index.novatec.c13_3",
+  "listId": "index.novatec.l13",
+  "repeatable": true
+ },
+ {
+  "key": "index.novatec.div_6",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Text",
+  "default": "Countries",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#3@8",
+  "groupKind": "Brand intro stat",
+  "groupNo": 3,
+  "groupLabel": "45+",
+  "cardId": "index.novatec.c13_3",
+  "listId": "index.novatec.l13",
+  "repeatable": true
+ },
+ {
+  "key": "index.novatec.h3_1",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Ultrasonic cleaning systems",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.link_2",
+  "page": "index",
+  "section": "novatec",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "novatec/",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.novatec.a_1",
+  "page": "index",
+  "section": "novatec",
+  "type": "text",
+  "label": "Link text",
+  "default": "See all Novatec machines →",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.img_1",
+  "page": "index",
+  "section": "huasheng",
+  "type": "image",
+  "label": "Image (HUASHENG-logo.png)",
+  "default": "Huasheng-machine-photos/HUASHENG-logo.png",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.img_1_alt",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Image description (alt text) for HUASHENG-logo.png",
+  "default": "Huasheng Nanotechnology",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.h2_1",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Heading",
+  "default": "Guangdong Huasheng Nanotechnology, Dongguan, China",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.p_1",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Founded in 2012, Huasheng builds arc, HiPIMS, PECVD, ta-C and HFCVD coating equipment and complete turnkey coating plants, mainly for cutting tools, moulds and precision parts.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.link_1",
+  "page": "index",
+  "section": "huasheng",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "https://hscoat.com",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.text_1",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Text",
+  "default": "Visit hscoat.com",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.div_1",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Text",
+  "default": "2012",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#1@9",
+  "groupKind": "Brand intro stat",
+  "groupNo": 1,
+  "groupLabel": "2012",
+  "cardId": "index.huasheng.c14_1",
+  "listId": "index.huasheng.l14",
+  "repeatable": true
+ },
+ {
+  "key": "index.huasheng.div_2",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Text",
+  "default": "Founded",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#1@9",
+  "groupKind": "Brand intro stat",
+  "groupNo": 1,
+  "groupLabel": "2012",
+  "cardId": "index.huasheng.c14_1",
+  "listId": "index.huasheng.l14",
+  "repeatable": true
+ },
+ {
+  "key": "index.huasheng.div_3",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Text",
+  "default": "120+",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#2@9",
+  "groupKind": "Brand intro stat",
+  "groupNo": 2,
+  "groupLabel": "120+",
+  "cardId": "index.huasheng.c14_2",
+  "listId": "index.huasheng.l14",
+  "repeatable": true
+ },
+ {
+  "key": "index.huasheng.div_4",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Text",
+  "default": "Intellectual property rights",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#2@9",
+  "groupKind": "Brand intro stat",
+  "groupNo": 2,
+  "groupLabel": "120+",
+  "cardId": "index.huasheng.c14_2",
+  "listId": "index.huasheng.l14",
+  "repeatable": true
+ },
+ {
+  "key": "index.huasheng.div_5",
+  "page": "index",
+  "section": "huasheng",
+  "type": "html",
+  "label": "Text",
+  "default": "30,000+ <sub>m²</sub>",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#3@9",
+  "groupKind": "Brand intro stat",
+  "groupNo": 3,
+  "groupLabel": "30,000+ m²",
+  "cardId": "index.huasheng.c14_3",
+  "listId": "index.huasheng.l14",
+  "repeatable": true
+ },
+ {
+  "key": "index.huasheng.div_6",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Text",
+  "default": "Manufacturing centre",
+  "pages": [
+   "index"
+  ],
+  "group": "div.brand-intro__stat#3@9",
+  "groupKind": "Brand intro stat",
+  "groupNo": 3,
+  "groupLabel": "30,000+ m²",
+  "cardId": "index.huasheng.c14_3",
+  "listId": "index.huasheng.l14",
+  "repeatable": true
+ },
+ {
+  "key": "index.huasheng.h3_1",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "PVD, DLC and diamond coating equipment",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.link_2",
+  "page": "index",
+  "section": "huasheng",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "huasheng/",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.huasheng.a_1",
+  "page": "index",
+  "section": "huasheng",
+  "type": "text",
+  "label": "Link text",
+  "default": "See all Huasheng machines →",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.why.h2_1",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Heading",
+  "default": "Why buy through Greets",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.why.p_1",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "You get the manufacturer's equipment with a team in India that stays with the machine after it arrives.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.why.h5_1",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Process selection",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#1@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 1,
+  "groupLabel": "Process selection",
+  "cardId": "index.why.c15_1",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.p_2",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "We look at your parts, materials and volumes and recommend the right furnace, cleaning line or coating system, or a combination.",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#1@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 1,
+  "groupLabel": "Process selection",
+  "cardId": "index.why.c15_1",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.h5_2",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Sample trials",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#2@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 2,
+  "groupLabel": "Sample trials",
+  "cardId": "index.why.c15_2",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.p_3",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "We arrange trials on your own parts with the manufacturer before you commit.",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#2@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 2,
+  "groupLabel": "Sample trials",
+  "cardId": "index.why.c15_2",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.h5_3",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Import and documentation",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#3@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 3,
+  "groupLabel": "Import and documentation",
+  "cardId": "index.why.c15_3",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.p_4",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Quotations in INR, shipping, customs clearance and paperwork handled for you.",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#3@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 3,
+  "groupLabel": "Import and documentation",
+  "cardId": "index.why.c15_3",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.h5_4",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Site preparation",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#4@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 4,
+  "groupLabel": "Site preparation",
+  "cardId": "index.why.c15_4",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.p_5",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Guidance on power, cooling water, compressed air, gases and layout before the equipment lands.",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#4@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 4,
+  "groupLabel": "Site preparation",
+  "cardId": "index.why.c15_4",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.h5_5",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Installation and training",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#5@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 5,
+  "groupLabel": "Installation and training",
+  "cardId": "index.why.c15_5",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.p_6",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Commissioning with the manufacturer's engineers and hands-on training for your operators.",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#5@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 5,
+  "groupLabel": "Installation and training",
+  "cardId": "index.why.c15_5",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.h5_6",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Service and spares",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#6@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 6,
+  "groupLabel": "Service and spares",
+  "cardId": "index.why.c15_6",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.why.p_7",
+  "page": "index",
+  "section": "why",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Local service support and spare parts planning so downtime stays short.",
+  "pages": [
+   "index"
+  ],
+  "group": "div.hud-corner.service-card-graphic#6@10",
+  "groupKind": "Service card graphic",
+  "groupNo": 6,
+  "groupLabel": "Service and spares",
+  "cardId": "index.why.c15_6",
+  "listId": "index.why.l15",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.h2_1",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Heading",
+  "default": "Talk to Greets",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.p_1",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Tell us about the part and the process. We reply with a recommended system and next steps.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.h3_1",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Greets Equipment Pvt. Ltd.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.b_1",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Text",
+  "default": "Mr. Pramod Kanse",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#1@11",
+  "groupKind": "Contact team person",
+  "groupNo": 1,
+  "groupLabel": "Mr. Pramod Kanse",
+  "cardId": "index.contact.c16_1",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.link_1",
+  "page": "index",
+  "section": "contact",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "tel:+919823386558",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#1@11",
+  "groupKind": "Contact team person",
+  "groupNo": 1,
+  "groupLabel": "Mr. Pramod Kanse",
+  "cardId": "index.contact.c16_1",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.a_1",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Link text",
+  "default": "+91 98233 86558",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#1@11",
+  "groupKind": "Contact team person",
+  "groupNo": 1,
+  "groupLabel": "Mr. Pramod Kanse",
+  "cardId": "index.contact.c16_1",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.b_2",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Text",
+  "default": "Mr. Manoj Agrawal",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#2@11",
+  "groupKind": "Contact team person",
+  "groupNo": 2,
+  "groupLabel": "Mr. Manoj Agrawal",
+  "cardId": "index.contact.c16_2",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.link_2",
+  "page": "index",
+  "section": "contact",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "tel:+919429875547",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#2@11",
+  "groupKind": "Contact team person",
+  "groupNo": 2,
+  "groupLabel": "Mr. Manoj Agrawal",
+  "cardId": "index.contact.c16_2",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.a_2",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Link text",
+  "default": "+91 94298 75547",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#2@11",
+  "groupKind": "Contact team person",
+  "groupNo": 2,
+  "groupLabel": "Mr. Manoj Agrawal",
+  "cardId": "index.contact.c16_2",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.b_3",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Text",
+  "default": "Ms. Pahal Chawla",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#3@11",
+  "groupKind": "Contact team person",
+  "groupNo": 3,
+  "groupLabel": "Ms. Pahal Chawla",
+  "cardId": "index.contact.c16_3",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.link_3",
+  "page": "index",
+  "section": "contact",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "tel:+919871408194",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#3@11",
+  "groupKind": "Contact team person",
+  "groupNo": 3,
+  "groupLabel": "Ms. Pahal Chawla",
+  "cardId": "index.contact.c16_3",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.a_3",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Link text",
+  "default": "+91 98714 08194",
+  "pages": [
+   "index"
+  ],
+  "group": "div.contact-team__person#3@11",
+  "groupKind": "Contact team person",
+  "groupNo": 3,
+  "groupLabel": "Ms. Pahal Chawla",
+  "cardId": "index.contact.c16_3",
+  "listId": "index.contact.l16",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.p_2",
+  "page": "index",
+  "section": "contact",
+  "type": "html",
+  "label": "Paragraph",
+  "default": "#384, Second Floor,<br> 9th Main Road, Sector 7, HSR Layout,<br> Bangalore, Karnataka 560102, India",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.p_3",
+  "page": "index",
+  "section": "contact",
+  "type": "html",
+  "label": "Paragraph",
+  "default": "Email: <a href=\"mailto:enquiry-equipment@greets.co.in\">enquiry-equipment@greets.co.in</a>",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.label_1",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Name *",
+  "pages": [
+   "index"
+  ],
+  "group": "div.form-row#1@12",
+  "groupKind": "Form row",
+  "groupNo": 1,
+  "groupLabel": "Name *",
+  "cardId": "index.contact.c17_1",
+  "listId": "index.contact.l17",
+  "repeatable": false
+ },
+ {
+  "key": "index.contact.label_2",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Company",
+  "pages": [
+   "index"
+  ],
+  "group": "div.form-row#1@12",
+  "groupKind": "Form row",
+  "groupNo": 1,
+  "groupLabel": "Name *",
+  "cardId": "index.contact.c17_1",
+  "listId": "index.contact.l17",
+  "repeatable": false
+ },
+ {
+  "key": "index.contact.label_3",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Email *",
+  "pages": [
+   "index"
+  ],
+  "group": "div.form-row#2@12",
+  "groupKind": "Form row",
+  "groupNo": 2,
+  "groupLabel": "Email *",
+  "cardId": "index.contact.c17_2",
+  "listId": "index.contact.l17",
+  "repeatable": false
+ },
+ {
+  "key": "index.contact.label_4",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Phone *",
+  "pages": [
+   "index"
+  ],
+  "group": "div.form-row#2@12",
+  "groupKind": "Form row",
+  "groupNo": 2,
+  "groupLabel": "Email *",
+  "cardId": "index.contact.c17_2",
+  "listId": "index.contact.l17",
+  "repeatable": false
+ },
+ {
+  "key": "index.contact.label_5",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Process",
+  "pages": [
+   "index"
+  ],
+  "group": "div.form-row#3@12",
+  "groupKind": "Form row",
+  "groupNo": 3,
+  "groupLabel": "Process",
+  "cardId": "index.contact.c17_3",
+  "listId": "index.contact.l17",
+  "repeatable": false
+ },
+ {
+  "key": "index.contact.label_6",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "City",
+  "pages": [
+   "index"
+  ],
+  "group": "div.form-row#3@12",
+  "groupKind": "Form row",
+  "groupNo": 3,
+  "groupLabel": "Process",
+  "cardId": "index.contact.c17_3",
+  "listId": "index.contact.l17",
+  "repeatable": false
+ },
+ {
+  "key": "index.contact.label_7",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Parts, material and volumes",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.label_8",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Please leave this field empty",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.span_1",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Button text",
+  "default": "Send enquiry",
+  "pages": [
+   "index"
+  ],
+  "button": true
+ },
+ {
+  "key": "index.contact.span_2",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Text",
+  "default": "DPDP(Digital Personal Data Protection Act, 2023) Act protected",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.link_4",
+  "page": "index",
+  "section": "contact",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "privacy.html",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.a_4",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Link text",
+  "default": "Privacy Notice →",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "global.footer.link_1",
+  "page": "global",
+  "section": "footer",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.img_1",
+  "page": "global",
+  "section": "footer",
+  "type": "image",
+  "label": "Image (logo-greets.png)",
+  "default": "assets/logo-greets.png",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.img_1_alt",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Image description (alt text) for logo-greets.png",
+  "default": "Greets Equipment",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.p_1",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Authorised dealer in India for BMI, Novatec and Huasheng.",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.link_2",
+  "page": "global",
+  "section": "footer",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "bmi/",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "global.footer.a_1",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Link text",
+  "default": "BMI vacuum furnaces",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.link_3",
+  "page": "global",
+  "section": "footer",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "novatec/",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "global.footer.a_2",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Link text",
+  "default": "Novatec ultrasonic cleaning",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.link_4",
+  "page": "global",
+  "section": "footer",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "huasheng/",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "global.footer.a_3",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Link text",
+  "default": "Huasheng coating equipment",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.link_5",
+  "page": "global",
+  "section": "footer",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "privacy.html",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.a_4",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Link text",
+  "default": "Privacy Notice (DPDP)",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.span_1",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Text",
+  "default": "HSR Layout, Bangalore, Karnataka 560102",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.div_1",
+  "page": "global",
+  "section": "footer",
+  "type": "html",
+  "label": "Text",
+  "default": "Mr. Pramod Kanse: <a href=\"tel:+919823386558\" style=\"color:inherit; text-decoration:none; font-weight:600;\">+91 98233 86558</a>",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.div_2",
+  "page": "global",
+  "section": "footer",
+  "type": "html",
+  "label": "Text",
+  "default": "Mr. Manoj Agrawal: <a href=\"tel:+919429875547\" style=\"color:inherit; text-decoration:none; font-weight:600;\">+91 94298 75547</a>",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.div_3",
+  "page": "global",
+  "section": "footer",
+  "type": "html",
+  "label": "Text",
+  "default": "Ms. Pahal Chawla: <a href=\"tel:+919871408194\" style=\"color:inherit; text-decoration:none; font-weight:600;\">+91 98714 08194</a>",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.link_6",
+  "page": "global",
+  "section": "footer",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "mailto:enquiry-equipment@greets.co.in",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.a_5",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Link text",
+  "default": "enquiry-equipment@greets.co.in",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.span_2",
+  "page": "global",
+  "section": "footer",
+  "type": "html",
+  "label": "Text",
+  "default": "© 2026 Greets Equipment Pvt. Ltd. All rights reserved. · <a href=\"privacy.html\" style=\"color:inherit; text-decoration:underline;\">Privacy Policy</a>",
+  "pages": [
+   "index",
+   "contact"
+  ]
+ },
+ {
+  "key": "global.footer.span_3",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Text",
+  "default": "Brand names and logos belong to their respective owners.",
+  "pages": [
+   "index",
+   "contact"
+  ]
+ },
+ {
+  "key": "index.meta.title",
+  "page": "index",
+  "section": "meta",
+  "type": "meta",
+  "label": "Browser tab title (SEO)",
+  "default": "Greets Equipment – Authorised Dealer in India for BMI, Novatec and Huasheng",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.meta.description",
+  "page": "index",
+  "section": "meta",
+  "type": "meta",
+  "label": "Search-engine description (SEO)",
+  "default": "One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "global.header.link_2",
+  "page": "global",
+  "section": "header",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#hero",
+  "pages": [
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.link_3",
+  "page": "global",
+  "section": "header",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#finder",
+  "pages": [
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.link_4",
+  "page": "global",
+  "section": "header",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#industries",
+  "pages": [
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.link_5",
+  "page": "global",
+  "section": "header",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#why",
+  "pages": [
+   "contact",
+   "privacy"
+  ],
+  "group": "a.navlink#1@1",
+  "groupKind": "Navlink",
+  "groupNo": 1,
+  "groupLabel": "Why buy through Greets",
+  "cardId": "global.header.c1_1",
+  "listId": "global.header.l1",
+  "repeatable": true
+ },
+ {
+  "key": "global.header.phone_all_products",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Phone menu: the \"all products\" link",
+  "default": "Find a system — All products",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.header.phone_all_industries",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Phone menu: the \"all industries\" link",
+  "default": "Industries overview — All 12 sectors",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "contact.page.link_1",
+  "page": "contact",
+  "section": "page",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#hero",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "global.mobile-industries-panel.link_1",
+  "page": "global",
+  "section": "mobile-industries-panel",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#industries",
+  "pages": [
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "contact.page.link_2",
+  "page": "contact",
+  "section": "page",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#why",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.page.link_3",
+  "page": "contact",
+  "section": "page",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "contact.html",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.page.h1_1",
+  "page": "contact",
+  "section": "page",
+  "type": "html",
+  "label": "Main heading",
+  "default": "Talk to <span>Greets</span>",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.page.p_1",
+  "page": "contact",
+  "section": "page",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Tell us about the part and the process. We reply with a recommended system and next steps.",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.h3_1",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Greets Equipment Pvt. Ltd.",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.b_1",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Text",
+  "default": "Mr. Pramod Kanse",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#1@2",
+  "groupKind": "Contact team person",
+  "groupNo": 1,
+  "groupLabel": "Mr. Pramod Kanse",
+  "cardId": "contact.contact.c7_1",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.link_1",
+  "page": "contact",
+  "section": "contact",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "tel:+919823386558",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#1@2",
+  "groupKind": "Contact team person",
+  "groupNo": 1,
+  "groupLabel": "Mr. Pramod Kanse",
+  "cardId": "contact.contact.c7_1",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.a_1",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Link text",
+  "default": "+91 98233 86558",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#1@2",
+  "groupKind": "Contact team person",
+  "groupNo": 1,
+  "groupLabel": "Mr. Pramod Kanse",
+  "cardId": "contact.contact.c7_1",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.b_2",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Text",
+  "default": "Mr. Manoj Agrawal",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#2@2",
+  "groupKind": "Contact team person",
+  "groupNo": 2,
+  "groupLabel": "Mr. Manoj Agrawal",
+  "cardId": "contact.contact.c7_2",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.link_2",
+  "page": "contact",
+  "section": "contact",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "tel:+919429875547",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#2@2",
+  "groupKind": "Contact team person",
+  "groupNo": 2,
+  "groupLabel": "Mr. Manoj Agrawal",
+  "cardId": "contact.contact.c7_2",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.a_2",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Link text",
+  "default": "+91 94298 75547",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#2@2",
+  "groupKind": "Contact team person",
+  "groupNo": 2,
+  "groupLabel": "Mr. Manoj Agrawal",
+  "cardId": "contact.contact.c7_2",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.b_3",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Text",
+  "default": "Ms. Pahal Chawla",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#3@2",
+  "groupKind": "Contact team person",
+  "groupNo": 3,
+  "groupLabel": "Ms. Pahal Chawla",
+  "cardId": "contact.contact.c7_3",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.link_3",
+  "page": "contact",
+  "section": "contact",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "tel:+919871408194",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#3@2",
+  "groupKind": "Contact team person",
+  "groupNo": 3,
+  "groupLabel": "Ms. Pahal Chawla",
+  "cardId": "contact.contact.c7_3",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.a_3",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Link text",
+  "default": "+91 98714 08194",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.contact-team__person#3@2",
+  "groupKind": "Contact team person",
+  "groupNo": 3,
+  "groupLabel": "Ms. Pahal Chawla",
+  "cardId": "contact.contact.c7_3",
+  "listId": "contact.contact.l7",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.p_1",
+  "page": "contact",
+  "section": "contact",
+  "type": "html",
+  "label": "Paragraph",
+  "default": "#384, Second Floor,<br> 9th Main Road, Sector 7, HSR Layout,<br> Bangalore, Karnataka 560102, India",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.p_2",
+  "page": "contact",
+  "section": "contact",
+  "type": "html",
+  "label": "Paragraph",
+  "default": "Email: <a href=\"mailto:enquiry-equipment@greets.co.in\">enquiry-equipment@greets.co.in</a>",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.label_1",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Name *",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.form-row#1@3",
+  "groupKind": "Form row",
+  "groupNo": 1,
+  "groupLabel": "Name *",
+  "cardId": "contact.contact.c8_1",
+  "listId": "contact.contact.l8",
+  "repeatable": false
+ },
+ {
+  "key": "contact.contact.label_2",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Company",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.form-row#1@3",
+  "groupKind": "Form row",
+  "groupNo": 1,
+  "groupLabel": "Name *",
+  "cardId": "contact.contact.c8_1",
+  "listId": "contact.contact.l8",
+  "repeatable": false
+ },
+ {
+  "key": "contact.contact.label_3",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Email *",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.form-row#2@3",
+  "groupKind": "Form row",
+  "groupNo": 2,
+  "groupLabel": "Email *",
+  "cardId": "contact.contact.c8_2",
+  "listId": "contact.contact.l8",
+  "repeatable": false
+ },
+ {
+  "key": "contact.contact.label_4",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Phone *",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.form-row#2@3",
+  "groupKind": "Form row",
+  "groupNo": 2,
+  "groupLabel": "Email *",
+  "cardId": "contact.contact.c8_2",
+  "listId": "contact.contact.l8",
+  "repeatable": false
+ },
+ {
+  "key": "contact.contact.label_5",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Process",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.form-row#3@3",
+  "groupKind": "Form row",
+  "groupNo": 3,
+  "groupLabel": "Process",
+  "cardId": "contact.contact.c8_3",
+  "listId": "contact.contact.l8",
+  "repeatable": false
+ },
+ {
+  "key": "contact.contact.label_6",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "City",
+  "pages": [
+   "contact"
+  ],
+  "group": "div.form-row#3@3",
+  "groupKind": "Form row",
+  "groupNo": 3,
+  "groupLabel": "Process",
+  "cardId": "contact.contact.c8_3",
+  "listId": "contact.contact.l8",
+  "repeatable": false
+ },
+ {
+  "key": "contact.contact.label_7",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Parts, material and volumes",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.label_8",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Form label",
+  "default": "Please leave this field empty",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.span_1",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Button text",
+  "default": "Send enquiry",
+  "pages": [
+   "contact"
+  ],
+  "button": true
+ },
+ {
+  "key": "contact.contact.span_2",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Text",
+  "default": "DPDP(Digital Personal Data Protection Act, 2023) Act protected",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.link_4",
+  "page": "contact",
+  "section": "contact",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "privacy.html",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.a_4",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Link text",
+  "default": "Privacy Notice →",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.meta.title",
+  "page": "contact",
+  "section": "meta",
+  "type": "meta",
+  "label": "Browser tab title (SEO)",
+  "default": "Talk to Greets - Contact Greets Equipment",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.meta.description",
+  "page": "contact",
+  "section": "meta",
+  "type": "meta",
+  "label": "Search-engine description (SEO)",
+  "default": "Get in touch with Greets Equipment. Tell us about your part and process - we reply with a recommended system and next steps within one working day.",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "privacy.page.link_1",
+  "page": "privacy",
+  "section": "page",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#hero",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.page.link_2",
+  "page": "privacy",
+  "section": "page",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html#why",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.page.link_3",
+  "page": "privacy",
+  "section": "page",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "contact.html",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.privacy-page-hero.div_1",
+  "page": "privacy",
+  "section": "privacy-page-hero",
+  "type": "html",
+  "label": "Text",
+  "default": "<span class=\"dot\"></span> DIGITAL PERSONAL DATA PROTECTION (DPDP) COMPLIANCE",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.privacy-page-hero.h1_1",
+  "page": "privacy",
+  "section": "privacy-page-hero",
+  "type": "text",
+  "label": "Main heading",
+  "default": "Privacy Notice",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.privacy-page-hero.p_1",
+  "page": "privacy",
+  "section": "privacy-page-hero",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Greets Equipment Pvt. Ltd. is committed to protecting your personal data in accordance with the Digital Personal Data Protection Act, 2023 (DPDP Act, India).",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.div_1",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "Text",
+  "default": "<strong>Summary for Website Visitors:</strong> When you submit an equipment enquiry or contact request on this website, we collect your name, company name, email address, phone number, city, and component details strictly for responding to your technical enquiry and providing equipment proposals. We do not sell your personal data.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-highlight#1@3",
+  "groupKind": "Privacy highlight",
+  "groupNo": 1,
+  "groupLabel": "Summary for Website Visitors: When you submit an equipment e…",
+  "cardId": "privacy.content.c2_1",
+  "listId": "privacy.content.l2",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.h2_1",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Heading",
+  "default": "1. Data Fiduciary Identity",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.p_1",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "Paragraph",
+  "default": "<strong>Greets Equipment Pvt. Ltd.</strong> (\"Greets\", \"we\", \"us\", or \"our\") acts as the Data Fiduciary under the DPDP Act, 2023 in respect of personal data collected through this website (<a href=\"https://www.greetsequipment.com\" style=\"color:var(--accent-text);\">greetsequipment.com</a>).",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.p_2",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "Paragraph",
+  "default": "<strong>Registered Office:</strong> HSR Layout, Bangalore, Karnataka 560102, India.<br> <strong>Official Contact Email:</strong> <a href=\"mailto:enquiry-equipment@greets.co.in\" style=\"color:var(--accent-text);\">enquiry-equipment@greets.co.in</a>",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.h2_2",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Heading",
+  "default": "2. Categories of Personal Data We Collect",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.p_3",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "We collect personal data directly from you when you fill in our enquiry or contact form:",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.li_1",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Contact Information:</strong> Name, business email address, phone/mobile number.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#1@4",
+  "groupKind": "Li",
+  "groupNo": 1,
+  "groupLabel": "Contact Information: Name, business email address, phone/mob…",
+  "cardId": "privacy.content.c3_1",
+  "listId": "privacy.content.l3",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_2",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Professional Affiliation:</strong> Company/organization name, job role, and city/state location.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#2@4",
+  "groupKind": "Li",
+  "groupNo": 2,
+  "groupLabel": "Professional Affiliation: Company/organization name, job rol…",
+  "cardId": "privacy.content.c3_2",
+  "listId": "privacy.content.l3",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_3",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Technical Specifications:</strong> Details you provide regarding parts, substrate materials, production volumes, and heat treatment/cleaning/coating requirements.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#3@4",
+  "groupKind": "Li",
+  "groupNo": 3,
+  "groupLabel": "Technical Specifications: Details you provide regarding part…",
+  "cardId": "privacy.content.c3_3",
+  "listId": "privacy.content.l3",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_4",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Communication Records:</strong> Enquiries, responses, and correspondence records with our engineering team.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#4@4",
+  "groupKind": "Li",
+  "groupNo": 4,
+  "groupLabel": "Communication Records: Enquiries, responses, and corresponde…",
+  "cardId": "privacy.content.c3_4",
+  "listId": "privacy.content.l3",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.h2_3",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Heading",
+  "default": "3. Purpose and Lawful Basis for Processing",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.p_4",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "Paragraph",
+  "default": "Under the DPDP Act 2023, we process your personal data based on your <strong>explicit consent</strong> provided at the time of form submission, and for certain legitimate uses:",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.h3_1",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Technical Consultation",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-grid-item#1@5",
+  "groupKind": "Privacy grid item",
+  "groupNo": 1,
+  "groupLabel": "Technical Consultation",
+  "cardId": "privacy.content.c4_1",
+  "listId": "privacy.content.l4",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.p_5",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Evaluating your engineering requirements and recommending suitable BMI, Novatec, or Huasheng systems.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-grid-item#1@5",
+  "groupKind": "Privacy grid item",
+  "groupNo": 1,
+  "groupLabel": "Technical Consultation",
+  "cardId": "privacy.content.c4_1",
+  "listId": "privacy.content.l4",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.h3_2",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Quotation & Proposals",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-grid-item#2@5",
+  "groupKind": "Privacy grid item",
+  "groupNo": 2,
+  "groupLabel": "Quotation & Proposals",
+  "cardId": "privacy.content.c4_2",
+  "listId": "privacy.content.l4",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.p_6",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Preparing and delivering formal commercial quotes, machine layout proposals, and project schedules.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-grid-item#2@5",
+  "groupKind": "Privacy grid item",
+  "groupNo": 2,
+  "groupLabel": "Quotation & Proposals",
+  "cardId": "privacy.content.c4_2",
+  "listId": "privacy.content.l4",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.h3_3",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Support & Installation",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-grid-item#3@5",
+  "groupKind": "Privacy grid item",
+  "groupNo": 3,
+  "groupLabel": "Support & Installation",
+  "cardId": "privacy.content.c4_3",
+  "listId": "privacy.content.l4",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.p_7",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Coordinating equipment delivery, on-site commissioning, operator training, and warranty support in India.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-grid-item#3@5",
+  "groupKind": "Privacy grid item",
+  "groupNo": 3,
+  "groupLabel": "Support & Installation",
+  "cardId": "privacy.content.c4_3",
+  "listId": "privacy.content.l4",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.h3_4",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Sub-heading",
+  "default": "Legal Compliance",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-grid-item#4@5",
+  "groupKind": "Privacy grid item",
+  "groupNo": 4,
+  "groupLabel": "Legal Compliance",
+  "cardId": "privacy.content.c4_4",
+  "listId": "privacy.content.l4",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.p_8",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Maintaining necessary statutory records, commercial invoices, and tax compliance documentation.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-grid-item#4@5",
+  "groupKind": "Privacy grid item",
+  "groupNo": 4,
+  "groupLabel": "Legal Compliance",
+  "cardId": "privacy.content.c4_4",
+  "listId": "privacy.content.l4",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.h2_4",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Heading",
+  "default": "4. Data Sharing and Cross-Border Transfers",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.p_9",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "As an authorised sales, installation, and service partner in India:",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.li_5",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "We may share specific technical part drawings or equipment inquiries with our OEM manufacturing partners: <strong>Fours Industriels B.M.I.</strong> (France), <strong>Novatec S.r.l.</strong> (Italy), and <strong>Guangdong Huasheng Nanotechnology</strong> (China), solely to produce accurate engineering simulations, cycle estimates, and machine configurations.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#1@6",
+  "groupKind": "Li",
+  "groupNo": 1,
+  "groupLabel": "We may share specific technical part drawings or equipment i…",
+  "cardId": "privacy.content.c5_1",
+  "listId": "privacy.content.l5",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_6",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "List item",
+  "default": "We ensure all OEM partners maintain confidentiality and robust data protection standards.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#2@6",
+  "groupKind": "Li",
+  "groupNo": 2,
+  "groupLabel": "We ensure all OEM partners maintain confidentiality and robu…",
+  "cardId": "privacy.content.c5_2",
+  "listId": "privacy.content.l5",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_7",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "We <strong>never</strong> sell, rent, trade, or commercially monetize your personal data with third-party marketers.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#3@6",
+  "groupKind": "Li",
+  "groupNo": 3,
+  "groupLabel": "We never sell, rent, trade, or commercially monetize your pe…",
+  "cardId": "privacy.content.c5_3",
+  "listId": "privacy.content.l5",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.h2_5",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Heading",
+  "default": "5. Storage, Security and Retention",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.p_10",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "We implement technical, physical, and organizational security measures to protect your personal data from unauthorized access, loss, or alteration.",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.h2_6",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Heading",
+  "default": "6. Your Rights under the DPDP Act, 2023",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.p_11",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "As a Data Principal in India, you possess specific statutory rights regarding your personal data:",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.li_8",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Right to Access:</strong> You may request a summary of the personal data we hold and the processing activities undertaken.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#1@7",
+  "groupKind": "Li",
+  "groupNo": 1,
+  "groupLabel": "Right to Access: You may request a summary of the personal d…",
+  "cardId": "privacy.content.c6_1",
+  "listId": "privacy.content.l6",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_9",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Right to Correction & Erasure:</strong> You may request correction of inaccurate data, completion of incomplete data, or erasure of personal data that is no longer necessary.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#2@7",
+  "groupKind": "Li",
+  "groupNo": 2,
+  "groupLabel": "Right to Correction & Erasure: You may request correction of…",
+  "cardId": "privacy.content.c6_2",
+  "listId": "privacy.content.l6",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_10",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Right of Grievance Redressal:</strong> You have the right to register a grievance with our designated Grievance Officer.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#3@7",
+  "groupKind": "Li",
+  "groupNo": 3,
+  "groupLabel": "Right of Grievance Redressal: You have the right to register…",
+  "cardId": "privacy.content.c6_3",
+  "listId": "privacy.content.l6",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_11",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Right to Nominate:</strong> You have the right to nominate an individual who can exercise your rights in the event of death or incapacity.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#4@7",
+  "groupKind": "Li",
+  "groupNo": 4,
+  "groupLabel": "Right to Nominate: You have the right to nominate an individ…",
+  "cardId": "privacy.content.c6_4",
+  "listId": "privacy.content.l6",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.li_12",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "List item",
+  "default": "<strong>Right to Withdraw Consent:</strong> You can withdraw consent for future communications at any time.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "li.#5@7",
+  "groupKind": "Li",
+  "groupNo": 5,
+  "groupLabel": "Right to Withdraw Consent: You can withdraw consent for futu…",
+  "cardId": "privacy.content.c6_5",
+  "listId": "privacy.content.l6",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.h2_7",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Heading",
+  "default": "7. Grievance Officer & Contact Details",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.p_12",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "To exercise any of your rights or raise questions regarding this Privacy Notice or your personal data, please contact our Data Grievance Desk:",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.div_2",
+  "page": "privacy",
+  "section": "content",
+  "type": "html",
+  "label": "Text",
+  "default": "<strong>Greets Equipment Pvt. Ltd. — Data Protection Desk</strong><br> HSR Layout, Bangalore 560102, Karnataka, India<br> <strong>Email:</strong> <a href=\"mailto:enquiry-equipment@greets.co.in\" style=\"color:var(--accent-text); font-weight:600;\">enquiry-equipment@greets.co.in</a><br> <strong>Turnaround:</strong> We respond to all verified data requests within 3 to 7 business days.",
+  "pages": [
+   "privacy"
+  ],
+  "group": "div.privacy-highlight#2@3",
+  "groupKind": "Privacy highlight",
+  "groupNo": 2,
+  "groupLabel": "Greets Equipment Pvt. Ltd. — Data Protection Desk HSR Layout…",
+  "cardId": "privacy.content.c2_2",
+  "listId": "privacy.content.l2",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.content.span_1",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Text",
+  "default": "Last Updated: October 2026",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.link_1",
+  "page": "privacy",
+  "section": "content",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "index.html",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.content.a_1",
+  "page": "privacy",
+  "section": "content",
+  "type": "text",
+  "label": "Link text",
+  "default": "← Return to Homepage",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.link_7",
+  "page": "global",
+  "section": "footer",
+  "type": "link",
+  "label": "Link address (URL)",
+  "default": "privacy.html",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.footer.a_6",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Link text",
+  "default": "Privacy Policy & DPDP Notice",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.meta.title",
+  "page": "privacy",
+  "section": "meta",
+  "type": "meta",
+  "label": "Browser tab title (SEO)",
+  "default": "Privacy Notice (DPDP Act) - Greets Equipment",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.meta.description",
+  "page": "privacy",
+  "section": "meta",
+  "type": "meta",
+  "label": "Search-engine description (SEO)",
+  "default": "Privacy Notice and Data Protection information for Greets Equipment Pvt. Ltd. in compliance with India's Digital Personal Data Protection Act, 2023.",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "index.meta.og_title",
+  "page": "index",
+  "section": "meta",
+  "type": "meta",
+  "label": "Social share title (Facebook / LinkedIn)",
+  "default": "Greets Equipment – Authorised Dealer in India for BMI, Novatec and Huasheng",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.meta.og_description",
+  "page": "index",
+  "section": "meta",
+  "type": "meta",
+  "label": "Social share description (Facebook / LinkedIn)",
+  "default": "One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.meta.og_image",
+  "page": "index",
+  "section": "meta",
+  "type": "image",
+  "label": "Social share image (Facebook / LinkedIn)",
+  "default": "https://www.greetsequipment.com/assets/catalog/BMI-furnace-line-installed.jpg",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.meta.twitter_title",
+  "page": "index",
+  "section": "meta",
+  "type": "meta",
+  "label": "Twitter / X share title",
+  "default": "Greets Equipment – Authorised Dealer in India for BMI, Novatec and Huasheng",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.meta.twitter_description",
+  "page": "index",
+  "section": "meta",
+  "type": "meta",
+  "label": "Twitter / X share description",
+  "default": "One partner in India for your complete surface-engineering line: BMI vacuum furnaces, Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating.",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.meta.twitter_image",
+  "page": "index",
+  "section": "meta",
+  "type": "image",
+  "label": "Twitter / X share image",
+  "default": "https://www.greetsequipment.com/assets/catalog/BMI-furnace-line-installed.jpg",
+  "pages": [
+   "index"
+  ]
+ },
+ {
+  "key": "index.contact.option_1",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "Not sure yet",
+  "pages": [
+   "index"
+  ],
+  "group": "option.#1@13",
+  "groupKind": "Dropdown choice",
+  "groupNo": 1,
+  "groupLabel": "Not sure yet",
+  "cardId": "index.contact.c18_1",
+  "listId": "index.contact.l18",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.option_2",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "Vacuum heat treatment (BMI)",
+  "pages": [
+   "index"
+  ],
+  "group": "option.#2@13",
+  "groupKind": "Dropdown choice",
+  "groupNo": 2,
+  "groupLabel": "Vacuum heat treatment (BMI)",
+  "cardId": "index.contact.c18_2",
+  "listId": "index.contact.l18",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.option_3",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "Ultrasonic cleaning (Novatec)",
+  "pages": [
+   "index"
+  ],
+  "group": "option.#3@13",
+  "groupKind": "Dropdown choice",
+  "groupNo": 3,
+  "groupLabel": "Ultrasonic cleaning (Novatec)",
+  "cardId": "index.contact.c18_3",
+  "listId": "index.contact.l18",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.option_4",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "PVD / DLC / diamond coating (Huasheng)",
+  "pages": [
+   "index"
+  ],
+  "group": "option.#4@13",
+  "groupKind": "Dropdown choice",
+  "groupNo": 4,
+  "groupLabel": "PVD / DLC / diamond coating (Huasheng)",
+  "cardId": "index.contact.c18_4",
+  "listId": "index.contact.l18",
+  "repeatable": true
+ },
+ {
+  "key": "index.contact.option_5",
+  "page": "index",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "Complete line",
+  "pages": [
+   "index"
+  ],
+  "group": "option.#5@13",
+  "groupKind": "Dropdown choice",
+  "groupNo": 5,
+  "groupLabel": "Complete line",
+  "cardId": "index.contact.c18_5",
+  "listId": "index.contact.l18",
+  "repeatable": true
+ },
+ {
+  "key": "contact.meta.og_title",
+  "page": "contact",
+  "section": "meta",
+  "type": "meta",
+  "label": "Social share title (Facebook / LinkedIn)",
+  "default": "Talk to Greets - Contact Greets Equipment",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.meta.og_description",
+  "page": "contact",
+  "section": "meta",
+  "type": "meta",
+  "label": "Social share description (Facebook / LinkedIn)",
+  "default": "Get in touch with Greets Equipment. Tell us about your part and process - we reply with a recommended system and next steps within one working day.",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.meta.og_image",
+  "page": "contact",
+  "section": "meta",
+  "type": "image",
+  "label": "Social share image (Facebook / LinkedIn)",
+  "default": "https://www.greetsequipment.com/assets/catalog/BMI-furnace-line-installed.jpg",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.meta.twitter_title",
+  "page": "contact",
+  "section": "meta",
+  "type": "meta",
+  "label": "Twitter / X share title",
+  "default": "Talk to Greets - Contact Greets Equipment",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.meta.twitter_description",
+  "page": "contact",
+  "section": "meta",
+  "type": "meta",
+  "label": "Twitter / X share description",
+  "default": "Get in touch with Greets Equipment. Tell us about your part and process - we reply with a recommended system and next steps within one working day.",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.meta.twitter_image",
+  "page": "contact",
+  "section": "meta",
+  "type": "image",
+  "label": "Twitter / X share image",
+  "default": "https://www.greetsequipment.com/assets/catalog/BMI-furnace-line-installed.jpg",
+  "pages": [
+   "contact"
+  ]
+ },
+ {
+  "key": "contact.contact.option_1",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "Not sure yet",
+  "pages": [
+   "contact"
+  ],
+  "group": "option.#1@4",
+  "groupKind": "Dropdown choice",
+  "groupNo": 1,
+  "groupLabel": "Not sure yet",
+  "cardId": "contact.contact.c11_1",
+  "listId": "contact.contact.l11",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.option_2",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "Vacuum heat treatment (BMI)",
+  "pages": [
+   "contact"
+  ],
+  "group": "option.#2@4",
+  "groupKind": "Dropdown choice",
+  "groupNo": 2,
+  "groupLabel": "Vacuum heat treatment (BMI)",
+  "cardId": "contact.contact.c11_2",
+  "listId": "contact.contact.l11",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.option_3",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "Ultrasonic cleaning (Novatec)",
+  "pages": [
+   "contact"
+  ],
+  "group": "option.#3@4",
+  "groupKind": "Dropdown choice",
+  "groupNo": 3,
+  "groupLabel": "Ultrasonic cleaning (Novatec)",
+  "cardId": "contact.contact.c11_3",
+  "listId": "contact.contact.l11",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.option_4",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "PVD / DLC / diamond coating (Huasheng)",
+  "pages": [
+   "contact"
+  ],
+  "group": "option.#4@4",
+  "groupKind": "Dropdown choice",
+  "groupNo": 4,
+  "groupLabel": "PVD / DLC / diamond coating (Huasheng)",
+  "cardId": "contact.contact.c11_4",
+  "listId": "contact.contact.l11",
+  "repeatable": true
+ },
+ {
+  "key": "contact.contact.option_5",
+  "page": "contact",
+  "section": "contact",
+  "type": "text",
+  "label": "Dropdown choice (process)",
+  "default": "Complete line",
+  "pages": [
+   "contact"
+  ],
+  "group": "option.#5@4",
+  "groupKind": "Dropdown choice",
+  "groupNo": 5,
+  "groupLabel": "Complete line",
+  "cardId": "contact.contact.c11_5",
+  "listId": "contact.contact.l11",
+  "repeatable": true
+ },
+ {
+  "key": "privacy.meta.og_title",
+  "page": "privacy",
+  "section": "meta",
+  "type": "meta",
+  "label": "Social share title (Facebook / LinkedIn)",
+  "default": "Privacy Notice (DPDP Act) - Greets Equipment",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.meta.og_description",
+  "page": "privacy",
+  "section": "meta",
+  "type": "meta",
+  "label": "Social share description (Facebook / LinkedIn)",
+  "default": "Privacy Notice and Data Protection information for Greets Equipment Pvt. Ltd. in compliance with India's Digital Personal Data Protection Act, 2023.",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.meta.og_image",
+  "page": "privacy",
+  "section": "meta",
+  "type": "image",
+  "label": "Social share image (Facebook / LinkedIn)",
+  "default": "https://www.greetsequipment.com/assets/catalog/BMI-furnace-line-installed.jpg",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.meta.twitter_title",
+  "page": "privacy",
+  "section": "meta",
+  "type": "meta",
+  "label": "Twitter / X share title",
+  "default": "Privacy Notice (DPDP Act) - Greets Equipment",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.meta.twitter_description",
+  "page": "privacy",
+  "section": "meta",
+  "type": "meta",
+  "label": "Twitter / X share description",
+  "default": "Privacy Notice and Data Protection information for Greets Equipment Pvt. Ltd. in compliance with India's Digital Personal Data Protection Act, 2023.",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "privacy.meta.twitter_image",
+  "page": "privacy",
+  "section": "meta",
+  "type": "image",
+  "label": "Twitter / X share image",
+  "default": "https://www.greetsequipment.com/assets/catalog/BMI-furnace-line-installed.jpg",
+  "pages": [
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.thanks_title",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Popup title after sending (no name given)",
+  "default": "Enquiry Received!",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.thanks_title_name",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Popup title after sending (use {name} for the visitor's name)",
+  "default": "Thank You, {name}!",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.thanks_text",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Popup message after sending",
+  "default": "Your equipment enquiry has been sent to enquiry-equipment@greets.co.in. Our team will review your specifications and get in touch.",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.thanks_sla",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Popup reply-time line",
+  "default": "We reply within 1 working day",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.thanks_done",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Popup \"Done\" button",
+  "default": "Done",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.thanks_catalog",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Popup catalog button",
+  "default": "Browse Equipment Catalog →",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.btn_sending",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Send button text while sending",
+  "default": "Sending…",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.btn_send",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Send button text (ready)",
+  "default": "Send enquiry",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.error_intro",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Message when sending fails",
+  "default": "We could not send that automatically. Your details are below — please copy them, email them to enquiry-equipment@greets.co.in, or call the Bangalore office.",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.error_email",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Failure box: email link text",
+  "default": "Email the office",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.error_call",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Failure box: call link text",
+  "default": "Call the office",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ },
+ {
+  "key": "global.messages.error_retry",
+  "page": "global",
+  "section": "messages",
+  "type": "text",
+  "label": "Failure box: retry button text",
+  "default": "Try sending again",
+  "pages": [
+   "index",
+   "contact",
+   "privacy"
+  ]
+ }
+]

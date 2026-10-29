@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help and tutorial - Greets Admin</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body data-page="help" data-title="Help &amp; tutorial">
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="main">
+      <header class="topbar" id="topbar"></header>
+      <main class="content">
+        <div class="page-head"><h1 id="heading">How to use this admin panel</h1></div>
+
+        <article class="panel help">
+          <p class="help-lead">This panel lets you change the words, pictures, products and messages of the website yourself. You do not need to know anything about code. Read this once, it takes about five minutes.</p>
+
+          <h2 class="help-h">The short version</h2>
+          <ol class="help-quick">
+            <li><strong>Choose</strong> what to change in the menu on the left.</li>
+            <li><strong>Click</strong> the words or the picture and change them.</li>
+            <li><strong>Press the green Save button.</strong> That is all: products go live on the website by themselves too.</li>
+            <li><strong>Refresh</strong> the website page to see it.</li>
+          </ol>
+
+          <nav class="help-jump" aria-label="Jump to a topic">
+            <a href="#menu">The menu</a>
+            <a href="#text">Change words</a>
+            <a href="#format">Bold, links and colours</a>
+            <a href="#pictures">Pictures</a>
+            <a href="#items">Add or delete items</a>
+            <a href="#products">Products</a>
+            <a href="#enquiries">Enquiries</a>
+            <a href="#problems">If something goes wrong</a>
+          </nav>
+
+          <section class="help-sec" id="menu">
+            <h2><span class="num">1</span>The menu on the left</h2>
+            <table class="help-table">
+              <tr><th>Dashboard</th><td>A summary: how many enquiries and products you have, and the latest enquiries.</td></tr>
+              <tr><th>Pages</th><td>The pages of the website: <strong>Home page</strong>, <strong>Contact page</strong>, <strong>Privacy page</strong> and <strong>Header &amp; Footer</strong> (the top menu and bottom of every page). Click a page to edit its words and pictures.</td></tr>
+              <tr><th>Products</th><td>Your machines. Open <strong>BMI</strong>, <strong>Novatec</strong> or <strong>Huasheng</strong>, then a family, then a product. Click the word "Products" itself to see all three brands on one page.</td></tr>
+              <tr><th>Enquiries</th><td>The messages visitors send from the contact form.</td></tr>
+              <tr data-activity hidden><th>Activity</th><td>A list of what was changed and when.</td></tr>
+              <tr><th>View website</th><td>Opens your website in a new tab.</td></tr>
+            </table>
+            <p>Small arrows next to a name open and close its list. The <span class="kbd">&#9776;</span> button at the top left hides the whole menu to give you more room, and shows it again.</p>
+            <div class="tip"><strong>Finding your way back:</strong> every page has a <span class="btn-mock sec">&larr; Back</span> button at the top, just above the heading. It takes you one step up, for example from a product to its family, or from a section to its page.</div>
+          </section>
+
+          <section class="help-sec" id="text">
+            <h2><span class="num">2</span>Change the words of a page</h2>
+            <ol class="help-steps">
+              <li>In the menu, click <strong>Home page</strong> (or Contact page, and so on).</li>
+              <li>You see a list of <strong>sections</strong>. They are in the same order as on the website, from the top to the bottom. Click <strong>Edit</strong> next to the one you want. Each row shows a few of its words so you can recognise it.</li>
+              <li>Click inside a box and type. Each box has a small name above it, such as "Sub-heading" or "Paragraph", so you know which part of the page it is. Once you change something, a green <span class="badge-edited" style="display:inline-block">Edited</span> tag appears.</li>
+              <li>Press the green <span class="btn-mock">Save changes</span> button at the bottom of the screen. It is always there, and it also appears inside each card.</li>
+              <li>Open your website and refresh the page (<span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">R</span>). The new words are there.</li>
+            </ol>
+            <div class="tip"><strong>Made a mistake?</strong> Click <em>Reset to original</em> under a box. It brings back the very first words. Or press <span class="btn-mock sec">Discard</span> to forget everything you have not saved yet.</div>
+            <div class="tip">Changes to pages are live as soon as you press Save. You do not need to do anything else.</div>
+          </section>
+
+          <section class="help-sec" id="format">
+            <h2><span class="num">3</span>Make words bold, add a link or change the colour</h2>
+            <p>Every text box works like a small word processor. <strong>You have to select the words first</strong>: press the mouse button at the start of the words, drag to the end and let go (or double-click one word). A dark toolbar then appears just above the words you selected:</p>
+            <div class="mock">
+              <div class="rt-pop" aria-hidden="true">
+                <div class="rt-pop-bar">
+                  <button type="button" tabindex="-1"><b>B</b></button>
+                  <button type="button" tabindex="-1"><i>I</i></button>
+                  <button type="button" tabindex="-1"><span data-i="link"></span></button>
+                  <button type="button" tabindex="-1"><span class="rt-a">A</span></button>
+                  <button type="button" tabindex="-1"><span data-i="close"></span></button>
+                </div>
+              </div>
+              <div class="mock-text">Vacuum furnaces from <mark>France</mark>, supported in India</div>
+            </div>
+            <table class="help-table">
+              <tr><th><b>B</b> Bold</th><td>Makes the selected words thicker.</td></tr>
+              <tr><th><i>I</i> Italic</th><td>Makes the selected words slanted.</td></tr>
+              <tr><th><span data-i="link"></span> Link</th><td>Turns the words into a link. A small box opens: type or paste where the link should go, then press <strong>Apply</strong>. You can write a web address (<em>www.example.com</em>), a page of your site (<em>contact.html</em>), an email address or a phone number. To take a link away, select the words again and press <strong>Remove link</strong>.</td></tr>
+              <tr><th><span class="rt-a">A</span> Colour</th><td>Shows a few colours. Click one to colour the selected words.</td></tr>
+              <tr><th><span data-i="close"></span> Remove formatting</th><td>Takes away bold, italic, colour and link from the selected words.</td></tr>
+            </table>
+            <p>Press <span class="kbd">Enter</span> to start a new line, just like in any editor. The toolbar goes away when you click somewhere else.</p>
+            <div class="tip">Not every box has this. Boxes for the address of a link, for the text inside an empty form field (a "placeholder") and for the choices of the contact-form dropdown stay plain, because they cannot show formatting on the website.</div>
+          </section>
+
+          <section class="help-sec" id="pictures">
+            <h2><span class="num">4</span>Change a picture</h2>
+            <ol class="help-steps">
+              <li>Open the section that has the picture. A small preview is shown next to its name.</li>
+              <li>Press <span class="btn-mock sec">Upload new image</span> and choose a file from your computer. It can be a PNG, JPG, WebP or GIF, up to 5 MB.</li>
+              <li>The preview changes at once. Press <span class="btn-mock">Save changes</span>.</li>
+            </ol>
+            <div class="tip">Use a picture with the same shape as the old one (wide stays wide, square stays square), so it fits the page nicely. Photos taken on a phone are often very large: that is fine up to 5 MB.</div>
+            <p>In <strong>Products</strong> a picture box has two buttons: <strong>Choose</strong> picks one of the pictures already on the website, and <strong>Upload</strong> adds a new one.</p>
+          </section>
+
+          <section class="help-sec" id="items">
+            <h2><span class="num">5</span>Add or delete items in a list</h2>
+            <p>Some parts of a page are lists of similar items: the people on the contact page, the industries, the choices in the contact-form dropdown. Each item is a <strong>card</strong>.</p>
+            <table class="help-table">
+              <tr><th><span class="ico" data-i="edit"></span> Edit</th><td>Opens or closes the card. All cards start closed so the page stays tidy.</td></tr>
+              <tr><th><span class="ico danger" data-i="trash"></span> Delete</th><td>Removes the item from the website. It always asks <em>"Delete ...?"</em> first, so you cannot do it by accident.</td></tr>
+              <tr><th><span class="ico" data-i="restore"></span> Restore</th><td>Appears on a deleted item and brings it back.</td></tr>
+              <tr><th>+ Add new ...</th><td>At the end of a list. Fill in the little form and press <strong>Add to website</strong>. The new item is a copy of the first one, with your words.</td></tr>
+            </table>
+            <div class="tip"><strong>Where is the dropdown of the contact form?</strong> Pages &rarr; Contact page &rarr; Contact. The cards called "Dropdown choice" are the choices. Add or delete them there.</div>
+          </section>
+
+          <section class="help-sec" id="products">
+            <h2><span class="num">6</span>Products</h2>
+            <p>Products are arranged like folders: <strong>brand</strong> (BMI, Novatec, Huasheng) &rarr; <strong>family</strong> (for example "Gas quenching furnaces") &rarr; <strong>product</strong> (one machine). Use the menu on the left, or the pages in the middle of the screen.</p>
+            <h3>Change a product</h3>
+            <ol class="help-steps">
+              <li>Open <strong>Products</strong>, a brand, a family, and click the product (or its <span class="ico" data-i="edit"></span> pencil).</li>
+              <li>The form has <strong>numbered sections</strong>. On the right is a <strong>map of the real product page</strong>: click any part of the map to jump to the section that changes it. A box above it says <em>"You are editing"</em> and names the section and the box you are in.</li>
+              <li>Under each box a grey line says <em>"Shows as: ..."</em>: this is where those words or that picture appear on the product page.</li>
+              <li>Press <span class="btn-mock">Save product</span> (or the Save button inside any section).</li>
+            </ol>
+            <div class="warn"><strong>Products go live by themselves.</strong> When you save, delete, reorder or switch a product to Draft, the website is updated a moment later. You do not press anything else. The bar at the top of the Products screens shows <em>"Putting your change on the website..."</em> for about a second, then <em>"Live on the website"</em>. If something stops it (for example two products with exactly the same name) the bar turns red, says why, and has a <span class="btn-mock">Try again</span> button. Your change is never lost: it is saved either way.</div>
+            <h3>Other things you can do</h3>
+            <table class="help-table">
+              <tr><th>+ Add family / + Add product</th><td>Buttons at the top of a brand or a family. Only the <strong>name</strong> is required.</td></tr>
+              <tr><th>Published / Draft</th><td>Click the green <em>Published</em> tag to make a product or family a <em>Draft</em>. A draft is hidden from the website straight away, but nothing is lost. Click it again to bring it back.</td></tr>
+              <tr><th><span class="ico" data-i="up"></span> <span class="ico" data-i="down"></span> Arrows</th><td>Move a family or product up or down. The website shows them in this order.</td></tr>
+              <tr><th><span class="ico danger" data-i="trash"></span> Delete</th><td>Deletes the product or family after you confirm. It disappears from the website a moment later.</td></tr>
+              <tr><th>Edit brand details</th><td>Button at the top of a brand's page. Here you can also change the brand's <strong>logo</strong>: it appears in the Products menu and in the finder.</td></tr>
+              <tr><th>Edit industries</th><td>Button on the main Products page. The 12 sectors (names and one-line descriptions) used in the finder, the Industries tags of the products and the industry menus.</td></tr>
+            </table>
+          </section>
+
+          <section class="help-sec" id="enquiries">
+            <h2><span class="num">7</span>Enquiries from the contact form</h2>
+            <p>When a visitor fills in the contact form on the website, the message appears under <strong>Enquiries</strong>, with the newest first.</p>
+            <ul class="help-list">
+              <li>New messages are shown in bold, marked <strong>New</strong>. Click <strong>Open</strong> to read one. It becomes <strong>Read</strong>.</li>
+              <li>After you answer, change the status to <strong>Replied</strong>, so everyone knows.</li>
+              <li>Use the search box to find a name, company or phone number.</li>
+              <li><strong>Export to Excel (CSV)</strong> downloads the list as a file that opens in Excel. It follows the search and status filter you have chosen.</li>
+            </ul>
+          </section>
+
+          <section class="help-sec" id="problems">
+            <h2><span class="num">8</span>If something goes wrong</h2>
+            <table class="help-table">
+              <tr><th>I saved, but the website looks the same</th><td>Refresh the website page with <span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">R</span>. Your browser may be showing an old copy. For products, look at the bar at the top: it says <em>Live on the website</em>, or tells you what is wrong.</td></tr>
+              <tr><th>I changed my mind</th><td>Before saving: press <em>Discard</em>. After saving: use <em>Reset to original</em> under the box.</td></tr>
+              <tr><th>I deleted an item by mistake</th><td>On a page: press the <span class="ico" data-i="restore"></span> Restore button on it. For a product, create it again (a deleted product cannot be restored).</td></tr>
+              <tr><th>A picture will not upload</th><td>Use a PNG, JPG, WebP or GIF under 5 MB.</td></tr>
+              <tr><th>The page shows a red message</th><td>Read it: it says what to fix, and the box that needs attention is marked. Fix it and save again.</td></tr>
+              <tr><th>I cannot find a thing to edit</th><td>Only what visitors can see on the website is here. Hidden technical things, such as the search-engine settings and the spam trap of the contact form, are left out on purpose.</td></tr>
+              <tr><th>I was signed out</th><td>For safety you are signed out after a few hours. Sign in again.</td></tr>
+            </table>
+            <p class="muted" data-activity hidden>You can see who changed what, and when, under <a href="/admin/activity.html">Activity</a>.</p>
+          </section>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <script src="/admin/admin.js"></script>
+  <script src="/admin/help.js"></script>
+</body>
+</html>

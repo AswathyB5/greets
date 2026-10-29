@@ -1,0 +1,28 @@
+{
+  "name": "admin-server",
+  "version": "1.0.0",
+  "description": "Admin API server for Greets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "create-admin": "node scripts/createAdmin.js",
+    "reset-password": "node scripts/createAdmin.js --reset",
+    "import-catalog": "node scripts/importCatalog.js",
+    "tag-content": "node scripts/tagContent.js && node scripts/tagExtras.js && node scripts/groupContent.js",
+    "tag-extras": "node scripts/tagExtras.js",
+    "group-content": "node scripts/groupContent.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "htmlparser2": "^9.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.0",
+    "nodemailer": "^10.2.1"
+  }
+}

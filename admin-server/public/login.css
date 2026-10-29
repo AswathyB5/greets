@@ -1,0 +1,88 @@
+/* Login page. Same light colours and font as the website (styles.css)
+   and the admin panel (views/admin/admin.css). */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap');
+
+:root {
+  --panel: #FFFFFF;
+  --ink: #1B2328;
+  --steel: #56636B;
+  --line: #D3D8D4;
+  --lime: #02963C;
+  --lime-ink: #FFFFFF;
+  --btn: #027A35;
+  --accent-text: #027A35;
+  --danger: #B3261E;
+  --danger-bg: #FBE9E7;
+  --font: 'Archivo', system-ui, sans-serif;
+  --radius-md: 10px;
+  --radius-xl: 20px;
+  --shadow-lg: 0 10px 28px -12px rgba(27, 35, 40, .14);
+  --paper: #F2F3EF;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  font-family: var(--font);
+  line-height: 1.5;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  padding: 36px 32px 32px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.logo { display: block; width: 150px; height: auto; margin: 0 auto 20px; }
+
+h1 { margin: 0 0 4px; font-size: 1.5rem; letter-spacing: -.01em; text-align: center; }
+.sub { margin: 0 0 24px; color: var(--steel); text-align: center; }
+
+label { display: block; margin: 16px 0 6px; font-size: .85rem; font-weight: 600; }
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+input:focus, button:focus-visible { outline: 2px solid var(--lime); outline-offset: 1px; border-color: var(--lime); }
+
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 11px;
+  font: inherit;
+  font-weight: 600;
+  color: var(--lime-ink);
+  background: var(--btn);
+  border: 0;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+button:disabled { opacity: .6; cursor: not-allowed; }
+
+.error {
+  margin: 16px 0 0;
+  padding: 10px 14px;
+  color: var(--danger);
+  background: var(--danger-bg);
+  border-radius: var(--radius-md);
+  font-size: .9rem;
+}

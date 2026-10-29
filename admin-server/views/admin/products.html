@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products - Greets Admin</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body data-page="products" data-title="Products">
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="main">
+      <header class="topbar" id="topbar"></header>
+      <main class="content">
+        <div class="publish-bar" id="publish-bar"></div>
+        <nav class="crumbs" id="crumbs" aria-label="Breadcrumb"></nav>
+        <div class="page-head">
+          <h1 id="heading">Products</h1>
+          <div class="head-actions" id="head-actions"></div>
+        </div>
+        <p class="muted" id="intro" style="margin-top:-8px"></p>
+        <p class="alert" id="error" role="alert" hidden></p>
+        <section class="panel" id="view"></section>
+      </main>
+    </div>
+  </div>
+
+  <script src="/admin/admin.js"></script>
+  <script src="/admin/catalog-form.js"></script>
+  <script src="/admin/products.js"></script>
+</body>
+</html>
