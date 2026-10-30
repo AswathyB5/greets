@@ -6062,6 +6062,9 @@
     }
 
     const thumbOf = function (p) {
+      // a product marked no_photo shows no thumbnail until it has its own photo (it must not borrow the family or brand picture)
+      const own = p._m && p._m.photo && PHOTOS[p._m.photo];
+      if (p._m && p._m.no_photo && !own) return "";
       const o = [p._m, p._c, p._b].find(function (x) { return x && x.photo && PHOTOS[x.photo]; });
       return o ? PHOTOS[o.photo] : "";
     };

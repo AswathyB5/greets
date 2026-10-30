@@ -561,7 +561,7 @@ CATALOG.forEach(b => {
     const root2 = '../../';
     const catTitle = c.seo_title || `${c.name} – ${b.name} | Greets Equipment India`;
     const catDesc = c.seo_desc || `${esc(c.desc)} Supplied with Indian installation, commissioning and local technical support by Greets Equipment.`;
-    const catPhoto = PHOTOS[c.photo] ? photoAt(root2, PHOTOS[c.photo]) : (PHOTOS[b.photo] && !c.no_photo ? photoAt(root2, PHOTOS[b.photo]) : '');
+    const catPhoto = PHOTOS[c.photo] ? photoAt(root2, PHOTOS[c.photo]) : (PHOTOS[b.photo] && !(c.no_photo && !c.photo) ? photoAt(root2, PHOTOS[b.photo]) : '');
     const catPhotoUrl = PHOTOS[c.photo] ? photoAbs(PHOTOS[c.photo]) : (PHOTOS[b.photo] ? photoAbs(PHOTOS[b.photo]) : `${SITE_URL}/assets/catalog/BMI-furnace-line-installed.jpg`);
 
     const catBreadcrumbs = {
@@ -686,8 +686,8 @@ CATALOG.forEach(b => {
       const mTitle = m.seo_title || `${m.name} – ${b.name} | Greets Equipment India`;
       const mDesc = m.seo_desc || `${esc(m.short || m.desc)} Authorised dealer in India: technical proposal, supply, installation and maintenance support.`;
 
-      const mSrc = m.no_photo ? null : [m, c, b].find(x => x && x.photo && PHOTOS[x.photo]);
-      const mPhotoUrl = mSrc && PHOTOS[mSrc.photo] ? photoAbs(PHOTOS[mSrc.photo]) : (m.no_photo && LOGO_PATHS[b.id] ? photoAbs(LOGO_PATHS[b.id]) : '');
+      const mSrc = (m.no_photo && !m.photo) ? null : [m, c, b].find(x => x && x.photo && PHOTOS[x.photo]);
+      const mPhotoUrl = mSrc && PHOTOS[mSrc.photo] ? photoAbs(PHOTOS[mSrc.photo]) : ((m.no_photo && !m.photo) && LOGO_PATHS[b.id] ? photoAbs(LOGO_PATHS[b.id]) : '');
 
       const mBreadcrumbs = {
         "@context": "https://schema.org",
@@ -751,7 +751,7 @@ CATALOG.forEach(b => {
             </figure>
           `;
         } else {
-          photoHtml = `<div class="mshot empty"><span>${m.no_photo ? 'Photograph to follow' : `Machine photo from ${esc(b.name)} dealer kit`}</span></div>`;
+          photoHtml = `<div class="mshot empty"><span>${(m.no_photo && !m.photo) ? 'Photograph to follow' : `Machine photo from ${esc(b.name)} dealer kit`}</span></div>`;
         }
 
         const isHuashengCoatingMachine = b.id === 'huasheng' && (

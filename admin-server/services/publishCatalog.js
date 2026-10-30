@@ -143,7 +143,7 @@ function familyCardsHtml(brand) {
   const cards = brand.cats.map((c, i) => {
     const side = i % 2 === 0 ? 'fade-left' : 'fade-right';
     const count = c.machines.length;
-    const photoId = c.photo || brand.photo;
+    const photoId = c.photo || (c.no_photo ? '' : brand.photo);
     const items = c.machines.map((m) => `
               <li><a href="${esc(`${brand.id}/${c.id}/${m.id}/`)}" data-brand="${esc(brand.name)}" data-process="${proc}"
                   data-category="${esc(c.name)}"><b>${esc(m.name)}</b><span>${esc(m.short || '')}</span></a></li>`).join('');
