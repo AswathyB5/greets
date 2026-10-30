@@ -11,173 +11,216 @@
      LOGO paths — match the assets already used by the home page
      ---------------------------------------------------------------- */
   const LOGO_PATHS = {
-    bmi: "assets/logo-BMI.png",
-    novatec: "assets/logo-novatec.png",
-    huasheng: "Huasheng-machine-photos/HUASHENG-logo.png",
+    "bmi": "assets/logo-BMI.png",
+    "novatec": "assets/logo-novatec.png",
+    "huasheng": "Huasheng-machine-photos/HUASHENG-logo.png"
   };
 
   /* ----------------------------------------------------------------
      PHOTOS — asset paths (instead of base64 blobs from the reference)
      ---------------------------------------------------------------- */
   const PHOTOS = {
-    /* BMI */
-    b8t: "assets/catalog/BMI-furnace-door-open-hot-zone.jpg",
-    vse8t: "assets/catalog/vse8t.jpg",
-    bmi_brazing: "assets/catalog/bmi_brazing.jpg",
-    bmi_low: "assets/catalog/bmi_low.jpg",
-    bmi_oil: "assets/catalog/bmi_oil.jpg",
-    bmi_thermo: "assets/catalog/bmi_thermo.jpg",
-    bmi_brand: "assets/catalog/bmi_brand.jpg",
-    bmi_gas: "assets/catalog/bmi_gas.jpg",
-    /* BMI 2026 presentation photography */
-    bmi_line_installed: "assets/catalog/BMI-furnace-line-installed.jpg",
-    bmi_horiz_workshop: "assets/catalog/BMI-horizontal-furnace-workshop.jpg",
-    bmi_vert_assembly: "assets/catalog/BMI-vertical-furnace-assembly.jpg",
-    bmi_large_assembly: "assets/catalog/BMI-large-furnace-assembly.jpg",
-    bmi_workshops: "assets/catalog/BMI-furnaces-in-workshop.jpg",
-    bmi_with_trolley: "assets/catalog/BMI-furnace-with-loading-trolley.jpg",
-    bmi_white_trolley: "assets/catalog/BMI-furnace-white-with-trolley.jpg",
-    bmi_vert_portrait: "assets/catalog/BMI-vertical-furnace-portrait.jpg",
-    bmi_hot_zone: "assets/catalog/BMI-hot-zone-head-on.jpg",
-    bmi_door_open_hot_zone: "assets/catalog/BMI-furnace-door-open-hot-zone.jpg",
-    bmi_horiz_door_open: "assets/catalog/BMI-horizontal-furnace-door-open.jpg",
-    bmi_horiz_01: "assets/catalog/BMI-horizontal-furnace-01.jpg",
-    bmi_horiz_02: "assets/catalog/BMI-horizontal-furnace-02.jpg",
-    bmi_control_cabinets: "assets/catalog/BMI-furnace-with-control-cabinets.jpg",
-    bmi_cooling_unit: "assets/catalog/BMI-furnace-with-cooling-unit.jpg",
-    bmi_top_view: "assets/catalog/BMI-furnace-top-view.jpg",
-    bmi_vert_tall: "assets/catalog/BMI-vertical-furnace-tall.jpg",
-    bmi_vert_white: "assets/catalog/BMI-vertical-furnace-white.jpg",
-    bmi_vert_orange: "assets/catalog/BMI-vertical-furnace-orange.jpg",
-    bmi_load_tray: "assets/catalog/BMI-furnace-load-tray-extended.jpg",
-    bmi_long_horiz: "assets/catalog/BMI-long-horizontal-furnace.jpg",
-    bmi_loading_trolley: "assets/catalog/BMI-furnace-loading-trolley.jpg",
-    bmi_hall: "assets/catalog/BMI-furnace-hall.jpg",
-    bmi_white_workshop: "assets/catalog/BMI-furnace-white-workshop.jpg",
-    bmi_early_furnace: "assets/catalog/BMI-historical-early-furnace.jpg",
-    bmi_hot_zone_bw: "assets/catalog/BMI-hot-zone-detail-bw.jpg",
-    /* Novatec */
-    nov_main: "assets/catalog/PLURITANK-1400-line-and-loading.jpg",
-    nov_brand: "assets/catalog/PLURITANK-1400-line-overview.jpg",
-    nov_2crd: "assets/catalog/2CRD400-front.jpg",
-    nov_gen: "assets/catalog/ultrasonic-tanks-with-generators.jpg",
-    nov_trans: "assets/catalog/nov_trans.jpg",
-    crd_green: "assets/catalog/2CRD400-front.jpg",
-    nm_brand: "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
-    nm_pluri_cat: "assets/catalog/PLURITANK-1400-line-overview.jpg",
-    nm_pluri: "assets/catalog/PLURITANK-line-studio.jpg",
-    nm_2crd: "assets/catalog/2CRD400-front.jpg",
-    nm_2crd_b: "assets/catalog/2CRD200-front.jpg",
-    nm_implants: "assets/catalog/MEDICAL-implant-components.jpg",
-    nm_ipc: "assets/catalog/MEDICAL-IPC-2CRD400.jpg",
-    nm_basket: "assets/catalog/MEDICAL-implants-in-basket-01.jpg",
-    nm_fcps: "assets/catalog/MEDICAL-FCPS-cleanroom-line-01.jpg",
-    nm_fcps_b: "assets/catalog/MEDICAL-FCPS-cleanroom-line-02.jpg",
-    nm_fcps_c: "assets/catalog/MEDICAL-FCPS-cleanroom-unload.jpg",
-    nm_fcps_d: "assets/catalog/MEDICAL-FCPS-line-portrait.jpg",
-    nm_fpi: "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
-    nm_fpi_b: "assets/catalog/MEDICAL-FPI-line-installed-01.jpg",
-    nm_fpi_c: "assets/catalog/MEDICAL-FPI-line-installed-02.jpg",
-    nm_fpi_d: "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
-    nm_urs: "assets/catalog/MEDICAL-combined-layout-drawing.jpg",
-    nm_urs_b: "assets/catalog/MEDICAL-implants-in-basket-02.jpg",
-    nm_clean: "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
-    nm_hq: "assets/catalog/NOVATEC-headquarters.jpg",
-    nov_plt1400_overview: "assets/catalog/PLURITANK-1400-line-overview.jpg",
-    nov_plt1400_loading: "assets/catalog/PLURITANK-1400-line-and-loading.jpg",
-    nov_plt1400_gen: "assets/catalog/PLURITANK-1400-ultrasonic-generators.jpg",
-    nov_plt_studio: "assets/catalog/PLURITANK-line-studio.jpg",
-    nov_plt_clean_01: "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
-    nov_plt_clean_02: "assets/catalog/PLURITANK-cleanroom-line-02.jpg",
-    nov_plt_clean_03: "assets/catalog/PLURITANK-cleanroom-line-03.jpg",
-    nov_plt_fume: "assets/catalog/PLURITANK-line-fume-extraction.jpg",
-    nov_plt_enclosed: "assets/catalog/PLURITANK-enclosed-line.jpg",
-    nov_plt_panel: "assets/catalog/PLURITANK-line-control-panel.jpg",
-    nov_plt_guarded: "assets/catalog/PLURITANK-line-guarded.jpg",
-    nov_plt_dryer: "assets/catalog/PLURITANK-line-with-dryer.jpg",
-    nov_plt_gantry: "assets/catalog/PLURITANK-gantry-interior.jpg",
-    nov_plt_tanks: "assets/catalog/PLURITANK-tank-row-interior.jpg",
-    nov_plt_tank_detail: "assets/catalog/PLURITANK-tank-detail.jpg",
-    nov_plt_compact: "assets/catalog/PLURITANK-compact-line.jpg",
-    nov_tanks_gen: "assets/catalog/ultrasonic-tanks-with-generators.jpg",
-    nov_2crd100: "assets/catalog/2CRD100-front.jpg",
-    nov_2crd100r: "assets/catalog/2CRD100-R-front.jpg",
-    nov_2crd200: "assets/catalog/2CRD200-front.jpg",
-    nov_2crd200_load: "assets/catalog/2CRD200-loading.jpg",
-    nov_2crd400: "assets/catalog/2CRD400-front.jpg",
-    nov_2crd800: "assets/catalog/2CRD800-front.jpg",
-    nov_2crd800_saw1: "assets/catalog/2CRD800-saw-blades-01.jpg",
-    nov_2crd800_saw2: "assets/catalog/2CRD800-saw-blades-02.jpg",
-    nov_2crd800_trolley: "assets/catalog/2CRD800-loading-tooling.jpg",
-    nov_2crd_chamber: "assets/catalog/2CRD-vacuum-chamber-interior.jpg",
-    nov_2crd_baskets: "assets/catalog/2CRD-baskets-and-tooling.jpg",
-    nov_med_ipc_2crd: "assets/catalog/MEDICAL-IPC-2CRD400.jpg",
-    nov_med_ipc_plt1: "assets/catalog/MEDICAL-IPC-pluritank-line-01.jpg",
-    nov_med_ipc_plt2: "assets/catalog/MEDICAL-IPC-pluritank-line-02.jpg",
-    nov_med_fcps1: "assets/catalog/MEDICAL-FCPS-cleanroom-line-01.jpg",
-    nov_med_fcps2: "assets/catalog/MEDICAL-FCPS-cleanroom-line-02.jpg",
-    nov_med_fcps_port: "assets/catalog/MEDICAL-FCPS-line-portrait.jpg",
-    nov_med_fcps_unload: "assets/catalog/MEDICAL-FCPS-cleanroom-unload.jpg",
-    nov_med_fpi_draw: "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
-    nov_med_fpi1: "assets/catalog/MEDICAL-FPI-line-installed-01.jpg",
-    nov_med_fpi2: "assets/catalog/MEDICAL-FPI-line-installed-02.jpg",
-    nov_med_basket1: "assets/catalog/MEDICAL-implants-in-basket-01.jpg",
-    nov_med_basket2: "assets/catalog/MEDICAL-implants-in-basket-02.jpg",
-    nov_med_layout: "assets/catalog/MEDICAL-combined-layout-drawing.jpg",
-    nov_med_parts: "assets/catalog/MEDICAL-implant-components.jpg",
-    nov_hq: "assets/catalog/NOVATEC-headquarters.jpg",
-    /* Huasheng */
-    hs_logo: "Huasheng-machine-photos/HUASHENG-logo.png",
-    hs_gfour: "Huasheng-machine-photos/GFOUR.jpg",
-    hs_md200: "Huasheng-machine-photos/MD200.jpg",
-    hs_md500: "Huasheng-machine-photos/MD500.jpg",
-    hs_md800: "Huasheng-machine-photos/MD800-PLUS.jpg",
-    hs_md1500: "Huasheng-machine-photos/MD1500-drawing.jpg",
-    hs_hd500: "Huasheng-machine-photos/HD500.jpg",
-    hs_da600pro: "Huasheng-machine-photos/DA600PRO.jpg",
-    hs_tc800plus: "Huasheng-machine-photos/TC800PLUS.jpg",
-    hs_tc800plus_f: "Huasheng-machine-photos/TC800PLUS-F.jpg",
-    hs_wcc800: "Huasheng-machine-photos/WCC800.jpg",
-    hs_broach: "Huasheng-machine-photos/Broach.jpg",
-    hs_deco_h: "Huasheng-machine-photos/HUASHENG-DECO-H-machine.jpg",
-    hs_deco_a: "Huasheng-machine-photos/HUASHENG-DECO-A-machine.jpg",
-    hs_deco_b: "Huasheng-machine-photos/HUASHENG-DECO-B-machine.jpg",
-    hs_deco_g: "Huasheng-machine-photos/HUASHENG-DECO-G-machine.jpg",
-    hs_af: "Huasheng-machine-photos/HUASHENG-AF-machine.jpg",
-    hs_opt: "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
-    hs_pow: "Huasheng-machine-photos/HUASHENG-POW-machine.jpg",
-    // Compatibility fallbacks
-    hs_pvd: "Huasheng-machine-photos/GFOUR.jpg",
-    hs_dlc: "Huasheng-machine-photos/TC800PLUS.jpg",
-    hs_diamond: "Huasheng-machine-photos/DA600PRO.jpg",
-    hs_mc1000: "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
-    hs_optical: "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
-    hs_cvd: "Huasheng-machine-photos/MD1500-drawing.jpg",
-    hs_md: "Huasheng-machine-photos/MD500.jpg",
-    hs_hipims: "Huasheng-machine-photos/WCC800.jpg",
-    hs_tc802: "Huasheng-machine-photos/TC800PLUS.jpg",
-    hs_ma1500: "Huasheng-machine-photos/MD800-PLUS.jpg",
-    ma800: "Huasheng-machine-photos/MD800-PLUS.jpg",
-    turnkey: "Huasheng-machine-photos/MD800-PLUS.jpg",
-    cleanline: "assets/catalog/cleanline.jpg",
-    lineup: "Huasheng-machine-photos/GFOUR.jpg",
+    "b8t": "assets/catalog/BMI-furnace-door-open-hot-zone.jpg",
+    "vse8t": "assets/catalog/vse8t.jpg",
+    "bmi_brazing": "assets/catalog/bmi_brazing.jpg",
+    "bmi_low": "assets/catalog/bmi_low.jpg",
+    "bmi_oil": "assets/catalog/bmi_oil.jpg",
+    "bmi_thermo": "assets/catalog/bmi_thermo.jpg",
+    "bmi_brand": "assets/catalog/bmi_brand.jpg",
+    "bmi_gas": "assets/catalog/bmi_gas.jpg",
+    "bmi_line_installed": "assets/catalog/BMI-furnace-line-installed.jpg",
+    "bmi_horiz_workshop": "assets/catalog/BMI-horizontal-furnace-workshop.jpg",
+    "bmi_vert_assembly": "assets/catalog/BMI-vertical-furnace-assembly.jpg",
+    "bmi_large_assembly": "assets/catalog/BMI-large-furnace-assembly.jpg",
+    "bmi_workshops": "assets/catalog/BMI-furnaces-in-workshop.jpg",
+    "bmi_with_trolley": "assets/catalog/BMI-furnace-with-loading-trolley.jpg",
+    "bmi_white_trolley": "assets/catalog/BMI-furnace-white-with-trolley.jpg",
+    "bmi_vert_portrait": "assets/catalog/BMI-vertical-furnace-portrait.jpg",
+    "bmi_hot_zone": "assets/catalog/BMI-hot-zone-head-on.jpg",
+    "bmi_door_open_hot_zone": "assets/catalog/BMI-furnace-door-open-hot-zone.jpg",
+    "bmi_horiz_door_open": "assets/catalog/BMI-horizontal-furnace-door-open.jpg",
+    "bmi_horiz_01": "assets/catalog/BMI-horizontal-furnace-01.jpg",
+    "bmi_horiz_02": "assets/catalog/BMI-horizontal-furnace-02.jpg",
+    "bmi_control_cabinets": "assets/catalog/BMI-furnace-with-control-cabinets.jpg",
+    "bmi_cooling_unit": "assets/catalog/BMI-furnace-with-cooling-unit.jpg",
+    "bmi_top_view": "assets/catalog/BMI-furnace-top-view.jpg",
+    "bmi_vert_tall": "assets/catalog/BMI-vertical-furnace-tall.jpg",
+    "bmi_vert_white": "assets/catalog/BMI-vertical-furnace-white.jpg",
+    "bmi_vert_orange": "assets/catalog/BMI-vertical-furnace-orange.jpg",
+    "bmi_load_tray": "assets/catalog/BMI-furnace-load-tray-extended.jpg",
+    "bmi_long_horiz": "assets/catalog/BMI-long-horizontal-furnace.jpg",
+    "bmi_loading_trolley": "assets/catalog/BMI-furnace-loading-trolley.jpg",
+    "bmi_hall": "assets/catalog/BMI-furnace-hall.jpg",
+    "bmi_white_workshop": "assets/catalog/BMI-furnace-white-workshop.jpg",
+    "bmi_early_furnace": "assets/catalog/BMI-historical-early-furnace.jpg",
+    "bmi_hot_zone_bw": "assets/catalog/BMI-hot-zone-detail-bw.jpg",
+    "nov_main": "assets/catalog/PLURITANK-1400-line-and-loading.jpg",
+    "nov_brand": "assets/catalog/PLURITANK-1400-line-overview.jpg",
+    "nov_2crd": "assets/catalog/2CRD400-front.jpg",
+    "nov_gen": "assets/catalog/ultrasonic-tanks-with-generators.jpg",
+    "nov_trans": "assets/catalog/nov_trans.jpg",
+    "crd_green": "assets/catalog/2CRD400-front.jpg",
+    "nm_brand": "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
+    "nm_pluri_cat": "assets/catalog/PLURITANK-1400-line-overview.jpg",
+    "nm_pluri": "assets/catalog/PLURITANK-line-studio.jpg",
+    "nm_2crd": "assets/catalog/2CRD400-front.jpg",
+    "nm_2crd_b": "assets/catalog/2CRD200-front.jpg",
+    "nm_implants": "assets/catalog/MEDICAL-implant-components.jpg",
+    "nm_ipc": "assets/catalog/MEDICAL-IPC-2CRD400.jpg",
+    "nm_basket": "assets/catalog/MEDICAL-implants-in-basket-01.jpg",
+    "nm_fcps": "assets/catalog/MEDICAL-FCPS-cleanroom-line-01.jpg",
+    "nm_fcps_b": "assets/catalog/MEDICAL-FCPS-cleanroom-line-02.jpg",
+    "nm_fcps_c": "assets/catalog/MEDICAL-FCPS-cleanroom-unload.jpg",
+    "nm_fcps_d": "assets/catalog/MEDICAL-FCPS-line-portrait.jpg",
+    "nm_fpi": "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
+    "nm_fpi_b": "assets/catalog/MEDICAL-FPI-line-installed-01.jpg",
+    "nm_fpi_c": "assets/catalog/MEDICAL-FPI-line-installed-02.jpg",
+    "nm_fpi_d": "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
+    "nm_urs": "assets/catalog/MEDICAL-combined-layout-drawing.jpg",
+    "nm_urs_b": "assets/catalog/MEDICAL-implants-in-basket-02.jpg",
+    "nm_clean": "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
+    "nm_hq": "assets/catalog/NOVATEC-headquarters.jpg",
+    "nov_plt1400_overview": "assets/catalog/PLURITANK-1400-line-overview.jpg",
+    "nov_plt1400_loading": "assets/catalog/PLURITANK-1400-line-and-loading.jpg",
+    "nov_plt1400_gen": "assets/catalog/PLURITANK-1400-ultrasonic-generators.jpg",
+    "nov_plt_studio": "assets/catalog/PLURITANK-line-studio.jpg",
+    "nov_plt_clean_01": "assets/catalog/PLURITANK-cleanroom-line-01.jpg",
+    "nov_plt_clean_02": "assets/catalog/PLURITANK-cleanroom-line-02.jpg",
+    "nov_plt_clean_03": "assets/catalog/PLURITANK-cleanroom-line-03.jpg",
+    "nov_plt_fume": "assets/catalog/PLURITANK-line-fume-extraction.jpg",
+    "nov_plt_enclosed": "assets/catalog/PLURITANK-enclosed-line.jpg",
+    "nov_plt_panel": "assets/catalog/PLURITANK-line-control-panel.jpg",
+    "nov_plt_guarded": "assets/catalog/PLURITANK-line-guarded.jpg",
+    "nov_plt_dryer": "assets/catalog/PLURITANK-line-with-dryer.jpg",
+    "nov_plt_gantry": "assets/catalog/PLURITANK-gantry-interior.jpg",
+    "nov_plt_tanks": "assets/catalog/PLURITANK-tank-row-interior.jpg",
+    "nov_plt_tank_detail": "assets/catalog/PLURITANK-tank-detail.jpg",
+    "nov_plt_compact": "assets/catalog/PLURITANK-compact-line.jpg",
+    "nov_tanks_gen": "assets/catalog/ultrasonic-tanks-with-generators.jpg",
+    "nov_2crd100": "assets/catalog/2CRD100-front.jpg",
+    "nov_2crd100r": "assets/catalog/2CRD100-R-front.jpg",
+    "nov_2crd200": "assets/catalog/2CRD200-front.jpg",
+    "nov_2crd200_load": "assets/catalog/2CRD200-loading.jpg",
+    "nov_2crd400": "assets/catalog/2CRD400-front.jpg",
+    "nov_2crd800": "assets/catalog/2CRD800-front.jpg",
+    "nov_2crd800_saw1": "assets/catalog/2CRD800-saw-blades-01.jpg",
+    "nov_2crd800_saw2": "assets/catalog/2CRD800-saw-blades-02.jpg",
+    "nov_2crd800_trolley": "assets/catalog/2CRD800-loading-tooling.jpg",
+    "nov_2crd_chamber": "assets/catalog/2CRD-vacuum-chamber-interior.jpg",
+    "nov_2crd_baskets": "assets/catalog/2CRD-baskets-and-tooling.jpg",
+    "nov_med_ipc_2crd": "assets/catalog/MEDICAL-IPC-2CRD400.jpg",
+    "nov_med_ipc_plt1": "assets/catalog/MEDICAL-IPC-pluritank-line-01.jpg",
+    "nov_med_ipc_plt2": "assets/catalog/MEDICAL-IPC-pluritank-line-02.jpg",
+    "nov_med_fcps1": "assets/catalog/MEDICAL-FCPS-cleanroom-line-01.jpg",
+    "nov_med_fcps2": "assets/catalog/MEDICAL-FCPS-cleanroom-line-02.jpg",
+    "nov_med_fcps_port": "assets/catalog/MEDICAL-FCPS-line-portrait.jpg",
+    "nov_med_fcps_unload": "assets/catalog/MEDICAL-FCPS-cleanroom-unload.jpg",
+    "nov_med_fpi_draw": "assets/catalog/MEDICAL-FPI-system-drawing.jpg",
+    "nov_med_fpi1": "assets/catalog/MEDICAL-FPI-line-installed-01.jpg",
+    "nov_med_fpi2": "assets/catalog/MEDICAL-FPI-line-installed-02.jpg",
+    "nov_med_basket1": "assets/catalog/MEDICAL-implants-in-basket-01.jpg",
+    "nov_med_basket2": "assets/catalog/MEDICAL-implants-in-basket-02.jpg",
+    "nov_med_layout": "assets/catalog/MEDICAL-combined-layout-drawing.jpg",
+    "nov_med_parts": "assets/catalog/MEDICAL-implant-components.jpg",
+    "nov_hq": "assets/catalog/NOVATEC-headquarters.jpg",
+    "hs_logo": "Huasheng-machine-photos/HUASHENG-logo.png",
+    "hs_gfour": "Huasheng-machine-photos/GFOUR.jpg",
+    "hs_md200": "Huasheng-machine-photos/MD200.jpg",
+    "hs_md500": "Huasheng-machine-photos/MD500.jpg",
+    "hs_md800": "Huasheng-machine-photos/MD800-PLUS.jpg",
+    "hs_md1500": "Huasheng-machine-photos/MD1500-drawing.jpg",
+    "hs_hd500": "Huasheng-machine-photos/HD500.jpg",
+    "hs_da600pro": "Huasheng-machine-photos/DA600PRO.jpg",
+    "hs_tc800plus": "Huasheng-machine-photos/TC800PLUS.jpg",
+    "hs_tc800plus_f": "Huasheng-machine-photos/TC800PLUS-F.jpg",
+    "hs_wcc800": "Huasheng-machine-photos/WCC800.jpg",
+    "hs_broach": "Huasheng-machine-photos/Broach.jpg",
+    "hs_deco_h": "Huasheng-machine-photos/HUASHENG-DECO-H-machine.jpg",
+    "hs_deco_a": "Huasheng-machine-photos/HUASHENG-DECO-A-machine.jpg",
+    "hs_deco_b": "Huasheng-machine-photos/HUASHENG-DECO-B-machine.jpg",
+    "hs_deco_g": "Huasheng-machine-photos/HUASHENG-DECO-G-machine.jpg",
+    "hs_af": "Huasheng-machine-photos/HUASHENG-AF-machine.jpg",
+    "hs_opt": "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
+    "hs_pow": "Huasheng-machine-photos/HUASHENG-POW-machine.jpg",
+    "hs_pvd": "Huasheng-machine-photos/GFOUR.jpg",
+    "hs_dlc": "Huasheng-machine-photos/TC800PLUS.jpg",
+    "hs_diamond": "Huasheng-machine-photos/DA600PRO.jpg",
+    "hs_mc1000": "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
+    "hs_optical": "Huasheng-machine-photos/HUASHENG-OPT-machine.jpg",
+    "hs_cvd": "Huasheng-machine-photos/MD1500-drawing.jpg",
+    "hs_md": "Huasheng-machine-photos/MD500.jpg",
+    "hs_hipims": "Huasheng-machine-photos/WCC800.jpg",
+    "hs_tc802": "Huasheng-machine-photos/TC800PLUS.jpg",
+    "hs_ma1500": "Huasheng-machine-photos/MD800-PLUS.jpg",
+    "ma800": "Huasheng-machine-photos/MD800-PLUS.jpg",
+    "turnkey": "Huasheng-machine-photos/MD800-PLUS.jpg",
+    "cleanline": "assets/catalog/cleanline.jpg",
+    "lineup": "Huasheng-machine-photos/GFOUR.jpg"
   };
   /* ----------------------------------------------------------------
      Industries
      ---------------------------------------------------------------- */
   const IND = [
-    { id: "tools", n: "Cutting and gear cutting tools", d: "Hobs, shaper cutters, inserts, drills and end mills." },
-    { id: "jobshop", n: "PVD coating service providers", d: "Coating job shops and in-house coating centres." },
-    { id: "dies", n: "Dies and mould manufacturers", d: "Press tools, forging dies, die-casting and plastic moulds." },
-    { id: "steel", n: "Steel and metal processing", d: "Commercial heat treaters, steel, alloy and forging plants." },
-    { id: "power", n: "Power: wind, solar and thermal", d: "Gearbox parts, turbine blades, shafts and bearings." },
-    { id: "oilgas", n: "Oil and gas", d: "Valves, pumps, drilling tools and wear parts." },
-    { id: "auto", n: "Automotive", d: "Gears, transmission, engine and EV components." },
-    { id: "aero", n: "Aerospace and defence", d: "Turbine parts, brazed assemblies, weapon and vehicle components." },
-    { id: "medical", n: "Medical devices and implants", d: "Orthopaedic implants, surgical instruments, cleanroom final cleaning." },
-    { id: "semi", n: "Semiconductor and electronics", d: "Chamber parts and precision components." },
-    { id: "optics", n: "Optics and eyewear", d: "Lenses and optical components." },
-    { id: "watch", n: "Watches, jewellery and decorative", d: "Cases, bands, fittings and hardware finishes." },
+    {
+      "id": "tools",
+      "n": "Cutting and gear cutting tools",
+      "d": "Hobs, shaper cutters, inserts, drills and end mills."
+    },
+    {
+      "id": "jobshop",
+      "n": "PVD coating service providers",
+      "d": "Coating job shops and in-house coating centres."
+    },
+    {
+      "id": "dies",
+      "n": "Dies and mould manufacturers",
+      "d": "Press tools, forging dies, die-casting and plastic moulds."
+    },
+    {
+      "id": "steel",
+      "n": "Steel and metal processing",
+      "d": "Commercial heat treaters, steel, alloy and forging plants."
+    },
+    {
+      "id": "power",
+      "n": "Power: wind, solar and thermal",
+      "d": "Gearbox parts, turbine blades, shafts and bearings."
+    },
+    {
+      "id": "oilgas",
+      "n": "Oil and gas",
+      "d": "Valves, pumps, drilling tools and wear parts."
+    },
+    {
+      "id": "auto",
+      "n": "Automotive",
+      "d": "Gears, transmission, engine and EV components."
+    },
+    {
+      "id": "aero",
+      "n": "Aerospace and defence",
+      "d": "Turbine parts, brazed assemblies, weapon and vehicle components."
+    },
+    {
+      "id": "medical",
+      "n": "Medical devices and implants",
+      "d": "Orthopaedic implants, surgical instruments, cleanroom final cleaning."
+    },
+    {
+      "id": "semi",
+      "n": "Semiconductor and electronics",
+      "d": "Chamber parts and precision components."
+    },
+    {
+      "id": "optics",
+      "n": "Optics and eyewear",
+      "d": "Lenses and optical components."
+    },
+    {
+      "id": "watch",
+      "n": "Watches, jewellery and decorative",
+      "d": "Cases, bands, fittings and hardware finishes."
+    }
   ];
 
   const IND_COL = {
@@ -200,4559 +243,4823 @@
      Catalogue data
      ---------------------------------------------------------------- */
   const CATALOG = [
-  {
-    "id": "bmi",
-    "photo": "bmi_line_installed",
-    "photoAlt": "Row of furnaces installed at a plant",
-    "gallery": [
-      [
-        "bmi_line_installed",
-        "Row of furnaces installed at a plant"
-      ],
-      [
-        "bmi_hot_zone",
-        "Hot zone straight on. Striking - good for a feature panel."
-      ],
-      [
-        "bmi_hall",
-        "Several furnaces in a hall"
-      ],
-      [
-        "bmi_early_furnace",
-        "Early BMI furnace, black and white. Good alongside Since 1947."
-      ],
-      [
-        "bmi_hot_zone_bw",
-        "Hot zone and door, black and white"
-      ]
-    ],
-    "name": "BMI",
-    "full": "Fours Industriels B.M.I.",
-    "country": "France",
-    "site": "https://www.bmi-fours.com",
-    "intro": "French designer & manufacturer since 1947 and specialist in vacuum for more than 50 years. Vacuum furnaces for hardening, brazing, tempering and thermochemical treatment, designed and built in France.",
-    "cats": [
-      {
-        "id": "gas-quenching",
-        "photo": "bmi_horiz_workshop",
-        "photoAlt": "Horizontal vacuum furnace in the works",
-        "name": "Gas quenching furnaces",
-        "sub": "Hardening, brazing and laboratory furnaces",
-        "desc": "Vacuum furnaces that heat parts without oxidation and then cool them with high-pressure gas. BMI's patented rotating gas-flow system gives uniform quenching even on dense or complex loads.",
-        "url": "https://www.bmi-fours.com/products/#gas-quenching",
-        "machines": [
-          {
-            "id": "b8t",
-            "photo": "bmi_door_open_hot_zone",
-            "photoAlt": "BMI horizontal vacuum gas quenching furnace with door open",
-            "caption": "BMI horizontal vacuum gas quenching furnace (door open, hot zone visible)",
-            "gallery": [
-              [
-                "bmi_door_open_hot_zone",
-                "Door open, hot zone visible"
-              ],
-              [
-                "bmi_load_tray",
-                "Load tray drawn out of the furnace"
-              ],
-              [
-                "bmi_hot_zone",
-                "Hot zone straight on. Striking - good for a feature panel."
-              ],
-              [
-                "b8t",
-                "BMI horizontal vacuum gas quenching furnace"
-              ]
-            ],
-            "name": "B8_T vacuum gas quenching furnace",
-            "tag": "Horizontal",
-            "bmi_desc": "HIGH TEMPERATURE VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
-            "short": "Front-loading furnace for high-throughput production.",
-            "desc": "The B8_T is BMI's horizontal-loading vacuum gas quenching furnace, built for high-throughput production. Parts are heated under vacuum and quenched with gas at 5 to 12 bar, with BMI's patented rotating volute keeping gas flow even through the whole load. It is fully automated for precise, repeatable cycles with clean surfaces and minimal distortion.",
-            "features": [
-              "Horizontal front loading",
-              "Gas quenching at 5 to 12 bar abs",
-              "Patented rotating volute for uniform cooling",
-              "GRAPHTIL® man-machine interface",
-              "Graphite, molybdenum or fibre hot zones"
-            ],
-            "specs": [
-              [
-                "Working zone",
-                "450 × 450 × 600 mm to 1000 × 1000 × 1500 mm"
-              ],
-              [
-                "Load capacity",
-                "200 to 4000 kg"
-              ],
-              [
-                "Maximum temperature",
-                "1250 °C to 1600 °C"
-              ],
-              [
-                "Vacuum level",
-                "10⁻² mbar, 10⁻⁵ mbar or 10⁻⁶ mbar"
-              ],
-              [
-                "Quench pressure",
-                "5 to 12 bar abs"
-              ],
-              [
-                "Hot zone",
-                "Graphite, molybdenum or fibre/wool combinations"
-              ],
-              [
-                "Control",
-                "GRAPHTIL® man-machine interface"
-              ]
-            ],
-            "models": [
-              {
-                "model": "B83T",
-                "orientation": "Horizontal",
-                "load": "200 kg",
-                "dimensions": "450 × 450 × 600 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "B84T",
-                "orientation": "Horizontal",
-                "load": "600 kg",
-                "dimensions": "600 × 600 × 900 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "B85T",
-                "orientation": "Horizontal",
-                "load": "1,000 kg",
-                "dimensions": "900 × 700 × 1,200 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "B86T",
-                "orientation": "Horizontal",
-                "load": "2,000 kg",
-                "dimensions": "1,000 × 1,000 × 1,500 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              }
-            ],
-            "process": [
-              "Quenching, hyperquenching",
-              "Brazing, Sintering",
-              "Tempering, Annealing",
-              "Ageing",
-              "Stress Relieving",
-              "ALLCARB®",
-              "Carbonitriding"
-            ],
-            "thermochemical": "ALLCARB®",
-            "options": [
-              "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
-              "12 bar",
-              "Low pressure carburizing ALLCARB®",
-              "Compliance with aerospace standards: AMS2750E, AMS2769...",
-              "Alternative insulations, including full graphite and full metal insulation",
-              "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets..."
-            ],
-            "url": "https://www.bmi-fours.com/products/vacuum-hardening-furnace/",
-            "k": "vacuum hardening quench tool steel dies b83t b84t b85t b86t allcarb",
-            "i": [
-              "tools",
-              "auto",
-              "aero"
-            ],
-            "family": "Vacuum hardening & gas quenching — horizontal",
-            "config": "Horizontal",
-            "benefits": [
-              "Rotating flow cooling",
-              "Perfect Quenching uniformity",
-              "Versatile furnace: large range of heat treatments available"
-            ]
-          },
-          {
-            "id": "vse8t",
-            "photo": "bmi_vert_assembly",
-            "photoAlt": "BMI vertical vacuum furnace under assembly",
-            "caption": "Vertical furnace under assembly",
-            "gallery": [
-              [
-                "bmi_vert_assembly",
-                "Vertical furnace under assembly"
-              ],
-              [
-                "bmi_vert_white",
-                "Vertical furnace, white"
-              ],
-              [
-                "bmi_vert_orange",
-                "Vertical furnace, orange"
-              ],
-              [
-                "vse8t",
-                "BMI vertical vacuum furnace"
-              ]
-            ],
-            "name": "VSE8_T vacuum gas quenching furnace",
-            "tag": "Vertical",
-            "bmi_desc": "HIGH TEMPERATURE VERTICAL VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
-            "short": "Bottom-loading furnace for tall or delicate parts.",
-            "desc": "The VSE8_T is BMI's bottom-loading vertical vacuum gas quenching furnace. Loading from below suits long, tall or delicate components that must be treated standing or hanging to limit distortion. It shares the B8_T's high-pressure gas quenching and patented rotating volute.",
-            "features": [
-              "Vertical bottom loading",
-              "Gas quenching at 5 to 12 bar abs",
-              "Patented rotating volute for uniform cooling",
-              "GRAPHTIL® man-machine interface",
-              "Graphite, molybdenum or fibre hot zones"
-            ],
-            "specs": [
-              [
-                "Working zone",
-                "Ø 600 × h 600 mm to Ø 1800 × h 1800 mm"
-              ],
-              [
-                "Load capacity",
-                "200 to 3000 kg"
-              ],
-              [
-                "Maximum temperature",
-                "1250 °C, 1350 °C or 1500 °C"
-              ],
-              [
-                "Vacuum level",
-                "10⁻² mbar, 10⁻⁵ mbar or 10⁻⁶ mbar"
-              ],
-              [
-                "Quench pressure",
-                "5 to 12 bar abs"
-              ],
-              [
-                "Control",
-                "GRAPHTIL® man-machine interface"
-              ]
-            ],
-            "models": [
-              {
-                "model": "VSE83T",
-                "orientation": "Vertical",
-                "load": "300 kg",
-                "dimensions": "Ø 600 × 600 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "VSE84T",
-                "orientation": "Vertical",
-                "load": "800 kg",
-                "dimensions": "Ø 900 × 900 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "VSE84T120",
-                "orientation": "Vertical",
-                "load": "1,000 kg",
-                "dimensions": "Ø 900 × 1,200 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "VSE84T150",
-                "orientation": "Vertical",
-                "load": "1,200 kg",
-                "dimensions": "Ø 900 × 1,500 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "VSE85T",
-                "orientation": "Vertical",
-                "load": "1,300 kg",
-                "dimensions": "Ø 1,200 × 1,200 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "VSE85T150",
-                "orientation": "Vertical",
-                "load": "1,800 kg",
-                "dimensions": "Ø 1,200 × 1,500 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "VSE86T",
-                "orientation": "Vertical",
-                "load": "2,000 kg",
-                "dimensions": "Ø 1,500 × 1,500 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "VSE86T200",
-                "orientation": "Vertical",
-                "load": "3,000 kg",
-                "dimensions": "Ø 1,500 × 2,000 mm",
-                "temp": "1250°C to 1600°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              }
-            ],
-            "process": [
-              "Quenching, hyperquenching",
-              "Brazing, Sintering",
-              "Tempering, Annealing",
-              "Ageing",
-              "Stress Relieving",
-              "ALLCARB®",
-              "Carbonitriding"
-            ],
-            "thermochemical": "ALLCARB®",
-            "options": [
-              "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
-              "12 bar",
-              "Low pressure carburizing ALLCARB®",
-              "Compliance with aerospace standards: AMS2750E, AMS2769...",
-              "Alternative insulations, including full graphite and full metal insulation",
-              "Reversible cooling (top-to-bottom / bottom-to-top)",
-              "«In pit» design with carousel loader/unloader",
-              "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets..."
-            ],
-            "url": "https://www.bmi-fours.com/products/vacuum-hardening-furnace/",
-            "k": "vacuum hardening long parts shafts vse83t vse84t vse84t120 vse84t150 vse85t vse85t150 vse86t vse86t200 allcarb",
-            "i": [
-              "aero",
-              "auto"
-            ],
-            "family": "Vacuum hardening & gas quenching — vertical",
-            "config": "Vertical",
-            "benefits": [
-              "Treatment of massive loads and/or elongated parts",
-              "Perfect quenching uniformity and low distortion",
-              "Versatile furnace: large range of heat treatments available"
-            ]
-          },
-          {
-            "id": "brazing",
-            "photo": "bmi_large_assembly",
-            "photoAlt": "Large furnace being assembled",
-            "caption": "Large furnace being assembled",
-            "gallery": [
-              [
-                "bmi_large_assembly",
-                "Large furnace being assembled"
-              ],
-              [
-                "bmi_horiz_01",
-                "Horizontal furnace, door closed"
-              ],
-              [
-                "bmi_long_horiz",
-                "Long horizontal furnace"
-              ],
-              [
-                "bmi_brazing",
-                "Furnace with loading trolley"
-              ]
-            ],
-            "name": "Vacuum brazing furnace",
-            "bmi_desc": "HIGH TEMPERATURE VACUUM BRAZING FURNACE",
-            "short": "Oxide-free brazing of assemblies.",
-            "desc": "Vacuum furnace for brazing assemblies in a clean, oxide-free atmosphere, used widely in aerospace and for high-value components where joint quality matters.",
-            "features": [
-              "Oxide-free brazing under vacuum",
-              "Controlled heating and cooling",
-              "Suited to nickel and other brazing alloys"
-            ],
-            "specs": [
-              [
-                "Configuration",
-                "Horizontal front-loading"
-              ],
-              [
-                "Working zone",
-                "450 × 450 × 600 mm to 2,500 × 1,500 × 7,000 mm"
-              ],
-              [
-                "Load capacity",
-                "200 to 20,000 kg"
-              ],
-              [
-                "Maximum temperature",
-                "1250 °C to 1500 °C"
-              ],
-              [
-                "Vacuum level",
-                "5 × 10⁻² mbar"
-              ],
-              [
-                "Cooling pressure",
-                "1.4 bar abs"
-              ],
-              [
-                "Process",
-                "High-temperature vacuum brazing & degassing"
-              ],
-              [
-                "Applications",
-                "Aerospace assemblies, heat exchangers, turbine parts, medical devices"
-              ]
-            ],
-            "models": [
-              {
-                "model": "B53T",
-                "orientation": "Horizontal",
-                "load": "200 kg",
-                "dimensions": "450 × 450 × 600 mm",
-                "temp": "1250°C to 1500°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.4 bar"
-              },
-              {
-                "model": "B54T",
-                "orientation": "Horizontal",
-                "load": "600 kg",
-                "dimensions": "600 × 600 × 900 mm",
-                "temp": "1250°C to 1500°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.4 bar"
-              },
-              {
-                "model": "B55T",
-                "orientation": "Horizontal",
-                "load": "1,000 kg",
-                "dimensions": "900 × 700 × 1,200 mm",
-                "temp": "1250°C to 1500°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.4 bar"
-              },
-              {
-                "model": "B56T",
-                "orientation": "Horizontal",
-                "load": "1,500 kg",
-                "dimensions": "1,000 × 1,000 × 1,500 mm",
-                "temp": "1250°C to 1500°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.4 bar"
-              },
-              {
-                "model": "B57T",
-                "orientation": "Horizontal",
-                "load": "2,000 kg",
-                "dimensions": "1,200 × 1,200 × 1,800 mm",
-                "temp": "1250°C to 1500°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.4 bar"
-              },
-              {
-                "model": "B59T700",
-                "orientation": "Horizontal",
-                "load": "20,000 kg",
-                "dimensions": "2,500 × 1,500 × 7,000 mm",
-                "temp": "1250°C to 1500°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.4 bar"
-              }
-            ],
-            "process": [
-              "Brazing",
-              "Annealing",
-              "Ageing",
-              "Sintering, MIM",
-              "Boriding",
-              "ALLCARB®",
-              "Carbonitriding",
-              "Stress relieving"
-            ],
-            "thermochemical": "ALLCARB®",
-            "options": [
-              "5×10⁻⁶ mbar",
-              "Low pressure carburizing ALLCARB®",
-              "Compliance with aerospace standards: AMS2750E, AMS2769...",
-              "Alternative insulations, including full graphite and full metal insulation",
-              "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets..."
-            ],
-            "url": "https://www.bmi-fours.com/products/vacuum-brazing-furnace/",
-            "k": "brazing assemblies high temperature b53t b54t b55t b56t b57t b59t700 allcarb",
-            "i": [
-              "aero",
-              "medical"
-            ],
-            "family": "High-temperature vacuum brazing furnace",
-            "config": "Horizontal & Vertical (Very Large Furnace)",
-            "benefits": [
-              "Cost-effective alternative to a quenching furnace",
-              "Productivity thanks to reduced cycle times",
-              "Reduced investment and operating costs",
-              "Very Large Furnace options",
-              "Titanium fuselage stress relieving"
-            ]
-          },
-          {
-            "id": "lab",
-            "photo": "bmi_white_workshop",
-            "photoAlt": "Compact vacuum furnace in the works",
-            "caption": "Furnace in the works",
-            "name": "Compact laboratory furnace",
-            "bmi_desc": "HIGH TEMPERATURE COMPACT VACUUM FURNACE (BMICRO) & BFIRST HIGH TEMPERATURE VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
-            "short": "Small vacuum furnace for R&D and process development.",
-            "desc": "A compact vacuum furnace for laboratories, universities and R&D departments, for developing and validating heat-treatment cycles before scaling up to production.",
-            "features": [
-              "Compact footprint",
-              "Vacuum heat treatment at laboratory scale",
-              "Process development and testing"
-            ],
-            "specs": [
-              [
-                "Configuration",
-                "Vertical & Horizontal compact designs"
-              ],
-              [
-                "Working zone",
-                "Ø 200 × 300 mm to 250 × 250 × 300 mm"
-              ],
-              [
-                "Load capacity",
-                "20 to 50 kg"
-              ],
-              [
-                "Maximum temperature",
-                "1250 °C to 1500 °C"
-              ],
-              [
-                "Vacuum level",
-                "5 × 10⁻² mbar"
-              ],
-              [
-                "Cooling pressure",
-                "5 bar abs"
-              ],
-              [
-                "Process",
-                "R&D, prototyping, laboratory heat treatment & brazing"
-              ],
-              [
-                "Applications",
-                "Universities, research centres, pilot lines, tool prototyping"
-              ]
-            ],
-            "models": [
-              {
-                "model": "BMICRO 20/30",
-                "orientation": "Vertical",
-                "load": "20 kg",
-                "dimensions": "Ø 200 × 300 mm",
-                "temp": "1250°C to 1500°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "BMICRO 30/45",
-                "orientation": "Vertical",
-                "load": "50 kg",
-                "dimensions": "Ø 300 × 450 mm",
-                "temp": "1250°C to 1500°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              },
-              {
-                "model": "BFIRST",
-                "orientation": "Horizontal",
-                "load": "20 kg",
-                "dimensions": "250 × 250 × 300 mm",
-                "temp": "1250°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "5 bar"
-              }
-            ],
-            "process": [
-              "Quenching, Gas Quenching, Hyperquenching",
-              "Brazing, Sintering",
-              "Tempering, Annealing, Bright Annealing",
-              "Ageing",
-              "Stress Relieving",
-              "Special Alloy Degassing",
-              "ALLCARB®",
-              "Carbonitriding"
-            ],
-            "thermochemical": "ALLCARB®",
-            "options": [
-              "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
-              "10 bar (BFIRST) / 12 bar (BMICRO)",
-              "Low pressure carburizing ALLCARB®",
-              "Compliance with aerospace standards: AMS2750E, AMS2769...",
-              "Alternative insulations, including full graphite and full metal insulation",
-              "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets..."
-            ],
-            "url": "https://www.bmi-fours.com/products/laboratory-furnace/",
-            "k": "lab r&d laboratory bmicro bmicro 20/30 bmicro 30/45 bfirst allcarb",
-            "i": [],
-            "family": "Compact vacuum furnace (BMICRO) & Entry-level vacuum furnace (BFIRST)",
-            "config": "Vertical (BMICRO) / Horizontal (BFIRST)",
-            "benefits": [
-              "Compact design",
-              "Reduced investment and operating costs allowing in-house heat treatment",
-              "Versatile furnace: large range of heat treatments available"
-            ]
-          }
+    {
+      "id": "bmi",
+      "strengths": [],
+      "photo": "bmi_line_installed",
+      "photoAlt": "Row of furnaces installed at a plant",
+      "gallery": [
+        [
+          "bmi_line_installed",
+          "Row of furnaces installed at a plant"
+        ],
+        [
+          "bmi_hot_zone",
+          "Hot zone straight on. Striking - good for a feature panel."
+        ],
+        [
+          "bmi_hall",
+          "Several furnaces in a hall"
+        ],
+        [
+          "bmi_early_furnace",
+          "Early BMI furnace, black and white. Good alongside Since 1947."
+        ],
+        [
+          "bmi_hot_zone_bw",
+          "Hot zone and door, black and white"
         ]
-      },
-      {
-        "id": "oil-quenching",
-        "photo": "bmi_workshops",
-        "photoAlt": "Several furnaces in the works",
-        "name": "Oil quenching furnaces",
-        "sub": "Horizontal and vertical",
-        "desc": "Vacuum furnaces with an integrated oil quench for steels that need a faster quench than gas can provide.",
-        "url": "https://www.bmi-fours.com/products/#oil-quenching",
-        "machines": [
-          {
-            "id": "oil-horizontal",
-            "photo": "bmi_horiz_02",
-            "photoAlt": "Horizontal furnace with pump set",
-            "caption": "Horizontal furnace with pump set",
-            "gallery": [
-              [
-                "bmi_horiz_02",
-                "Horizontal furnace with pump set"
-              ],
-              [
-                "bmi_workshops",
-                "Several furnaces in the works"
-              ]
-            ],
-            "tag": "Horizontal",
-            "name": "Vacuum oil quenching furnace, horizontal",
-            "bmi_desc": "OIL QUENCHING VACUUM FURNACE",
-            "short": "Vacuum heating with an integrated oil quench.",
-            "desc": "Horizontal vacuum furnace with an integrated oil quench tank, for steels and part sections that need a more severe quench than gas.",
-            "features": [
-              "Vacuum heating without oxidation",
-              "Integrated oil quench",
-              "Horizontal loading"
-            ],
-            "specs": [
-              [
-                "Configuration",
-                "Horizontal single-chamber & dual-chamber / PIT"
-              ],
-              [
-                "Working zone",
-                "450 × 400 × 600 mm to 900 × 900 × 1,200 mm"
-              ],
-              [
-                "Load capacity",
-                "200 to 1,200 kg"
-              ],
-              [
-                "Maximum temperature",
-                "1050 °C to 1250 °C"
-              ],
-              [
-                "Vacuum level",
-                "5 × 10⁻² mbar"
-              ],
-              [
-                "Cooling / Quench",
-                "Integrated oil quench (with optional 1.2 bar gas quench)"
-              ],
-              [
-                "Process",
-                "Vacuum oil quenching, case hardening, carburizing"
-              ],
-              [
-                "Applications",
-                "Transmission gears, shafts, high-alloy steel components"
-              ]
-            ],
-            "models": [
-              {
-                "model": "B53TH",
-                "orientation": "Horizontal (Single-chamber)",
-                "load": "200 kg",
-                "dimensions": "450 × 450 × 600 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "—"
-              },
-              {
-                "model": "B54TH",
-                "orientation": "Horizontal (Single-chamber)",
-                "load": "600 kg",
-                "dimensions": "600 × 500 × 900 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "—"
-              },
-              {
-                "model": "B55TH",
-                "orientation": "Horizontal (Single-chamber)",
-                "load": "1,000 kg",
-                "dimensions": "900 × 900 × 1,200 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "—"
-              },
-              {
-                "model": "B63TH",
-                "orientation": "Horizontal (Dual-chamber)",
-                "load": "200 kg",
-                "dimensions": "450 × 400 × 600 mm",
-                "temp": "1250°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "B64TH",
-                "orientation": "Horizontal (Dual-chamber)",
-                "load": "400 kg",
-                "dimensions": "600 × 500 × 900 mm",
-                "temp": "1250°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "B64TH Max",
-                "orientation": "Horizontal (Dual-chamber)",
-                "load": "800 kg",
-                "dimensions": "600 × 600 × 900 mm",
-                "temp": "1250°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "P164TH",
-                "orientation": "Horizontal (PIT Dual-chamber)",
-                "load": "800 kg",
-                "dimensions": "600 × 600 × 900 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "P165TH",
-                "orientation": "Horizontal (PIT Dual-chamber)",
-                "load": "1,200 kg",
-                "dimensions": "900 × 800 × 1,200 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              }
-            ],
-            "process": [
-              "Oil Quenching",
-              "ALLCARB® / Carbonitriding",
-              "Gas Quenching (6 bar)",
-              "Annealing / Tempering"
-            ],
-            "thermochemical": "ALLCARB®",
-            "options": [
-              "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
-              "Gas (6 bar)",
-              "Single-chamber economical furnace configuration",
-              "Dual-chamber furnace, versatile with oil quenching & gas quenching",
-              "PIT_dual-chamber oil quenching furnace for the heat treatment of large loads",
-              "Design and supply of peripheral equipment: loader, washing machines, oil temperature control, fixtures and baskets..."
-            ],
-            "url": "https://www.bmi-fours.com/products/oil-quenching-furnace/",
-            "k": "hardening oil b53th b54th b55th b63th b64th p164th p165th allcarb",
-            "i": [
-              "auto"
-            ],
-            "family": "Oil quenching vacuum furnace",
-            "config": "Horizontal — single-chamber economical furnace, dual-chamber versatile furnace with oil & gas quenching, & PIT dual-chamber for large loads",
-            "benefits": [
-              "Large range of furnaces suited to commercial heat treaters as well as to in-house productions",
-              "Reduced investment & operating costs",
-              "Benefits of vacuum vs atmosphere heat treatment: no intragranular corrosion",
-              "Quick & stable transfer to the oil bath",
-              "Oil bath parameters completely adjustable to suit the parts’ geometry & steel grade",
-              "Versatility & flexibility: large range of heat treatments available"
-            ]
-          },
-          {
-            "id": "oil-vertical",
-            "photo": "bmi_vert_portrait",
-            "photoAlt": "Vertical furnace (portrait)",
-            "caption": "Vertical furnace (portrait)",
-            "gallery": [
-              [
-                "bmi_vert_portrait",
-                "Vertical furnace (portrait)"
-              ],
-              [
-                "bmi_vert_tall",
-                "Tall vertical furnace"
-              ]
-            ],
-            "tag": "Vertical",
-            "name": "Vacuum oil quenching furnace, vertical",
-            "bmi_desc": "OIL QUENCHING VACUUM FURNACE",
-            "short": "For long parts quenched hanging.",
-            "desc": "Vertical vacuum oil quenching furnace for long parts that must be quenched hanging to limit distortion.",
-            "features": [
-              "Vertical loading",
-              "Integrated oil quench",
-              "Reduced distortion on long parts"
-            ],
-            "specs": [
-              [
-                "Configuration",
-                "Vertical dual-chamber (bottom / pit loading)"
-              ],
-              [
-                "Working zone",
-                "Ø 900 × 1,600 mm to Ø 1,500 × 3,000 mm"
-              ],
-              [
-                "Load capacity",
-                "1,200 to 2,000 kg"
-              ],
-              [
-                "Maximum temperature",
-                "1050 °C"
-              ],
-              [
-                "Vacuum level",
-                "5 × 10⁻² mbar"
-              ],
-              [
-                "Cooling pressure",
-                "0.9 bar abs (oil & gas quench)"
-              ],
-              [
-                "Process",
-                "Vertical oil quenching, hardening for long components"
-              ],
-              [
-                "Applications",
-                "Long shafts, broaches, landing gear components, extrusion screws"
-              ]
-            ],
-            "models": [
-              {
-                "model": "V64TH160",
-                "orientation": "Vertical (Dual-chamber)",
-                "load": "1,200 kg",
-                "dimensions": "Ø 900 × 1,600 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "0.9 bar"
-              },
-              {
-                "model": "V64TH200",
-                "orientation": "Vertical (Dual-chamber)",
-                "load": "1,500 kg",
-                "dimensions": "Ø 900 × 2,000 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "0.9 bar"
-              },
-              {
-                "model": "V66TH160",
-                "orientation": "Vertical (Dual-chamber)",
-                "load": "2,000 kg",
-                "dimensions": "Ø 1,500 × 1,600 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "0.9 bar"
-              },
-              {
-                "model": "V66TH300",
-                "orientation": "Vertical (Dual-chamber)",
-                "load": "2,000 kg",
-                "dimensions": "Ø 1,500 × 3,000 mm",
-                "temp": "1050°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "0.9 bar"
-              }
-            ],
-            "process": [
-              "Oil Quenching",
-              "ALLCARB® / Carbonitriding",
-              "Gas Quenching",
-              "Annealing / Tempering"
-            ],
-            "thermochemical": "ALLCARB®",
-            "options": [
-              "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
-              "Gas (0.9 bar)",
-              "Vertical dual-chamber furnace dedicated to mass production or long parts",
-              "Dedicated vertical hanging fixtures, pit loader, and oil management peripherals"
-            ],
-            "url": "https://www.bmi-fours.com/products/vertical-oil-quenching-furnace/",
-            "k": "hardening long parts oil v64th160 v64th200 v66th160 v66th300 allcarb",
-            "i": [
-              "auto"
-            ],
-            "family": "Oil quenching vacuum furnace",
-            "config": "Vertical — vertical dual-chamber furnace dedicated to mass production or long parts",
-            "benefits": [
-              "Large range of furnaces suited to commercial heat treaters as well as to in-house productions",
-              "Reduced investment & operating costs",
-              "Benefits of vacuum vs atmosphere heat treatment: no intragranular corrosion",
-              "Quick & stable transfer to the oil bath",
-              "Oil bath parameters completely adjustable to suit the parts’ geometry & steel grade",
-              "Versatility & flexibility: large range of heat treatments available"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "low-temperature",
-        "photo": "bmi_with_trolley",
-        "photoAlt": "Furnace with automatic loading trolley",
-        "name": "Low-temperature furnaces",
-        "sub": "Tempering and aluminium brazing",
-        "desc": "Vacuum furnaces for lower-temperature processes such as tempering after hardening and brazing aluminium assemblies.",
-        "url": "https://www.bmi-fours.com/products/#low-temperature",
-        "machines": [
-          {
-            "id": "tempering",
-            "photo": "bmi_horiz_door_open",
-            "photoAlt": "Horizontal furnace, door open",
-            "caption": "Horizontal furnace, door open",
-            "gallery": [
-              [
-                "bmi_horiz_door_open",
-                "Horizontal furnace, door open"
-              ],
-              [
-                "bmi_top_view",
-                "Furnace from above"
-              ]
-            ],
-            "name": "Vacuum tempering furnace",
-            "bmi_desc": "VACUUM PURGE TEMPERING FURNACE",
-            "short": "Tempering after hardening.",
-            "desc": "Vacuum tempering furnace for tempering hardened parts with clean surfaces and uniform temperature through the load.",
-            "features": [
-              "Vacuum or protective atmosphere",
-              "Uniform load temperature",
-              "Clean, bright surfaces"
-            ],
-            "specs": [
-              [
-                "Configuration",
-                "Horizontal front-loading"
-              ],
-              [
-                "Working zone",
-                "450 × 450 × 600 mm to 1,000 × 1,000 × 1,800 mm"
-              ],
-              [
-                "Load capacity",
-                "200 to 2,000 kg"
-              ],
-              [
-                "Maximum temperature",
-                "750 °C to 900 °C"
-              ],
-              [
-                "Vacuum level",
-                "5 × 10⁻² mbar"
-              ],
-              [
-                "Cooling pressure",
-                "1.2 bar abs"
-              ],
-              [
-                "Process",
-                "Vacuum purge tempering, stress relieving, ageing"
-              ],
-              [
-                "Applications",
-                "Tool steels, dies, aerospace structural components"
-              ]
-            ],
-            "models": [
-              {
-                "model": "B53R",
-                "orientation": "Horizontal",
-                "load": "200 kg",
-                "dimensions": "450 × 450 × 600 mm",
-                "temp": "750°C to 900°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "B54R",
-                "orientation": "Horizontal",
-                "load": "600 kg",
-                "dimensions": "600 × 600 × 900 mm",
-                "temp": "750°C to 900°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "B55R",
-                "orientation": "Horizontal",
-                "load": "1,000 kg",
-                "dimensions": "900 × 700 × 1,200 mm",
-                "temp": "750°C to 900°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "B56R",
-                "orientation": "Horizontal",
-                "load": "1,500 kg",
-                "dimensions": "1,000 × 1,000 × 1,500 mm",
-                "temp": "750°C to 900°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "B56R180",
-                "orientation": "Horizontal",
-                "load": "2,000 kg",
-                "dimensions": "1,000 × 1,000 × 1,800 mm",
-                "temp": "750°C to 900°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              }
-            ],
-            "process": [
-              "Tempering",
-              "(Magnetic) Annealing",
-              "Ageing",
-              "Stress Relieving",
-              "ALLNIT®",
-              "Nitrocarburizing",
-              "COOL PLUS"
-            ],
-            "thermochemical": "ALLNIT®, COOL PLUS",
-            "options": [
-              "Low pressure nitriding ALLNIT®",
-              "Sub-zero treatment COOL PLUS",
-              "Compliance with aerospace standards: AMS2750E, AMS2769...",
-              "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets…"
-            ],
-            "url": "https://www.bmi-fours.com/products/tempering-furnace/",
-            "k": "tempering b53r b54r b55r b56r b56r180 allnit cool plus",
-            "i": [
-              "tools",
-              "auto"
-            ],
-            "family": "Vacuum purge tempering furnace",
-            "config": "Horizontal — tempering and low temperature treatments",
-            "benefits": [
-              "Perfect temperature homogeneity",
-              "Compact design",
-              "Reduced cycle times",
-              "Reduced investment and operating costs",
-              "Higher profitability than a retort furnace"
-            ]
-          },
-          {
-            "id": "alu-brazing",
-            "photo": "bmi_white_trolley",
-            "photoAlt": "Furnace with loading trolley",
-            "caption": "Furnace with loading trolley",
-            "name": "Aluminium brazing vacuum furnace",
-            "bmi_desc": "VACUUM ALUMINIUM BRAZING FURNACE",
-            "short": "For heat exchangers and aluminium assemblies.",
-            "desc": "Vacuum furnace for fluxless brazing of aluminium assemblies such as heat exchangers.",
-            "features": [
-              "Fluxless aluminium brazing",
-              "Tight temperature uniformity"
-            ],
-            "specs": [
-              [
-                "Configuration",
-                "Horizontal front-loading"
-              ],
-              [
-                "Working zone",
-                "450 × 450 × 600 mm to 1,000 × 1,000 × 2,500 mm"
-              ],
-              [
-                "Load capacity",
-                "150 to 800 kg"
-              ],
-              [
-                "Maximum temperature",
-                "700 °C"
-              ],
-              [
-                "Vacuum level",
-                "5 × 10⁻² mbar"
-              ],
-              [
-                "Cooling pressure",
-                "1.2 bar abs"
-              ],
-              [
-                "Process",
-                "Fluxless aluminium vacuum brazing"
-              ],
-              [
-                "Applications",
-                "Automotive radiators, aircraft heat exchangers, cold plates"
-              ]
-            ],
-            "models": [
-              {
-                "model": "BA53",
-                "orientation": "Horizontal",
-                "load": "150 kg",
-                "dimensions": "450 × 450 × 600 mm",
-                "temp": "700°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "BA54",
-                "orientation": "Horizontal",
-                "load": "300 kg",
-                "dimensions": "600 × 600 × 900 mm",
-                "temp": "700°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "BA55",
-                "orientation": "Horizontal",
-                "load": "400 kg",
-                "dimensions": "900 × 900 × 1,200 mm",
-                "temp": "700°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "BA55-200",
-                "orientation": "Horizontal",
-                "load": "600 kg",
-                "dimensions": "900 × 900 × 2,000 mm",
-                "temp": "700°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              },
-              {
-                "model": "BA56-250",
-                "orientation": "Horizontal",
-                "load": "800 kg",
-                "dimensions": "1,000 × 1,000 × 2,500 mm",
-                "temp": "700°C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "1.2 bar"
-              }
-            ],
-            "process": [
-              "Annealing",
-              "Ageing",
-              "Stress relieving",
-              "Aluminium brazing",
-              "Special alloy degassing"
-            ],
-            "thermochemical": "Fluxless aluminium brazing",
-            "options": [
-              "Multi-zone temperature regulation with high-uniformity heating elements",
-              "Rapid cooling with inert gas at 1.2 bar abs",
-              "Design and supply of peripheral equipment: loader, water cooling system, fixtures and baskets..."
-            ],
-            "url": "https://www.bmi-fours.com/products/aluminum-brazing-furnace/",
-            "k": "heat exchanger brazing aluminium ba53 ba54 ba55 ba55-200 ba56-250",
-            "i": [
-              "auto",
-              "aero"
-            ],
-            "family": "Vacuum aluminium brazing furnace",
-            "config": "Horizontal",
-            "benefits": [
-              "Reliable and repeatable brazing results",
-              "Fully automated operation for optimal process control",
-              "Superior joint integrity and surface finish",
-              "No flux required, reducing contamination and post-process cleaning"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "thermochemical",
-        "photo": "bmi_cooling_unit",
-        "photoAlt": "Furnace with cooling unit",
-        "name": "Thermochemical treatment furnaces",
-        "sub": "Carburizing, nitriding and sub-zero",
-        "desc": "Furnaces and BMI's own processes for changing the surface chemistry of steel parts, such as carburizing and nitriding, plus sub-zero treatment.",
-        "url": "https://www.bmi-fours.com/products/#process",
-        "machines": [
-          {
-            "id": "allcarb",
-            "photo": "bmi_load_tray",
-            "photoAlt": "Load tray drawn out of the furnace",
-            "caption": "Load tray drawn out of the furnace",
-            "name": "ALLCARB® low-pressure carburizing",
-            "short": "Case hardening for gears and transmission parts.",
-            "desc": "BMI's ALLCARB® low-pressure carburizing process, run in its vacuum furnaces, case-hardens steel parts such as gears and transmission components without intergranular oxidation.",
-            "features": [
-              "Low-pressure (vacuum) carburizing",
-              "No intergranular oxidation",
-              "Can be combined with high-pressure gas quenching"
-            ],
-            "specs": [
-              [
-                "Process",
-                "Low-pressure carburizing (LPC)"
-              ],
-              [
-                "Atmosphere",
-                "Vacuum (10⁻⁴ to 10⁻⁶ mbar)"
-              ],
-              [
-                "Temperature",
-                "850–1050 °C"
-              ],
-              [
-                "Applications",
-                "Gears, transmission parts, tooling"
-              ]
-            ],
-            "process": [
-              "ALLCARB® low-pressure carburizing (LPC)",
-              "Case hardening of transmission gears, shafts and injectors",
-              "High-temperature carburizing (up to 1050 °C)",
-              "Carbonitriding"
-            ],
-            "url": "https://www.bmi-fours.com/products/low-pressure-carburizing/",
-            "k": "lpc carburizing gears case hardening",
-            "i": [
-              "auto"
-            ]
-          },
-          {
-            "id": "allnit",
-            "photo": "bmi_control_cabinets",
-            "photoAlt": "Furnace with its control cabinets",
-            "caption": "Furnace with its control cabinets",
-            "name": "ALLNIT® low-pressure nitriding",
-            "short": "Nitriding for wear and fatigue resistance.",
-            "desc": "BMI's ALLNIT® low-pressure nitriding process for improving wear and fatigue resistance of steel parts and tools.",
-            "features": [
-              "Low-pressure nitriding",
-              "Controlled nitrided layer"
-            ],
-            "specs": [
-              [
-                "Process",
-                "Low-pressure nitriding (LPC)"
-              ],
-              [
-                "Atmosphere",
-                "Vacuum (10⁻⁴ to 10⁻⁶ mbar)"
-              ],
-              [
-                "Temperature",
-                "500–580 °C"
-              ],
-              [
-                "Applications",
-                "Crankshafts, gears, hydraulic rods"
-              ]
-            ],
-            "process": [
-              "ALLNIT® low-pressure nitriding (LPN)",
-              "Low-pressure nitrocarburizing",
-              "Post-oxidation (CORSNIT)",
-              "Surface hardening of tooling and precision parts"
-            ],
-            "url": "https://www.bmi-fours.com/products/low-pressure-nitriding/",
-            "k": "nitriding",
-            "i": [
-              "auto",
-              "tools"
-            ]
-          },
-          {
-            "id": "plasma-nitriding",
-            "photo": "bmi_vert_tall",
-            "photoAlt": "Tall vertical furnace",
-            "caption": "Tall vertical furnace",
-            "name": "Plasma nitriding furnace",
-            "tag": "Vertical",
-            "bmi_desc": "PLASMA NITRIDING FURNACE",
-            "short": "Ion nitriding for tools, dies and engineering parts.",
-            "desc": "Plasma (ion) nitriding furnace for tools, dies and engineering components. Delivers precise case depth and surface hardness control with zero white layer or controlled compound layer for dies, moulds, automotive gearing, and precision tools.",
-            "features": [
-              "Plasma-assisted nitriding",
-              "Selective treatment possible"
-            ],
-            "specs": [
-              [
-                "Configuration",
-                "Vertical bottom-loading"
-              ],
-              [
-                "Load capacity",
-                "80 to 1,500 kg"
-              ],
-              [
-                "Useful volume",
-                "Ø 500 × 500 mm to Ø 1,050 × 1,500 mm"
-              ],
-              [
-                "Maximum temperature",
-                "600 °C"
-              ],
-              [
-                "Vacuum level",
-                "5 × 10⁻² mbar"
-              ],
-              [
-                "Gas pressure",
-                "0.9 bar abs"
-              ],
-              [
-                "Process",
-                "Plasma (ion) nitriding"
-              ],
-              [
-                "Applications",
-                "Forming dies, extrusion tools, gears, shafts, moulds"
-              ]
-            ],
-            "models": [
-              {
-                "model": "VI63",
-                "orientation": "Vertical",
-                "load": "80 kg",
-                "dimensions": "Ø 500 × 500 mm",
-                "temp": "600 °C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "0.9 bar"
-              },
-              {
-                "model": "VI64",
-                "orientation": "Vertical",
-                "load": "400 kg",
-                "dimensions": "Ø 600 × 1,000 mm",
-                "temp": "600 °C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "0.9 bar"
-              },
-              {
-                "model": "VI65",
-                "orientation": "Vertical",
-                "load": "1,500 kg",
-                "dimensions": "Ø 850 × 1,500 mm",
-                "temp": "600 °C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "0.9 bar"
-              },
-              {
-                "model": "VI66",
-                "orientation": "Vertical",
-                "load": "1,500 kg",
-                "dimensions": "Ø 1,050 × 1,500 mm",
-                "temp": "600 °C",
-                "vacuum": "5×10⁻² mbar",
-                "pressure": "0.9 bar"
-              }
-            ],
-            "spec_url": "https://www.bmi-fours.com/products/plasma-nitriding-furnace/",
-            "process": [
-              "Plasma nitriding / Ion nitriding",
-              "Plasma nitrocarburizing",
-              "Plasma post-oxidation",
-              "Selective surface hardening"
-            ],
-            "thermochemical": "Plasma nitriding / Ion nitriding",
-            "options": [
-              "Second sole",
-              "Auxiliary heating & optical pyrometry temperature control",
-              "Automated gas mixing and pulse plasma generator control"
-            ],
-            "url": "https://www.bmi-fours.com/products/plasma-nitriding-furnace/",
-            "k": "ion nitriding dies moulds plasma vi63 vi64 vi65 vi66",
-            "i": [
-              "tools",
-              "auto"
-            ],
-            "family": "Plasma nitriding furnace",
-            "config": "Vertical",
-            "benefits": [
-              "Cold-wall design for excellent thermal control",
-              "Ideal for complex or sensitive parts requiring localized hardening",
-              "Fully automated operation for cycle consistency and reproducibility",
-              "Clean process, free from ammonia emissions",
-              "Good alternative to low-pressure nitriding (ALLNIT®) for certain industrial requirements"
-            ]
-          },
-          {
-            "id": "cool-plus",
-            "photo": "bmi_cooling_unit",
-            "photoAlt": "Furnace with cooling unit",
-            "caption": "Furnace with cooling unit",
-            "name": "COOL PLUS sub-zero treatment furnace",
-            "short": "Cryogenic treatment of hardened steels.",
-            "desc": "The COOL PLUS vacuum furnace performs sub-zero cryogenic treatment, stabilising hardened steels by converting retained austenite.",
-            "features": [
-              "Sub-zero cryogenic treatment",
-              "Dimensional stabilisation"
-            ],
-            "process": [
-              "Deep cryogenic treatment",
-              "Retained austenite transformation",
-              "Dimensional stabilisation of gauges, bearings and tooling",
-              "Wear resistance enhancement"
-            ],
-            "url": "https://www.bmi-fours.com/products/sub-zero/",
-            "k": "cryogenic deep cryo sub-zero",
-            "i": [
-              "tools",
-              "aero"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "novatec",
-    "photo": "nov_plt1400_overview",
-    "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
-    "gallery": [
-      [
-        "nov_plt1400_overview",
-        "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line"
       ],
-      [
-        "nov_2crd400",
-        "2CRD-400 one-chamber precision vacuum cleaning system"
-      ],
-      [
-        "nov_med_fcps1",
-        "FCS / FCPS final cleaning and passivation cleanroom line"
-      ],
-      [
-        "nov_hq",
-        "Novatec S.r.l. headquarters, San Martino di Lupari (Padova), Italy"
-      ],
-      [
-        "nov_2crd800_saw1",
-        "2CRD-800 loaded with circular saw blades"
-      ]
-    ],
-    "name": "Novatec",
-    "full": "Novatec S.r.l., San Martino di Lupari (Padova)",
-    "country": "Italy",
-    "site": "https://novatec.it/en",
-    "intro": "Industrial ultrasonic cleaning systems engineered, built and tested in Italy since 1993.",
-    "strengths": [
-      "Customised solutions built to each customer's specification.",
-      "Ultrasonic technology and automation produced in house in Italy, not bought in.",
-      "Long-term stability.",
-      "Price to performance ratio."
-    ],
-    "cats": [
-      {
-        "id": "pluritank",
-        "family": "PLURITANK",
-        "photo": "nov_plt1400_overview",
-        "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
-        "name": "PLURITANK Multi-chamber ultrasonic",
-        "sub": "Modular lines up to 14 process stations",
-        "desc": "Modular multi-tank ultrasonic cleaning lines configured from separate process modules — ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying. Up to 14 process stations with automatic basket handling from 10 kg to 300 kg and above.",
-        "url": "https://novatec.it/en/multi-chamber-ultrasonic-cleaning",
-        "machines": [
-          {
-            "id": "pluritank-line",
-            "lineLayout": {
-              "title": "PLURITANK 1400 — Multi-Stage Process Line Layout",
-              "reference": "Novatec GA drawing 5298.3.0-26CO",
-              "dimensions": [
+      "name": "BMI",
+      "full": "Fours Industriels B.M.I.",
+      "country": "France",
+      "site": "https://www.bmi-fours.com",
+      "intro": "French designer & manufacturer since 1947 and specialist in vacuum for more than 50 years. Vacuum furnaces for hardening, brazing, tempering and thermochemical treatment, designed and built in France.",
+      "cats": [
+        {
+          "id": "gas-quenching",
+          "applications": [],
+          "photo": "bmi_horiz_workshop",
+          "photoAlt": "Horizontal vacuum furnace in the works",
+          "name": "Gas quenching furnaces",
+          "sub": "Hardening, brazing and laboratory furnaces",
+          "desc": "Vacuum furnaces that heat parts without oxidation and then cool them with high-pressure gas. BMI's patented rotating gas-flow system gives uniform quenching even on dense or complex loads.",
+          "url": "https://www.bmi-fours.com/products/#gas-quenching",
+          "machines": [
+            {
+              "id": "brazing",
+              "features": [
+                "Oxide-free brazing under vacuum",
+                "Controlled heating and cooling",
+                "Suited to nickel and other brazing alloys"
+              ],
+              "specs": [
                 [
-                  "Internal tank",
-                  "700 × 1200 × 1650 h mm (approx. 1386 litres)"
+                  "Configuration",
+                  "Horizontal front-loading"
                 ],
                 [
-                  "External basket",
-                  "540 × 1090 × 1540 h mm"
+                  "Working zone",
+                  "450 × 450 × 600 mm to 2,500 × 1,500 × 7,000 mm"
                 ],
                 [
-                  "Line footprint",
-                  "19500 × 7000 mm"
+                  "Load capacity",
+                  "200 to 20,000 kg"
                 ],
                 [
-                  "Width options",
-                  "Supplied in two overall widths. The tank size is the same in both."
+                  "Maximum temperature",
+                  "1250 °C to 1500 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "5 × 10⁻² mbar"
+                ],
+                [
+                  "Cooling pressure",
+                  "1.4 bar abs"
+                ],
+                [
+                  "Process",
+                  "High-temperature vacuum brazing & degassing"
+                ],
+                [
+                  "Applications",
+                  "Aerospace assemblies, heat exchangers, turbine parts, medical devices"
                 ]
               ],
-              "stations": [
+              "i": [
+                "aero",
+                "medical"
+              ],
+              "photo": "bmi_large_assembly",
+              "photoAlt": "Large furnace being assembled",
+              "caption": "Large furnace being assembled",
+              "gallery": [
+                [
+                  "bmi_large_assembly",
+                  "Large furnace being assembled"
+                ],
+                [
+                  "bmi_horiz_01",
+                  "Horizontal furnace, door closed"
+                ],
+                [
+                  "bmi_long_horiz",
+                  "Long horizontal furnace"
+                ],
+                [
+                  "bmi_brazing",
+                  "Furnace with loading trolley"
+                ]
+              ],
+              "name": "Vacuum brazing furnace",
+              "bmi_desc": "HIGH TEMPERATURE VACUUM BRAZING FURNACE",
+              "short": "Oxide-free brazing of assemblies.",
+              "desc": "Vacuum furnace for brazing assemblies in a clean, oxide-free atmosphere, used widely in aerospace and for high-value components where joint quality matters.",
+              "models": [
                 {
-                  "pos": "C",
-                  "station": "Motorised loading conveyor",
-                  "notes": "Infeed load station"
+                  "model": "B53T",
+                  "orientation": "Horizontal",
+                  "load": "200 kg",
+                  "dimensions": "450 × 450 × 600 mm",
+                  "temp": "1250°C to 1500°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.4 bar"
                 },
                 {
-                  "pos": "1",
-                  "station": "Ultrasonic cleaning tank with basket agitation",
-                  "notes": "Primary ultrasonic wash"
+                  "model": "B54T",
+                  "orientation": "Horizontal",
+                  "load": "600 kg",
+                  "dimensions": "600 × 600 × 900 mm",
+                  "temp": "1250°C to 1500°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.4 bar"
                 },
                 {
-                  "pos": "2",
-                  "station": "Rinsing tank with turbulent flow",
-                  "notes": "Turbulent flow rinse"
+                  "model": "B55T",
+                  "orientation": "Horizontal",
+                  "load": "1,000 kg",
+                  "dimensions": "900 × 700 × 1,200 mm",
+                  "temp": "1250°C to 1500°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.4 bar"
                 },
                 {
-                  "pos": "3",
-                  "station": "Ultrasonic cleaning tank with basket agitation",
-                  "notes": "Secondary ultrasonic wash"
+                  "model": "B56T",
+                  "orientation": "Horizontal",
+                  "load": "1,500 kg",
+                  "dimensions": "1,000 × 1,000 × 1,500 mm",
+                  "temp": "1250°C to 1500°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.4 bar"
                 },
                 {
-                  "pos": "4",
-                  "station": "Rinsing tank with turbulent flow",
-                  "notes": "Intermediate cascade rinse"
+                  "model": "B57T",
+                  "orientation": "Horizontal",
+                  "load": "2,000 kg",
+                  "dimensions": "1,200 × 1,200 × 1,800 mm",
+                  "temp": "1250°C to 1500°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.4 bar"
                 },
                 {
-                  "pos": "5",
-                  "station": "Ultrasonic cleaning tank with basket agitation",
-                  "notes": "Final precision ultrasonic wash"
-                },
-                {
-                  "pos": "6",
-                  "station": "Rinsing tank with turbulent flow",
-                  "notes": "Cascade flow rinse"
-                },
-                {
-                  "pos": "7",
-                  "station": "DI water ultrasonic rinsing tank",
-                  "notes": "Demineralised ultrasonic rinse"
-                },
-                {
-                  "pos": "8 – 9",
-                  "station": "DI water rinsing tank with slow drain system",
-                  "notes": "Cascades back to tank 7"
-                },
-                {
-                  "pos": "10 – 14",
-                  "station": "Hot air tunnel dryer",
-                  "notes": "5 drying positions"
-                },
-                {
-                  "pos": "S",
-                  "station": "Motorised unloading conveyor",
-                  "notes": "Outfeed unload station"
+                  "model": "B59T700",
+                  "orientation": "Horizontal",
+                  "load": "20,000 kg",
+                  "dimensions": "2,500 × 1,500 × 7,000 mm",
+                  "temp": "1250°C to 1500°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.4 bar"
                 }
               ],
-              "ancillary": [
-                "General control board",
-                "WT1 buffer tank, filter holder and pump",
-                "Two pump and filter groups",
-                "DEMI 100/4 demineralised water plant",
-                "Exhaust fan",
-                "CS1 loading and unloading operators zone"
+              "process": [
+                "Brazing",
+                "Annealing",
+                "Ageing",
+                "Sintering, MIM",
+                "Boriding",
+                "ALLCARB®",
+                "Carbonitriding",
+                "Stress relieving"
+              ],
+              "thermochemical": "ALLCARB®",
+              "options": [
+                "5×10⁻⁶ mbar",
+                "Low pressure carburizing ALLCARB®",
+                "Compliance with aerospace standards: AMS2750E, AMS2769...",
+                "Alternative insulations, including full graphite and full metal insulation",
+                "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets..."
+              ],
+              "url": "https://www.bmi-fours.com/products/vacuum-brazing-furnace/",
+              "k": "brazing assemblies high temperature b53t b54t b55t b56t b57t b59t700 allcarb",
+              "family": "High-temperature vacuum brazing furnace",
+              "config": "Horizontal & Vertical (Very Large Furnace)",
+              "benefits": [
+                "Cost-effective alternative to a quenching furnace",
+                "Productivity thanks to reduced cycle times",
+                "Reduced investment and operating costs",
+                "Very Large Furnace options",
+                "Titanium fuselage stress relieving"
               ]
             },
-            "photo": "nov_plt1400_overview",
-            "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
-            "gallery": [
-              [
-                "nov_plt1400_overview",
-                "PLURITANK 1400 complete line from above"
+            {
+              "id": "vse8t",
+              "features": [
+                "Vertical bottom loading",
+                "Gas quenching at 5 to 12 bar abs",
+                "Patented rotating volute for uniform cooling",
+                "GRAPHTIL® man-machine interface",
+                "Graphite, molybdenum or fibre hot zones"
               ],
-              [
-                "nov_plt1400_loading",
-                "PLURITANK 1400 line with motorised loading conveyor"
+              "specs": [
+                [
+                  "Working zone",
+                  "Ø 600 × h 600 mm to Ø 1800 × h 1800 mm"
+                ],
+                [
+                  "Load capacity",
+                  "200 to 3000 kg"
+                ],
+                [
+                  "Maximum temperature",
+                  "1250 °C, 1350 °C or 1500 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "10⁻² mbar, 10⁻⁵ mbar or 10⁻⁶ mbar"
+                ],
+                [
+                  "Quench pressure",
+                  "5 to 12 bar abs"
+                ],
+                [
+                  "Control",
+                  "GRAPHTIL® man-machine interface"
+                ]
               ],
-              [
-                "nov_plt_gantry",
-                "Inside the line - transport gantry over the tanks"
+              "i": [
+                "aero",
+                "auto"
               ],
-              [
-                "nov_plt_tanks",
-                "Tank row with basket agitation"
+              "photo": "bmi_vert_assembly",
+              "photoAlt": "BMI vertical vacuum furnace under assembly",
+              "caption": "Vertical furnace under assembly",
+              "gallery": [
+                [
+                  "bmi_vert_assembly",
+                  "Vertical furnace under assembly"
+                ],
+                [
+                  "bmi_vert_white",
+                  "Vertical furnace, white"
+                ],
+                [
+                  "bmi_vert_orange",
+                  "Vertical furnace, orange"
+                ],
+                [
+                  "vse8t",
+                  "BMI vertical vacuum furnace"
+                ]
               ],
-              [
-                "nov_plt_panel",
-                "Line with main electrical control cabinet"
+              "name": "VSE8_T vacuum gas quenching furnace",
+              "tag": "Vertical",
+              "bmi_desc": "HIGH TEMPERATURE VERTICAL VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
+              "short": "Bottom-loading furnace for tall or delicate parts.",
+              "desc": "The VSE8_T is BMI's bottom-loading vertical vacuum gas quenching furnace. Loading from below suits long, tall or delicate components that must be treated standing or hanging to limit distortion. It shares the B8_T's high-pressure gas quenching and patented rotating volute.",
+              "models": [
+                {
+                  "model": "VSE83T",
+                  "orientation": "Vertical",
+                  "load": "300 kg",
+                  "dimensions": "Ø 600 × 600 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "VSE84T",
+                  "orientation": "Vertical",
+                  "load": "800 kg",
+                  "dimensions": "Ø 900 × 900 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "VSE84T120",
+                  "orientation": "Vertical",
+                  "load": "1,000 kg",
+                  "dimensions": "Ø 900 × 1,200 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "VSE84T150",
+                  "orientation": "Vertical",
+                  "load": "1,200 kg",
+                  "dimensions": "Ø 900 × 1,500 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "VSE85T",
+                  "orientation": "Vertical",
+                  "load": "1,300 kg",
+                  "dimensions": "Ø 1,200 × 1,200 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "VSE85T150",
+                  "orientation": "Vertical",
+                  "load": "1,800 kg",
+                  "dimensions": "Ø 1,200 × 1,500 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "VSE86T",
+                  "orientation": "Vertical",
+                  "load": "2,000 kg",
+                  "dimensions": "Ø 1,500 × 1,500 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "VSE86T200",
+                  "orientation": "Vertical",
+                  "load": "3,000 kg",
+                  "dimensions": "Ø 1,500 × 2,000 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                }
               ],
-              [
-                "nov_plt_fume",
-                "Line with overhead fume extraction"
+              "process": [
+                "Quenching, hyperquenching",
+                "Brazing, Sintering",
+                "Tempering, Annealing",
+                "Ageing",
+                "Stress Relieving",
+                "ALLCARB®",
+                "Carbonitriding"
               ],
-              [
-                "nov_plt_dryer",
-                "Line with dryer and DI water plant"
+              "thermochemical": "ALLCARB®",
+              "options": [
+                "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
+                "12 bar",
+                "Low pressure carburizing ALLCARB®",
+                "Compliance with aerospace standards: AMS2750E, AMS2769...",
+                "Alternative insulations, including full graphite and full metal insulation",
+                "Reversible cooling (top-to-bottom / bottom-to-top)",
+                "«In pit» design with carousel loader/unloader",
+                "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets..."
               ],
-              [
-                "nov_plt_tank_detail",
-                "Single tank and basket, close up"
+              "url": "https://www.bmi-fours.com/products/vacuum-hardening-furnace/",
+              "k": "vacuum hardening long parts shafts vse83t vse84t vse84t120 vse84t150 vse85t vse85t150 vse86t vse86t200 allcarb",
+              "family": "Vacuum hardening & gas quenching — vertical",
+              "config": "Vertical",
+              "benefits": [
+                "Treatment of massive loads and/or elongated parts",
+                "Perfect quenching uniformity and low distortion",
+                "Versatile furnace: large range of heat treatments available"
               ]
-            ],
-            "name": "PLURITANK ultrasonic cleaning line",
-            "short": "Serial and large-format parts, up to 14 process stations.",
-            "desc": "PLURITANK is Novatec's modular multi-chamber ultrasonic cleaning line. Process stations for ultrasonic cleaning, rinsing and drying are combined to suit the part, the contamination and the required cleanliness, with up to 14 process stations per line.",
-            "features": [
-              "Modular, up to 14 process stations, with room for future hardware and software upgrades",
-              "Configurable tank capacity from 50 to 1,500 litres",
-              "Multi-frequency ultrasonic groups",
-              "User-friendly HMI with multiple programs",
-              "Data exchange and traceability",
-              "AISI 304/316 stainless construction",
-              "Factory acceptance test with your sample parts"
-            ],
-            "specs": [
-              [
-                "Configuration",
-                "Configurable modular multi-tank ultrasonic cleaning line"
+            },
+            {
+              "id": "b8t",
+              "features": [
+                "Horizontal front loading",
+                "Gas quenching at 5 to 12 bar abs",
+                "Patented rotating volute for uniform cooling",
+                "GRAPHTIL® man-machine interface",
+                "Graphite, molybdenum or fibre hot zones"
               ],
-              [
-                "Tank volume range",
-                "50 to 1,500 litres per tank (built to order based on part size)"
+              "specs": [
+                [
+                  "Working zone",
+                  "450 × 450 × 600 mm to 1000 × 1000 × 1500 mm"
+                ],
+                [
+                  "Load capacity",
+                  "200 to 4000 kg"
+                ],
+                [
+                  "Maximum temperature",
+                  "1250 °C to 1600 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "10⁻² mbar, 10⁻⁵ mbar or 10⁻⁶ mbar"
+                ],
+                [
+                  "Quench pressure",
+                  "5 to 12 bar abs"
+                ],
+                [
+                  "Hot zone",
+                  "Graphite, molybdenum or fibre/wool combinations"
+                ],
+                [
+                  "Control",
+                  "GRAPHTIL® man-machine interface"
+                ]
               ],
-              [
-                "Process stations",
-                "Up to 14 process stations per line"
+              "i": [
+                "tools",
+                "auto",
+                "aero"
               ],
-              [
-                "Ultrasonic technology",
-                "Multi-frequency ultrasonic groups (in-house Italian design & manufacture)"
+              "photo": "b8t",
+              "photoAlt": "BMI horizontal vacuum gas quenching furnace with door open",
+              "caption": "BMI horizontal vacuum gas quenching furnace (door open, hot zone visible)",
+              "gallery": [
+                [
+                  "b8t",
+                  "Door open, hot zone visible"
+                ],
+                [
+                  "bmi_load_tray",
+                  "Load tray drawn out of the furnace"
+                ],
+                [
+                  "bmi_hot_zone",
+                  "Hot zone straight on. Striking - good for a feature panel."
+                ],
+                [
+                  "b8t",
+                  "BMI horizontal vacuum gas quenching furnace"
+                ]
               ],
-              [
-                "Available process stages",
-                "Ultrasonic immersion, spray wash, multi-stage cascade DI water rinsing, passivation, hot air & vacuum drying"
+              "name": "B8_T vacuum gas quenching furnace",
+              "tag": "Horizontal",
+              "bmi_desc": "HIGH TEMPERATURE VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
+              "short": "Front-loading furnace for high-throughput production.",
+              "desc": "The B8_T is BMI's horizontal-loading vacuum gas quenching furnace, built for high-throughput production. Parts are heated under vacuum and quenched with gas at 5 to 12 bar, with BMI's patented rotating volute keeping gas flow even through the whole load. It is fully automated for precise, repeatable cycles with clean surfaces and minimal distortion.",
+              "models": [
+                {
+                  "model": "B83T",
+                  "orientation": "Horizontal",
+                  "load": "200 kg",
+                  "dimensions": "450 × 450 × 600 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "B84T",
+                  "orientation": "Horizontal",
+                  "load": "600 kg",
+                  "dimensions": "600 × 600 × 900 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "B85T",
+                  "orientation": "Horizontal",
+                  "load": "1,000 kg",
+                  "dimensions": "900 × 700 × 1,200 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "B86T",
+                  "orientation": "Horizontal",
+                  "load": "2,000 kg",
+                  "dimensions": "1,000 × 1,000 × 1,500 mm",
+                  "temp": "1250°C to 1600°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                }
               ],
-              [
-                "Basket load capacity",
-                "10 kg to 300+ kg per basket with automatic robot transporter"
+              "process": [
+                "Quenching, hyperquenching",
+                "Brazing, Sintering",
+                "Tempering, Annealing",
+                "Ageing",
+                "Stress Relieving",
+                "ALLCARB®",
+                "Carbonitriding"
               ],
-              [
-                "Material construction",
-                "AISI 304 / AISI 316 stainless steel throughout"
+              "thermochemical": "ALLCARB®",
+              "options": [
+                "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
+                "12 bar",
+                "Low pressure carburizing ALLCARB®",
+                "Compliance with aerospace standards: AMS2750E, AMS2769...",
+                "Alternative insulations, including full graphite and full metal insulation",
+                "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets..."
               ],
-              [
-                "Control system",
-                "Siemens PLC with touchscreen HMI, multi-program recipe management & data traceability"
+              "url": "https://www.bmi-fours.com/products/vacuum-hardening-furnace/",
+              "k": "vacuum hardening quench tool steel dies b83t b84t b85t b86t allcarb",
+              "family": "Vacuum hardening & gas quenching — horizontal",
+              "config": "Horizontal",
+              "benefits": [
+                "Rotating flow cooling",
+                "Perfect Quenching uniformity",
+                "Versatile furnace: large range of heat treatments available"
               ]
-            ],
-            "process": [
-              "Ultrasonic immersion cleaning",
-              "Cascade DI water rinsing",
-              "Passivation and corrosion protection",
-              "Hot air and vacuum drying"
-            ],
-            "url": "https://novatec.it/en/multi-chamber-ultrasonic-cleaning",
-            "k": "ultrasonic cleaning washing rinsing drying pluritank pvd pre-treatment sterilisation",
-            "i": [
-              "auto",
-              "medical",
-              "optics",
-              "watch",
-              "semi",
-              "tools"
-            ],
-            "family": "PLURITANK",
-            "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Configurable tank volume from 50 to 1,500 litres with up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
-            "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
-          },
-          {
-            "id": "pre-pvd",
-            "photo": "nov_plt_studio",
-            "photoAlt": "Novatec PLURITANK pre-treatment line for PVD coating",
-            "caption": "Novatec PLURITANK pre-treatment line for PVD coating",
-            "gallery": [
-              [
-                "nov_plt_studio",
-                "Novatec PLURITANK pre-treatment line for PVD coating"
+            },
+            {
+              "id": "lab",
+              "features": [
+                "Compact footprint",
+                "Vacuum heat treatment at laboratory scale",
+                "Process development and testing"
               ],
-              [
-                "nov_plt_guarded",
-                "PLURITANK line with safety guarding"
+              "specs": [
+                [
+                  "Configuration",
+                  "Vertical & Horizontal compact designs"
+                ],
+                [
+                  "Working zone",
+                  "Ø 200 × 300 mm to 250 × 250 × 300 mm"
+                ],
+                [
+                  "Load capacity",
+                  "20 to 50 kg"
+                ],
+                [
+                  "Maximum temperature",
+                  "1250 °C to 1500 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "5 × 10⁻² mbar"
+                ],
+                [
+                  "Cooling pressure",
+                  "5 bar abs"
+                ],
+                [
+                  "Process",
+                  "R&D, prototyping, laboratory heat treatment & brazing"
+                ],
+                [
+                  "Applications",
+                  "Universities, research centres, pilot lines, tool prototyping"
+                ]
               ],
-              [
-                "nov_plt_gantry",
-                "Transport gantry over the tanks"
+              "i": [],
+              "photo": "bmi_white_workshop",
+              "photoAlt": "Compact vacuum furnace in the works",
+              "caption": "Furnace in the works",
+              "name": "Compact laboratory furnace",
+              "bmi_desc": "HIGH TEMPERATURE COMPACT VACUUM FURNACE (BMICRO) & BFIRST HIGH TEMPERATURE VACUUM FURNACE – Vacuum Hardening & Gas Quenching Furnaces",
+              "short": "Small vacuum furnace for R&D and process development.",
+              "desc": "A compact vacuum furnace for laboratories, universities and R&D departments, for developing and validating heat-treatment cycles before scaling up to production.",
+              "models": [
+                {
+                  "model": "BMICRO 20/30",
+                  "orientation": "Vertical",
+                  "load": "20 kg",
+                  "dimensions": "Ø 200 × 300 mm",
+                  "temp": "1250°C to 1500°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "BMICRO 30/45",
+                  "orientation": "Vertical",
+                  "load": "50 kg",
+                  "dimensions": "Ø 300 × 450 mm",
+                  "temp": "1250°C to 1500°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                },
+                {
+                  "model": "BFIRST",
+                  "orientation": "Horizontal",
+                  "load": "20 kg",
+                  "dimensions": "250 × 250 × 300 mm",
+                  "temp": "1250°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "5 bar"
+                }
+              ],
+              "process": [
+                "Quenching, Gas Quenching, Hyperquenching",
+                "Brazing, Sintering",
+                "Tempering, Annealing, Bright Annealing",
+                "Ageing",
+                "Stress Relieving",
+                "Special Alloy Degassing",
+                "ALLCARB®",
+                "Carbonitriding"
+              ],
+              "thermochemical": "ALLCARB®",
+              "options": [
+                "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
+                "10 bar (BFIRST) / 12 bar (BMICRO)",
+                "Low pressure carburizing ALLCARB®",
+                "Compliance with aerospace standards: AMS2750E, AMS2769...",
+                "Alternative insulations, including full graphite and full metal insulation",
+                "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets..."
+              ],
+              "url": "https://www.bmi-fours.com/products/laboratory-furnace/",
+              "k": "lab r&d laboratory bmicro bmicro 20/30 bmicro 30/45 bfirst allcarb",
+              "family": "Compact vacuum furnace (BMICRO) & Entry-level vacuum furnace (BFIRST)",
+              "config": "Vertical (BMICRO) / Horizontal (BFIRST)",
+              "benefits": [
+                "Compact design",
+                "Reduced investment and operating costs allowing in-house heat treatment",
+                "Versatile furnace: large range of heat treatments available"
               ]
-            ],
-            "name": "PLURITANK pre-treatment line for PVD coating",
-            "short": "Surface preparation before PVD, CVD and DLC.",
-            "desc": "A PLURITANK line configured to prepare tools and components for coating. Ultrasonic cleaning followed by rinsing and drying removes residues so the coating bonds reliably, batch after batch.",
-            "features": [
-              "Reproducible pre-coating cleanliness",
-              "Rinsing and drying cycles",
-              "Matched to coating plant capacity"
-            ],
-            "process": [
-              "Pre-PVD cleaning",
-              "Pre-CVD cleaning",
-              "Pre-DLC cleaning",
-              "Tool surface preparation"
-            ],
-            "url": "https://novatec.it/en/multi-chamber-ultrasonic-cleaning",
-            "k": "pvd pre-treatment coating cleaning pluritank tools inserts",
-            "i": [
-              "tools"
-            ],
-            "configNote": "Each PLURITANK line is built to the tank volume the job requires. The number in the PLURITANK name (50, 65, 80, 110, 140, 210, 1400, 1500 …) is the tank volume in litres — not a catalogue model number. Novatec do not publish a fixed model list; instead they configure the line from 50 to 1,500 litres per tank, with up to 14 process stations, to match the part size, basket weight and throughput. Contact Greets for a technical proposal tailored to your application.",
-            "family": "PLURITANK",
-            "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
-            "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
-          },
-          {
-            "id": "cleanroom",
-            "photo": "nov_plt_clean_01",
-            "photoAlt": "Novatec cleaning line for cleanroom use",
-            "caption": "Novatec cleaning line for cleanroom use",
-            "gallery": [
-              [
-                "nov_plt_clean_01",
-                "Novatec cleaning line for cleanroom use"
+            }
+          ]
+        },
+        {
+          "id": "oil-quenching",
+          "applications": [],
+          "photo": "bmi_workshops",
+          "photoAlt": "Several furnaces in the works",
+          "name": "Oil quenching furnaces",
+          "sub": "Horizontal and vertical",
+          "desc": "Vacuum furnaces with an integrated oil quench for steels that need a faster quench than gas can provide.",
+          "url": "https://www.bmi-fours.com/products/#oil-quenching",
+          "machines": [
+            {
+              "id": "oil-horizontal",
+              "features": [
+                "Vacuum heating without oxidation",
+                "Integrated oil quench",
+                "Horizontal loading"
               ],
-              [
-                "nov_plt_clean_02",
-                "Cleanroom line, opposite angle"
+              "specs": [
+                [
+                  "Configuration",
+                  "Horizontal single-chamber & dual-chamber / PIT"
+                ],
+                [
+                  "Working zone",
+                  "450 × 400 × 600 mm to 900 × 900 × 1,200 mm"
+                ],
+                [
+                  "Load capacity",
+                  "200 to 1,200 kg"
+                ],
+                [
+                  "Maximum temperature",
+                  "1050 °C to 1250 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "5 × 10⁻² mbar"
+                ],
+                [
+                  "Cooling / Quench",
+                  "Integrated oil quench (with optional 1.2 bar gas quench)"
+                ],
+                [
+                  "Process",
+                  "Vacuum oil quenching, case hardening, carburizing"
+                ],
+                [
+                  "Applications",
+                  "Transmission gears, shafts, high-alloy steel components"
+                ]
               ],
-              [
-                "nov_plt_clean_03",
-                "Line in a white cleanroom, operator in shot"
+              "i": [
+                "auto"
               ],
-              [
-                "nov_plt_enclosed",
-                "Fully enclosed line with gantry"
+              "photo": "bmi_horiz_02",
+              "photoAlt": "Horizontal furnace with pump set",
+              "caption": "Horizontal furnace with pump set",
+              "gallery": [
+                [
+                  "bmi_horiz_02",
+                  "Horizontal furnace with pump set"
+                ],
+                [
+                  "bmi_workshops",
+                  "Several furnaces in the works"
+                ]
+              ],
+              "tag": "Horizontal",
+              "name": "Vacuum oil quenching furnace, horizontal",
+              "bmi_desc": "OIL QUENCHING VACUUM FURNACE",
+              "short": "Vacuum heating with an integrated oil quench.",
+              "desc": "Horizontal vacuum furnace with an integrated oil quench tank, for steels and part sections that need a more severe quench than gas.",
+              "models": [
+                {
+                  "model": "B53TH",
+                  "orientation": "Horizontal (Single-chamber)",
+                  "load": "200 kg",
+                  "dimensions": "450 × 450 × 600 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "—"
+                },
+                {
+                  "model": "B54TH",
+                  "orientation": "Horizontal (Single-chamber)",
+                  "load": "600 kg",
+                  "dimensions": "600 × 500 × 900 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "—"
+                },
+                {
+                  "model": "B55TH",
+                  "orientation": "Horizontal (Single-chamber)",
+                  "load": "1,000 kg",
+                  "dimensions": "900 × 900 × 1,200 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "—"
+                },
+                {
+                  "model": "B63TH",
+                  "orientation": "Horizontal (Dual-chamber)",
+                  "load": "200 kg",
+                  "dimensions": "450 × 400 × 600 mm",
+                  "temp": "1250°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "B64TH",
+                  "orientation": "Horizontal (Dual-chamber)",
+                  "load": "400 kg",
+                  "dimensions": "600 × 500 × 900 mm",
+                  "temp": "1250°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "B64TH Max",
+                  "orientation": "Horizontal (Dual-chamber)",
+                  "load": "800 kg",
+                  "dimensions": "600 × 600 × 900 mm",
+                  "temp": "1250°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "P164TH",
+                  "orientation": "Horizontal (PIT Dual-chamber)",
+                  "load": "800 kg",
+                  "dimensions": "600 × 600 × 900 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "P165TH",
+                  "orientation": "Horizontal (PIT Dual-chamber)",
+                  "load": "1,200 kg",
+                  "dimensions": "900 × 800 × 1,200 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                }
+              ],
+              "process": [
+                "Oil Quenching",
+                "ALLCARB® / Carbonitriding",
+                "Gas Quenching (6 bar)",
+                "Annealing / Tempering"
+              ],
+              "thermochemical": "ALLCARB®",
+              "options": [
+                "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
+                "Gas (6 bar)",
+                "Single-chamber economical furnace configuration",
+                "Dual-chamber furnace, versatile with oil quenching & gas quenching",
+                "PIT_dual-chamber oil quenching furnace for the heat treatment of large loads",
+                "Design and supply of peripheral equipment: loader, washing machines, oil temperature control, fixtures and baskets..."
+              ],
+              "url": "https://www.bmi-fours.com/products/oil-quenching-furnace/",
+              "k": "hardening oil b53th b54th b55th b63th b64th p164th p165th allcarb",
+              "family": "Oil quenching vacuum furnace",
+              "config": "Horizontal — single-chamber economical furnace, dual-chamber versatile furnace with oil & gas quenching, & PIT dual-chamber for large loads",
+              "benefits": [
+                "Large range of furnaces suited to commercial heat treaters as well as to in-house productions",
+                "Reduced investment & operating costs",
+                "Benefits of vacuum vs atmosphere heat treatment: no intragranular corrosion",
+                "Quick & stable transfer to the oil bath",
+                "Oil bath parameters completely adjustable to suit the parts’ geometry & steel grade",
+                "Versatility & flexibility: large range of heat treatments available"
               ]
-            ],
-            "name": "Cleanroom cleaning line",
-            "short": "Low-particle cleaning for semiconductor and medical.",
-            "desc": "Precision cleaning for semiconductor hardware, vacuum-chamber parts and medical devices. Cleanroom class 7 design is available, with ultrapure water rinsing and documentation for validated processes.",
-            "features": [
-              "Cleanroom class 7 design available",
-              "Ultrapure water rinsing",
-              "IQ/OQ/PQ documentation for medical"
-            ],
-            "process": [
-              "Precision cleaning",
-              "Ultrapure rinsing",
-              "Cleanroom drying",
-              "Sterilisation prep"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "cleanroom semiconductor medical implants sterilisation",
-            "i": [
-              "semi",
-              "medical"
-            ],
-            "configNote": "Each PLURITANK line is built to the tank volume the job requires. The number in the PLURITANK name is the tank volume in litres — not a catalogue model number. Novatec configure the line from 50 to 1,500 litres per tank, with up to 14 process stations, to match the part size, basket weight and throughput. Contact Greets for a technical proposal tailored to your application.",
-            "family": "PLURITANK",
-            "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
-            "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
-          }
+            },
+            {
+              "id": "oil-vertical",
+              "features": [
+                "Vertical loading",
+                "Integrated oil quench",
+                "Reduced distortion on long parts"
+              ],
+              "specs": [
+                [
+                  "Configuration",
+                  "Vertical dual-chamber (bottom / pit loading)"
+                ],
+                [
+                  "Working zone",
+                  "Ø 900 × 1,600 mm to Ø 1,500 × 3,000 mm"
+                ],
+                [
+                  "Load capacity",
+                  "1,200 to 2,000 kg"
+                ],
+                [
+                  "Maximum temperature",
+                  "1050 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "5 × 10⁻² mbar"
+                ],
+                [
+                  "Cooling pressure",
+                  "0.9 bar abs (oil & gas quench)"
+                ],
+                [
+                  "Process",
+                  "Vertical oil quenching, hardening for long components"
+                ],
+                [
+                  "Applications",
+                  "Long shafts, broaches, landing gear components, extrusion screws"
+                ]
+              ],
+              "i": [
+                "auto"
+              ],
+              "photo": "bmi_vert_portrait",
+              "photoAlt": "Vertical furnace (portrait)",
+              "caption": "Vertical furnace (portrait)",
+              "gallery": [
+                [
+                  "bmi_vert_portrait",
+                  "Vertical furnace (portrait)"
+                ],
+                [
+                  "bmi_vert_tall",
+                  "Tall vertical furnace"
+                ]
+              ],
+              "tag": "Vertical",
+              "name": "Vacuum oil quenching furnace, vertical",
+              "bmi_desc": "OIL QUENCHING VACUUM FURNACE",
+              "short": "For long parts quenched hanging.",
+              "desc": "Vertical vacuum oil quenching furnace for long parts that must be quenched hanging to limit distortion.",
+              "models": [
+                {
+                  "model": "V64TH160",
+                  "orientation": "Vertical (Dual-chamber)",
+                  "load": "1,200 kg",
+                  "dimensions": "Ø 900 × 1,600 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "0.9 bar"
+                },
+                {
+                  "model": "V64TH200",
+                  "orientation": "Vertical (Dual-chamber)",
+                  "load": "1,500 kg",
+                  "dimensions": "Ø 900 × 2,000 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "0.9 bar"
+                },
+                {
+                  "model": "V66TH160",
+                  "orientation": "Vertical (Dual-chamber)",
+                  "load": "2,000 kg",
+                  "dimensions": "Ø 1,500 × 1,600 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "0.9 bar"
+                },
+                {
+                  "model": "V66TH300",
+                  "orientation": "Vertical (Dual-chamber)",
+                  "load": "2,000 kg",
+                  "dimensions": "Ø 1,500 × 3,000 mm",
+                  "temp": "1050°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "0.9 bar"
+                }
+              ],
+              "process": [
+                "Oil Quenching",
+                "ALLCARB® / Carbonitriding",
+                "Gas Quenching",
+                "Annealing / Tempering"
+              ],
+              "thermochemical": "ALLCARB®",
+              "options": [
+                "Forced convection heating under inert gas pressure 5×10⁻⁶ mbar",
+                "Gas (0.9 bar)",
+                "Vertical dual-chamber furnace dedicated to mass production or long parts",
+                "Dedicated vertical hanging fixtures, pit loader, and oil management peripherals"
+              ],
+              "url": "https://www.bmi-fours.com/products/vertical-oil-quenching-furnace/",
+              "k": "hardening long parts oil v64th160 v64th200 v66th160 v66th300 allcarb",
+              "family": "Oil quenching vacuum furnace",
+              "config": "Vertical — vertical dual-chamber furnace dedicated to mass production or long parts",
+              "benefits": [
+                "Large range of furnaces suited to commercial heat treaters as well as to in-house productions",
+                "Reduced investment & operating costs",
+                "Benefits of vacuum vs atmosphere heat treatment: no intragranular corrosion",
+                "Quick & stable transfer to the oil bath",
+                "Oil bath parameters completely adjustable to suit the parts’ geometry & steel grade",
+                "Versatility & flexibility: large range of heat treatments available"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "low-temperature",
+          "applications": [],
+          "photo": "bmi_with_trolley",
+          "photoAlt": "Furnace with automatic loading trolley",
+          "name": "Low-temperature furnaces",
+          "sub": "Tempering and aluminium brazing",
+          "desc": "Vacuum furnaces for lower-temperature processes such as tempering after hardening and brazing aluminium assemblies.",
+          "url": "https://www.bmi-fours.com/products/#low-temperature",
+          "machines": [
+            {
+              "id": "tempering",
+              "features": [
+                "Vacuum or protective atmosphere",
+                "Uniform load temperature",
+                "Clean, bright surfaces"
+              ],
+              "specs": [
+                [
+                  "Configuration",
+                  "Horizontal front-loading"
+                ],
+                [
+                  "Working zone",
+                  "450 × 450 × 600 mm to 1,000 × 1,000 × 1,800 mm"
+                ],
+                [
+                  "Load capacity",
+                  "200 to 2,000 kg"
+                ],
+                [
+                  "Maximum temperature",
+                  "750 °C to 900 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "5 × 10⁻² mbar"
+                ],
+                [
+                  "Cooling pressure",
+                  "1.2 bar abs"
+                ],
+                [
+                  "Process",
+                  "Vacuum purge tempering, stress relieving, ageing"
+                ],
+                [
+                  "Applications",
+                  "Tool steels, dies, aerospace structural components"
+                ]
+              ],
+              "i": [
+                "tools",
+                "auto"
+              ],
+              "photo": "bmi_horiz_door_open",
+              "photoAlt": "Horizontal furnace, door open",
+              "caption": "Horizontal furnace, door open",
+              "gallery": [
+                [
+                  "bmi_horiz_door_open",
+                  "Horizontal furnace, door open"
+                ],
+                [
+                  "bmi_top_view",
+                  "Furnace from above"
+                ]
+              ],
+              "name": "Vacuum tempering furnace",
+              "bmi_desc": "VACUUM PURGE TEMPERING FURNACE",
+              "short": "Tempering after hardening.",
+              "desc": "Vacuum tempering furnace for tempering hardened parts with clean surfaces and uniform temperature through the load.",
+              "models": [
+                {
+                  "model": "B53R",
+                  "orientation": "Horizontal",
+                  "load": "200 kg",
+                  "dimensions": "450 × 450 × 600 mm",
+                  "temp": "750°C to 900°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "B54R",
+                  "orientation": "Horizontal",
+                  "load": "600 kg",
+                  "dimensions": "600 × 600 × 900 mm",
+                  "temp": "750°C to 900°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "B55R",
+                  "orientation": "Horizontal",
+                  "load": "1,000 kg",
+                  "dimensions": "900 × 700 × 1,200 mm",
+                  "temp": "750°C to 900°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "B56R",
+                  "orientation": "Horizontal",
+                  "load": "1,500 kg",
+                  "dimensions": "1,000 × 1,000 × 1,500 mm",
+                  "temp": "750°C to 900°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "B56R180",
+                  "orientation": "Horizontal",
+                  "load": "2,000 kg",
+                  "dimensions": "1,000 × 1,000 × 1,800 mm",
+                  "temp": "750°C to 900°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                }
+              ],
+              "process": [
+                "Tempering",
+                "(Magnetic) Annealing",
+                "Ageing",
+                "Stress Relieving",
+                "ALLNIT®",
+                "Nitrocarburizing",
+                "COOL PLUS"
+              ],
+              "thermochemical": "ALLNIT®, COOL PLUS",
+              "options": [
+                "Low pressure nitriding ALLNIT®",
+                "Sub-zero treatment COOL PLUS",
+                "Compliance with aerospace standards: AMS2750E, AMS2769...",
+                "Design and supply of peripheral equipment: loader, gas buffer tank, water cooling system, fixtures and baskets…"
+              ],
+              "url": "https://www.bmi-fours.com/products/tempering-furnace/",
+              "k": "tempering b53r b54r b55r b56r b56r180 allnit cool plus",
+              "family": "Vacuum purge tempering furnace",
+              "config": "Horizontal — tempering and low temperature treatments",
+              "benefits": [
+                "Perfect temperature homogeneity",
+                "Compact design",
+                "Reduced cycle times",
+                "Reduced investment and operating costs",
+                "Higher profitability than a retort furnace"
+              ]
+            },
+            {
+              "id": "alu-brazing",
+              "features": [
+                "Fluxless aluminium brazing",
+                "Tight temperature uniformity"
+              ],
+              "specs": [
+                [
+                  "Configuration",
+                  "Horizontal front-loading"
+                ],
+                [
+                  "Working zone",
+                  "450 × 450 × 600 mm to 1,000 × 1,000 × 2,500 mm"
+                ],
+                [
+                  "Load capacity",
+                  "150 to 800 kg"
+                ],
+                [
+                  "Maximum temperature",
+                  "700 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "5 × 10⁻² mbar"
+                ],
+                [
+                  "Cooling pressure",
+                  "1.2 bar abs"
+                ],
+                [
+                  "Process",
+                  "Fluxless aluminium vacuum brazing"
+                ],
+                [
+                  "Applications",
+                  "Automotive radiators, aircraft heat exchangers, cold plates"
+                ]
+              ],
+              "i": [
+                "auto",
+                "aero"
+              ],
+              "photo": "bmi_white_trolley",
+              "photoAlt": "Furnace with loading trolley",
+              "caption": "Furnace with loading trolley",
+              "name": "Aluminium brazing vacuum furnace",
+              "bmi_desc": "VACUUM ALUMINIUM BRAZING FURNACE",
+              "short": "For heat exchangers and aluminium assemblies.",
+              "desc": "Vacuum furnace for fluxless brazing of aluminium assemblies such as heat exchangers.",
+              "models": [
+                {
+                  "model": "BA53",
+                  "orientation": "Horizontal",
+                  "load": "150 kg",
+                  "dimensions": "450 × 450 × 600 mm",
+                  "temp": "700°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "BA54",
+                  "orientation": "Horizontal",
+                  "load": "300 kg",
+                  "dimensions": "600 × 600 × 900 mm",
+                  "temp": "700°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "BA55",
+                  "orientation": "Horizontal",
+                  "load": "400 kg",
+                  "dimensions": "900 × 900 × 1,200 mm",
+                  "temp": "700°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "BA55-200",
+                  "orientation": "Horizontal",
+                  "load": "600 kg",
+                  "dimensions": "900 × 900 × 2,000 mm",
+                  "temp": "700°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                },
+                {
+                  "model": "BA56-250",
+                  "orientation": "Horizontal",
+                  "load": "800 kg",
+                  "dimensions": "1,000 × 1,000 × 2,500 mm",
+                  "temp": "700°C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "1.2 bar"
+                }
+              ],
+              "process": [
+                "Annealing",
+                "Ageing",
+                "Stress relieving",
+                "Aluminium brazing",
+                "Special alloy degassing"
+              ],
+              "thermochemical": "Fluxless aluminium brazing",
+              "options": [
+                "Multi-zone temperature regulation with high-uniformity heating elements",
+                "Rapid cooling with inert gas at 1.2 bar abs",
+                "Design and supply of peripheral equipment: loader, water cooling system, fixtures and baskets..."
+              ],
+              "url": "https://www.bmi-fours.com/products/aluminum-brazing-furnace/",
+              "k": "heat exchanger brazing aluminium ba53 ba54 ba55 ba55-200 ba56-250",
+              "family": "Vacuum aluminium brazing furnace",
+              "config": "Horizontal",
+              "benefits": [
+                "Reliable and repeatable brazing results",
+                "Fully automated operation for optimal process control",
+                "Superior joint integrity and surface finish",
+                "No flux required, reducing contamination and post-process cleaning"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thermochemical",
+          "applications": [],
+          "photo": "bmi_cooling_unit",
+          "photoAlt": "Furnace with cooling unit",
+          "name": "Thermochemical treatment furnaces",
+          "sub": "Carburizing, nitriding and sub-zero",
+          "desc": "Furnaces and BMI's own processes for changing the surface chemistry of steel parts, such as carburizing and nitriding, plus sub-zero treatment.",
+          "url": "https://www.bmi-fours.com/products/#process",
+          "machines": [
+            {
+              "id": "allcarb",
+              "features": [
+                "Low-pressure (vacuum) carburizing",
+                "No intergranular oxidation",
+                "Can be combined with high-pressure gas quenching"
+              ],
+              "specs": [
+                [
+                  "Process",
+                  "Low-pressure carburizing (LPC)"
+                ],
+                [
+                  "Atmosphere",
+                  "Vacuum (10⁻⁴ to 10⁻⁶ mbar)"
+                ],
+                [
+                  "Temperature",
+                  "850–1050 °C"
+                ],
+                [
+                  "Applications",
+                  "Gears, transmission parts, tooling"
+                ]
+              ],
+              "i": [
+                "auto"
+              ],
+              "photo": "bmi_load_tray",
+              "photoAlt": "Load tray drawn out of the furnace",
+              "caption": "Load tray drawn out of the furnace",
+              "name": "ALLCARB® low-pressure carburizing",
+              "short": "Case hardening for gears and transmission parts.",
+              "desc": "BMI's ALLCARB® low-pressure carburizing process, run in its vacuum furnaces, case-hardens steel parts such as gears and transmission components without intergranular oxidation.",
+              "process": [
+                "ALLCARB® low-pressure carburizing (LPC)",
+                "Case hardening of transmission gears, shafts and injectors",
+                "High-temperature carburizing (up to 1050 °C)",
+                "Carbonitriding"
+              ],
+              "url": "https://www.bmi-fours.com/products/low-pressure-carburizing/",
+              "k": "lpc carburizing gears case hardening"
+            },
+            {
+              "id": "allnit",
+              "features": [
+                "Low-pressure nitriding",
+                "Controlled nitrided layer"
+              ],
+              "specs": [
+                [
+                  "Process",
+                  "Low-pressure nitriding (LPC)"
+                ],
+                [
+                  "Atmosphere",
+                  "Vacuum (10⁻⁴ to 10⁻⁶ mbar)"
+                ],
+                [
+                  "Temperature",
+                  "500–580 °C"
+                ],
+                [
+                  "Applications",
+                  "Crankshafts, gears, hydraulic rods"
+                ]
+              ],
+              "i": [
+                "auto",
+                "tools"
+              ],
+              "photo": "bmi_control_cabinets",
+              "photoAlt": "Furnace with its control cabinets",
+              "caption": "Furnace with its control cabinets",
+              "name": "ALLNIT® low-pressure nitriding",
+              "short": "Nitriding for wear and fatigue resistance.",
+              "desc": "BMI's ALLNIT® low-pressure nitriding process for improving wear and fatigue resistance of steel parts and tools.",
+              "process": [
+                "ALLNIT® low-pressure nitriding (LPN)",
+                "Low-pressure nitrocarburizing",
+                "Post-oxidation (CORSNIT)",
+                "Surface hardening of tooling and precision parts"
+              ],
+              "url": "https://www.bmi-fours.com/products/low-pressure-nitriding/",
+              "k": "nitriding"
+            },
+            {
+              "id": "plasma-nitriding",
+              "features": [
+                "Plasma-assisted nitriding",
+                "Selective treatment possible"
+              ],
+              "specs": [
+                [
+                  "Configuration",
+                  "Vertical bottom-loading"
+                ],
+                [
+                  "Load capacity",
+                  "80 to 1,500 kg"
+                ],
+                [
+                  "Useful volume",
+                  "Ø 500 × 500 mm to Ø 1,050 × 1,500 mm"
+                ],
+                [
+                  "Maximum temperature",
+                  "600 °C"
+                ],
+                [
+                  "Vacuum level",
+                  "5 × 10⁻² mbar"
+                ],
+                [
+                  "Gas pressure",
+                  "0.9 bar abs"
+                ],
+                [
+                  "Process",
+                  "Plasma (ion) nitriding"
+                ],
+                [
+                  "Applications",
+                  "Forming dies, extrusion tools, gears, shafts, moulds"
+                ]
+              ],
+              "i": [
+                "tools",
+                "auto"
+              ],
+              "photo": "bmi_vert_tall",
+              "photoAlt": "Tall vertical furnace",
+              "caption": "Tall vertical furnace",
+              "name": "Plasma nitriding furnace",
+              "tag": "Vertical",
+              "bmi_desc": "PLASMA NITRIDING FURNACE",
+              "short": "Ion nitriding for tools, dies and engineering parts.",
+              "desc": "Plasma (ion) nitriding furnace for tools, dies and engineering components. Delivers precise case depth and surface hardness control with zero white layer or controlled compound layer for dies, moulds, automotive gearing, and precision tools.",
+              "models": [
+                {
+                  "model": "VI63",
+                  "orientation": "Vertical",
+                  "load": "80 kg",
+                  "dimensions": "Ø 500 × 500 mm",
+                  "temp": "600 °C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "0.9 bar"
+                },
+                {
+                  "model": "VI64",
+                  "orientation": "Vertical",
+                  "load": "400 kg",
+                  "dimensions": "Ø 600 × 1,000 mm",
+                  "temp": "600 °C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "0.9 bar"
+                },
+                {
+                  "model": "VI65",
+                  "orientation": "Vertical",
+                  "load": "1,500 kg",
+                  "dimensions": "Ø 850 × 1,500 mm",
+                  "temp": "600 °C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "0.9 bar"
+                },
+                {
+                  "model": "VI66",
+                  "orientation": "Vertical",
+                  "load": "1,500 kg",
+                  "dimensions": "Ø 1,050 × 1,500 mm",
+                  "temp": "600 °C",
+                  "vacuum": "5×10⁻² mbar",
+                  "pressure": "0.9 bar"
+                }
+              ],
+              "spec_url": "https://www.bmi-fours.com/products/plasma-nitriding-furnace/",
+              "process": [
+                "Plasma nitriding / Ion nitriding",
+                "Plasma nitrocarburizing",
+                "Plasma post-oxidation",
+                "Selective surface hardening"
+              ],
+              "thermochemical": "Plasma nitriding / Ion nitriding",
+              "options": [
+                "Second sole",
+                "Auxiliary heating & optical pyrometry temperature control",
+                "Automated gas mixing and pulse plasma generator control"
+              ],
+              "url": "https://www.bmi-fours.com/products/plasma-nitriding-furnace/",
+              "k": "ion nitriding dies moulds plasma vi63 vi64 vi65 vi66",
+              "family": "Plasma nitriding furnace",
+              "config": "Vertical",
+              "benefits": [
+                "Cold-wall design for excellent thermal control",
+                "Ideal for complex or sensitive parts requiring localized hardening",
+                "Fully automated operation for cycle consistency and reproducibility",
+                "Clean process, free from ammonia emissions",
+                "Good alternative to low-pressure nitriding (ALLNIT®) for certain industrial requirements"
+              ]
+            },
+            {
+              "id": "cool-plus",
+              "features": [
+                "Sub-zero cryogenic treatment",
+                "Dimensional stabilisation"
+              ],
+              "specs": [],
+              "i": [
+                "tools",
+                "aero"
+              ],
+              "photo": "bmi_cooling_unit",
+              "photoAlt": "Furnace with cooling unit",
+              "caption": "Furnace with cooling unit",
+              "name": "COOL PLUS sub-zero treatment furnace",
+              "short": "Cryogenic treatment of hardened steels.",
+              "desc": "The COOL PLUS vacuum furnace performs sub-zero cryogenic treatment, stabilising hardened steels by converting retained austenite.",
+              "process": [
+                "Deep cryogenic treatment",
+                "Retained austenite transformation",
+                "Dimensional stabilisation of gauges, bearings and tooling",
+                "Wear resistance enhancement"
+              ],
+              "url": "https://www.bmi-fours.com/products/sub-zero/",
+              "k": "cryogenic deep cryo sub-zero"
+            }
+          ]
+        }
+      ],
+      "seo_title": "BMI vacuum heat treatment furnaces in India | Authorised Partner – Greets Equipment"
+    },
+    {
+      "id": "novatec",
+      "strengths": [
+        "Customised solutions built to each customer's specification.",
+        "Ultrasonic technology and automation produced in house in Italy, not bought in.",
+        "Long-term stability.",
+        "Price to performance ratio."
+      ],
+      "photo": "nov_brand",
+      "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
+      "gallery": [
+        [
+          "nov_brand",
+          "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line"
         ],
-        "applications": [
-          {
-            "id": "ipc",
-            "name": "IPC in-process cleaning",
-            "short": "Cleaning implants between production steps.",
-            "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Supplied as an in-line PLURITANK system for higher volumes and a wider mix of parts, or as a one-chamber 2CRD vacuum system for blind holes and complex shapes.",
-            "url": "https://novatec.it/en/products",
-            "k": "ipc in-process cleaning implants orthopaedic pluritank manufacturing steps",
-            "i": ["medical"]
-          },
-          {
-            "id": "fcps",
-            "name": "FCS / FCPS final cleaning and passivation",
-            "short": "Final cleaning, with optional passivation, into the cleanroom.",
-            "desc": "The FCS (final cleaning system) or FCPS (combined final cleaning and passivation system) is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.",
-            "url": "https://novatec.it/en/products",
-            "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation",
-            "i": ["medical"]
-          },
-          {
-            "id": "fpi",
-            "name": "FPI fluorescent penetrant inspection line",
-            "short": "Automated cleaning and crack detection.",
-            "desc": "An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process. Used to validate medical implants during manufacturing by revealing flaws, cracks and signs of fatigue.",
-            "url": "https://novatec.it/en/products",
-            "k": "fpi fluorescent penetrant inspection ndt cracks fatigue flaws implants pluritank",
-            "i": ["medical", "aero"]
-          }
-        ]
-      },
-      {
-        "id": "2crd",
-        "family": "2CRD",
-        "photo": "nov_2crd400",
-        "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
-        "name": "2CRD Series Single-chamber precision cleaning under vacuum",
-        "sub": "8 standard variants (static & -ROT), custom to 2CRD1700",
-        "desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
-        "url": "https://novatec.it/en/2crd-vacuum-cleaning",
-        "machines": [
-          {
-            "id": "2crd-system",
-            "photo": "nov_2crd400",
-            "photoAlt": "Novatec 2CRD400 single-chamber precision cleaning system",
-            "gallery": [
-              [
-                "nov_2crd400",
-                "2CRD-400 one-chamber precision vacuum cleaning system"
-              ],
-              [
-                "nov_2crd100",
-                "2CRD-100 precision vacuum cleaning system"
-              ],
-              [
-                "nov_2crd100r",
-                "2CRD-100-ROT (rotation and tilting)"
-              ],
-              [
-                "nov_2crd200",
-                "2CRD-200 precision vacuum cleaning system"
-              ],
-              [
-                "nov_2crd200_load",
-                "2CRD-200 being loaded with cutting tools"
-              ],
-              [
-                "nov_2crd800",
-                "2CRD-800 large-capacity vacuum cleaning system"
-              ],
-              [
-                "nov_2crd800_saw1",
-                "2CRD-800 loaded with circular saw blades"
-              ],
-              [
-                "nov_2crd800_saw2",
-                "2CRD-800 loaded with saw blades, close up"
-              ],
-              [
-                "nov_2crd800_trolley",
-                "2CRD-800 loading trolley with tooling"
-              ],
-              [
-                "nov_2crd_chamber",
-                "Inside the vacuum chamber, basket in place"
-              ],
-              [
-                "nov_2crd_baskets",
-                "Baskets and tool holders"
-              ]
-            ],
-            "name": "2CRD Series Single-chamber precision cleaning under vacuum",
-            "short": "Cleaning and vacuum drying in one chamber.",
-            "desc": "The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket. It is especially suited to blind and tapped holes, porous-coated surfaces and complex parts carrying polishing pastes and oils, including medical implants between production steps. Standard range: 2CRD-100, 200, 400 and 800, each static or -ROT with rotation and tilting.",
-            "features": [
-              "Single chamber: clean, rinse and vacuum dry",
-              "Ultrasonic cleaning combined with vacuum processes",
-              "Cleans blind and tapped holes and porous-coated surfaces",
-              "Rotating basket",
-              "Compact footprint, confirmed 4 sizes (8 standard variants)"
-            ],
-            "process": [
-              "Blind and tapped holes",
-              "Porous coated surfaces",
-              "Complex geometries",
-              "Removing polishing pastes and oils",
-              "Vacuum drying"
-            ],
-            "models": [
-              {
-                "family": "2CRD",
-                "model": "2CRD-100",
-                "chamber": "300 × 400 × 300 h",
-                "size": "1800 × 1800 × 2100 h",
-                "load": "On request",
-                "notes": "Static",
-                "source": "Novatec 2CRD brochure"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-100-ROT",
-                "chamber": "300 × 400 × 300 h",
-                "size": "1800 × 1800 × 2100 h",
-                "load": "On request",
-                "notes": "Rotation and tilting",
-                "source": "Novatec website"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-200",
-                "chamber": "400 × 600 × 430 h",
-                "size": "2600 × 2000 × 2100 h",
-                "load": "On request",
-                "notes": "Static",
-                "source": "Novatec 2CRD brochure"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-200-ROT",
-                "chamber": "400 × 600 × 430 h",
-                "size": "2600 × 2000 × 2100 h",
-                "load": "On request",
-                "notes": "Rotation and tilting",
-                "source": "Novatec website"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-400",
-                "chamber": "On request",
-                "size": "approx. 3200 × 2000 × 2100 h",
-                "load": "On request",
-                "notes": "Static",
-                "source": "Novatec GA drawing 2CRD400"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-400-ROT",
-                "chamber": "On request",
-                "size": "approx. 3200 × 2000 × 2100 h",
-                "load": "On request",
-                "notes": "Rotation and tilting",
-                "source": "Novatec website"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-800",
-                "chamber": "600 × 1050 × 630 h",
-                "size": "3500 × 2000 × 2200 h",
-                "load": "On request",
-                "notes": "Static",
-                "source": "Novatec 2CRD brochure"
-              },
-              {
-                "family": "2CRD",
-                "model": "2CRD-800-ROT",
-                "chamber": "600 × 1050 × 630 h",
-                "size": "3500 × 2000 × 2200 h",
-                "load": "On request",
-                "notes": "Rotation and tilting",
-                "source": "Novatec website"
-              }
-            ],
-            "url": "https://novatec.it/en/2crd-vacuum-cleaning",
-            "k": "precision cleaning vacuum drying blind holes 2crd 2crd100 2crd200 2crd400 2crd800 rot rotation tilting implants polishing paste buffer tanks",
-            "i": [
-              "medical",
-              "semi",
-              "watch",
-              "auto"
-            ],
-            "family": "2CRD",
-            "family_desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
-            "typical_use": "Blind and tapped holes, porous coated surfaces and complex geometries. Removing polishing pastes and oils."
-          }
+        [
+          "nov_2crd",
+          "2CRD-400 one-chamber precision vacuum cleaning system"
         ],
-        "applications": [
-          {
-            "id": "ipc",
-            "name": "IPC in-process cleaning",
-            "short": "Cleaning implants between production steps.",
-            "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. The 2CRD one-chamber vacuum system is especially suited to blind holes, porous-coated surfaces and complex implant shapes.",
-            "url": "https://novatec.it/en/products",
-            "k": "ipc in-process cleaning implants 2crd vacuum blind holes manufacturing steps",
-            "i": ["medical"]
-          }
+        [
+          "nm_fcps",
+          "FCS / FCPS final cleaning and passivation cleanroom line"
+        ],
+        [
+          "nm_hq",
+          "Novatec S.r.l. headquarters, San Martino di Lupari (Padova), Italy"
+        ],
+        [
+          "nov_2crd800_saw1",
+          "2CRD-800 loaded with circular saw blades"
         ]
-      },
-      {
-        "id": "medical-implants",
-        "family": "Medical implant processing",
-        "photo": "nov_med_parts",
-        "photoAlt": "Medical implant components after precision cleaning",
-        "name": "Medical implant processing",
-        "sub": "Cleaning, passivation, EP, FPI and turnkey lines",
-        "desc": "Complete cleaning and surface treatment systems for orthopaedic and medical implant manufacturing. Built to the customer's specification, from spray cleaning with cleanroom air lock to electropolishing, quality verification, and full turnkey lines. IPC, FCS/FCPS and FPI are listed as applications under PLURITANK and 2CRD above.",
-        "url": "https://novatec.it/en/products",
-        "machines": [
-          {
-            "id": "ipc",
-            "family": "IPC in-process cleaning",
-            "photo": "nov_med_ipc_2crd",
-            "photoAlt": "Novatec IPC in-process cleaning system",
-            "caption": "IPC in-process cleaning system",
-            "gallery": [
-              [
-                "nov_med_ipc_2crd",
-                "IPC in-process cleaning - 2CRD400 one-chamber vacuum system"
-              ],
-              [
-                "nov_med_basket1",
-                "Implants loaded in a basket"
-              ]
-            ],
-            "name": "IPC in-process cleaning",
-            "short": "Cleaning implants between production steps.",
-            "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Supplied as an in-line PLURITANK system for higher volumes and a wider mix of parts, or as a one-chamber 2CRD vacuum system for blind holes and complex shapes.",
-            "features": [
-              "Cleaning implants between production steps",
-              "Removes oils, chips, particles and polishing pastes",
-              "Available as in-line PLURITANK system or 2CRD vacuum system",
-              "Handles blind holes, porous coatings and complex shapes"
-            ],
-            "process": [
-              "In-process cleaning",
-              "Removing polishing pastes and oils",
-              "Blind and tapped holes",
-              "Porous coated surfaces"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "ipc in-process cleaning implants orthopaedic pluritank manufacturing steps",
-            "i": [
-              "medical"
-            ],
-            "family_desc": "In-process cleaning removes oils, chips, particles and polishing pastes from implants between production steps.",
-            "typical_use": "Cleaning implants between grinding, blasting and polishing steps."
-          },
-          {
-            "id": "fcps",
-            "family": "FCS / FCPS",
-            "photo": "nov_med_fcps1",
-            "photoAlt": "FCS / FCPS final cleaning and passivation system",
-            "caption": "FCS / FCPS final cleaning and passivation, cleanroom",
-            "gallery": [
-              [
-                "nov_med_fcps1",
-                "FCS / FCPS final cleaning and passivation, cleanroom"
-              ],
-              [
-                "nov_med_fcps_unload",
-                "Unload air lock on the cleanroom side"
-              ]
-            ],
-            "name": "FCS / FCPS final cleaning and passivation",
-            "short": "Final cleaning, with optional passivation, into the cleanroom.",
-            "desc": "The FCS (final cleaning system) or FCPS (combined final cleaning and passivation system) is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.",
-            "features": [
-              "Final cleaning and passivation into cleanroom",
-              "Unloads through an air lock straight into cleanroom",
-              "Free of contaminants, stains, organic and biological residues",
-              "Automated basket handling and validation data logging"
-            ],
-            "process": [
-              "Final cleaning",
-              "Passivation",
-              "Cleanroom air lock unload",
-              "Medical implant packaging prep"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation",
-            "i": [
-              "medical"
-            ],
-            "family_desc": "Automatic PLURITANK line unloading through an air lock straight into the cleanroom.",
-            "typical_use": "Final cleaning and passivation of orthopaedic implants before cleanroom packaging."
-          },
-          {
-            "id": "fpi",
-            "family": "FPI",
-            "photo": "nov_med_fpi1",
-            "photoAlt": "FPI fluorescent penetrant inspection line installed",
-            "caption": "FPI fluorescent penetrant inspection line installed",
-            "gallery": [
-              [
-                "nov_med_fpi1",
-                "FPI fluorescent penetrant inspection line installed"
-              ]
-            ],
-            "name": "FPI fluorescent penetrant inspection line",
-            "short": "Automated cleaning and crack detection.",
-            "desc": "An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process. Used to validate medical implants during manufacturing by revealing flaws, cracks and signs of fatigue.",
-            "features": [
-              "Automated cleaning and crack detection",
-              "Combines surface cleaning, prep and fluorescent penetrant inspection",
-              "Reveals flaws, micro-cracks and fatigue signs",
-              "Fully automated process for medical implants & aerospace"
-            ],
-            "process": [
-              "Fluorescent penetrant inspection",
-              "Non-destructive testing (NDT)",
-              "Crack and flaw detection",
-              "Pre-inspection surface cleaning"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "fpi fluorescent penetrant inspection ndt cracks fatigue flaws implants pluritank",
-            "i": [
-              "medical",
-              "aero"
-            ],
-            "family_desc": "Automatic line combining surface cleaning, preparation and fluorescent penetrant inspection.",
-            "typical_use": "Flaw and crack detection on medical implants and aerospace parts."
-          },
-          {
-            "id": "qvs-brc",
-            "family": "QVS / BRC",
-            "photo": "nov_med_layout",
-            "photoAlt": "Novatec combined medical line layout showing QVS and BRC",
-            "caption": "Novatec combined medical line layout showing QVS and BRC",
-            "gallery": [
-              [
-                "nov_med_layout",
-                "Novatec combined medical line layout showing QVS and BRC"
-              ],
-              [
-                "nov_med_basket1",
-                "Implants loaded in a basket"
-              ],
-              [
-                "nov_med_fcps_unload",
-                "Unload air lock on the cleanroom side"
-              ]
-            ],
-            "name": "QVS / BRC quality verification & basket return conveyor",
-            "tag": "Automation",
-            "short": "Quality verification stations and basket return air lock conveyor.",
-            "desc": "Quality Verification Stations (QVS) combined with Basket Return Conveyor (BRC) air locks. These specialised transfer, inspection, and air lock modules link individual cleaning, passivation, and cleanroom packaging stations into a seamless, contamination-free automated medical implant production loop.",
-            "features": [
-              "QVS: Quality verification stations",
-              "BRC: Basket return air lock conveyor",
-              "The modules that link a combined medical line together",
-              "Part of a full automatic medical implant line",
-              "Automated barcode/RFID tracking and data exchange"
-            ],
-            "process": [
-              "Full automatic medical implant lines",
-              "Quality verification",
-              "Cleanroom basket return conveyor"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "qvs brc quality verification basket return air lock conveyor medical implant line",
-            "i": [
-              "medical"
-            ],
-            "family_desc": "Quality verification stations, and basket return air lock conveyor. The modules that link a combined medical line together.",
-            "typical_use": "Part of a full automatic medical implant line."
-          },
-          {
-            "id": "ep",
-            "family": "Electropolishing (EP)",
-            "photo": "nov_plt_compact",
-            "photoAlt": "Novatec PLURITANK electropolishing line",
-            "gallery": [
-              [
-                "nov_med_basket2",
-                "Implants in basket, close up"
-              ]
-            ],
-            "name": "Electropolishing line (EP)",
-            "tag": "PLURITANK EP",
-            "short": "Electropolishing line built on PLURITANK platform.",
-            "desc": "The Novatec Electropolishing (EP) line is a multi-stage automated treatment line built on the PLURITANK platform. It incorporates dedicated acid electropolishing baths, chemical neutralisation, cascade recovery rinse tanks, and hot-air drying to deliver mirror-smooth, passivated finishes on stainless steel and titanium medical implants.",
-            "features": [
-              "Electropolishing line built on the PLURITANK platform",
-              "Adds dedicated electropolish tank plus neutralisation and recovery rinsing",
-              "Multi-stage cascade DI water rinsing and drying",
-              "Delivers burr-free, passivated, micro-smooth implant surfaces"
-            ],
-            "process": [
-              "Stainless steel medical implants",
-              "Titanium medical implants",
-              "Electropolishing",
-              "Neutralisation & recovery rinsing"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "electropolishing ep pluritank stainless titanium medical implants neutralisation",
-            "i": [
-              "medical"
-            ],
-            "family_desc": "An electropolishing line built on the PLURITANK platform, adding an electropolish tank plus neutralisation and recovery rinsing.",
-            "typical_use": "Stainless steel and titanium medical implants."
-          },
-          {
-            "id": "combined",
-            "family": "Combined medical lines",
-            "photo": "nov_med_layout",
-            "photoAlt": "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks",
-            "caption": "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks",
-            "gallery": [
-              [
-                "nov_med_layout",
-                "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks"
-              ],
-              [
-                "nov_med_fcps1",
-                "FCS / FCPS final cleaning and passivation, cleanroom"
-              ],
-              [
-                "nov_med_fpi1",
-                "FPI fluorescent penetrant inspection line installed"
-              ],
-              [
-                "nov_med_ipc_2crd",
-                "IPC in-process cleaning - 2CRD400 one-chamber vacuum system"
-              ],
-              [
-                "nov_med_basket1",
-                "Implants loaded in a basket"
-              ],
-              [
-                "nov_med_basket2",
-                "Implants in basket, close up"
-              ],
-              [
-                "nov_med_parts",
-                "Medical implant components"
-              ]
-            ],
-            "name": "Combined turnkey implant lines",
-            "tag": "All-in project",
-            "short": "Complete, automated implant cleaning plant.",
-            "desc": "For larger projects Novatec designs the whole cleaning area to the customer's URS, linking the individual systems with conveyors and full automatic management. A typical line includes automatic basket loading with scanners and RFID, IPC one-chamber vacuum systems, quality verification stations, a combined final cleaning and passivation system, spray cleaning with an unload air lock, and a basket return conveyor, all with data exchange for traceability.",
-            "features": [
-              "Automatic basket loading station with scanners and RFID",
-              "IPC one-chamber vacuum systems",
-              "QVS quality verification stations",
-              "FCPS final cleaning and passivation with air lock to cleanroom",
-              "PFC spray cleaning system with unload air lock",
-              "BRC basket return air-lock conveyor",
-              "Full automatic management and data exchange for traceability"
-            ],
-            "process": [
-              "In-process cleaning",
-              "Final cleaning and passivation",
-              "Quality verification",
-              "Cleanroom transfer"
-            ],
-            "url": "https://novatec.it/en/products",
-            "k": "custom turnkey combined implants rfid qvs pfc brc cleanroom fcs fcps",
-            "i": [
-              "medical"
-            ],
-            "family_desc": "Full automatic turnkey medical implant cleaning plants built to customer User Requirement Specification, integrating basket loading, IPC, QVS, FCPS, PFC, and BRC with cleanroom air locks.",
-            "typical_use": "Turnkey automated plants for orthopaedic & medical implant manufacturing."
-          }
-        ]
-      },
-      {
-        "id": "components",
-        "family": "Components & PLT 60V",
-        "photo": "nov_plt1400_gen",
-        "photoAlt": "Novatec PLURITANK 1400 ultrasonic generator rack and filtration skids",
-        "name": "Components & PLT 60V",
-        "sub": "Generators, transducers and PLT 60V",
-        "desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
-        "url": "https://novatec.it/en/ultrasonic-components",
-        "machines": [
-          {
-            "id": "generators",
-            "photo": "nov_plt1400_gen",
-            "photoAlt": "PLURITANK 1400 generator rack and filtration skids",
-            "caption": "PLURITANK 1400 generator rack and filtration skids",
-            "gallery": [
-              [
-                "nov_plt1400_gen",
-                "PLURITANK 1400 generator rack and filtration skids"
-              ],
-              [
-                "nov_tanks_gen",
-                "Bench ultrasonic tanks with separate generators"
-              ]
-            ],
-            "name": "Ultrasonic generators and transducers",
-            "short": "For building or upgrading cleaning tanks.",
-            "desc": "Ultrasonic generators and transducers for building new cleaning tanks or upgrading existing ones.",
-            "features": [
-              "Generators and transducers",
-              "For new tanks or retrofits"
-            ],
-            "process": [
-              "Ultrasonic cleaning",
-              "Tank retrofit and upgrade",
-              "Multi-frequency ultrasound"
-            ],
-            "url": "https://novatec.it/en/ultrasonic-components",
-            "k": "generators transducers ultrasonic components multi-frequency",
-            "i": [],
-            "family": "Ultrasonic components",
-            "family_desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
-            "typical_use": "Supplied with the lines, or separately."
-          },
-          {
-            "id": "plt60v",
-            "photo": "nov_plt_compact",
-            "photoAlt": "Novatec PLT 60V pressure-cycle cleaning unit",
-            "name": "PLT 60V pressure-cycle unit",
-            "short": "Pressure-change cleaning for internal channels.",
-            "desc": "The PLT 60V uses pressure cycling to clean internal channels and cavities that ultrasound alone struggles to reach.",
-            "features": [
-              "Pressure-cycle cleaning",
-              "Reaches internal channels and cavities"
-            ],
-            "process": [
-              "Pressure-change cleaning",
-              "Internal channel flushing",
-              "Deep cavity cleaning"
-            ],
-            "models": [
-              {
-                "family": "PLURITANK",
-                "model": "PLT 60V",
-                "chamber": "60 L",
-                "size": "On request",
-                "load": "On request",
-                "notes": "Two-chamber pressure-cycle unit, listed under Components",
-                "source": "Novatec website"
-              }
-            ],
-            "url": "https://novatec.it/en/ultrasonic-components",
-            "k": "plt60v pressure cleaning internal channels two-chamber",
-            "i": [
-              "auto",
-              "medical"
-            ],
-            "family": "Ultrasonic components",
-            "family_desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
-            "typical_use": "Supplied with the lines, or separately."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "huasheng",
-    "photo": "hs_gfour",
-    "photoAlt": "Huasheng GFOUR hybrid coating machine",
-    "gallery": [
-      [
-        "hs_gfour",
-        "GFOUR 4th-generation hybrid coating machine"
       ],
-      [
-        "hs_md800",
-        "MD800 PLUS arc coating machine"
+      "name": "Novatec",
+      "full": "Novatec S.r.l., San Martino di Lupari (Padova)",
+      "country": "Italy",
+      "site": "https://novatec.it/en",
+      "intro": "Industrial ultrasonic cleaning systems engineered, built and tested in Italy since 1993.",
+      "cats": [
+        {
+          "id": "pluritank",
+          "applications": [
+            {
+              "id": "ipc",
+              "name": "IPC in-process cleaning",
+              "short": "Cleaning implants between production steps.",
+              "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Supplied as an in-line PLURITANK system for higher volumes and a wider mix of parts, or as a one-chamber 2CRD vacuum system for blind holes and complex shapes.",
+              "url": "https://novatec.it/en/products",
+              "k": "ipc in-process cleaning implants orthopaedic pluritank manufacturing steps",
+              "i": [
+                "medical"
+              ]
+            },
+            {
+              "id": "fcps",
+              "name": "FCS / FCPS final cleaning and passivation",
+              "short": "Final cleaning, with optional passivation, into the cleanroom.",
+              "desc": "The FCS (final cleaning system) or FCPS (combined final cleaning and passivation system) is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.",
+              "url": "https://novatec.it/en/products",
+              "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation",
+              "i": [
+                "medical"
+              ]
+            },
+            {
+              "id": "fpi",
+              "name": "FPI fluorescent penetrant inspection line",
+              "short": "Automated cleaning and crack detection.",
+              "desc": "An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process. Used to validate medical implants during manufacturing by revealing flaws, cracks and signs of fatigue.",
+              "url": "https://novatec.it/en/products",
+              "k": "fpi fluorescent penetrant inspection ndt cracks fatigue flaws implants pluritank",
+              "i": [
+                "medical",
+                "aero"
+              ]
+            }
+          ],
+          "family": "PLURITANK",
+          "photo": "nov_brand",
+          "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
+          "name": "PLURITANK Multi-chamber ultrasonic",
+          "sub": "Modular lines up to 14 process stations",
+          "desc": "Modular multi-tank ultrasonic cleaning lines configured from separate process modules — ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying. Up to 14 process stations with automatic basket handling from 10 kg to 300 kg and above.",
+          "url": "https://novatec.it/en/multi-chamber-ultrasonic-cleaning",
+          "machines": [
+            {
+              "id": "pluritank-line",
+              "features": [
+                "Modular, up to 14 process stations, with room for future hardware and software upgrades",
+                "Configurable tank capacity from 50 to 1,500 litres",
+                "Multi-frequency ultrasonic groups",
+                "User-friendly HMI with multiple programs",
+                "Data exchange and traceability",
+                "AISI 304/316 stainless construction",
+                "Factory acceptance test with your sample parts"
+              ],
+              "specs": [
+                [
+                  "Configuration",
+                  "Configurable modular multi-tank ultrasonic cleaning line"
+                ],
+                [
+                  "Tank volume range",
+                  "50 to 1,500 litres per tank (built to order based on part size)"
+                ],
+                [
+                  "Process stations",
+                  "Up to 14 process stations per line"
+                ],
+                [
+                  "Ultrasonic technology",
+                  "Multi-frequency ultrasonic groups (in-house Italian design & manufacture)"
+                ],
+                [
+                  "Available process stages",
+                  "Ultrasonic immersion, spray wash, multi-stage cascade DI water rinsing, passivation, hot air & vacuum drying"
+                ],
+                [
+                  "Basket load capacity",
+                  "10 kg to 300+ kg per basket with automatic robot transporter"
+                ],
+                [
+                  "Material construction",
+                  "AISI 304 / AISI 316 stainless steel throughout"
+                ],
+                [
+                  "Control system",
+                  "Siemens PLC with touchscreen HMI, multi-program recipe management & data traceability"
+                ]
+              ],
+              "i": [
+                "auto",
+                "medical",
+                "optics",
+                "watch",
+                "semi",
+                "tools"
+              ],
+              "lineLayout": {
+                "title": "PLURITANK 1400 — Multi-Stage Process Line Layout",
+                "reference": "Novatec GA drawing 5298.3.0-26CO",
+                "dimensions": [
+                  [
+                    "Internal tank",
+                    "700 × 1200 × 1650 h mm (approx. 1386 litres)"
+                  ],
+                  [
+                    "External basket",
+                    "540 × 1090 × 1540 h mm"
+                  ],
+                  [
+                    "Line footprint",
+                    "19500 × 7000 mm"
+                  ],
+                  [
+                    "Width options",
+                    "Supplied in two overall widths. The tank size is the same in both."
+                  ]
+                ],
+                "stations": [
+                  {
+                    "pos": "C",
+                    "station": "Motorised loading conveyor",
+                    "notes": "Infeed load station"
+                  },
+                  {
+                    "pos": "1",
+                    "station": "Ultrasonic cleaning tank with basket agitation",
+                    "notes": "Primary ultrasonic wash"
+                  },
+                  {
+                    "pos": "2",
+                    "station": "Rinsing tank with turbulent flow",
+                    "notes": "Turbulent flow rinse"
+                  },
+                  {
+                    "pos": "3",
+                    "station": "Ultrasonic cleaning tank with basket agitation",
+                    "notes": "Secondary ultrasonic wash"
+                  },
+                  {
+                    "pos": "4",
+                    "station": "Rinsing tank with turbulent flow",
+                    "notes": "Intermediate cascade rinse"
+                  },
+                  {
+                    "pos": "5",
+                    "station": "Ultrasonic cleaning tank with basket agitation",
+                    "notes": "Final precision ultrasonic wash"
+                  },
+                  {
+                    "pos": "6",
+                    "station": "Rinsing tank with turbulent flow",
+                    "notes": "Cascade flow rinse"
+                  },
+                  {
+                    "pos": "7",
+                    "station": "DI water ultrasonic rinsing tank",
+                    "notes": "Demineralised ultrasonic rinse"
+                  },
+                  {
+                    "pos": "8 – 9",
+                    "station": "DI water rinsing tank with slow drain system",
+                    "notes": "Cascades back to tank 7"
+                  },
+                  {
+                    "pos": "10 – 14",
+                    "station": "Hot air tunnel dryer",
+                    "notes": "5 drying positions"
+                  },
+                  {
+                    "pos": "S",
+                    "station": "Motorised unloading conveyor",
+                    "notes": "Outfeed unload station"
+                  }
+                ],
+                "ancillary": [
+                  "General control board",
+                  "WT1 buffer tank, filter holder and pump",
+                  "Two pump and filter groups",
+                  "DEMI 100/4 demineralised water plant",
+                  "Exhaust fan",
+                  "CS1 loading and unloading operators zone"
+                ]
+              },
+              "photo": "nov_brand",
+              "photoAlt": "Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line",
+              "gallery": [
+                [
+                  "nov_brand",
+                  "PLURITANK 1400 complete line from above"
+                ],
+                [
+                  "nov_main",
+                  "PLURITANK 1400 line with motorised loading conveyor"
+                ],
+                [
+                  "nov_plt_gantry",
+                  "Inside the line - transport gantry over the tanks"
+                ],
+                [
+                  "nov_plt_tanks",
+                  "Tank row with basket agitation"
+                ],
+                [
+                  "nov_plt_panel",
+                  "Line with main electrical control cabinet"
+                ],
+                [
+                  "nov_plt_fume",
+                  "Line with overhead fume extraction"
+                ],
+                [
+                  "nov_plt_dryer",
+                  "Line with dryer and DI water plant"
+                ],
+                [
+                  "nov_plt_tank_detail",
+                  "Single tank and basket, close up"
+                ]
+              ],
+              "name": "PLURITANK ultrasonic cleaning line",
+              "short": "Serial and large-format parts, up to 14 process stations.",
+              "desc": "PLURITANK is Novatec's modular multi-chamber ultrasonic cleaning line. Process stations for ultrasonic cleaning, rinsing and drying are combined to suit the part, the contamination and the required cleanliness, with up to 14 process stations per line.",
+              "process": [
+                "Ultrasonic immersion cleaning",
+                "Cascade DI water rinsing",
+                "Passivation and corrosion protection",
+                "Hot air and vacuum drying"
+              ],
+              "url": "https://novatec.it/en/multi-chamber-ultrasonic-cleaning",
+              "k": "ultrasonic cleaning washing rinsing drying pluritank pvd pre-treatment sterilisation",
+              "family": "PLURITANK",
+              "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Configurable tank volume from 50 to 1,500 litres with up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
+              "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
+            },
+            {
+              "id": "pre-pvd",
+              "features": [
+                "Reproducible pre-coating cleanliness",
+                "Rinsing and drying cycles",
+                "Matched to coating plant capacity"
+              ],
+              "specs": [],
+              "i": [
+                "tools"
+              ],
+              "photo": "nm_pluri",
+              "photoAlt": "Novatec PLURITANK pre-treatment line for PVD coating",
+              "caption": "Novatec PLURITANK pre-treatment line for PVD coating",
+              "gallery": [
+                [
+                  "nm_pluri",
+                  "Novatec PLURITANK pre-treatment line for PVD coating"
+                ],
+                [
+                  "nov_plt_guarded",
+                  "PLURITANK line with safety guarding"
+                ],
+                [
+                  "nov_plt_gantry",
+                  "Transport gantry over the tanks"
+                ]
+              ],
+              "name": "PLURITANK pre-treatment line for PVD coating",
+              "short": "Surface preparation before PVD, CVD and DLC.",
+              "desc": "A PLURITANK line configured to prepare tools and components for coating. Ultrasonic cleaning followed by rinsing and drying removes residues so the coating bonds reliably, batch after batch.",
+              "process": [
+                "Pre-PVD cleaning",
+                "Pre-CVD cleaning",
+                "Pre-DLC cleaning",
+                "Tool surface preparation"
+              ],
+              "url": "https://novatec.it/en/multi-chamber-ultrasonic-cleaning",
+              "k": "pvd pre-treatment coating cleaning pluritank tools inserts",
+              "configNote": "Each PLURITANK line is built to the tank volume the job requires. The number in the PLURITANK name (50, 65, 80, 110, 140, 210, 1400, 1500 …) is the tank volume in litres — not a catalogue model number. Novatec do not publish a fixed model list; instead they configure the line from 50 to 1,500 litres per tank, with up to 14 process stations, to match the part size, basket weight and throughput. Contact Greets for a technical proposal tailored to your application.",
+              "family": "PLURITANK",
+              "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
+              "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
+            },
+            {
+              "id": "cleanroom",
+              "features": [
+                "Cleanroom class 7 design available",
+                "Ultrapure water rinsing",
+                "IQ/OQ/PQ documentation for medical"
+              ],
+              "specs": [],
+              "i": [
+                "semi",
+                "medical"
+              ],
+              "photo": "nm_brand",
+              "photoAlt": "Novatec cleaning line for cleanroom use",
+              "caption": "Novatec cleaning line for cleanroom use",
+              "gallery": [
+                [
+                  "nm_brand",
+                  "Novatec cleaning line for cleanroom use"
+                ],
+                [
+                  "nov_plt_clean_02",
+                  "Cleanroom line, opposite angle"
+                ],
+                [
+                  "nov_plt_clean_03",
+                  "Line in a white cleanroom, operator in shot"
+                ],
+                [
+                  "nov_plt_enclosed",
+                  "Fully enclosed line with gantry"
+                ]
+              ],
+              "name": "Cleanroom cleaning line",
+              "short": "Low-particle cleaning for semiconductor and medical.",
+              "desc": "Precision cleaning for semiconductor hardware, vacuum-chamber parts and medical devices. Cleanroom class 7 design is available, with ultrapure water rinsing and documentation for validated processes.",
+              "process": [
+                "Precision cleaning",
+                "Ultrapure rinsing",
+                "Cleanroom drying",
+                "Sterilisation prep"
+              ],
+              "url": "https://novatec.it/en/products",
+              "k": "cleanroom semiconductor medical implants sterilisation",
+              "configNote": "Each PLURITANK line is built to the tank volume the job requires. The number in the PLURITANK name is the tank volume in litres — not a catalogue model number. Novatec configure the line from 50 to 1,500 litres per tank, with up to 14 process stations, to match the part size, basket weight and throughput. Contact Greets for a technical proposal tailored to your application.",
+              "family": "PLURITANK",
+              "family_desc": "Modular multi-tank ultrasonic cleaning line. Built from separate process modules - ultrasonic immersion or spray cleaning, cascade rinsing, hot air and vacuum drying - so the line is configured to the job. Up to 14 process stations. Stainless steel throughout, PLC and HMI control, automatic basket handling from 10 kg to 300 kg and above.",
+              "typical_use": "Cleaning tools and components before PVD coating and other vacuum treatments. Final cleaning before sterilisation and packing."
+            }
+          ]
+        },
+        {
+          "id": "2crd",
+          "applications": [
+            {
+              "id": "ipc",
+              "name": "IPC in-process cleaning",
+              "short": "Cleaning implants between production steps.",
+              "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. The 2CRD one-chamber vacuum system is especially suited to blind holes, porous-coated surfaces and complex implant shapes.",
+              "url": "https://novatec.it/en/products",
+              "k": "ipc in-process cleaning implants 2crd vacuum blind holes manufacturing steps",
+              "i": [
+                "medical"
+              ]
+            }
+          ],
+          "family": "2CRD",
+          "photo": "nov_2crd",
+          "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
+          "name": "2CRD Series Single-chamber precision cleaning under vacuum",
+          "sub": "8 standard variants (static & -ROT), custom to 2CRD1700",
+          "desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
+          "url": "https://novatec.it/en/2crd-vacuum-cleaning",
+          "machines": [
+            {
+              "id": "2crd-system",
+              "features": [
+                "Single chamber: clean, rinse and vacuum dry",
+                "Ultrasonic cleaning combined with vacuum processes",
+                "Cleans blind and tapped holes and porous-coated surfaces",
+                "Rotating basket",
+                "Compact footprint, confirmed 4 sizes (8 standard variants)"
+              ],
+              "specs": [],
+              "i": [
+                "medical",
+                "semi",
+                "watch",
+                "auto"
+              ],
+              "photo": "nov_2crd",
+              "photoAlt": "Novatec 2CRD400 single-chamber precision cleaning system",
+              "gallery": [
+                [
+                  "nov_2crd",
+                  "2CRD-400 one-chamber precision vacuum cleaning system"
+                ],
+                [
+                  "nov_2crd100",
+                  "2CRD-100 precision vacuum cleaning system"
+                ],
+                [
+                  "nov_2crd100r",
+                  "2CRD-100-ROT (rotation and tilting)"
+                ],
+                [
+                  "nm_2crd_b",
+                  "2CRD-200 precision vacuum cleaning system"
+                ],
+                [
+                  "nov_2crd200_load",
+                  "2CRD-200 being loaded with cutting tools"
+                ],
+                [
+                  "nov_2crd800",
+                  "2CRD-800 large-capacity vacuum cleaning system"
+                ],
+                [
+                  "nov_2crd800_saw1",
+                  "2CRD-800 loaded with circular saw blades"
+                ],
+                [
+                  "nov_2crd800_saw2",
+                  "2CRD-800 loaded with saw blades, close up"
+                ],
+                [
+                  "nov_2crd800_trolley",
+                  "2CRD-800 loading trolley with tooling"
+                ],
+                [
+                  "nov_2crd_chamber",
+                  "Inside the vacuum chamber, basket in place"
+                ],
+                [
+                  "nov_2crd_baskets",
+                  "Baskets and tool holders"
+                ]
+              ],
+              "name": "2CRD Series Single-chamber precision cleaning under vacuum",
+              "short": "Cleaning and vacuum drying in one chamber.",
+              "desc": "The 2CRD is Novatec's aqueous one-chamber vacuum cleaning system. It combines ultrasonic frequencies with vacuum processes and flexible cleaning, rinsing and drying steps in one compact chamber with a rotating basket. It is especially suited to blind and tapped holes, porous-coated surfaces and complex parts carrying polishing pastes and oils, including medical implants between production steps. Standard range: 2CRD-100, 200, 400 and 800, each static or -ROT with rotation and tilting.",
+              "process": [
+                "Blind and tapped holes",
+                "Porous coated surfaces",
+                "Complex geometries",
+                "Removing polishing pastes and oils",
+                "Vacuum drying"
+              ],
+              "models": [
+                {
+                  "family": "2CRD",
+                  "model": "2CRD-100",
+                  "chamber": "300 × 400 × 300 h",
+                  "size": "1800 × 1800 × 2100 h",
+                  "load": "On request",
+                  "notes": "Static",
+                  "source": "Novatec 2CRD brochure"
+                },
+                {
+                  "family": "2CRD",
+                  "model": "2CRD-100-ROT",
+                  "chamber": "300 × 400 × 300 h",
+                  "size": "1800 × 1800 × 2100 h",
+                  "load": "On request",
+                  "notes": "Rotation and tilting",
+                  "source": "Novatec website"
+                },
+                {
+                  "family": "2CRD",
+                  "model": "2CRD-200",
+                  "chamber": "400 × 600 × 430 h",
+                  "size": "2600 × 2000 × 2100 h",
+                  "load": "On request",
+                  "notes": "Static",
+                  "source": "Novatec 2CRD brochure"
+                },
+                {
+                  "family": "2CRD",
+                  "model": "2CRD-200-ROT",
+                  "chamber": "400 × 600 × 430 h",
+                  "size": "2600 × 2000 × 2100 h",
+                  "load": "On request",
+                  "notes": "Rotation and tilting",
+                  "source": "Novatec website"
+                },
+                {
+                  "family": "2CRD",
+                  "model": "2CRD-400",
+                  "chamber": "On request",
+                  "size": "approx. 3200 × 2000 × 2100 h",
+                  "load": "On request",
+                  "notes": "Static",
+                  "source": "Novatec GA drawing 2CRD400"
+                },
+                {
+                  "family": "2CRD",
+                  "model": "2CRD-400-ROT",
+                  "chamber": "On request",
+                  "size": "approx. 3200 × 2000 × 2100 h",
+                  "load": "On request",
+                  "notes": "Rotation and tilting",
+                  "source": "Novatec website"
+                },
+                {
+                  "family": "2CRD",
+                  "model": "2CRD-800",
+                  "chamber": "600 × 1050 × 630 h",
+                  "size": "3500 × 2000 × 2200 h",
+                  "load": "On request",
+                  "notes": "Static",
+                  "source": "Novatec 2CRD brochure"
+                },
+                {
+                  "family": "2CRD",
+                  "model": "2CRD-800-ROT",
+                  "chamber": "600 × 1050 × 630 h",
+                  "size": "3500 × 2000 × 2200 h",
+                  "load": "On request",
+                  "notes": "Rotation and tilting",
+                  "source": "Novatec website"
+                }
+              ],
+              "url": "https://novatec.it/en/2crd-vacuum-cleaning",
+              "k": "precision cleaning vacuum drying blind holes 2crd 2crd100 2crd200 2crd400 2crd800 rot rotation tilting implants polishing paste buffer tanks",
+              "family": "2CRD",
+              "family_desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
+              "typical_use": "Blind and tapped holes, porous coated surfaces and complex geometries. Removing polishing pastes and oils."
+            }
+          ]
+        },
+        {
+          "id": "medical-implants",
+          "applications": [],
+          "family": "Medical implant processing",
+          "photo": "nm_implants",
+          "photoAlt": "Medical implant components after precision cleaning",
+          "name": "Medical implant processing",
+          "sub": "Cleaning, passivation, EP, FPI and turnkey lines",
+          "desc": "Complete cleaning and surface treatment systems for orthopaedic and medical implant manufacturing. Built to the customer's specification, from spray cleaning with cleanroom air lock to electropolishing, quality verification, and full turnkey lines. IPC, FCS/FCPS and FPI are listed as applications under PLURITANK and 2CRD above.",
+          "url": "https://novatec.it/en/products",
+          "machines": [
+            {
+              "id": "ipc",
+              "features": [
+                "Cleaning implants between production steps",
+                "Removes oils, chips, particles and polishing pastes",
+                "Available as in-line PLURITANK system or 2CRD vacuum system",
+                "Handles blind holes, porous coatings and complex shapes"
+              ],
+              "specs": [],
+              "i": [
+                "medical"
+              ],
+              "family": "IPC in-process cleaning",
+              "photo": "nm_ipc",
+              "photoAlt": "Novatec IPC in-process cleaning system",
+              "caption": "IPC in-process cleaning system",
+              "gallery": [
+                [
+                  "nm_ipc",
+                  "IPC in-process cleaning - 2CRD400 one-chamber vacuum system"
+                ],
+                [
+                  "nm_basket",
+                  "Implants loaded in a basket"
+                ]
+              ],
+              "name": "IPC in-process cleaning",
+              "short": "Cleaning implants between production steps.",
+              "desc": "In-process cleaning (IPC) removes oils, chips, particles and polishing pastes from implants between grinding, blasting and polishing steps. Supplied as an in-line PLURITANK system for higher volumes and a wider mix of parts, or as a one-chamber 2CRD vacuum system for blind holes and complex shapes.",
+              "process": [
+                "In-process cleaning",
+                "Removing polishing pastes and oils",
+                "Blind and tapped holes",
+                "Porous coated surfaces"
+              ],
+              "url": "https://novatec.it/en/products",
+              "k": "ipc in-process cleaning implants orthopaedic pluritank manufacturing steps",
+              "family_desc": "In-process cleaning removes oils, chips, particles and polishing pastes from implants between production steps.",
+              "typical_use": "Cleaning implants between grinding, blasting and polishing steps."
+            },
+            {
+              "id": "fcps",
+              "features": [
+                "Final cleaning and passivation into cleanroom",
+                "Unloads through an air lock straight into cleanroom",
+                "Free of contaminants, stains, organic and biological residues",
+                "Automated basket handling and validation data logging"
+              ],
+              "specs": [],
+              "i": [
+                "medical"
+              ],
+              "family": "FCS / FCPS",
+              "photo": "nm_fcps",
+              "photoAlt": "FCS / FCPS final cleaning and passivation system",
+              "caption": "FCS / FCPS final cleaning and passivation, cleanroom",
+              "gallery": [
+                [
+                  "nm_fcps",
+                  "FCS / FCPS final cleaning and passivation, cleanroom"
+                ],
+                [
+                  "nm_fcps_c",
+                  "Unload air lock on the cleanroom side"
+                ]
+              ],
+              "name": "FCS / FCPS final cleaning and passivation",
+              "short": "Final cleaning, with optional passivation, into the cleanroom.",
+              "desc": "The FCS (final cleaning system) or FCPS (combined final cleaning and passivation system) is an automatic PLURITANK line that unloads through an air lock straight into the cleanroom, leaving parts free of contaminants, stains and organic or biological residues.",
+              "process": [
+                "Final cleaning",
+                "Passivation",
+                "Cleanroom air lock unload",
+                "Medical implant packaging prep"
+              ],
+              "url": "https://novatec.it/en/products",
+              "k": "fcs fcps final cleaning passivation cleanroom air lock implants sterilisation",
+              "family_desc": "Automatic PLURITANK line unloading through an air lock straight into the cleanroom.",
+              "typical_use": "Final cleaning and passivation of orthopaedic implants before cleanroom packaging."
+            },
+            {
+              "id": "fpi",
+              "features": [
+                "Automated cleaning and crack detection",
+                "Combines surface cleaning, prep and fluorescent penetrant inspection",
+                "Reveals flaws, micro-cracks and fatigue signs",
+                "Fully automated process for medical implants & aerospace"
+              ],
+              "specs": [],
+              "i": [
+                "medical",
+                "aero"
+              ],
+              "family": "FPI",
+              "photo": "nm_fpi_b",
+              "photoAlt": "FPI fluorescent penetrant inspection line installed",
+              "caption": "FPI fluorescent penetrant inspection line installed",
+              "gallery": [
+                [
+                  "nm_fpi_b",
+                  "FPI fluorescent penetrant inspection line installed"
+                ]
+              ],
+              "name": "FPI fluorescent penetrant inspection line",
+              "short": "Automated cleaning and crack detection.",
+              "desc": "An automatic PLURITANK line that combines surface cleaning, preparation and fluorescent penetrant inspection in one fully automated process. Used to validate medical implants during manufacturing by revealing flaws, cracks and signs of fatigue.",
+              "process": [
+                "Fluorescent penetrant inspection",
+                "Non-destructive testing (NDT)",
+                "Crack and flaw detection",
+                "Pre-inspection surface cleaning"
+              ],
+              "url": "https://novatec.it/en/products",
+              "k": "fpi fluorescent penetrant inspection ndt cracks fatigue flaws implants pluritank",
+              "family_desc": "Automatic line combining surface cleaning, preparation and fluorescent penetrant inspection.",
+              "typical_use": "Flaw and crack detection on medical implants and aerospace parts."
+            },
+            {
+              "id": "qvs-brc",
+              "features": [
+                "QVS: Quality verification stations",
+                "BRC: Basket return air lock conveyor",
+                "The modules that link a combined medical line together",
+                "Part of a full automatic medical implant line",
+                "Automated barcode/RFID tracking and data exchange"
+              ],
+              "specs": [],
+              "i": [
+                "medical"
+              ],
+              "family": "QVS / BRC",
+              "photo": "nm_urs",
+              "photoAlt": "Novatec combined medical line layout showing QVS and BRC",
+              "caption": "Novatec combined medical line layout showing QVS and BRC",
+              "gallery": [
+                [
+                  "nm_urs",
+                  "Novatec combined medical line layout showing QVS and BRC"
+                ],
+                [
+                  "nm_basket",
+                  "Implants loaded in a basket"
+                ],
+                [
+                  "nm_fcps_c",
+                  "Unload air lock on the cleanroom side"
+                ]
+              ],
+              "name": "QVS / BRC quality verification & basket return conveyor",
+              "tag": "Automation",
+              "short": "Quality verification stations and basket return air lock conveyor.",
+              "desc": "Quality Verification Stations (QVS) combined with Basket Return Conveyor (BRC) air locks. These specialised transfer, inspection, and air lock modules link individual cleaning, passivation, and cleanroom packaging stations into a seamless, contamination-free automated medical implant production loop.",
+              "process": [
+                "Full automatic medical implant lines",
+                "Quality verification",
+                "Cleanroom basket return conveyor"
+              ],
+              "url": "https://novatec.it/en/products",
+              "k": "qvs brc quality verification basket return air lock conveyor medical implant line",
+              "family_desc": "Quality verification stations, and basket return air lock conveyor. The modules that link a combined medical line together.",
+              "typical_use": "Part of a full automatic medical implant line."
+            },
+            {
+              "id": "ep",
+              "features": [
+                "Electropolishing line built on the PLURITANK platform",
+                "Adds dedicated electropolish tank plus neutralisation and recovery rinsing",
+                "Multi-stage cascade DI water rinsing and drying",
+                "Delivers burr-free, passivated, micro-smooth implant surfaces"
+              ],
+              "specs": [],
+              "i": [
+                "medical"
+              ],
+              "family": "Electropolishing (EP)",
+              "photo": "nov_plt_compact",
+              "photoAlt": "Novatec PLURITANK electropolishing line",
+              "gallery": [
+                [
+                  "nm_urs_b",
+                  "Implants in basket, close up"
+                ]
+              ],
+              "name": "Electropolishing line (EP)",
+              "tag": "PLURITANK EP",
+              "short": "Electropolishing line built on PLURITANK platform.",
+              "desc": "The Novatec Electropolishing (EP) line is a multi-stage automated treatment line built on the PLURITANK platform. It incorporates dedicated acid electropolishing baths, chemical neutralisation, cascade recovery rinse tanks, and hot-air drying to deliver mirror-smooth, passivated finishes on stainless steel and titanium medical implants.",
+              "process": [
+                "Stainless steel medical implants",
+                "Titanium medical implants",
+                "Electropolishing",
+                "Neutralisation & recovery rinsing"
+              ],
+              "url": "https://novatec.it/en/products",
+              "k": "electropolishing ep pluritank stainless titanium medical implants neutralisation",
+              "family_desc": "An electropolishing line built on the PLURITANK platform, adding an electropolish tank plus neutralisation and recovery rinsing.",
+              "typical_use": "Stainless steel and titanium medical implants."
+            },
+            {
+              "id": "combined",
+              "features": [
+                "Automatic basket loading station with scanners and RFID",
+                "IPC one-chamber vacuum systems",
+                "QVS quality verification stations",
+                "FCPS final cleaning and passivation with air lock to cleanroom",
+                "PFC spray cleaning system with unload air lock",
+                "BRC basket return air-lock conveyor",
+                "Full automatic management and data exchange for traceability"
+              ],
+              "specs": [],
+              "i": [
+                "medical"
+              ],
+              "family": "Combined medical lines",
+              "photo": "nm_urs",
+              "photoAlt": "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks",
+              "caption": "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks",
+              "gallery": [
+                [
+                  "nm_urs",
+                  "Combined medical line layout - IPC, QVS, FCPS, PFC, BRC, air locks"
+                ],
+                [
+                  "nm_fcps",
+                  "FCS / FCPS final cleaning and passivation, cleanroom"
+                ],
+                [
+                  "nm_fpi_b",
+                  "FPI fluorescent penetrant inspection line installed"
+                ],
+                [
+                  "nm_ipc",
+                  "IPC in-process cleaning - 2CRD400 one-chamber vacuum system"
+                ],
+                [
+                  "nm_basket",
+                  "Implants loaded in a basket"
+                ],
+                [
+                  "nm_urs_b",
+                  "Implants in basket, close up"
+                ],
+                [
+                  "nm_implants",
+                  "Medical implant components"
+                ]
+              ],
+              "name": "Combined turnkey implant lines",
+              "tag": "All-in project",
+              "short": "Complete, automated implant cleaning plant.",
+              "desc": "For larger projects Novatec designs the whole cleaning area to the customer's URS, linking the individual systems with conveyors and full automatic management. A typical line includes automatic basket loading with scanners and RFID, IPC one-chamber vacuum systems, quality verification stations, a combined final cleaning and passivation system, spray cleaning with an unload air lock, and a basket return conveyor, all with data exchange for traceability.",
+              "process": [
+                "In-process cleaning",
+                "Final cleaning and passivation",
+                "Quality verification",
+                "Cleanroom transfer"
+              ],
+              "url": "https://novatec.it/en/products",
+              "k": "custom turnkey combined implants rfid qvs pfc brc cleanroom fcs fcps",
+              "family_desc": "Full automatic turnkey medical implant cleaning plants built to customer User Requirement Specification, integrating basket loading, IPC, QVS, FCPS, PFC, and BRC with cleanroom air locks.",
+              "typical_use": "Turnkey automated plants for orthopaedic & medical implant manufacturing."
+            }
+          ]
+        },
+        {
+          "id": "components",
+          "applications": [],
+          "family": "Components & PLT 60V",
+          "photo": "nov_plt1400_gen",
+          "photoAlt": "Novatec PLURITANK 1400 ultrasonic generator rack and filtration skids",
+          "name": "Components & PLT 60V",
+          "sub": "Generators, transducers and PLT 60V",
+          "desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
+          "url": "https://novatec.it/en/ultrasonic-components",
+          "machines": [
+            {
+              "id": "generators",
+              "features": [
+                "Generators and transducers",
+                "For new tanks or retrofits"
+              ],
+              "specs": [],
+              "i": [],
+              "photo": "nov_plt1400_gen",
+              "photoAlt": "PLURITANK 1400 generator rack and filtration skids",
+              "caption": "PLURITANK 1400 generator rack and filtration skids",
+              "gallery": [
+                [
+                  "nov_plt1400_gen",
+                  "PLURITANK 1400 generator rack and filtration skids"
+                ],
+                [
+                  "nov_gen",
+                  "Bench ultrasonic tanks with separate generators"
+                ]
+              ],
+              "name": "Ultrasonic generators and transducers",
+              "short": "For building or upgrading cleaning tanks.",
+              "desc": "Ultrasonic generators and transducers for building new cleaning tanks or upgrading existing ones.",
+              "process": [
+                "Ultrasonic cleaning",
+                "Tank retrofit and upgrade",
+                "Multi-frequency ultrasound"
+              ],
+              "url": "https://novatec.it/en/ultrasonic-components",
+              "k": "generators transducers ultrasonic components multi-frequency",
+              "family": "Ultrasonic components",
+              "family_desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
+              "typical_use": "Supplied with the lines, or separately."
+            },
+            {
+              "id": "plt60v",
+              "features": [
+                "Pressure-cycle cleaning",
+                "Reaches internal channels and cavities"
+              ],
+              "specs": [],
+              "i": [
+                "auto",
+                "medical"
+              ],
+              "photo": "nov_plt_compact",
+              "photoAlt": "Novatec PLT 60V pressure-cycle cleaning unit",
+              "name": "PLT 60V pressure-cycle unit",
+              "short": "Pressure-change cleaning for internal channels.",
+              "desc": "The PLT 60V uses pressure cycling to clean internal channels and cavities that ultrasound alone struggles to reach.",
+              "process": [
+                "Pressure-change cleaning",
+                "Internal channel flushing",
+                "Deep cavity cleaning"
+              ],
+              "models": [
+                {
+                  "family": "PLURITANK",
+                  "model": "PLT 60V",
+                  "chamber": "60 L",
+                  "size": "On request",
+                  "load": "On request",
+                  "notes": "Two-chamber pressure-cycle unit, listed under Components",
+                  "source": "Novatec website"
+                }
+              ],
+              "url": "https://novatec.it/en/ultrasonic-components",
+              "k": "plt60v pressure cleaning internal channels two-chamber",
+              "family": "Ultrasonic components",
+              "family_desc": "Generators and transducers, including the PLT 60V two-chamber pressure-cycle unit. Multi-frequency ultrasonic groups.",
+              "typical_use": "Supplied with the lines, or separately."
+            }
+          ]
+        }
       ],
-      [
-        "hs_da600pro",
-        "DA600PRO hot filament CVD diamond coating machine"
+      "seo_title": "Novatec ultrasonic cleaning systems in India | Authorised Partner – Greets Equipment"
+    },
+    {
+      "id": "huasheng",
+      "strengths": [],
+      "photo": "hs_gfour",
+      "photoAlt": "Huasheng GFOUR hybrid coating machine",
+      "gallery": [
+        [
+          "hs_gfour",
+          "GFOUR 4th-generation hybrid coating machine"
+        ],
+        [
+          "hs_md800",
+          "MD800 PLUS arc coating machine"
+        ],
+        [
+          "hs_da600pro",
+          "DA600PRO hot filament CVD diamond coating machine"
+        ],
+        [
+          "hs_tc800plus",
+          "TC800PLUS ta-C diamond-like carbon coating machine"
+        ],
+        [
+          "hs_deco_h",
+          "DECO H multi-arc + HiPIMS decorative coating system"
+        ]
       ],
-      [
-        "hs_tc800plus",
-        "TC800PLUS ta-C diamond-like carbon coating machine"
-      ],
-      [
-        "hs_deco_h",
-        "DECO H multi-arc + HiPIMS decorative coating system"
-      ]
-    ],
-    "name": "Huasheng",
-    "full": "Guangdong Huasheng Nanotechnology Co., Ltd.",
-    "country": "China",
-    "site": "https://www.hscoat.com",
-    "intro": "PVD arc, HiPIMS, hybrid, ta-C DLC and HFCVD diamond coating equipment, plus complete turnkey coating plants.",
-    "cats": [
-      {
-        "id": "pvd",
-        "photo": "hs_gfour",
-        "photoAlt": "Huasheng PVD coating machines",
-        "name": "PVD coating equipment",
-        "sub": "Arc, HiPIMS, hybrid and decorative",
-        "desc": "Physical vapour deposition systems for hard, wear-resistant coatings on cutting tools, moulds and precision components.",
-        "url": "https://www.hscoat.com/pvd-coating-equipment/",
-        "machines": [
-          {
-            "id": "gfour",
-            "series": "GFOUR",
-            "photo": "hs_gfour",
-            "photoAlt": "Huasheng GFOUR hybrid coating machine",
-            "name": "GFOUR 4th-generation hybrid coating machine",
-            "tag": "Hybrid PVD",
-            "short": "4th-gen hybrid: 4 targets, controllable plasma, square wave.",
-            "desc": "The GFOUR is Huasheng's 4th-generation hybrid coating machine featuring four independent target stations, controllable plasma density, and adjustable square-wave pulse bias. It allows simultaneous or sequential deposition of multi-layer, gradient, and nanocomposite coating architectures for high-end cutting tools and demanding mechanical components.",
-            "features": [
-              "Smooth, droplet-free surface",
-              "Excellent adhesion",
-              "2 µm/h deposition",
-              "Thick coatings up to 30 µm"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "4th-generation hybrid coating (4 targets)"
-              ],
-              [
-                "Chamber volume",
-                "0.76 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ500 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "650 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "4850 × 1600 × 2400 mm"
-              ],
-              [
-                "Capacity",
-                "7 trees (8,400 APMT1135 inserts / 2,520 round tools)"
-              ],
-              [
-                "Max. load",
-                "300 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "AlTiN 6–8 h"
-              ],
-              [
-                "Typical applications",
-                "Indexable inserts, small cutting tools, applications needing thick coatings without re-sharpening."
-              ]
-            ],
-            "process": [
-              "Indexable inserts",
-              "Small cutting tools",
-              "Thick coatings (0.5–30 µm)",
-              "AlTiN, AlCrN, TiSiN"
-            ],
-            "models": [
-              {
-                "model": "GFOUR",
-                "tech": "4th-generation hybrid coating",
-                "area": "Φ500 × 400 mm",
-                "temp": "650 °C",
-                "load": "7 trees (8,400 inserts / 2,520 tools, 300 kg, Spindle Ø130)",
-                "size": "4850 × 1600 × 2400 mm",
-                "time": "AlTiN 6–8 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/pvd-coating-equipment/",
-            "k": "gfour hybrid pvd thick coatings inserts drills cutting tools 4th generation",
-            "i": [
-              "tools",
-              "auto",
-              "dies"
-            ],
-            "series_desc": "4th-generation hybrid coating platform with four targets, controllable plasma, adjustable square wave and ionisation rate. Coating thickness 0.5-30 µm.",
-            "typical_applications": "Indexable inserts, small cutting tools, applications needing thick coatings without re-sharpening."
-          },
-          {
-            "id": "md200",
-            "series": "MD",
-            "photo": "hs_md200",
-            "photoAlt": "Huasheng MD200 arc coating machine",
-            "name": "MD200 arc coating machine",
-            "tag": "Arc ion plating",
-            "short": "Compact arc coater for small-batch and regrinding shops.",
-            "desc": "The MD200 is Huasheng's compact arc coating machine engineered for small-batch tool manufacturing, R&D trials, and fast-turnaround tool regrinding shops. Utilising lateral etching and advanced multi-arc ion plating, it delivers industrial-grade TiAlN and AlCrN coatings on cutting tools with minimal power consumption and a compact footprint.",
-            "features": [
-              "High deposition rate",
-              "High ionisation rate",
-              "Ultra-high impact resistance",
-              "Fully automatic",
-              "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Arc ion plating (4 arc sources)"
-              ],
-              [
-                "Chamber volume",
-                "0.5 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ310 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "500 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "3400 × 2000 × 2500 mm"
-              ],
-              [
-                "Capacity",
-                "3 trees (3,600 APMT1135 inserts / 1,000 round tools)"
-              ],
-              [
-                "Max. load",
-                "200 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "AlTiN 6–8 h"
-              ],
-              [
-                "Typical applications",
-                "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
-              ]
-            ],
-            "process": [
-              "TiAlN",
-              "AlCrN",
-              "TiN",
-              "TiCN",
-              "Inserts, end mills, drills"
-            ],
-            "models": [
-              {
-                "model": "MD200",
-                "tech": "Arc ion plating (4 arc sources)",
-                "area": "Φ310 × 400 mm",
-                "temp": "500 °C",
-                "load": "3 trees (3,600 inserts / 1,000 tools, 200 kg, Spindle Ø130)",
-                "size": "3400 × 2000 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD500",
-                "tech": "Arc ion plating (6 arc sources)",
-                "area": "Φ410 × 400 mm",
-                "temp": "600 °C",
-                "load": "5 trees (6,000 inserts / 1,800 tools, 300 kg, Spindle Ø130)",
-                "size": "3400 × 2150 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD800 PLUS",
-                "tech": "Arc ion plating (8 arc sources)",
-                "area": "Φ650 × 400 mm",
-                "temp": "600 °C",
-                "load": "10 trees (12,000 inserts / 3,600 tools / 30 hobs, 500 kg, Spindle Ø130)",
-                "size": "3750 × 2400 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD1500",
-                "tech": "Arc ion plating (16 arc sources, vertical)",
-                "area": "Φ720 × 900 mm",
-                "temp": "600 °C",
-                "load": "12 trees (28,000 inserts / 5,300 tools / 72 hobs, 1,000 kg, Spindle Ø130)",
-                "size": "4860 × 2300 × 2660 mm",
-                "time": "AlTiN 6–8 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/aip-coating-equipment/",
-            "k": "md200 arc aip pvd tialn alcrn inserts drills",
-            "i": [
-              "tools"
-            ],
-            "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
-            "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
-          },
-          {
-            "id": "md500",
-            "series": "MD",
-            "photo": "hs_md500",
-            "photoAlt": "Huasheng MD500 arc coating machine",
-            "name": "MD500 arc coating machine",
-            "tag": "Arc ion plating",
-            "short": "Mid-size arc coater for serial cutting-tool production.",
-            "desc": "The MD500 is Huasheng's mid-size arc coating machine designed for flexible medium-volume cutting tool and mould production. It incorporates Huasheng's proprietary lateral etching technology and multi-arc sources to coat drills, milling cutters, and inserts with outstanding uniformity and adhesion.",
-            "features": [
-              "High deposition rate",
-              "High ionisation rate",
-              "Ultra-high impact resistance",
-              "Fully automatic",
-              "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Arc ion plating (6 arc sources)"
-              ],
-              [
-                "Chamber volume",
-                "0.7 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ410 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "600 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "3400 × 2150 × 2500 mm"
-              ],
-              [
-                "Capacity",
-                "5 trees (6,000 APMT1135 inserts / 1,800 round tools)"
-              ],
-              [
-                "Max. load",
-                "300 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "AlTiN 6–8 h"
-              ],
-              [
-                "Typical applications",
-                "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
-              ]
-            ],
-            "process": [
-              "TiAlN",
-              "AlCrN",
-              "AlTiSiN",
-              "CrN",
-              "Inserts, end mills, drills"
-            ],
-            "models": [
-              {
-                "model": "MD200",
-                "tech": "Arc ion plating (4 arc sources)",
-                "area": "Φ310 × 400 mm",
-                "temp": "500 °C",
-                "load": "3 trees (3,600 inserts / 1,000 tools, 200 kg, Spindle Ø130)",
-                "size": "3400 × 2000 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD500",
-                "tech": "Arc ion plating (6 arc sources)",
-                "area": "Φ410 × 400 mm",
-                "temp": "600 °C",
-                "load": "5 trees (6,000 inserts / 1,800 tools, 300 kg, Spindle Ø130)",
-                "size": "3400 × 2150 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD800 PLUS",
-                "tech": "Arc ion plating (8 arc sources)",
-                "area": "Φ650 × 400 mm",
-                "temp": "600 °C",
-                "load": "10 trees (12,000 inserts / 3,600 tools / 30 hobs, 500 kg, Spindle Ø130)",
-                "size": "3750 × 2400 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD1500",
-                "tech": "Arc ion plating (16 arc sources, vertical)",
-                "area": "Φ720 × 900 mm",
-                "temp": "600 °C",
-                "load": "12 trees (28,000 inserts / 5,300 tools / 72 hobs, 1,000 kg, Spindle Ø130)",
-                "size": "4860 × 2300 × 2660 mm",
-                "time": "AlTiN 6–8 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/aip-coating-equipment/",
-            "k": "md500 arc aip pvd inserts end mills cutting tools",
-            "i": [
-              "tools",
-              "dies"
-            ],
-            "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
-            "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
-          },
-          {
-            "id": "md800",
-            "series": "MD",
-            "name": "MD800 arc coating machine",
-            "tag": "Arc coating",
-            "photo": "hs_md800",
-            "photoAlt": "Huasheng MD800 PLUS arc coating machine",
-            "gallery": [
-              [
-                "hs_md800",
-                "Huasheng MD800 PLUS arc coating machine"
-              ],
-              [
-                "hs_md500",
-                "Huasheng MD500 arc coating machine"
-              ]
-            ],
-            "short": "High-rate arc coater for tool coating production.",
-            "desc": "The MD800 PLUS is the arc coating machine at the heart of Huasheng's turnkey tool-coating plant. Low-voltage, high-current arc discharge evaporates and ionises the target material, which is deposited on the tools under an electric field, giving a high deposition rate and strong coating adhesion. Configured for high-throughput production of inserts, end mills, drills, and hob cutters.",
-            "features": [
-              "High deposition rate",
-              "High ionisation rate",
-              "Ultra-high impact resistance",
-              "Fully automatic",
-              "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
-            ],
-            "specs": [
-              [
-                "Technology",
-                "Arc coating"
-              ],
-              [
-                "Capacity",
-                "12,000 pcs per batch (APMT1135 inserts)"
-              ],
-              [
-                "Operation",
-                "Fully automatic"
-              ]
-            ],
-            "process": [
-              "TiAlN, AlCrN and similar hard coatings",
-              "Inserts, drills and end mills",
-              "Hobbing tools (D80 × L150)",
-              "AlTiSiN and custom nano-composite coatings"
-            ],
-            "models": [
-              {
-                "model": "MD200",
-                "tech": "Arc ion plating (4 arc sources)",
-                "area": "Φ310 × 400 mm",
-                "temp": "500 °C",
-                "load": "3 trees (3,600 inserts / 1,000 tools, 200 kg, Spindle Ø130)",
-                "size": "3400 × 2000 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD500",
-                "tech": "Arc ion plating (6 arc sources)",
-                "area": "Φ410 × 400 mm",
-                "temp": "600 °C",
-                "load": "5 trees (6,000 inserts / 1,800 tools, 300 kg, Spindle Ø130)",
-                "size": "3400 × 2150 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD800 PLUS",
-                "tech": "Arc ion plating (8 arc sources)",
-                "area": "Φ650 × 400 mm",
-                "temp": "600 °C",
-                "load": "10 trees (12,000 inserts / 3,600 tools / 30 hobs, 500 kg, Spindle Ø130)",
-                "size": "3750 × 2400 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD1500",
-                "tech": "Arc ion plating (16 arc sources, vertical)",
-                "area": "Φ720 × 900 mm",
-                "temp": "600 °C",
-                "load": "12 trees (28,000 inserts / 5,300 tools / 72 hobs, 1,000 kg, Spindle Ø130)",
-                "size": "4860 × 2300 × 2660 mm",
-                "time": "AlTiN 6–8 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/aip-coating-equipment/",
-            "k": "pvd arc aip tialn inserts drills end mills md800 md800 plus turnkey hobs",
-            "i": [
-              "tools",
-              "auto",
-              "jobshop"
-            ],
-            "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
-            "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
-          },
-          {
-            "id": "md1500",
-            "series": "MD",
-            "photo": "hs_md1500",
-            "photoAlt": "Line drawing of Huasheng MD1500 layout",
-            "caption": "MD1500 high-capacity vertical arc coating machine - manufacturer line drawing",
-            "gallery": [
-              [
-                "hs_md1500",
-                "Line drawing of Huasheng MD1500 machine layout"
-              ]
-            ],
-            "name": "MD1500 high-capacity vertical arc coating machine",
-            "tag": "Heavy production",
-            "short": "Production machine for gear cutting tools: 72 hobs and 1000 kg per batch.",
-            "desc": "The MD1500 is Huasheng's heavy-duty, high-capacity vertical arc coating machine engineered for high-volume manufacturing and large-format cutting tools, including long broaches and gear hobs up to 72 pieces or 1,000 kg per batch. Built with heavy-load rotary fixtures and high-power multi-arc cathode arrays.",
-            "features": [
-              "High deposition rate",
-              "High ionisation rate",
-              "Ultra-high impact resistance",
-              "Fully automatic",
-              "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
-            ],
-            "specs": [
-              [
-                "Machine",
-                ""
-              ],
-              [
-                "Coating technology",
-                "Arc ion plating (16 arc sources, vertical)"
-              ],
-              [
-                "Chamber volume",
-                "1.8 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ720 × 900 mm"
-              ],
-              [
-                "Max. working temperature",
-                "600 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "4860 × 2300 × 2660 mm"
-              ],
-              [
-                "Capacity",
-                "12 trees (28,000 inserts / 5,300 tools / 72 hobs)"
-              ],
-              [
-                "Max. load",
-                "1,000 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "AlTiN 6–8 h"
-              ],
-              [
-                "Typical applications",
-                "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
-              ],
-              [
-                "MD1500 utilities",
-                ""
-              ],
-              [
-                "Power supply",
-                "3 x 380/220 V (3L+N+PE), 3 x 300 A, 170 kW, 50/60 Hz"
-              ],
-              [
-                "Average consumption",
-                "About 120 kW/h, roughly 6 hours per batch"
-              ],
-              [
-                "Cooling water",
-                "5-5.5 bar at 22-24 °C. Max heat discharge about 90 kW, flow 120 L/min, ullage 10 L per batch."
-              ],
-              [
-                "Compressed air",
-                "5 - 6.5 bar"
-              ],
-              [
-                "Process gas",
-                "Ar / N2 / H2 at 1.0 - 1.2 bar, minimum purity 99.992%"
-              ],
-              [
-                "Gas per batch",
-                "Ar 350 L, N2 1100 L, ordinary N2 1000 L"
-              ],
-              [
-                "Room required",
-                "8100 x 5500 mm, keeping an 800 mm safety passage around the machine"
-              ],
-              [
-                "Arc source power supply",
-                "HDP400: 73 V, 12 kW, 0.1-500 Hz, duty cycle 5-95%, 50-300 A"
-              ]
-            ],
-            "site_reqs_title": "MD1500 utilities",
-            "site_reqs": [
-              [
-                "Power supply",
-                "3 x 380/220 V (3L+N+PE), 3 x 300 A, 170 kW, 50/60 Hz"
-              ],
-              [
-                "Average consumption",
-                "About 120 kW/h, roughly 6 hours per batch"
-              ],
-              [
-                "Cooling water",
-                "5-5.5 bar at 22-24 °C. Max heat discharge about 90 kW, flow 120 L/min, ullage 10 L per batch."
-              ],
-              [
-                "Compressed air",
-                "5 - 6.5 bar"
-              ],
-              [
-                "Process gas",
-                "Ar / N2 / H2 at 1.0 - 1.2 bar, minimum purity 99.992%"
-              ],
-              [
-                "Gas per batch",
-                "Ar 350 L, N2 1100 L, ordinary N2 1000 L"
-              ],
-              [
-                "Room required",
-                "8100 x 5500 mm, keeping an 800 mm safety passage around the machine"
-              ],
-              [
-                "Arc source power supply",
-                "HDP400: 73 V, 12 kW, 0.1-500 Hz, duty cycle 5-95%, 50-300 A"
-              ]
-            ],
-            "process": [
-              "Gear cutting tools",
-              "72 hobbing tools per batch",
-              "High-volume inserts & end mills",
-              "AlTiN, AlCrN, TiN"
-            ],
-            "models": [
-              {
-                "model": "MD200",
-                "tech": "Arc ion plating (4 arc sources)",
-                "area": "Φ310 × 400 mm",
-                "temp": "500 °C",
-                "load": "3 trees (3,600 inserts / 1,000 tools, 200 kg, Spindle Ø130)",
-                "size": "3400 × 2000 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD500",
-                "tech": "Arc ion plating (6 arc sources)",
-                "area": "Φ410 × 400 mm",
-                "temp": "600 °C",
-                "load": "5 trees (6,000 inserts / 1,800 tools, 300 kg, Spindle Ø130)",
-                "size": "3400 × 2150 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD800 PLUS",
-                "tech": "Arc ion plating (8 arc sources)",
-                "area": "Φ650 × 400 mm",
-                "temp": "600 °C",
-                "load": "10 trees (12,000 inserts / 3,600 tools / 30 hobs, 500 kg, Spindle Ø130)",
-                "size": "3750 × 2400 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "MD1500",
-                "tech": "Arc ion plating (16 arc sources, vertical)",
-                "area": "Φ720 × 900 mm",
-                "temp": "600 °C",
-                "load": "12 trees (28,000 inserts / 5,300 tools / 72 hobs, 1,000 kg, Spindle Ø130)",
-                "size": "4860 × 2300 × 2660 mm",
-                "time": "AlTiN 6–8 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/aip-coating-equipment/",
-            "k": "md1500 arc vertical hobs gear cutting tools 1000kg high capacity",
-            "i": [
-              "tools",
-              "auto",
-              "jobshop"
-            ],
-            "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
-            "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
-          },
-          {
-            "id": "hd500",
-            "series": "HD",
-            "photo": "hs_hd500",
-            "photoAlt": "Huasheng HD500 hybrid arc + HiPIMS coating machine",
-            "caption": "Huasheng HD500 hybrid arc + HiPIMS coating machine",
-            "name": "HD500 hybrid arc + HiPIMS coating machine",
-            "tag": "Hybrid HiPIMS",
-            "short": "30% performance gain over arc alone, for stainless steel & titanium.",
-            "desc": "The HD500 is Huasheng's hybrid arc + HiPIMS coating machine, combining high-ionisation HiPIMS sputtering with high-rate arc deposition in a single chamber. Engineered for precision cutting tools machining difficult materials such as stainless steel, titanium, and aerospace superalloys, delivering up to 30% longer tool life over standard arc coatings.",
-            "features": [
-              "30% performance gain over arc alone",
-              "Ultra-low friction",
-              "Optically graded surface finish",
-              "HiPIMS surface layer over an arc matrix"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Hybrid arc + magnetron (HiPIMS)"
-              ],
-              [
-                "Chamber volume",
-                "0.7 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ410 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "700 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "3400 × 1600 × 2600 mm"
-              ],
-              [
-                "Capacity",
-                "5 trees (6,000 APMT1135 inserts / 1,800 round tools)"
-              ],
-              [
-                "Max. load",
-                "200 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "AlTiN 6–8 h"
-              ],
-              [
-                "Typical applications",
-                "Hard-to-machine materials such as stainless steel and titanium alloys."
-              ]
-            ],
-            "process": [
-              "Stainless steel machining tools",
-              "Titanium alloys",
-              "Hard-to-machine materials",
-              "HiPIMS + Arc hybrid"
-            ],
-            "models": [
-              {
-                "model": "HD500",
-                "tech": "Hybrid arc + magnetron (HiPIMS)",
-                "area": "Φ410 × 400 mm",
-                "temp": "700 °C",
-                "load": "5 trees (6,000 inserts / 1,800 tools, 200 kg, Spindle Ø130)",
-                "size": "3400 × 1600 × 2600 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "HD800",
-                "tech": "Hybrid arc + magnetron (HiPIMS)",
-                "area": "Φ650 × 400 mm",
-                "temp": "600 °C",
-                "load": "10 trees (12,000 inserts / 3,600 tools, 300 kg, Spindle Ø130)",
-                "size": "3750 × 2400 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/hybrid-coating-equipment/",
-            "k": "hd500 hybrid hipims arc low friction titanium stainless",
-            "i": [
-              "tools",
-              "aero",
-              "auto"
-            ],
-            "series_desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
-            "typical_applications": "Hard-to-machine materials such as stainless steel and titanium alloys."
-          },
-          {
-            "id": "hd800",
-            "series": "HD",
-            "photo": "hs_hd500",
-            "photoAlt": "Huasheng HD series hybrid arc + HiPIMS coating platform (HD500 configuration shown)",
-            "caption": "Huasheng HD series hybrid arc + HiPIMS coating platform (HD500 configuration shown)",
-            "name": "HD800 hybrid arc + HiPIMS coating machine",
-            "tag": "Hybrid HiPIMS",
-            "short": "High-capacity hybrid platform for hard-to-machine materials.",
-            "desc": "The HD800 is Huasheng's high-capacity hybrid coating platform combining high-power impulse magnetron sputtering (HiPIMS) and multi-arc discharge. It produces ultra-dense, droplet-free, ultra-smooth coatings on high-performance cutting tools, forming dies, and precision mechanical components with excellent thermal stability.",
-            "features": [
-              "30% performance gain over arc alone",
-              "Ultra-low friction",
-              "Optically graded surface finish",
-              "HiPIMS surface layer over an arc matrix"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Hybrid arc + magnetron (HiPIMS)"
-              ],
-              [
-                "Chamber volume",
-                "1.0 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ650 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "600 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "3750 × 2400 × 2500 mm"
-              ],
-              [
-                "Capacity",
-                "10 trees (12,000 inserts / 3,600 round tools)"
-              ],
-              [
-                "Max. load",
-                "300 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "AlTiN 6–8 h"
-              ],
-              [
-                "Typical applications",
-                "Hard-to-machine materials such as stainless steel and titanium alloys."
-              ]
-            ],
-            "process": [
-              "Stainless steel machining tools",
-              "Titanium alloys",
-              "Hard-to-machine materials",
-              "HiPIMS + Arc hybrid"
-            ],
-            "models": [
-              {
-                "model": "HD500",
-                "tech": "Hybrid arc + magnetron (HiPIMS)",
-                "area": "Φ410 × 400 mm",
-                "temp": "700 °C",
-                "load": "5 trees (6,000 inserts / 1,800 tools, 200 kg, Spindle Ø130)",
-                "size": "3400 × 1600 × 2600 mm",
-                "time": "AlTiN 6–8 h"
-              },
-              {
-                "model": "HD800",
-                "tech": "Hybrid arc + magnetron (HiPIMS)",
-                "area": "Φ650 × 400 mm",
-                "temp": "600 °C",
-                "load": "10 trees (12,000 inserts / 3,600 tools, 300 kg, Spindle Ø130)",
-                "size": "3750 × 2400 × 2500 mm",
-                "time": "AlTiN 6–8 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/hybrid-coating-equipment/",
-            "k": "hd800 hybrid hipims arc smooth droplet free aerospace",
-            "i": [
-              "tools",
-              "aero",
-              "auto"
-            ],
-            "series_desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
-            "typical_applications": "Hard-to-machine materials such as stainless steel and titanium alloys."
-          },
-          {
-            "id": "wcc800",
-            "series": "WCC",
-            "photo": "hs_wcc800",
-            "photoAlt": "Huasheng WCC800 DC + HiPIMS magnetron sputtering machine",
-            "name": "WCC800 DC + HiPIMS magnetron sputtering machine",
-            "tag": "HiPIMS sputtering",
-            "short": "Universal wear-resistant coating system using DC + HiPIMS.",
-            "desc": "The WCC800 is Huasheng's universal wear-resistant coating system combining DC magnetron sputtering and HiPIMS technology. Tailored for precision components, forming tools, and friction-sensitive parts requiring smooth, low-stress, wear-resistant coatings.",
-            "features": [
-              "Sputter deposition with no peeling or delamination",
-              "Modular design",
-              "Suits small batches and complex shapes"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "DC + HiPIMS magnetron sputtering (WC/C, TiAlN)"
-              ],
-              [
-                "Chamber volume",
-                "1.0 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ650 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "<200 °C (deposition)"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "4850 × 1600 × 2400 mm"
-              ],
-              [
-                "Capacity",
-                "8 trees (Spindle Ø170 mm)"
-              ],
-              [
-                "Max. load",
-                "350 kg"
-              ],
-              [
-                "Process time",
-                "4–5 h"
-              ],
-              [
-                "Typical applications",
-                "Components and tools, medical instruments, WC/C and TiAlN coatings."
-              ]
-            ],
-            "process": [
-              "Components and tools",
-              "Medical instruments",
-              "WC/C coatings",
-              "TiAlN coatings"
-            ],
-            "models": [
-              {
-                "model": "WCC800",
-                "tech": "DC + HiPIMS magnetron sputtering (WC/C, TiAlN)",
-                "area": "Φ650 × 400 mm",
-                "temp": "<200 °C",
-                "load": "8 trees (350 kg, Spindle Ø170)",
-                "size": "4850 × 1600 × 2400 mm",
-                "time": "4–5 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/hipims-coating-equipment/",
-            "k": "wcc800 wcc hipims sputtering wc c tialn low friction medical",
-            "i": [
-              "auto",
-              "medical",
-              "tools"
-            ],
-            "series_desc": "Universal wear-resistant coating system using DC + HiPIMS magnetron sputtering.",
-            "typical_applications": "Components and tools, medical instruments, WC/C and TiAlN coatings."
-          },
-          {
-            "id": "broach",
-            "series": "Special",
-            "photo": "hs_broach",
-            "photoAlt": "Huasheng dedicated broach coating equipment",
-            "name": "Broach coating equipment",
-            "tag": "Dedicated vertical arc",
-            "short": "Dedicated broach coating equipment with a tall chamber.",
-            "desc": "Dedicated vertical arc coating equipment specially designed by Huasheng for extra-long cutting tools, such as broaches, long drills, and form cutters. Features an extended vertical working zone, multi-zone heating, and distributed arc cathodes for uniform coating thickness along the entire length.",
-            "features": [
-              "Effective coating area Φ650 x 2000 mm",
-              "1000 kg load",
-              "Coatings TiN, AlCrN, AlTiN, AlCrSiN"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Arc, dedicated to broaches"
-              ],
-              [
-                "Chamber volume",
-                "2.5 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ650 × 2000 mm"
-              ],
-              [
-                "Max. working temperature",
-                "450 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "3750 × 1800 × 2960 mm"
-              ],
-              [
-                "Capacity",
-                "10 trees"
-              ],
-              [
-                "Max. load",
-                "1,000 kg"
-              ],
-              [
-                "Process time",
-                "7–9 h"
-              ],
-              [
-                "Typical applications",
-                "Broaches and other long tools."
-              ]
-            ],
-            "process": [
-              "Broaches and other long tools",
-              "TiN, AlCrN, AlTiN, AlCrSiN",
-              "Helical broaches & rotor cutters"
-            ],
-            "models": [
-              {
-                "model": "Broach coater",
-                "tech": "Arc, dedicated to broaches",
-                "area": "Φ650 × 2000 mm",
-                "temp": "450 °C",
-                "load": "10 trees (1,000 kg)",
-                "size": "3750 × 1800 × 2960 mm",
-                "time": "7–9 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/aip-coating-equipment/",
-            "k": "broach coater tall chamber 2000mm 1000kg alcrsn altin tin",
-            "i": [
-              "tools",
-              "auto"
-            ],
-            "series_desc": "Dedicated broach coating equipment with a tall chamber.",
-            "typical_applications": "Broaches and other long tools."
-          },
-          {
-            "id": "aip",
-            "photo": "hs_md800",
-            "photoAlt": "Huasheng MD800 PLUS arc coating machine",
-            "name": "Arc coating equipment",
-            "tag": "Arc coating",
-            "short": "Hard nitride coatings for cutting tools.",
-            "desc": "Arc coating systems for hard nitride coatings such as TiAlN and AlCrN on inserts, drills, end mills and forming tools.",
-            "features": [
-              "High deposition rate",
-              "Strong adhesion",
-              "Multilayer and nano-layer coatings"
-            ],
-            "process": [
-              "Cutting tool coating",
-              "Mould and die coating"
-            ],
-            "url": "https://www.hscoat.com/aip-coating-equipment/",
-            "k": "pvd tialn alcrn inserts drills end mills cutting tools arc",
-            "i": [
-              "tools"
-            ]
-          },
-          {
-            "id": "hipims",
-            "photo": "hs_wcc800",
-            "photoAlt": "Huasheng WCC800 HiPIMS coating machine",
-            "name": "HiPIMS coating equipment",
-            "short": "Dense, smooth, droplet-free coatings.",
-            "desc": "High-power impulse magnetron sputtering systems that produce dense, smooth coatings without the droplets typical of arc processes.",
-            "features": [
-              "High-density plasma",
-              "Smooth, droplet-free surfaces"
-            ],
-            "process": [
-              "Precision tool coating",
-              "Component coating"
-            ],
-            "url": "https://www.hscoat.com/hipims-coating-equipment/",
-            "k": "pvd sputtering smooth hipims",
-            "i": [
-              "tools",
-              "medical",
-              "auto"
-            ]
-          },
-          {
-            "id": "hybrid",
-            "photo": "hs_gfour",
-            "photoAlt": "Huasheng hybrid coating equipment",
-            "name": "Hybrid coating equipment",
-            "short": "Arc and sputtering in one chamber.",
-            "desc": "Hybrid systems that combine arc and sputtering sources in one chamber for multilayer coating designs.",
-            "features": [
-              "Multiple processes in one chamber",
-              "Flexible multilayer designs"
-            ],
-            "process": [
-              "Multilayer tool and component coatings"
-            ],
-            "url": "https://www.hscoat.com/hybrid-coating-equipment/",
-            "k": "pvd arc sputtering multilayer hybrid",
-            "i": [
-              "tools",
-              "auto"
-            ]
-          },
-          {
-            "id": "decorative",
-            "photo": "hs_deco_h",
-            "photoAlt": "Huasheng decorative coating equipment",
-            "name": "Decorative coating equipment",
-            "short": "Colour PVD finishes.",
-            "desc": "PVD systems for durable colour finishes on hardware, sanitaryware, watches and consumer products.",
-            "features": [
-              "Wide colour range",
-              "Durable, wear-resistant finishes"
-            ],
-            "process": [
-              "Decorative PVD"
-            ],
-            "url": "https://www.hscoat.com/decorative-coating-equipment/",
-            "k": "colour gold black decorative sanitary",
-            "i": [
-              "watch"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "dlc",
-        "photo": "hs_tc800plus",
-        "photoAlt": "Huasheng DLC and ta-C coating systems",
-        "name": "DLC & ta-C coating equipment",
-        "sub": "PECVD DLC, ta-C and filtered arc",
-        "desc": "Tetrahedral amorphous carbon (ta-C) and filtered arc systems for hydrogen-free carbon coatings with extreme hardness up to 6000 HV.",
-        "url": "https://www.hscoat.com/dlc-coating-equipment/",
-        "machines": [
-          {
-            "id": "tc800plus",
-            "series": "TC",
-            "photo": "hs_tc800plus",
-            "photoAlt": "Huasheng TC800PLUS ta-C coating machine",
-            "name": "TC800PLUS ta-C coating machine",
-            "tag": "ta-C DLC",
-            "short": "ta-C diamond-like carbon, hardness up to 6000 HV.",
-            "desc": "The TC800PLUS is Huasheng's dedicated tetrahedral amorphous carbon (ta-C) diamond-like carbon coating system. Operating with high-density plasma deposition, it creates hydrogen-free carbon films with diamond-like hardness up to 6000 HV and an ultra-low friction coefficient, ideal for non-ferrous machining, aluminium cutting tools, and high-wear sliding components.",
-            "features": [
-              "Up to 6000 HV",
-              "Low-temperature deposition under 200 °C",
-              "Fast heat dissipation",
-              "Anti-adhesion"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Arc magnetron hybrid ion plating (ta-C)"
-              ],
-              [
-                "Chamber volume",
-                "1.0 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ650 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "200 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "3750 × 1800 × 2300 mm"
-              ],
-              [
-                "Capacity",
-                "10 trees (2,400 round tools)"
-              ],
-              [
-                "Max. load",
-                "500 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "3–6 h"
-              ],
-              [
-                "Typical applications",
-                "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
-              ]
-            ],
-            "process": [
-              "Micro drills",
-              "Aluminium and copper machining",
-              "Optical lens moulds",
-              "PCB drilling",
-              "ta-C diamond-like carbon"
-            ],
-            "models": [
-              {
-                "model": "TC800PLUS",
-                "tech": "Arc magnetron hybrid ion plating (ta-C)",
-                "area": "Φ650 × 400 mm",
-                "temp": "200 °C",
-                "load": "10 trees (2,400 round tools, 500 kg, Spindle Ø130)",
-                "size": "3750 × 1800 × 2300 mm",
-                "time": "3–6 h"
-              },
-              {
-                "model": "TC800PLUS-F",
-                "tech": "Filtered arc ta-C (S-shaped filter)",
-                "area": "Φ650 × 400 mm",
-                "temp": "200 °C",
-                "load": "8,640 micro-tools (D3.175×38.1L, 350 kg, Spindle Ø130)",
-                "size": "4950 × 3400 × 2600 mm",
-                "time": "3–6 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/ta-c-coating-equipment/",
-            "k": "tc800plus tac dlc 6000hv aluminium non ferrous optical moulds",
-            "i": [
-              "tools",
-              "auto",
-              "semi"
-            ],
-            "series_desc": "ta-C diamond-like carbon. The -F version adds an S-shaped magnetic filter that blocks large particles.",
-            "typical_applications": "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
-          },
-          {
-            "id": "tc800plus-f",
-            "series": "TC",
-            "photo": "hs_tc800plus_f",
-            "photoAlt": "Huasheng TC800PLUS-F filtered arc ta-C coating machine",
-            "name": "TC800PLUS-F filtered arc ta-C coating machine",
-            "tag": "Filtered arc ta-C",
-            "short": "S-shaped magnetic filter that blocks large particles, up to 6000 HV.",
-            "desc": "The TC800PLUS-F is Huasheng's filtered arc ta-C coating system equipped with an S-shaped magnetic filter. The magnetic filter removes macroscopic droplets and neutral particles from the plasma stream, depositing defect-free, ultra-smooth, hydrogen-free carbon films with hardness up to 6000 HV.",
-            "features": [
-              "Up to 6000 HV",
-              "Low-temperature deposition under 200 °C",
-              "Fast heat dissipation",
-              "Anti-adhesion"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Filtered arc ta-C (S-shaped filter)"
-              ],
-              [
-                "Chamber volume",
-                "1.0 m³"
-              ],
-              [
-                "Effective coating area",
-                "Φ650 × 400 mm"
-              ],
-              [
-                "Max. working temperature",
-                "200 °C"
-              ],
-              [
-                "Equipment size (L×W×H)",
-                "4950 × 3400 × 2600 mm"
-              ],
-              [
-                "Capacity",
-                "8,640 pcs (D3.175×38.1L)"
-              ],
-              [
-                "Max. load",
-                "350 kg (Spindle Ø130 mm)"
-              ],
-              [
-                "Process time",
-                "3–6 h"
-              ],
-              [
-                "Typical applications",
-                "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
-              ]
-            ],
-            "process": [
-              "Micro drills",
-              "Aluminium and copper machining",
-              "Optical lens moulds",
-              "PCB drilling",
-              "Filtered ta-C"
-            ],
-            "models": [
-              {
-                "model": "TC800PLUS",
-                "tech": "Arc magnetron hybrid ion plating (ta-C)",
-                "area": "Φ650 × 400 mm",
-                "temp": "200 °C",
-                "load": "10 trees (2,400 round tools, 500 kg, Spindle Ø130)",
-                "size": "3750 × 1800 × 2300 mm",
-                "time": "3–6 h"
-              },
-              {
-                "model": "TC800PLUS-F",
-                "tech": "Filtered arc ta-C (S-shaped filter)",
-                "area": "Φ650 × 400 mm",
-                "temp": "200 °C",
-                "load": "8,640 micro-tools (D3.175×38.1L, 350 kg, Spindle Ø130)",
-                "size": "4950 × 3400 × 2600 mm",
-                "time": "3–6 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/ta-c-coating-equipment/",
-            "k": "tc800plus-f filtered arc tac filter s-shaped 6000hv pcb microdrills",
-            "i": [
-              "tools",
-              "semi",
-              "optics"
-            ],
-            "series_desc": "ta-C diamond-like carbon. The -F version adds an S-shaped magnetic filter that blocks large particles.",
-            "typical_applications": "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
-          },
-          {
-            "id": "pecvd-dlc",
-            "photo": "hs_tc800plus",
-            "photoAlt": "Huasheng DLC coating system",
-            "name": "PECVD DLC coating equipment",
-            "short": "Low-friction coatings for components.",
-            "desc": "Plasma-enhanced CVD systems for low-friction DLC coatings on automotive and engineering components such as piston pins.",
-            "features": [
-              "Low friction",
-              "High hardness and wear resistance"
-            ],
-            "process": [
-              "Automotive component coating",
-              "Engineering component coating"
-            ],
-            "url": "https://www.hscoat.com/pecvd-dlc-coating-equipment/",
-            "k": "dlc low friction piston pin pecvd",
-            "i": [
-              "auto",
-              "medical"
-            ]
-          },
-          {
-            "id": "tac",
-            "photo": "hs_tc800plus",
-            "photoAlt": "Huasheng ta-C coating equipment",
-            "name": "ta-C coating equipment",
-            "short": "Hydrogen-free carbon coatings.",
-            "desc": "Systems for hydrogen-free tetrahedral amorphous carbon (ta-C) coatings, used for machining non-ferrous materials and for high-wear parts.",
-            "features": [
-              "Hydrogen-free carbon",
-              "Very high hardness"
-            ],
-            "process": [
-              "Tools for aluminium and non-ferrous machining",
-              "High-wear components"
-            ],
-            "url": "https://www.hscoat.com/ta-c-coating-equipment/",
-            "k": "tac hydrogen-free carbon aluminium machining",
-            "i": [
-              "tools",
-              "auto"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "diamond",
-        "photo": "hs_da600pro",
-        "photoAlt": "Huasheng HFCVD diamond coating system",
-        "name": "Diamond coating equipment",
-        "sub": "HFCVD diamond films",
-        "desc": "Hot-filament CVD systems that grow microcrystalline and nanocrystalline diamond films on carbide tools.",
-        "url": "https://www.hscoat.com/diamond-coating-equipment/",
-        "machines": [
-          {
-            "id": "da600pro",
-            "series": "DA",
-            "specs_layout": "full",
-            "photo": "hs_da600pro",
-            "photoAlt": "Huasheng DA600PRO HFCVD diamond coating machine",
-            "name": "DA600PRO HFCVD diamond coating machine",
-            "tag": "HFCVD diamond",
-            "short": "Parallel filament array for uniform temperature and 4–30 µm diamond film.",
-            "desc": "The DA600PRO is Huasheng's advanced hot-filament CVD (HFCVD) diamond coating machine. Equipped with a parallel filament array for highly uniform chamber temperature, it deposits microcrystalline and nanocrystalline diamond coatings (4–30 µm) on cemented carbide inserts, end mills, and drills for high-speed machining of graphite, carbon composites, and high-silicon aluminium alloys.",
-            "features": [
-              "Deposition up to 1.0 µm/h",
-              "Film 4-30 µm",
-              "Film thickness variation under 15%",
-              "Produces the HGR410 and HFR410 diamond grades"
-            ],
-            "specs": [
-              [
-                "Machine",
-                ""
-              ],
-              [
-                "Coating technology",
-                "Hot filament CVD (HFCVD) diamond. Not related to CVA aluminizing."
-              ],
-              [
-                "Equipment size",
-                "Length 2600 × width 1200 × height 2700 mm"
-              ],
-              [
-                "Chamber volume",
-                "0.16 m³"
-              ],
-              [
-                "Coating area",
-                "300 × 300 mm"
-              ],
-              [
-                "Maximum paintable end mills",
-                "D16 × 150 mm"
-              ],
-              [
-                "Capacity",
-                "500 pcs at D3"
-              ],
-              [
-                "Process time",
-                "16 – 33 hours"
-              ],
-              [
-                "Deposition rate",
-                "Up to 1.0 µm/h"
-              ],
-              [
-                "Film thickness",
-                "4 – 30 µm"
-              ],
-              [
-                "Electrical and services",
-                ""
-              ],
-              [
-                "Voltage",
-                "3 × 380/220 V (3L+N+PE)"
-              ],
-              [
-                "Current",
-                "75 A"
-              ],
-              [
-                "Power",
-                "50 kW"
-              ],
-              [
-                "Frequency",
-                "50/60 Hz"
-              ],
-              [
-                "Cooling water",
-                "22–26 °C at 5–5.5 bar. Max heat emission about 20 kW, flow 35 L/min."
-              ],
-              [
-                "Compressed air",
-                "5 – 6.5 bar"
-              ],
-              [
-                "Process gas",
-                "H2 / Ar / CH4 at 1.0 – 1.2 bar"
-              ],
-              [
-                "Average consumption",
-                "About 18 kW/h, batch duration about 2.5 h, subject to process"
-              ],
-              [
-                "Process gas purity and consumption",
-                ""
-              ],
-              [
-                "Minimum purity",
-                "H2 99.995%, Ar 99.995%, CH4 99.6%"
-              ],
-              [
-                "Consumption per batch",
-                "H2 2.5 L, Ar 12 L, CH4 0.5 L"
-              ],
-              [
-                "Diamond coating grades produced (coatings, not machines)",
-                ""
-              ],
-              [
-                "HGR410",
-                "Carbon. Microhardness 80–100 GPa. Thickness 9±1 µm. Dry friction coefficient 0.2. Coating temperature above 500 °C, oxidation temperature 650 °C. For graphite, zirconia, ceramics and metal carbides."
-              ],
-              [
-                "HFR410",
-                "Carbon. Microhardness 80–100 GPa. Thickness 10±2 µm. Dry friction coefficient 0.2. Coating temperature above 500 °C, oxidation temperature 650 °C. For PCB boards, high-silicon aluminium, CFRP and other composite materials."
-              ]
-            ],
-            "process": [
-              "Graphite, composites, CFRP",
-              "PCB ceramic substrates",
-              "AlSi alloys (Si>12%)",
-              "Woodworking tools",
-              "Microcrystalline / Nanocrystalline diamond"
-            ],
-            "models": [
-              {
-                "model": "DA600PRO",
-                "tech": "HFCVD diamond",
-                "area": "300 × 300 mm",
-                "temp": "—",
-                "load": "500 pcs (D3) / 800 pcs (D3.175)",
-                "size": "2600 × 1200 × 2700 mm",
-                "time": "16–33 h"
-              }
-            ],
-            "url": "https://www.hscoat.com/hfcvd-diamond-coating-equipment/",
-            "k": "da600pro hfcvd diamond carbide graphite cfrp composites pcb ceramic woodworking alsi",
-            "i": [
-              "tools",
-              "aero"
-            ],
-            "series_desc": "Hot filament CVD diamond coating with a parallel filament array for uniform temperature. Not related to CVA aluminizing.",
-            "typical_applications": "Graphite, composites, CFRP, PCB ceramic substrates, AlSi alloys (Si>12%), woodworking."
-          },
-          {
-            "id": "hfcvd",
-            "photo": "hs_da600pro",
-            "photoAlt": "Huasheng HFCVD diamond coating equipment",
-            "name": "HFCVD diamond coating equipment",
-            "short": "Diamond films on carbide tools.",
-            "desc": "Hot-filament CVD systems that deposit diamond on carbide tools for machining graphite, composites and aluminium-silicon alloys.",
-            "features": [
-              "Very high hardness",
-              "Long tool life on abrasive materials"
-            ],
-            "process": [
-              "Carbide tool coating"
-            ],
-            "url": "https://www.hscoat.com/hfcvd-diamond-coating-equipment/",
-            "k": "diamond carbide graphite composites hfcvd",
-            "i": [
-              "tools",
-              "aero"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "decorative",
-        "photo": "hs_deco_h",
-        "photoAlt": "Huasheng decorative coating machines",
-        "name": "Decorative PVD coating equipment",
-        "sub": "Luxury finishes, multi-arc and anti-fingerprint",
-        "desc": "Decorative PVD and functional coating systems for watches, jewellery, consumer hardware, architectural panels, and touchscreen anti-fingerprint coatings.",
-        "url": "https://www.hscoat.com/decorative-coating-equipment/",
-        "machines": [
-          {
-            "id": "deco-h",
-            "photo": "hs_deco_h",
-            "photoAlt": "Huasheng DECO H multi-arc + HiPIMS decorative coating system",
-            "name": "DECO H multi-arc + HiPIMS decorative coating system",
-            "tag": "Multi-Arc + HiPIMS",
-            "short": "Hardness above 2000 HV and widest colour range for luxury items.",
-            "desc": "The DECO H is Huasheng's flagship decorative coating system, combining multi-arc ion plating, magnetron sputtering, and HiPIMS. Delivers ultra-hard (HV > 2000), wear-resistant luxury colour finishes for watches, fine jewellery, and premium consumer hardware.",
-            "features": [
-              "Denser film, wider colour range, hardness above 2000 HV",
-              "Lower friction coefficient, brighter colour and better corrosion resistance than mid frequency sputtering alone"
-            ],
-            "specs": [
-              [
-                "Technology",
-                "Multi-arc + magnetron sputtering + HiPIMS"
-              ],
-              [
-                "Hardness",
-                "> 2000 HV"
-              ],
-              [
-                "Chamber sizes",
-                "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
-              ],
-              [
-                "Effective coating area",
-                "Φ800 × H700 mm to Φ1700 × H950 mm"
-              ],
-              [
-                "Typical applications",
-                "High-end bathroom and hardware, 3C digital, watches, jewellery, luxury goods, eyeglass frames, automotive trim."
-              ]
-            ],
-            "process": [
-              "Luxury watch cases",
-              "Jewellery & accessories",
-              "Eyewear frames",
-              "Gold, Rose Gold, Black, Gunmetal, Blue PVD"
-            ],
-            "models": [
-              {
-                "family": "DECO H",
-                "model": "DECO800H",
-                "chamberSize": "Φ1000 × H1000",
-                "area": "Φ800 × H700",
-                "arcTargets": "6",
-                "otherTargets": "4 cylindrical Φ70 × H1150",
-                "footprint": "3.1 × 2.3 × 2.4 m"
-              },
-              {
-                "family": "DECO H",
-                "model": "DECO1000H",
-                "chamberSize": "Φ1200 × H1250",
-                "area": "Φ1000 × H950",
-                "arcTargets": "10",
-                "otherTargets": "8 cylindrical",
-                "footprint": "3.6 × 3.6 × 2.4 m"
-              },
-              {
-                "family": "DECO H",
-                "model": "DECO1550H",
-                "chamberSize": "Φ1750 × H1250",
-                "area": "Φ1550 × H950",
-                "arcTargets": "10",
-                "otherTargets": "12 cylindrical + 1 column arc",
-                "footprint": "4.2 × 3.6 × 2.4 m"
-              },
-              {
-                "family": "DECO H",
-                "model": "DECO1700H",
-                "chamberSize": "Φ1900 × H1250",
-                "area": "Φ1700 × H950",
-                "arcTargets": "12",
-                "otherTargets": "16 cylindrical + 1 column arc",
-                "footprint": "4.3 × 3.9 × 2.6 m"
-              }
-            ],
-            "url": "https://www.hscoat.com/decorative-coating-equipment/",
-            "k": "deco deco-h decorative hipims watches jewellery gold rose gold luxury",
-            "i": [
-              "watch",
-              "optics",
-              "jobshop"
-            ],
-            "series": "DECO H",
-            "series_desc": "Multi arc plus magnetron sputtering plus HIPIMS. The flagship of the decorative range.",
-            "typical_applications": "High-end bathroom and hardware, 3C digital, watches, jewellery, luxury goods, eyeglass frames, automotive trim."
-          },
-          {
-            "id": "deco-a",
-            "photo": "hs_deco_a",
-            "photoAlt": "Huasheng DECO A large multi-arc coating system",
-            "name": "DECO A large-capacity multi-arc coating system",
-            "tag": "Large Multi-Arc",
-            "short": "Largest chambers Huasheng builds, with up to 30 arc sources.",
-            "desc": "The DECO A is Huasheng's high-capacity large-volume multi-arc coating system designed for architectural hardware, sanitary fittings, stainless steel sheets, and consumer appliances, with chamber sizes available up to DECO2600A.",
-            "features": [
-              "Gold, rose gold, gun grey, black, coffee, blue and custom colours on metals, glass, crystal, ceramics and polymers"
-            ],
-            "specs": [
-              [
-                "Technology",
-                "Multi-arc ion plating"
-              ],
-              [
-                "Chamber sizes",
-                "Φ1200 × H1200 mm to Φ2800 × H2400 mm"
-              ],
-              [
-                "Effective coating area",
-                "Φ1000 × H900 mm to Φ2600 × H2100 mm"
-              ],
-              [
-                "Arc sources",
-                "10 to 30 arc sources"
-              ],
-              [
-                "Typical applications",
-                "Volume decorative coating where the largest batch size matters, architectural panels, sanitary fittings."
-              ]
-            ],
-            "process": [
-              "Architectural stainless steel panels",
-              "Elevator trim & doors",
-              "Sanitary fittings & faucets",
-              "Large hardware fixtures"
-            ],
-            "models": [
-              {
-                "family": "DECO A",
-                "model": "DECO1000A",
-                "chamberSize": "Φ1200 × H1200",
-                "area": "Φ1000 × H900",
-                "arcTargets": "10",
-                "otherTargets": "—",
-                "footprint": "3.6 × 3.6 × 2.4 m"
-              },
-              {
-                "family": "DECO A",
-                "model": "DECO1400A",
-                "chamberSize": "Φ1600 × H1800",
-                "area": "Φ1400 × H1500",
-                "arcTargets": "16",
-                "otherTargets": "—",
-                "footprint": "4.2 × 3.6 × 3.0 m"
-              },
-              {
-                "family": "DECO A",
-                "model": "DECO2000A",
-                "chamberSize": "Φ2200 × H1800",
-                "area": "Φ2000 × H1500",
-                "arcTargets": "20",
-                "otherTargets": "—",
-                "footprint": "4.8 × 4.2 × 3.0 m"
-              },
-              {
-                "family": "DECO A",
-                "model": "DECO2600A",
-                "chamberSize": "Φ2800 × H2400",
-                "area": "Φ2600 × H2100",
-                "arcTargets": "30",
-                "otherTargets": "—",
-                "footprint": "5.4 × 4.8 × 3.6 m"
-              }
-            ],
-            "url": "https://www.hscoat.com/decorative-coating-equipment/",
-            "k": "deco-a architectural panels large chamber sanitary fittings multi arc hardware",
-            "i": [
-              "watch",
-              "jobshop",
-              "steel"
-            ],
-            "series": "DECO A",
-            "series_desc": "Multi arc ion plating. Includes the largest chambers in the decorative range, up to DECO2600A.",
-            "typical_applications": "Volume decorative coating where the largest batch size matters."
-          },
-          {
-            "id": "deco-b",
-            "photo": "hs_deco_b",
-            "photoAlt": "Huasheng DECO B dark colour coating system",
-            "name": "DECO B dark color multi-arc + magnetron coating system",
-            "tag": "Dark Series PVD",
-            "short": "Dedicated dark, gunmetal, and black colour series.",
-            "desc": "The DECO B is Huasheng's multi-arc plus magnetron sputtering system dedicated to the dark, gunmetal, and deep black colour series on watches, phone casings, eyewear, and premium dark-finish hardware.",
-            "features": [
-              "Dark colours - black, coffee, gun grey - with the depth and consistency those shades need"
-            ],
-            "specs": [
-              [
-                "Technology",
-                "Multi-arc + magnetron sputtering"
-              ],
-              [
-                "Finish series",
-                "Dark color series (Gunmetal, Obsidian Black, Graphite)"
-              ],
-              [
-                "Chamber sizes",
-                "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
-              ],
-              [
-                "Effective coating area",
-                "Φ800 × H700 mm to Φ1700 × H950 mm"
-              ],
-              [
-                "Typical applications",
-                "Watches, phone casings, eyewear, dark-finish hardware."
-              ]
-            ],
-            "process": [
-              "Gunmetal & Black PVD",
-              "Consumer electronics",
-              "Automotive interior trim",
-              "Hardware & accessories"
-            ],
-            "models": [
-              {
-                "family": "DECO B",
-                "model": "DECO800B",
-                "chamberSize": "Φ1000 × H1000",
-                "area": "Φ800 × H700",
-                "arcTargets": "6",
-                "otherTargets": "4 cylindrical",
-                "footprint": "3.1 × 2.3 × 2.4 m"
-              },
-              {
-                "family": "DECO B",
-                "model": "DECO1000B",
-                "chamberSize": "Φ1200 × H1250",
-                "area": "Φ1000 × H950",
-                "arcTargets": "10",
-                "otherTargets": "8 cylindrical",
-                "footprint": "3.6 × 3.6 × 2.4 m"
-              },
-              {
-                "family": "DECO B",
-                "model": "DECO1550B",
-                "chamberSize": "Φ1750 × H1250",
-                "area": "Φ1550 × H950",
-                "arcTargets": "10",
-                "otherTargets": "12 cylindrical + 1 column arc",
-                "footprint": "4.2 × 3.6 × 2.4 m"
-              },
-              {
-                "family": "DECO B",
-                "model": "DECO1700B",
-                "chamberSize": "Φ1900 × H1250",
-                "area": "Φ1700 × H950",
-                "arcTargets": "12",
-                "otherTargets": "16 cylindrical + 1 column arc",
-                "footprint": "4.3 × 3.9 × 2.6 m"
-              }
-            ],
-            "url": "https://www.hscoat.com/decorative-coating-equipment/",
-            "k": "deco-b dark series black gunmetal pvd electronics automotive trim",
-            "i": [
-              "watch",
-              "auto",
-              "jobshop"
-            ],
-            "series": "DECO B",
-            "series_desc": "Multi arc plus magnetron sputtering, set up for the dark colour series.",
-            "typical_applications": "Watches, phone casings, eyewear, dark-finish hardware."
-          },
-          {
-            "id": "deco-g",
-            "photo": "hs_deco_g",
-            "photoAlt": "Huasheng DECO G real gold coating system",
-            "name": "DECO G multi-arc + real gold coating system",
-            "tag": "Real Gold PVD",
-            "short": "Multi-arc and magnetron sputtering with real gold furnace.",
-            "desc": "The DECO G is Huasheng's multi-arc plus magnetron sputtering system equipped with a specialised real gold evaporation furnace for genuine gold and gold alloy colour deposition on luxury goods, watch cases, and jewellery.",
-            "features": [
-              "Furnace gold and titanium gold, plus rose gold, gun ash, coffee and blue"
-            ],
-            "specs": [
-              [
-                "Technology",
-                "Multi-arc + magnetron sputtering + real gold furnace"
-              ],
-              [
-                "Precious metal",
-                "Real gold (18K, 24K, Rose Gold), Titanium gold"
-              ],
-              [
-                "Chamber sizes",
-                "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
-              ],
-              [
-                "Effective coating area",
-                "Φ800 × H700 mm to Φ1700 × H950 mm"
-              ],
-              [
-                "Typical applications",
-                "Jewellery, watch cases and bracelets, gold-finish hardware."
-              ]
-            ],
-            "process": [
-              "Real gold PVD coating",
-              "18K & 24K gold deposition",
-              "Luxury jewellery",
-              "High-end watch cases"
-            ],
-            "models": [
-              {
-                "family": "DECO G",
-                "model": "DECO800G",
-                "chamberSize": "Φ1000 × H1000",
-                "area": "Φ800 × H700",
-                "arcTargets": "6",
-                "otherTargets": "2 cylindrical + 2 flat L1100 × W58 × 1.5",
-                "footprint": "3.1 × 2.3 × 2.4 m"
-              },
-              {
-                "family": "DECO G",
-                "model": "DECO1000G",
-                "chamberSize": "Φ1200 × H1250",
-                "area": "Φ1000 × H950",
-                "arcTargets": "10",
-                "otherTargets": "4 cylindrical + 2 flat",
-                "footprint": "3.6 × 3.6 × 2.4 m"
-              },
-              {
-                "family": "DECO G",
-                "model": "DECO1550G",
-                "chamberSize": "Φ1750 × H1250",
-                "area": "Φ1550 × H950",
-                "arcTargets": "10",
-                "otherTargets": "4 cylindrical + 2 flat",
-                "footprint": "4.2 × 3.6 × 2.4 m"
-              },
-              {
-                "family": "DECO G",
-                "model": "DECO1700G",
-                "chamberSize": "Φ1900 × H1250",
-                "area": "Φ1700 × H950",
-                "arcTargets": "12",
-                "otherTargets": "4 cylindrical + 2 flat",
-                "footprint": "4.3 × 3.9 × 2.6 m"
-              }
-            ],
-            "url": "https://www.hscoat.com/decorative-coating-equipment/",
-            "k": "deco-g real gold 18k 24k jewellery watchcases luxury precious metal",
-            "i": [
-              "watch",
-              "jobshop"
-            ],
-            "series": "DECO G",
-            "series_desc": "Multi arc plus magnetron sputtering with a real gold furnace.",
-            "typical_applications": "Jewellery, watch cases and bracelets, gold-finish hardware."
-          },
-          {
-            "id": "af-series",
-            "photo": "hs_af",
-            "photoAlt": "Huasheng AF anti-fingerprint coating equipment",
-            "name": "AF anti-fingerprint coating equipment",
-            "tag": "Anti-Fingerprint",
-            "short": "Magnetron sputtering and evaporation for AF functional coatings.",
-            "desc": "The AF series combines magnetron sputtering and evaporation for deposition of functional anti-fingerprint, hydrophobic, and oleophobic coatings on smartphone display glass, automotive touchscreens, optical filters, and metallic trim.",
-            "features": [
-              "4 cylindrical targets Φ70 x H1150, optional, plus 15 sets of evaporation electrodes",
-              "Same four chamber sizes as DECO H"
-            ],
-            "specs": [
-              [
-                "Technology",
-                "Magnetron sputtering + thermal evaporation electrodes"
-              ],
-              [
-                "Electrode sets",
-                "15 sets evaporation electrodes + 4 cylindrical targets"
-              ],
-              [
-                "Chamber sizes",
-                "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
-              ],
-              [
-                "Effective coating area",
-                "Φ800 × H700 mm to Φ1700 × H950 mm"
-              ],
-              [
-                "Typical applications",
-                "Anti-fingerprint top layers over decorative coatings, touchscreen glass, optical displays, metal trim."
-              ]
-            ],
-            "process": [
-              "Anti-fingerprint (AF) coating",
-              "Hydrophobic & oleophobic layers",
-              "Touchscreen glass",
-              "Optical displays"
-            ],
-            "models": [
-              {
-                "family": "AF",
-                "model": "AF800",
-                "chamberSize": "Φ1000 × H1000",
-                "area": "Φ800 × H700",
-                "arcTargets": "—",
-                "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
-                "footprint": "Not published"
-              },
-              {
-                "family": "AF",
-                "model": "AF1000",
-                "chamberSize": "Φ1200 × H1250",
-                "area": "Φ1000 × H950",
-                "arcTargets": "—",
-                "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
-                "footprint": "Not published"
-              },
-              {
-                "family": "AF",
-                "model": "AF1550",
-                "chamberSize": "Φ1750 × H1250",
-                "area": "Φ1550 × H950",
-                "arcTargets": "—",
-                "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
-                "footprint": "Not published"
-              },
-              {
-                "family": "AF",
-                "model": "AF1700",
-                "chamberSize": "Φ1900 × H1250",
-                "area": "Φ1700 × H950",
-                "arcTargets": "—",
-                "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
-                "footprint": "Not published"
-              }
-            ],
-            "url": "https://www.hscoat.com/decorative-coating-equipment/",
-            "k": "af anti fingerprint touchscreen display glass oleophobic hydrophobic",
-            "i": [
-              "optics",
-              "semi",
-              "watch"
-            ],
-            "series": "AF",
-            "series_desc": "Magnetron sputtering plus evaporation, for anti-fingerprint coatings.",
-            "typical_applications": "Anti-fingerprint top layers over decorative coatings."
-          }
-        ]
-      },
-      {
-        "id": "optical",
-        "photo": "hs_opt",
-        "photoAlt": "Huasheng optical precision coating systems",
-        "name": "Optical coating equipment",
-        "sub": "Evaporation and magnetron sputtering",
-        "desc": "Optical coating equipment for high-precision optical films, anti-reflection (AR) and optical filters on glass, quartz and silicon wafers.",
-        "url": "https://www.hscoat.com/optical-coating-equipment/",
-        "machines": [
-          {
-            "id": "opt-t",
-            "photo": "hs_opt",
-            "photoAlt": "Huasheng OPT-T thermal evaporation optical coating equipment",
-            "name": "OPT-T thermal evaporation optical coating equipment",
-            "tag": "Thermal Evaporation",
-            "short": "Thermal evaporation for aluminium, nickel-chromium and silver wires.",
-            "desc": "The OPT-T is Huasheng's thermal evaporation optical coating equipment for high-rate metallic reflective films, mirror coatings, and decorative optical layers using tungsten filament or boat evaporation on plastics, glass, and reflectors.",
-            "features": [
-              "Chrome, silver, gold, gun black, semi-transparent NCVM non-conductive film and rainbow mirror effects on plastics"
-            ],
-            "specs": [
-              [
-                "Technology",
-                "Thermal evaporation (Al, NiCr, Ag wire)"
-              ],
-              [
-                "Chamber sizes",
-                "Φ1400 / 1600 / 1800 mm (Height 1600 / 1800 / 2000 mm)"
-              ],
-              [
-                "Evaporation materials",
-                "Aluminium, nickel chromium, silver wire"
-              ],
-              [
-                "Substrate fixtures",
-                "High-capacity planetary dome fixtures"
-              ],
-              [
-                "Typical applications",
-                "OPT-T for plastic decorative parts, automotive reflectors, and optical mirrors."
-              ]
-            ],
-            "process": [
-              "Aluminium mirror coating",
-              "Nickel-chromium reflection layers",
-              "Silver metallisation",
-              "Optical reflectors"
-            ],
-            "models": [
-              {
-                "family": "OPT",
-                "model": "OPT-T",
-                "chamberSize": "Φ1400 / 1600 / 1800, height 1600 / 1800 / 2000",
-                "area": "Planetary dome fixture",
-                "arcTargets": "—",
-                "otherTargets": "Thermal evaporation: Aluminium, nickel chromium and silver wire",
-                "footprint": "Not published"
-              },
-              {
-                "family": "OPT",
-                "model": "OPT-E",
-                "chamberSize": "Φ900, 1100, 1350, 1550, 1800, 2050, 2350, 2700, height 1500",
-                "area": "Planetary dome fixture",
-                "arcTargets": "—",
-                "otherTargets": "Electron beam evaporation: SiO₂, TiO₂, ZrO₂, SiO",
-                "footprint": "Not published"
-              }
-            ],
-            "url": "https://www.hscoat.com/optical-coating-equipment/",
-            "k": "opt-t thermal evaporation aluminium silver mirrors reflectors optical",
-            "i": [
-              "optics",
-              "auto"
-            ],
-            "series": "OPT",
-            "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
-            "typical_applications": "OPT-T for plastic decorative parts."
-          },
-          {
-            "id": "opt-e",
-            "photo": "hs_opt",
-            "photoAlt": "Huasheng OPT-E electron beam evaporation optical coating system",
-            "name": "OPT-E electron beam evaporation optical coating equipment",
-            "tag": "E-beam optical",
-            "short": "Electron beam evaporation for anti-reflection and filter coatings on glass, quartz and silicon wafers.",
-            "desc": "The OPT-E is Huasheng's electron beam (E-beam) evaporation optical coating machine for precision anti-reflection (AR) coatings, dielectric filters, and multilayer optical films on glass, quartz, and semiconductor wafers.",
-            "features": [
-              "Precision optical film - AR anti-reflection, HR high reflectivity, filters, semiconductor electrode and contact layers"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Electron beam evaporation (E-beam)"
-              ],
-              [
-                "Substrate materials",
-                "Glass, quartz, silicon wafers, optical crystals"
-              ],
-              [
-                "Coating types",
-                "Anti-reflection (AR), bandpass filters, dielectric mirrors, beam splitters"
-              ],
-              [
-                "Uniformity",
-                "High optical uniformity across planetary dome fixtures"
-              ],
-              [
-                "Control system",
-                "PLC + PC automation with quartz crystal and optical thickness monitoring"
-              ],
-              [
-                "Typical applications",
-                "OPT-E for glass, quartz, silicon wafers and ceramics."
-              ]
-            ],
-            "process": [
-              "Anti-reflection (AR) coatings",
-              "Optical filters",
-              "Dielectric mirrors",
-              "Glass, quartz and silicon wafers"
-            ],
-            "models": [
-              {
-                "family": "OPT",
-                "model": "OPT-T",
-                "chamberSize": "Φ1400 / 1600 / 1800, height 1600 / 1800 / 2000",
-                "area": "Planetary dome fixture",
-                "arcTargets": "—",
-                "otherTargets": "Thermal evaporation: Aluminium, nickel chromium and silver wire",
-                "footprint": "Not published"
-              },
-              {
-                "family": "OPT",
-                "model": "OPT-E",
-                "chamberSize": "Φ900, 1100, 1350, 1550, 1800, 2050, 2350, 2700, height 1500",
-                "area": "Planetary dome fixture",
-                "arcTargets": "—",
-                "otherTargets": "Electron beam evaporation: SiO₂, TiO₂, ZrO₂, SiO",
-                "footprint": "Not published"
-              }
-            ],
-            "url": "https://www.hscoat.com/optical-coating-equipment/",
-            "k": "opt-e opt e optical coating electron beam evaporation e-beam anti-reflection filter glass quartz silicon wafers",
-            "i": [
-              "optics",
-              "semi"
-            ],
-            "series": "OPT",
-            "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
-            "typical_applications": "OPT-E for glass, quartz, silicon wafers and ceramics."
-          },
-          {
-            "id": "sputter-optical",
-            "photo": "hs_pow",
-            "photoAlt": "Huasheng magnetron sputtering powder coating system",
-            "name": "Magnetron sputtering for coating powder rather than parts",
-            "tag": "Powder sputtering",
-            "short": "Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.",
-            "desc": "Magnetron sputtering for coating powder rather than parts. Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.",
-            "features": [
-              "Magnetron sputtering for coating powder rather than parts",
-              "Coats diamond, metal and ceramic powders",
-              "Deposition of iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt"
-            ],
-            "specs": [
-              [
-                "Coating technology",
-                "Magnetron sputtering for coating powder rather than parts"
-              ],
-              [
-                "Coating materials",
-                "Iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt"
-              ],
-              [
-                "Substrate powders",
-                "Diamond, metal and ceramic powders"
-              ],
-              [
-                "Typical applications",
-                "Powder metallurgy, diamond tool manufacture"
-              ]
-            ],
-            "process": [
-              "Powder metallurgy",
-              "Diamond tool manufacture",
-              "Diamond powder coating",
-              "Ceramic & metal powders"
-            ],
-            "url": "https://www.hscoat.com/optical-coating-equipment/",
-            "k": "sputter-optical magnetron sputtering coating powder diamond metal ceramic powder metallurgy diamond tool manufacture",
-            "i": [
-              "tools",
-              "steel"
-            ],
-            "series": "OPT",
-            "series_desc": "Magnetron sputtering for coating powder rather than parts.",
-            "typical_applications": "Powder metallurgy, diamond tool manufacture."
-          }
-        ]
-      },
-      {
-        "id": "cvd",
-        "photo": "hs_ma1500",
-        "photoAlt": "Huasheng MA1500 coating machine",
-        "name": "CVD & CVA coating equipment",
-        "sub": "CVD and CVA aluminizing",
-        "desc": "Chemical vapour deposition systems for thick wear-resistant and high-temperature coatings.",
-        "url": "https://www.hscoat.com/cvd-coating-equipment/",
-        "machines": [
-          {
-            "id": "cvd-systems",
-            "name": "CVD coating systems",
-            "short": "Thick wear-resistant coatings.",
-            "desc": "CVD systems for thick wear-resistant coatings, typically on turning inserts.",
-            "features": [
-              "Thick, wear-resistant layers"
-            ],
-            "process": [
-              "Turning insert coating"
-            ],
-            "url": "https://www.hscoat.com/cvd-coating-systems/",
-            "k": "cvd inserts turning",
-            "i": [
-              "tools"
-            ]
-          },
-          {
-            "id": "cva",
-            "name": "CVA aluminizing systems",
-            "short": "Aluminide coatings for high-temperature parts.",
-            "desc": "Chemical vapour aluminizing systems for aluminide coatings that protect parts against high-temperature oxidation.",
-            "features": [
-              "High-temperature oxidation resistance"
-            ],
-            "process": [
-              "Turbine and hot-section parts"
-            ],
-            "url": "https://www.hscoat.com/cva-aluminizing-systems/",
-            "k": "aluminide turbine oxidation cva",
-            "i": [
-              "aero"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "turnkey",
-        "photo": "turnkey",
-        "photoAlt": "Huasheng MD800 PLUS arc coating machine",
-        "name": "Turnkey coating solutions",
-        "sub": "Complete MD800 tool-coating plant",
-        "desc": "A complete tool-coating centre from Huasheng: cleaning, coating, maintenance, utilities and quality control, laid out and commissioned as one plant.",
-        "url": "https://www.hscoat.com/turnkey-solution/",
-        "machines": [
-          {
-            "id": "md800-turnkey",
-            "photo": "hs_md800",
-            "photoAlt": "Huasheng MD800 PLUS turnkey coating centre",
-            "caption": "Huasheng MD800 PLUS turnkey coating centre",
-            "gallery": [
-              [
-                "hs_md800",
-                "Huasheng MD800 PLUS arc coating machine"
-              ],
-              [
-                "cleanline",
-                "Fully automatic ultrasonic cleaning line"
-              ]
-            ],
-            "name": "MD800 turnkey coating centre",
-            "short": "Complete plant for in-house tool coating.",
-            "desc": "Huasheng's turnkey coating solution gives a tool maker full control of its own coating process, from incoming tools to inspected, coated product. The plant is built around the MD800 PLUS arc coater, with a fully automatic ultrasonic cleaning line, blasting equipment for target and liner maintenance, utilities and quality-control instruments. Owning the process keeps coating know-how in-house, allows your own coating recipes, and cuts turnaround to as little as the same day.",
-            "features": [
-              "Full control of your coating process and know-how",
-              "Open technology to develop your own coatings",
-              "Same-day coating turnaround possible",
-              "Universal process flow for many tool types"
-            ],
-            "specs": [
-              [
+      "name": "Huasheng",
+      "full": "Guangdong Huasheng Nanotechnology Co., Ltd.",
+      "country": "China",
+      "site": "https://www.hscoat.com",
+      "intro": "PVD arc, HiPIMS, hybrid, ta-C DLC and HFCVD diamond coating equipment, plus complete turnkey coating plants.",
+      "cats": [
+        {
+          "id": "pvd",
+          "applications": [],
+          "photo": "hs_gfour",
+          "photoAlt": "Huasheng PVD coating machines",
+          "name": "PVD coating equipment",
+          "sub": "Arc, HiPIMS, hybrid and decorative",
+          "desc": "Physical vapour deposition systems for hard, wear-resistant coatings on cutting tools, moulds and precision components.",
+          "url": "https://www.hscoat.com/pvd-coating-equipment/",
+          "machines": [
+            {
+              "id": "gfour",
+              "features": [
+                "Smooth, droplet-free surface",
+                "Excellent adhesion",
+                "2 µm/h deposition",
+                "Thick coatings up to 30 µm"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "4th-generation hybrid coating (4 targets)"
+                ],
+                [
+                  "Chamber volume",
+                  "0.76 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ500 × 400 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "650 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "4850 × 1600 × 2400 mm"
+                ],
+                [
+                  "Capacity",
+                  "7 trees (8,400 APMT1135 inserts / 2,520 round tools)"
+                ],
+                [
+                  "Max. load",
+                  "300 kg (Spindle Ø130 mm)"
+                ],
+                [
+                  "Process time",
+                  "AlTiN 6–8 h"
+                ],
+                [
+                  "Typical applications",
+                  "Indexable inserts, small cutting tools, applications needing thick coatings without re-sharpening."
+                ]
+              ],
+              "i": [
+                "tools",
+                "auto",
+                "dies"
+              ],
+              "series": "GFOUR",
+              "photo": "hs_gfour",
+              "photoAlt": "Huasheng GFOUR hybrid coating machine",
+              "name": "GFOUR 4th-generation hybrid coating machine",
+              "tag": "Hybrid PVD",
+              "short": "4th-gen hybrid: 4 targets, controllable plasma, square wave.",
+              "desc": "The GFOUR is Huasheng's 4th-generation hybrid coating machine featuring four independent target stations, controllable plasma density, and adjustable square-wave pulse bias. It allows simultaneous or sequential deposition of multi-layer, gradient, and nanocomposite coating architectures for high-end cutting tools and demanding mechanical components.",
+              "process": [
+                "Indexable inserts",
+                "Small cutting tools",
+                "Thick coatings (0.5–30 µm)",
+                "AlTiN, AlCrN, TiSiN"
+              ],
+              "models": [
+                {
+                  "model": "GFOUR",
+                  "tech": "4th-generation hybrid coating",
+                  "area": "Φ500 × 400 mm",
+                  "temp": "650 °C",
+                  "load": "7 trees (8,400 inserts / 2,520 tools, 300 kg, Spindle Ø130)",
+                  "size": "4850 × 1600 × 2400 mm",
+                  "time": "AlTiN 6–8 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/pvd-coating-equipment/",
+              "k": "gfour hybrid pvd thick coatings inserts drills cutting tools 4th generation",
+              "series_desc": "4th-generation hybrid coating platform with four targets, controllable plasma, adjustable square wave and ionisation rate. Coating thickness 0.5-30 µm.",
+              "typical_applications": "Indexable inserts, small cutting tools, applications needing thick coatings without re-sharpening."
+            },
+            {
+              "id": "md200",
+              "features": [
+                "High deposition rate",
+                "High ionisation rate",
+                "Ultra-high impact resistance",
+                "Fully automatic",
+                "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Arc ion plating (4 arc sources)"
+                ],
+                [
+                  "Chamber volume",
+                  "0.5 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ310 × 400 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "500 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "3400 × 2000 × 2500 mm"
+                ],
+                [
+                  "Capacity",
+                  "3 trees (3,600 APMT1135 inserts / 1,000 round tools)"
+                ],
+                [
+                  "Max. load",
+                  "200 kg (Spindle Ø130 mm)"
+                ],
+                [
+                  "Process time",
+                  "AlTiN 6–8 h"
+                ],
+                [
+                  "Typical applications",
+                  "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
+                ]
+              ],
+              "i": [
+                "tools"
+              ],
+              "series": "MD",
+              "photo": "hs_md200",
+              "photoAlt": "Huasheng MD200 arc coating machine",
+              "name": "MD200 arc coating machine",
+              "tag": "Arc ion plating",
+              "short": "Compact arc coater for small-batch and regrinding shops.",
+              "desc": "The MD200 is Huasheng's compact arc coating machine engineered for small-batch tool manufacturing, R&D trials, and fast-turnaround tool regrinding shops. Utilising lateral etching and advanced multi-arc ion plating, it delivers industrial-grade TiAlN and AlCrN coatings on cutting tools with minimal power consumption and a compact footprint.",
+              "process": [
+                "TiAlN",
+                "AlCrN",
+                "TiN",
+                "TiCN",
+                "Inserts, end mills, drills"
+              ],
+              "models": [
+                {
+                  "model": "MD200",
+                  "tech": "Arc ion plating (4 arc sources)",
+                  "area": "Φ310 × 400 mm",
+                  "temp": "500 °C",
+                  "load": "3 trees (3,600 inserts / 1,000 tools, 200 kg, Spindle Ø130)",
+                  "size": "3400 × 2000 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD500",
+                  "tech": "Arc ion plating (6 arc sources)",
+                  "area": "Φ410 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "5 trees (6,000 inserts / 1,800 tools, 300 kg, Spindle Ø130)",
+                  "size": "3400 × 2150 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD800 PLUS",
+                  "tech": "Arc ion plating (8 arc sources)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "10 trees (12,000 inserts / 3,600 tools / 30 hobs, 500 kg, Spindle Ø130)",
+                  "size": "3750 × 2400 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD1500",
+                  "tech": "Arc ion plating (16 arc sources, vertical)",
+                  "area": "Φ720 × 900 mm",
+                  "temp": "600 °C",
+                  "load": "12 trees (28,000 inserts / 5,300 tools / 72 hobs, 1,000 kg, Spindle Ø130)",
+                  "size": "4860 × 2300 × 2660 mm",
+                  "time": "AlTiN 6–8 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/aip-coating-equipment/",
+              "k": "md200 arc aip pvd tialn alcrn inserts drills",
+              "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
+              "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
+            },
+            {
+              "id": "md500",
+              "features": [
+                "High deposition rate",
+                "High ionisation rate",
+                "Ultra-high impact resistance",
+                "Fully automatic",
+                "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Arc ion plating (6 arc sources)"
+                ],
+                [
+                  "Chamber volume",
+                  "0.7 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ410 × 400 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "600 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "3400 × 2150 × 2500 mm"
+                ],
+                [
+                  "Capacity",
+                  "5 trees (6,000 APMT1135 inserts / 1,800 round tools)"
+                ],
+                [
+                  "Max. load",
+                  "300 kg (Spindle Ø130 mm)"
+                ],
+                [
+                  "Process time",
+                  "AlTiN 6–8 h"
+                ],
+                [
+                  "Typical applications",
+                  "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
+                ]
+              ],
+              "i": [
+                "tools",
+                "dies"
+              ],
+              "series": "MD",
+              "photo": "hs_md500",
+              "photoAlt": "Huasheng MD500 arc coating machine",
+              "name": "MD500 arc coating machine",
+              "tag": "Arc ion plating",
+              "short": "Mid-size arc coater for serial cutting-tool production.",
+              "desc": "The MD500 is Huasheng's mid-size arc coating machine designed for flexible medium-volume cutting tool and mould production. It incorporates Huasheng's proprietary lateral etching technology and multi-arc sources to coat drills, milling cutters, and inserts with outstanding uniformity and adhesion.",
+              "process": [
+                "TiAlN",
+                "AlCrN",
+                "AlTiSiN",
+                "CrN",
+                "Inserts, end mills, drills"
+              ],
+              "models": [
+                {
+                  "model": "MD200",
+                  "tech": "Arc ion plating (4 arc sources)",
+                  "area": "Φ310 × 400 mm",
+                  "temp": "500 °C",
+                  "load": "3 trees (3,600 inserts / 1,000 tools, 200 kg, Spindle Ø130)",
+                  "size": "3400 × 2000 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD500",
+                  "tech": "Arc ion plating (6 arc sources)",
+                  "area": "Φ410 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "5 trees (6,000 inserts / 1,800 tools, 300 kg, Spindle Ø130)",
+                  "size": "3400 × 2150 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD800 PLUS",
+                  "tech": "Arc ion plating (8 arc sources)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "10 trees (12,000 inserts / 3,600 tools / 30 hobs, 500 kg, Spindle Ø130)",
+                  "size": "3750 × 2400 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD1500",
+                  "tech": "Arc ion plating (16 arc sources, vertical)",
+                  "area": "Φ720 × 900 mm",
+                  "temp": "600 °C",
+                  "load": "12 trees (28,000 inserts / 5,300 tools / 72 hobs, 1,000 kg, Spindle Ø130)",
+                  "size": "4860 × 2300 × 2660 mm",
+                  "time": "AlTiN 6–8 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/aip-coating-equipment/",
+              "k": "md500 arc aip pvd inserts end mills cutting tools",
+              "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
+              "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
+            },
+            {
+              "id": "md800",
+              "features": [
+                "High deposition rate",
+                "High ionisation rate",
+                "Ultra-high impact resistance",
+                "Fully automatic",
+                "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
+              ],
+              "specs": [
+                [
+                  "Technology",
+                  "Arc coating"
+                ],
+                [
+                  "Capacity",
+                  "12,000 pcs per batch (APMT1135 inserts)"
+                ],
+                [
+                  "Operation",
+                  "Fully automatic"
+                ]
+              ],
+              "i": [
+                "tools",
+                "auto",
+                "jobshop"
+              ],
+              "series": "MD",
+              "name": "MD800 arc coating machine",
+              "tag": "Arc coating",
+              "photo": "hs_md800",
+              "photoAlt": "Huasheng MD800 PLUS arc coating machine",
+              "gallery": [
+                [
+                  "hs_md800",
+                  "Huasheng MD800 PLUS arc coating machine"
+                ],
+                [
+                  "hs_md500",
+                  "Huasheng MD500 arc coating machine"
+                ]
+              ],
+              "short": "High-rate arc coater for tool coating production.",
+              "desc": "The MD800 PLUS is the arc coating machine at the heart of Huasheng's turnkey tool-coating plant. Low-voltage, high-current arc discharge evaporates and ionises the target material, which is deposited on the tools under an electric field, giving a high deposition rate and strong coating adhesion. Configured for high-throughput production of inserts, end mills, drills, and hob cutters.",
+              "process": [
+                "TiAlN, AlCrN and similar hard coatings",
+                "Inserts, drills and end mills",
+                "Hobbing tools (D80 × L150)",
+                "AlTiSiN and custom nano-composite coatings"
+              ],
+              "models": [
+                {
+                  "model": "MD200",
+                  "tech": "Arc ion plating (4 arc sources)",
+                  "area": "Φ310 × 400 mm",
+                  "temp": "500 °C",
+                  "load": "3 trees (3,600 inserts / 1,000 tools, 200 kg, Spindle Ø130)",
+                  "size": "3400 × 2000 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD500",
+                  "tech": "Arc ion plating (6 arc sources)",
+                  "area": "Φ410 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "5 trees (6,000 inserts / 1,800 tools, 300 kg, Spindle Ø130)",
+                  "size": "3400 × 2150 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD800 PLUS",
+                  "tech": "Arc ion plating (8 arc sources)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "10 trees (12,000 inserts / 3,600 tools / 30 hobs, 500 kg, Spindle Ø130)",
+                  "size": "3750 × 2400 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD1500",
+                  "tech": "Arc ion plating (16 arc sources, vertical)",
+                  "area": "Φ720 × 900 mm",
+                  "temp": "600 °C",
+                  "load": "12 trees (28,000 inserts / 5,300 tools / 72 hobs, 1,000 kg, Spindle Ø130)",
+                  "size": "4860 × 2300 × 2660 mm",
+                  "time": "AlTiN 6–8 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/aip-coating-equipment/",
+              "k": "pvd arc aip tialn inserts drills end mills md800 md800 plus turnkey hobs",
+              "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
+              "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
+            },
+            {
+              "id": "md1500",
+              "features": [
+                "High deposition rate",
+                "High ionisation rate",
+                "Ultra-high impact resistance",
+                "Fully automatic",
+                "MD800 PLUS and MD1500 are the only machines in the range that take hobbing tools (D80 x L150)"
+              ],
+              "specs": [
+                [
+                  "Machine",
+                  ""
+                ],
+                [
+                  "Coating technology",
+                  "Arc ion plating (16 arc sources, vertical)"
+                ],
+                [
+                  "Chamber volume",
+                  "1.8 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ720 × 900 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "600 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "4860 × 2300 × 2660 mm"
+                ],
+                [
+                  "Capacity",
+                  "12 trees (28,000 inserts / 5,300 tools / 72 hobs)"
+                ],
+                [
+                  "Max. load",
+                  "1,000 kg (Spindle Ø130 mm)"
+                ],
+                [
+                  "Process time",
+                  "AlTiN 6–8 h"
+                ],
+                [
+                  "Typical applications",
+                  "Inserts, end mills, drills, gear cutting tools, and turnkey coating plants."
+                ],
+                [
+                  "MD1500 utilities",
+                  ""
+                ],
+                [
+                  "Power supply",
+                  "3 x 380/220 V (3L+N+PE), 3 x 300 A, 170 kW, 50/60 Hz"
+                ],
+                [
+                  "Average consumption",
+                  "About 120 kW/h, roughly 6 hours per batch"
+                ],
+                [
+                  "Cooling water",
+                  "5-5.5 bar at 22-24 °C. Max heat discharge about 90 kW, flow 120 L/min, ullage 10 L per batch."
+                ],
+                [
+                  "Compressed air",
+                  "5 - 6.5 bar"
+                ],
+                [
+                  "Process gas",
+                  "Ar / N2 / H2 at 1.0 - 1.2 bar, minimum purity 99.992%"
+                ],
+                [
+                  "Gas per batch",
+                  "Ar 350 L, N2 1100 L, ordinary N2 1000 L"
+                ],
+                [
+                  "Room required",
+                  "8100 x 5500 mm, keeping an 800 mm safety passage around the machine"
+                ],
+                [
+                  "Arc source power supply",
+                  "HDP400: 73 V, 12 kW, 0.1-500 Hz, duty cycle 5-95%, 50-300 A"
+                ]
+              ],
+              "i": [
+                "tools",
+                "auto",
+                "jobshop"
+              ],
+              "series": "MD",
+              "photo": "hs_md1500",
+              "photoAlt": "Line drawing of Huasheng MD1500 layout",
+              "caption": "MD1500 high-capacity vertical arc coating machine - manufacturer line drawing",
+              "gallery": [
+                [
+                  "hs_md1500",
+                  "Line drawing of Huasheng MD1500 machine layout"
+                ]
+              ],
+              "name": "MD1500 high-capacity vertical arc coating machine",
+              "tag": "Heavy production",
+              "short": "Production machine for gear cutting tools: 72 hobs and 1000 kg per batch.",
+              "desc": "The MD1500 is Huasheng's heavy-duty, high-capacity vertical arc coating machine engineered for high-volume manufacturing and large-format cutting tools, including long broaches and gear hobs up to 72 pieces or 1,000 kg per batch. Built with heavy-load rotary fixtures and high-power multi-arc cathode arrays.",
+              "site_reqs_title": "MD1500 utilities",
+              "site_reqs": [
+                [
+                  "Power supply",
+                  "3 x 380/220 V (3L+N+PE), 3 x 300 A, 170 kW, 50/60 Hz"
+                ],
+                [
+                  "Average consumption",
+                  "About 120 kW/h, roughly 6 hours per batch"
+                ],
+                [
+                  "Cooling water",
+                  "5-5.5 bar at 22-24 °C. Max heat discharge about 90 kW, flow 120 L/min, ullage 10 L per batch."
+                ],
+                [
+                  "Compressed air",
+                  "5 - 6.5 bar"
+                ],
+                [
+                  "Process gas",
+                  "Ar / N2 / H2 at 1.0 - 1.2 bar, minimum purity 99.992%"
+                ],
+                [
+                  "Gas per batch",
+                  "Ar 350 L, N2 1100 L, ordinary N2 1000 L"
+                ],
+                [
+                  "Room required",
+                  "8100 x 5500 mm, keeping an 800 mm safety passage around the machine"
+                ],
+                [
+                  "Arc source power supply",
+                  "HDP400: 73 V, 12 kW, 0.1-500 Hz, duty cycle 5-95%, 50-300 A"
+                ]
+              ],
+              "process": [
+                "Gear cutting tools",
+                "72 hobbing tools per batch",
+                "High-volume inserts & end mills",
+                "AlTiN, AlCrN, TiN"
+              ],
+              "models": [
+                {
+                  "model": "MD200",
+                  "tech": "Arc ion plating (4 arc sources)",
+                  "area": "Φ310 × 400 mm",
+                  "temp": "500 °C",
+                  "load": "3 trees (3,600 inserts / 1,000 tools, 200 kg, Spindle Ø130)",
+                  "size": "3400 × 2000 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD500",
+                  "tech": "Arc ion plating (6 arc sources)",
+                  "area": "Φ410 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "5 trees (6,000 inserts / 1,800 tools, 300 kg, Spindle Ø130)",
+                  "size": "3400 × 2150 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD800 PLUS",
+                  "tech": "Arc ion plating (8 arc sources)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "10 trees (12,000 inserts / 3,600 tools / 30 hobs, 500 kg, Spindle Ø130)",
+                  "size": "3750 × 2400 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "MD1500",
+                  "tech": "Arc ion plating (16 arc sources, vertical)",
+                  "area": "Φ720 × 900 mm",
+                  "temp": "600 °C",
+                  "load": "12 trees (28,000 inserts / 5,300 tools / 72 hobs, 1,000 kg, Spindle Ø130)",
+                  "size": "4860 × 2300 × 2660 mm",
+                  "time": "AlTiN 6–8 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/aip-coating-equipment/",
+              "k": "md1500 arc vertical hobs gear cutting tools 1000kg high capacity",
+              "series_desc": "Arc ion plating range for cutting tool production, using Huasheng's lateral etching and multi arc ion plating. Four sizes from MD200 up to MD1500.",
+              "typical_applications": "Inserts, end mills, drills. MD800 PLUS sits at the centre of the turnkey coating plant. MD1500 is the production machine for gear cutting tools - 72 hobbing tools and 1000 kg per batch."
+            },
+            {
+              "id": "hd500",
+              "features": [
+                "30% performance gain over arc alone",
+                "Ultra-low friction",
+                "Optically graded surface finish",
+                "HiPIMS surface layer over an arc matrix"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Hybrid arc + magnetron (HiPIMS)"
+                ],
+                [
+                  "Chamber volume",
+                  "0.7 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ410 × 400 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "700 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "3400 × 1600 × 2600 mm"
+                ],
+                [
+                  "Capacity",
+                  "5 trees (6,000 APMT1135 inserts / 1,800 round tools)"
+                ],
+                [
+                  "Max. load",
+                  "200 kg (Spindle Ø130 mm)"
+                ],
+                [
+                  "Process time",
+                  "AlTiN 6–8 h"
+                ],
+                [
+                  "Typical applications",
+                  "Hard-to-machine materials such as stainless steel and titanium alloys."
+                ]
+              ],
+              "i": [
+                "tools",
+                "aero",
+                "auto"
+              ],
+              "series": "HD",
+              "photo": "hs_hd500",
+              "photoAlt": "Huasheng HD500 hybrid arc + HiPIMS coating machine",
+              "caption": "Huasheng HD500 hybrid arc + HiPIMS coating machine",
+              "name": "HD500 hybrid arc + HiPIMS coating machine",
+              "tag": "Hybrid HiPIMS",
+              "short": "30% performance gain over arc alone, for stainless steel & titanium.",
+              "desc": "The HD500 is Huasheng's hybrid arc + HiPIMS coating machine, combining high-ionisation HiPIMS sputtering with high-rate arc deposition in a single chamber. Engineered for precision cutting tools machining difficult materials such as stainless steel, titanium, and aerospace superalloys, delivering up to 30% longer tool life over standard arc coatings.",
+              "process": [
+                "Stainless steel machining tools",
+                "Titanium alloys",
+                "Hard-to-machine materials",
+                "HiPIMS + Arc hybrid"
+              ],
+              "models": [
+                {
+                  "model": "HD500",
+                  "tech": "Hybrid arc + magnetron (HiPIMS)",
+                  "area": "Φ410 × 400 mm",
+                  "temp": "700 °C",
+                  "load": "5 trees (6,000 inserts / 1,800 tools, 200 kg, Spindle Ø130)",
+                  "size": "3400 × 1600 × 2600 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "HD800",
+                  "tech": "Hybrid arc + magnetron (HiPIMS)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "10 trees (12,000 inserts / 3,600 tools, 300 kg, Spindle Ø130)",
+                  "size": "3750 × 2400 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/hybrid-coating-equipment/",
+              "k": "hd500 hybrid hipims arc low friction titanium stainless",
+              "series_desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
+              "typical_applications": "Hard-to-machine materials such as stainless steel and titanium alloys."
+            },
+            {
+              "id": "hd800",
+              "features": [
+                "30% performance gain over arc alone",
+                "Ultra-low friction",
+                "Optically graded surface finish",
+                "HiPIMS surface layer over an arc matrix"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Hybrid arc + magnetron (HiPIMS)"
+                ],
+                [
+                  "Chamber volume",
+                  "1.0 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ650 × 400 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "600 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "3750 × 2400 × 2500 mm"
+                ],
+                [
+                  "Capacity",
+                  "10 trees (12,000 inserts / 3,600 round tools)"
+                ],
+                [
+                  "Max. load",
+                  "300 kg (Spindle Ø130 mm)"
+                ],
+                [
+                  "Process time",
+                  "AlTiN 6–8 h"
+                ],
+                [
+                  "Typical applications",
+                  "Hard-to-machine materials such as stainless steel and titanium alloys."
+                ]
+              ],
+              "i": [
+                "tools",
+                "aero",
+                "auto"
+              ],
+              "series": "HD",
+              "photo": "hs_hd500",
+              "photoAlt": "Huasheng HD series hybrid arc + HiPIMS coating platform (HD500 configuration shown)",
+              "caption": "Huasheng HD series hybrid arc + HiPIMS coating platform (HD500 configuration shown)",
+              "name": "HD800 hybrid arc + HiPIMS coating machine",
+              "tag": "Hybrid HiPIMS",
+              "short": "High-capacity hybrid platform for hard-to-machine materials.",
+              "desc": "The HD800 is Huasheng's high-capacity hybrid coating platform combining high-power impulse magnetron sputtering (HiPIMS) and multi-arc discharge. It produces ultra-dense, droplet-free, ultra-smooth coatings on high-performance cutting tools, forming dies, and precision mechanical components with excellent thermal stability.",
+              "process": [
+                "Stainless steel machining tools",
+                "Titanium alloys",
+                "Hard-to-machine materials",
+                "HiPIMS + Arc hybrid"
+              ],
+              "models": [
+                {
+                  "model": "HD500",
+                  "tech": "Hybrid arc + magnetron (HiPIMS)",
+                  "area": "Φ410 × 400 mm",
+                  "temp": "700 °C",
+                  "load": "5 trees (6,000 inserts / 1,800 tools, 200 kg, Spindle Ø130)",
+                  "size": "3400 × 1600 × 2600 mm",
+                  "time": "AlTiN 6–8 h"
+                },
+                {
+                  "model": "HD800",
+                  "tech": "Hybrid arc + magnetron (HiPIMS)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "600 °C",
+                  "load": "10 trees (12,000 inserts / 3,600 tools, 300 kg, Spindle Ø130)",
+                  "size": "3750 × 2400 × 2500 mm",
+                  "time": "AlTiN 6–8 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/hybrid-coating-equipment/",
+              "k": "hd800 hybrid hipims arc smooth droplet free aerospace",
+              "series_desc": "Hybrid platform combining high-ionisation sputtering with arc processes.",
+              "typical_applications": "Hard-to-machine materials such as stainless steel and titanium alloys."
+            },
+            {
+              "id": "wcc800",
+              "features": [
+                "Sputter deposition with no peeling or delamination",
+                "Modular design",
+                "Suits small batches and complex shapes"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "DC + HiPIMS magnetron sputtering (WC/C, TiAlN)"
+                ],
+                [
+                  "Chamber volume",
+                  "1.0 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ650 × 400 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "<200 °C (deposition)"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "4850 × 1600 × 2400 mm"
+                ],
+                [
+                  "Capacity",
+                  "8 trees (Spindle Ø170 mm)"
+                ],
+                [
+                  "Max. load",
+                  "350 kg"
+                ],
+                [
+                  "Process time",
+                  "4–5 h"
+                ],
+                [
+                  "Typical applications",
+                  "Components and tools, medical instruments, WC/C and TiAlN coatings."
+                ]
+              ],
+              "i": [
+                "auto",
+                "medical",
+                "tools"
+              ],
+              "series": "WCC",
+              "photo": "hs_wcc800",
+              "photoAlt": "Huasheng WCC800 DC + HiPIMS magnetron sputtering machine",
+              "name": "WCC800 DC + HiPIMS magnetron sputtering machine",
+              "tag": "HiPIMS sputtering",
+              "short": "Universal wear-resistant coating system using DC + HiPIMS.",
+              "desc": "The WCC800 is Huasheng's universal wear-resistant coating system combining DC magnetron sputtering and HiPIMS technology. Tailored for precision components, forming tools, and friction-sensitive parts requiring smooth, low-stress, wear-resistant coatings.",
+              "process": [
+                "Components and tools",
+                "Medical instruments",
+                "WC/C coatings",
+                "TiAlN coatings"
+              ],
+              "models": [
+                {
+                  "model": "WCC800",
+                  "tech": "DC + HiPIMS magnetron sputtering (WC/C, TiAlN)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "<200 °C",
+                  "load": "8 trees (350 kg, Spindle Ø170)",
+                  "size": "4850 × 1600 × 2400 mm",
+                  "time": "4–5 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/hipims-coating-equipment/",
+              "k": "wcc800 wcc hipims sputtering wc c tialn low friction medical",
+              "series_desc": "Universal wear-resistant coating system using DC + HiPIMS magnetron sputtering.",
+              "typical_applications": "Components and tools, medical instruments, WC/C and TiAlN coatings."
+            },
+            {
+              "id": "broach",
+              "features": [
+                "Effective coating area Φ650 x 2000 mm",
+                "1000 kg load",
+                "Coatings TiN, AlCrN, AlTiN, AlCrSiN"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Arc, dedicated to broaches"
+                ],
+                [
+                  "Chamber volume",
+                  "2.5 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ650 × 2000 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "450 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "3750 × 1800 × 2960 mm"
+                ],
+                [
+                  "Capacity",
+                  "10 trees"
+                ],
+                [
+                  "Max. load",
+                  "1,000 kg"
+                ],
+                [
+                  "Process time",
+                  "7–9 h"
+                ],
+                [
+                  "Typical applications",
+                  "Broaches and other long tools."
+                ]
+              ],
+              "i": [
+                "tools",
+                "auto"
+              ],
+              "series": "Special",
+              "photo": "hs_broach",
+              "photoAlt": "Huasheng dedicated broach coating equipment",
+              "name": "Broach coating equipment",
+              "tag": "Dedicated vertical arc",
+              "short": "Dedicated broach coating equipment with a tall chamber.",
+              "desc": "Dedicated vertical arc coating equipment specially designed by Huasheng for extra-long cutting tools, such as broaches, long drills, and form cutters. Features an extended vertical working zone, multi-zone heating, and distributed arc cathodes for uniform coating thickness along the entire length.",
+              "process": [
+                "Broaches and other long tools",
+                "TiN, AlCrN, AlTiN, AlCrSiN",
+                "Helical broaches & rotor cutters"
+              ],
+              "models": [
+                {
+                  "model": "Broach coater",
+                  "tech": "Arc, dedicated to broaches",
+                  "area": "Φ650 × 2000 mm",
+                  "temp": "450 °C",
+                  "load": "10 trees (1,000 kg)",
+                  "size": "3750 × 1800 × 2960 mm",
+                  "time": "7–9 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/aip-coating-equipment/",
+              "k": "broach coater tall chamber 2000mm 1000kg alcrsn altin tin",
+              "series_desc": "Dedicated broach coating equipment with a tall chamber.",
+              "typical_applications": "Broaches and other long tools."
+            },
+            {
+              "id": "aip",
+              "features": [
+                "High deposition rate",
+                "Strong adhesion",
+                "Multilayer and nano-layer coatings"
+              ],
+              "specs": [],
+              "i": [
+                "tools"
+              ],
+              "photo": "hs_md800",
+              "photoAlt": "Huasheng MD800 PLUS arc coating machine",
+              "name": "Arc coating equipment",
+              "tag": "Arc coating",
+              "short": "Hard nitride coatings for cutting tools.",
+              "desc": "Arc coating systems for hard nitride coatings such as TiAlN and AlCrN on inserts, drills, end mills and forming tools.",
+              "process": [
+                "Cutting tool coating",
+                "Mould and die coating"
+              ],
+              "url": "https://www.hscoat.com/aip-coating-equipment/",
+              "k": "pvd tialn alcrn inserts drills end mills cutting tools arc"
+            },
+            {
+              "id": "hipims",
+              "features": [
+                "High-density plasma",
+                "Smooth, droplet-free surfaces"
+              ],
+              "specs": [],
+              "i": [
+                "tools",
+                "medical",
+                "auto"
+              ],
+              "photo": "hs_wcc800",
+              "photoAlt": "Huasheng WCC800 HiPIMS coating machine",
+              "name": "HiPIMS coating equipment",
+              "short": "Dense, smooth, droplet-free coatings.",
+              "desc": "High-power impulse magnetron sputtering systems that produce dense, smooth coatings without the droplets typical of arc processes.",
+              "process": [
+                "Precision tool coating",
+                "Component coating"
+              ],
+              "url": "https://www.hscoat.com/hipims-coating-equipment/",
+              "k": "pvd sputtering smooth hipims"
+            },
+            {
+              "id": "hybrid",
+              "features": [
+                "Multiple processes in one chamber",
+                "Flexible multilayer designs"
+              ],
+              "specs": [],
+              "i": [
+                "tools",
+                "auto"
+              ],
+              "photo": "hs_gfour",
+              "photoAlt": "Huasheng hybrid coating equipment",
+              "name": "Hybrid coating equipment",
+              "short": "Arc and sputtering in one chamber.",
+              "desc": "Hybrid systems that combine arc and sputtering sources in one chamber for multilayer coating designs.",
+              "process": [
+                "Multilayer tool and component coatings"
+              ],
+              "url": "https://www.hscoat.com/hybrid-coating-equipment/",
+              "k": "pvd arc sputtering multilayer hybrid"
+            },
+            {
+              "id": "decorative",
+              "features": [
+                "Wide colour range",
+                "Durable, wear-resistant finishes"
+              ],
+              "specs": [],
+              "i": [
+                "watch"
+              ],
+              "photo": "hs_deco_h",
+              "photoAlt": "Huasheng decorative coating equipment",
+              "name": "Decorative coating equipment",
+              "short": "Colour PVD finishes.",
+              "desc": "PVD systems for durable colour finishes on hardware, sanitaryware, watches and consumer products.",
+              "process": [
+                "Decorative PVD"
+              ],
+              "url": "https://www.hscoat.com/decorative-coating-equipment/",
+              "k": "colour gold black decorative sanitary"
+            }
+          ],
+          "seo_title": "PVD coating equipment for cutting tools – Huasheng | Greets Equipment India"
+        },
+        {
+          "id": "dlc",
+          "applications": [],
+          "photo": "hs_tc800plus",
+          "photoAlt": "Huasheng DLC and ta-C coating systems",
+          "name": "DLC & ta-C coating equipment",
+          "sub": "PECVD DLC, ta-C and filtered arc",
+          "desc": "Tetrahedral amorphous carbon (ta-C) and filtered arc systems for hydrogen-free carbon coatings with extreme hardness up to 6000 HV.",
+          "url": "https://www.hscoat.com/dlc-coating-equipment/",
+          "machines": [
+            {
+              "id": "tc800plus",
+              "features": [
+                "Up to 6000 HV",
+                "Low-temperature deposition under 200 °C",
+                "Fast heat dissipation",
+                "Anti-adhesion"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Arc magnetron hybrid ion plating (ta-C)"
+                ],
+                [
+                  "Chamber volume",
+                  "1.0 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ650 × 400 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "200 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "3750 × 1800 × 2300 mm"
+                ],
+                [
+                  "Capacity",
+                  "10 trees (2,400 round tools)"
+                ],
+                [
+                  "Max. load",
+                  "500 kg (Spindle Ø130 mm)"
+                ],
+                [
+                  "Process time",
+                  "3–6 h"
+                ],
+                [
+                  "Typical applications",
+                  "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
+                ]
+              ],
+              "i": [
+                "tools",
+                "auto",
+                "semi"
+              ],
+              "series": "TC",
+              "photo": "hs_tc800plus",
+              "photoAlt": "Huasheng TC800PLUS ta-C coating machine",
+              "name": "TC800PLUS ta-C coating machine",
+              "tag": "ta-C DLC",
+              "short": "ta-C diamond-like carbon, hardness up to 6000 HV.",
+              "desc": "The TC800PLUS is Huasheng's dedicated tetrahedral amorphous carbon (ta-C) diamond-like carbon coating system. Operating with high-density plasma deposition, it creates hydrogen-free carbon films with diamond-like hardness up to 6000 HV and an ultra-low friction coefficient, ideal for non-ferrous machining, aluminium cutting tools, and high-wear sliding components.",
+              "process": [
+                "Micro drills",
+                "Aluminium and copper machining",
+                "Optical lens moulds",
+                "PCB drilling",
+                "ta-C diamond-like carbon"
+              ],
+              "models": [
+                {
+                  "model": "TC800PLUS",
+                  "tech": "Arc magnetron hybrid ion plating (ta-C)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "200 °C",
+                  "load": "10 trees (2,400 round tools, 500 kg, Spindle Ø130)",
+                  "size": "3750 × 1800 × 2300 mm",
+                  "time": "3–6 h"
+                },
+                {
+                  "model": "TC800PLUS-F",
+                  "tech": "Filtered arc ta-C (S-shaped filter)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "200 °C",
+                  "load": "8,640 micro-tools (D3.175×38.1L, 350 kg, Spindle Ø130)",
+                  "size": "4950 × 3400 × 2600 mm",
+                  "time": "3–6 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/ta-c-coating-equipment/",
+              "k": "tc800plus tac dlc 6000hv aluminium non ferrous optical moulds",
+              "series_desc": "ta-C diamond-like carbon. The -F version adds an S-shaped magnetic filter that blocks large particles.",
+              "typical_applications": "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
+            },
+            {
+              "id": "tc800plus-f",
+              "features": [
+                "Up to 6000 HV",
+                "Low-temperature deposition under 200 °C",
+                "Fast heat dissipation",
+                "Anti-adhesion"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Filtered arc ta-C (S-shaped filter)"
+                ],
+                [
+                  "Chamber volume",
+                  "1.0 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ650 × 400 mm"
+                ],
+                [
+                  "Max. working temperature",
+                  "200 °C"
+                ],
+                [
+                  "Equipment size (L×W×H)",
+                  "4950 × 3400 × 2600 mm"
+                ],
+                [
+                  "Capacity",
+                  "8,640 pcs (D3.175×38.1L)"
+                ],
+                [
+                  "Max. load",
+                  "350 kg (Spindle Ø130 mm)"
+                ],
+                [
+                  "Process time",
+                  "3–6 h"
+                ],
+                [
+                  "Typical applications",
+                  "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
+                ]
+              ],
+              "i": [
+                "tools",
+                "semi",
+                "optics"
+              ],
+              "series": "TC",
+              "photo": "hs_tc800plus_f",
+              "photoAlt": "Huasheng TC800PLUS-F filtered arc ta-C coating machine",
+              "name": "TC800PLUS-F filtered arc ta-C coating machine",
+              "tag": "Filtered arc ta-C",
+              "short": "S-shaped magnetic filter that blocks large particles, up to 6000 HV.",
+              "desc": "The TC800PLUS-F is Huasheng's filtered arc ta-C coating system equipped with an S-shaped magnetic filter. The magnetic filter removes macroscopic droplets and neutral particles from the plasma stream, depositing defect-free, ultra-smooth, hydrogen-free carbon films with hardness up to 6000 HV.",
+              "process": [
+                "Micro drills",
+                "Aluminium and copper machining",
+                "Optical lens moulds",
+                "PCB drilling",
+                "Filtered ta-C"
+              ],
+              "models": [
+                {
+                  "model": "TC800PLUS",
+                  "tech": "Arc magnetron hybrid ion plating (ta-C)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "200 °C",
+                  "load": "10 trees (2,400 round tools, 500 kg, Spindle Ø130)",
+                  "size": "3750 × 1800 × 2300 mm",
+                  "time": "3–6 h"
+                },
+                {
+                  "model": "TC800PLUS-F",
+                  "tech": "Filtered arc ta-C (S-shaped filter)",
+                  "area": "Φ650 × 400 mm",
+                  "temp": "200 °C",
+                  "load": "8,640 micro-tools (D3.175×38.1L, 350 kg, Spindle Ø130)",
+                  "size": "4950 × 3400 × 2600 mm",
+                  "time": "3–6 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/ta-c-coating-equipment/",
+              "k": "tc800plus-f filtered arc tac filter s-shaped 6000hv pcb microdrills",
+              "series_desc": "ta-C diamond-like carbon. The -F version adds an S-shaped magnetic filter that blocks large particles.",
+              "typical_applications": "Micro drills, aluminium and copper machining, optical lens moulds, PCB drilling."
+            },
+            {
+              "id": "dlc800",
+              "features": [
+                "Compact chamber suited to small batch production",
+                "Automated process control and modular construction",
+                "Cr / WC / a-C:H coatings of approximately 2500 HV below 200 °C",
+                "SET plasma etching of the workpiece surface before coating"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Magnetron sputtering combined with PECVD"
+                ],
+                [
+                  "Coatings produced",
+                  "Cr / WC / a-C:H diamond-like carbon"
+                ],
+                [
+                  "Pre-treatment",
+                  "SET plasma etching of the workpiece surface before coating"
+                ],
+                [
+                  "Chamber volume",
+                  "0.8 m³"
+                ],
+                [
+                  "Effective coating area",
+                  "650 mm diameter × 400 mm high"
+                ],
+                [
+                  "Maximum load",
+                  "500 kg"
+                ],
+                [
+                  "Cathodes",
+                  "4"
+                ],
+                [
+                  "Process temperature",
+                  "Below 200 °C"
+                ],
+                [
+                  "Cycle time",
+                  "6 to 8 hours per batch"
+                ],
+                [
+                  "Coating hardness",
+                  "Approximately 2500 HV"
+                ],
+                [
+                  "Coating thickness",
+                  "2 to 4 microns"
+                ],
+                [
+                  "Friction coefficient",
+                  "0.1 or lower"
+                ]
+              ],
+              "i": [
+                "auto"
+              ],
+              "no_photo": true,
+              "name": "DLC800 DLC coating machine",
+              "tag": "DLC coating",
+              "short": "Compact DLC coating machine, Cr/WC/a-C:H coatings to 2500 HV below 200 C.",
+              "desc": "The DLC800 is Huasheng's compact DLC coating machine. It combines magnetron sputtering with PECVD to deposit Cr, WC and a-C:H diamond-like carbon coatings of approximately 2500 HV below 200 °C, after SET plasma etching of the workpiece surface. The compact chamber suits small batch production.",
+              "typical_applications": "Precision engineering: precision parts, shafts, bearing rings. Automotive: automotive components. Textile machinery: textile machinery parts. Battery manufacturing: lithium battery equipment parts.",
+              "k": "dlc800 dlc diamond-like carbon a-c:h wc cr pecvd magnetron sputtering precision parts shafts bearing rings textile battery"
+            },
+            {
+              "id": "dlc1500",
+              "features": [
+                "Built for volume production of automotive and EV components",
+                "2 m³ chamber with a 1000 kg maximum load",
+                "Cr / WC / a-C:H coatings of approximately 2500 HV below 200 °C",
+                "SET plasma etching of the workpiece surface before coating"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Magnetron sputtering combined with PECVD"
+                ],
+                [
+                  "Coatings produced",
+                  "Cr / WC / a-C:H diamond-like carbon"
+                ],
+                [
+                  "Pre-treatment",
+                  "SET plasma etching"
+                ],
+                [
+                  "Chamber volume",
+                  "2 m³"
+                ],
+                [
+                  "Maximum load",
+                  "1000 kg"
+                ],
+                [
+                  "Maximum workpiece diameter",
+                  "350 mm"
+                ],
+                [
+                  "Process temperature",
+                  "Below 200 °C"
+                ],
+                [
+                  "Cycle time",
+                  "6 to 8 hours per batch"
+                ],
+                [
+                  "Coating hardness",
+                  "Approximately 2500 HV"
+                ],
+                [
+                  "Coating thickness",
+                  "2 to 4 microns"
+                ],
+                [
+                  "Friction coefficient",
+                  "Low - no figure published"
+                ],
+                [
+                  "Capacity",
+                  "Made to order"
+                ]
+              ],
+              "i": [
+                "auto"
+              ],
+              "no_photo": true,
+              "name": "DLC1500 DLC coating machine",
+              "tag": "DLC coating",
+              "short": "Industrial DLC coating machine, 2 m3 chamber and 1000 kg batch load.",
+              "desc": "The DLC1500 is Huasheng's industrial DLC coating machine, built for volume production of automotive and electric vehicle components. It combines magnetron sputtering with PECVD to deposit Cr, WC and a-C:H diamond-like carbon coatings of approximately 2500 HV below 200 °C, in a 2 m³ chamber with a 1000 kg batch load.",
+              "typical_applications": "Automotive and electric vehicles: automotive parts, new energy vehicle parts. Battery manufacturing: lithium battery equipment parts. Precision engineering: precision shafts, bearing parts, mechanical components. Textile machinery: textile machinery parts.",
+              "k": "dlc1500 dlc diamond-like carbon a-c:h wc cr pecvd magnetron sputtering automotive ev new energy vehicle battery shafts bearing textile"
+            },
+            {
+              "id": "pecvd-dlc",
+              "features": [
+                "Low friction",
+                "High hardness and wear resistance"
+              ],
+              "specs": [],
+              "i": [
+                "auto",
+                "medical"
+              ],
+              "photo": "hs_tc800plus",
+              "photoAlt": "Huasheng DLC coating system",
+              "name": "PECVD DLC coating equipment",
+              "short": "Low-friction coatings for components.",
+              "desc": "Plasma-enhanced CVD systems for low-friction DLC coatings on automotive and engineering components such as piston pins.",
+              "process": [
+                "Automotive component coating",
+                "Engineering component coating"
+              ],
+              "url": "https://www.hscoat.com/pecvd-dlc-coating-equipment/",
+              "k": "dlc low friction piston pin pecvd"
+            },
+            {
+              "id": "tac",
+              "features": [
+                "Hydrogen-free carbon",
+                "Very high hardness"
+              ],
+              "specs": [],
+              "i": [
+                "tools",
+                "auto"
+              ],
+              "photo": "hs_tc800plus",
+              "photoAlt": "Huasheng ta-C coating equipment",
+              "name": "ta-C coating equipment",
+              "short": "Hydrogen-free carbon coatings.",
+              "desc": "Systems for hydrogen-free tetrahedral amorphous carbon (ta-C) coatings, used for machining non-ferrous materials and for high-wear parts.",
+              "process": [
+                "Tools for aluminium and non-ferrous machining",
+                "High-wear components"
+              ],
+              "url": "https://www.hscoat.com/ta-c-coating-equipment/",
+              "k": "tac hydrogen-free carbon aluminium machining"
+            }
+          ]
+        },
+        {
+          "id": "diamond",
+          "applications": [],
+          "photo": "hs_da600pro",
+          "photoAlt": "Huasheng HFCVD diamond coating system",
+          "name": "Diamond coating equipment",
+          "sub": "HFCVD diamond films",
+          "desc": "Hot-filament CVD systems that grow microcrystalline and nanocrystalline diamond films on carbide tools.",
+          "url": "https://www.hscoat.com/diamond-coating-equipment/",
+          "machines": [
+            {
+              "id": "da600pro",
+              "features": [
+                "Deposition up to 1.0 µm/h",
+                "Film 4-30 µm",
+                "Film thickness variation under 15%",
+                "Produces the HGR410 and HFR410 diamond grades"
+              ],
+              "specs": [
+                [
+                  "Machine",
+                  ""
+                ],
+                [
+                  "Coating technology",
+                  "Hot filament CVD (HFCVD) diamond. Not related to CVA aluminizing."
+                ],
+                [
+                  "Equipment size",
+                  "Length 2600 × width 1200 × height 2700 mm"
+                ],
+                [
+                  "Chamber volume",
+                  "0.16 m³"
+                ],
+                [
+                  "Coating area",
+                  "300 × 300 mm"
+                ],
+                [
+                  "Maximum paintable end mills",
+                  "D16 × 150 mm"
+                ],
+                [
+                  "Capacity",
+                  "500 pcs at D3"
+                ],
+                [
+                  "Process time",
+                  "16 – 33 hours"
+                ],
+                [
+                  "Deposition rate",
+                  "Up to 1.0 µm/h"
+                ],
+                [
+                  "Film thickness",
+                  "4 – 30 µm"
+                ],
+                [
+                  "Electrical and services",
+                  ""
+                ],
+                [
+                  "Voltage",
+                  "3 × 380/220 V (3L+N+PE)"
+                ],
+                [
+                  "Current",
+                  "75 A"
+                ],
+                [
+                  "Power",
+                  "50 kW"
+                ],
+                [
+                  "Frequency",
+                  "50/60 Hz"
+                ],
+                [
+                  "Cooling water",
+                  "22–26 °C at 5–5.5 bar. Max heat emission about 20 kW, flow 35 L/min."
+                ],
+                [
+                  "Compressed air",
+                  "5 – 6.5 bar"
+                ],
+                [
+                  "Process gas",
+                  "H2 / Ar / CH4 at 1.0 – 1.2 bar"
+                ],
+                [
+                  "Average consumption",
+                  "About 18 kW/h, batch duration about 2.5 h, subject to process"
+                ],
+                [
+                  "Process gas purity and consumption",
+                  ""
+                ],
+                [
+                  "Minimum purity",
+                  "H2 99.995%, Ar 99.995%, CH4 99.6%"
+                ],
+                [
+                  "Consumption per batch",
+                  "H2 2.5 L, Ar 12 L, CH4 0.5 L"
+                ],
+                [
+                  "Diamond coating grades produced (coatings, not machines)",
+                  ""
+                ],
+                [
+                  "HGR410",
+                  "Carbon. Microhardness 80–100 GPa. Thickness 9±1 µm. Dry friction coefficient 0.2. Coating temperature above 500 °C, oxidation temperature 650 °C. For graphite, zirconia, ceramics and metal carbides."
+                ],
+                [
+                  "HFR410",
+                  "Carbon. Microhardness 80–100 GPa. Thickness 10±2 µm. Dry friction coefficient 0.2. Coating temperature above 500 °C, oxidation temperature 650 °C. For PCB boards, high-silicon aluminium, CFRP and other composite materials."
+                ]
+              ],
+              "i": [
+                "tools",
+                "aero"
+              ],
+              "series": "DA",
+              "specs_layout": "full",
+              "photo": "hs_da600pro",
+              "photoAlt": "Huasheng DA600PRO HFCVD diamond coating machine",
+              "name": "DA600PRO HFCVD diamond coating machine",
+              "tag": "HFCVD diamond",
+              "short": "Parallel filament array for uniform temperature and 4–30 µm diamond film.",
+              "desc": "The DA600PRO is Huasheng's advanced hot-filament CVD (HFCVD) diamond coating machine. Equipped with a parallel filament array for highly uniform chamber temperature, it deposits microcrystalline and nanocrystalline diamond coatings (4–30 µm) on cemented carbide inserts, end mills, and drills for high-speed machining of graphite, carbon composites, and high-silicon aluminium alloys.",
+              "process": [
+                "Graphite, composites, CFRP",
+                "PCB ceramic substrates",
+                "AlSi alloys (Si>12%)",
+                "Woodworking tools",
+                "Microcrystalline / Nanocrystalline diamond"
+              ],
+              "models": [
+                {
+                  "model": "DA600PRO",
+                  "tech": "HFCVD diamond",
+                  "area": "300 × 300 mm",
+                  "temp": "—",
+                  "load": "500 pcs (D3) / 800 pcs (D3.175)",
+                  "size": "2600 × 1200 × 2700 mm",
+                  "time": "16–33 h"
+                }
+              ],
+              "url": "https://www.hscoat.com/hfcvd-diamond-coating-equipment/",
+              "k": "da600pro hfcvd diamond carbide graphite cfrp composites pcb ceramic woodworking alsi",
+              "series_desc": "Hot filament CVD diamond coating with a parallel filament array for uniform temperature. Not related to CVA aluminizing.",
+              "typical_applications": "Graphite, composites, CFRP, PCB ceramic substrates, AlSi alloys (Si>12%), woodworking."
+            },
+            {
+              "id": "hfcvd",
+              "features": [
+                "Very high hardness",
+                "Long tool life on abrasive materials"
+              ],
+              "specs": [],
+              "i": [
+                "tools",
+                "aero"
+              ],
+              "photo": "hs_da600pro",
+              "photoAlt": "Huasheng HFCVD diamond coating equipment",
+              "name": "HFCVD diamond coating equipment",
+              "short": "Diamond films on carbide tools.",
+              "desc": "Hot-filament CVD systems that deposit diamond on carbide tools for machining graphite, composites and aluminium-silicon alloys.",
+              "process": [
+                "Carbide tool coating"
+              ],
+              "url": "https://www.hscoat.com/hfcvd-diamond-coating-equipment/",
+              "k": "diamond carbide graphite composites hfcvd"
+            }
+          ]
+        },
+        {
+          "id": "decorative",
+          "applications": [],
+          "photo": "hs_deco_h",
+          "photoAlt": "Huasheng decorative coating machines",
+          "name": "Decorative PVD coating equipment",
+          "sub": "Luxury finishes, multi-arc and anti-fingerprint",
+          "desc": "Decorative PVD and functional coating systems for watches, jewellery, consumer hardware, architectural panels, and touchscreen anti-fingerprint coatings.",
+          "url": "https://www.hscoat.com/decorative-coating-equipment/",
+          "machines": [
+            {
+              "id": "deco-h",
+              "features": [
+                "Denser film, wider colour range, hardness above 2000 HV",
+                "Lower friction coefficient, brighter colour and better corrosion resistance than mid frequency sputtering alone"
+              ],
+              "specs": [
+                [
+                  "Technology",
+                  "Multi-arc + magnetron sputtering + HiPIMS"
+                ],
+                [
+                  "Hardness",
+                  "> 2000 HV"
+                ],
+                [
+                  "Chamber sizes",
+                  "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ800 × H700 mm to Φ1700 × H950 mm"
+                ],
+                [
+                  "Typical applications",
+                  "High-end bathroom and hardware, 3C digital, watches, jewellery, luxury goods, eyeglass frames, automotive trim."
+                ]
+              ],
+              "i": [
+                "watch",
+                "optics",
+                "jobshop"
+              ],
+              "photo": "hs_deco_h",
+              "photoAlt": "Huasheng DECO H multi-arc + HiPIMS decorative coating system",
+              "name": "DECO H multi-arc + HiPIMS decorative coating system",
+              "tag": "Multi-Arc + HiPIMS",
+              "short": "Hardness above 2000 HV and widest colour range for luxury items.",
+              "desc": "The DECO H is Huasheng's flagship decorative coating system, combining multi-arc ion plating, magnetron sputtering, and HiPIMS. Delivers ultra-hard (HV > 2000), wear-resistant luxury colour finishes for watches, fine jewellery, and premium consumer hardware.",
+              "process": [
+                "Luxury watch cases",
+                "Jewellery & accessories",
+                "Eyewear frames",
+                "Gold, Rose Gold, Black, Gunmetal, Blue PVD"
+              ],
+              "models": [
+                {
+                  "family": "DECO H",
+                  "model": "DECO800H",
+                  "chamberSize": "Φ1000 × H1000",
+                  "area": "Φ800 × H700",
+                  "arcTargets": "6",
+                  "otherTargets": "4 cylindrical Φ70 × H1150",
+                  "footprint": "3.1 × 2.3 × 2.4 m"
+                },
+                {
+                  "family": "DECO H",
+                  "model": "DECO1000H",
+                  "chamberSize": "Φ1200 × H1250",
+                  "area": "Φ1000 × H950",
+                  "arcTargets": "10",
+                  "otherTargets": "8 cylindrical",
+                  "footprint": "3.6 × 3.6 × 2.4 m"
+                },
+                {
+                  "family": "DECO H",
+                  "model": "DECO1550H",
+                  "chamberSize": "Φ1750 × H1250",
+                  "area": "Φ1550 × H950",
+                  "arcTargets": "10",
+                  "otherTargets": "12 cylindrical + 1 column arc",
+                  "footprint": "4.2 × 3.6 × 2.4 m"
+                },
+                {
+                  "family": "DECO H",
+                  "model": "DECO1700H",
+                  "chamberSize": "Φ1900 × H1250",
+                  "area": "Φ1700 × H950",
+                  "arcTargets": "12",
+                  "otherTargets": "16 cylindrical + 1 column arc",
+                  "footprint": "4.3 × 3.9 × 2.6 m"
+                }
+              ],
+              "url": "https://www.hscoat.com/decorative-coating-equipment/",
+              "k": "deco deco-h decorative hipims watches jewellery gold rose gold luxury",
+              "series": "DECO H",
+              "series_desc": "Multi arc plus magnetron sputtering plus HIPIMS. The flagship of the decorative range.",
+              "typical_applications": "High-end bathroom and hardware, 3C digital, watches, jewellery, luxury goods, eyeglass frames, automotive trim."
+            },
+            {
+              "id": "deco-a",
+              "features": [
+                "Gold, rose gold, gun grey, black, coffee, blue and custom colours on metals, glass, crystal, ceramics and polymers"
+              ],
+              "specs": [
+                [
+                  "Technology",
+                  "Multi-arc ion plating"
+                ],
+                [
+                  "Chamber sizes",
+                  "Φ1200 × H1200 mm to Φ2800 × H2400 mm"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ1000 × H900 mm to Φ2600 × H2100 mm"
+                ],
+                [
+                  "Arc sources",
+                  "10 to 30 arc sources"
+                ],
+                [
+                  "Typical applications",
+                  "Volume decorative coating where the largest batch size matters, architectural panels, sanitary fittings."
+                ]
+              ],
+              "i": [
+                "watch",
+                "jobshop",
+                "steel"
+              ],
+              "photo": "hs_deco_a",
+              "photoAlt": "Huasheng DECO A large multi-arc coating system",
+              "name": "DECO A large-capacity multi-arc coating system",
+              "tag": "Large Multi-Arc",
+              "short": "Largest chambers Huasheng builds, with up to 30 arc sources.",
+              "desc": "The DECO A is Huasheng's high-capacity large-volume multi-arc coating system designed for architectural hardware, sanitary fittings, stainless steel sheets, and consumer appliances, with chamber sizes available up to DECO2600A.",
+              "process": [
+                "Architectural stainless steel panels",
+                "Elevator trim & doors",
+                "Sanitary fittings & faucets",
+                "Large hardware fixtures"
+              ],
+              "models": [
+                {
+                  "family": "DECO A",
+                  "model": "DECO1000A",
+                  "chamberSize": "Φ1200 × H1200",
+                  "area": "Φ1000 × H900",
+                  "arcTargets": "10",
+                  "otherTargets": "—",
+                  "footprint": "3.6 × 3.6 × 2.4 m"
+                },
+                {
+                  "family": "DECO A",
+                  "model": "DECO1400A",
+                  "chamberSize": "Φ1600 × H1800",
+                  "area": "Φ1400 × H1500",
+                  "arcTargets": "16",
+                  "otherTargets": "—",
+                  "footprint": "4.2 × 3.6 × 3.0 m"
+                },
+                {
+                  "family": "DECO A",
+                  "model": "DECO2000A",
+                  "chamberSize": "Φ2200 × H1800",
+                  "area": "Φ2000 × H1500",
+                  "arcTargets": "20",
+                  "otherTargets": "—",
+                  "footprint": "4.8 × 4.2 × 3.0 m"
+                },
+                {
+                  "family": "DECO A",
+                  "model": "DECO2600A",
+                  "chamberSize": "Φ2800 × H2400",
+                  "area": "Φ2600 × H2100",
+                  "arcTargets": "30",
+                  "otherTargets": "—",
+                  "footprint": "5.4 × 4.8 × 3.6 m"
+                }
+              ],
+              "url": "https://www.hscoat.com/decorative-coating-equipment/",
+              "k": "deco-a architectural panels large chamber sanitary fittings multi arc hardware",
+              "series": "DECO A",
+              "series_desc": "Multi arc ion plating. Includes the largest chambers in the decorative range, up to DECO2600A.",
+              "typical_applications": "Volume decorative coating where the largest batch size matters."
+            },
+            {
+              "id": "deco-b",
+              "features": [
+                "Dark colours - black, coffee, gun grey - with the depth and consistency those shades need"
+              ],
+              "specs": [
+                [
+                  "Technology",
+                  "Multi-arc + magnetron sputtering"
+                ],
+                [
+                  "Finish series",
+                  "Dark color series (Gunmetal, Obsidian Black, Graphite)"
+                ],
+                [
+                  "Chamber sizes",
+                  "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ800 × H700 mm to Φ1700 × H950 mm"
+                ],
+                [
+                  "Typical applications",
+                  "Watches, phone casings, eyewear, dark-finish hardware."
+                ]
+              ],
+              "i": [
+                "watch",
+                "auto",
+                "jobshop"
+              ],
+              "photo": "hs_deco_b",
+              "photoAlt": "Huasheng DECO B dark colour coating system",
+              "name": "DECO B dark color multi-arc + magnetron coating system",
+              "tag": "Dark Series PVD",
+              "short": "Dedicated dark, gunmetal, and black colour series.",
+              "desc": "The DECO B is Huasheng's multi-arc plus magnetron sputtering system dedicated to the dark, gunmetal, and deep black colour series on watches, phone casings, eyewear, and premium dark-finish hardware.",
+              "process": [
+                "Gunmetal & Black PVD",
+                "Consumer electronics",
+                "Automotive interior trim",
+                "Hardware & accessories"
+              ],
+              "models": [
+                {
+                  "family": "DECO B",
+                  "model": "DECO800B",
+                  "chamberSize": "Φ1000 × H1000",
+                  "area": "Φ800 × H700",
+                  "arcTargets": "6",
+                  "otherTargets": "4 cylindrical",
+                  "footprint": "3.1 × 2.3 × 2.4 m"
+                },
+                {
+                  "family": "DECO B",
+                  "model": "DECO1000B",
+                  "chamberSize": "Φ1200 × H1250",
+                  "area": "Φ1000 × H950",
+                  "arcTargets": "10",
+                  "otherTargets": "8 cylindrical",
+                  "footprint": "3.6 × 3.6 × 2.4 m"
+                },
+                {
+                  "family": "DECO B",
+                  "model": "DECO1550B",
+                  "chamberSize": "Φ1750 × H1250",
+                  "area": "Φ1550 × H950",
+                  "arcTargets": "10",
+                  "otherTargets": "12 cylindrical + 1 column arc",
+                  "footprint": "4.2 × 3.6 × 2.4 m"
+                },
+                {
+                  "family": "DECO B",
+                  "model": "DECO1700B",
+                  "chamberSize": "Φ1900 × H1250",
+                  "area": "Φ1700 × H950",
+                  "arcTargets": "12",
+                  "otherTargets": "16 cylindrical + 1 column arc",
+                  "footprint": "4.3 × 3.9 × 2.6 m"
+                }
+              ],
+              "url": "https://www.hscoat.com/decorative-coating-equipment/",
+              "k": "deco-b dark series black gunmetal pvd electronics automotive trim",
+              "series": "DECO B",
+              "series_desc": "Multi arc plus magnetron sputtering, set up for the dark colour series.",
+              "typical_applications": "Watches, phone casings, eyewear, dark-finish hardware."
+            },
+            {
+              "id": "deco-g",
+              "features": [
+                "Furnace gold and titanium gold, plus rose gold, gun ash, coffee and blue"
+              ],
+              "specs": [
+                [
+                  "Technology",
+                  "Multi-arc + magnetron sputtering + real gold furnace"
+                ],
+                [
+                  "Precious metal",
+                  "Real gold (18K, 24K, Rose Gold), Titanium gold"
+                ],
+                [
+                  "Chamber sizes",
+                  "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ800 × H700 mm to Φ1700 × H950 mm"
+                ],
+                [
+                  "Typical applications",
+                  "Jewellery, watch cases and bracelets, gold-finish hardware."
+                ]
+              ],
+              "i": [
+                "watch",
+                "jobshop"
+              ],
+              "photo": "hs_deco_g",
+              "photoAlt": "Huasheng DECO G real gold coating system",
+              "name": "DECO G multi-arc + real gold coating system",
+              "tag": "Real Gold PVD",
+              "short": "Multi-arc and magnetron sputtering with real gold furnace.",
+              "desc": "The DECO G is Huasheng's multi-arc plus magnetron sputtering system equipped with a specialised real gold evaporation furnace for genuine gold and gold alloy colour deposition on luxury goods, watch cases, and jewellery.",
+              "process": [
+                "Real gold PVD coating",
+                "18K & 24K gold deposition",
+                "Luxury jewellery",
+                "High-end watch cases"
+              ],
+              "models": [
+                {
+                  "family": "DECO G",
+                  "model": "DECO800G",
+                  "chamberSize": "Φ1000 × H1000",
+                  "area": "Φ800 × H700",
+                  "arcTargets": "6",
+                  "otherTargets": "2 cylindrical + 2 flat L1100 × W58 × 1.5",
+                  "footprint": "3.1 × 2.3 × 2.4 m"
+                },
+                {
+                  "family": "DECO G",
+                  "model": "DECO1000G",
+                  "chamberSize": "Φ1200 × H1250",
+                  "area": "Φ1000 × H950",
+                  "arcTargets": "10",
+                  "otherTargets": "4 cylindrical + 2 flat",
+                  "footprint": "3.6 × 3.6 × 2.4 m"
+                },
+                {
+                  "family": "DECO G",
+                  "model": "DECO1550G",
+                  "chamberSize": "Φ1750 × H1250",
+                  "area": "Φ1550 × H950",
+                  "arcTargets": "10",
+                  "otherTargets": "4 cylindrical + 2 flat",
+                  "footprint": "4.2 × 3.6 × 2.4 m"
+                },
+                {
+                  "family": "DECO G",
+                  "model": "DECO1700G",
+                  "chamberSize": "Φ1900 × H1250",
+                  "area": "Φ1700 × H950",
+                  "arcTargets": "12",
+                  "otherTargets": "4 cylindrical + 2 flat",
+                  "footprint": "4.3 × 3.9 × 2.6 m"
+                }
+              ],
+              "url": "https://www.hscoat.com/decorative-coating-equipment/",
+              "k": "deco-g real gold 18k 24k jewellery watchcases luxury precious metal",
+              "series": "DECO G",
+              "series_desc": "Multi arc plus magnetron sputtering with a real gold furnace.",
+              "typical_applications": "Jewellery, watch cases and bracelets, gold-finish hardware."
+            },
+            {
+              "id": "af-series",
+              "features": [
+                "4 cylindrical targets Φ70 x H1150, optional, plus 15 sets of evaporation electrodes",
+                "Same four chamber sizes as DECO H"
+              ],
+              "specs": [
+                [
+                  "Technology",
+                  "Magnetron sputtering + thermal evaporation electrodes"
+                ],
+                [
+                  "Electrode sets",
+                  "15 sets evaporation electrodes + 4 cylindrical targets"
+                ],
+                [
+                  "Chamber sizes",
+                  "Φ1000 × H1000 mm to Φ1900 × H1250 mm"
+                ],
+                [
+                  "Effective coating area",
+                  "Φ800 × H700 mm to Φ1700 × H950 mm"
+                ],
+                [
+                  "Typical applications",
+                  "Anti-fingerprint top layers over decorative coatings, touchscreen glass, optical displays, metal trim."
+                ]
+              ],
+              "i": [
+                "optics",
+                "semi",
+                "watch"
+              ],
+              "photo": "hs_af",
+              "photoAlt": "Huasheng AF anti-fingerprint coating equipment",
+              "name": "AF anti-fingerprint coating equipment",
+              "tag": "Anti-Fingerprint",
+              "short": "Magnetron sputtering and evaporation for AF functional coatings.",
+              "desc": "The AF series combines magnetron sputtering and evaporation for deposition of functional anti-fingerprint, hydrophobic, and oleophobic coatings on smartphone display glass, automotive touchscreens, optical filters, and metallic trim.",
+              "process": [
+                "Anti-fingerprint (AF) coating",
+                "Hydrophobic & oleophobic layers",
+                "Touchscreen glass",
+                "Optical displays"
+              ],
+              "models": [
+                {
+                  "family": "AF",
+                  "model": "AF800",
+                  "chamberSize": "Φ1000 × H1000",
+                  "area": "Φ800 × H700",
+                  "arcTargets": "—",
+                  "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
+                  "footprint": "Not published"
+                },
+                {
+                  "family": "AF",
+                  "model": "AF1000",
+                  "chamberSize": "Φ1200 × H1250",
+                  "area": "Φ1000 × H950",
+                  "arcTargets": "—",
+                  "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
+                  "footprint": "Not published"
+                },
+                {
+                  "family": "AF",
+                  "model": "AF1550",
+                  "chamberSize": "Φ1750 × H1250",
+                  "area": "Φ1550 × H950",
+                  "arcTargets": "—",
+                  "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
+                  "footprint": "Not published"
+                },
+                {
+                  "family": "AF",
+                  "model": "AF1700",
+                  "chamberSize": "Φ1900 × H1250",
+                  "area": "Φ1700 × H950",
+                  "arcTargets": "—",
+                  "otherTargets": "4 cylindrical Φ70 × H1150 + 15 sets evaporation electrodes",
+                  "footprint": "Not published"
+                }
+              ],
+              "url": "https://www.hscoat.com/decorative-coating-equipment/",
+              "k": "af anti fingerprint touchscreen display glass oleophobic hydrophobic",
+              "series": "AF",
+              "series_desc": "Magnetron sputtering plus evaporation, for anti-fingerprint coatings.",
+              "typical_applications": "Anti-fingerprint top layers over decorative coatings."
+            }
+          ]
+        },
+        {
+          "id": "optical",
+          "applications": [],
+          "photo": "hs_opt",
+          "photoAlt": "Huasheng optical precision coating systems",
+          "name": "Optical coating equipment",
+          "sub": "Evaporation and magnetron sputtering",
+          "desc": "Optical coating equipment for high-precision optical films, anti-reflection (AR) and optical filters on glass, quartz and silicon wafers.",
+          "url": "https://www.hscoat.com/optical-coating-equipment/",
+          "machines": [
+            {
+              "id": "opt-t",
+              "features": [
+                "Chrome, silver, gold, gun black, semi-transparent NCVM non-conductive film and rainbow mirror effects on plastics"
+              ],
+              "specs": [
+                [
+                  "Technology",
+                  "Thermal evaporation (Al, NiCr, Ag wire)"
+                ],
+                [
+                  "Chamber sizes",
+                  "Φ1400 / 1600 / 1800 mm (Height 1600 / 1800 / 2000 mm)"
+                ],
+                [
+                  "Evaporation materials",
+                  "Aluminium, nickel chromium, silver wire"
+                ],
+                [
+                  "Substrate fixtures",
+                  "High-capacity planetary dome fixtures"
+                ],
+                [
+                  "Typical applications",
+                  "OPT-T for plastic decorative parts, automotive reflectors, and optical mirrors."
+                ]
+              ],
+              "i": [
+                "optics",
+                "auto"
+              ],
+              "photo": "hs_opt",
+              "photoAlt": "Huasheng OPT-T thermal evaporation optical coating equipment",
+              "name": "OPT-T thermal evaporation optical coating equipment",
+              "tag": "Thermal Evaporation",
+              "short": "Thermal evaporation for aluminium, nickel-chromium and silver wires.",
+              "desc": "The OPT-T is Huasheng's thermal evaporation optical coating equipment for high-rate metallic reflective films, mirror coatings, and decorative optical layers using tungsten filament or boat evaporation on plastics, glass, and reflectors.",
+              "process": [
+                "Aluminium mirror coating",
+                "Nickel-chromium reflection layers",
+                "Silver metallisation",
+                "Optical reflectors"
+              ],
+              "models": [
+                {
+                  "family": "OPT",
+                  "model": "OPT-T",
+                  "chamberSize": "Φ1400 / 1600 / 1800, height 1600 / 1800 / 2000",
+                  "area": "Planetary dome fixture",
+                  "arcTargets": "—",
+                  "otherTargets": "Thermal evaporation: Aluminium, nickel chromium and silver wire",
+                  "footprint": "Not published"
+                },
+                {
+                  "family": "OPT",
+                  "model": "OPT-E",
+                  "chamberSize": "Φ900, 1100, 1350, 1550, 1800, 2050, 2350, 2700, height 1500",
+                  "area": "Planetary dome fixture",
+                  "arcTargets": "—",
+                  "otherTargets": "Electron beam evaporation: SiO₂, TiO₂, ZrO₂, SiO",
+                  "footprint": "Not published"
+                }
+              ],
+              "url": "https://www.hscoat.com/optical-coating-equipment/",
+              "k": "opt-t thermal evaporation aluminium silver mirrors reflectors optical",
+              "series": "OPT",
+              "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
+              "typical_applications": "OPT-T for plastic decorative parts."
+            },
+            {
+              "id": "opt-e",
+              "features": [
+                "Precision optical film - AR anti-reflection, HR high reflectivity, filters, semiconductor electrode and contact layers"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Electron beam evaporation (E-beam)"
+                ],
+                [
+                  "Substrate materials",
+                  "Glass, quartz, silicon wafers, optical crystals"
+                ],
+                [
+                  "Coating types",
+                  "Anti-reflection (AR), bandpass filters, dielectric mirrors, beam splitters"
+                ],
+                [
+                  "Uniformity",
+                  "High optical uniformity across planetary dome fixtures"
+                ],
+                [
+                  "Control system",
+                  "PLC + PC automation with quartz crystal and optical thickness monitoring"
+                ],
+                [
+                  "Typical applications",
+                  "OPT-E for glass, quartz, silicon wafers and ceramics."
+                ]
+              ],
+              "i": [
+                "optics",
+                "semi"
+              ],
+              "photo": "hs_opt",
+              "photoAlt": "Huasheng OPT-E electron beam evaporation optical coating system",
+              "name": "OPT-E electron beam evaporation optical coating equipment",
+              "tag": "E-beam optical",
+              "short": "Electron beam evaporation for anti-reflection and filter coatings on glass, quartz and silicon wafers.",
+              "desc": "The OPT-E is Huasheng's electron beam (E-beam) evaporation optical coating machine for precision anti-reflection (AR) coatings, dielectric filters, and multilayer optical films on glass, quartz, and semiconductor wafers.",
+              "process": [
+                "Anti-reflection (AR) coatings",
+                "Optical filters",
+                "Dielectric mirrors",
+                "Glass, quartz and silicon wafers"
+              ],
+              "models": [
+                {
+                  "family": "OPT",
+                  "model": "OPT-T",
+                  "chamberSize": "Φ1400 / 1600 / 1800, height 1600 / 1800 / 2000",
+                  "area": "Planetary dome fixture",
+                  "arcTargets": "—",
+                  "otherTargets": "Thermal evaporation: Aluminium, nickel chromium and silver wire",
+                  "footprint": "Not published"
+                },
+                {
+                  "family": "OPT",
+                  "model": "OPT-E",
+                  "chamberSize": "Φ900, 1100, 1350, 1550, 1800, 2050, 2350, 2700, height 1500",
+                  "area": "Planetary dome fixture",
+                  "arcTargets": "—",
+                  "otherTargets": "Electron beam evaporation: SiO₂, TiO₂, ZrO₂, SiO",
+                  "footprint": "Not published"
+                }
+              ],
+              "url": "https://www.hscoat.com/optical-coating-equipment/",
+              "k": "opt-e opt e optical coating electron beam evaporation e-beam anti-reflection filter glass quartz silicon wafers",
+              "series": "OPT",
+              "series_desc": "Evaporation coating in two versions. OPT-T is thermal evaporation, OPT-E is electron beam.",
+              "typical_applications": "OPT-E for glass, quartz, silicon wafers and ceramics."
+            },
+            {
+              "id": "sputter-optical",
+              "features": [
+                "Magnetron sputtering for coating powder rather than parts",
+                "Coats diamond, metal and ceramic powders",
+                "Deposition of iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt"
+              ],
+              "specs": [
+                [
+                  "Coating technology",
+                  "Magnetron sputtering for coating powder rather than parts"
+                ],
+                [
+                  "Coating materials",
+                  "Iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt"
+                ],
+                [
+                  "Substrate powders",
+                  "Diamond, metal and ceramic powders"
+                ],
+                [
+                  "Typical applications",
+                  "Powder metallurgy, diamond tool manufacture"
+                ]
+              ],
+              "i": [
+                "tools",
+                "steel"
+              ],
+              "photo": "hs_pow",
+              "photoAlt": "Huasheng magnetron sputtering powder coating system",
+              "name": "Magnetron sputtering for coating powder rather than parts",
+              "tag": "Powder sputtering",
+              "short": "Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.",
+              "desc": "Magnetron sputtering for coating powder rather than parts. Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.",
+              "process": [
+                "Powder metallurgy",
+                "Diamond tool manufacture",
+                "Diamond powder coating",
+                "Ceramic & metal powders"
+              ],
+              "url": "https://www.hscoat.com/optical-coating-equipment/",
+              "k": "sputter-optical magnetron sputtering coating powder diamond metal ceramic powder metallurgy diamond tool manufacture",
+              "series": "OPT",
+              "series_desc": "Magnetron sputtering for coating powder rather than parts.",
+              "typical_applications": "Powder metallurgy, diamond tool manufacture."
+            }
+          ]
+        },
+        {
+          "id": "cvd",
+          "applications": [],
+          "photo": "hs_md800",
+          "photoAlt": "Huasheng MA1500 coating machine",
+          "name": "CVD & CVA coating equipment",
+          "sub": "CVD and CVA aluminizing",
+          "desc": "Chemical vapour deposition systems for thick wear-resistant and high-temperature coatings.",
+          "url": "https://www.hscoat.com/cvd-coating-equipment/",
+          "machines": [
+            {
+              "id": "cvd-systems",
+              "features": [
+                "Thick, wear-resistant layers"
+              ],
+              "specs": [],
+              "i": [
+                "tools"
+              ],
+              "name": "CVD coating systems",
+              "short": "Thick wear-resistant coatings.",
+              "desc": "CVD systems for thick wear-resistant coatings, typically on turning inserts.",
+              "process": [
+                "Turning insert coating"
+              ],
+              "url": "https://www.hscoat.com/cvd-coating-systems/",
+              "k": "cvd inserts turning"
+            },
+            {
+              "id": "cva",
+              "features": [
+                "High-temperature oxidation resistance"
+              ],
+              "specs": [],
+              "i": [
+                "aero"
+              ],
+              "name": "CVA aluminizing systems",
+              "short": "Aluminide coatings for high-temperature parts.",
+              "desc": "Chemical vapour aluminizing systems for aluminide coatings that protect parts against high-temperature oxidation.",
+              "process": [
+                "Turbine and hot-section parts"
+              ],
+              "url": "https://www.hscoat.com/cva-aluminizing-systems/",
+              "k": "aluminide turbine oxidation cva"
+            }
+          ]
+        },
+        {
+          "id": "turnkey",
+          "applications": [],
+          "photo": "hs_md800",
+          "photoAlt": "Huasheng MD800 PLUS arc coating machine",
+          "name": "Turnkey coating solutions",
+          "sub": "Complete MD800 tool-coating plant",
+          "desc": "A complete tool-coating centre from Huasheng: cleaning, coating, maintenance, utilities and quality control, laid out and commissioned as one plant.",
+          "url": "https://www.hscoat.com/turnkey-solution/",
+          "machines": [
+            {
+              "id": "md800-turnkey",
+              "features": [
+                "Full control of your coating process and know-how",
+                "Open technology to develop your own coatings",
+                "Same-day coating turnaround possible",
+                "Universal process flow for many tool types"
+              ],
+              "specs": [
+                [
+                  "Cleaning",
+                  "Fully automatic ultrasonic cleaning line, 14,000 pcs/h (APMT1135)"
+                ],
+                [
+                  "Coating",
+                  "MD800 arc coater, 12,000 pcs per batch (APMT1135)"
+                ],
+                [
+                  "Target maintenance",
+                  "9060A manual sandblaster, about 2 min per target"
+                ],
+                [
+                  "Liner maintenance",
+                  "1212F pressurised sandblaster, about 4 h per set"
+                ],
+                [
+                  "Cooling",
+                  "MCW-600 air-cooled chiller, 60 kW, R407C, 380 V 50 Hz"
+                ],
+                [
+                  "Pure water",
+                  "CSJ-05 EDI water purifier, up to 18 MΩ·cm"
+                ],
+                [
+                  "Compressed air",
+                  "SZ-30A permanent-magnet inverter compressor"
+                ],
+                [
+                  "Quality control",
+                  "XHS-4700 ball crater tester, HR-150C Rockwell hardness tester, industrial microscope"
+                ]
+              ],
+              "i": [
+                "tools",
+                "jobshop"
+              ],
+              "photo": "hs_md800",
+              "photoAlt": "Huasheng MD800 PLUS turnkey coating centre",
+              "caption": "Huasheng MD800 PLUS turnkey coating centre",
+              "gallery": [
+                [
+                  "hs_md800",
+                  "Huasheng MD800 PLUS arc coating machine"
+                ],
+                [
+                  "cleanline",
+                  "Fully automatic ultrasonic cleaning line"
+                ]
+              ],
+              "name": "MD800 turnkey coating centre",
+              "short": "Complete plant for in-house tool coating.",
+              "desc": "Huasheng's turnkey coating solution gives a tool maker full control of its own coating process, from incoming tools to inspected, coated product. The plant is built around the MD800 PLUS arc coater, with a fully automatic ultrasonic cleaning line, blasting equipment for target and liner maintenance, utilities and quality-control instruments. Owning the process keeps coating know-how in-house, allows your own coating recipes, and cuts turnaround to as little as the same day.",
+              "process": [
                 "Cleaning",
-                "Fully automatic ultrasonic cleaning line, 14,000 pcs/h (APMT1135)"
-              ],
-              [
                 "Coating",
-                "MD800 arc coater, 12,000 pcs per batch (APMT1135)"
+                "Target and liner maintenance",
+                "Inspection and dispatch"
               ],
-              [
-                "Target maintenance",
-                "9060A manual sandblaster, about 2 min per target"
+              "url": "https://www.hscoat.com/turnkey-solution/",
+              "k": "turnkey plant job shop coating centre md800 md800 plus",
+              "family": "Turnkey",
+              "family_desc": "Huasheng Turnkey Coating Centres provide complete in-house coating plants encompassing incoming tool ultrasonic cleaning, MD800 PLUS coating coater, target and liner sandblasting maintenance, water purification, air compression, and metallurgical quality control instruments.",
+              "typical_applications": "Turnkey in-house coating plants for tool regrinding shops and cutting tool manufacturers."
+            }
+          ]
+        },
+        {
+          "id": "ltmc",
+          "applications": [],
+          "no_photo": true,
+          "name": "LTMC coating equipment",
+          "sub": "Low temperature metal ceramic coating for components",
+          "desc": "Low temperature metal ceramic coating below 150 °C for engine, bearing, gear and turbine components. Huasheng's LTMC range is its component coating range, used on piston rings, camshafts, gears, bearings, turbine blades and artificial joints.",
+          "machines": [
+            {
+              "id": "ltmc-machine",
+              "features": [
+                "Electrode shape can be adjusted to treat internal bores as well as external surfaces",
+                "Dimensions and parameters can be customised",
+                "Process temperature 150 °C maximum",
+                "Self-lubricating ceramic composite layer"
               ],
-              [
-                "Liner maintenance",
-                "1212F pressurised sandblaster, about 4 h per set"
+              "specs": [
+                [
+                  "Coating technology",
+                  "Low temperature plasma CVD (PCVD)"
+                ],
+                [
+                  "Coatings produced",
+                  "Ceramic composite layer formed by silicon, boron and nitrogen diffusing into the surface"
+                ],
+                [
+                  "Effective coating area",
+                  "1200 × 1100 × 550 mm treatment area"
+                ],
+                [
+                  "Maximum load",
+                  "3000 kg"
+                ],
+                [
+                  "Process temperature",
+                  "150 °C maximum"
+                ],
+                [
+                  "Cycle time",
+                  "3 to 5 hours, depending on the workpiece"
+                ],
+                [
+                  "Coating hardness",
+                  "Not published by the manufacturer"
+                ],
+                [
+                  "Coating thickness",
+                  "Not published by the manufacturer"
+                ],
+                [
+                  "Friction coefficient",
+                  "Self-lubricating - no figure published"
+                ],
+                [
+                  "Substrate materials",
+                  "Steel, titanium alloys, aluminium alloys and cemented carbide"
+                ]
               ],
-              [
-                "Cooling",
-                "MCW-600 air-cooled chiller, 60 kW, R407C, 380 V 50 Hz"
+              "i": [
+                "auto",
+                "tools",
+                "dies",
+                "oilgas",
+                "power",
+                "medical"
               ],
-              [
-                "Pure water",
-                "CSJ-05 EDI water purifier, up to 18 MΩ·cm"
-              ],
-              [
-                "Compressed air",
-                "SZ-30A permanent-magnet inverter compressor"
-              ],
-              [
-                "Quality control",
-                "XHS-4700 ball crater tester, HR-150C Rockwell hardness tester, industrial microscope"
-              ]
-            ],
-            "process": [
-              "Cleaning",
-              "Coating",
-              "Target and liner maintenance",
-              "Inspection and dispatch"
-            ],
-            "url": "https://www.hscoat.com/turnkey-solution/",
-            "k": "turnkey plant job shop coating centre md800 md800 plus",
-            "i": [
-              "tools",
-              "jobshop"
-            ],
-            "family": "Turnkey",
-            "family_desc": "Huasheng Turnkey Coating Centres provide complete in-house coating plants encompassing incoming tool ultrasonic cleaning, MD800 PLUS coating coater, target and liner sandblasting maintenance, water purification, air compression, and metallurgical quality control instruments.",
-            "typical_applications": "Turnkey in-house coating plants for tool regrinding shops and cutting tool manufacturers."
-          }
-        ]
-      }
-    ]
-  }
-];
+              "no_photo": true,
+              "name": "LTMC low temperature metal ceramic coating machine",
+              "tag": "LTMC",
+              "short": "1200 x 1100 x 550 mm treatment area, 3000 kg load, 150 C maximum.",
+              "desc": "The LTMC is Huasheng's low temperature metal ceramic coating machine for components. Using low temperature plasma CVD (PCVD) at 150 °C maximum, it forms a ceramic composite layer as silicon, boron and nitrogen diffuse into the surface of steel, titanium alloys, aluminium alloys and cemented carbide. The electrode shape can be adjusted to treat internal bores as well as external surfaces.",
+              "typical_applications": "Engine and powertrain: cylinder liners, piston rings, camshafts, rocker arms, turbochargers. Tools and dies: carbide cutting tools, moulds, thread rolling dies. Bearings and gears: bearings, bearing rings, gears. Oil and gas, fasteners: drilling tool joints, screws. Gas turbines: bladed discs, gas turbine blades. Medical and robotics: artificial joints, robotic joints.",
+              "k": "ltmc low temperature metal ceramic pcvd plasma cvd silicon boron nitrogen piston rings camshafts gears bearings turbine blades artificial joints"
+            }
+          ],
+          "seo_desc": "Low temperature metal ceramic coating below 150 C for engine, bearing, gear and turbine components. Authorised dealer in India: technical proposal, supply, installation and maintenance support."
+        }
+      ],
+      "seo_title": "Huasheng PVD coating machines in India | Authorised Partner – Greets Equipment"
+    }
+  ];
 
   /* ----------------------------------------------------------------
      Extra industry tags for each machine
@@ -6145,7 +6452,9 @@
     var megaInd = document.getElementById("mega-ind");
     var megaIndBtn = document.getElementById("mega-ind-btn");
 
-    if (mega) {
+    // The menus are written into every page's HTML when you publish (so every page shows the same words).
+    // They are only built here when a page has none.
+    if (mega && !mega.firstElementChild) {
       mega.innerHTML = '<div class="mega-grid">' + CATALOG.map(function (b) {
         return '<div><a class="mega-brand" href="' + b.id + '/">' +
           '<img src="' + logo(b.id) + '" alt="' + esc(b.name) + '"></a><ul>' +
@@ -6156,7 +6465,7 @@
       }).join("") + '</div>';
     }
 
-    if (megaInd) {
+    if (megaInd && !megaInd.firstElementChild) {
       var cols = [
         { title: "Tooling & Metalworking", items: [IND[0], IND[1], IND[2], IND[3]] },
         { title: "Energy, Auto & Aerospace", items: [IND[4], IND[5], IND[6], IND[7]] },
@@ -6263,7 +6572,7 @@
 
     // Populate mobile products panel
     var mobPanel = document.getElementById("mobile-products-panel");
-    if (mobPanel) {
+    if (mobPanel && !mobPanel.firstElementChild) {
       mobPanel.innerHTML = '<a href="#finder" class="mobile-all-products-link">' +
         '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
         '<span>Find a system &mdash; All products</span>' +
@@ -6284,7 +6593,7 @@
 
     // Populate mobile industries panel
     var mobIndPanel = document.getElementById("mobile-industries-panel");
-    if (mobIndPanel) {
+    if (mobIndPanel && !mobIndPanel.firstElementChild) {
       var indCols = [
         { title: "Tooling & Metalworking", items: [IND[0], IND[1], IND[2], IND[3]] },
         { title: "Energy, Auto & Aerospace", items: [IND[4], IND[5], IND[6], IND[7]] },

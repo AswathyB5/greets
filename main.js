@@ -3,6 +3,18 @@
    Navigation, animations, interactions
    =================================================================== */
 
+/* Address of the admin server (it supplies the editable content and receives the contact form).
+   - Testing on your computer: http://localhost:5000
+   - Live, admin on its own address:  set ADMIN_URL below, e.g. 'https://admin.greetsequipment.com'
+   - Live, admin on the same address as the website (nginx passes /api to it): leave ADMIN_URL empty.
+   A page can still override it by setting window.GREETS_CMS_API before this file. */
+(function () {
+  var ADMIN_URL = '';
+  if (window.GREETS_CMS_API) return;
+  var local = /^(localhost|127\.0\.0\.1|)$/.test(location.hostname); // empty = the page was opened as a file
+  window.GREETS_CMS_API = ADMIN_URL || (local ? 'http://localhost:5000' : location.origin);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* — Scroll-based header style — */
@@ -259,6 +271,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const ENQUIRY_ENDPOINT = 'https://api.web3forms.com/submit';
     const OFFICE_EMAIL = 'enquiry-equipment@greets.co.in';
     const OFFICE_PHONE = '+918000000000';
+    // Texts that can be changed from the admin panel (cms.js fills window.GREETS_MSG).
+    const T = (name, fallback) => (window.GREETS_MSG && window.GREETS_MSG[name]) || fallback;
     const statusEl = document.querySelector('#enquiry-status');
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const btnLabel = submitBtn && submitBtn.querySelector('.btn-label');
@@ -406,12 +420,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const infoBox = modal.querySelector('#greets-modal-info-box');
 
       if (data.name) {
-        titleEl.textContent = `Thank You, ${data.name}!`;
+        titleEl.textContent = T('thanks_title_name', 'Thank You, {name}!').replace('{name}', data.name);
       } else {
-        titleEl.textContent = 'Enquiry Received!';
+        titleEl.textContent = T('thanks_title', 'Enquiry Received!');
       }
 
-      subEl.textContent = `Your equipment enquiry has been sent to enquiry-equipment@greets.co.in. Our team will review your specifications and get in touch.`;
+      subEl.textContent = T('thanks_text', `Your equipment enquiry has been sent to enquiry-equipment@greets.co.in. Our team will review your specifications and get in touch.`);
+      modal.querySelector('.greets-modal-sla span').textContent = T('thanks_sla', 'We reply within 1 working day');
+      modal.querySelector('#greets-modal-done span').textContent = T('thanks_done', 'Done');
+      modal.querySelector('#greets-modal-catalog').textContent = T('thanks_catalog', 'Browse Equipment Catalog →');
 
       // Build summary rows
       const rows = [];
@@ -462,19 +479,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const mail = document.createElement('a');
       mail.href = 'mailto:' + OFFICE_EMAIL;
-      mail.textContent = 'Email the office';
+      mail.textContent = T('error_email', 'Email the office');
       actions.appendChild(mail);
 
       const call = document.createElement('a');
       call.href = 'tel:' + OFFICE_PHONE;
-      call.textContent = 'Call the office';
+      call.textContent = T('error_call', 'Call the office');
       actions.appendChild(call);
 
       if (ENQUIRY_ENDPOINT) {
         const retry = document.createElement('button');
         retry.type = 'button';
         retry.className = 'form-status__retry';
-        retry.textContent = 'Try sending again';
+        retry.textContent = T('error_retry', 'Try sending again');
         retry.addEventListener('click', () => contactForm.requestSubmit());
         actions.appendChild(retry);
       }
@@ -617,6 +634,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     let lastSubmission = '';
+    let lastSavedKey = ''; // identifies the enquiry already copied to the admin panel
 
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -680,8 +698,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
       lastSubmission = summaryOf(payload);
 
+      // Also keep a copy in the admin panel (Enquiries). It never blocks or breaks the
+      // email sending above, and a "Try sending again" does not save the same enquiry twice.
+      const saveKey = JSON.stringify([name, email, phone, process, details, enquiry_page]);
+      if (saveKey !== lastSavedKey) {
+        lastSavedKey = saveKey;
+        const adminApi = (window.GREETS_CMS_API || '').replace(/\/$/, '');
+        try {
+          fetch(adminApi + '/api/public/enquiries', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            keepalive: true,
+            body: JSON.stringify({ name, company, email, phone, process, city, details, enquiry_page, enquiry_category, enquiry_brand, page_source })
+          }).then((r) => { if (!r.ok) lastSavedKey = ''; }).catch(() => { lastSavedKey = ''; });
+        } catch (err) {
+          lastSavedKey = '';
+        }
+      }
+
       contactForm.setAttribute('data-busy', '');
-      if (btnLabel) btnLabel.textContent = 'Sending…';
+      if (btnLabel) btnLabel.textContent = T('btn_sending', 'Sending…');
       if (statusEl) statusEl.hidden = true;
 
       try {
@@ -707,12 +743,12 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (err) {
         showFallback(
           err && err.message ? err.message : 'network error',
-          'We could not send that automatically. Your details are below — please copy them, ' +
-          'email them to ' + OFFICE_EMAIL + ', or call the Bangalore office.'
+          T('error_intro', 'We could not send that automatically. Your details are below — please copy them, ' +
+          'email them to ' + OFFICE_EMAIL + ', or call the Bangalore office.')
         );
       } finally {
         contactForm.removeAttribute('data-busy');
-        if (btnLabel) btnLabel.textContent = 'Send enquiry';
+        if (btnLabel) btnLabel.textContent = T('btn_send', 'Send enquiry');
       }
     });
   }

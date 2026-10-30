@@ -40,6 +40,10 @@ function extractConst(varName) {
 
 const LOGO_PATHS = extractConst('LOGO_PATHS');
 const PHOTOS = extractConst('PHOTOS');
+// A picture is either a site path (assets/...) or a full https address (pictures kept in Cloudinary).
+const isUrl = (p) => /^https?:\/\//i.test(p);
+const photoAt = (prefix, p) => (isUrl(p) ? p : prefix + p);
+const photoAbs = (p) => (isUrl(p) ? p : `${SITE_URL}/${p}`);
 const IND = extractConst('IND');
 const CATALOG = extractConst('CATALOG');
 
@@ -160,7 +164,7 @@ function getHeaderHtml(depth = 0) {
         ${CATALOG.map(b => `
           <div>
             <a class="mega-brand" href="${root}${b.id}/">
-              <img src="${root}${LOGO_PATHS[b.id] || ''}" alt="${esc(b.name)}">
+              <img src="${photoAt(root, LOGO_PATHS[b.id] || '')}" alt="${esc(b.name)}">
             </a>
             <ul>
               ${b.cats.map(c => `<li><a href="${root}${b.id}/${c.id}/">${esc(c.name)}</a></li>`).join('')}
@@ -220,7 +224,7 @@ function getHeaderHtml(depth = 0) {
         ${CATALOG.map(b => `
           <div class="mobile-brand-group">
             <a class="mobile-brand-title" href="${root}${b.id}/">
-              <img src="${root}${LOGO_PATHS[b.id] || ''}" alt="${esc(b.name)}">
+              <img src="${photoAt(root, LOGO_PATHS[b.id] || '')}" alt="${esc(b.name)}">
               <span>${esc(b.name)}</span>
             </a>
             <ul class="mobile-cat-list">
@@ -369,10 +373,11 @@ CATALOG.forEach(b => {
   sitemapUrls.push({ loc: pageUrl, priority: '0.9', changefreq: 'weekly' });
 
   const root = '../';
-  const pageTitle = `${b.name} Equipment in India | Authorised Partner – Greets Equipment`;
-  const metaDesc = `${esc(b.full)} in India. ${esc(b.intro)} Supplied, installed and serviced by Greets Equipment Pvt. Ltd., Bangalore.`;
-  const logoSrc = root + (LOGO_PATHS[b.id] || '');
-  const brandPhoto = root + (PHOTOS[b.photo] || '');
+  // seo_title / seo_desc are edited in the admin panel ("Google search listing"); empty = the automatic wording
+  const pageTitle = b.seo_title || `${b.name} Equipment in India | Authorised Partner – Greets Equipment`;
+  const metaDesc = b.seo_desc || `${esc(b.full)} in India. ${esc(b.intro)} Supplied, installed and serviced by Greets Equipment Pvt. Ltd., Bangalore.`;
+  const logoSrc = photoAt(root, LOGO_PATHS[b.id] || '');
+  const brandPhoto = PHOTOS[b.photo] ? photoAt(root, PHOTOS[b.photo]) : root;
 
   const breadcrumbsJson = {
     "@context": "https://schema.org",
@@ -388,11 +393,11 @@ CATALOG.forEach(b => {
     "@type": "Organization",
     "name": b.full || b.name,
     "url": b.site,
-    "logo": `${SITE_URL}/${LOGO_PATHS[b.id]}`,
+    "logo": photoAbs(LOGO_PATHS[b.id] || ''),
     "description": b.intro
   };
 
-  const brandPhotoUrl = PHOTOS[b.photo] ? `${SITE_URL}/${PHOTOS[b.photo]}` : `${SITE_URL}/assets/catalog/BMI-furnace-line-installed.jpg`;
+  const brandPhotoUrl = PHOTOS[b.photo] ? photoAbs(PHOTOS[b.photo]) : `${SITE_URL}/assets/catalog/BMI-furnace-line-installed.jpg`;
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -489,8 +494,8 @@ CATALOG.forEach(b => {
                     const cap = g[1] || '';
                     const altText = cap.toLowerCase().includes(b.name.toLowerCase()) ? cap : (cap ? `${b.name} - ${cap}` : b.name);
                     return `
-                    <button type="button" class="mthumb" data-src="${root}${PHOTOS[g[0]]}" data-cap="${esc(cap)}" aria-label="${esc(altText)}" ${k === 0 ? 'aria-current="true"' : ''}>
-                      <img src="${root}${PHOTOS[g[0]]}" alt="${esc(altText)}">
+                    <button type="button" class="mthumb" data-src="${photoAt(root, PHOTOS[g[0]])}" data-cap="${esc(cap)}" aria-label="${esc(altText)}" ${k === 0 ? 'aria-current="true"' : ''}>
+                      <img src="${photoAt(root, PHOTOS[g[0]])}" alt="${esc(altText)}">
                     </button>
                   `;}).join('')}
                 </div>
@@ -554,10 +559,10 @@ CATALOG.forEach(b => {
     sitemapUrls.push({ loc: catUrl, priority: '0.8', changefreq: 'weekly' });
 
     const root2 = '../../';
-    const catTitle = `${c.name} – ${b.name} | Greets Equipment India`;
-    const catDesc = `${esc(c.desc)} Supplied with Indian installation, commissioning and local technical support by Greets Equipment.`;
-    const catPhoto = PHOTOS[c.photo] ? root2 + PHOTOS[c.photo] : (PHOTOS[b.photo] ? root2 + PHOTOS[b.photo] : '');
-    const catPhotoUrl = PHOTOS[c.photo] ? `${SITE_URL}/${PHOTOS[c.photo]}` : (PHOTOS[b.photo] ? `${SITE_URL}/${PHOTOS[b.photo]}` : `${SITE_URL}/assets/catalog/BMI-furnace-line-installed.jpg`);
+    const catTitle = c.seo_title || `${c.name} – ${b.name} | Greets Equipment India`;
+    const catDesc = c.seo_desc || `${esc(c.desc)} Supplied with Indian installation, commissioning and local technical support by Greets Equipment.`;
+    const catPhoto = PHOTOS[c.photo] ? photoAt(root2, PHOTOS[c.photo]) : (PHOTOS[b.photo] && !c.no_photo ? photoAt(root2, PHOTOS[b.photo]) : '');
+    const catPhotoUrl = PHOTOS[c.photo] ? photoAbs(PHOTOS[c.photo]) : (PHOTOS[b.photo] ? photoAbs(PHOTOS[b.photo]) : `${SITE_URL}/assets/catalog/BMI-furnace-line-installed.jpg`);
 
     const catBreadcrumbs = {
       "@context": "https://schema.org",
@@ -627,9 +632,9 @@ CATALOG.forEach(b => {
             <a href="${root2}contact.html" class="btn btn--primary btn--lg">
               <span>Enquire about ${c.family ? esc(c.family) : (c.name.length > 30 ? 'this range' : esc(c.name))}</span>${SVG_ARROW}
             </a>
-            <a class="btn btn--ghost" href="${c.url}" target="_blank" rel="noopener">
+            ${c.url ? `<a class="btn btn--ghost" href="${c.url}" target="_blank" rel="noopener">
               <span>See range on ${esc(b.name)} website</span>${SVG_EXT}
-            </a>
+            </a>` : ''}
           </div>
         </div>
         <div class="phead-media">
@@ -678,11 +683,11 @@ CATALOG.forEach(b => {
       if (!fs.existsSync(shortDir)) fs.mkdirSync(shortDir, { recursive: true });
 
       const rootRich = '../../';
-      const mTitle = `${m.name} – ${b.name} | Greets Equipment India`;
-      const mDesc = `${esc(m.short || m.desc)} Authorised dealer in India: technical proposal, supply, installation and maintenance support.`;
+      const mTitle = m.seo_title || `${m.name} – ${b.name} | Greets Equipment India`;
+      const mDesc = m.seo_desc || `${esc(m.short || m.desc)} Authorised dealer in India: technical proposal, supply, installation and maintenance support.`;
 
-      const mSrc = [m, c, b].find(x => x && x.photo && PHOTOS[x.photo]);
-      const mPhotoUrl = mSrc && PHOTOS[mSrc.photo] ? `${SITE_URL}/${PHOTOS[mSrc.photo]}` : '';
+      const mSrc = m.no_photo ? null : [m, c, b].find(x => x && x.photo && PHOTOS[x.photo]);
+      const mPhotoUrl = mSrc && PHOTOS[mSrc.photo] ? photoAbs(PHOTOS[mSrc.photo]) : (m.no_photo && LOGO_PATHS[b.id] ? photoAbs(LOGO_PATHS[b.id]) : '');
 
       const mBreadcrumbs = {
         "@context": "https://schema.org",
@@ -728,7 +733,7 @@ CATALOG.forEach(b => {
           photoHtml = `
             <figure class="mshot">
               <div class="mshot-stage">
-                <img id="mshot-main" src="${rootRel}${PHOTOS[shots[0][0]]}" alt="${esc(shots[0][1] && shots[0][1].toLowerCase().includes(m.name.toLowerCase()) ? shots[0][1] : `${m.name} - ${shots[0][1] || ''}`)}">
+                <img id="mshot-main" src="${photoAt(rootRel, PHOTOS[shots[0][0]])}" alt="${esc(shots[0][1] && shots[0][1].toLowerCase().includes(m.name.toLowerCase()) ? shots[0][1] : `${m.name} - ${shots[0][1] || ''}`)}">
               </div>
               <figcaption id="mshot-cap">${m.caption ? esc(m.caption) : (shots.length > 1 ? esc(shots[0][1]) : esc(m.name))}</figcaption>
               ${shots.length > 1 ? `
@@ -737,8 +742,8 @@ CATALOG.forEach(b => {
                     const cap = g[1] || '';
                     const altText = cap.toLowerCase().includes(m.name.toLowerCase()) ? cap : (cap ? `${m.name} - ${cap}` : m.name);
                     return `
-                    <button type="button" class="mthumb" data-src="${rootRel}${PHOTOS[g[0]]}" data-cap="${esc(cap)}" aria-label="${esc(altText)}" ${k === 0 ? 'aria-current="true"' : ''}>
-                      <img src="${rootRel}${PHOTOS[g[0]]}" alt="${esc(altText)}">
+                    <button type="button" class="mthumb" data-src="${photoAt(rootRel, PHOTOS[g[0]])}" data-cap="${esc(cap)}" aria-label="${esc(altText)}" ${k === 0 ? 'aria-current="true"' : ''}>
+                      <img src="${photoAt(rootRel, PHOTOS[g[0]])}" alt="${esc(altText)}">
                     </button>
                   `;}).join('')}
                 </div>
@@ -746,7 +751,7 @@ CATALOG.forEach(b => {
             </figure>
           `;
         } else {
-          photoHtml = `<div class="mshot empty"><span>Machine photo from ${esc(b.name)} dealer kit</span></div>`;
+          photoHtml = `<div class="mshot empty"><span>${m.no_photo ? 'Photograph to follow' : `Machine photo from ${esc(b.name)} dealer kit`}</span></div>`;
         }
 
         const isHuashengCoatingMachine = b.id === 'huasheng' && (
@@ -1113,9 +1118,9 @@ CATALOG.forEach(b => {
               <a href="${rootRel}contact.html?page=${encodeURIComponent(m.name)}&category=${encodeURIComponent(c.name)}&brand=${encodeURIComponent(b.name)}" class="btn btn--primary btn--lg">
                 <span>Enquire about this</span>${SVG_ARROW}
               </a>
-              <a class="btn btn--ghost" href="${m.url || c.url}" target="_blank" rel="noopener">
+              ${(m.url || c.url) ? `<a class="btn btn--ghost" href="${m.url || c.url}" target="_blank" rel="noopener">
                 <span>View on ${esc(b.name)} website</span>${SVG_EXT}
-              </a>
+              </a>` : ''}
             </div>
 
             <div class="mcols">

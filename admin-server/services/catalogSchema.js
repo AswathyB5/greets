@@ -35,6 +35,12 @@ const BRAND_SECTIONS = [
       f('gallery', 'Photo gallery', 'gallery', { where: 'The small pictures under the big one (the first caption shows under the big picture)' }),
     ],
   },
+  {
+    id: 'seo', title: 'Google search listing', intro: 'The title and description Google shows for this brand page. Leave a box empty to use the automatic wording.', fields: [
+      f('seo_title', 'Page title', 'text', { max: 200, help: 'Example: Huasheng PVD coating machines in India | Authorised Partner – Greets Equipment. Empty = automatic title.', where: 'The browser tab title and the blue title link in Google. Not shown on the page itself' }),
+      f('seo_desc', 'Page description', 'textarea', { max: 400, help: 'About 150 to 160 characters. Empty = automatic description.', where: 'The grey text under the title in Google. Not shown on the page itself' }),
+    ],
+  },
 ];
 
 const FAMILY_SECTIONS = [
@@ -67,6 +73,12 @@ const FAMILY_SECTIONS = [
           f('i', 'Industries', 'tags'),
         ],
       }),
+    ],
+  },
+  {
+    id: 'seo', title: 'Google search listing', intro: 'The title and description Google shows for this family page. Leave a box empty to use the automatic wording.', fields: [
+      f('seo_title', 'Page title', 'text', { max: 200, help: 'Example: Huasheng PVD coating machines in India | Authorised Partner – Greets Equipment. Empty = automatic title.', where: 'The browser tab title and the blue title link in Google. Not shown on the page itself' }),
+      f('seo_desc', 'Page description', 'textarea', { max: 400, help: 'About 150 to 160 characters. Empty = automatic description.', where: 'The grey text under the title in Google. Not shown on the page itself' }),
     ],
   },
 ];
@@ -129,6 +141,8 @@ const PRODUCT_SECTIONS = [
   },
   {
     id: 'finder', title: 'Not on this page: product list and search', intro: 'These do not appear on the product page. They are used by the product list, the home-page finder and Google.', fields: [
+      f('seo_title', 'Google page title', 'text', { max: 200, help: 'Optional. Empty = automatic title (product name – brand | Greets Equipment India).', where: 'The browser tab title and the blue title link in Google. Not shown on the page itself' }),
+      f('seo_desc', 'Google page description', 'textarea', { max: 400, help: 'Optional. Empty = the one-line summary plus the standard dealer sentence.', where: 'The grey text under the title in Google. Not shown on the page itself' }),
       f('short', 'One-line summary', 'text', { max: 300, help: 'Shown on cards and in the product list.', where: 'The line under the name on product cards, and in the page description Google shows' }),
       f('k', 'Search words', 'textarea', { help: 'Optional. Extra words the product finder on the home page matches, for example "hob, gear cutting, broach". The product is found even when the visitor types a word that is not in its name.', where: 'Only the home-page finder reads this. Visitors never see it' }),
     ],

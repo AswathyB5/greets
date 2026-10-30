@@ -4492,27 +4492,27 @@
   </style>
 </head>
 
-<body class="page-enter">
+<body data-cms-page="index" class="page-enter">
 
   <!-- Header -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="index.html" class="header__logo">
-        <img src="assets/logo-greets.png" alt="Greets Equipment">
+      <a data-cms-href="global.header.link_1" href="index.html" class="header__logo">
+        <img data-cms-src="global.header.img_1" data-cms-alt="global.header.img_1_alt" src="assets/logo-greets.png" alt="Greets Equipment">
       </a>
       <div class="navgroup" id="navgroup"><span class="nav-ind" id="nav-ind" aria-hidden="true"></span>
-        <a class="navlink navhome" href="#hero" data-spy="home">Home</a>
-        <a class="navlink mega-btn" id="mega-btn" href="#finder" data-spy="products" aria-expanded="false"
+        <a data-cms="global.header.a_1" class="navlink navhome" href="#hero" data-spy="home">Home</a>
+        <a data-cms="global.header.a_2" class="navlink mega-btn" id="mega-btn" href="#finder" data-spy="products" aria-expanded="false"
           aria-controls="mega">Products</a>
-        <a class="navlink mega-btn" id="mega-ind-btn" href="#industries" data-spy="industries" aria-expanded="false"
+        <a data-cms="global.header.a_3" class="navlink mega-btn" id="mega-ind-btn" href="#industries" data-spy="industries" aria-expanded="false"
           aria-controls="mega-ind">Industries</a>
-        <nav class="header__nav main" aria-label="Main">
-          <a class="navlink" href="#why" data-spy="why">Why buy through Greets</a>
-          <a class="navlink" href="contact.html" data-spy="contact">Contact</a>
+        <nav data-cms-list="global.header.l1" class="header__nav main" aria-label="Main">
+          <a data-cms-card="global.header.c1_1" data-cms="global.header.a_4" class="navlink" href="#why" data-spy="why">Why buy through Greets</a>
+          <a data-cms-card="global.header.c1_2" data-cms-href="global.header.link_6" data-cms="global.header.a_5" class="navlink" href="contact.html" data-spy="contact">Contact</a>
         </nav>
       </div>
-      <a class="btn btn--primary hdr-cta" href="contact.html">
-        <span>Talk to Greets</span>
+      <a data-cms-href="global.header.link_7" class="btn btn--primary hdr-cta" href="contact.html">
+        <span data-cms="global.header.span_1">Talk to Greets</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
           stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12" />
@@ -4544,12 +4544,12 @@
             <li><a href="novatec/pluritank/">PLURITANK Multi-chamber ultrasonic</a></li>
             <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
             <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
-            <li><a href="novatec/components/">Components & PLT 60V</a></li>
+            <li><a href="novatec/components/">Components &amp; PLT 60V</a></li>
           </ul>
         </div>
         <div>
           <a class="mega-brand" href="huasheng/">
-            <img src="assets/Huasheng.png" alt="Huasheng">
+            <img src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng">
           </a>
           <ul>
             <li><a href="huasheng/pvd/">PVD coating equipment</a></li>
@@ -4559,6 +4559,7 @@
             <li><a href="huasheng/optical/">Optical coating equipment</a></li>
             <li><a href="huasheng/cvd/">CVD &amp; CVA coating equipment</a></li>
             <li><a href="huasheng/turnkey/">Turnkey coating solutions</a></li>
+            <li><a href="huasheng/ltmc/">LTMC coating equipment</a></li>
           </ul>
         </div>
       </div>
@@ -4566,7 +4567,7 @@
     <div class="mega mega--ind" id="mega-ind" hidden>
       <div class="mega-grid">
         <div>
-          <div class="mega-brand"
+          <div data-cms="global.header.div_1" class="mega-brand"
             style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">
             Tooling &amp; Metalworking</div>
           <ul>
@@ -4577,7 +4578,7 @@
           </ul>
         </div>
         <div>
-          <div class="mega-brand"
+          <div data-cms="global.header.div_2" class="mega-brand"
             style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">
             Energy, Auto &amp; Aerospace</div>
           <ul>
@@ -4588,7 +4589,7 @@
           </ul>
         </div>
         <div>
-          <div class="mega-brand"
+          <div data-cms="global.header.div_3" class="mega-brand"
             style="font-weight:750; color:var(--lime, #02963C); font-size:0.92rem; align-items:center; min-height:52px; margin-bottom:10px;">
             Precision, Medical &amp; Optics</div>
           <ul>
@@ -4604,23 +4605,19 @@
 
   <!-- Mobile Nav -->
   <nav class="mobile-nav" id="mobile-nav">
-    <a href="#hero" class="active">Home</a>
+    <a data-cms="global.header.a_1" href="#hero" class="active">Home</a>
     <div class="mobile-nav-group">
       <button type="button" class="mobile-nav-toggle" id="mobile-products-toggle" aria-expanded="false">
-        <span>Products</span>
+        <span data-cms="global.header.a_2">Products</span>
         <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
           stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
       </button>
-      <div class="mobile-products-panel" id="mobile-products-panel">
+      <div data-cms-list="global.mobile-products-panel.l8" class="mobile-products-panel" id="mobile-products-panel">
         <a href="#finder" class="mobile-all-products-link">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8" />
-            <line x1="21" y1="21" x2="16.65" y2="16.65" />
-          </svg>
-          <span>Find a system &mdash; All products</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span data-cms="global.header.phone_all_products">Find a system &mdash; All products</span>
         </a>
         <div class="mobile-brand-group">
           <a class="mobile-brand-title" href="bmi/">
@@ -4643,12 +4640,12 @@
             <li><a href="novatec/pluritank/">PLURITANK Multi-chamber ultrasonic</a></li>
             <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
             <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
-            <li><a href="novatec/components/">Components & PLT 60V</a></li>
+            <li><a href="novatec/components/">Components &amp; PLT 60V</a></li>
           </ul>
         </div>
         <div class="mobile-brand-group">
           <a class="mobile-brand-title" href="huasheng/">
-            <img src="assets/Huasheng.png" alt="Huasheng">
+            <img src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng">
             <span>Huasheng</span>
           </a>
           <ul class="mobile-cat-list">
@@ -4659,19 +4656,20 @@
             <li><a href="huasheng/optical/">Optical coating equipment</a></li>
             <li><a href="huasheng/cvd/">CVD &amp; CVA coating equipment</a></li>
             <li><a href="huasheng/turnkey/">Turnkey coating solutions</a></li>
+            <li><a href="huasheng/ltmc/">LTMC coating equipment</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="mobile-nav-group">
       <button type="button" class="mobile-nav-toggle" id="mobile-industries-toggle" aria-expanded="false">
-        <span>Industries</span>
+        <span data-cms="global.header.a_3">Industries</span>
         <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
           stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
       </button>
-      <div class="mobile-products-panel" id="mobile-industries-panel">
+      <div data-cms-list="global.mobile-industries-panel.l2" class="mobile-products-panel" id="mobile-industries-panel">
         <a href="#industries" class="mobile-all-products-link">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
             stroke-linecap="round" stroke-linejoin="round">
@@ -4680,10 +4678,10 @@
             <rect x="14" y="14" width="7" height="7" />
             <rect x="3" y="14" width="7" height="7" />
           </svg>
-          <span>Industries overview &mdash; All 12 sectors</span>
+          <span data-cms="global.header.phone_all_industries">Industries overview &mdash; All 12 sectors</span>
         </a>
-        <div class="mobile-brand-group">
-          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Tooling &amp;
+        <div data-cms-card="global.mobile-industries-panel.c2_1" class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_1">Tooling &amp;
               Metalworking</span></div>
           <ul class="mobile-cat-list">
             <li><a href="#finder" data-ind="tools">Cutting and gear cutting tools</a></li>
@@ -4692,8 +4690,8 @@
             <li><a href="#finder" data-ind="steel">Steel and metal processing</a></li>
           </ul>
         </div>
-        <div class="mobile-brand-group">
-          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Energy, Auto &amp;
+        <div data-cms-card="global.mobile-industries-panel.c2_2" class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_2">Energy, Auto &amp;
               Aerospace</span></div>
           <ul class="mobile-cat-list">
             <li><a href="#finder" data-ind="power">Power: wind, solar and thermal</a></li>
@@ -4702,8 +4700,8 @@
             <li><a href="#finder" data-ind="aero">Aerospace and defence</a></li>
           </ul>
         </div>
-        <div class="mobile-brand-group">
-          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span>Precision, Medical
+        <div data-cms-card="global.mobile-industries-panel.c2_3" class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_3">Precision, Medical
               &amp; Optics</span></div>
           <ul class="mobile-cat-list">
             <li><a href="#finder" data-ind="medical">Medical devices and implants</a></li>
@@ -4714,9 +4712,9 @@
         </div>
       </div>
     </div>
-    <a href="#why">Why buy through Greets</a>
-    <a href="contact.html">Contact</a>
-    <a href="contact.html" class="btn btn--primary">Talk to Greets</a>
+    <a data-cms="global.header.a_4" href="#why">Why buy through Greets</a>
+    <a data-cms-href="index.page.link_3" data-cms="global.header.a_5" href="contact.html">Contact</a>
+    <a data-cms-href="global.header.link_7" data-cms="global.header.span_1" href="contact.html" class="btn btn--primary">Talk to Greets</a>
   </nav>
 
   <!-- Product View Overlay Container (for #/brand/cat/machine routes) -->
@@ -4724,7 +4722,7 @@
 
   <!-- Main Homepage Content -->
   <main id="top">
-    <section class="hero hero--light" id="hero">
+    <section data-cms-bg="index.hero.background" class="hero hero--light" id="hero">
       <div class="hero__bg" role="img" aria-label="Greets surface-engineering equipment"></div>
 
       <!-- Home Page Breadcrumb Trail -->
@@ -4732,13 +4730,13 @@
         <div class="container">
           <div class="crumbrow home-crumbrow">
             <nav class="crumbs" id="home-crumbs" aria-label="Breadcrumb">
-              <a href="index.html" class="crumb-home" aria-current="page">
+              <a data-cms-href="index.home-crumb-wrap.link_1" href="index.html" class="crumb-home" aria-current="page">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>
-                Home
+                <span data-cms="index.home-crumb-wrap.text_1">Home</span>
               </a>
             </nav>
           </div>
@@ -4748,27 +4746,27 @@
       <div class="container" style="position:relative; z-index:2;">
         <div class="hero-inner">
           <div class="hero-inner__text hero__content" style="padding:0;">
-            <div class="hero__badge" data-anim="fade-down">
+            <div data-cms="index.hero.div_1" class="hero__badge" data-anim="fade-down">
               <span class="dot"></span>
               AUTHORISED DEALER IN INDIA
             </div>
-            <h1 data-anim="zoom-fade">Heat Treatment, Cleaning, and <span class="text-gradient-green">Coating
+            <h1 data-cms="index.hero.h1_1" data-anim="zoom-fade">Heat Treatment, Cleaning, and <span class="text-gradient-green">Coating
                 Systems</span>, Supported in India</h1>
-            <p class="hero__desc" data-anim="fade-up">One partner in India for your complete surface-engineering line:
+            <p data-cms="index.hero.p_1" class="hero__desc" data-anim="fade-up">One partner in India for your complete surface-engineering line:
               BMI
               vacuum furnaces,
               Novatec ultrasonic cleaning and Huasheng PVD, DLC and diamond coating. Greets stays with you from process
               choice and import to installation, training and service.</p>
             <div class="hero__actions" data-anim="fade-up" data-anim-delay="2">
-              <a href="#finder" class="btn btn--primary btn--lg">
-                Find a system
+              <a data-cms-href="index.hero.link_1" href="#finder" class="btn btn--primary btn--lg">
+                <span data-cms="index.hero.text_1">Find a system</span>
                 <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
                 </svg>
               </a>
-              <a href="#partners" class="btn btn--outline btn--lg"
+              <a data-cms-href="index.hero.link_2" data-cms="index.hero.a_1" href="#partners" class="btn btn--outline btn--lg"
                 style="color:var(--gray-800); border-color:rgba(0,0,0,0.15); background:rgba(255,255,255,0.85);">
                 Our partners
               </a>
@@ -4783,102 +4781,102 @@
     <section class="section section--light section--pattern" id="partners">
       <div class="container">
         <div class="text-center mb-5" data-anim="fade-down">
-          <h2>Three world-class partners, one local team in India</h2>
+          <h2 data-cms="index.partners.h2_1">Three world-class partners, one local team in India</h2>
         </div>
         <!-- Photographic Partner Cards Grid -->
         <!-- Photographic Partner Cards Grid (4 Cards in a Row) -->
-        <div class="partners-showcase-grid stagger-children">
+        <div data-cms-list="index.partners.l10" class="partners-showcase-grid stagger-children">
 
           <!-- 1 HARDEN: BMI -->
-          <div class="partner-card-light hud-corner" data-brand="bmi" data-anim="fade-up" data-anim-delay="1">
+          <div data-cms-card="index.partners.c10_1" class="partner-card-light hud-corner" data-brand="bmi" data-anim="fade-up" data-anim-delay="1">
             <div class="partner-card-light__img">
-              <img src="assets/catalog/BMI-furnace-door-open-hot-zone.jpg" alt="BMI vacuum furnace">
-              <div class="partner-card-light__flag-badge">
+              <img data-cms-src="index.partners.img_1" data-cms-alt="index.partners.img_1_alt" src="assets/catalog/BMI-furnace-door-open-hot-zone.jpg" alt="BMI vacuum furnace">
+              <div data-cms="index.partners.div_1" class="partner-card-light__flag-badge">
                 France · BMI
               </div>
             </div>
             <div class="partner-card-light__body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
-                <div class="bc-step">
+                <div data-cms="index.partners.div_2" class="bc-step">
                   <span class="bc-n">1</span> Harden
                 </div>
                 <div class="partner-brand-logo">
-                  <img src="assets/logo-BMI.png" alt="Fours Industriels B.M.I.">
+                  <img data-cms-src="index.partners.img_2" data-cms-alt="index.partners.img_2_alt" src="assets/logo-BMI.png" alt="Fours Industriels B.M.I.">
                 </div>
               </div>
               <div class="partner-card-light__content">
-                <h5>Vacuum furnaces</h5>
-                <p>Fours Industriels B.M.I., France</p>
+                <h5 data-cms="index.partners.h5_1">Vacuum furnaces</h5>
+                <p data-cms="index.partners.p_1">Fours Industriels B.M.I., France</p>
               </div>
-              <a href="bmi/" class="btn btn--ghost">
+              <a data-cms-href="index.partners.link_1" data-cms="index.partners.a_1" href="bmi/" class="btn btn--ghost">
                 Explore BMI furnaces <span class="arrow">→</span>
               </a>
             </div>
           </div>
 
           <!-- 2 CLEAN: Novatec -->
-          <div class="partner-card-light hud-corner" data-brand="novatec" data-anim="fade-up" data-anim-delay="2">
+          <div data-cms-card="index.partners.c10_2" class="partner-card-light hud-corner" data-brand="novatec" data-anim="fade-up" data-anim-delay="2">
             <div class="partner-card-light__img">
-              <img src="assets/catalog/PLURITANK-1400-line-overview.jpg" alt="Novatec ultrasonic cleaning system">
-              <div class="partner-card-light__flag-badge">
+              <img data-cms-src="index.partners.img_3" data-cms-alt="index.partners.img_3_alt" src="assets/catalog/PLURITANK-1400-line-overview.jpg" alt="Novatec ultrasonic cleaning system">
+              <div data-cms="index.partners.div_3" class="partner-card-light__flag-badge">
                 Italy · Novatec
               </div>
             </div>
             <div class="partner-card-light__body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
-                <div class="bc-step">
+                <div data-cms="index.partners.div_4" class="bc-step">
                   <span class="bc-n">2</span> Clean
                 </div>
                 <div class="partner-brand-logo">
-                  <img src="assets/logo-novatec.png" alt="Novatec S.r.l.">
+                  <img data-cms-src="index.partners.img_4" data-cms-alt="index.partners.img_4_alt" src="assets/logo-novatec.png" alt="Novatec S.r.l.">
                 </div>
               </div>
               <div class="partner-card-light__content">
-                <h5>Ultrasonic cleaning systems</h5>
-                <p>Novatec S.r.l., Italy</p>
+                <h5 data-cms="index.partners.h5_2">Ultrasonic cleaning systems</h5>
+                <p data-cms="index.partners.p_2">Novatec S.r.l., Italy</p>
               </div>
-              <a href="novatec/" class="btn btn--ghost">
+              <a data-cms-href="index.partners.link_2" data-cms="index.partners.a_2" href="novatec/" class="btn btn--ghost">
                 Explore Novatec cleaning <span class="arrow">→</span>
               </a>
             </div>
           </div>
 
           <!-- 3 COAT: Huasheng -->
-          <div class="partner-card-light hud-corner" data-brand="huasheng" data-anim="fade-up" data-anim-delay="3">
+          <div data-cms-card="index.partners.c10_3" class="partner-card-light hud-corner" data-brand="huasheng" data-anim="fade-up" data-anim-delay="3">
             <div class="partner-card-light__img">
-              <img src="Huasheng-machine-photos/GFOUR.jpg" alt="Huasheng PVD coating system">
-              <div class="partner-card-light__flag-badge">
+              <img data-cms-src="index.partners.img_5" data-cms-alt="index.partners.img_5_alt" src="Huasheng-machine-photos/GFOUR.jpg" alt="Huasheng PVD coating system">
+              <div data-cms="index.partners.div_5" class="partner-card-light__flag-badge">
                 China · Huasheng
               </div>
             </div>
             <div class="partner-card-light__body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
-                <div class="bc-step">
+                <div data-cms="index.partners.div_6" class="bc-step">
                   <span class="bc-n">3</span> Coat
                 </div>
                 <div class="partner-brand-logo">
-                  <img src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng Nanotechnology">
+                  <img data-cms-src="index.partners.img_6" data-cms-alt="index.partners.img_6_alt" src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng Nanotechnology">
                 </div>
               </div>
               <div class="partner-card-light__content">
-                <h5>Huasheng Nanotechnology</h5>
-                <p>Guangdong Huasheng Nanotechnology, Dongguan, China</p>
+                <h5 data-cms="index.partners.h5_3">Huasheng Nanotechnology</h5>
+                <p data-cms="index.partners.p_3">Guangdong Huasheng Nanotechnology, Dongguan, China</p>
               </div>
-              <a href="huasheng/" class="btn btn--ghost">
+              <a data-cms-href="index.partners.link_3" data-cms="index.partners.a_3" href="huasheng/" class="btn btn--ghost">
                 Explore Huasheng coating <span class="arrow">→</span>
               </a>
             </div>
           </div>
 
           <!-- 4 SUPPORT: Greets -->
-          <div class="partner-card-light hud-corner" data-brand="greets" data-anim="fade-up" data-anim-delay="4">
+          <div data-cms-card="index.partners.c10_4" class="partner-card-light hud-corner" data-brand="greets" data-anim="fade-up" data-anim-delay="4">
             <div class="partner-card-light__img g-ph">
               <div class="g-item">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"
                   stroke-linecap="round" stroke-linejoin="round">
                   <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z" />
                 </svg>
-                Installation
+                <span data-cms="index.partners.text_1">Installation</span>
               </div>
               <div class="g-item">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -4887,7 +4885,7 @@
                   <path d="M3 20a6 6 0 0 1 12 0" />
                   <path d="M16 11h5M18.5 8.5v5" />
                 </svg>
-                Training
+                <span data-cms="index.partners.text_2">Training</span>
               </div>
               <div class="g-item">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -4895,7 +4893,7 @@
                   <circle cx="12" cy="12" r="3" />
                   <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2" />
                 </svg>
-                Spares
+                <span data-cms="index.partners.text_3">Spares</span>
               </div>
               <div class="g-item">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -4904,23 +4902,23 @@
                   <rect x="3" y="14" width="4" height="6" rx="1.5" />
                   <rect x="17" y="14" width="4" height="6" rx="1.5" />
                 </svg>
-                Service
+                <span data-cms="index.partners.text_4">Service</span>
               </div>
             </div>
             <div class="partner-card-light__body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
-                <div class="bc-step">
+                <div data-cms="index.partners.div_7" class="bc-step">
                   <span class="bc-n">4</span> Support
                 </div>
                 <div class="partner-brand-logo">
-                  <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:32px; width:auto;">
+                  <img data-cms-src="index.partners.img_7" data-cms-alt="index.partners.img_7_alt" src="assets/logo-greets.png" alt="Greets Equipment" style="height:32px; width:auto;">
                 </div>
               </div>
               <div class="partner-card-light__content">
-                <h5>One local team for all three</h5>
-                <p>Greets Equipment Pvt. Ltd., India</p>
+                <h5 data-cms="index.partners.h5_4">One local team for all three</h5>
+                <p data-cms="index.partners.p_4">Greets Equipment Pvt. Ltd., India</p>
               </div>
-              <a href="#why" class="btn btn--ghost">
+              <a data-cms-href="index.partners.link_4" data-cms="index.partners.a_4" href="#why" class="btn btn--ghost">
                 See how we support you <span class="arrow">→</span>
               </a>
             </div>
@@ -4936,14 +4934,14 @@
       style="border-top:1px solid rgba(22,163,74,0.12);">
       <div class="container">
         <div class="text-center mb-5" data-anim="fade-left">
-          <h2>Industries we serve</h2>
-          <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Choose an industry to see
+          <h2 data-cms="index.industries.h2_1">Industries we serve</h2>
+          <p data-cms="index.industries.p_1" class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Choose an industry to see
             the systems that apply to it.</p>
         </div>
 
-        <div class="industry-grid-v2 stagger-children--xl">
+        <div data-cms-list="index.industries.l11" class="industry-grid-v2 stagger-children--xl">
           <!-- 01 Cutting and gear cutting tools -->
-          <a href="#finder" data-ind="tools" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="1"
+          <a data-cms-card="index.industries.c11_1" href="#finder" data-ind="tools" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="1"
             style="--c1:#FF9A3C; --c2:#E0521B;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -4954,15 +4952,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Cutting and gear cutting tools</h5>
-            <p>Hobs, shaper cutters, inserts, drills and end mills.</p>
+            <h5 data-cms="index.industries.h5_1">Cutting and gear cutting tools</h5>
+            <p data-cms="index.industries.p_2">Hobs, shaper cutters, inserts, drills and end mills.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_1">BMI</span> <span data-cms="index.industries.span_2">Novatec</span> <span data-cms="index.industries.span_3">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 02 PVD coating service providers -->
-          <a href="#finder" data-ind="jobshop" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="2"
+          <a data-cms-card="index.industries.c11_2" href="#finder" data-ind="jobshop" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="2"
             style="--c1:#27C4B5; --c2:#0B8A7E;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -4975,15 +4973,15 @@
                 </svg>
               </div>
             </div>
-            <h5>PVD coating service providers</h5>
-            <p>Coating job shops and in-house coating centres.</p>
+            <h5 data-cms="index.industries.h5_2">PVD coating service providers</h5>
+            <p data-cms="index.industries.p_3">Coating job shops and in-house coating centres.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_4">BMI</span> <span data-cms="index.industries.span_5">Novatec</span> <span data-cms="index.industries.span_6">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 03 Dies and mould manufacturers -->
-          <a href="#finder" data-ind="dies" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="3"
+          <a data-cms-card="index.industries.c11_3" href="#finder" data-ind="dies" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="3"
             style="--c1:#7C8CFF; --c2:#4353D6;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -4995,15 +4993,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Dies and mould manufacturers</h5>
-            <p>Press tools, forging dies, die-casting and plastic moulds.</p>
+            <h5 data-cms="index.industries.h5_3">Dies and mould manufacturers</h5>
+            <p data-cms="index.industries.p_4">Press tools, forging dies, die-casting and plastic moulds.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_7">BMI</span> <span data-cms="index.industries.span_8">Novatec</span> <span data-cms="index.industries.span_9">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 04 Steel and metal processing -->
-          <a href="#finder" data-ind="steel" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="4"
+          <a data-cms-card="index.industries.c11_4" href="#finder" data-ind="steel" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="4"
             style="--c1:#9AA8B2; --c2:#56636B;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5014,15 +5012,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Steel and metal processing</h5>
-            <p>Commercial heat treaters, steel, alloy and forging plants.</p>
+            <h5 data-cms="index.industries.h5_4">Steel and metal processing</h5>
+            <p data-cms="index.industries.p_5">Commercial heat treaters, steel, alloy and forging plants.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_10">BMI</span> <span data-cms="index.industries.span_11">Novatec</span></div>
             </div>
           </a>
 
           <!-- 05 Power: wind, solar and thermal -->
-          <a href="#finder" data-ind="power" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="5"
+          <a data-cms-card="index.industries.c11_5" href="#finder" data-ind="power" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="5"
             style="--c1:#FFD34D; --c2:#F29B0C;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5036,15 +5034,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Power: wind, solar and thermal</h5>
-            <p>Gearbox parts, turbine blades, shafts and bearings.</p>
+            <h5 data-cms="index.industries.h5_5">Power: wind, solar and thermal</h5>
+            <p data-cms="index.industries.p_6">Gearbox parts, turbine blades, shafts and bearings.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_12">BMI</span> <span data-cms="index.industries.span_13">Novatec</span> <span data-cms="index.industries.span_14">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 06 Oil and gas -->
-          <a href="#finder" data-ind="oilgas" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="6"
+          <a data-cms-card="index.industries.c11_6" href="#finder" data-ind="oilgas" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="6"
             style="--c1:#4A4A4A; --c2:#161616;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5055,15 +5053,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Oil and gas</h5>
-            <p>Valves, pumps, drilling tools and wear parts.</p>
+            <h5 data-cms="index.industries.h5_6">Oil and gas</h5>
+            <p data-cms="index.industries.p_7">Valves, pumps, drilling tools and wear parts.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_15">BMI</span> <span data-cms="index.industries.span_16">Novatec</span> <span data-cms="index.industries.span_17">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 07 Automotive -->
-          <a href="#finder" data-ind="auto" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="7"
+          <a data-cms-card="index.industries.c11_7" href="#finder" data-ind="auto" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="7"
             style="--c1:#FF6B6B; --c2:#D62839;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5076,15 +5074,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Automotive</h5>
-            <p>Gears, transmission, engine and EV components.</p>
+            <h5 data-cms="index.industries.h5_7">Automotive</h5>
+            <p data-cms="index.industries.p_8">Gears, transmission, engine and EV components.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_18">BMI</span> <span data-cms="index.industries.span_19">Novatec</span> <span data-cms="index.industries.span_20">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 08 Aerospace and defence -->
-          <a href="#finder" data-ind="aero" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="8"
+          <a data-cms-card="index.industries.c11_8" href="#finder" data-ind="aero" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="8"
             style="--c1:#4FB3FF; --c2:#1667C9;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5095,15 +5093,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Aerospace and defence</h5>
-            <p>Turbine parts, brazed assemblies, weapon and vehicle components.</p>
+            <h5 data-cms="index.industries.h5_8">Aerospace and defence</h5>
+            <p data-cms="index.industries.p_9">Turbine parts, brazed assemblies, weapon and vehicle components.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_21">BMI</span> <span data-cms="index.industries.span_22">Novatec</span> <span data-cms="index.industries.span_23">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 09 Medical devices and implants -->
-          <a href="#finder" data-ind="medical" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="9"
+          <a data-cms-card="index.industries.c11_9" href="#finder" data-ind="medical" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="9"
             style="--c1:#FF7EB3; --c2:#D6336C;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5115,15 +5113,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Medical devices and implants</h5>
-            <p>Orthopaedic implants, surgical instruments, cleanroom final cleaning.</p>
+            <h5 data-cms="index.industries.h5_9">Medical devices and implants</h5>
+            <p data-cms="index.industries.p_10">Orthopaedic implants, surgical instruments, cleanroom final cleaning.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>BMI</span> <span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_24">BMI</span> <span data-cms="index.industries.span_25">Novatec</span> <span data-cms="index.industries.span_26">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 10 Semiconductor and electronics -->
-          <a href="#finder" data-ind="semi" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="10"
+          <a data-cms-card="index.industries.c11_10" href="#finder" data-ind="semi" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="10"
             style="--c1:#B18CFF; --c2:#6F3FD6;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5136,15 +5134,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Semiconductor and electronics</h5>
-            <p>Chamber parts and precision components.</p>
+            <h5 data-cms="index.industries.h5_10">Semiconductor and electronics</h5>
+            <p data-cms="index.industries.p_11">Chamber parts and precision components.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_27">Novatec</span> <span data-cms="index.industries.span_28">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 11 Optics and eyewear -->
-          <a href="#finder" data-ind="optics" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="11"
+          <a data-cms-card="index.industries.c11_11" href="#finder" data-ind="optics" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="11"
             style="--c1:#4DE1F0; --c2:#1596B8;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5156,15 +5154,15 @@
                 </svg>
               </div>
             </div>
-            <h5>Optics and eyewear</h5>
-            <p>Lenses and optical components.</p>
+            <h5 data-cms="index.industries.h5_11">Optics and eyewear</h5>
+            <p data-cms="index.industries.p_12">Lenses and optical components.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_29">Novatec</span> <span data-cms="index.industries.span_30">Huasheng</span></div>
             </div>
           </a>
 
           <!-- 12 Watches, jewellery and decorative -->
-          <a href="#finder" data-ind="watch" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="12"
+          <a data-cms-card="index.industries.c11_12" href="#finder" data-ind="watch" class="industry-card-v2" data-anim="zoom-fade" data-anim-delay="12"
             style="--c1:#E9C46A; --c2:#B8860B;">
             <div class="industry-card-v2__top">
               <div class="ind-ic" aria-hidden="true">
@@ -5176,10 +5174,10 @@
                 </svg>
               </div>
             </div>
-            <h5>Watches, jewellery and decorative</h5>
-            <p>Cases, bands, fittings and hardware finishes.</p>
+            <h5 data-cms="index.industries.h5_12">Watches, jewellery and decorative</h5>
+            <p data-cms="index.industries.p_13">Cases, bands, fittings and hardware finishes.</p>
             <div class="industry-card-v2__footer">
-              <div class="industry-card-v2__brands"><span>Novatec</span> <span>Huasheng</span></div>
+              <div class="industry-card-v2__brands"><span data-cms="index.industries.span_31">Novatec</span> <span data-cms="index.industries.span_32">Huasheng</span></div>
             </div>
           </a>
         </div>
@@ -5190,12 +5188,12 @@
     <section class="finder" id="finder" aria-labelledby="finder-h">
       <div class="wrap container">
         <div class="finder-head">
-          <h2 id="finder-h">Find a system</h2>
-          <p class="lede">Type what you make or the process you need, for example
-            <button type="button" class="qchip">moulds</button>
-            <button type="button" class="qchip">hob coating</button>
-            <button type="button" class="qchip">implant cleaning</button>
-            <button type="button" class="qchip">nitriding</button>
+          <h2 id="finder-h" data-cms="index.finder.h2_1">Find a system</h2>
+          <p data-cms-list="index.finder.l5" class="lede"><span data-cms="index.finder.span_1">Type what you make or the process you need, for example</span>
+            <button data-cms-card="index.finder.c5_1" type="button" class="qchip" data-cms="index.finder.button_1">moulds</button>
+            <button data-cms-card="index.finder.c5_2" type="button" class="qchip" data-cms="index.finder.button_2">hob coating</button>
+            <button data-cms-card="index.finder.c5_3" type="button" class="qchip" data-cms="index.finder.button_3">implant cleaning</button>
+            <button data-cms-card="index.finder.c5_4" type="button" class="qchip" data-cms="index.finder.button_4">nitriding</button>
           </p>
         </div>
 
@@ -5208,10 +5206,10 @@
               <path d="m20 20-4-4" />
             </svg>
             <input id="q" type="search"
-              placeholder="Describe your need: moulds, hob coating, implant cleaning, nitriding…" autocomplete="off">
+              placeholder="Describe your need: moulds, hob coating, implant cleaning, nitriding…" data-cms-ph="index.finder.input_1" autocomplete="off">
           </label>
           <div class="seg" role="group" aria-label="Filter by brand">
-            <button type="button" data-brand="all" aria-pressed="true">All brands</button>
+            <button type="button" data-brand="all" aria-pressed="true" data-cms="index.finder.button_5">All brands</button>
             <button type="button" data-brand="BMI" aria-pressed="false">BMI</button>
             <button type="button" data-brand="Novatec" aria-pressed="false">Novatec</button>
             <button type="button" data-brand="Huasheng" aria-pressed="false">Huasheng</button>
@@ -5221,16 +5219,16 @@
         <!-- Row 2: process steps + dropdowns -->
         <div class="finder-filters">
           <div class="steps" role="group" aria-label="Filter by process step">
-            <button type="button" data-step="all" aria-pressed="true">All processes</button>
-            <button type="button" data-step="bmi" aria-pressed="false"><span>1</span>Harden</button>
-            <button type="button" data-step="novatec" aria-pressed="false"><span>2</span>Clean</button>
-            <button type="button" data-step="huasheng" aria-pressed="false"><span>3</span>Coat</button>
+            <button type="button" data-step="all" aria-pressed="true" data-cms="index.finder.button_6">All processes</button>
+            <button type="button" data-step="bmi" aria-pressed="false" data-cms="index.finder.button_7"><span>1</span>Harden</button>
+            <button type="button" data-step="novatec" aria-pressed="false" data-cms="index.finder.button_8"><span>2</span>Clean</button>
+            <button type="button" data-step="huasheng" aria-pressed="false" data-cms="index.finder.button_9"><span>3</span>Coat</button>
           </div>
-          <div class="finder-filter-sep">
-            <label class="fsel"><span>Industry:</span><select id="f-ind">
+          <div data-cms-list="index.finder.l6" class="finder-filter-sep">
+            <label data-cms-card="index.finder.c6_1" class="fsel"><span data-cms="index.finder.span_2">Industry:</span><select id="f-ind">
                 <option value="">All industries</option>
               </select></label>
-            <label class="fsel"><span>Category:</span><select id="f-cat">
+            <label data-cms-card="index.finder.c6_2" class="fsel"><span data-cms="index.finder.span_3">Category:</span><select id="f-cat">
                 <option value="">All categories</option>
               </select></label>
           </div>
@@ -5252,16 +5250,16 @@
         <div class="brand-intro fade-left">
           <div>
             <div class="brand-divider">
-              <img src="assets/logo-BMI.png" alt="Fours Industriels B.M.I.">
+              <img data-cms-src="index.bmi.img_1" data-cms-alt="index.bmi.img_1_alt" src="assets/logo-BMI.png" alt="Fours Industriels B.M.I.">
             </div>
-            <h2>Fours Industriels B.M.I., Saint-Quentin-Fallavier, France</h2>
-            <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">French designer &amp;
+            <h2 data-cms="index.bmi.h2_1">Fours Industriels B.M.I., Saint-Quentin-Fallavier, France</h2>
+            <p data-cms="index.bmi.p_1" class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">French designer &amp;
               manufacturer since 1947 and specialist in vacuum for more than 50 years, building standard and custom
               furnaces for aerospace,
               automotive, medical, tooling and heat-treatment shops. BMI's patented rotating gas flow gives uniform
               quenching even on dense loads.</p>
-            <a href="https://bmi-fours.com" target="_blank" rel="noopener" class="brand-intro__link">
-              Visit bmi-fours.com
+            <a data-cms-href="index.bmi.link_1" href="https://bmi-fours.com" target="_blank" rel="noopener" class="brand-intro__link">
+              <span data-cms="index.bmi.text_1">Visit bmi-fours.com</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -5269,14 +5267,14 @@
                 <line x1="10" y1="14" x2="21" y2="3" />
               </svg>
             </a>
-            <div class="brand-intro__stats">
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value">1947</div>
-                <div class="brand-intro__stat-label">Manufacturer since</div>
+            <div data-cms-list="index.bmi.l12" class="brand-intro__stats">
+              <div data-cms-card="index.bmi.c12_1" class="brand-intro__stat">
+                <div data-cms="index.bmi.div_1" class="brand-intro__stat-value">1947</div>
+                <div data-cms="index.bmi.div_2" class="brand-intro__stat-label">Manufacturer since</div>
               </div>
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value" data-count="1500+">1500+</div>
-                <div class="brand-intro__stat-label">Furnaces worldwide</div>
+              <div data-cms-card="index.bmi.c12_2" class="brand-intro__stat">
+                <div data-cms="index.bmi.div_3" class="brand-intro__stat-value" data-count="1500+">1500+</div>
+                <div data-cms="index.bmi.div_4" class="brand-intro__stat-label">Furnaces worldwide</div>
               </div>
             </div>
           </div>
@@ -5284,103 +5282,77 @@
 
         <div
           style="display:flex; justify-content:space-between; align-items:center; margin:1.75rem 0 1rem; flex-wrap:wrap; gap:0.5rem;">
-          <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">Vacuum furnaces</h3>
-          <p class="catlink" style="margin:0;"><a href="bmi/">See all BMI machines →</a></p>
+          <h3 data-cms="index.bmi.h3_1" style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">Vacuum furnaces</h3>
+          <p class="catlink" style="margin:0;"><a data-cms-href="index.bmi.link_2" data-cms="index.bmi.a_1" href="bmi/">See all BMI machines →</a></p>
         </div>
 
         <div class="families">
           <details data-cat="Gas quenching furnaces" class="fade-left" data-anim="fade-left" data-anim-delay="1">
             <summary>
-              <span class="family-thumb"><img src="assets/catalog/BMI-horizontal-furnace-workshop.jpg"
-                  alt="BMI gas quenching furnace"></span>
+              <span class="family-thumb"><img src="assets/catalog/BMI-horizontal-furnace-workshop.jpg" alt="Horizontal vacuum furnace in the works"></span>
               <div class="family-head">
-                <span class="t">Gas quenching furnaces<span class="family-count-badge">4
-                    products</span><small>Hardening, brazing and laboratory furnaces</small></span>
+                <span class="t">Gas quenching furnaces<span class="family-count-badge">4 products</span><small>Hardening, brazing and laboratory furnaces</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
-              <li><a href="bmi/gas-quenching/b8t/" data-brand="BMI" data-process="harden"
-                  data-category="Gas quenching furnaces"><b>B8_T
-                    vacuum gas quenching furnace</b><span>Front-loading furnace for high-throughput
-                    production.</span></a>
-              </li>
-              <li><a href="bmi/gas-quenching/vse8t/" data-brand="BMI" data-process="harden"
-                  data-category="Gas quenching furnaces"><b>VSE8_T
-                    vacuum gas quenching furnace</b><span>Bottom-loading furnace for tall or delicate parts.</span></a>
-              </li>
               <li><a href="bmi/gas-quenching/brazing/" data-brand="BMI" data-process="harden"
-                  data-category="Gas quenching furnaces"><b>Vacuum
-                    brazing furnace</b><span>Oxide-free brazing of assemblies.</span></a></li>
+                  data-category="Gas quenching furnaces"><b>Vacuum brazing furnace</b><span>Oxide-free brazing of assemblies.</span></a></li>
+              <li><a href="bmi/gas-quenching/vse8t/" data-brand="BMI" data-process="harden"
+                  data-category="Gas quenching furnaces"><b>VSE8_T vacuum gas quenching furnace</b><span>Bottom-loading furnace for tall or delicate parts.</span></a></li>
+              <li><a href="bmi/gas-quenching/b8t/" data-brand="BMI" data-process="harden"
+                  data-category="Gas quenching furnaces"><b>B8_T vacuum gas quenching furnace</b><span>Front-loading furnace for high-throughput production.</span></a></li>
               <li><a href="bmi/gas-quenching/lab/" data-brand="BMI" data-process="harden"
-                  data-category="Gas quenching furnaces"><b>Compact
-                    laboratory furnace</b><span>Small vacuum furnace for R&D and process development.</span></a></li>
+                  data-category="Gas quenching furnaces"><b>Compact laboratory furnace</b><span>Small vacuum furnace for R&amp;D and process development.</span></a></li>
             </ul>
           </details>
           <details data-cat="Oil quenching furnaces" class="fade-right" data-anim="fade-right" data-anim-delay="2">
             <summary>
-              <span class="family-thumb"><img src="assets/catalog/BMI-furnaces-in-workshop.jpg"
-                  alt="BMI oil quenching furnace"></span>
+              <span class="family-thumb"><img src="assets/catalog/BMI-furnaces-in-workshop.jpg" alt="Several furnaces in the works"></span>
               <div class="family-head">
-                <span class="t">Oil quenching furnaces<span class="family-count-badge">2
-                    products</span><small>Horizontal and vertical</small></span>
+                <span class="t">Oil quenching furnaces<span class="family-count-badge">2 products</span><small>Horizontal and vertical</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="bmi/oil-quenching/oil-horizontal/" data-brand="BMI" data-process="harden"
-                  data-category="Oil quenching furnaces"><b>Vacuum
-                    oil quenching furnace, horizontal</b><span>Vacuum heating with an integrated oil quench.</span></a>
-              </li>
+                  data-category="Oil quenching furnaces"><b>Vacuum oil quenching furnace, horizontal</b><span>Vacuum heating with an integrated oil quench.</span></a></li>
               <li><a href="bmi/oil-quenching/oil-vertical/" data-brand="BMI" data-process="harden"
-                  data-category="Oil quenching furnaces"><b>Vacuum
-                    oil quenching furnace, vertical</b><span>For long parts quenched hanging.</span></a></li>
+                  data-category="Oil quenching furnaces"><b>Vacuum oil quenching furnace, vertical</b><span>For long parts quenched hanging.</span></a></li>
             </ul>
           </details>
           <details data-cat="Low-temperature furnaces" class="fade-left" data-anim="fade-left" data-anim-delay="3">
             <summary>
-              <span class="family-thumb"><img src="assets/catalog/BMI-furnace-with-loading-trolley.jpg"
-                  alt="BMI low-temperature furnace"></span>
+              <span class="family-thumb"><img src="assets/catalog/BMI-furnace-with-loading-trolley.jpg" alt="Furnace with automatic loading trolley"></span>
               <div class="family-head">
-                <span class="t">Low-temperature furnaces<span class="family-count-badge">2
-                    products</span><small>Tempering and aluminium brazing</small></span>
+                <span class="t">Low-temperature furnaces<span class="family-count-badge">2 products</span><small>Tempering and aluminium brazing</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="bmi/low-temperature/tempering/" data-brand="BMI" data-process="harden"
-                  data-category="Low-temperature furnaces"><b>Vacuum
-                    tempering furnace</b><span>Tempering after hardening.</span></a></li>
+                  data-category="Low-temperature furnaces"><b>Vacuum tempering furnace</b><span>Tempering after hardening.</span></a></li>
               <li><a href="bmi/low-temperature/alu-brazing/" data-brand="BMI" data-process="harden"
-                  data-category="Low-temperature furnaces"><b>Aluminium brazing vacuum furnace</b><span>For heat
-                    exchangers and aluminium assemblies.</span></a></li>
+                  data-category="Low-temperature furnaces"><b>Aluminium brazing vacuum furnace</b><span>For heat exchangers and aluminium assemblies.</span></a></li>
             </ul>
           </details>
-          <details data-cat="Thermochemical treatment furnaces" class="fade-right" data-anim="fade-right"
-            data-anim-delay="4">
+          <details data-cat="Thermochemical treatment furnaces" class="fade-right" data-anim="fade-right" data-anim-delay="4">
             <summary>
-              <span class="family-thumb"><img src="assets/catalog/BMI-furnace-with-cooling-unit.jpg"
-                  alt="BMI thermochemical treatment furnace"></span>
+              <span class="family-thumb"><img src="assets/catalog/BMI-furnace-with-cooling-unit.jpg" alt="Furnace with cooling unit"></span>
               <div class="family-head">
-                <span class="t">Thermochemical treatment furnaces<span class="family-count-badge">4
-                    products</span><small>Carburizing, nitriding and sub-zero</small></span>
+                <span class="t">Thermochemical treatment furnaces<span class="family-count-badge">4 products</span><small>Carburizing, nitriding and sub-zero</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="bmi/thermochemical/allcarb/" data-brand="BMI" data-process="harden"
-                  data-category="Thermochemical treatment furnaces"><b>ALLCARB® low-pressure carburizing</b><span>Case
-                    hardening for gears and transmission parts.</span></a></li>
+                  data-category="Thermochemical treatment furnaces"><b>ALLCARB® low-pressure carburizing</b><span>Case hardening for gears and transmission parts.</span></a></li>
               <li><a href="bmi/thermochemical/allnit/" data-brand="BMI" data-process="harden"
-                  data-category="Thermochemical treatment furnaces"><b>ALLNIT® low-pressure nitriding</b><span>Nitriding
-                    for wear and fatigue resistance.</span></a></li>
+                  data-category="Thermochemical treatment furnaces"><b>ALLNIT® low-pressure nitriding</b><span>Nitriding for wear and fatigue resistance.</span></a></li>
               <li><a href="bmi/thermochemical/plasma-nitriding/" data-brand="BMI" data-process="harden"
-                  data-category="Thermochemical treatment furnaces"><b>Plasma nitriding furnace</b><span>Ion nitriding
-                    for
-                    tools, dies and engineering parts.</span></a></li>
+                  data-category="Thermochemical treatment furnaces"><b>Plasma nitriding furnace</b><span>Ion nitriding for tools, dies and engineering parts.</span></a></li>
               <li><a href="bmi/thermochemical/cool-plus/" data-brand="BMI" data-process="harden"
-                  data-category="Thermochemical treatment furnaces"><b>COOL PLUS sub-zero treatment
-                    furnace</b><span>Cryogenic treatment of hardened steels.</span></a></li>
+                  data-category="Thermochemical treatment furnaces"><b>COOL PLUS sub-zero treatment furnace</b><span>Cryogenic treatment of hardened steels.</span></a></li>
             </ul>
           </details>
         </div>
@@ -5397,14 +5369,14 @@
         <div class="brand-intro fade-right">
           <div>
             <div class="brand-divider">
-              <img src="assets/logo-novatec.png" alt="Novatec S.r.l.">
+              <img data-cms-src="index.novatec.img_1" data-cms-alt="index.novatec.img_1_alt" src="assets/logo-novatec.png" alt="Novatec S.r.l.">
             </div>
-            <h2>Novatec S.r.l., San Martino di Lupari (Padova), Italy</h2>
-            <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Italian maker of
+            <h2 data-cms="index.novatec.h2_1">Novatec S.r.l., San Martino di Lupari (Padova), Italy</h2>
+            <p data-cms="index.novatec.p_1" class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Italian maker of
               industrial ultrasonic cleaning systems since 1993, from multi-stage PLURITANK lines to
               compact 2CRD machines, built to the customer's parts and throughput requirements.</p>
-            <a href="https://novatec.it" target="_blank" rel="noopener" class="brand-intro__link">
-              Visit novatec.it
+            <a data-cms-href="index.novatec.link_1" href="https://novatec.it" target="_blank" rel="noopener" class="brand-intro__link">
+              <span data-cms="index.novatec.text_1">Visit novatec.it</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -5412,18 +5384,18 @@
                 <line x1="10" y1="14" x2="21" y2="3" />
               </svg>
             </a>
-            <div class="brand-intro__stats">
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value">1993</div>
-                <div class="brand-intro__stat-label">Founded</div>
+            <div data-cms-list="index.novatec.l13" class="brand-intro__stats">
+              <div data-cms-card="index.novatec.c13_1" class="brand-intro__stat">
+                <div data-cms="index.novatec.div_1" class="brand-intro__stat-value">1993</div>
+                <div data-cms="index.novatec.div_2" class="brand-intro__stat-label">Founded</div>
               </div>
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value" data-count="2300+">2300+</div>
-                <div class="brand-intro__stat-label">Systems installed</div>
+              <div data-cms-card="index.novatec.c13_2" class="brand-intro__stat">
+                <div data-cms="index.novatec.div_3" class="brand-intro__stat-value" data-count="2300+">2300+</div>
+                <div data-cms="index.novatec.div_4" class="brand-intro__stat-label">Systems installed</div>
               </div>
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value" data-count="45+">45+</div>
-                <div class="brand-intro__stat-label">Countries</div>
+              <div data-cms-card="index.novatec.c13_3" class="brand-intro__stat">
+                <div data-cms="index.novatec.div_5" class="brand-intro__stat-value" data-count="45+">45+</div>
+                <div data-cms="index.novatec.div_6" class="brand-intro__stat-label">Countries</div>
               </div>
             </div>
           </div>
@@ -5431,109 +5403,77 @@
 
         <div
           style="display:flex; justify-content:space-between; align-items:center; margin:1.75rem 0 1rem; flex-wrap:wrap; gap:0.5rem;">
-          <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">Ultrasonic cleaning systems</h3>
-          <p class="catlink" style="margin:0;"><a href="novatec/">See all Novatec machines →</a></p>
+          <h3 data-cms="index.novatec.h3_1" style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">Ultrasonic cleaning systems</h3>
+          <p class="catlink" style="margin:0;"><a data-cms-href="index.novatec.link_2" data-cms="index.novatec.a_1" href="novatec/">See all Novatec machines →</a></p>
         </div>
 
         <div class="families">
-          <details data-cat="PLURITANK Multi-chamber ultrasonic" class="fade-left" data-anim="fade-left"
-            data-anim-delay="1">
+          <details data-cat="PLURITANK Multi-chamber ultrasonic" class="fade-left" data-anim="fade-left" data-anim-delay="1">
             <summary>
-              <span class="family-thumb"><img src="assets/catalog/PLURITANK-1400-line-overview.jpg"
-                  alt="Novatec PLURITANK multi-chamber cleaning line"></span>
+              <span class="family-thumb"><img src="assets/catalog/PLURITANK-1400-line-overview.jpg" alt="Novatec PLURITANK 1400 multi-stage ultrasonic cleaning line"></span>
               <div class="family-head">
-                <span class="t">PLURITANK Multi-chamber ultrasonic<span class="family-count-badge">3
-                    products</span><small>Modular lines up to 14 process stations</small></span>
+                <span class="t">PLURITANK Multi-chamber ultrasonic<span class="family-count-badge">3 products</span><small>Modular lines up to 14 process stations</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="novatec/pluritank/pluritank-line/" data-brand="Novatec" data-process="clean"
-                  data-category="PLURITANK Multi-chamber ultrasonic"><b>PLURITANK ultrasonic cleaning
-                    line</b><span>Serial
-                    and
-                    large-format parts, up to 14 process stations.</span></a></li>
+                  data-category="PLURITANK Multi-chamber ultrasonic"><b>PLURITANK ultrasonic cleaning line</b><span>Serial and large-format parts, up to 14 process stations.</span></a></li>
               <li><a href="novatec/pluritank/pre-pvd/" data-brand="Novatec" data-process="clean"
-                  data-category="PLURITANK Multi-chamber ultrasonic"><b>PLURITANK pre-treatment line for PVD
-                    coating</b><span>Surface preparation before PVD, CVD and DLC.</span></a></li>
+                  data-category="PLURITANK Multi-chamber ultrasonic"><b>PLURITANK pre-treatment line for PVD coating</b><span>Surface preparation before PVD, CVD and DLC.</span></a></li>
               <li><a href="novatec/pluritank/cleanroom/" data-brand="Novatec" data-process="clean"
-                  data-category="PLURITANK Multi-chamber ultrasonic"><b>Cleanroom cleaning line</b><span>Low-particle
-                    cleaning
-                    for semiconductor and medical.</span></a></li>
+                  data-category="PLURITANK Multi-chamber ultrasonic"><b>Cleanroom cleaning line</b><span>Low-particle cleaning for semiconductor and medical.</span></a></li>
             </ul>
           </details>
-          <details data-cat="2CRD Series Single-chamber precision cleaning under vacuum" class="fade-right"
-            data-anim="fade-right" data-anim-delay="2">
+          <details data-cat="2CRD Series Single-chamber precision cleaning under vacuum" class="fade-right" data-anim="fade-right" data-anim-delay="2">
             <summary>
-              <span class="family-thumb"><img src="assets/catalog/2CRD400-front.jpg"
-                  alt="Novatec 2CRD Series Single-chamber precision cleaning under vacuum"></span>
+              <span class="family-thumb"><img src="assets/catalog/2CRD400-front.jpg" alt="Novatec 2CRD single-chamber precision cleaning system"></span>
               <div class="family-head">
-                <span class="t">2CRD Series Single-chamber precision cleaning under vacuum<span
-                    class="family-count-badge">1
-                    product</span><small>8 standard variants (static &amp; -ROT), custom to 2CRD1700</small></span>
+                <span class="t">2CRD Series Single-chamber precision cleaning under vacuum<span class="family-count-badge">1 product</span><small>8 standard variants (static &amp; -ROT), custom to 2CRD1700</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="novatec/2crd/2crd-system/" data-brand="Novatec" data-process="clean"
-                  data-category="2CRD Series Single-chamber precision cleaning under vacuum"><b>2CRD Series
-                    Single-chamber precision cleaning under vacuum</b><span>8
-                    standard variants (100–800 static &amp; -ROT), plus custom up to 2CRD1700.</span></a></li>
+                  data-category="2CRD Series Single-chamber precision cleaning under vacuum"><b>2CRD Series Single-chamber precision cleaning under vacuum</b><span>Cleaning and vacuum drying in one chamber.</span></a></li>
             </ul>
           </details>
           <details data-cat="Medical implant processing" class="fade-left" data-anim="fade-left" data-anim-delay="3">
             <summary>
-              <span class="family-thumb"><img src="assets/catalog/MEDICAL-implant-components.jpg"
-                  alt="Orthopaedic implants cleaned on Novatec systems"></span>
+              <span class="family-thumb"><img src="assets/catalog/MEDICAL-implant-components.jpg" alt="Medical implant components after precision cleaning"></span>
               <div class="family-head">
-                <span class="t">Medical implant processing<span class="family-count-badge">6
-                    products</span><small>Cleaning, passivation, EP, FPI and turnkey lines</small></span>
+                <span class="t">Medical implant processing<span class="family-count-badge">6 products</span><small>Cleaning, passivation, EP, FPI and turnkey lines</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="novatec/medical-implants/ipc/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>IPC in-process cleaning</b><span>Cleaning implants
-                    between
-                    production steps.</span></a></li>
+                  data-category="Medical implant processing"><b>IPC in-process cleaning</b><span>Cleaning implants between production steps.</span></a></li>
               <li><a href="novatec/medical-implants/fcps/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>FCS / FCPS final cleaning and passivation</b><span>Final
-                    cleaning, with optional passivation, into the cleanroom.</span></a></li>
-              <li><a href="novatec/medical-implants/ep/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>Electropolishing line (EP)</b><span>Electropolishing
-                    line
-                    built on PLURITANK platform.</span></a></li>
+                  data-category="Medical implant processing"><b>FCS / FCPS final cleaning and passivation</b><span>Final cleaning, with optional passivation, into the cleanroom.</span></a></li>
               <li><a href="novatec/medical-implants/fpi/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>FPI fluorescent penetrant inspection
-                    line</b><span>Automated cleaning and crack detection.</span></a></li>
+                  data-category="Medical implant processing"><b>FPI fluorescent penetrant inspection line</b><span>Automated cleaning and crack detection.</span></a></li>
               <li><a href="novatec/medical-implants/qvs-brc/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>QVS / BRC quality verification &amp; basket return
-                    conveyor</b><span>Quality
-                    verification stations and basket return air lock conveyor.</span></a></li>
+                  data-category="Medical implant processing"><b>QVS / BRC quality verification &amp; basket return conveyor</b><span>Quality verification stations and basket return air lock conveyor.</span></a></li>
+              <li><a href="novatec/medical-implants/ep/" data-brand="Novatec" data-process="clean"
+                  data-category="Medical implant processing"><b>Electropolishing line (EP)</b><span>Electropolishing line built on PLURITANK platform.</span></a></li>
               <li><a href="novatec/medical-implants/combined/" data-brand="Novatec" data-process="clean"
-                  data-category="Medical implant processing"><b>Combined turnkey implant lines</b><span>Complete,
-                    automated
-                    implant cleaning plant.</span></a></li>
+                  data-category="Medical implant processing"><b>Combined turnkey implant lines</b><span>Complete, automated implant cleaning plant.</span></a></li>
             </ul>
           </details>
-          <details data-cat="Components & PLT 60V" class="fade-right" data-anim="fade-right" data-anim-delay="4">
+          <details data-cat="Components &amp; PLT 60V" class="fade-right" data-anim="fade-right" data-anim-delay="4">
             <summary>
-              <span class="family-thumb"><img src="assets/catalog/PLURITANK-1400-ultrasonic-generators.jpg"
-                  alt="Novatec ultrasonic generators"></span>
+              <span class="family-thumb"><img src="assets/catalog/PLURITANK-1400-ultrasonic-generators.jpg" alt="Novatec PLURITANK 1400 ultrasonic generator rack and filtration skids"></span>
               <div class="family-head">
-                <span class="t">Components & PLT 60V<span class="family-count-badge">2
-                    products</span><small>Generators, transducers and PLT 60V</small></span>
+                <span class="t">Components &amp; PLT 60V<span class="family-count-badge">2 products</span><small>Generators, transducers and PLT 60V</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="novatec/components/generators/" data-brand="Novatec" data-process="clean"
-                  data-category="Components & PLT 60V"><b>Ultrasonic generators and transducers</b><span>For building
-                    or
-                    upgrading cleaning tanks.</span></a></li>
+                  data-category="Components &amp; PLT 60V"><b>Ultrasonic generators and transducers</b><span>For building or upgrading cleaning tanks.</span></a></li>
               <li><a href="novatec/components/plt60v/" data-brand="Novatec" data-process="clean"
-                  data-category="Components & PLT 60V"><b>PLT 60V pressure-cycle unit</b><span>Pressure-change cleaning
-                    for internal channels.</span></a></li>
+                  data-category="Components &amp; PLT 60V"><b>PLT 60V pressure-cycle unit</b><span>Pressure-change cleaning for internal channels.</span></a></li>
             </ul>
           </details>
         </div>
@@ -5550,15 +5490,15 @@
         <div class="brand-intro fade-up">
           <div>
             <div class="brand-divider">
-              <img src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng Nanotechnology">
+              <img data-cms-src="index.huasheng.img_1" data-cms-alt="index.huasheng.img_1_alt" src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng Nanotechnology">
             </div>
-            <h2>Guangdong Huasheng Nanotechnology, Dongguan, China</h2>
-            <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Founded in 2012,
+            <h2 data-cms="index.huasheng.h2_1">Guangdong Huasheng Nanotechnology, Dongguan, China</h2>
+            <p data-cms="index.huasheng.p_1" class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Founded in 2012,
               Huasheng builds arc, HiPIMS, PECVD, ta-C and HFCVD coating equipment and complete
               turnkey
               coating plants, mainly for cutting tools, moulds and precision parts.</p>
-            <a href="https://hscoat.com" target="_blank" rel="noopener" class="brand-intro__link">
-              Visit hscoat.com
+            <a data-cms-href="index.huasheng.link_1" href="https://hscoat.com" target="_blank" rel="noopener" class="brand-intro__link">
+              <span data-cms="index.huasheng.text_1">Visit hscoat.com</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -5566,18 +5506,18 @@
                 <line x1="10" y1="14" x2="21" y2="3" />
               </svg>
             </a>
-            <div class="brand-intro__stats">
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value">2012</div>
-                <div class="brand-intro__stat-label">Founded</div>
+            <div data-cms-list="index.huasheng.l14" class="brand-intro__stats">
+              <div data-cms-card="index.huasheng.c14_1" class="brand-intro__stat">
+                <div data-cms="index.huasheng.div_1" class="brand-intro__stat-value">2012</div>
+                <div data-cms="index.huasheng.div_2" class="brand-intro__stat-label">Founded</div>
               </div>
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value" data-count="120+">120+</div>
-                <div class="brand-intro__stat-label">Intellectual property rights</div>
+              <div data-cms-card="index.huasheng.c14_2" class="brand-intro__stat">
+                <div data-cms="index.huasheng.div_3" class="brand-intro__stat-value" data-count="120+">120+</div>
+                <div data-cms="index.huasheng.div_4" class="brand-intro__stat-label">Intellectual property rights</div>
               </div>
-              <div class="brand-intro__stat">
-                <div class="brand-intro__stat-value">30,000+ <sub>m²</sub></div>
-                <div class="brand-intro__stat-label">Manufacturing centre</div>
+              <div data-cms-card="index.huasheng.c14_3" class="brand-intro__stat">
+                <div data-cms="index.huasheng.div_5" class="brand-intro__stat-value">30,000+ <sub>m²</sub></div>
+                <div data-cms="index.huasheng.div_6" class="brand-intro__stat-label">Manufacturing centre</div>
               </div>
             </div>
           </div>
@@ -5585,200 +5525,164 @@
 
         <div
           style="display:flex; justify-content:space-between; align-items:center; margin:1.75rem 0 1rem; flex-wrap:wrap; gap:0.5rem;">
-          <h3 style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">PVD, DLC and diamond coating
+          <h3 data-cms="index.huasheng.h3_1" style="font-size:0.98rem; font-weight:700; color:var(--ink); margin:0;">PVD, DLC and diamond coating
             equipment</h3>
-          <p class="catlink" style="margin:0;"><a href="huasheng/">See all Huasheng machines →</a></p>
+          <p class="catlink" style="margin:0;"><a data-cms-href="index.huasheng.link_2" data-cms="index.huasheng.a_1" href="huasheng/">See all Huasheng machines →</a></p>
         </div>
 
         <div class="families">
           <details data-cat="PVD coating equipment" class="fade-left" data-anim="fade-left" data-anim-delay="1">
             <summary>
-              <span class="family-thumb"><img src="Huasheng-machine-photos/GFOUR.jpg"
-                  alt="Huasheng PVD coating machine"></span>
+              <span class="family-thumb"><img src="Huasheng-machine-photos/GFOUR.jpg" alt="Huasheng PVD coating machines"></span>
               <div class="family-head">
-                <span class="t">PVD coating equipment<span class="family-count-badge">13 products</span><small>Arc,
-                    HiPIMS, hybrid and decorative</small></span>
+                <span class="t">PVD coating equipment<span class="family-count-badge">13 products</span><small>Arc, HiPIMS, hybrid and decorative</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/pvd/gfour/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>GFOUR 4th-generation hybrid coating machine</b><span>4th-gen
-                    hybrid: 4 targets, controllable plasma, square wave.</span></a></li>
+                  data-category="PVD coating equipment"><b>GFOUR 4th-generation hybrid coating machine</b><span>4th-gen hybrid: 4 targets, controllable plasma, square wave.</span></a></li>
               <li><a href="huasheng/pvd/md200/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>MD200 arc coating machine</b><span>Compact arc coater for
-                    small-batch and regrinding shops.</span></a></li>
+                  data-category="PVD coating equipment"><b>MD200 arc coating machine</b><span>Compact arc coater for small-batch and regrinding shops.</span></a></li>
               <li><a href="huasheng/pvd/md500/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>MD500 arc coating machine</b><span>Mid-size arc coater for
-                    serial cutting-tool production.</span></a></li>
+                  data-category="PVD coating equipment"><b>MD500 arc coating machine</b><span>Mid-size arc coater for serial cutting-tool production.</span></a></li>
               <li><a href="huasheng/pvd/md800/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>MD800 arc coating machine</b><span>High-rate arc coater for
-                    tool coating production.</span></a></li>
+                  data-category="PVD coating equipment"><b>MD800 arc coating machine</b><span>High-rate arc coater for tool coating production.</span></a></li>
               <li><a href="huasheng/pvd/md1500/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>MD1500 high-capacity vertical arc coating
-                    machine</b><span>Production machine for gear cutting tools: 72 hobs and 1000 kg per
-                    batch.</span></a></li>
+                  data-category="PVD coating equipment"><b>MD1500 high-capacity vertical arc coating machine</b><span>Production machine for gear cutting tools: 72 hobs and 1000 kg per batch.</span></a></li>
               <li><a href="huasheng/pvd/hd500/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>HD500 hybrid arc + HiPIMS coating machine</b><span>30%
-                    performance gain over arc alone, for stainless steel &amp; titanium.</span></a></li>
+                  data-category="PVD coating equipment"><b>HD500 hybrid arc + HiPIMS coating machine</b><span>30% performance gain over arc alone, for stainless steel &amp; titanium.</span></a></li>
               <li><a href="huasheng/pvd/hd800/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>HD800 hybrid arc + HiPIMS coating
-                    machine</b><span>High-capacity hybrid platform for hard-to-machine materials.</span></a></li>
+                  data-category="PVD coating equipment"><b>HD800 hybrid arc + HiPIMS coating machine</b><span>High-capacity hybrid platform for hard-to-machine materials.</span></a></li>
               <li><a href="huasheng/pvd/wcc800/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>WCC800 DC + HiPIMS magnetron sputtering
-                    machine</b><span>Universal wear-resistant coating system using DC + HiPIMS.</span></a></li>
+                  data-category="PVD coating equipment"><b>WCC800 DC + HiPIMS magnetron sputtering machine</b><span>Universal wear-resistant coating system using DC + HiPIMS.</span></a></li>
               <li><a href="huasheng/pvd/broach/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>Broach coating equipment</b><span>Dedicated broach coating
-                    equipment with a tall chamber.</span></a></li>
+                  data-category="PVD coating equipment"><b>Broach coating equipment</b><span>Dedicated broach coating equipment with a tall chamber.</span></a></li>
               <li><a href="huasheng/pvd/aip/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>Arc coating equipment</b><span>Hard nitride coatings for
-                    cutting tools.</span></a></li>
+                  data-category="PVD coating equipment"><b>Arc coating equipment</b><span>Hard nitride coatings for cutting tools.</span></a></li>
               <li><a href="huasheng/pvd/hipims/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>HiPIMS coating equipment</b><span>Dense, smooth, droplet-free
-                    coatings.</span></a></li>
+                  data-category="PVD coating equipment"><b>HiPIMS coating equipment</b><span>Dense, smooth, droplet-free coatings.</span></a></li>
               <li><a href="huasheng/pvd/hybrid/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>Hybrid coating equipment</b><span>Arc and sputtering in one
-                    chamber.</span></a></li>
+                  data-category="PVD coating equipment"><b>Hybrid coating equipment</b><span>Arc and sputtering in one chamber.</span></a></li>
               <li><a href="huasheng/pvd/decorative/" data-brand="Huasheng" data-process="coat"
-                  data-category="PVD coating equipment"><b>Decorative coating equipment</b><span>Colour PVD
-                    finishes.</span></a></li>
+                  data-category="PVD coating equipment"><b>Decorative coating equipment</b><span>Colour PVD finishes.</span></a></li>
             </ul>
           </details>
-          <details data-cat="DLC coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="2">
+          <details data-cat="DLC &amp; ta-C coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="2">
             <summary>
-              <span class="family-thumb"><img src="Huasheng-machine-photos/TC800PLUS.jpg"
-                  alt="Huasheng DLC coating system"></span>
+              <span class="family-thumb"><img src="Huasheng-machine-photos/TC800PLUS.jpg" alt="Huasheng DLC and ta-C coating systems"></span>
               <div class="family-head">
-                <span class="t">DLC &amp; ta-C coating equipment<span class="family-count-badge">4
-                    products</span><small>PECVD DLC, ta-C and filtered arc</small></span>
+                <span class="t">DLC &amp; ta-C coating equipment<span class="family-count-badge">6 products</span><small>PECVD DLC, ta-C and filtered arc</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/dlc/tc800plus/" data-brand="Huasheng" data-process="coat"
-                  data-category="DLC coating equipment"><b>TC800PLUS ta-C coating machine</b><span>ta-C diamond-like
-                    carbon, hardness up to 6000 HV.</span></a></li>
+                  data-category="DLC &amp; ta-C coating equipment"><b>TC800PLUS ta-C coating machine</b><span>ta-C diamond-like carbon, hardness up to 6000 HV.</span></a></li>
               <li><a href="huasheng/dlc/tc800plus-f/" data-brand="Huasheng" data-process="coat"
-                  data-category="DLC coating equipment"><b>TC800PLUS-F filtered arc ta-C coating
-                    machine</b><span>S-shaped magnetic filter that blocks large particles, up to 6000 HV.</span></a>
-              </li>
+                  data-category="DLC &amp; ta-C coating equipment"><b>TC800PLUS-F filtered arc ta-C coating machine</b><span>S-shaped magnetic filter that blocks large particles, up to 6000 HV.</span></a></li>
+              <li><a href="huasheng/dlc/dlc800/" data-brand="Huasheng" data-process="coat"
+                  data-category="DLC &amp; ta-C coating equipment"><b>DLC800 DLC coating machine</b><span>Compact DLC coating machine, Cr/WC/a-C:H coatings to 2500 HV below 200 °C.</span></a></li>
+              <li><a href="huasheng/dlc/dlc1500/" data-brand="Huasheng" data-process="coat"
+                  data-category="DLC &amp; ta-C coating equipment"><b>DLC1500 DLC coating machine</b><span>Industrial DLC coating machine, 2 m³ chamber and 1000 kg batch load.</span></a></li>
               <li><a href="huasheng/dlc/pecvd-dlc/" data-brand="Huasheng" data-process="coat"
-                  data-category="DLC coating equipment"><b>PECVD DLC coating equipment</b><span>Low-friction coatings
-                    for components.</span></a></li>
+                  data-category="DLC &amp; ta-C coating equipment"><b>PECVD DLC coating equipment</b><span>Low-friction coatings for components.</span></a></li>
               <li><a href="huasheng/dlc/tac/" data-brand="Huasheng" data-process="coat"
-                  data-category="DLC coating equipment"><b>ta-C coating equipment</b><span>Hydrogen-free carbon
-                    coatings.</span></a></li>
+                  data-category="DLC &amp; ta-C coating equipment"><b>ta-C coating equipment</b><span>Hydrogen-free carbon coatings.</span></a></li>
             </ul>
           </details>
           <details data-cat="Diamond coating equipment" class="fade-left" data-anim="fade-left" data-anim-delay="3">
             <summary>
-              <span class="family-thumb"><img src="Huasheng-machine-photos/DA600PRO.jpg"
-                  alt="Huasheng diamond coating system"></span>
+              <span class="family-thumb"><img src="Huasheng-machine-photos/DA600PRO.jpg" alt="Huasheng HFCVD diamond coating system"></span>
               <div class="family-head">
-                <span class="t">Diamond coating equipment<span class="family-count-badge">2 products</span><small>HFCVD
-                    diamond films</small></span>
+                <span class="t">Diamond coating equipment<span class="family-count-badge">2 products</span><small>HFCVD diamond films</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/diamond/da600pro/" data-brand="Huasheng" data-process="coat"
-                  data-category="Diamond coating equipment"><b>DA600PRO HFCVD diamond coating machine</b><span>Parallel
-                    filament array for uniform temperature and 4–30 µm diamond film.</span></a></li>
+                  data-category="Diamond coating equipment"><b>DA600PRO HFCVD diamond coating machine</b><span>Parallel filament array for uniform temperature and 4–30 µm diamond film.</span></a></li>
               <li><a href="huasheng/diamond/hfcvd/" data-brand="Huasheng" data-process="coat"
-                  data-category="Diamond coating equipment"><b>HFCVD diamond coating equipment</b><span>Diamond films on
-                    carbide tools.</span></a></li>
+                  data-category="Diamond coating equipment"><b>HFCVD diamond coating equipment</b><span>Diamond films on carbide tools.</span></a></li>
             </ul>
           </details>
-          <details data-cat="Decorative PVD coating equipment" class="fade-right" data-anim="fade-right"
-            data-anim-delay="4">
+          <details data-cat="Decorative PVD coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="4">
             <summary>
-              <span class="family-thumb"><img src="Huasheng-machine-photos/HUASHENG-DECO-H-machine.jpg"
-                  alt="Huasheng decorative PVD coating equipment"></span>
+              <span class="family-thumb"><img src="Huasheng-machine-photos/HUASHENG-DECO-H-machine.jpg" alt="Huasheng decorative coating machines"></span>
               <div class="family-head">
-                <span class="t">Decorative PVD coating equipment<span class="family-count-badge">5
-                    products</span><small>Luxury finishes, multi-arc and anti-fingerprint</small></span>
+                <span class="t">Decorative PVD coating equipment<span class="family-count-badge">5 products</span><small>Luxury finishes, multi-arc and anti-fingerprint</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/decorative/deco-h/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>DECO H multi-arc + HiPIMS decorative coating
-                    system</b><span>Hardness above 2000 HV and widest colour range for luxury items.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>DECO H multi-arc + HiPIMS decorative coating system</b><span>Hardness above 2000 HV and widest colour range for luxury items.</span></a></li>
               <li><a href="huasheng/decorative/deco-a/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>DECO A large-capacity multi-arc coating
-                    system</b><span>Largest chambers Huasheng builds, with up to 30 arc sources.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>DECO A large-capacity multi-arc coating system</b><span>Largest chambers Huasheng builds, with up to 30 arc sources.</span></a></li>
               <li><a href="huasheng/decorative/deco-b/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>DECO B dark color multi-arc + magnetron coating
-                    system</b><span>Dedicated dark, gunmetal, and black colour series.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>DECO B dark color multi-arc + magnetron coating system</b><span>Dedicated dark, gunmetal, and black colour series.</span></a></li>
               <li><a href="huasheng/decorative/deco-g/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>DECO G multi-arc + real gold coating
-                    system</b><span>Multi-arc and magnetron sputtering with real gold furnace.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>DECO G multi-arc + real gold coating system</b><span>Multi-arc and magnetron sputtering with real gold furnace.</span></a></li>
               <li><a href="huasheng/decorative/af-series/" data-brand="Huasheng" data-process="coat"
-                  data-category="Decorative PVD coating equipment"><b>AF anti-fingerprint coating
-                    equipment</b><span>Magnetron sputtering and evaporation for AF functional coatings.</span></a></li>
+                  data-category="Decorative PVD coating equipment"><b>AF anti-fingerprint coating equipment</b><span>Magnetron sputtering and evaporation for AF functional coatings.</span></a></li>
             </ul>
           </details>
           <details data-cat="Optical coating equipment" class="fade-left" data-anim="fade-left" data-anim-delay="5">
             <summary>
-              <span class="family-thumb"><img src="Huasheng-machine-photos/HUASHENG-OPT-machine.jpg"
-                  alt="Huasheng optical coating equipment"></span>
+              <span class="family-thumb"><img src="Huasheng-machine-photos/HUASHENG-OPT-machine.jpg" alt="Huasheng optical precision coating systems"></span>
               <div class="family-head">
-                <span class="t">Optical coating equipment<span class="family-count-badge">3
-                    products</span><small>Evaporation and magnetron sputtering</small></span>
+                <span class="t">Optical coating equipment<span class="family-count-badge">3 products</span><small>Evaporation and magnetron sputtering</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/optical/opt-t/" data-brand="Huasheng" data-process="coat"
-                  data-category="Optical coating equipment"><b>OPT-T thermal evaporation optical coating
-                    equipment</b><span>Thermal
-                    evaporation for aluminium, nickel-chromium and silver wires.</span></a></li>
+                  data-category="Optical coating equipment"><b>OPT-T thermal evaporation optical coating equipment</b><span>Thermal evaporation for aluminium, nickel-chromium and silver wires.</span></a></li>
               <li><a href="huasheng/optical/opt-e/" data-brand="Huasheng" data-process="coat"
-                  data-category="Optical coating equipment"><b>OPT-E electron beam evaporation optical coating
-                    equipment</b><span>Anti-reflection
-                    and filter coatings on glass, quartz and silicon wafers.</span></a></li>
+                  data-category="Optical coating equipment"><b>OPT-E electron beam evaporation optical coating equipment</b><span>Electron beam evaporation for anti-reflection and filter coatings on glass, quartz and silicon wafers.</span></a></li>
               <li><a href="huasheng/optical/sputter-optical/" data-brand="Huasheng" data-process="coat"
-                  data-category="Optical coating equipment"><b>Magnetron sputtering for coating powder rather than
-                    parts</b><span>Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel,
-                    copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.</span></a></li>
+                  data-category="Optical coating equipment"><b>Magnetron sputtering for coating powder rather than parts</b><span>Coats diamond, metal and ceramic powders with iron, aluminium, titanium, nickel, copper, molybdenum, zirconium, tungsten, chromium, silicon or cobalt.</span></a></li>
             </ul>
           </details>
-          <details data-cat="CVD &amp; CVA coating equipment" class="fade-right" data-anim="fade-right"
-            data-anim-delay="6">
+          <details data-cat="CVD &amp; CVA coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="6">
             <summary>
-              <span class="family-thumb"><img src="Huasheng-machine-photos/MD1500-drawing.jpg"
-                  alt="Huasheng MD1500 vertical arc coating machine (line drawing)"></span>
+              <span class="family-thumb"><img src="Huasheng-machine-photos/MD800-PLUS.jpg" alt="Huasheng MA1500 coating machine"></span>
               <div class="family-head">
-                <span class="t">CVD &amp; CVA coating equipment<span class="family-count-badge">2
-                    products</span><small>CVD and
-                    CVA aluminizing</small></span>
+                <span class="t">CVD &amp; CVA coating equipment<span class="family-count-badge">2 products</span><small>CVD and CVA aluminizing</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/cvd/cvd-systems/" data-brand="Huasheng" data-process="coat"
-                  data-category="CVD &amp; CVA coating equipment"><b>CVD coating systems</b><span>Thick wear-resistant
-                    coatings.</span></a></li>
+                  data-category="CVD &amp; CVA coating equipment"><b>CVD coating systems</b><span>Thick wear-resistant coatings.</span></a></li>
               <li><a href="huasheng/cvd/cva/" data-brand="Huasheng" data-process="coat"
-                  data-category="CVD &amp; CVA coating equipment"><b>CVA aluminizing systems</b><span>Aluminide coatings
-                    for
-                    high-temperature parts.</span></a></li>
+                  data-category="CVD &amp; CVA coating equipment"><b>CVA aluminizing systems</b><span>Aluminide coatings for high-temperature parts.</span></a></li>
             </ul>
           </details>
           <details data-cat="Turnkey coating solutions" class="fade-left" data-anim="fade-left" data-anim-delay="7">
             <summary>
-              <span class="family-thumb"><img src="Huasheng-machine-photos/MD800-PLUS.jpg"
-                  alt="Huasheng MD800 PLUS arc coating machine"></span>
+              <span class="family-thumb"><img src="Huasheng-machine-photos/MD800-PLUS.jpg" alt="Huasheng MD800 PLUS arc coating machine"></span>
               <div class="family-head">
-                <span class="t">Turnkey coating solutions<span class="family-count-badge">1
-                    product</span><small>Complete MD800 tool-coating plant</small></span>
+                <span class="t">Turnkey coating solutions<span class="family-count-badge">1 product</span><small>Complete MD800 tool-coating plant</small></span>
               </div>
               <span class="ic">+</span>
             </summary>
             <ul class="models">
               <li><a href="huasheng/turnkey/md800-turnkey/" data-brand="Huasheng" data-process="coat"
-                  data-category="Turnkey coating solutions"><b>MD800 turnkey coating centre</b><span>Complete plant for
-                    in-house tool coating.</span></a></li>
+                  data-category="Turnkey coating solutions"><b>MD800 turnkey coating centre</b><span>Complete plant for in-house tool coating.</span></a></li>
+            </ul>
+          </details>
+          <details data-cat="LTMC coating equipment" class="fade-right" data-anim="fade-right" data-anim-delay="8">
+            <summary>
+              <span class="family-thumb"><img src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng LTMC coating equipment"></span>
+              <div class="family-head">
+                <span class="t">LTMC coating equipment<span class="family-count-badge">1 product</span><small>Low temperature metal ceramic coating for components</small></span>
+              </div>
+              <span class="ic">+</span>
+            </summary>
+            <ul class="models">
+              <li><a href="huasheng/ltmc/ltmc-machine/" data-brand="Huasheng" data-process="coat"
+                  data-category="LTMC coating equipment"><b>LTMC low temperature metal ceramic coating machine</b><span>1200 × 1100 × 550 mm treatment area, 3000 kg load, 150 °C maximum.</span></a></li>
             </ul>
           </details>
         </div>
@@ -5791,14 +5695,14 @@
     <section class="section section--green-tint section--pattern" id="why">
       <div class="container">
         <div class="text-center mb-6" data-anim="fade-right">
-          <h2>Why buy through Greets</h2>
-          <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">You get the manufacturer's
+          <h2 data-cms="index.why.h2_1">Why buy through Greets</h2>
+          <p data-cms="index.why.p_1" class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">You get the manufacturer's
             equipment with a team in India that stays with the machine after it arrives.</p>
         </div>
 
-        <div class="service-grid stagger-children">
+        <div data-cms-list="index.why.l15" class="service-grid stagger-children">
           <!-- 1 Process selection -->
-          <div class="service-card-graphic hud-corner" data-anim="fade-left" data-anim-delay="1">
+          <div data-cms-card="index.why.c15_1" class="service-card-graphic hud-corner" data-anim="fade-left" data-anim-delay="1">
             <div class="why-ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -5808,13 +5712,13 @@
                 <path d="M12 3v2M12 19v2M3 12h2M19 12h2" />
               </svg>
             </div>
-            <h5>Process selection</h5>
-            <p>We look at your parts, materials and volumes and recommend the right furnace, cleaning line or coating
+            <h5 data-cms="index.why.h5_1">Process selection</h5>
+            <p data-cms="index.why.p_2">We look at your parts, materials and volumes and recommend the right furnace, cleaning line or coating
               system, or a combination.</p>
           </div>
 
           <!-- 2 Sample trials -->
-          <div class="service-card-graphic hud-corner" data-anim="fade-right" data-anim-delay="2">
+          <div data-cms-card="index.why.c15_2" class="service-card-graphic hud-corner" data-anim="fade-right" data-anim-delay="2">
             <div class="why-ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -5822,12 +5726,12 @@
                 <path d="M7.5 14h9" />
               </svg>
             </div>
-            <h5>Sample trials</h5>
-            <p>We arrange trials on your own parts with the manufacturer before you commit.</p>
+            <h5 data-cms="index.why.h5_2">Sample trials</h5>
+            <p data-cms="index.why.p_3">We arrange trials on your own parts with the manufacturer before you commit.</p>
           </div>
 
           <!-- 3 Import and documentation -->
-          <div class="service-card-graphic hud-corner" data-anim="fade-left" data-anim-delay="3">
+          <div data-cms-card="index.why.c15_3" class="service-card-graphic hud-corner" data-anim="fade-left" data-anim-delay="3">
             <div class="why-ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -5835,12 +5739,12 @@
                 <path d="M14 2.5v4h4M9 11h6M9 14.5h6M9 18h4" />
               </svg>
             </div>
-            <h5>Import and documentation</h5>
-            <p>Quotations in INR, shipping, customs clearance and paperwork handled for you.</p>
+            <h5 data-cms="index.why.h5_3">Import and documentation</h5>
+            <p data-cms="index.why.p_4">Quotations in INR, shipping, customs clearance and paperwork handled for you.</p>
           </div>
 
           <!-- 4 Site preparation -->
-          <div class="service-card-graphic hud-corner" data-anim="fade-right" data-anim-delay="4">
+          <div data-cms-card="index.why.c15_4" class="service-card-graphic hud-corner" data-anim="fade-right" data-anim-delay="4">
             <div class="why-ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -5848,12 +5752,12 @@
                 <path d="M9 21v-6h6v6M3 21h18" />
               </svg>
             </div>
-            <h5>Site preparation</h5>
-            <p>Guidance on power, cooling water, compressed air, gases and layout before the equipment lands.</p>
+            <h5 data-cms="index.why.h5_4">Site preparation</h5>
+            <p data-cms="index.why.p_5">Guidance on power, cooling water, compressed air, gases and layout before the equipment lands.</p>
           </div>
 
           <!-- 5 Installation and training -->
-          <div class="service-card-graphic hud-corner" data-anim="fade-left" data-anim-delay="5">
+          <div data-cms-card="index.why.c15_5" class="service-card-graphic hud-corner" data-anim="fade-left" data-anim-delay="5">
             <div class="why-ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -5861,12 +5765,12 @@
                   d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z" />
               </svg>
             </div>
-            <h5>Installation and training</h5>
-            <p>Commissioning with the manufacturer's engineers and hands-on training for your operators.</p>
+            <h5 data-cms="index.why.h5_5">Installation and training</h5>
+            <p data-cms="index.why.p_6">Commissioning with the manufacturer's engineers and hands-on training for your operators.</p>
           </div>
 
           <!-- 6 Service and spares -->
-          <div class="service-card-graphic hud-corner" data-anim="fade-right" data-anim-delay="6">
+          <div data-cms-card="index.why.c15_6" class="service-card-graphic hud-corner" data-anim="fade-right" data-anim-delay="6">
             <div class="why-ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -5876,8 +5780,8 @@
                 <path d="M19 20a3 3 0 0 1-3 2h-2" />
               </svg>
             </div>
-            <h5>Service and spares</h5>
-            <p>Local service support and spare parts planning so downtime stays short.</p>
+            <h5 data-cms="index.why.h5_6">Service and spares</h5>
+            <p data-cms="index.why.p_7">Local service support and spare parts planning so downtime stays short.</p>
           </div>
         </div>
       </div>
@@ -5887,44 +5791,44 @@
     <section class="section section--light" id="contact">
       <div class="container">
         <div class="text-center mb-5" data-anim="fade-down">
-          <h2>Talk to Greets</h2>
-          <p class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Tell us about the part and
+          <h2 data-cms="index.contact.h2_1">Talk to Greets</h2>
+          <p data-cms="index.contact.p_1" class="lead max-w-lg mx-auto" style="margin-top:0.75rem; color:var(--gray-600);">Tell us about the part and
             the process. We reply with a recommended system and next steps.</p>
         </div>
 
         <div class="contact-main fade-up">
           <div class="contact-sidebar">
             <div class="contact-sidebar__card">
-              <h3>Greets Equipment Pvt. Ltd.</h3>
+              <h3 data-cms="index.contact.h3_1">Greets Equipment Pvt. Ltd.</h3>
 
-              <div class="contact-team" style="margin-top:1.25rem;">
-                <div class="contact-team__person">
+              <div data-cms-list="index.contact.l16" class="contact-team" style="margin-top:1.25rem;">
+                <div data-cms-card="index.contact.c16_1" class="contact-team__person">
                   <div>
-                    <div class="contact-team__name"><b>Mr. Pramod Kanse</b></div>
-                    <div class="contact-team__phone"><a href="tel:+919823386558">+91 98233 86558</a></div>
+                    <div class="contact-team__name"><b data-cms="index.contact.b_1">Mr. Pramod Kanse</b></div>
+                    <div class="contact-team__phone"><a data-cms-href="index.contact.link_1" data-cms="index.contact.a_1" href="tel:+919823386558">+91 98233 86558</a></div>
                   </div>
                 </div>
-                <div class="contact-team__person">
+                <div data-cms-card="index.contact.c16_2" class="contact-team__person">
                   <div>
-                    <div class="contact-team__name"><b>Mr. Manoj Agrawal</b></div>
-                    <div class="contact-team__phone"><a href="tel:+919429875547">+91 94298 75547</a></div>
+                    <div class="contact-team__name"><b data-cms="index.contact.b_2">Mr. Manoj Agrawal</b></div>
+                    <div class="contact-team__phone"><a data-cms-href="index.contact.link_2" data-cms="index.contact.a_2" href="tel:+919429875547">+91 94298 75547</a></div>
                   </div>
                 </div>
-                <div class="contact-team__person">
+                <div data-cms-card="index.contact.c16_3" class="contact-team__person">
                   <div>
-                    <div class="contact-team__name"><b>Ms. Pahal Chawla</b></div>
-                    <div class="contact-team__phone"><a href="tel:+919871408194">+91 98714 08194</a></div>
+                    <div class="contact-team__name"><b data-cms="index.contact.b_3">Ms. Pahal Chawla</b></div>
+                    <div class="contact-team__phone"><a data-cms-href="index.contact.link_3" data-cms="index.contact.a_3" href="tel:+919871408194">+91 98714 08194</a></div>
                   </div>
                 </div>
               </div>
 
               <div class="contact-sidebar__address" style="margin-top:1.5rem;">
-                <p>
+                <p data-cms="index.contact.p_2">
                   #384, Second Floor,<br>
                   9th Main Road, Sector 7, HSR Layout,<br>
                   Bangalore, Karnataka 560102, India
                 </p>
-                <p style="margin-top:0.75rem;">
+                <p data-cms="index.contact.p_3" style="margin-top:0.75rem;">
                   Email: <a href="mailto:enquiry-equipment@greets.co.in">enquiry-equipment@greets.co.in</a>
                 </p>
               </div>
@@ -5932,7 +5836,7 @@
           </div>
 
           <div class="contact-form-card hud-corner">
-            <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off"
+            <form data-cms-list="index.contact.l17" id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off"
               novalidate>
               <input type="hidden" name="access_key" value="0554f1da-4bb4-4c4e-85fe-523711ed17e6">
               <input type="hidden" name="from_name" value="Greets Equipment Website">
@@ -5941,49 +5845,49 @@
               <input type="hidden" name="enquiry_category" id="enquiry_category" value="">
               <input type="hidden" name="enquiry_brand" id="enquiry_brand" value="">
               <input type="hidden" name="page_source" id="page_source" value="">
-              <div class="form-row">
+              <div data-cms-card="index.contact.c17_1" class="form-row">
                 <div class="form-field">
-                  <label for="name">Name *</label>
+                  <label data-cms="index.contact.label_1" for="name">Name *</label>
                   <input type="text" id="name" name="name" autocomplete="off" required>
                 </div>
                 <div class="form-field">
-                  <label for="company">Company</label>
+                  <label data-cms="index.contact.label_2" for="company">Company</label>
                   <input type="text" id="company" name="company" autocomplete="off">
                 </div>
               </div>
 
-              <div class="form-row">
+              <div data-cms-card="index.contact.c17_2" class="form-row">
                 <div class="form-field">
-                  <label for="email">Email *</label>
+                  <label data-cms="index.contact.label_3" for="email">Email *</label>
                   <input type="email" id="email" name="email" autocomplete="off" required>
                 </div>
                 <div class="form-field">
-                  <label for="phone">Phone *</label>
+                  <label data-cms="index.contact.label_4" for="phone">Phone *</label>
                   <input type="tel" id="phone" name="phone" autocomplete="off" required>
                 </div>
               </div>
 
-              <div class="form-row">
+              <div data-cms-card="index.contact.c17_3" class="form-row">
                 <div class="form-field">
-                  <label for="process">Process</label>
-                  <select id="process" name="process">
-                    <option value="Not sure yet">Not sure yet</option>
-                    <option value="Vacuum heat treatment (BMI)">Vacuum heat treatment (BMI)</option>
-                    <option value="Ultrasonic cleaning (Novatec)">Ultrasonic cleaning (Novatec)</option>
-                    <option value="PVD / DLC / diamond coating (Huasheng)">PVD / DLC / diamond coating (Huasheng)
+                  <label data-cms="index.contact.label_5" for="process">Process</label>
+                  <select data-cms-list="index.contact.l18" id="process" name="process">
+                    <option data-cms-card="index.contact.c18_1" data-cms="index.contact.option_1" value="Not sure yet">Not sure yet</option>
+                    <option data-cms-card="index.contact.c18_2" data-cms="index.contact.option_2" value="Vacuum heat treatment (BMI)">Vacuum heat treatment (BMI)</option>
+                    <option data-cms-card="index.contact.c18_3" data-cms="index.contact.option_3" value="Ultrasonic cleaning (Novatec)">Ultrasonic cleaning (Novatec)</option>
+                    <option data-cms-card="index.contact.c18_4" data-cms="index.contact.option_4" value="PVD / DLC / diamond coating (Huasheng)">PVD / DLC / diamond coating (Huasheng)
                     </option>
-                    <option value="Complete line">Complete line</option>
+                    <option data-cms-card="index.contact.c18_5" data-cms="index.contact.option_5" value="Complete line">Complete line</option>
                   </select>
                 </div>
                 <div class="form-field">
-                  <label for="city">City</label>
+                  <label data-cms="index.contact.label_6" for="city">City</label>
                   <input type="text" id="city" name="city" autocomplete="off">
                 </div>
               </div>
 
               <div class="form-row form-row--single">
                 <div class="form-field">
-                  <label for="details">Parts, material and volumes</label>
+                  <label data-cms="index.contact.label_7" for="details">Parts, material and volumes</label>
                   <textarea id="details" name="details"
                     placeholder="For example: HSS and carbide end mills, 2,000 pieces a month, need AlTiN coating"></textarea>
                 </div>
@@ -5992,14 +5896,14 @@
               <!-- Honeypot spam trap: completely hidden from humans, tab order, and autofill -->
               <div class="hp-field" aria-hidden="true"
                 style="position:absolute;left:-9999px;top:-9999px;opacity:0;pointer-events:none;width:0;height:0;z-index:-9999;">
-                <label for="form_website_hp" style="display:none !important;">Please leave this field empty</label>
+                <label data-cms="index.contact.label_8" for="form_website_hp" style="display:none !important;">Please leave this field empty</label>
                 <input type="text" id="form_website_hp" name="website" tabindex="-1" autocomplete="new-password"
                   inputmode="none" aria-hidden="true" data-lpignore="true" data-form-type="other" value="">
               </div>
 
               <button type="submit" class="btn btn--primary btn--lg"
                 style="width:100%; justify-content:center; margin-top:0.5rem;">
-                <span class="btn-label">Send enquiry</span>
+                <span data-cms="index.contact.span_1" class="btn-label">Send enquiry</span>
                 <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
@@ -6017,8 +5921,8 @@
                   </svg>
                 </span>
                 <div class="form-privacy-card__content">
-                  <span>DPDP(Digital Personal Data Protection Act, 2023) Act protected</span>
-                  <a href="privacy.html" class="form-privacy-card__link">Privacy Notice &rarr;</a>
+                  <span data-cms="index.contact.span_2">DPDP(Digital Personal Data Protection Act, 2023) Act protected</span>
+                  <a data-cms-href="index.contact.link_4" data-cms="index.contact.a_4" href="privacy.html" class="form-privacy-card__link">Privacy Notice &rarr;</a>
                 </div>
               </div>
             </form>
@@ -6037,46 +5941,46 @@
 
         <!-- Column 1: Logo + Tagline -->
         <div style="display:flex; flex-direction:column; gap:0.75rem;">
-          <a href="index.html" style="display:inline-block; line-height:1;">
-            <img src="assets/logo-greets.png" alt="Greets Equipment" style="height:52px; width:auto; display:block;">
+          <a data-cms-href="global.footer.link_1" href="index.html" style="display:inline-block; line-height:1;">
+            <img data-cms-src="global.footer.img_1" data-cms-alt="global.footer.img_1_alt" src="assets/logo-greets.png" alt="Greets Equipment" style="height:52px; width:auto; display:block;">
           </a>
-          <p style="font-size:0.88rem; color:var(--steel, #56636B); margin:0; line-height:1.5; max-width:280px;">
+          <p data-cms="global.footer.p_1" style="font-size:0.88rem; color:var(--steel, #56636B); margin:0; line-height:1.5; max-width:280px;">
             Authorised dealer in India for BMI, Novatec and Huasheng.
           </p>
         </div>
 
         <!-- Column 2: Products Links -->
         <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
-          <a href="bmi/" style="color:var(--steel, #56636B); text-decoration:none;">BMI vacuum furnaces</a>
-          <a href="novatec/" style="color:var(--steel, #56636B); text-decoration:none;">Novatec ultrasonic cleaning</a>
-          <a href="huasheng/" style="color:var(--steel, #56636B); text-decoration:none;">Huasheng coating equipment</a>
-          <a href="privacy.html"
+          <a data-cms-href="global.footer.link_2" data-cms="global.footer.a_1" href="bmi/" style="color:var(--steel, #56636B); text-decoration:none;">BMI vacuum furnaces</a>
+          <a data-cms-href="global.footer.link_3" data-cms="global.footer.a_2" href="novatec/" style="color:var(--steel, #56636B); text-decoration:none;">Novatec ultrasonic cleaning</a>
+          <a data-cms-href="global.footer.link_4" data-cms="global.footer.a_3" href="huasheng/" style="color:var(--steel, #56636B); text-decoration:none;">Huasheng coating equipment</a>
+          <a data-cms-href="global.footer.link_5" data-cms="global.footer.a_4" href="privacy.html"
             style="color:var(--steel, #56636B); text-decoration:underline; font-size:0.88rem; margin-top:0.35rem;">Privacy
             Notice (DPDP)</a>
         </div>
 
         <!-- Column 3: Contact & Location -->
         <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
-          <span style="color:var(--steel, #56636B); font-weight:500;">HSR Layout, Bangalore, Karnataka 560102</span>
+          <span data-cms="global.footer.span_1" style="color:var(--steel, #56636B); font-weight:500;">HSR Layout, Bangalore, Karnataka 560102</span>
           <div
             style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.86rem; color:var(--steel, #56636B);">
-            <div>Mr. Pramod Kanse: <a href="tel:+919823386558"
+            <div data-cms="global.footer.div_1">Mr. Pramod Kanse: <a href="tel:+919823386558"
                 style="color:inherit; text-decoration:none; font-weight:600;">+91 98233 86558</a></div>
-            <div>Mr. Manoj Agrawal: <a href="tel:+919429875547"
+            <div data-cms="global.footer.div_2">Mr. Manoj Agrawal: <a href="tel:+919429875547"
                 style="color:inherit; text-decoration:none; font-weight:600;">+91 94298 75547</a></div>
-            <div>Ms. Pahal Chawla: <a href="tel:+919871408194"
+            <div data-cms="global.footer.div_3">Ms. Pahal Chawla: <a href="tel:+919871408194"
                 style="color:inherit; text-decoration:none; font-weight:600;">+91 98714 08194</a></div>
           </div>
-          <a href="mailto:enquiry-equipment@greets.co.in"
+          <a data-cms-href="global.footer.link_6" data-cms="global.footer.a_5" href="mailto:enquiry-equipment@greets.co.in"
             style="color:var(--lime, #02963C); text-decoration:none; font-weight:500;">enquiry-equipment@greets.co.in</a>
         </div>
 
       </div>
       <div class="footer__bottom"
         style="border-top:1px solid var(--line); padding-top:1.25rem; font-size:0.82rem; color:var(--gray-500); display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem;">
-        <span>© 2026 Greets Equipment Pvt. Ltd. All rights reserved. · <a href="privacy.html"
+        <span data-cms="global.footer.span_2">© 2026 Greets Equipment Pvt. Ltd. All rights reserved. · <a href="privacy.html"
             style="color:inherit; text-decoration:underline;">Privacy Policy</a></span>
-        <span>Brand names and logos belong to their respective owners.</span>
+        <span data-cms="global.footer.span_3">Brand names and logos belong to their respective owners.</span>
       </div>
     </div>
   </footer>
@@ -6090,6 +5994,7 @@
   </button>
 
   <script src="main.js"></script>
+  <script src="cms.js"></script>
   <script src="products.js?v=20261014_3" defer></script>
   <script>
     (function () {
@@ -6098,22 +6003,30 @@
         if (!crumbsEl) return;
         var h = (location.hash || "").toLowerCase();
         var svgHome = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
-        var homeLink = '<a href="index.html" class="crumb-home">' + svgHome + ' Home</a>';
+        // The words come from the page (the editable Home label and the menu labels), so what is edited in the admin is what shows here.
+        var words = function (key, fallback) {
+          var el = document.querySelector('[data-cms="' + key + '"]');
+          return ((el && el.textContent) || fallback).trim().replace(/&/g, "&amp;").replace(/</g, "&lt;");
+        };
+        var homeText = words("index.home-crumb-wrap.text_1", "Home");
+        var homeSpan = '<span data-cms="index.home-crumb-wrap.text_1">' + homeText + '</span>';
+        var homeLink = '<a href="index.html" class="crumb-home">' + svgHome + ' ' + homeSpan + '</a>';
         var sep = ' <span class="crumb-sep" aria-hidden="true">/</span> ';
 
         var map = {
-          "#finder": "Products",
-          "#industries": "Industries",
-          "#why": "Why buy through Greets",
+          "#finder": words("global.header.a_2", "Products"),
+          "#industries": words("global.header.a_3", "Industries"),
+          "#why": words("global.header.a_4", "Why buy through Greets"),
           "#partners": "Partners",
-          "#contact": "Contact"
+          "#contact": words("global.header.a_5", "Contact")
         };
 
         if (map[h]) {
           crumbsEl.innerHTML = homeLink + sep + '<a href="' + h + '" class="crumb-current" aria-current="page">' + map[h] + '</a>';
         } else {
-          crumbsEl.innerHTML = '<a href="index.html" class="crumb-home" aria-current="page">' + svgHome + ' Home</a>';
+          crumbsEl.innerHTML = '<a href="index.html" class="crumb-home" aria-current="page">' + svgHome + ' ' + homeSpan + '</a>';
         }
+        if (window.greetsCmsApply) window.greetsCmsApply(); // put the edited words back after the rewrite
       }
 
       window.updateHomeBreadcrumbs = updateHomeBreadcrumbs;
