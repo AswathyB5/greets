@@ -350,7 +350,8 @@ td .btn.icon-btn[title^="Edit"], .btn.icon-btn.card-edit { color: #fff; }
 .req { color: var(--danger); }
 .cf-field input[type="text"], .cf-field textarea, .cf-field select { width: 100%; }
 .cf-mono { font-family: ui-monospace, Consolas, monospace; font-size: .85rem; }
-.cf-btnrow { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+.cf-btnrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 6px; }
+.cf-btnrow .btn { margin: 0; } /* the global label margin made "Upload new" shorter than its neighbours */
 .cf-image { display: flex; gap: 14px; align-items: flex-start; flex-wrap: wrap; }
 .cf-image .img-controls { flex: 1 1 260px; }
 .cf-rows { display: grid; gap: 10px; margin-bottom: 8px; }

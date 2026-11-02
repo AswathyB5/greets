@@ -56,6 +56,9 @@ const FAMILY_SECTIONS = [
   {
     id: 'photos', title: 'Photo', intro: 'The picture of the family.', fields: [
       f('photo', 'Family photo', 'image', { where: 'The picture on the family page, and the small picture on the home-page family card' }),
+      f('photoCaption', 'Photo caption', 'text', { max: 300, where: 'The small text under the family picture. Empty = no caption' }),
+      f('photoAlt', 'Picture description (alt text)', 'text', { max: 300, help: 'Not shown on the page. It helps Google and visitors who cannot see the picture.', where: 'Hidden description of the family picture' }),
+      f('gallery', 'Photo gallery', 'gallery', { where: 'More pictures of the family: small pictures under the big one, click to enlarge' }),
     ],
   },
   {

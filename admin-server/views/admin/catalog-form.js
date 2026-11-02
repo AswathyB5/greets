@@ -93,9 +93,9 @@
         <div class="cf-grow-fields">
           <label class="cf-sublabel">Picture file</label>
           ${inputHtml(photo, 'data-g="photo" placeholder="Choose or upload a picture"')}
-          <label class="cf-sublabel">Picture description (alt text)</label>
+          <label class="cf-sublabel">Caption</label>
           ${inputHtml(alt, 'data-g="alt" placeholder="e.g. Front view of the furnace"')}
-          <p class="cf-subhint">The description is not shown on the page. It helps Google and visitors who cannot see the picture.</p>
+          <p class="cf-subhint">Shown under the big picture when this photo is selected. It is also the picture description for Google and for visitors who cannot see the picture.</p>
           <div class="cf-btnrow">
             <button type="button" class="btn secondary small" data-act="pick">Choose</button>
             <label class="btn secondary small upload-btn">Upload<input type="file" accept="image/png,image/jpeg,image/gif,image/webp" data-act="upload" hidden></label>
