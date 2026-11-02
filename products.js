@@ -155,7 +155,9 @@
     "ma800": "Huasheng-machine-photos/MD800-PLUS.jpg",
     "turnkey": "Huasheng-machine-photos/MD800-PLUS.jpg",
     "cleanline": "assets/catalog/cleanline.jpg",
-    "lineup": "Huasheng-machine-photos/GFOUR.jpg"
+    "lineup": "Huasheng-machine-photos/GFOUR.jpg",
+    "up_e9e83ad0": "https://res.cloudinary.com/jvqbx697/image/upload/v1793612641/greets/1793612638407-05530d1f.png",
+    "up_833ebee8": "https://res.cloudinary.com/jvqbx697/image/upload/v1793612801/greets/1793612798318-edd8a6cd.png"
   };
   /* ----------------------------------------------------------------
      Industries
@@ -275,6 +277,7 @@
       "country": "France",
       "site": "https://www.bmi-fours.com",
       "intro": "French designer & manufacturer since 1947 and specialist in vacuum for more than 50 years. Vacuum furnaces for hardening, brazing, tempering and thermochemical treatment, designed and built in France.",
+      "seo_title": "BMI vacuum heat treatment furnaces in India | Authorised Partner – Greets Equipment",
       "cats": [
         {
           "id": "gas-quenching",
@@ -1668,8 +1671,7 @@
             }
           ]
         }
-      ],
-      "seo_title": "BMI vacuum heat treatment furnaces in India | Authorised Partner – Greets Equipment"
+      ]
     },
     {
       "id": "novatec",
@@ -1708,6 +1710,7 @@
       "country": "Italy",
       "site": "https://novatec.it/en",
       "intro": "Industrial ultrasonic cleaning systems engineered, built and tested in Italy since 1993.",
+      "seo_title": "Novatec ultrasonic cleaning systems in India | Authorised Partner – Greets Equipment",
       "cats": [
         {
           "id": "pluritank",
@@ -2581,8 +2584,7 @@
             }
           ]
         }
-      ],
-      "seo_title": "Novatec ultrasonic cleaning systems in India | Authorised Partner – Greets Equipment"
+      ]
     },
     {
       "id": "huasheng",
@@ -2616,6 +2618,7 @@
       "country": "China",
       "site": "https://www.hscoat.com",
       "intro": "PVD arc, HiPIMS, hybrid, ta-C DLC and HFCVD diamond coating equipment, plus complete turnkey coating plants.",
+      "seo_title": "Huasheng PVD coating machines in India | Authorised Partner – Greets Equipment",
       "cats": [
         {
           "id": "pvd",
@@ -2626,6 +2629,7 @@
           "sub": "Arc, HiPIMS, hybrid and decorative",
           "desc": "Physical vapour deposition systems for hard, wear-resistant coatings on cutting tools, moulds and precision components.",
           "url": "https://www.hscoat.com/pvd-coating-equipment/",
+          "seo_title": "PVD coating equipment for cutting tools – Huasheng | Greets Equipment India",
           "machines": [
             {
               "id": "gfour",
@@ -3633,8 +3637,7 @@
               "url": "https://www.hscoat.com/decorative-coating-equipment/",
               "k": "colour gold black decorative sanitary"
             }
-          ],
-          "seo_title": "PVD coating equipment for cutting tools – Huasheng | Greets Equipment India"
+          ]
         },
         {
           "id": "dlc",
@@ -4986,6 +4989,7 @@
           "name": "LTMC coating equipment",
           "sub": "Low temperature metal ceramic coating for components",
           "desc": "Low temperature metal ceramic coating below 150 °C for engine, bearing, gear and turbine components. Huasheng's LTMC range is its component coating range, used on piston rings, camshafts, gears, bearings, turbine blades and artificial joints.",
+          "seo_desc": "Low temperature metal ceramic coating below 150 C for engine, bearing, gear and turbine components. Authorised dealer in India: technical proposal, supply, installation and maintenance support.",
           "machines": [
             {
               "id": "ltmc-machine",
@@ -5038,11 +5042,11 @@
                 ]
               ],
               "i": [
-                "auto",
                 "tools",
                 "dies",
-                "oilgas",
                 "power",
+                "oilgas",
+                "auto",
                 "medical"
               ],
               "no_photo": true,
@@ -5053,11 +5057,9 @@
               "typical_applications": "Engine and powertrain: cylinder liners, piston rings, camshafts, rocker arms, turbochargers. Tools and dies: carbide cutting tools, moulds, thread rolling dies. Bearings and gears: bearings, bearing rings, gears. Oil and gas, fasteners: drilling tool joints, screws. Gas turbines: bladed discs, gas turbine blades. Medical and robotics: artificial joints, robotic joints.",
               "k": "ltmc low temperature metal ceramic pcvd plasma cvd silicon boron nitrogen piston rings camshafts gears bearings turbine blades artificial joints"
             }
-          ],
-          "seo_desc": "Low temperature metal ceramic coating below 150 C for engine, bearing, gear and turbine components. Authorised dealer in India: technical proposal, supply, installation and maintenance support."
+          ]
         }
-      ],
-      "seo_title": "Huasheng PVD coating machines in India | Authorised Partner – Greets Equipment"
+      ]
     }
   ];
 
@@ -5146,7 +5148,18 @@
       o = { photo: src.photo, photoAlt: src.photoAlt || "", name: o.name };
     }
     if (o.photo && PHOTOS[o.photo]) {
-      return '<figure class="mphoto"><img src="' + PHOTOS[o.photo] + '" alt="' + esc(o.photoAlt || o.name) + '"></figure>';
+      var fshots = [[o.photo, o.photoCaption || '', o.photoAlt || o.name]];
+      (o.gallery || []).forEach(function (g) {
+        if (PHOTOS[g[0]] && !fshots.some(function (x) { return x[0] === g[0]; })) fshots.push([g[0], g[1] || '', g[1] || o.name]);
+      });
+      if (fshots.length > 1) {
+        return '<figure class="mphoto brand-mphoto"><div class="mshot-stage"><img id="mshot-main" src="' + PHOTOS[fshots[0][0]] + '" alt="' + esc(fshots[0][2]) + '"></div>' +
+          '<figcaption id="mshot-cap">' + esc(fshots[0][1]) + '</figcaption><div class="mthumbs">' +
+          fshots.map(function (g, k) {
+            return '<button type="button" class="mthumb" data-src="' + g[0] + '" data-cap="' + esc(g[1]) + '" aria-label="' + esc(g[2]) + '"' + (k === 0 ? ' aria-current="true"' : '') + '><img src="' + PHOTOS[g[0]] + '" alt="' + esc(g[2]) + '"></button>';
+          }).join("") + '</div></figure>';
+      }
+      return '<figure class="mphoto"><img src="' + PHOTOS[o.photo] + '" alt="' + esc(o.photoAlt || o.name) + '">' + (o.photoCaption ? '<figcaption>' + esc(o.photoCaption) + '</figcaption>' : '') + '</figure>';
     }
     return '<div class="mphoto empty"><span>Machine photo from the ' + esc(brand) + ' dealer kit</span></div>';
   };
@@ -5362,7 +5375,7 @@
       }
       photo += '</figure>';
     } else {
-      photo = '<div class="mshot empty"><span>Machine photo from ' + esc(b.name) + ' dealer kit</span></div>';
+      photo = ''; // no photo yet: show no picture section at all
     }
 
     var many = !!(m.specs && m.specs.length > 6);

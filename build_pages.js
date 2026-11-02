@@ -638,7 +638,20 @@ CATALOG.forEach(b => {
           </div>
         </div>
         <div class="phead-media">
-          ${catPhoto ? `<figure class="mphoto"><img src="${catPhoto}" alt="${esc(c.photoAlt || c.name)}"></figure>` : ''}
+          ${catPhoto ? (() => {
+            // main picture first, then the gallery rows; with no gallery it stays a single picture
+            const catShots = [];
+            if (PHOTOS[c.photo]) catShots.push([c.photo, c.photoCaption || '', c.photoAlt || c.name]);
+            (c.gallery || []).forEach(g => { if (PHOTOS[g[0]] && !catShots.some(x => x[0] === g[0])) catShots.push([g[0], g[1] || '', g[1] || c.name]); });
+            if (catShots.length < 2) return `<figure class="mphoto"><img src="${catPhoto}" alt="${esc(c.photoAlt || c.name)}">${c.photoCaption && c.photo ? `<figcaption>${esc(c.photoCaption)}</figcaption>` : ''}</figure>`;
+            return `<figure class="mphoto brand-mphoto">
+              <div class="mshot-stage"><img id="mshot-main" src="${photoAt(root2, PHOTOS[catShots[0][0]])}" alt="${esc(catShots[0][2])}"></div>
+              <figcaption id="mshot-cap">${esc(catShots[0][1])}</figcaption>
+              <div class="mthumbs">
+                ${catShots.map((g, k) => `<button type="button" class="mthumb" data-src="${photoAt(root2, PHOTOS[g[0]])}" data-cap="${esc(g[1])}" aria-label="${esc(g[2])}" ${k === 0 ? 'aria-current="true"' : ''}><img src="${photoAt(root2, PHOTOS[g[0]])}" alt="${esc(g[2])}"></button>`).join('')}
+              </div>
+            </figure>`;
+          })() : ''}
         </div>
       </header>
 
@@ -659,6 +672,20 @@ CATALOG.forEach(b => {
 
   ${getFooterHtml(2)}
   <script src="${root2}main.js" defer></script>
+  ${(c.gallery || []).length ? `<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.mthumb').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var main = document.getElementById('mshot-main');
+          var cap = document.getElementById('mshot-cap');
+          if (main) main.src = btn.dataset.src;
+          if (cap) cap.textContent = btn.dataset.cap;
+          document.querySelectorAll('.mthumb').forEach(function (b) { b.removeAttribute('aria-current'); });
+          btn.setAttribute('aria-current', 'true');
+        });
+      });
+    });
+  </script>` : ''}
 </body>
 </html>`;
 
@@ -751,7 +778,7 @@ CATALOG.forEach(b => {
             </figure>
           `;
         } else {
-          photoHtml = `<div class="mshot empty"><span>${(m.no_photo && !m.photo) ? 'Photograph to follow' : `Machine photo from ${esc(b.name)} dealer kit`}</span></div>`;
+          photoHtml = ''; // no photo yet: show no picture section at all
         }
 
         const isHuashengCoatingMachine = b.id === 'huasheng' && (

@@ -8645,3 +8645,5 @@ body:has(#contact) footer.footer {
     margin-bottom: 0.5rem !important;
   }
 }
+.mphoto figcaption { margin-top: 8px; font-size: 0.85rem; color: var(--steel); text-align: center; }
+.mphoto figcaption:empty { display: none; }
