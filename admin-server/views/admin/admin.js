@@ -20,6 +20,7 @@
     home: '<path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/>',
     mail: '<path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM3 7l9 6 9-6"/>',
     shield: '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',
+    blog: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/>',
   };
 
   // The pages you can edit, listed inside the sidebar (the ids are the ones the server knows).
@@ -27,6 +28,7 @@
     { id: 'index', label: 'Home page', icon: 'home' },
     { id: 'contact', label: 'Contact page', icon: 'mail' },
     { id: 'privacy', label: 'Privacy page', icon: 'shield' },
+    { id: 'blog', label: 'Blog page', icon: 'blog' },
     { id: 'global', label: 'Header & Footer', icon: 'layout' },
   ];
 

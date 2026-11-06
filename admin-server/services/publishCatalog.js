@@ -26,7 +26,7 @@ const { slugify, UPLOAD_DIR } = require('./catalogSchema');
 const BACKUP_DIR = process.env.BACKUP_DIR ? path.resolve(process.env.BACKUP_DIR) : path.join(__dirname, '..', 'backups');
 const KEEP_BACKUPS = 10;
 // the website files a publish rewrites (copied before, put back if the publish fails)
-const PUBLISHED_FILES = ['products.js', 'index.html', 'contact.html', 'privacy.html', 'sitemap.xml'];
+const PUBLISHED_FILES = ['products.js', 'index.html', 'contact.html', 'privacy.html', 'blog.html', 'sitemap.xml'];
 const PROCESS_OF_BRAND = { bmi: 'harden', novatec: 'clean', huasheng: 'coat' }; // the 3 steps used by the finder
 let publishing = false;
 
@@ -280,7 +280,7 @@ async function publish() {
     // the menus of every page follow the catalogue (a renamed family, a new logo...) and the industries list
     const menuInput = { catalog, logos, industryNames: Object.fromEntries(industries.map((i) => [i.id, i.n])) };
     fs.writeFileSync(indexFile, updateMenus(home.html, { ...menuInput, isHome: true }), 'utf8');
-    for (const name of ['contact.html', 'privacy.html']) {
+    for (const name of ['contact.html', 'privacy.html', 'blog.html']) {
       const file = path.join(SITE_DIR, name);
       if (fs.existsSync(file)) fs.writeFileSync(file, updateMenus(fs.readFileSync(file, 'utf8'), { ...menuInput, isHome: false }), 'utf8');
     }

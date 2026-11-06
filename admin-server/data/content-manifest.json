@@ -9,7 +9,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -22,7 +23,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -35,7 +37,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -48,7 +51,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -61,7 +65,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -74,7 +79,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -87,7 +93,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
   "group": "a.navlink#1@1",
   "groupKind": "Navlink",
@@ -107,11 +114,12 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
-  "group": "a.navlink#2@1",
+  "group": "a.navlink#3@1",
   "groupKind": "Navlink",
-  "groupNo": 2,
+  "groupNo": 3,
   "groupLabel": "Contact",
   "cardId": "global.header.c1_2",
   "listId": "global.header.l1",
@@ -127,11 +135,12 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
-  "group": "a.navlink#2@1",
+  "group": "a.navlink#3@1",
   "groupKind": "Navlink",
-  "groupNo": 2,
+  "groupNo": 3,
   "groupLabel": "Contact",
   "cardId": "global.header.c1_2",
   "listId": "global.header.l1",
@@ -147,7 +156,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
   "button": true
  },
@@ -161,7 +171,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
   "button": true
  },
@@ -175,7 +186,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
   "group": "div.mobile-brand-group#1@2",
   "groupKind": "Mobile brand group",
@@ -195,7 +207,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
   "group": "div.mobile-brand-group#2@2",
   "groupKind": "Mobile brand group",
@@ -215,7 +228,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
   "group": "div.mobile-brand-group#3@2",
   "groupKind": "Mobile brand group",
@@ -3567,7 +3581,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3580,7 +3595,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3593,7 +3609,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3606,7 +3623,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3617,7 +3635,8 @@
   "label": "Link address (URL)",
   "default": "bmi/",
   "pages": [
-   "index"
+   "index",
+   "blog"
   ]
  },
  {
@@ -3630,7 +3649,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3641,7 +3661,8 @@
   "label": "Link address (URL)",
   "default": "novatec/",
   "pages": [
-   "index"
+   "index",
+   "blog"
   ]
  },
  {
@@ -3654,7 +3675,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3665,7 +3687,8 @@
   "label": "Link address (URL)",
   "default": "huasheng/",
   "pages": [
-   "index"
+   "index",
+   "blog"
   ]
  },
  {
@@ -3678,7 +3701,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3691,7 +3715,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3704,7 +3729,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3717,7 +3743,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3730,7 +3757,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3743,7 +3771,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3756,7 +3785,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3769,7 +3799,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3782,7 +3813,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3794,7 +3826,8 @@
   "default": "© 2026 Greets Equipment Pvt. Ltd. All rights reserved. · <a href=\"privacy.html\" style=\"color:inherit; text-decoration:underline;\">Privacy Policy</a>",
   "pages": [
    "index",
-   "contact"
+   "contact",
+   "blog"
   ]
  },
  {
@@ -3806,7 +3839,8 @@
   "default": "Brand names and logos belong to their respective owners.",
   "pages": [
    "index",
-   "contact"
+   "contact",
+   "blog"
   ]
  },
  {
@@ -3840,7 +3874,8 @@
   "default": "index.html#hero",
   "pages": [
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3852,7 +3887,8 @@
   "default": "index.html#finder",
   "pages": [
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3864,7 +3900,8 @@
   "default": "index.html#industries",
   "pages": [
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3876,7 +3913,8 @@
   "default": "index.html#why",
   "pages": [
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ],
   "group": "a.navlink#1@1",
   "groupKind": "Navlink",
@@ -3896,7 +3934,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3909,7 +3948,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -3932,7 +3972,8 @@
   "default": "index.html#industries",
   "pages": [
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -4000,7 +4041,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#1@2",
+  "group": "div.contact-team__person#1@3",
   "groupKind": "Contact team person",
   "groupNo": 1,
   "groupLabel": "Mr. Pramod Kanse",
@@ -4018,7 +4059,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#1@2",
+  "group": "div.contact-team__person#1@3",
   "groupKind": "Contact team person",
   "groupNo": 1,
   "groupLabel": "Mr. Pramod Kanse",
@@ -4036,7 +4077,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#1@2",
+  "group": "div.contact-team__person#1@3",
   "groupKind": "Contact team person",
   "groupNo": 1,
   "groupLabel": "Mr. Pramod Kanse",
@@ -4054,7 +4095,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#2@2",
+  "group": "div.contact-team__person#2@3",
   "groupKind": "Contact team person",
   "groupNo": 2,
   "groupLabel": "Mr. Manoj Agrawal",
@@ -4072,7 +4113,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#2@2",
+  "group": "div.contact-team__person#2@3",
   "groupKind": "Contact team person",
   "groupNo": 2,
   "groupLabel": "Mr. Manoj Agrawal",
@@ -4090,7 +4131,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#2@2",
+  "group": "div.contact-team__person#2@3",
   "groupKind": "Contact team person",
   "groupNo": 2,
   "groupLabel": "Mr. Manoj Agrawal",
@@ -4108,7 +4149,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#3@2",
+  "group": "div.contact-team__person#3@3",
   "groupKind": "Contact team person",
   "groupNo": 3,
   "groupLabel": "Ms. Pahal Chawla",
@@ -4126,7 +4167,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#3@2",
+  "group": "div.contact-team__person#3@3",
   "groupKind": "Contact team person",
   "groupNo": 3,
   "groupLabel": "Ms. Pahal Chawla",
@@ -4144,7 +4185,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.contact-team__person#3@2",
+  "group": "div.contact-team__person#3@3",
   "groupKind": "Contact team person",
   "groupNo": 3,
   "groupLabel": "Ms. Pahal Chawla",
@@ -4184,7 +4225,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.form-row#1@3",
+  "group": "div.form-row#1@4",
   "groupKind": "Form row",
   "groupNo": 1,
   "groupLabel": "Name *",
@@ -4202,7 +4243,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.form-row#1@3",
+  "group": "div.form-row#1@4",
   "groupKind": "Form row",
   "groupNo": 1,
   "groupLabel": "Name *",
@@ -4220,7 +4261,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.form-row#2@3",
+  "group": "div.form-row#2@4",
   "groupKind": "Form row",
   "groupNo": 2,
   "groupLabel": "Email *",
@@ -4238,7 +4279,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.form-row#2@3",
+  "group": "div.form-row#2@4",
   "groupKind": "Form row",
   "groupNo": 2,
   "groupLabel": "Email *",
@@ -4256,7 +4297,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.form-row#3@3",
+  "group": "div.form-row#3@4",
   "groupKind": "Form row",
   "groupNo": 3,
   "groupLabel": "Process",
@@ -4274,7 +4315,7 @@
   "pages": [
    "contact"
   ],
-  "group": "div.form-row#3@3",
+  "group": "div.form-row#3@4",
   "groupKind": "Form row",
   "groupNo": 3,
   "groupLabel": "Process",
@@ -5039,7 +5080,8 @@
   "label": "Link address (URL)",
   "default": "privacy.html",
   "pages": [
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5050,7 +5092,8 @@
   "label": "Link text",
   "default": "Privacy Policy & DPDP Notice",
   "pages": [
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5307,7 +5350,7 @@
   "pages": [
    "contact"
   ],
-  "group": "option.#1@4",
+  "group": "option.#1@5",
   "groupKind": "Dropdown choice",
   "groupNo": 1,
   "groupLabel": "Not sure yet",
@@ -5325,7 +5368,7 @@
   "pages": [
    "contact"
   ],
-  "group": "option.#2@4",
+  "group": "option.#2@5",
   "groupKind": "Dropdown choice",
   "groupNo": 2,
   "groupLabel": "Vacuum heat treatment (BMI)",
@@ -5343,7 +5386,7 @@
   "pages": [
    "contact"
   ],
-  "group": "option.#3@4",
+  "group": "option.#3@5",
   "groupKind": "Dropdown choice",
   "groupNo": 3,
   "groupLabel": "Ultrasonic cleaning (Novatec)",
@@ -5361,7 +5404,7 @@
   "pages": [
    "contact"
   ],
-  "group": "option.#4@4",
+  "group": "option.#4@5",
   "groupKind": "Dropdown choice",
   "groupNo": 4,
   "groupLabel": "PVD / DLC / diamond coating (Huasheng)",
@@ -5379,7 +5422,7 @@
   "pages": [
    "contact"
   ],
-  "group": "option.#5@4",
+  "group": "option.#5@5",
   "groupKind": "Dropdown choice",
   "groupNo": 5,
   "groupLabel": "Complete line",
@@ -5463,7 +5506,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5476,7 +5520,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5489,7 +5534,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5502,7 +5548,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5515,7 +5562,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5528,7 +5576,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5541,7 +5590,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5554,7 +5604,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5567,7 +5618,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5580,7 +5632,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5593,7 +5646,8 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
  },
  {
@@ -5606,7 +5660,783 @@
   "pages": [
    "index",
    "contact",
-   "privacy"
+   "privacy",
+   "blog"
   ]
+ },
+ {
+  "key": "blog.meta.title",
+  "type": "meta",
+  "label": "Browser tab title (SEO)",
+  "default": "Welcome to Greets BLOGs - Greets Equipment",
+  "page": "blog",
+  "section": "meta",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.meta.description",
+  "type": "meta",
+  "label": "Search-engine description (SEO)",
+  "default": "Technical insights, process guides, and engineering updates on vacuum furnaces (BMI), ultrasonic cleaning (Novatec), and PVD coating equipment (Huasheng).",
+  "page": "blog",
+  "section": "meta",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.meta.og_title",
+  "type": "meta",
+  "label": "Social share title (Facebook / LinkedIn)",
+  "default": "Welcome to Greets BLOGs - Greets Equipment",
+  "page": "blog",
+  "section": "meta",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.meta.og_description",
+  "type": "meta",
+  "label": "Social share description (Facebook / LinkedIn)",
+  "default": "Technical insights, process guides, and engineering updates on vacuum furnaces (BMI), ultrasonic cleaning (Novatec), and PVD coating equipment (Huasheng).",
+  "page": "blog",
+  "section": "meta",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.meta.og_image",
+  "type": "image",
+  "label": "Social share image (Facebook / LinkedIn)",
+  "default": "assets/hero-img.webp",
+  "page": "blog",
+  "section": "meta",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.meta.twitter_title",
+  "type": "meta",
+  "label": "Twitter / X share title",
+  "default": "Welcome to Greets BLOGs - Greets Equipment",
+  "page": "blog",
+  "section": "meta",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.meta.twitter_description",
+  "type": "meta",
+  "label": "Twitter / X share description",
+  "default": "Technical insights, process guides, and engineering updates on vacuum furnaces (BMI), ultrasonic cleaning (Novatec), and PVD coating equipment (Huasheng).",
+  "page": "blog",
+  "section": "meta",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.meta.twitter_image",
+  "type": "image",
+  "label": "Twitter / X share image",
+  "default": "assets/hero-img.webp",
+  "page": "blog",
+  "section": "meta",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.blog-hero.bg",
+  "type": "image",
+  "label": "Top section background image",
+  "default": "assets/hero-img.webp",
+  "page": "blog",
+  "section": "blog-hero",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.blog-hero.h1_1",
+  "type": "html",
+  "label": "Main heading",
+  "default": "Welcome to Greets <span>BLOGs</span>",
+  "page": "blog",
+  "section": "blog-hero",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.blog-hero.p_1",
+  "type": "text",
+  "label": "Subtitle",
+  "default": "Technical insights, process guides, and engineering updates on vacuum furnaces, ultrasonic cleaning, and PVD coating.",
+  "page": "blog",
+  "section": "blog-hero",
+  "pages": [
+   "blog"
+  ]
+ },
+ {
+  "key": "blog.blog-posts.img_1",
+  "type": "image",
+  "label": "Card image (Optimizing High-Pressure Gas Q...)",
+  "default": "BMI-machine-photos/BMI-furnace-line-installed.jpg",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#1@3",
+  "groupKind": "Blog card",
+  "groupNo": 1,
+  "groupLabel": "High pressure gas quenching vacuum furnace installation by B…",
+  "cardId": "blog.blog-posts.c1_1",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_1_alt",
+  "type": "text",
+  "label": "Card image description",
+  "default": "High pressure gas quenching vacuum furnace installation by BMI",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#1@3",
+  "groupKind": "Blog card",
+  "groupNo": 1,
+  "groupLabel": "High pressure gas quenching vacuum furnace installation by B…",
+  "cardId": "blog.blog-posts.c1_1",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.span_cat_1",
+  "type": "text",
+  "label": "Category & date",
+  "default": "Vacuum Heat Treatment • Nov 02, 2026",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#1@3",
+  "groupKind": "Blog card",
+  "groupNo": 1,
+  "groupLabel": "High pressure gas quenching vacuum furnace installation by B…",
+  "cardId": "blog.blog-posts.c1_1",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.h3_1",
+  "type": "text",
+  "label": "Article title",
+  "default": "Optimizing High-Pressure Gas Quenching in Vacuum Furnaces",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#1@3",
+  "groupKind": "Blog card",
+  "groupNo": 1,
+  "groupLabel": "High pressure gas quenching vacuum furnace installation by B…",
+  "cardId": "blog.blog-posts.c1_1",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.p_1",
+  "type": "text",
+  "label": "Article summary",
+  "default": "How 10–20 bar nitrogen and helium gas quenching achieves martensitic hardness in high-alloy steels while eliminating thermal distortion and washing operations.",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#1@3",
+  "groupKind": "Blog card",
+  "groupNo": 1,
+  "groupLabel": "High pressure gas quenching vacuum furnace installation by B…",
+  "cardId": "blog.blog-posts.c1_1",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.btn_1",
+  "type": "text",
+  "label": "Button text",
+  "default": "Read Article",
+  "button": true,
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#1@3",
+  "groupKind": "Blog card",
+  "groupNo": 1,
+  "groupLabel": "High pressure gas quenching vacuum furnace installation by B…",
+  "cardId": "blog.blog-posts.c1_1",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_2",
+  "type": "image",
+  "label": "Card image (Cleanroom Ultrasonic Cleaning ...)",
+  "default": "Novatec-machine-photos/MEDICAL-implants-in-basket-01.jpg",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#2@3",
+  "groupKind": "Blog card",
+  "groupNo": 2,
+  "groupLabel": "Orthopaedic implants in cleaning basket for ultrasonic proce…",
+  "cardId": "blog.blog-posts.c1_2",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_2_alt",
+  "type": "text",
+  "label": "Card image description",
+  "default": "Orthopaedic implants in cleaning basket for ultrasonic processing",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#2@3",
+  "groupKind": "Blog card",
+  "groupNo": 2,
+  "groupLabel": "Orthopaedic implants in cleaning basket for ultrasonic proce…",
+  "cardId": "blog.blog-posts.c1_2",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.span_cat_2",
+  "type": "text",
+  "label": "Category & date",
+  "default": "Precision Cleaning • Oct 28, 2026",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#2@3",
+  "groupKind": "Blog card",
+  "groupNo": 2,
+  "groupLabel": "Orthopaedic implants in cleaning basket for ultrasonic proce…",
+  "cardId": "blog.blog-posts.c1_2",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.h3_2",
+  "type": "text",
+  "label": "Article title",
+  "default": "Cleanroom Ultrasonic Cleaning for Orthopaedic & Medical Implants",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#2@3",
+  "groupKind": "Blog card",
+  "groupNo": 2,
+  "groupLabel": "Orthopaedic implants in cleaning basket for ultrasonic proce…",
+  "cardId": "blog.blog-posts.c1_2",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.p_2",
+  "type": "text",
+  "label": "Article summary",
+  "default": "Meeting ISO 13485 and ASTM F86 passivation compliance on titanium implants using multi-frequency ultrasonics and fine vacuum drying.",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#2@3",
+  "groupKind": "Blog card",
+  "groupNo": 2,
+  "groupLabel": "Orthopaedic implants in cleaning basket for ultrasonic proce…",
+  "cardId": "blog.blog-posts.c1_2",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.btn_2",
+  "type": "text",
+  "label": "Button text",
+  "default": "Read Article",
+  "button": true,
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#2@3",
+  "groupKind": "Blog card",
+  "groupNo": 2,
+  "groupLabel": "Orthopaedic implants in cleaning basket for ultrasonic proce…",
+  "cardId": "blog.blog-posts.c1_2",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_3",
+  "type": "image",
+  "label": "Card image (DLC vs. ta-C Coatings: Selecti...)",
+  "default": "Huasheng-machine-photos/HUASHENG-DECO-A-machine.jpg",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#3@3",
+  "groupKind": "Blog card",
+  "groupNo": 3,
+  "groupLabel": "Huasheng advanced PVD and DLC coating deposition system",
+  "cardId": "blog.blog-posts.c1_3",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_3_alt",
+  "type": "text",
+  "label": "Card image description",
+  "default": "Huasheng advanced PVD and DLC coating deposition system",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#3@3",
+  "groupKind": "Blog card",
+  "groupNo": 3,
+  "groupLabel": "Huasheng advanced PVD and DLC coating deposition system",
+  "cardId": "blog.blog-posts.c1_3",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.span_cat_3",
+  "type": "text",
+  "label": "Category & date",
+  "default": "PVD & DLC Coatings • Oct 15, 2026",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#3@3",
+  "groupKind": "Blog card",
+  "groupNo": 3,
+  "groupLabel": "Huasheng advanced PVD and DLC coating deposition system",
+  "cardId": "blog.blog-posts.c1_3",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.h3_3",
+  "type": "text",
+  "label": "Article title",
+  "default": "DLC vs. ta-C Coatings: Selecting the Right Carbon Film for Friction & Wear",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#3@3",
+  "groupKind": "Blog card",
+  "groupNo": 3,
+  "groupLabel": "Huasheng advanced PVD and DLC coating deposition system",
+  "cardId": "blog.blog-posts.c1_3",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.p_3",
+  "type": "text",
+  "label": "Article summary",
+  "default": "Comparing PECVD hydrogenated DLC (a-C:H) with tetrahedral amorphous carbon (ta-C): sp3 bonding ratios, 60–80 GPa hardness, and automotive friction limits.",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#3@3",
+  "groupKind": "Blog card",
+  "groupNo": 3,
+  "groupLabel": "Huasheng advanced PVD and DLC coating deposition system",
+  "cardId": "blog.blog-posts.c1_3",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.btn_3",
+  "type": "text",
+  "label": "Button text",
+  "default": "Read Article",
+  "button": true,
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#3@3",
+  "groupKind": "Blog card",
+  "groupNo": 3,
+  "groupLabel": "Huasheng advanced PVD and DLC coating deposition system",
+  "cardId": "blog.blog-posts.c1_3",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_4",
+  "type": "image",
+  "label": "Card image (Low-Pressure Carburizing (LPC)...)",
+  "default": "BMI-machine-photos/BMI-furnace-door-open-hot-zone.jpg",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#4@3",
+  "groupKind": "Blog card",
+  "groupNo": 4,
+  "groupLabel": "Interior hot zone of BMI vacuum furnace with graphite insula…",
+  "cardId": "blog.blog-posts.c1_4",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_4_alt",
+  "type": "text",
+  "label": "Card image description",
+  "default": "Interior hot zone of BMI vacuum furnace with graphite insulation",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#4@3",
+  "groupKind": "Blog card",
+  "groupNo": 4,
+  "groupLabel": "Interior hot zone of BMI vacuum furnace with graphite insula…",
+  "cardId": "blog.blog-posts.c1_4",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.span_cat_4",
+  "type": "text",
+  "label": "Category & date",
+  "default": "Vacuum Furnaces • Sep 30, 2026",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#4@3",
+  "groupKind": "Blog card",
+  "groupNo": 4,
+  "groupLabel": "Interior hot zone of BMI vacuum furnace with graphite insula…",
+  "cardId": "blog.blog-posts.c1_4",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.h3_4",
+  "type": "text",
+  "label": "Article title",
+  "default": "Low-Pressure Carburizing (LPC) with Acetylene: Eliminating IGO in Gears",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#4@3",
+  "groupKind": "Blog card",
+  "groupNo": 4,
+  "groupLabel": "Interior hot zone of BMI vacuum furnace with graphite insula…",
+  "cardId": "blog.blog-posts.c1_4",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.p_4",
+  "type": "text",
+  "label": "Article summary",
+  "default": "Why gear manufacturers are replacing atmospheric carburizing with vacuum LPC: 100% elimination of intergranular oxidation and uniform case depth.",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#4@3",
+  "groupKind": "Blog card",
+  "groupNo": 4,
+  "groupLabel": "Interior hot zone of BMI vacuum furnace with graphite insula…",
+  "cardId": "blog.blog-posts.c1_4",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.btn_4",
+  "type": "text",
+  "label": "Button text",
+  "default": "Read Article",
+  "button": true,
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#4@3",
+  "groupKind": "Blog card",
+  "groupNo": 4,
+  "groupLabel": "Interior hot zone of BMI vacuum furnace with graphite insula…",
+  "cardId": "blog.blog-posts.c1_4",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_5",
+  "type": "image",
+  "label": "Card image (Modified Alcohol vs Hydrocarbo...)",
+  "default": "assets/catalog/2CRD-vacuum-chamber-interior.jpg",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#5@3",
+  "groupKind": "Blog card",
+  "groupNo": 5,
+  "groupLabel": "Novatec 2CRD single chamber hermetic vacuum cleaning chamber",
+  "cardId": "blog.blog-posts.c1_5",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_5_alt",
+  "type": "text",
+  "label": "Card image description",
+  "default": "Novatec 2CRD single chamber hermetic vacuum cleaning chamber",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#5@3",
+  "groupKind": "Blog card",
+  "groupNo": 5,
+  "groupLabel": "Novatec 2CRD single chamber hermetic vacuum cleaning chamber",
+  "cardId": "blog.blog-posts.c1_5",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.span_cat_5",
+  "type": "text",
+  "label": "Category & date",
+  "default": "Precision Cleaning • Sep 14, 2026",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#5@3",
+  "groupKind": "Blog card",
+  "groupNo": 5,
+  "groupLabel": "Novatec 2CRD single chamber hermetic vacuum cleaning chamber",
+  "cardId": "blog.blog-posts.c1_5",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.h3_5",
+  "type": "text",
+  "label": "Article title",
+  "default": "Modified Alcohol vs Hydrocarbon Solvents: Closed-Loop Cleaning in the 2CRD",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#5@3",
+  "groupKind": "Blog card",
+  "groupNo": 5,
+  "groupLabel": "Novatec 2CRD single chamber hermetic vacuum cleaning chamber",
+  "cardId": "blog.blog-posts.c1_5",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.p_5",
+  "type": "text",
+  "label": "Article summary",
+  "default": "Technical comparison of modified alcohols and isoparaffins in hermetic vacuum degreasers: continuous vacuum distillation and zero VOC emissions.",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#5@3",
+  "groupKind": "Blog card",
+  "groupNo": 5,
+  "groupLabel": "Novatec 2CRD single chamber hermetic vacuum cleaning chamber",
+  "cardId": "blog.blog-posts.c1_5",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.btn_5",
+  "type": "text",
+  "label": "Button text",
+  "default": "Read Article",
+  "button": true,
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#5@3",
+  "groupKind": "Blog card",
+  "groupNo": 5,
+  "groupLabel": "Novatec 2CRD single chamber hermetic vacuum cleaning chamber",
+  "cardId": "blog.blog-posts.c1_5",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_6",
+  "type": "image",
+  "label": "Card image (HiPIMS Technology in Cutting T...)",
+  "default": "Huasheng-machine-photos/Broach.jpg",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#6@3",
+  "groupKind": "Blog card",
+  "groupNo": 6,
+  "groupLabel": "Coated precision cutting tool broach with advanced PVD layer",
+  "cardId": "blog.blog-posts.c1_6",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.img_6_alt",
+  "type": "text",
+  "label": "Card image description",
+  "default": "Coated precision cutting tool broach with advanced PVD layer",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#6@3",
+  "groupKind": "Blog card",
+  "groupNo": 6,
+  "groupLabel": "Coated precision cutting tool broach with advanced PVD layer",
+  "cardId": "blog.blog-posts.c1_6",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.span_cat_6",
+  "type": "text",
+  "label": "Category & date",
+  "default": "PVD & DLC Coatings • Aug 22, 2026",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#6@3",
+  "groupKind": "Blog card",
+  "groupNo": 6,
+  "groupLabel": "Coated precision cutting tool broach with advanced PVD layer",
+  "cardId": "blog.blog-posts.c1_6",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.h3_6",
+  "type": "text",
+  "label": "Article title",
+  "default": "HiPIMS Technology in Cutting Tool Coatings: Density, Smoothness & Adhesion",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#6@3",
+  "groupKind": "Blog card",
+  "groupNo": 6,
+  "groupLabel": "Coated precision cutting tool broach with advanced PVD layer",
+  "cardId": "blog.blog-posts.c1_6",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.p_6",
+  "type": "text",
+  "label": "Article summary",
+  "default": "How High-Power Impulse Magnetron Sputtering eliminates macro-droplets while retaining arc-like film density for difficult aerospace superalloy machining.",
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#6@3",
+  "groupKind": "Blog card",
+  "groupNo": 6,
+  "groupLabel": "Coated precision cutting tool broach with advanced PVD layer",
+  "cardId": "blog.blog-posts.c1_6",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
+ },
+ {
+  "key": "blog.blog-posts.btn_6",
+  "type": "text",
+  "label": "Button text",
+  "default": "Read Article",
+  "button": true,
+  "page": "blog",
+  "section": "blog-posts",
+  "pages": [
+   "blog"
+  ],
+  "group": "article.blog-card#6@3",
+  "groupKind": "Blog card",
+  "groupNo": 6,
+  "groupLabel": "Coated precision cutting tool broach with advanced PVD layer",
+  "cardId": "blog.blog-posts.c1_6",
+  "listId": "blog.blog-posts.l1",
+  "repeatable": true
  }
 ]

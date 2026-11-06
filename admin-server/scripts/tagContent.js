@@ -25,6 +25,7 @@ const PAGES = [
   { file: 'index.html', name: 'index', title: 'Home' },
   { file: 'contact.html', name: 'contact', title: 'Contact' },
   { file: 'privacy.html', name: 'privacy', title: 'Privacy Notice' },
+  { file: 'blog.html', name: 'blog', title: 'Blog' },
 ];
 
 // Product areas are skipped for now (they get their own editor later).

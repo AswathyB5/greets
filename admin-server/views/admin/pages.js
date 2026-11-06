@@ -38,6 +38,7 @@
     content: 'Main content', contact: 'Contact', why: 'Why buy through Greets', partners: 'Partners',
     industries: 'Industries', finder: 'Product finder: labels (the words around the search)', bmi: 'BMI section', novatec: 'Novatec section', huasheng: 'Huasheng section',
     'home-crumb-wrap': 'Breadcrumb', messages: 'Form messages & popups (after sending an enquiry)', 'privacy-page-hero': 'Privacy page heading', navgroup: 'Top navigation',
+    'blog-hero': 'Top banner & welcome', 'blog-posts': 'Blog cards (3-column grid)',
   };
 
   // A page can word a menu item a little differently from the shared menu; those few items show up under the page.
@@ -381,7 +382,7 @@
   }
 
   // every address on the site, offered as suggestions in each link box (the visitor can still type any address)
-  const SITE_LINKS = [['index.html', 'Home'], ['index.html#finder', 'Home - Find a system'], ['index.html#partners', 'Home - Our brands'], ['index.html#why', 'Home - Why Greets'], ['contact.html', 'Contact'], ['privacy.html', 'Privacy policy']];
+  const SITE_LINKS = [['index.html', 'Home'], ['index.html#finder', 'Home - Find a system'], ['index.html#partners', 'Home - Our brands'], ['index.html#why', 'Home - Why Greets'], ['blog.html', 'Blog'], ['contact.html', 'Contact'], ['privacy.html', 'Privacy policy']];
   let siteLinkItems = SITE_LINKS.slice();
   async function loadSiteLinks() {
     const items = SITE_LINKS.slice();

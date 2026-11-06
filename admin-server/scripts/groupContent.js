@@ -19,7 +19,7 @@ const { parseDocument } = require('htmlparser2');
 
 const SITE_DIR = path.join(__dirname, '..', '..');
 const MANIFEST_PATH = path.join(__dirname, '..', 'data', 'content-manifest.json');
-const PAGES = ['index.html', 'contact.html', 'privacy.html'];
+const PAGES = ['index.html', 'contact.html', 'privacy.html', 'blog.html'];
 const MAX_FIELDS_PER_CARD = 30;
 const STOP_TAGS = new Set(['section', 'header', 'footer', 'main', 'body', 'html']);
 

@@ -55,6 +55,7 @@ const PAGE_TITLES = {
   index: 'Home page',
   contact: 'Contact page',
   privacy: 'Privacy Notice page',
+  blog: 'Blog page',
 };
 
 // Image types we accept, checked by the file's first bytes (not its name).

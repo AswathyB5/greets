@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MN1T39R7BS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-MN1T39R7BS');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Greets BLOGs - Greets Equipment</title>
+  <meta name="description"
+    content="Technical insights, process guides, and engineering updates on vacuum furnaces (BMI), ultrasonic cleaning (Novatec), and PVD coating equipment (Huasheng).">
+  <link rel="icon" type="image/png" href="assets/greetsfavicon.png">
+  <link rel="apple-touch-icon" href="assets/greetsfavicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://www.greetsequipment.com/blog.html">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Welcome to Greets BLOGs - Greets Equipment">
+  <meta property="og:description"
+    content="Technical insights, process guides, and engineering updates on vacuum furnaces (BMI), ultrasonic cleaning (Novatec), and PVD coating equipment (Huasheng).">
+  <meta property="og:url" content="https://www.greetsequipment.com/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.greetsequipment.com/assets/hero-img.webp">
+  <meta property="og:site_name" content="Greets Equipment">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Welcome to Greets BLOGs - Greets Equipment">
+  <meta name="twitter:description"
+    content="Technical insights, process guides, and engineering updates on vacuum furnaces (BMI), ultrasonic cleaning (Novatec), and PVD coating equipment (Huasheng).">
+  <meta name="twitter:image" content="https://www.greetsequipment.com/assets/hero-img.webp">
+
+  <style>
+    /* ============================================================
+       Clean design tokens & layout variables
+       ============================================================ */
+    :root {
+      --paper: #F2F3EF;
+      --panel: #FFFFFF;
+      --ink: #1B2328;
+      --steel: #56636B;
+      --line: #D3D8D4;
+      --lime: #02963C;
+      --lime-ink: #FFFFFF;
+      --btn: #027A35;
+      --accent-text: #027A35;
+      --dark: #1E272D;
+      --dark-2: #27323A;
+      --on-dark: #E9EDE8;
+      --on-dark-2: #A9B4B0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Archivo", system-ui, -apple-system, sans-serif;
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      box-sizing: border-box;
+    }
+
+    /* Header nav styling */
+    .header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .header__logo img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    .navgroup {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .navlink,
+    .header__nav a {
+      color: var(--steel);
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: color 0.15s ease, background 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .navlink:hover,
+    .header__nav a:hover,
+    .navlink.is-active,
+    .header__nav a.is-active {
+      color: var(--lime);
+      background: rgba(2, 150, 60, 0.06);
+    }
+
+    .hdr-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--btn);
+      color: #fff;
+      padding: 0.55rem 1.15rem;
+      border-radius: 7px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .hdr-cta:hover {
+      background: var(--lime);
+      transform: translateY(-1px);
+    }
+
+    /* Top Small Section with BG Image + Dark Gradient */
+    .blog-hero {
+      background-image: linear-gradient(135deg, rgba(30, 39, 45, 0.55) 0%, rgba(20, 25, 28, 0.65) 100%), url('assets/hero-img.webp');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #ffffff;
+      padding: clamp(2.75rem, 5.5vw, 4.25rem) 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .blog-hero h1 {
+      font-size: clamp(2rem, 3.8vw, 2.9rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin: 0 0 0.65rem;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .blog-hero h1 span {
+      color: rgb(2, 150, 60);
+    }
+
+    .blog-hero p {
+      font-size: clamp(0.95rem, 1.4vw, 1.12rem);
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 660px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Blog Main Content Area - 3 Column Cards Grid */
+    .blog-main {
+      background: radial-gradient(900px 480px at 0% 0%, rgba(2, 150, 60, 0.08), transparent 70%), linear-gradient(180deg, #F6F8F3, #EDF1EA) !important;
+      padding: clamp(2.5rem, 5vw, 4.5rem) 0 clamp(3.5rem, 7vw, 5.5rem);
+    }
+
+    footer.footer,
+    .footer {
+      margin-top: 0 !important;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .blog-card {
+      background: #ffffff;
+      border: 1px solid var(--lime);
+      border-radius: 24px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      color: var(--ink);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      border-color: var(--lime);
+    }
+
+    .blog-card__media {
+      position: relative;
+      background: var(--paper);
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .blog-card__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .blog-card:hover .blog-card__media img {
+      transform: scale(1.05);
+    }
+
+    .blog-card__body {
+      padding: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .blog-card__meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      gap: 0.75rem;
+    }
+
+    .blog-card__meta .meta-author {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--lime);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      background: rgba(2, 150, 60, 0.08);
+      border: 1px solid rgba(2, 150, 60, 0.35);
+      border-radius: 20px;
+      padding: 0.28rem 0.55rem;
+      backdrop-filter: blur(8px);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      white-space: nowrap;
+      box-shadow: 0 2px 8px rgba(2, 150, 60, 0.06);
+    }
+
+    .blog-card__meta .meta-date {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--lime);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-left: 0.5rem;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .blog-card__meta .meta-date svg {
+      stroke: var(--lime);
+    }
+
+    .blog-card__meta svg {
+      width: 11px;
+      height: 11px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    .blog-card__title {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--ink);
+      margin: 0 0 0.6rem;
+      transition: color 0.15s ease;
+    }
+
+    .blog-card:hover .blog-card__title {
+      color: var(--lime);
+    }
+
+    .blog-card__excerpt {
+      color: var(--steel);
+      font-size: 0.82rem;
+      line-height: 1.5;
+      margin: 0 0 1rem;
+      flex-grow: 1;
+    }
+
+    .blog-card__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      margin-top: auto;
+    }
+
+    .blog-card__btn {
+      color: var(--btn);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      font-family: inherit;
+      transition: gap 0.2s ease, color 0.15s ease;
+    }
+
+    .blog-card__btn:hover {
+      color: var(--lime);
+      gap: 0.65rem;
+    }
+
+    /* Modal Article Reader */
+    .article-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(242, 243, 239, 0.4);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      box-sizing: border-box;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    .article-modal-backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .article-modal {
+      background: var(--panel);
+      width: 100%;
+      max-width: 860px;
+      max-height: 90vh;
+      border-radius: 16px;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.25s ease;
+    }
+
+    .article-modal-backdrop.is-open .article-modal {
+      transform: translateY(0);
+    }
+
+    .article-modal__close {
+      position: sticky;
+      top: 1rem;
+      float: right;
+      margin-right: 1rem;
+      background: rgba(27, 35, 40, 0.15);
+      color: var(--ink);
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.25rem;
+      z-index: 10;
+      backdrop-filter: blur(4px);
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+
+    .article-modal__close:hover {
+      background: var(--lime);
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .article-modal__content {
+      padding: clamp(2rem, 4vw, 3.25rem);
+      color: var(--ink);
+    }
+
+    .article-modal__hero-img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .article-modal h1 {
+      font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+      font-weight: 800;
+      line-height: 1.25;
+      margin: 0 0 1rem;
+    }
+
+    .article-modal h2 {
+      font-size: 1.35rem;
+      font-weight: 750;
+      margin: 2rem 0 0.85rem;
+      color: var(--ink);
+      border-bottom: 2px solid var(--paper);
+      padding-bottom: 0.4rem;
+    }
+
+    .article-modal p {
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: #333F48;
+      margin: 0 0 1.25rem;
+    }
+
+    .article-modal ul,
+    .article-modal ol {
+      margin: 0 0 1.5rem 1.5rem;
+      padding: 0;
+      color: #333F48;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .article-modal li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-callout {
+      background: #F4F8F4;
+      border-left: 4px solid var(--lime);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.75rem 0;
+      color: #26332A;
+    }
+
+    .article-callout strong {
+      display: block;
+      color: var(--btn);
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    .article-specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.92rem;
+    }
+
+    .article-specs-table th,
+    .article-specs-table td {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--line);
+      text-align: left;
+    }
+
+    .article-specs-table th {
+      background: var(--paper);
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .article-specs-table tr:nth-child(even) td {
+      background: #FAFAFA;
+    }
+
+    .modal-cta-box {
+      background: var(--paper);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-top: 2.5rem;
+      border: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .modal-cta-box h4 {
+      font-size: 1.2rem;
+      font-weight: 750;
+      margin: 0 0 0.5rem;
+      color: var(--ink);
+    }
+
+    .modal-cta-box p {
+      font-size: 0.95rem;
+      color: var(--steel);
+      margin: 0 0 1.25rem;
+    }
+
+    /* 3 Column Grid Responsiveness */
+    @media (max-width: 980px) {
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body data-cms-page="blog" class="page-enter">
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a data-cms-href="global.header.link_1" href="index.html" class="header__logo">
+        <img data-cms-src="global.header.img_1" data-cms-alt="global.header.img_1_alt" src="assets/logo-greets.png" alt="Greets Equipment">
+      </a>
+      <div class="navgroup" id="navgroup">
+        <a data-cms-href="global.header.link_2" data-cms="global.header.a_1" class="navlink navhome" href="index.html#hero">Home</a>
+        <a data-cms-href="global.header.link_3" data-cms="global.header.a_2" class="navlink mega-btn" id="mega-btn" href="index.html#finder" aria-expanded="false" aria-controls="mega">Products</a>
+        <a data-cms-href="global.header.link_4" data-cms="global.header.a_3" class="navlink mega-btn" id="mega-ind-btn" href="index.html#industries" aria-expanded="false" aria-controls="mega-ind">Industries</a>
+        <nav data-cms-list="global.header.l1" class="header__nav main" aria-label="Main">
+          <a data-cms-card="global.header.c1_1" data-cms-href="global.header.link_5" data-cms="global.header.a_4" class="navlink" href="index.html#why">Why buy through Greets</a>
+          <a class="navlink is-active" href="blog.html" aria-current="page" style="display:none;">Blog</a>
+          <a data-cms-card="global.header.c1_2" data-cms-href="global.header.link_6" data-cms="global.header.a_5" class="navlink" href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <a data-cms-href="global.header.link_7" class="btn btn--primary hdr-cta" href="contact.html">
+        <span data-cms="global.header.span_1">Talk to Greets</span>
+        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+      <button class="header__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mega menu for Products -->
+    <div class="mega" id="mega" hidden>
+      <div class="mega-grid">
+        <div>
+          <a class="mega-brand" href="bmi/">
+            <img src="assets/logo-BMI.png" alt="BMI">
+          </a>
+          <ul>
+            <li><a href="bmi/gas-quenching/">Gas quenching furnaces</a></li>
+            <li><a href="bmi/oil-quenching/">Oil quenching furnaces</a></li>
+            <li><a href="bmi/low-temperature/">Low-temperature furnaces</a></li>
+            <li><a href="bmi/thermochemical/">Thermochemical treatment furnaces</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="mega-brand" href="novatec/">
+            <img src="assets/logo-novatec.png" alt="Novatec">
+          </a>
+          <ul>
+            <li><a href="novatec/pluritank/">PLURITANK Multi-chamber ultrasonic</a></li>
+            <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
+            <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
+            <li><a href="novatec/components/">Components &amp; PLT 60V</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="mega-brand" href="huasheng/">
+            <img src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng">
+          </a>
+          <ul>
+            <li><a href="huasheng/pvd/">PVD coating equipment</a></li>
+            <li><a href="huasheng/dlc/">DLC &amp; ta-C coating equipment</a></li>
+            <li><a href="huasheng/diamond/">Diamond coating equipment</a></li>
+            <li><a href="huasheng/decorative/">Decorative PVD coating equipment</a></li>
+            <li><a href="huasheng/optical/">Optical coating equipment</a></li>
+            <li><a href="huasheng/cvd/">CVD &amp; CVA coating equipment</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mega menu for Industries -->
+    <div class="mega mega-ind" id="mega-ind" hidden>
+      <div class="mega-grid">
+        <div>
+          <div class="mega-ind-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_1">Tooling &amp; Metalworking</span></div>
+          <ul>
+            <li><a href="index.html?ind=tools#finder" data-ind="tools">Cutting and gear cutting tools</a></li>
+            <li><a href="index.html?ind=jobshop#finder" data-ind="jobshop">PVD coating service providers</a></li>
+            <li><a href="index.html?ind=dies#finder" data-ind="dies">Dies and mould manufacturers</a></li>
+            <li><a href="index.html?ind=steel#finder" data-ind="steel">Steel and metal processing</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mega-ind-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_2">Energy, Auto &amp; Aerospace</span></div>
+          <ul>
+            <li><a href="index.html?ind=power#finder" data-ind="power">Power: wind, solar and thermal</a></li>
+            <li><a href="index.html?ind=oilgas#finder" data-ind="oilgas">Oil and gas</a></li>
+            <li><a href="index.html?ind=auto#finder" data-ind="auto">Automotive</a></li>
+            <li><a href="index.html?ind=aero#finder" data-ind="aero">Aerospace and defence</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mega-ind-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_3">Precision, Medical &amp; Optics</span></div>
+          <ul>
+            <li><a href="index.html?ind=medical#finder" data-ind="medical">Medical devices and implants</a></li>
+            <li><a href="index.html?ind=semi#finder" data-ind="semi">Semiconductor and electronics</a></li>
+            <li><a href="index.html?ind=optics#finder" data-ind="optics">Optics and eyewear</a></li>
+            <li><a href="index.html?ind=watch#finder" data-ind="watch">Watches, jewellery and decorative</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <a data-cms-href="global.header.link_2" data-cms="global.header.a_1" href="index.html#hero">Home</a>
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-toggle" id="mobile-products-toggle" aria-expanded="false">
+        <span data-cms="global.header.a_2">Products</span>
+        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div data-cms-list="global.mobile-products-panel.l8" class="mobile-products-panel" id="mobile-products-panel">
+        <a href="index.html#finder" class="mobile-all-products-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span data-cms="global.header.phone_all_products">Find a system &mdash; All products</span>
+        </a>
+        <div class="mobile-brand-group">
+          <a class="mobile-brand-title" href="bmi/">
+            <img src="assets/logo-BMI.png" alt="BMI">
+            <span>BMI</span>
+          </a>
+          <ul class="mobile-cat-list">
+            <li><a href="bmi/gas-quenching/">Gas quenching furnaces</a></li>
+            <li><a href="bmi/oil-quenching/">Oil quenching furnaces</a></li>
+            <li><a href="bmi/low-temperature/">Low-temperature furnaces</a></li>
+            <li><a href="bmi/thermochemical/">Thermochemical treatment furnaces</a></li>
+          </ul>
+        </div>
+        <div class="mobile-brand-group">
+          <a class="mobile-brand-title" href="novatec/">
+            <img src="assets/logo-novatec.png" alt="Novatec">
+            <span>Novatec</span>
+          </a>
+          <ul class="mobile-cat-list">
+            <li><a href="novatec/pluritank/">PLURITANK Multi-chamber ultrasonic</a></li>
+            <li><a href="novatec/2crd/">2CRD Series Single-chamber precision cleaning under vacuum</a></li>
+            <li><a href="novatec/medical-implants/">Medical implant processing</a></li>
+            <li><a href="novatec/components/">Components &amp; PLT 60V</a></li>
+          </ul>
+        </div>
+        <div class="mobile-brand-group">
+          <a class="mobile-brand-title" href="huasheng/">
+            <img src="Huasheng-machine-photos/HUASHENG-logo.png" alt="Huasheng">
+            <span>Huasheng</span>
+          </a>
+          <ul class="mobile-cat-list">
+            <li><a href="huasheng/pvd/">PVD coating equipment</a></li>
+            <li><a href="huasheng/dlc/">DLC &amp; ta-C coating equipment</a></li>
+            <li><a href="huasheng/diamond/">Diamond coating equipment</a></li>
+            <li><a href="huasheng/decorative/">Decorative PVD coating equipment</a></li>
+            <li><a href="huasheng/optical/">Optical coating equipment</a></li>
+            <li><a href="huasheng/cvd/">CVD &amp; CVA coating equipment</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-toggle" id="mobile-industries-toggle" aria-expanded="false">
+        <span data-cms="global.header.a_3">Industries</span>
+        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div data-cms-list="global.mobile-industries-panel.l2" class="mobile-products-panel" id="mobile-industries-panel">
+        <a data-cms-href="global.mobile-industries-panel.link_1" href="index.html#industries" class="mobile-all-products-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span data-cms="global.header.phone_all_industries">Industries overview &mdash; All 12 sectors</span>
+        </a>
+        <div data-cms-card="global.mobile-industries-panel.c2_1" class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_1">Tooling &amp; Metalworking</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="index.html?ind=tools#finder" data-ind="tools">Cutting and gear cutting tools</a></li>
+            <li><a href="index.html?ind=jobshop#finder" data-ind="jobshop">PVD coating service providers</a></li>
+            <li><a href="index.html?ind=dies#finder" data-ind="dies">Dies and mould manufacturers</a></li>
+            <li><a href="index.html?ind=steel#finder" data-ind="steel">Steel and metal processing</a></li>
+          </ul>
+        </div>
+        <div data-cms-card="global.mobile-industries-panel.c2_2" class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_2">Energy, Auto &amp; Aerospace</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="index.html?ind=power#finder" data-ind="power">Power: wind, solar and thermal</a></li>
+            <li><a href="index.html?ind=oilgas#finder" data-ind="oilgas">Oil and gas</a></li>
+            <li><a href="index.html?ind=auto#finder" data-ind="auto">Automotive</a></li>
+            <li><a href="index.html?ind=aero#finder" data-ind="aero">Aerospace and defence</a></li>
+          </ul>
+        </div>
+        <div data-cms-card="global.mobile-industries-panel.c2_3" class="mobile-brand-group">
+          <div class="mobile-brand-title" style="color:var(--lime, #02963C); font-weight:750;"><span data-cms="global.header.div_3">Precision, Medical &amp; Optics</span></div>
+          <ul class="mobile-cat-list">
+            <li><a href="index.html?ind=medical#finder" data-ind="medical">Medical devices and implants</a></li>
+            <li><a href="index.html?ind=semi#finder" data-ind="semi">Semiconductor and electronics</a></li>
+            <li><a href="index.html?ind=optics#finder" data-ind="optics">Optics and eyewear</a></li>
+            <li><a href="index.html?ind=watch#finder" data-ind="watch">Watches, jewellery and decorative</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a data-cms-href="global.header.link_5" data-cms="global.header.a_4" href="index.html#why">Why buy through Greets</a>
+    <a href="blog.html" class="active" style="display:none;">Blog</a>
+    <a data-cms-href="global.header.link_6" data-cms="global.header.a_5" href="contact.html">Contact</a>
+    <a data-cms-href="global.header.link_7" data-cms="global.header.span_1" href="contact.html" class="btn btn--primary">Talk to Greets</a>
+  </nav>
+
+  <!-- Top Small Section with Background Image and Gradient Grey -->
+  <section class="blog-hero" id="blog-hero" data-cms-bg="blog.blog-hero.bg">
+    <div class="container">
+      <h1 data-cms="blog.blog-hero.h1_1">Welcome to Greets <span>BLOGS</span></h1>
+      <p data-cms="blog.blog-hero.p_1">Technical insights, process guides, and engineering updates on vacuum furnaces, ultrasonic cleaning, and PVD coating.</p>
+    </div>
+  </section>
+
+  <!-- Blog Cards Arranged in Three Columns -->
+  <main class="blog-main">
+    <div class="container">
+      <div class="blog-grid" data-cms-list="blog.blog-posts.l1">
+        <!-- Card 1 -->
+        <article class="blog-card" data-cms-card="blog.blog-posts.c1_1">
+          <div class="blog-card__media">
+            <img data-cms-src="blog.blog-posts.img_1" data-cms-alt="blog.blog-posts.img_1_alt" src="BMI-machine-photos/BMI-furnace-line-installed.jpg" alt="High pressure gas quenching vacuum furnace installation by BMI">
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_1">
+              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
+              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Nov 02, 2026</span>
+            </div>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_1"><a href="blogs/optimizing-high-pressure-gas-quenching.html">Optimizing High-Pressure Gas Quenching in Vacuum Furnaces</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_1">How 10&ndash;20 bar nitrogen and helium gas quenching achieves martensitic hardness in high-alloy steels while eliminating thermal distortion and washing operations.</p>
+            <div class="blog-card__footer">
+              <a href="blogs/optimizing-high-pressure-gas-quenching.html" class="blog-card__btn">
+                <span data-cms="blog.blog-posts.btn_1">Read Article</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="blog-card" data-cms-card="blog.blog-posts.c1_2">
+          <div class="blog-card__media">
+            <img data-cms-src="blog.blog-posts.img_2" data-cms-alt="blog.blog-posts.img_2_alt" src="Novatec-machine-photos/MEDICAL-implants-in-basket-01.jpg" alt="Orthopaedic implants in cleaning basket for ultrasonic processing">
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_2">
+              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
+              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Oct 28, 2026</span>
+            </div>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_2"><a href="blogs/cleanroom-ultrasonic-cleaning-medical-implants.html">Cleanroom Ultrasonic Cleaning for Orthopaedic &amp; Medical Implants</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_2">Meeting ISO 13485 and ASTM F86 passivation compliance on titanium implants using multi-frequency ultrasonics and fine vacuum drying.</p>
+            <div class="blog-card__footer">
+              <a href="blogs/cleanroom-ultrasonic-cleaning-medical-implants.html" class="blog-card__btn">
+                <span data-cms="blog.blog-posts.btn_2">Read Article</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="blog-card" data-cms-card="blog.blog-posts.c1_3">
+          <div class="blog-card__media">
+            <img data-cms-src="blog.blog-posts.img_3" data-cms-alt="blog.blog-posts.img_3_alt" src="Huasheng-machine-photos/HUASHENG-DECO-A-machine.jpg" alt="Huasheng advanced PVD and DLC coating deposition system">
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_3">
+              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
+              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Oct 15, 2026</span>
+            </div>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_3"><a href="blogs/dlc-vs-tac-coatings-friction-wear.html">DLC vs. ta-C Coatings: Selecting the Right Carbon Film for Friction &amp; Wear</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_3">Comparing PECVD hydrogenated DLC (a-C:H) with tetrahedral amorphous carbon (ta-C): sp3 bonding ratios, 60&ndash;80 GPa hardness, and automotive friction limits.</p>
+            <div class="blog-card__footer">
+              <a href="blogs/dlc-vs-tac-coatings-friction-wear.html" class="blog-card__btn">
+                <span data-cms="blog.blog-posts.btn_3">Read Article</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="blog-card" data-cms-card="blog.blog-posts.c1_4">
+          <div class="blog-card__media">
+            <img data-cms-src="blog.blog-posts.img_4" data-cms-alt="blog.blog-posts.img_4_alt" src="BMI-machine-photos/BMI-furnace-door-open-hot-zone.jpg" alt="Interior hot zone of BMI vacuum furnace with graphite insulation">
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_4">
+              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
+              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Sep 30, 2026</span>
+            </div>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_4"><a href="blogs/low-pressure-carburizing-lpc-acetylene.html">Low-Pressure Carburizing (LPC) with Acetylene: Eliminating IGO in Gears</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_4">Why gear manufacturers are replacing atmospheric carburizing with vacuum LPC: 100% elimination of intergranular oxidation and uniform case depth.</p>
+            <div class="blog-card__footer">
+              <a href="blogs/low-pressure-carburizing-lpc-acetylene.html" class="blog-card__btn">
+                <span data-cms="blog.blog-posts.btn_4">Read Article</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="blog-card" data-cms-card="blog.blog-posts.c1_5">
+          <div class="blog-card__media">
+            <img data-cms-src="blog.blog-posts.img_5" data-cms-alt="blog.blog-posts.img_5_alt" src="assets/catalog/2CRD-vacuum-chamber-interior.jpg" alt="Novatec 2CRD single chamber hermetic vacuum cleaning chamber">
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_5">
+              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
+              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Sep 14, 2026</span>
+            </div>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_5"><a href="blogs/modified-alcohol-vs-hydrocarbon-solvents-2crd.html">Modified Alcohol vs Hydrocarbon Solvents: Closed-Loop Cleaning in the 2CRD</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_5">Technical comparison of modified alcohols and isoparaffins in hermetic vacuum degreasers: continuous vacuum distillation and zero VOC emissions.</p>
+            <div class="blog-card__footer">
+              <a href="blogs/modified-alcohol-vs-hydrocarbon-solvents-2crd.html" class="blog-card__btn">
+                <span data-cms="blog.blog-posts.btn_5">Read Article</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="blog-card" data-cms-card="blog.blog-posts.c1_6">
+          <div class="blog-card__media">
+            <img data-cms-src="blog.blog-posts.img_6" data-cms-alt="blog.blog-posts.img_6_alt" src="Huasheng-machine-photos/Broach.jpg" alt="Coated precision cutting tool broach with advanced PVD layer">
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_6">
+              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
+              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Aug 22, 2026</span>
+            </div>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_6"><a href="blogs/hipims-technology-cutting-tool-coatings.html">HiPIMS Technology in Cutting Tool Coatings: Density, Smoothness &amp; Adhesion</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_6">How High-Power Impulse Magnetron Sputtering eliminates macro-droplets while retaining arc-like film density for difficult aerospace superalloy machining.</p>
+            <div class="blog-card__footer">
+              <a href="blogs/hipims-technology-cutting-tool-coatings.html" class="blog-card__btn">
+                <span data-cms="blog.blog-posts.btn_6">Read Article</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="blog-card" data-cms-card="blog.blog-posts.c1_7">
+          <div class="blog-card__media">
+            <img data-cms-src="blog.blog-posts.img_7" data-cms-alt="blog.blog-posts.img_7_alt" src="../blogs/Blog-img/industrial-equipment-supplier-india.png" alt="Industrial equipment supplier India providing advanced manufacturing machinery and industrial solutions">
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_7">
+              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
+              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Nov 04, 2026</span>
+            </div>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_7"><a href="blogs/industrial-equipment-supplier-india.html">Why Greets Equipment Is a Reliable Choice for Advanced Industrial Applications</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_7">Choosing the right industrial equipment for Indian manufacturers — heat treatment, precision cleaning, PVD/DLC coating, and expert technical support from Greets Equipment.</p>
+            <div class="blog-card__footer">
+              <a href="blogs/industrial-equipment-supplier-india.html" class="blog-card__btn">
+                <span data-cms="blog.blog-posts.btn_7">Read Article</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Technical Guide Reader Modal -->
+  <div class="article-modal-backdrop" id="article-modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="article-modal" id="article-modal">
+      <button type="button" class="article-modal__close" id="modal-close-btn" aria-label="Close guide">&times;</button>
+      <div class="article-modal__content" id="modal-body">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:2.5rem 3.5rem; align-items:flex-start; margin-bottom:2.5rem;">
+        <!-- Column 1: Logo + Tagline -->
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <a data-cms-href="global.footer.link_1" href="index.html" style="display:inline-block; line-height:1;">
+            <img data-cms-src="global.footer.img_1" data-cms-alt="global.footer.img_1_alt" src="assets/logo-greets.png" alt="Greets Equipment" style="height:52px; width:auto; display:block;">
+          </a>
+          <p data-cms="global.footer.p_1" style="font-size:0.88rem; color:var(--steel, #56636B); margin:0; line-height:1.5; max-width:280px;">
+            Authorised dealer in India for BMI, Novatec and Huasheng.
+          </p>
+        </div>
+
+        <!-- Column 2: Products Links -->
+        <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
+          <a data-cms="global.footer.a_1" href="index.html#/bmi" style="color:var(--steel, #56636B); text-decoration:none;">BMI vacuum furnaces</a>
+          <a data-cms="global.footer.a_2" href="index.html#/novatec" style="color:var(--steel, #56636B); text-decoration:none;">Novatec ultrasonic cleaning</a>
+          <a data-cms="global.footer.a_3" href="index.html#/huasheng" style="color:var(--steel, #56636B); text-decoration:none;">Huasheng coating equipment</a>
+          <a href="blog.html" style="color:var(--lime, #02963C); text-decoration:none; font-weight:600;">Engineering Blog &amp; Insights</a>
+          <a data-cms-href="global.footer.link_5" data-cms="global.footer.a_4" href="privacy.html" style="color:var(--steel, #56636B); text-decoration:underline; font-size:0.88rem; margin-top:0.35rem;">Privacy Notice (DPDP)</a>
+        </div>
+
+        <!-- Column 3: Contact & Location -->
+        <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
+          <span data-cms="global.footer.span_1" style="color:var(--steel, #56636B); font-weight:500;">Shop No 23, 1st Floor, above Punjab National Bank, near BDA Complex, Sector 6, HSR Layout, Bengaluru 560102</span>
+<div style="font-size:0.86rem; color:var(--steel, #56636B); margin-top:0.25rem;">CIN: U46529KA2025PTC207124</div>
+<div style="font-size:0.86rem; color:var(--steel, #56636B);">GSTIN: 29AAMCG3022B1ZY</div>
+          <div style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.86rem; color:var(--steel, #56636B);">
+            <div data-cms="global.footer.div_1">Mr. Pramod Kanse: <a href="tel:+919823386558" style="color:inherit; text-decoration:none; font-weight:600;">+91 98233 86558</a></div>
+            <div data-cms="global.footer.div_2">Mr. Manoj Agrawal: <a href="tel:+919429875547" style="color:inherit; text-decoration:none; font-weight:600;">+91 94298 75547</a></div>
+            <div data-cms="global.footer.div_3">Ms. Pahal Chawla: <a href="tel:+919871408194" style="color:inherit; text-decoration:none; font-weight:600;">+91 98714 08194</a></div>
+          </div>
+          <a data-cms-href="global.footer.link_6" data-cms="global.footer.a_5" href="mailto:enquiry-equipment@greets.co.in" style="color:var(--lime, #02963C); text-decoration:none; font-weight:500;">enquiry-equipment@greets.co.in</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom" style="border-top:1px solid var(--line); padding-top:1.25rem; font-size:0.82rem; color:var(--steel); display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem;">
+        <span data-cms="global.footer.span_2">&copy; 2026 Greets Equipment Pvt. Ltd. All rights reserved. &bull; <a href="privacy.html" style="color:inherit; text-decoration:underline;">Privacy Policy</a></span>
+        <span data-cms="global.footer.span_3">Brand names and logos belong to their respective owners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+  <script src="cms.js"></script>
+
+  <!-- Technical Articles Database & Interactive Handler -->
+  <script>
+    const ARTICLES = {
+      'hpgq-vacuum-quenching': {
+        title: 'Optimizing High-Pressure Gas Quenching in Vacuum Furnaces',
+        category: 'Vacuum Heat Treatment &bull; BMI Fours Industriels',
+        date: 'November 02, 2026',
+        author: 'Greets Engineering Team &amp; BMI Technical Services',
+        image: 'BMI-machine-photos/BMI-furnace-line-installed.jpg',
+        html: `
+          <p>The hardening of complex tools, dies, and aerospace flight components requires an exacting balance between cooling speed and dimensional stability. Traditional oil quenching produces high cooling rates but creates steep thermal gradients across section variations, resulting in significant warping, residual stress, and potential quench cracking.</p>
+
+          <div class="article-callout">
+            <strong>Key Engineering Finding</strong>
+            High-Pressure Gas Quenching (HPGQ) using nitrogen or helium at 10 to 20 bar provides heat transfer coefficients comparable to conventional quenching oils while maintaining volumetric thermal symmetry through 360-degree aerodynamic gas impingement nozzles.
+          </div>
+
+          <h2>1. Thermodynamics of Gas Quenching vs. Liquid Quenching</h2>
+          <p>In liquid quenching, three distinct phases govern the cooling cycle: the vapour blanket stage (Leidenfrost phenomenon), the boiling stage, and the convective stage. The abrupt transition from the vapour blanket to the nucleate boiling stage causes local temperature variations across a component, leading directly to distortion.</p>
+          <p>In contrast, gas quenching operates strictly via pure single-phase convective heat transfer. The cooling velocity is governed by the heat transfer coefficient (h), expressed as:</p>
+          <p><strong>h &prop; C &times; (P &times; v &times; M)<sup>0.8</sup> / d<sup>0.2</sup></strong></p>
+
+          <h2>2. Process Comparison: Oil Quench vs 10-20 Bar Gas Quench</h2>
+          <table class="article-specs-table">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Standard Hot Oil Quench</th>
+                <th>BMI 10&ndash;20 Bar Gas Quench</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cooling Mechanism</td>
+                <td>3-Stage Phase Change (Boiling)</td>
+                <td>Continuous Pure Convective</td>
+              </tr>
+              <tr>
+                <td>Dimensional Distortion</td>
+                <td>High (requires grinding margin)</td>
+                <td>Extremely Low (&plusmn;0.02 mm repeatable)</td>
+              </tr>
+              <tr>
+                <td>Surface Quality</td>
+                <td>Oil residue, necessitates post-wash</td>
+                <td>Bright, pristine metallic surface</td>
+              </tr>
+              <tr>
+                <td>Environmental / Safety</td>
+                <td>Flammable fumes, disposal cost</td>
+                <td>Non-toxic, closed-loop recyclable</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="modal-cta-box">
+            <h4>Evaluate Your Component Geometry with BMI Furnaces</h4>
+            <p>Our metallurgists in India calculate critical cooling diameters and hardness projections for your specific steel grades.</p>
+            <a href="contact.html" class="hdr-cta" style="display:inline-block;">Contact Greets Technical Support</a>
+          </div>
+        `
+      },
+      'medical-implant-cleaning': {
+        title: 'Cleanroom Ultrasonic Cleaning for Orthopaedic & Medical Implants',
+        category: 'Precision Cleaning &bull; Novatec Surface Treatment',
+        date: 'October 28, 2026',
+        author: 'Precision Cleaning Division',
+        image: 'Novatec-machine-photos/MEDICAL-implants-in-basket-01.jpg',
+        html: `
+          <p>Additive manufacturing and multi-axis CNC machining of titanium and CoCr surgical implants introduce sub-micron particulates, cutting oils, and sintered titanium dust into trabecular porosities. Meeting ISO 13485, ASTM F86, and FDA cytotoxicity criteria mandates an automated multi-stage aqueous ultrasonic line with validated cleanroom air enclosures.</p>
+
+          <h2>1. Ultrasonic Cavitation Dynamics in Micro-Porous Titanium</h2>
+          <p>Novatec PLURITANK systems incorporate multi-frequency generators operating at 40 kHz, 80 kHz, and 120 kHz. Higher frequencies generate smaller, densely distributed cavitation bubbles that penetrate deep into complex additive geometries without inducing surface erosion.</p>
+
+          <div class="article-callout">
+            <strong>Critical Cleanliness Benchmark</strong>
+            Final total organic carbon (TOC) levels must remain below 0.1 mg/part, with particulate counts satisfying ISO 14644-1 Class 5 cleanroom standards at the unload station.
+          </div>
+
+          <div class="modal-cta-box">
+            <h4>Plan Your Medical Cleaning Validation</h4>
+            <p>Connect with Greets engineers to inspect Novatec PLURITANK cleanroom line layouts, 21 CFR Part 11 audit trails, and basket tooling.</p>
+            <a href="contact.html" class="hdr-cta" style="display:inline-block;">Inquire About Novatec Systems</a>
+          </div>
+        `
+      },
+      'dlc-tac-coatings': {
+        title: 'DLC vs. ta-C Coatings: Selecting the Right Carbon Film for Friction & Wear',
+        category: 'PVD & DLC Surface Engineering &bull; Huasheng Vacuum',
+        date: 'October 15, 2026',
+        author: 'Surface Engineering Group',
+        image: 'Huasheng-machine-photos/HUASHENG-DECO-A-machine.jpg',
+        html: `
+          <p>Diamond-Like Carbon (DLC) films are essential in modern automotive valvetrains, diesel fuel injectors, piston pins, and precision punch dies. However, selecting between hydrogenated DLC (a-C:H deposited via PECVD) and hydrogen-free tetrahedral amorphous carbon (ta-C deposited via cathodic arc) determines component longevity under high contact pressures.</p>
+
+          <h2>Performance Characteristics Matrix</h2>
+          <table class="article-specs-table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>a-C:H (PECVD DLC)</th>
+                <th>ta-C (Filtered Vacuum Arc)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hardness</td>
+                <td>1,800&ndash;2,400 HV (18&ndash;24 GPa)</td>
+                <td>5,000&ndash;8,000 HV (50&ndash;80 GPa)</td>
+              </tr>
+              <tr>
+                <td>Friction Coefficient (&mu;)</td>
+                <td>0.08&ndash;0.12</td>
+                <td>0.04&ndash;0.08</td>
+              </tr>
+              <tr>
+                <td>Thermal Stability</td>
+                <td>300&deg;C</td>
+                <td>500&deg;C in air / &gt;650&deg;C in inert</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="modal-cta-box">
+            <h4>Explore Huasheng Coating Equipment</h4>
+            <p>Greets supplies turn-key Huasheng DLC and ta-C systems with tailored process recipes for Indian manufacturing facilities.</p>
+            <a href="contact.html" class="hdr-cta" style="display:inline-block;">Discuss Huasheng Solutions</a>
+          </div>
+        `
+      },
+      'lpc-acetylene-carburizing': {
+        title: 'Low-Pressure Carburizing (LPC) with Acetylene: Eliminating IGO in Gears',
+        category: 'Vacuum Furnaces &bull; BMI ALLCARB&reg;',
+        date: 'September 30, 2026',
+        author: 'BMI Metallurgists',
+        image: 'BMI-machine-photos/BMI-furnace-door-open-hot-zone.jpg',
+        html: `
+          <p>In the BMI ALLCARB&reg; vacuum carburizing process, gears are heated to carburizing temperatures (920&deg;C&ndash;980&deg;C) in a clean vacuum environment (&lt; 10⁻² mbar). Acetylene gas is then pulsed at low pressure (2 to 8 mbar). Because no oxygen atoms exist inside the vacuum chamber, intergranular oxidation (IGO) is 100% eliminated, increasing tooth fatigue endurance by up to 40%.</p>
+
+          <div class="modal-cta-box">
+            <h4>Upgrade Your Gear Carburizing Facility</h4>
+            <p>BMI ALLCARB&reg; systems combined with 20-bar nitrogen gas quenching provide a compact, zero-emission heat treatment cell.</p>
+            <a href="contact.html" class="hdr-cta" style="display:inline-block;">Request ALLCARB Technical Data</a>
+          </div>
+        `
+      },
+      '2crd-solvent-cleaning': {
+        title: 'Modified Alcohol vs Hydrocarbon Solvents: Closed-Loop Cleaning in the 2CRD',
+        category: 'Precision Cleaning &bull; Novatec 2CRD',
+        date: 'September 14, 2026',
+        author: 'Cleaning Division',
+        image: 'assets/catalog/2CRD-vacuum-chamber-interior.jpg',
+        html: `
+          <p>Modern industrial manufacturing demands hermetically sealed, emission-free cleaning systems using modified alcohols or isoparaffinic hydrocarbons. The Novatec 2CRD performs ultrasonic immersion, spray washing, vapour degreasing, and deep vacuum drying in a single closed-loop chamber with continuous internal solvent distillation.</p>
+
+          <div class="modal-cta-box">
+            <h4>Calculate Solvent Payback &amp; Cleanliness</h4>
+            <p>See how Novatec 2CRD delivers dry, oil-free components with zero toxic solvent exposure.</p>
+            <a href="contact.html" class="hdr-cta" style="display:inline-block;">Contact Novatec Specialists</a>
+          </div>
+        `
+      },
+      'hipims-cutting-tools': {
+        title: 'HiPIMS Technology in Cutting Tool Coatings: Density, Smoothness & Adhesion',
+        category: 'PVD Coatings &bull; Huasheng Vacuum',
+        date: 'August 22, 2026',
+        author: 'Tooling Tech Group',
+        image: 'Huasheng-machine-photos/Broach.jpg',
+        html: `
+          <p>High-Power Impulse Magnetron Sputtering (HiPIMS) applies megawatts of peak power in short microsecond pulses at low duty cycles. This generates high-density plasma where up to 90% of the sputtered metal target atoms are ionized, completely avoiding micro-droplet formation and producing ultra-smooth coatings (Ra &lt; 0.05 &mu;m).</p>
+
+          <div class="modal-cta-box">
+            <h4>Upgrade Your Tool Coating Technology</h4>
+            <p>Huasheng HiPIMS systems provide turn-key tool coating solutions with AlTiN, AlCrN, and TiSiN recipes.</p>
+            <a href="contact.html" class="hdr-cta" style="display:inline-block;">Consult Huasheng Team</a>
+          </div>
+          `
+      },
+      'industrial-equipment-supplier-india': {
+        title: 'Why Greets Equipment Is a Reliable Choice for Advanced Industrial Applications',
+        category: 'Industrial Equipment Supplier India',
+        date: 'November 04, 2026',
+        author: 'Greets Engineering Team',
+        image: '../blogs/Blog-img/industrial-equipment-supplier-india.png',
+        html: `
+          <p>India's manufacturing sector is evolving rapidly, with businesses increasingly investing in precision engineering, automation and specialised production technologies. Choosing the right machinery has become essential for maintaining product quality, improving operational efficiency and meeting demanding industrial standards. Greets Equipment supports Indian manufacturers by connecting them with specialised international equipment manufacturers and helping them identify suitable machinery for their production requirements.</p>
+
+          <h2>Understanding the Industrial Equipment Requirements of Indian Manufacturers</h2>
+          <p>Manufacturing processes vary considerably between industries. An automotive component manufacturer may require controlled heat treatment, while a cutting tool manufacturer may depend on specialised coating technology. Medical device manufacturers, meanwhile, need precise cleaning processes to meet demanding component cleanliness requirements.</p>
+
+          <h3>Growing Demand for Advanced Manufacturing Technologies in India</h3>
+          <p>Indian manufacturers are increasingly adopting specialised machinery to improve productivity and meet changing customer expectations.</p>
+
+          <h3>Why Do Precision and Process Consistency Matter?</h3>
+          <p>Precision is important because even small variations can affect the performance, durability and quality of manufactured components.</p>
+
+          <div class="modal-cta-box">
+            <h4>Contact Greets Equipment</h4>
+            <p>Discuss your industrial equipment requirements and explore suitable heat treatment, precision cleaning, and coating solutions.</p>
+            <a href="contact.html" class="hdr-cta" style="display:inline-block;">Contact Greets Equipment</a>
+          </div>
+        `
+      }
+    };
+
+    // Modal Article Reader logic
+    const modalBackdrop = document.getElementById('article-modal-backdrop');
+    const modalBody = document.getElementById('modal-body');
+    const closeBtn = document.getElementById('modal-close-btn');
+
+    function openArticle(id) {
+      const art = ARTICLES[id];
+      if (!art) return;
+
+      modalBody.innerHTML = `
+        <div style="font-size:0.8rem; font-weight:700; color:var(--lime); text-transform:uppercase; margin-bottom:0.75rem;">
+          ${art.category} &bull; ${art.date}
+        </div>
+        <h1>${art.title}</h1>
+        <p style="font-size:0.9rem; color:var(--steel); margin-bottom:1.5rem;">By ${art.author}</p>
+        <img src="${art.image}" alt="${art.title}" class="article-modal__hero-img">
+        ${art.html}
+      `;
+
+      modalBackdrop.classList.add('is-open');
+      modalBackdrop.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (history.pushState) {
+        history.pushState(null, '', '#' + id);
+      }
+    }
+
+    function closeArticle() {
+      modalBackdrop.classList.remove('is-open');
+      modalBackdrop.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (history.pushState) {
+        history.pushState(null, '', location.pathname + location.search);
+      }
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeArticle);
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener('click', (e) => {
+        if (e.target === modalBackdrop) closeArticle();
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalBackdrop.classList.contains('is-open')) {
+        closeArticle();
+      }
+    });
+
+    // Check hash on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = location.hash.replace(/^#/, '');
+      if (hash && ARTICLES[hash]) {
+        openArticle(hash);
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 // so no route can forget to.
 const ActivityLog = require('../models/ActivityLog');
 
-const PAGE_NAMES = { global: 'the header & footer', index: 'the Home page', contact: 'the Contact page', privacy: 'the Privacy page' };
+const PAGE_NAMES = { global: 'the header & footer', index: 'the Home page', contact: 'the Contact page', privacy: 'the Privacy page', blog: 'the Blog page' };
 
 // Turns a request into words a person understands. Returns '' for requests that are not worth logging.
 function describe(method, url, body) {

@@ -14,7 +14,7 @@ const { parseDocument } = require('htmlparser2');
 
 const SITE_DIR = path.join(__dirname, '..', '..');
 const MANIFEST_PATH = path.join(__dirname, '..', 'data', 'content-manifest.json');
-const PAGES = [{ file: 'index.html', name: 'index' }, { file: 'contact.html', name: 'contact' }, { file: 'privacy.html', name: 'privacy' }];
+const PAGES = [{ file: 'index.html', name: 'index' }, { file: 'contact.html', name: 'contact' }, { file: 'privacy.html', name: 'privacy' }, { file: 'blog.html', name: 'blog' }];
 
 const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
 const byKey = new Map(manifest.map((f) => [f.key, f]));
