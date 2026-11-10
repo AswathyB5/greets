@@ -10,6 +10,25 @@ server {
     root /var/www/greets;          # the SAME folder as SITE_DIR in admin-server/.env
     index index.html;
 
+    # 301 permanent redirects for only these three old URLs
+    location = /index.html {
+        return 301 /;
+    }
+    location = /privacy.html {
+        return 301 /privacy;
+    }
+    location = /contact.html {
+        return 301 /contact;
+    }
+
+    # Clean URLs for privacy and contact
+    location = /privacy {
+        try_files /privacy.html =404;
+    }
+    location = /contact {
+        try_files /contact.html =404;
+    }
+
     location / { try_files $uri $uri/ =404; }
 
     # The website folder also holds the page-builder scripts and notes. Visitors must not download them.
