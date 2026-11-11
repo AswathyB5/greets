@@ -134,9 +134,9 @@
       gap: 0.5rem;
       background: var(--btn);
       color: #fff;
-      padding: 0.55rem 1.15rem;
-      border-radius: 7px;
-      font-size: 0.88rem;
+      padding: 0.85rem 2rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
       font-weight: 600;
       text-decoration: none;
       transition: background 0.2s ease, transform 0.15s ease;
@@ -305,6 +305,19 @@
       color: var(--ink);
       margin: 0 0 0.6rem;
       transition: color 0.15s ease;
+    }
+
+    .blog-card__title a {
+      color: #02963C;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #02963C;
+      text-underline-offset: 2px;
+    }
+
+    .blog-card__title a:hover {
+      color: #016A2A;
+      text-decoration-color: #016A2A;
     }
 
     .blog-card:hover .blog-card__title {
@@ -557,13 +570,13 @@
         <a data-cms-href="global.header.link_4" data-cms="global.header.a_3" class="navlink mega-btn" id="mega-ind-btn" href="index.html#industries" aria-expanded="false" aria-controls="mega-ind">Industries</a>
         <nav data-cms-list="global.header.l1" class="header__nav main" aria-label="Main">
           <a data-cms-card="global.header.c1_1" data-cms-href="global.header.link_5" data-cms="global.header.a_4" class="navlink" href="index.html#why">Why buy through Greets</a>
-          <a class="navlink is-active" href="blog.html" aria-current="page" style="display:none;">Blog</a>
+          <a class="navlink is-active" href="blog.html" aria-current="page">Blog</a>
           <a data-cms-card="global.header.c1_2" data-cms-href="global.header.link_6" data-cms="global.header.a_5" class="navlink" href="contact.html">Contact</a>
         </nav>
       </div>
       <a data-cms-href="global.header.link_7" class="btn btn--primary hdr-cta" href="contact.html">
         <span data-cms="global.header.span_1">Talk to Greets</span>
-        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
           stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12" />
           <polyline points="12 5 19 12 12 19" />
@@ -747,7 +760,7 @@
       </div>
     </div>
     <a data-cms-href="global.header.link_5" data-cms="global.header.a_4" href="index.html#why">Why buy through Greets</a>
-    <a href="blog.html" class="active" style="display:none;">Blog</a>
+    <a href="blog.html" class="active">Blog</a>
     <a data-cms-href="global.header.link_6" data-cms="global.header.a_5" href="contact.html">Contact</a>
     <a data-cms-href="global.header.link_7" data-cms="global.header.span_1" href="contact.html" class="btn btn--primary">Talk to Greets</a>
   </nav>
@@ -767,17 +780,17 @@
         <!-- Card 1 -->
         <article class="blog-card" data-cms-card="blog.blog-posts.c1_1">
           <div class="blog-card__media">
-            <img data-cms-src="blog.blog-posts.img_1" data-cms-alt="blog.blog-posts.img_1_alt" src="BMI-machine-photos/BMI-furnace-line-installed.jpg" alt="High pressure gas quenching vacuum furnace installation by BMI">
+            <img data-cms-src="blog.blog-posts.img_1" data-cms-alt="blog.blog-posts.img_1_alt" src="blogs/Blog-img/vacuum-heat-treatment-furnace-india.png" alt="Horizontal vacuum heat treatment furnace in the manufacturer's works">
           </div>
           <div class="blog-card__body">
             <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_1">
               <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
-              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Nov 02, 2026</span>
+<span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Nov 11, 2026</span>
             </div>
-            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_1"><a href="blogs/optimizing-high-pressure-gas-quenching.html">Optimizing High-Pressure Gas Quenching in Vacuum Furnaces</a></h3>
-            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_1">How 10&ndash;20 bar nitrogen and helium gas quenching achieves martensitic hardness in high-alloy steels while eliminating thermal distortion and washing operations.</p>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_1"><a href="blogs/vacuum-heat-treatment-furnace-india.html">Buying a Vacuum Heat Treatment Furnace in India: A Guide to the BMI Range</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_1">Furnace families, working zone sizing, quench pressure selection, temperature limits and the ten specifications to evaluate before ordering a vacuum furnace.</p>
             <div class="blog-card__footer">
-              <a href="blogs/optimizing-high-pressure-gas-quenching.html" class="blog-card__btn">
+              <a href="blogs/vacuum-heat-treatment-furnace-india.html" class="blog-card__btn">
                 <span data-cms="blog.blog-posts.btn_1">Read Article</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
@@ -788,129 +801,23 @@
         <!-- Card 2 -->
         <article class="blog-card" data-cms-card="blog.blog-posts.c1_2">
           <div class="blog-card__media">
-            <img data-cms-src="blog.blog-posts.img_2" data-cms-alt="blog.blog-posts.img_2_alt" src="Novatec-machine-photos/MEDICAL-implants-in-basket-01.jpg" alt="Orthopaedic implants in cleaning basket for ultrasonic processing">
+            <img data-cms-src="blog.blog-posts.img_2" data-cms-alt="blog.blog-posts.img_2_alt" src="blogs/Blog-img/pvd-coating-plant-india.png" alt="Huasheng MD800 PLUS arc coating machine">
           </div>
           <div class="blog-card__body">
             <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_2">
               <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
-              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Oct 28, 2026</span>
+<span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Nov 10, 2026</span>
             </div>
-            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_2"><a href="blogs/cleanroom-ultrasonic-cleaning-medical-implants.html">Cleanroom Ultrasonic Cleaning for Orthopaedic &amp; Medical Implants</a></h3>
-            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_2">Meeting ISO 13485 and ASTM F86 passivation compliance on titanium implants using multi-frequency ultrasonics and fine vacuum drying.</p>
+            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_2"><a href="blogs/pvd-coating-plant-india.html">Setting Up a PVD Coating Plant in India: What a Complete Line Needs</a></h3>
+            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_2">Beyond the coating machine: cleaning, heat treatment, utilities, inspection and stripping. Equipment from BMI, Novatec and Huasheng.</p>
             <div class="blog-card__footer">
-              <a href="blogs/cleanroom-ultrasonic-cleaning-medical-implants.html" class="blog-card__btn">
+              <a href="blogs/pvd-coating-plant-india.html" class="blog-card__btn">
                 <span data-cms="blog.blog-posts.btn_2">Read Article</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
             </div>
           </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="blog-card" data-cms-card="blog.blog-posts.c1_3">
-          <div class="blog-card__media">
-            <img data-cms-src="blog.blog-posts.img_3" data-cms-alt="blog.blog-posts.img_3_alt" src="Huasheng-machine-photos/HUASHENG-DECO-A-machine.jpg" alt="Huasheng advanced PVD and DLC coating deposition system">
-          </div>
-          <div class="blog-card__body">
-            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_3">
-              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
-              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Oct 15, 2026</span>
-            </div>
-            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_3"><a href="blogs/dlc-vs-tac-coatings-friction-wear.html">DLC vs. ta-C Coatings: Selecting the Right Carbon Film for Friction &amp; Wear</a></h3>
-            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_3">Comparing PECVD hydrogenated DLC (a-C:H) with tetrahedral amorphous carbon (ta-C): sp3 bonding ratios, 60&ndash;80 GPa hardness, and automotive friction limits.</p>
-            <div class="blog-card__footer">
-              <a href="blogs/dlc-vs-tac-coatings-friction-wear.html" class="blog-card__btn">
-                <span data-cms="blog.blog-posts.btn_3">Read Article</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="blog-card" data-cms-card="blog.blog-posts.c1_4">
-          <div class="blog-card__media">
-            <img data-cms-src="blog.blog-posts.img_4" data-cms-alt="blog.blog-posts.img_4_alt" src="BMI-machine-photos/BMI-furnace-door-open-hot-zone.jpg" alt="Interior hot zone of BMI vacuum furnace with graphite insulation">
-          </div>
-          <div class="blog-card__body">
-            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_4">
-              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
-              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Sep 30, 2026</span>
-            </div>
-            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_4"><a href="blogs/low-pressure-carburizing-lpc-acetylene.html">Low-Pressure Carburizing (LPC) with Acetylene: Eliminating IGO in Gears</a></h3>
-            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_4">Why gear manufacturers are replacing atmospheric carburizing with vacuum LPC: 100% elimination of intergranular oxidation and uniform case depth.</p>
-            <div class="blog-card__footer">
-              <a href="blogs/low-pressure-carburizing-lpc-acetylene.html" class="blog-card__btn">
-                <span data-cms="blog.blog-posts.btn_4">Read Article</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 5 -->
-        <article class="blog-card" data-cms-card="blog.blog-posts.c1_5">
-          <div class="blog-card__media">
-            <img data-cms-src="blog.blog-posts.img_5" data-cms-alt="blog.blog-posts.img_5_alt" src="assets/catalog/2CRD-vacuum-chamber-interior.jpg" alt="Novatec 2CRD single chamber hermetic vacuum cleaning chamber">
-          </div>
-          <div class="blog-card__body">
-            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_5">
-              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
-              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Sep 14, 2026</span>
-            </div>
-            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_5"><a href="blogs/modified-alcohol-vs-hydrocarbon-solvents-2crd.html">Modified Alcohol vs Hydrocarbon Solvents: Closed-Loop Cleaning in the 2CRD</a></h3>
-            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_5">Technical comparison of modified alcohols and isoparaffins in hermetic vacuum degreasers: continuous vacuum distillation and zero VOC emissions.</p>
-            <div class="blog-card__footer">
-              <a href="blogs/modified-alcohol-vs-hydrocarbon-solvents-2crd.html" class="blog-card__btn">
-                <span data-cms="blog.blog-posts.btn_5">Read Article</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 6 -->
-        <article class="blog-card" data-cms-card="blog.blog-posts.c1_6">
-          <div class="blog-card__media">
-            <img data-cms-src="blog.blog-posts.img_6" data-cms-alt="blog.blog-posts.img_6_alt" src="Huasheng-machine-photos/Broach.jpg" alt="Coated precision cutting tool broach with advanced PVD layer">
-          </div>
-          <div class="blog-card__body">
-            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_6">
-              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
-              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Aug 22, 2026</span>
-            </div>
-            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_6"><a href="blogs/hipims-technology-cutting-tool-coatings.html">HiPIMS Technology in Cutting Tool Coatings: Density, Smoothness &amp; Adhesion</a></h3>
-            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_6">How High-Power Impulse Magnetron Sputtering eliminates macro-droplets while retaining arc-like film density for difficult aerospace superalloy machining.</p>
-            <div class="blog-card__footer">
-              <a href="blogs/hipims-technology-cutting-tool-coatings.html" class="blog-card__btn">
-                <span data-cms="blog.blog-posts.btn_6">Read Article</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 7 -->
-        <article class="blog-card" data-cms-card="blog.blog-posts.c1_7">
-          <div class="blog-card__media">
-            <img data-cms-src="blog.blog-posts.img_7" data-cms-alt="blog.blog-posts.img_7_alt" src="../blogs/Blog-img/industrial-equipment-supplier-india.png" alt="Industrial equipment supplier India providing advanced manufacturing machinery and industrial solutions">
-          </div>
-          <div class="blog-card__body">
-            <div class="blog-card__meta" data-cms="blog.blog-posts.span_cat_7">
-              <span class="meta-author"><svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Greets</span>
-              <span class="meta-date"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Nov 04, 2026</span>
-            </div>
-            <h3 class="blog-card__title" data-cms="blog.blog-posts.h3_7"><a href="blogs/industrial-equipment-supplier-india.html">Why Greets Equipment Is a Reliable Choice for Advanced Industrial Applications</a></h3>
-            <p class="blog-card__excerpt" data-cms="blog.blog-posts.p_7">Choosing the right industrial equipment for Indian manufacturers — heat treatment, precision cleaning, PVD/DLC coating, and expert technical support from Greets Equipment.</p>
-            <div class="blog-card__footer">
-              <a href="blogs/industrial-equipment-supplier-india.html" class="blog-card__btn">
-                <span data-cms="blog.blog-posts.btn_7">Read Article</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
+        </article>      </div>
     </div>
   </main>
 
@@ -943,7 +850,7 @@
           <a data-cms="global.footer.a_1" href="index.html#/bmi" style="color:var(--steel, #56636B); text-decoration:none;">BMI vacuum furnaces</a>
           <a data-cms="global.footer.a_2" href="index.html#/novatec" style="color:var(--steel, #56636B); text-decoration:none;">Novatec ultrasonic cleaning</a>
           <a data-cms="global.footer.a_3" href="index.html#/huasheng" style="color:var(--steel, #56636B); text-decoration:none;">Huasheng coating equipment</a>
-          <a href="blog.html" style="color:var(--lime, #02963C); text-decoration:none; font-weight:600;">Engineering Blog &amp; Insights</a>
+          <a href="blog.html" style="color:var(--lime, #02963C); text-decoration:none; font-weight:600;">Blog</a>
           <a data-cms-href="global.footer.link_5" data-cms="global.footer.a_4" href="privacy.html" style="color:var(--steel, #56636B); text-decoration:underline; font-size:0.88rem; margin-top:0.35rem;">Privacy Notice (DPDP)</a>
         </div>
 
@@ -1155,31 +1062,6 @@
             <a href="contact.html" class="hdr-cta" style="display:inline-block;">Consult Huasheng Team</a>
           </div>
           `
-      },
-      'industrial-equipment-supplier-india': {
-        title: 'Why Greets Equipment Is a Reliable Choice for Advanced Industrial Applications',
-        category: 'Industrial Equipment Supplier India',
-        date: 'November 04, 2026',
-        author: 'Greets Engineering Team',
-        image: '../blogs/Blog-img/industrial-equipment-supplier-india.png',
-        html: `
-          <p>India's manufacturing sector is evolving rapidly, with businesses increasingly investing in precision engineering, automation and specialised production technologies. Choosing the right machinery has become essential for maintaining product quality, improving operational efficiency and meeting demanding industrial standards. Greets Equipment supports Indian manufacturers by connecting them with specialised international equipment manufacturers and helping them identify suitable machinery for their production requirements.</p>
-
-          <h2>Understanding the Industrial Equipment Requirements of Indian Manufacturers</h2>
-          <p>Manufacturing processes vary considerably between industries. An automotive component manufacturer may require controlled heat treatment, while a cutting tool manufacturer may depend on specialised coating technology. Medical device manufacturers, meanwhile, need precise cleaning processes to meet demanding component cleanliness requirements.</p>
-
-          <h3>Growing Demand for Advanced Manufacturing Technologies in India</h3>
-          <p>Indian manufacturers are increasingly adopting specialised machinery to improve productivity and meet changing customer expectations.</p>
-
-          <h3>Why Do Precision and Process Consistency Matter?</h3>
-          <p>Precision is important because even small variations can affect the performance, durability and quality of manufactured components.</p>
-
-          <div class="modal-cta-box">
-            <h4>Contact Greets Equipment</h4>
-            <p>Discuss your industrial equipment requirements and explore suitable heat treatment, precision cleaning, and coating solutions.</p>
-            <a href="contact.html" class="hdr-cta" style="display:inline-block;">Contact Greets Equipment</a>
-          </div>
-        `
       }
     };
 
