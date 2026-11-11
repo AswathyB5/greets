@@ -192,6 +192,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* — Footer active link highlighting — */
+  const setFooterActiveLink = () => {
+    const currentPath = location.pathname.replace(/\/+$/, '') || '/';
+    const currentPage = currentPath.split('/').pop() || 'index.html';
+    const footerLinks = document.querySelectorAll('.footer a[href]');
+    footerLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href) return;
+      const linkPage = href.split('/').pop().split('#')[0].split('?')[0];
+      const isActive = linkPage === currentPage || (currentPage === 'index.html' && linkPage === 'index.html');
+      if (isActive) {
+        link.style.color = 'var(--lime, #02963C)';
+        link.style.fontWeight = '600';
+      } else {
+        link.style.color = 'var(--steel, #56636B)';
+        link.style.fontWeight = '';
+      }
+    });
+  };
+  setFooterActiveLink();
+
   /* — Smooth anchor scrolling (excluding mega buttons) — */
   document.querySelectorAll('a[href^="#"]:not([href^="#/"]):not(.mega-btn)').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
