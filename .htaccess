@@ -2,6 +2,11 @@
 RewriteEngine On
 RewriteBase /
 
+# 301 permanent redirect for all URLs containing /blogs/
+# Removes /blogs/ and preserves the remaining path, stripping .html if present
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+blogs/(.*?)(?:\.html)?[\s?] [NC]
+RewriteRule ^blogs/(.*)$ /%1/ [R=301,L]
+
 # 301 permanent redirects for old .html URLs
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html[\s?] [NC]
 RewriteRule ^index\.html$ / [R=301,L]
@@ -19,5 +24,10 @@ RewriteRule ^blog\.html$ /blog [R=301,L]
 RewriteRule ^privacy/?$ privacy.html [L]
 RewriteRule ^contact/?$ contact.html [L]
 RewriteRule ^blog/?$ blog.html [L]
+
+# Fallback internal rewrites for blog posts if accessed as /page-name or /page-name/
+RewriteRule ^medical-implant-cleaning-machine-india/?$ medical-implant-cleaning-machine-india/index.html [L]
+RewriteRule ^vacuum-heat-treatment-furnace-india/?$ vacuum-heat-treatment-furnace-india/index.html [L]
+RewriteRule ^pvd-coating-plant-india/?$ pvd-coating-plant-india/index.html [L]
 </IfModule>
 

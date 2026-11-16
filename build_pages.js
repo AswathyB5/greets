@@ -144,6 +144,7 @@ function getHeaderHtml(depth = 0) {
           aria-controls="mega-ind">Industries</a>
         <nav class="header__nav main" aria-label="Main">
           <a class="navlink" href="${root}index.html#why" data-spy="why">Why buy through Greets</a>
+          <a class="navlink" href="${root}blog.html" data-spy="blog">Blog</a>
           <a class="navlink" href="${root}contact.html" data-spy="contact">Contact</a>
         </nav>
       </div>
@@ -276,6 +277,7 @@ function getHeaderHtml(depth = 0) {
       </div>
     </div>
     <a href="${root}index.html#why">Why buy through Greets</a>
+    <a href="${root}blog.html">Blog</a>
     <a href="${root}contact.html">Contact</a>
     <a href="${root}contact.html" class="btn btn--primary">Talk to Greets</a>
   </nav>
@@ -313,9 +315,14 @@ function getFooterHtml(depth = 0) {
 
         <!-- Column 3: Contact & Location -->
         <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
-          <span style="color:var(--steel, #56636B); font-weight:500;">Shop No 23, 1st Floor, above Punjab National Bank, near BDA Complex, Sector 6, HSR Layout, Bengaluru 560102</span>
-<div style="font-size:0.86rem; color:var(--steel, #56636B); margin-top:0.25rem;">CIN: U46529KA2025PTC207124</div>
-<div style="font-size:0.86rem; color:var(--steel, #56636B);">GSTIN: 29AAMCG3022B1ZY</div>
+          <div style="color:var(--steel, #56636B); font-size:0.88rem; line-height:1.45;">
+            <strong>Registered Office:</strong> 2, 111, 11th Cross, Vinayak Nagar, Annasandra Palya, Vimanapura, Bangalore North, Bangalore 560017, Karnataka
+          </div>
+          <div style="color:var(--steel, #56636B); font-size:0.88rem; line-height:1.45;">
+            <strong>Corporate Office:</strong> Shop No 23, 1st Floor, above Punjab National Bank, near BDA Complex, Sector 6, HSR Layout, Bengaluru 560102
+          </div>
+          <div style="font-size:0.86rem; color:var(--steel, #56636B); margin-top:0.15rem;">CIN: U46529KA2025PTC207124</div>
+          <div style="font-size:0.86rem; color:var(--steel, #56636B);">GSTIN: 29AAMCG3022B1ZY</div>
           <div
             style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.86rem; color:var(--steel, #56636B);">
             <div>Mr. Pramod Kanse: <a href="tel:+919823386558"
@@ -363,7 +370,11 @@ function getCrumbsHtml(parts, root) {
 
 const sitemapUrls = [
   { loc: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
-  { loc: `${SITE_URL}/contact.html`, priority: '0.8', changefreq: 'monthly' }
+  { loc: `${SITE_URL}/contact.html`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${SITE_URL}/blog.html`, priority: '0.8', changefreq: 'weekly' },
+  { loc: `${SITE_URL}/medical-implant-cleaning-machine-india/`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${SITE_URL}/vacuum-heat-treatment-furnace-india/`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${SITE_URL}/pvd-coating-plant-india/`, priority: '0.8', changefreq: 'monthly' }
 ];
 
 // 1. Generate Brand Pages

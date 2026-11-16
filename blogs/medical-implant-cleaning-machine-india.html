@@ -497,6 +497,24 @@
       text-align: left;
     }
 
+    .article-body h2.sub-stage {
+      font-size: 1.15rem;
+      color: #000000;
+      border-bottom: none;
+    }
+
+    .article-body h2.sub-stage a {
+      color: #02963C;
+      text-decoration: underline;
+      text-decoration-color: #02963C;
+      text-underline-offset: 3px;
+    }
+
+    .article-body h2.sub-stage a:hover {
+      color: #016A2A;
+      text-decoration-color: #016A2A;
+    }
+
     .article-body p {
       margin: 0 0 1.35rem;
       color: var(--ink);
@@ -522,7 +540,17 @@
     }
 
     .article-body ol li::marker {
-      color: var(--lime);
+      color: #000000;
+    }
+
+    .article-body ul,
+    .article-body ol {
+      margin-bottom: 1.75rem;
+    }
+
+    .article-body ul + p,
+    .article-body ol + p {
+      margin-top: 1.75rem;
     }
 
     .article-callout {
@@ -775,7 +803,7 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
       padding: 2rem 1.5rem;
       z-index: 100;
-      display: none;
+      display: block;
     }
 
     .mega.open {
@@ -1104,35 +1132,35 @@
 
         <p>Everything below is one of those two platforms configured for a particular job, rather than a separate machine. Few plants need all of it. Some of these routes do not combine on the same part. A porous plasma-sprayed surface is a poor candidate for either electropolishing or penetrant inspection, since one attacks the coating and the other leaves penetrant trapped in the pores. Settle this per part family at specification stage: a plant making both coated and uncoated implants is usually specifying two routes, not one.</p>
 
-        <h2>In-Process Cleaning</h2>
+        <h2 class="sub-stage">In-Process Cleaning</h2>
         <p>Cleaning between manufacturing steps, not only at the end. A residue left on a part before the next operation can be smeared over and folded into the surface by a later cutting or polishing pass, or <a href="https://www.greetsequipment.com/huasheng/pvd/">sealed beneath a coating</a>, and at that point no final cleaning stage will recover it.</p>
 
         <p>Novatec supply <a href="https://www.greetsequipment.com/novatec/ipc-in-process-cleaning/">in-process cleaning</a> either as a single-chamber 2CRD or as an in-line PLURITANK, depending on where it sits in the production flow and how many parts have to pass through it.</p>
 
-        <h2>Vacuum Precision Cleaning</h2>
+        <h2 class="sub-stage">Vacuum Precision Cleaning</h2>
         <p>The 2CRD is built for the geometries that defeat immersion alone: blind and tapped holes, porous coated surfaces, and removing polishing pastes and oils from complex shapes. Because cleaning, rinsing and drying happen in one chamber, parts are not transferred wet between stations.</p>
 
         <p>It is built in a range of chamber sizes, from 300 x 400 x 300 mm on the <a href="https://www.greetsequipment.com/novatec/2crd/">2CRD-100</a> up to 600 x 1050 x 630 mm on the <a href="https://www.greetsequipment.com/novatec/2crd/">2CRD-800</a>, with a larger 2CRD1700 built to order at 800 x 1200 x 820 mm and 1000 kg. The 100, 200, 400 and 800 sizes are available static or, as the -ROT versions, with rotation and tilting, which matters for parts that would otherwise hold liquid in a pocket.</p>
 
-        <h2>Spray Cleaning</h2>
+        <h2 class="sub-stage">Spray Cleaning</h2>
         <p>Where the parts do not need immersion, Novatec also build a <a href="https://www.greetsequipment.com/novatec/medical-implants/">spray cleaning system</a> with an unload air lock into the <a href="https://www.greetsequipment.com/novatec/cleanroom-cleaning-line/">cleanroom</a>. It appears on combined medical lines as the PFC configuration, usually alongside immersion stages rather than instead of them.</p>
 
-        <h2>Electropolishing</h2>
+        <h2 class="sub-stage">Electropolishing</h2>
         <p>An <a href="https://www.greetsequipment.com/novatec/electropolishing-line-ep/">electropolishing line</a> is built on the PLURITANK platform, adding an electropolish tank plus neutralisation and recovery rinsing stages. Novatec list it for stainless steel and titanium implants.</p>
 
         <p>Keeping it on the same platform as the cleaning line has a practical payoff: one control system, one basket format, and parts that move from cleaning to electropolishing to final rinse without being rehandled between separate machines.</p>
 
-        <h2>Final Cleaning and Passivation</h2>
+        <h2 class="sub-stage">Final Cleaning and Passivation</h2>
         <p>The last cleaning stage before packing and sterilisation removes dust and handling residues picked up during manufacturing and inspection. Novatec build this as <a href="https://www.greetsequipment.com/novatec/fcs-fcps-final-cleaning-and-passivation/">final cleaning, or as combined final cleaning and passivation</a>, with an unload air lock that discharges directly into the cleanroom.</p>
 
         <p>The air lock is the detail to settle early, because it determines how the line meets the cleanroom wall, and that is an architectural question as much as an equipment one.</p>
 
-        <h2>Fluorescent Penetrant Inspection</h2>
+        <h2 class="sub-stage"><a href="https://www.greetsequipment.com/novatec/fpi-fluorescent-penetrant-inspection-line/">Fluorescent Penetrant Inspection</a></h2>
         <p>FPI reveals flaws that break the surface: cracks, laps and fatigue indications. It will not find anything that does not reach the surface, so it sits alongside other methods rather than replacing them.</p>
 
         <p>Novatec build the processing side as one automated line on the PLURITANK platform, combining the ultrasonic pre-cleaning, the surface preparation and the penetrant, emulsifier and developer stages. Reading the indications under UV-A remains a separate inspection task. Parts also have to be cleaned again afterwards, because penetrant and developer are themselves residues, so FPI sits in the middle of the cleaning sequence and not at the end of it.</p>
 
-        <h2>Quality Verification and Basket Return</h2>
+        <h2 class="sub-stage">Quality Verification and Basket Return</h2>
         <p>On a <a href="https://www.greetsequipment.com/novatec/combined-turnkey-implant-lines/">full automatic line</a>, <a href="https://www.greetsequipment.com/novatec/qvs-brc-quality-verification-basket-return-conveyor/">quality verification stations and a basket return air lock conveyor</a> link the sections together. These are the modules that turn a set of process stages into a line that runs without an operator carrying baskets between them.</p>
 
         <h2>How a Complete Line Is Put Together</h2>
@@ -1230,8 +1258,13 @@
         </div>
 
         <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.92rem;">
-          <span style="color:var(--steel); font-weight:500;">Shop No 23, 1st Floor, above Punjab National Bank, near BDA Complex, Sector 6, HSR Layout, Bengaluru 560102</span>
-          <div style="font-size:0.86rem; color:var(--steel); margin-top:0.25rem;">CIN: U46529KA2025PTC207124</div>
+          <div style="color:var(--steel); font-size:0.88rem; line-height:1.45;">
+            <strong>Registered Office:</strong> 2, 111, 11th Cross, Vinayak Nagar, Annasandra Palya, Vimanapura, Bangalore North, Bangalore 560017, Karnataka
+          </div>
+          <div style="color:var(--steel); font-size:0.88rem; line-height:1.45;">
+            <strong>Corporate Office:</strong> Shop No 23, 1st Floor, above Punjab National Bank, near BDA Complex, Sector 6, HSR Layout, Bengaluru 560102
+          </div>
+          <div style="font-size:0.86rem; color:var(--steel); margin-top:0.15rem;">CIN: U46529KA2025PTC207124</div>
           <div style="font-size:0.86rem; color:var(--steel);">GSTIN: 29AAMCG3022B1ZY</div>
           <div style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.86rem; color:var(--steel);">
             <div>Mr. Pramod Kanse: <a href="tel:+919823386558" style="color:inherit; text-decoration:none; font-weight:600;">+91 98233 86558</a></div>

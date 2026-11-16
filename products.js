@@ -2062,6 +2062,7 @@
           "family": "2CRD",
           "photo": "nov_2crd",
           "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
+          "seo_title": "2CRD single-chamber vacuum cleaning - Novatec | Greets Equipment India",
           "name": "2CRD Series Single-chamber precision cleaning under vacuum",
           "sub": "8 standard variants (static & -ROT), custom to 2CRD1700",
           "desc": "One-chamber system for precision cleaning under vacuum. Cleaning, rinsing and drying all happen in a single chamber, fed from three filtered buffer tanks. Available static, or with rotation and tilting.",
