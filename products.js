@@ -2062,7 +2062,7 @@
           "family": "2CRD",
           "photo": "nov_2crd",
           "photoAlt": "Novatec 2CRD single-chamber precision cleaning system",
-          "seo_title": "2CRD Series Range – Novatec Vacuum Cleaning Machines | Greets Equipment India",
+          "seo_title": "2CRD single-chamber vacuum cleaning - Novatec | Greets Equipment India",
           "seo_desc": "Overview of the Novatec 2CRD series: single-chamber vacuum cleaning machines in static and rotating variants, custom up to 2CRD1700. Authorised dealer in India.",
           "name": "2CRD Series Single-chamber precision cleaning under vacuum",
           "sub": "8 standard variants (static & -ROT), custom to 2CRD1700",

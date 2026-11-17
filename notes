@@ -70,3 +70,31 @@ Fix (the "differentiate" option):
 WARNING: do not re-run build_pages.js yet - it rewrites sitemap.xml without the blog pages.
 
 CORRECTION: build_pages.js already lists the blog pages in the sitemap, so re-running it is safe. Only /blog.html -> /blog was changed there.
+
+------------------------------------------------------------------
+2026-11-17 - Mobile check + touch-target pass (styles.css, end of file)
+------------------------------------------------------------------
+Method: opened all pages in headless Chrome at phone widths and measured overflow, tap
+targets and table behaviour. Found small tap targets (menu button 28x20px, breadcrumb and
+footer links ~19px tall) -> added one @media (max-width:768px) block at the end of
+styles.css: 48px menu hit area (needs !important because some pages carry an inline copy
+of that CSS), 40-44px min-height for crumbs/back/footer links, lighter hero accent word.
+
+BUG on machine pages (e.g. /novatec/pluritank-ultrasonic-cleaning-line/): content cut off on
+the right on phones. Cause: mobile grid used "grid-template-columns: 1fr" (= minmax(auto,1fr)),
+so the column grew to its widest content (the process table, ~488px). Sideways overflow is
+hidden on this site, so it was clipped, not scrollable. Fix: minmax(0,1fr) on .mlayout plus
+min-width:0 on .mleft/.mright/.mcols/.mcol-card.
+
+TABLES: "spec" tables fit. Wide "model" tables (up to 16 columns) scroll inside
+.m-models-table-wrap; added a "Swipe sideways" hint (main.js, only when overflowing), a faded
+right edge and a sticky first column.
+"Version / Notes" column: the green pill (.pill-orientation) was squeezed in the narrow column,
+so text like "Rotation and tilting" spilled out of it. On phones the pill now wraps its text,
+has softer corners, and the notes column gets min-width 104px (td:nth-last-child(2)).
+
+FOOTER (224 pages + build_pages.js): bold "Contact" heading above the phone numbers and a plain
+"Email:" label before the email address.
+
+/novatec/2crd/ title set back to "2CRD single-chamber vacuum cleaning - Novatec | Greets
+Equipment India" (HTML + products.js); its description keeps the new category wording.

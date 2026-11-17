@@ -847,3 +847,24 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
 
 });
+
+/* Wide tables on phones: flag the scroll box and show a "swipe" hint above it */
+(function () {
+  function update() {
+    document.querySelectorAll('.m-models-table-wrap').forEach(function (wrap) {
+      var scrollable = wrap.scrollWidth > wrap.clientWidth + 2;
+      wrap.classList.toggle('is-scrollable', scrollable);
+      var prev = wrap.previousElementSibling;
+      var hint = prev && prev.classList.contains('table-swipe-hint') ? prev : null;
+      if (scrollable && !hint) {
+        hint = document.createElement('p');
+        hint.className = 'table-swipe-hint';
+        hint.textContent = 'Swipe sideways to see all columns \u2192';
+        wrap.parentNode.insertBefore(hint, wrap);
+      }
+      if (hint) hint.hidden = !scrollable;
+    });
+  }
+  window.addEventListener('load', update);
+  window.addEventListener('resize', update);
+})();

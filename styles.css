@@ -8647,3 +8647,138 @@ body:has(#contact) footer.footer {
 }
 .mphoto figcaption { margin-top: 8px; font-size: 0.85rem; color: var(--steel); text-align: center; }
 .mphoto figcaption:empty { display: none; }
+
+/* ============================================================
+   Mobile usability pass (touch targets, hero contrast)
+   Touch targets: about 44px tall, per common mobile guidance.
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Bigger hit area for the menu button; the 3 bars stay 28 x 20px */
+  .header__hamburger {
+    box-sizing: border-box !important;
+    width: 48px !important;
+    height: 48px !important;
+    padding: 14px 10px !important;
+    margin-right: -10px;
+  }
+
+  /* Back button, mobile menu rows */
+  .backbtn,
+  .mobile-all-products-link,
+  .mobile-nav-toggle {
+    min-height: 44px;
+  }
+
+  /* Breadcrumb and back links */
+  .crumbs a,
+  .crumb-back,
+  .crumb-home {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  /* Footer links and policy links */
+  .footer__col a,
+  .footer__bottom a {
+    display: inline-block;
+    padding: 10px 0;
+  }
+
+  /* Card call-to-action links (e.g. "Read Article") */
+  .card a[class*="link"],
+  .blog-card a,
+  .machine-item-card {
+    min-height: 44px;
+  }
+
+  /* Green gradient word in the hero is hard to read on the dark photo */
+  .hero h1 .text-gradient-green {
+    background: none;
+    -webkit-text-fill-color: #8df5b8;
+    color: #8df5b8;
+  }
+
+  /* Keep the back-to-top button clear of the footer text */
+  body { padding-bottom: 8px; }
+}
+
+/* Stop wide content (tables, nowrap chips) from stretching the page column
+   beyond the screen: a plain "1fr" grid track can grow to its content width. */
+@media (max-width: 860px) {
+  .mlayout {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .mleft,
+  .mright,
+  .mcols,
+  .mcol-card {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ---- Wide model tables on phones: make the sideways scroll obvious ---- */
+.table-swipe-hint { display: none; }
+@media (max-width: 768px) {
+  .table-swipe-hint {
+    display: block;
+    margin: 0 0 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--lime, #02963C);
+  }
+  .m-models-table-wrap.is-scrollable {
+    position: relative;
+    border: 1px solid #E1E7DE;
+    border-radius: 10px;
+    /* soft fade on the right edge while there is more to scroll */
+    background:
+      linear-gradient(to right, #fff 30%, rgba(255,255,255,0)) left center / 28px 100% no-repeat local,
+      linear-gradient(to left,  #fff 30%, rgba(255,255,255,0)) right center / 28px 100% no-repeat local,
+      linear-gradient(to right, rgba(0,0,0,.14), rgba(0,0,0,0)) left center / 10px 100% no-repeat scroll,
+      linear-gradient(to left,  rgba(0,0,0,.14), rgba(0,0,0,0)) right center / 10px 100% no-repeat scroll;
+  }
+  /* Keep the model name visible while scrolling across the other columns */
+  .m-models-table-wrap.is-scrollable thead th:first-child,
+  .m-models-table-wrap.is-scrollable tbody td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 1px 0 0 #E1E7DE;
+  }
+  .m-models-table-wrap.is-scrollable thead th:first-child { background: #F4F7F2; }
+  .m-models-table-wrap.is-scrollable tbody tr:nth-child(even) td:first-child { background: #FBFDFB; }
+}
+
+/* Hero accent word: readable on the dark photo (beats the page's own .hero--light rule) */
+@media (max-width: 768px) {
+  html body .hero h1 .text-gradient-green,
+  html body .hero--light h1 .text-gradient-green {
+    background: none !important;
+    -webkit-text-fill-color: #8df5b8 !important;
+    color: #8df5b8 !important;
+  }
+}
+
+/* "Version / Notes" pills in the model tables: on phones the narrow column squeezed the
+   pill, so its text ("Rotation and tilting") spilled outside the green shape. Give the
+   pill a minimum width, let the text wrap inside it, and use softer corners. */
+@media (max-width: 768px) {
+  .m-models-table .pill-orientation {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0.28rem 0.65rem;
+    border-radius: 12px;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+  }
+  /* Notes column (second from last, before the Action button) gets room for 2-3 words */
+  .m-models-table td:nth-last-child(2) .pill-orientation {
+    min-width: 104px;
+  }
+}
