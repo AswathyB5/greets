@@ -319,7 +319,7 @@ function getFooterHtml(depth = 0) {
             <strong>Registered Office:</strong> 2, 111, 11th Cross, Vinayak Nagar, Annasandra Palya, Vimanapura, Bangalore North, Bangalore 560017, Karnataka
           </div>
           <div style="color:var(--steel, #56636B); font-size:0.88rem; line-height:1.45;">
-            <strong>Corporate Office:</strong> Shop No 23, 1st Floor, above Punjab National Bank, near BDA Complex, Sector 6, HSR Layout, Bengaluru 560102
+            <strong>Corporate Office:</strong> No.56, 1st Floor, 12th Main Road, Sector 6, HSR Layout, Bangalore - 560102 (Above Punjab National Bank)
           </div>
           <div style="font-size:0.86rem; color:var(--steel, #56636B); margin-top:0.15rem;">CIN: U46529KA2025PTC207124</div>
           <div style="font-size:0.86rem; color:var(--steel, #56636B);">GSTIN: 29AAMCG3022B1ZY</div>
@@ -371,7 +371,7 @@ function getCrumbsHtml(parts, root) {
 const sitemapUrls = [
   { loc: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
   { loc: `${SITE_URL}/contact.html`, priority: '0.8', changefreq: 'monthly' },
-  { loc: `${SITE_URL}/blog.html`, priority: '0.8', changefreq: 'weekly' },
+  { loc: `${SITE_URL}/blog`, priority: '0.8', changefreq: 'weekly' },
   { loc: `${SITE_URL}/medical-implant-cleaning-machine-india/`, priority: '0.8', changefreq: 'monthly' },
   { loc: `${SITE_URL}/vacuum-heat-treatment-furnace-india/`, priority: '0.8', changefreq: 'monthly' },
   { loc: `${SITE_URL}/pvd-coating-plant-india/`, priority: '0.8', changefreq: 'monthly' }

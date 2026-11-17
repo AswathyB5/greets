@@ -2,6 +2,10 @@
 RewriteEngine On
 RewriteBase /
 
+# 301 redirect non-www to www
+RewriteCond %{HTTP_HOST} ^greetsequipment\.com$ [NC]
+RewriteRule ^(.*)$ https://www.greetsequipment.com/$1 [R=301,L]
+
 # 301 permanent redirect for all URLs containing /blogs/
 # Removes /blogs/ and preserves the remaining path, stripping .html if present
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+blogs/(.*?)(?:\.html)?[\s?] [NC]

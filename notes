@@ -1,0 +1,72 @@
+
+==================================================================
+2026-11-17 - SEO fixes from the client's checklist
+==================================================================
+
+WHAT WAS ASKED
+The client sent 7 points. I first checked which were real, then fixed these:
+
+1) Breadcrumb 404  (6 files)
+   Files: blogs/<slug>.html and <slug>/index.html for the 3 blog articles.
+   Breadcrumb = the small "Home > Blog > Article" trail. It is also written as
+   JSON-LD (structured data that Google reads). One item pointed to /insights/,
+   a page that does not exist. Changed it to https://www.greetsequipment.com/blog
+   (/blog, not /blog.html, because .htaccess redirects blog.html -> /blog).
+
+2) Office address  (224 tracked files, incl. build_pages.js)
+   Old: "Shop No 23, 1st Floor, above Punjab National Bank, near BDA Complex, ..."
+   New: "No.56, 1st Floor, 12th Main Road, Sector 6, HSR Layout, Bangalore - 560102 (Above Punjab National Bank)"
+   The address lives in 3 shapes:
+     a) plain text in the footer / contact page  -> replaced with the new line
+     b) text split over two lines (blog footers)  -> regex with \s+ matches any whitespace
+     c) JSON-LD "streetAddress" (street only; city and postcode are separate fields)
+        -> street = "No.56, ..., HSR Layout (Above Punjab National Bank)", and
+           addressLocality changed Bengaluru -> Bangalore to match.
+   build_pages.js was changed too, otherwise regenerating pages would bring the old
+   address back. I left admin-server/backups/ alone (old CMS snapshots).
+
+3) Duplicate product pages  (2 files + sitemap)
+   Two URLs for one product each said "I am the original" (self canonical).
+   Chosen main pages: /novatec/2crd/ and /huasheng/ltmc/.
+   The long-URL twins now have <link rel="canonical"> and og:url pointing at the
+   main page, which tells Google "index the other one, not me". Also removed the
+   two long URLs from sitemap.xml (a sitemap should list only canonical pages).
+
+4) non-www -> www redirect  (.htaccess)
+   RewriteCond %{HTTP_HOST} ^greetsequipment\.com$ [NC]   <- only when host has no www
+   RewriteRule ^(.*)$ https://www.greetsequipment.com/$1 [R=301,L]  <- send to www, keep path
+   R=301 = permanent redirect; L = stop processing rules. It sits first so it
+   runs before the other rules. Needs testing on the live server.
+
+5) sitemap.xml: /blog.html -> /blog (same reason as the breadcrumb).
+
+NOT CHANGED (already fine / not code)
+  - Blog canonical + JSON-LD url: already correct (/<slug>/).
+  - Blog URLs in sitemap: already present.
+  - Point 7 (Web3Forms / hosting / domain ownership): an admin task, not code.
+
+HOW TO VERIFY
+  git grep -E "Shop No 23|BDA Complex"        -> nothing (except backups)
+  curl -I http://greetsequipment.com/         -> 301 to https://www.greetsequipment.com/
+
+------------------------------------------------------------------
+2026-11-17 (later) - Correction: duplicate product pages
+------------------------------------------------------------------
+I had pointed the long product pages' canonical at /novatec/2crd/ and /huasheng/ltmc/.
+That was wrong. Reading build_pages.js showed how the site is built:
+  - /novatec/2crd/  and /huasheng/ltmc/  = CATEGORY pages (a listing with one product card)
+  - /novatec/2crd-series-.../ and /huasheng/ltmc-low-.../ = MACHINE pages (full specs)
+A canonical says "this other URL is the real one". Pointing the full product page at a thin
+listing page would make Google index the listing and drop the product page.
+Fix (the "differentiate" option):
+  - Reverted canonical + og:url on the two machine pages (each canonical to itself again).
+  - Restored their 2 entries in sitemap.xml (now 82 URLs).
+  - Gave the category pages their own titles, so the pair no longer looks the same:
+      2CRD: "2CRD Series Range – Novatec Vacuum Cleaning Machines | Greets Equipment India"
+      LTMC: "LTMC Coating Equipment Range – Huasheng | Greets Equipment India"
+    plus a new description for the 2CRD category (the machine page already had its own).
+  - Same wording put in products.js ("seo_title"/"seo_desc" on the category) because
+    build_pages.js reads titles from there; otherwise a re-run would undo the HTML edit.
+WARNING: do not re-run build_pages.js yet - it rewrites sitemap.xml without the blog pages.
+
+CORRECTION: build_pages.js already lists the blog pages in the sitemap, so re-running it is safe. Only /blog.html -> /blog was changed there.
