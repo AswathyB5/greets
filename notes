@@ -98,3 +98,5 @@ FOOTER (224 pages + build_pages.js): bold "Contact" heading above the phone numb
 
 /novatec/2crd/ title set back to "2CRD single-chamber vacuum cleaning - Novatec | Greets
 Equipment India" (HTML + products.js); its description keeps the new category wording.
+
+2026-11-17: Footer CIN: and GSTIN: labels made bold (<strong>) on all pages + build_pages.js, matching Registered/Corporate Office labels.
