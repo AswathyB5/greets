@@ -750,15 +750,6 @@ CATALOG.forEach(b => {
         "brand": {
           "@type": "Brand",
           "name": b.full || b.name
-        },
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "INR",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Greets Equipment Pvt. Ltd."
-          }
         }
       };
 

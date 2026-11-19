@@ -12,11 +12,19 @@ RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+blogs/(.*?)(?:\.html)?[\s?] [NC]
 RewriteRule ^blogs/(.*)$ /%1/ [R=301,L]
 
 # 301 permanent redirects for old .html URLs
+# 301 redirect home page URLs carrying a query string (index.html?ind=dies etc.) to the clean home page
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^index\.html$ /? [R=301,L]
+
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html[\s?] [NC]
 RewriteRule ^index\.html$ / [R=301,L]
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+privacy\.html[\s?] [NC]
 RewriteRule ^privacy\.html$ /privacy [R=301,L]
+
+# 301 redirect every contact URL carrying a query string (?page=...&category=...&brand=...) to the clean /contact page
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^contact(\.html)?/?$ /contact? [R=301,L]
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+contact\.html[\s?] [NC]
 RewriteRule ^contact\.html$ /contact [R=301,L]

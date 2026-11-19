@@ -100,3 +100,55 @@ FOOTER (224 pages + build_pages.js): bold "Contact" heading above the phone numb
 Equipment India" (HTML + products.js); its description keeps the new category wording.
 
 2026-11-17: Footer CIN: and GSTIN: labels made bold (<strong>) on all pages + build_pages.js, matching Registered/Corporate Office labels.
+
+------------------------------------------------------------------
+2026-11-19 - Redirect all contact.html?page=... URLs to /contact (.htaccess)
+------------------------------------------------------------------
+Problem: product pages link to contact.html?page=<product>&category=...&brand=..., so Google
+sees hundreds of duplicate "contact" URLs.
+
+Fix (added to .htaccess, ABOVE the existing contact.html rule - Apache runs rules top to bottom):
+  RewriteCond %{QUERY_STRING} .
+      -> "only continue if the URL has a query string (at least one character after ?)".
+  RewriteRule ^contact(\.html)?/?$ /contact? [R=301,L]
+      -> matches contact, contact.html, contact/ ; sends a 301 (permanent) to /contact.
+         The "?" at the end of the target tells Apache to DROP the old query string
+         (normally Apache keeps it). R=301 = permanent redirect, L = last rule.
+No loop: after the redirect /contact has no query string, so the condition fails.
+
+TRADE-OFF: main.js (~line 308) reads ?page=/category=/brand= to pre-fill the enquiry form and
+tag which product a lead came from. After this redirect that info is lost for visitors who
+click "Enquire" on a product page. Alternative that keeps it: leave links alone and add
+<link rel="canonical" href="https://www.greetsequipment.com/contact"> to contact.html.
+Test after deploy: curl -I "https://www.greetsequipment.com/contact.html?page=x&brand=y"
+should show 301 and Location: /contact.
+
+------------------------------------------------------------------
+2026-11-19 - Redirect index.html?ind=... URLs to the home page (.htaccess)
+------------------------------------------------------------------
+Same idea as the contact rule. Added above the existing index.html rule:
+  RewriteCond %{QUERY_STRING} .      -> only when the URL has a query string
+  RewriteRule ^index\.html$ /? [R=301,L]  -> permanent redirect to "/", trailing ? drops the query.
+(The old rule below it only redirects index.html with NO query string; it can't match these
+because Apache keeps the query on its target - that is why a separate rule was needed.)
+TRADE-OFF: products.js (checkUrlInd, ~line 6406) reads ?ind= to pre-select the industry filter
+when someone clicks an industry link in the footer from another page. After the redirect they
+land on the plain home page with no filter chosen (the #finder fragment still scrolls them to
+the finder). Alternative: canonical tag on index.html pointing to https://www.greetsequipment.com/.
+Test: curl -I "https://www.greetsequipment.com/index.html?ind=dies" -> 301, Location: /
+
+------------------------------------------------------------------
+2026-11-19 - Fix Search Console "price required for Offer" (Product snippet / Merchant listing)
+------------------------------------------------------------------
+Cause: every machine page's Product JSON-LD had an "offers": {"@type":"Offer","priceCurrency":"INR",
+"availability":...,"seller":...} block but NO price. Google says an Offer must have a price, so
+it flagged each page twice (Product snippet + Merchant listing).
+The site is quotation-based (no prices), and Google's advice is to remove incomplete Offer markup
+rather than invent a price. So:
+ 1. build_pages.js (the generator, productSchema ~line 754): removed the "offers" property.
+ 2. All 194 generated machine pages: removed the identical ,"offers":{...} text from the
+    JSON-LD by a one-off find-and-replace script (JSON stays valid; Product keeps name,
+    description, image, brand).
+After deploy: in Search Console open each issue and click "Validate fix"; it takes days/weeks.
+Products without offers are still valid for normal rich results, just not Merchant listings
+(which need a price anyway).
