@@ -880,6 +880,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var wrap = document.createElement('div');
     wrap.className = 'gsel';
+    wrap.setAttribute('data-for', select.id);
     wrap.innerHTML = '<button type="button" class="gsel__btn" aria-haspopup="listbox" aria-expanded="false"><span class="gsel__label"></span></button>' +
       '<div class="gsel__panel" role="listbox" hidden></div>';
     select.parentNode.insertBefore(wrap, select.nextSibling);
@@ -892,13 +893,15 @@ document.addEventListener('DOMContentLoaded', () => {
     function sync() {
       var opt = select.options[select.selectedIndex];
       label.textContent = opt ? opt.text : '';
+      wrap.classList.toggle('is-all', !select.value); // "All categories" is shown in bold
       panel.querySelectorAll('.gsel__opt').forEach(function (o) { o.setAttribute('aria-selected', o.getAttribute('data-value') === select.value ? 'true' : 'false'); });
     }
 
     function build() {
       var html = '';
       var option = function (o, nested) {
-        return '<button type="button" class="gsel__opt' + (nested ? ' is-nested' : '') + '" role="option" data-value="' + esc(o.value) + '">' + esc(o.text) + '</button>';
+        var text = o.value === '' ? '<span class="gsel__heading">' + esc(o.text) + '</span>' : esc(o.text);
+        return '<button type="button" class="gsel__opt' + (nested ? ' is-nested' : '') + '" role="option" data-value="' + esc(o.value) + '">' + text + '</button>';
       };
       Array.prototype.forEach.call(select.children, function (child) {
         if (child.tagName === 'OPTGROUP') {
@@ -916,7 +919,15 @@ document.addEventListener('DOMContentLoaded', () => {
       panel.hidden = !state;
       btn.setAttribute('aria-expanded', state ? 'true' : 'false');
       wrap.classList.toggle('is-open', state);
-      if (state) { sync(); var cur = panel.querySelector('[aria-selected="true"]'); if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: 'nearest' }); }
+      if (state) {
+        sync();
+        var cur = panel.querySelector('[aria-selected="true"]');
+        if (cur && panel.scrollTo) panel.scrollTop = Math.max(0, cur.offsetTop - panel.clientHeight / 2); // show the chosen line inside the list
+        // make the whole list visible: scroll the page if the list would run below the screen (or under the header)
+        var r = panel.getBoundingClientRect();
+        var over = r.bottom - (window.innerHeight - 16);
+        if (over > 0) window.scrollBy({ top: over, behavior: 'smooth' });
+      }
     }
 
     btn.addEventListener('click', function () { open(panel.hidden); });
@@ -944,6 +955,6 @@ document.addEventListener('DOMContentLoaded', () => {
     build();
   }
 
-  function start() { enhance(document.getElementById('f-cat')); }
+  function start() { enhance(document.getElementById('f-ind')); enhance(document.getElementById('f-cat')); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

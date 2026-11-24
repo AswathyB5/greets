@@ -215,3 +215,21 @@ Tested in a browser with the in-memory stand-in: heading, colour, link, link col
 2026-11-24: Position pills (first column of the model/process tables: C, 1..9, 8 - 9, 10 - 14, S) now have the same width and centred text, so they align in one column (styles.css, end).
 
 2026-11-24: Find a system > Category on phones: the brand names (BMI, Novatec, Huasheng) are bold. A phone cannot style the <optgroup> labels of a native <select>, so main.js draws a grouped dropdown on screens <= 768px (button + panel: bold brand heading, then its categories). The real #f-cat select stays in the page (hidden on phones), so products.js finder logic is unchanged; the label stays in sync via a value setter + MutationObserver. CSS: .gsel* at the end of styles.css. Desktop keeps the native select.
+
+2026-11-24: Find a system > "All categories" is bold on every screen: closed select while nothing is chosen (CSS :has(option[value=""]:checked)), the first option of the opened list, and on phones the .gsel button label (class is-all set by main.js) and first line. Once a category is chosen the text goes back to normal weight. "All industries" was not asked for and is unchanged.
+
+2026-11-24: "All industries" and "All categories" (the no-filter choice) are now bold AND green (#02963C) on every screen. main.js draws the phone dropdown (.gsel) for both #f-ind and #f-cat, so the opened list on phones can be styled too; both menus are now the same width on phones. Once something is chosen the text goes back to normal (dark, regular).
+
+2026-11-24: Find a system > "All industries" is bold too (same CSS idea as "All categories": select#f-ind:has(option[value=""]:checked), styles.css end). Normal weight again once an industry is chosen.
+
+2026-11-24: "All industries" / "All categories" are no longer green: bold dark text (#1B2328) on a light grey (#ECEFEC) background, as the list heading, on all screens (closed box + first line of the opened list; phone Category menu .gsel too). styles.css end.
+
+2026-11-24 (later): "All industries" / "All categories": light grey only behind the words (not the whole box or row), bold dark text, all screens. A native <select> cannot style just its text, so main.js now draws BOTH Find-a-system menus (Industry and Category) with the page own dropdown (.gsel) on every screen size; the real selects stay hidden in the page so products.js works unchanged. .gsel styles moved out of the phone-only block in styles.css. Tested: pick industry (57 -> 16 results), reset, no JS errors.
+
+2026-11-24 (final for this item): the grey tag was removed. "All industries" / "All categories" are bold with a thin divider line under them, separating the heading from the options below (styles.css end). Same on desktop and phone.
+
+2026-11-24: Find a system dropdowns: only ONE divider line under the "All industries"/"All categories" heading (the first brand group no longer adds a second top line) and the heading text is centred in the opened list. styles.css end.
+
+2026-11-24: Find a system dropdowns hidden under the results card / cut at the bottom: .finder is now a stacking layer (z-index 30) and the open .gsel is z-index 40, so the list sits in front of the results card and the brand sections; panel max-height min(60vh,440px); on open, main.js scrolls the page if the list would run below the screen. Tested: last item clickable for both menus on phone and desktop even when the button is near the bottom of the screen.
+
+2026-11-24: "All industries"/"All categories" text size: closed box 0.9rem, list heading 0.93rem (other lines 0.84-0.86rem) - only slightly larger than before.
