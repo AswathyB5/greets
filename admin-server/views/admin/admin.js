@@ -36,6 +36,7 @@
     { key: 'dashboard', label: 'Dashboard', href: '/admin/' },
     { key: 'pages', label: 'Pages', href: '/admin/pages.html' },
     { key: 'products', label: 'Products', href: '/admin/products.html' },
+    { key: 'blog', label: 'Blog articles', href: '/admin/blog.html' },
     { key: 'enquiries', label: 'Enquiries', href: '/admin/enquiries.html' },
     { key: 'users', label: 'Admins', href: '/admin/users.html', account: true },
     { key: 'activity', label: 'Activity', href: '/admin/activity.html', activity: true },

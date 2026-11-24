@@ -369,13 +369,19 @@ function getCrumbsHtml(parts, root) {
   `;
 }
 
+// Blog articles come from blog-posts.json, which the admin panel's Blog section rewrites on every
+// publish. Without that file (or if it cannot be read) the three original articles are listed.
+let blogSlugs = ['medical-implant-cleaning-machine-india', 'vacuum-heat-treatment-furnace-india', 'pvd-coating-plant-india'];
+try {
+  const posts = JSON.parse(fs.readFileSync(path.join(__dirname, 'blog-posts.json'), 'utf8'));
+  if (Array.isArray(posts)) blogSlugs = posts.map((p) => p.slug).filter(Boolean);
+} catch (e) { /* no blog-posts.json yet: keep the default list */ }
+
 const sitemapUrls = [
   { loc: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
   { loc: `${SITE_URL}/contact.html`, priority: '0.8', changefreq: 'monthly' },
   { loc: `${SITE_URL}/blog`, priority: '0.8', changefreq: 'weekly' },
-  { loc: `${SITE_URL}/medical-implant-cleaning-machine-india/`, priority: '0.8', changefreq: 'monthly' },
-  { loc: `${SITE_URL}/vacuum-heat-treatment-furnace-india/`, priority: '0.8', changefreq: 'monthly' },
-  { loc: `${SITE_URL}/pvd-coating-plant-india/`, priority: '0.8', changefreq: 'monthly' }
+  ...blogSlugs.map((slug) => ({ loc: `${SITE_URL}/${slug}/`, priority: '0.8', changefreq: 'monthly' })),
 ];
 
 // 1. Generate Brand Pages

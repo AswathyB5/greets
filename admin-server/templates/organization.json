@@ -1,0 +1,35 @@
+{
+  "@type": "Organization",
+  "@id": "https://www.greetsequipment.com/#organization",
+  "name": "Greets Equipment Pvt. Ltd.",
+  "url": "https://www.greetsequipment.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No.56, 1st Floor, 12th Main Road, Sector 6, HSR Layout (Above Punjab National Bank)",
+    "addressLocality": "Bangalore",
+    "addressRegion": "Karnataka",
+    "postalCode": "560102",
+    "addressCountry": "IN"
+  },
+  "email": "enquiry-equipment@greets.co.in",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+91 98233 86558",
+      "contactType": "sales",
+      "name": "Mr. Pramod Kanse"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+91 94298 75547",
+      "contactType": "sales",
+      "name": "Mr. Manoj Agrawal"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+91 98714 08194",
+      "contactType": "sales",
+      "name": "Ms. Pahal Chawla"
+    }
+  ]
+}

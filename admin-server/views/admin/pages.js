@@ -316,7 +316,7 @@
   }
 
   // Search-engine / social-share settings are not offered here (they stay as written in the website).
-  const HIDDEN_SECTIONS = new Set(['meta', 'messages']);
+  const HIDDEN_SECTIONS = new Set(['meta', 'messages', 'blog-posts']); // blog-posts: articles are managed in the Blog section
 
   function sectionsOf() {
     const groups = new Map();

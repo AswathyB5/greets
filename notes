@@ -152,3 +152,66 @@ rather than invent a price. So:
 After deploy: in Search Console open each issue and click "Validate fix"; it takes days/weeks.
 Products without offers are still valid for normal rich results, just not Merchant listings
 (which need a price anyway).
+
+------------------------------------------------------------------
+2026-11-24 - Admin panel: Blog articles with add / edit / delete (CRUD)
+------------------------------------------------------------------
+GOAL: blog articles could only be changed by editing HTML files. Now the admin panel has a
+"Blog articles" section: list, create, edit, delete. Same idea as Products:
+   admin form -> database (MongoDB) -> "publish" writes the static website files.
+
+NEW FILES (admin-server/)
+  models/BlogPost.js          what an article is (title, address/slug, date, text, FAQ, picture, SEO fields).
+  services/blogPublish.js     the publisher. For every PUBLISHED article it writes <slug>/index.html from the
+                              template, rebuilds the card grid in blog.html, updates sitemap.xml and writes
+                              blog-posts.json (list of live articles). Drafts and deleted articles lose their page.
+                              Before writing it backs up blog.html, sitemap.xml, blog-posts.json to backups/ and
+                              puts them back if anything fails. It refuses an address that belongs to another part
+                              of the site (e.g. "bmi", "contact"). Article text is cleaned: scripts, iframes,
+                              event handlers, javascript: links and unsafe styles are removed.
+  services/blogImport.js      reads the 3 existing articles (title, text, FAQ, dates...) so the admin can take them over.
+  routes/blog.js              the API: GET/POST /api/blog, GET/PUT/DELETE /api/blog/:slug, POST /import, POST /publish.
+                              Login required. After a save the site updates by itself (AUTO_PUBLISH=false in .env
+                              switches to a "Publish to website" button).
+  templates/blog-article.html the page shell (header, styles, footer) with {{TOKENS}}; made from the PVD article by
+  templates/organization.json   scripts/makeBlogTemplate.js. Re-run that script if the header/footer of an article
+                              page changes (e.g. a new address), so new articles get the same one.
+  views/admin/blog.html + blog.js   the screens: list, editor with text toolbar (heading, bold, lists, links, "edit
+                              as HTML"), picture upload, FAQ rows, Google title/description.
+CHANGED
+  server.js (mounts /api/blog), views/admin/admin.js (sidebar link), views/admin/pages.js (hides the old
+  "blog cards" fields in Pages > Blog page, since cards now come from the Blog section),
+  ../build_pages.js (the sitemap it writes reads blog-posts.json, so a product publish keeps the articles).
+
+FIRST USE: open Admin > Blog articles > "Import the existing articles". Then publish by saving any article.
+The first publish rewrites blog.html's cards (the old per-card CMS tags are dropped on purpose).
+
+TESTED: no MongoDB on this PC, so the database was replaced by an in-memory stand-in. With it: parse + re-render of all
+3 articles matches the live pages; publish/delete/clash/rollback (33 checks pass); the real routes and screens driven in
+a browser (import, create, validation, edit, delete). NOT tested: real MongoDB, Cloudinary upload, the live server.
+LIMITS: the page address cannot be changed after creation (it would break links); menus inside new article pages are a
+copy and are not refreshed when the product catalog changes (same as the existing 3 articles).
+
+2026-11-24 (later) - Blog editor: full text formatting
+The article text editor is now views/admin/blog-editor.js (own file; blog.js just mounts it). Toolbar: undo/redo, text style
+(Paragraph, Heading 2/3/4, Quote), size, bold, italic, underline, strike-through, text colour, highlight colour, "back to normal
+colour", align left/centre/right/justify, bullet + numbered lists, link / unlink / LINK COLOUR, tables (choose rows, columns,
+heading row; then + row above/below, + column left/right, - row, - column, delete table), divider line, pictures inside the
+text (upload), clear formatting, and an "HTML" view. Colours and sizes are saved as inline styles (style="color: ..."), so
+they survive in the published page. Enter now makes real <p> paragraphs.
+Server side (services/blogPublish.js): the cleaner now also allows h4, strike/del, mark, tables with captions/footers,
+colspan/rowspan/scope, borders, vertical-align, and turns <font color> into a span; still strips scripts, event handlers,
+javascript: links, url() / expression() styles. Pictures inside the text: uploads/ files are copied into assets/blog/uploads/
+and site paths get the "../" an article page needs.
+Article pages got styles for tables, quotes, dividers, pictures, highlights, h4 (templates/blog-article.html, built by
+scripts/makeBlogTemplate.js - re-run it after changing the header/footer of an article page).
+Tested in a browser with the in-memory stand-in: heading, colour, link, link colour, size, bold, highlight, alignment, table
+(+row, +column), divider, quote all saved and published correctly; 12 cleaner checks and the 33 publish checks pass.
+
+2026-11-24: Mobile menu > Products: brand names (BMI, Novatec, Huasheng) bold (800); every logo in a same-width 64px box so the names line up; product lines start exactly under the logos. CSS at the end of styles.css (uses "html body ..." because the 3 blog article pages carry their own copy of the old rules).
+
+2026-11-24 (later): mobile Products menu now also mirrors the desktop one: each product row has a thin divider (same width as the brand line), tight line-height so a wrapped second line sits right under the first. styles.css, end of file.
+
+2026-11-24: Position pills (first column of the model/process tables: C, 1..9, 8 - 9, 10 - 14, S) now have the same width and centred text, so they align in one column (styles.css, end).
+
+2026-11-24: Find a system > Category on phones: the brand names (BMI, Novatec, Huasheng) are bold. A phone cannot style the <optgroup> labels of a native <select>, so main.js draws a grouped dropdown on screens <= 768px (button + panel: bold brand heading, then its categories). The real #f-cat select stays in the page (hidden on phones), so products.js finder logic is unchanged; the label stays in sync via a value setter + MutationObserver. CSS: .gsel* at the end of styles.css. Desktop keeps the native select.

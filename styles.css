@@ -8782,3 +8782,98 @@ body:has(#contact) footer.footer {
     min-width: 104px;
   }
 }
+
+/* ---- Mobile menu > Products: bold brand names and one clean alignment ----
+   The logos have different widths, so the brand names started at different places. Every logo now sits in a
+   box of the same width, so BMI / Novatec / Huasheng line up, and the product lines start under the logos.
+   "html body ..." is used because some pages carry their own copy of these rules. */
+@media (max-width: 768px) {
+  html body .mobile-brand-group .mobile-brand-title {
+    gap: 0.75rem;
+    padding: 0.25rem 0 0.55rem !important;
+  }
+  html body .mobile-brand-group .mobile-brand-title img {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 26px;
+    max-width: 64px;
+    object-fit: contain;
+    object-position: left center;
+  }
+  html body .mobile-brand-group .mobile-brand-title span {
+    font-size: 1.05rem;
+    font-weight: 800 !important;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+  }
+  /* product lines: the text starts exactly under the logo (the hover shade still reaches the edges) */
+  html body .mobile-brand-group .mobile-cat-list { margin: 0.3rem 0 0; gap: 0; }
+  html body .mobile-brand-group .mobile-cat-list li a {
+    margin: 0 -0.5rem;
+    padding: 0.5rem 0.5rem !important;
+    font-weight: 500 !important;
+    line-height: 1.35;
+  }
+}
+
+/* Mobile Products menu, like the desktop one: each product is one row with a thin line under it, and a
+   name that wraps onto a second line stays tightly under its first line. */
+@media (max-width: 768px) {
+  html body .mobile-brand-group .mobile-cat-list li a {
+    border-bottom: 1px solid var(--line) !important;
+    border-radius: 0;
+    padding: 0.6rem 0.5rem !important;
+    line-height: 1.25;
+  }
+  html body .mobile-brand-group .mobile-cat-list li:last-child a {
+    border-bottom: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  /* the divider lines start and end exactly where the brand's own line does */
+  html body .mobile-brand-group .mobile-cat-list li a {
+    margin: 0;
+    padding: 0.6rem 0 !important;
+  }
+}
+
+/* First-column pills of the model / process tables (the "Position" numbers: C, 1, 2 ... 8 - 9, 10 - 14, S):
+   every pill gets the same width and its text is centred, so the pills line up in one neat column. */
+.m-models-table td:first-child > .pill-orientation:only-child {
+  min-width: 4.6rem;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ---- Find a system > Category on phones: bold brand names (see the grouped dropdown in main.js) ---- */
+.gsel { display: none; }
+@media (max-width: 768px) {
+  .fsel select.gsel-native { display: none !important; }
+  .gsel { display: block; position: relative; flex: 1 1 auto; min-width: 0; }
+  .gsel__btn {
+    width: 100%; height: 38px; box-sizing: border-box; text-align: left;
+    padding: 6px 30px 6px 10px; font: inherit; font-size: 0.84rem; font-weight: 500; color: #1B2328;
+    background: #FFFFFF; border: 1.5px solid #D3D8D4; border-radius: 8px; cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2356636B' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 10px center;
+  }
+  .gsel__btn:focus-visible, .gsel.is-open .gsel__btn { border-color: #1B2328; box-shadow: 0 0 0 3px rgba(2, 150, 60, 0.10); outline: none; }
+  .gsel__label { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .gsel__panel {
+    position: absolute; left: 0; right: 0; top: calc(100% + 4px); z-index: 60;
+    max-height: 60vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    background: #FFFFFF; border: 1.5px solid #D3D8D4; border-radius: 10px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+    padding: 4px 0; white-space: normal;
+  }
+  .gsel__group { padding: 0.7rem 0.85rem 0.25rem; font-size: 0.95rem; font-weight: 800; color: #1B2328; letter-spacing: 0.01em; }
+  .gsel__group:not(:first-child) { border-top: 1px solid #E6EAE6; margin-top: 4px; }
+  .gsel__opt {
+    display: block; width: 100%; text-align: left; padding: 0.6rem 0.85rem; margin: 0;
+    font: inherit; font-size: 0.86rem; font-weight: 500; color: #3E4B52; background: none; border: 0; cursor: pointer; line-height: 1.3;
+  }
+  .gsel__opt.is-nested { padding-left: 1.5rem; }
+  .gsel__opt:hover, .gsel__opt:focus-visible { background: rgba(2, 150, 60, 0.08); color: #02963C; outline: none; }
+  .gsel__opt[aria-selected="true"] { color: #02963C; font-weight: 700; background: rgba(2, 150, 60, 0.10); }
+}

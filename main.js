@@ -868,3 +868,82 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', update);
   window.addEventListener('resize', update);
 })();
+
+/* Grouped dropdown for phones: a phone's own picker cannot show the brand names (the <optgroup> labels) in bold,
+   so on small screens the "Category" menu of the Find a system section is drawn by the page instead:
+   a bold brand name, then that brand's categories. The real <select> stays in the page (hidden on phones), so the
+   finder keeps reading and setting its value exactly as before. */
+(function () {
+  function enhance(select) {
+    if (!select || select.dataset.gsel || !select.querySelector) return;
+    select.dataset.gsel = '1';
+
+    var wrap = document.createElement('div');
+    wrap.className = 'gsel';
+    wrap.innerHTML = '<button type="button" class="gsel__btn" aria-haspopup="listbox" aria-expanded="false"><span class="gsel__label"></span></button>' +
+      '<div class="gsel__panel" role="listbox" hidden></div>';
+    select.parentNode.insertBefore(wrap, select.nextSibling);
+    select.classList.add('gsel-native');
+    var btn = wrap.querySelector('.gsel__btn');
+    var label = wrap.querySelector('.gsel__label');
+    var panel = wrap.querySelector('.gsel__panel');
+    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+
+    function sync() {
+      var opt = select.options[select.selectedIndex];
+      label.textContent = opt ? opt.text : '';
+      panel.querySelectorAll('.gsel__opt').forEach(function (o) { o.setAttribute('aria-selected', o.getAttribute('data-value') === select.value ? 'true' : 'false'); });
+    }
+
+    function build() {
+      var html = '';
+      var option = function (o, nested) {
+        return '<button type="button" class="gsel__opt' + (nested ? ' is-nested' : '') + '" role="option" data-value="' + esc(o.value) + '">' + esc(o.text) + '</button>';
+      };
+      Array.prototype.forEach.call(select.children, function (child) {
+        if (child.tagName === 'OPTGROUP') {
+          html += '<div class="gsel__group" role="presentation">' + esc(child.label) + '</div>';
+          Array.prototype.forEach.call(child.children, function (o) { html += option(o, true); });
+        } else if (child.tagName === 'OPTION') {
+          html += option(child, false);
+        }
+      });
+      panel.innerHTML = html;
+      sync();
+    }
+
+    function open(state) {
+      panel.hidden = !state;
+      btn.setAttribute('aria-expanded', state ? 'true' : 'false');
+      wrap.classList.toggle('is-open', state);
+      if (state) { sync(); var cur = panel.querySelector('[aria-selected="true"]'); if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: 'nearest' }); }
+    }
+
+    btn.addEventListener('click', function () { open(panel.hidden); });
+    panel.addEventListener('click', function (e) {
+      var o = e.target.closest('.gsel__opt');
+      if (!o) return;
+      select.value = o.getAttribute('data-value');
+      select.dispatchEvent(new Event('change', { bubbles: true }));
+      open(false);
+      btn.focus();
+    });
+    document.addEventListener('click', function (e) { if (!wrap.contains(e.target)) open(false); });
+    wrap.addEventListener('keydown', function (e) { if (e.key === 'Escape') { open(false); btn.focus(); } });
+
+    // keep the button text right when the finder sets the value from code (for example "reset filters")
+    var desc = Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, 'value');
+    Object.defineProperty(select, 'value', {
+      configurable: true,
+      get: function () { return desc.get.call(this); },
+      set: function (v) { desc.set.call(this, v); sync(); },
+    });
+    select.addEventListener('change', sync);
+    // the finder refills the list when the brand or industry changes
+    new MutationObserver(build).observe(select, { childList: true, subtree: true });
+    build();
+  }
+
+  function start() { enhance(document.getElementById('f-cat')); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
