@@ -1,0 +1,878 @@
+[
+ {
+  "key": "brand.wording.count-product-range_c7f105",
+  "page": "brand",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "{count} product range",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 2
+ },
+ {
+  "key": "brand.wording.count-product-ranges_3cc8e2",
+  "page": "brand",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "{count} product ranges",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 3
+ },
+ {
+  "key": "brand.wording.all-products_3ffece",
+  "page": "brand",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "All products",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 3
+ },
+ {
+  "key": "brand.wording.authorised-dealer-in-india_3aee4c",
+  "page": "brand",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "Authorised Dealer in India",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 3
+ },
+ {
+  "key": "brand.wording.enquire-for-brand-in-india_619151",
+  "page": "brand",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "Enquire for {brand} in India",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 3
+ },
+ {
+  "key": "brand.wording.visit-official-brand-website_a516c7",
+  "page": "brand",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "Visit official {brand} website",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 3
+ },
+ {
+  "key": "brand.wording.visit-official-website_9b586f",
+  "page": "brand",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "Visit official website",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 3
+ },
+ {
+  "key": "brand.wording.brand-equipment-range_f2ee17",
+  "page": "brand",
+  "section": "headings",
+  "type": "text",
+  "label": "Main heading (keep the {words in braces}: they are replaced by the product name)",
+  "default": "{brand} equipment range",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 3
+ },
+ {
+  "key": "brand.wording.product-categories_21a6f1",
+  "page": "brand",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Product categories",
+  "pages": [
+   "brand"
+  ],
+  "pageCount": 3
+ },
+ {
+  "key": "family.wording.all-products_3ffece",
+  "page": "family",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "All products",
+  "pages": [
+   "family"
+  ],
+  "pageCount": 16
+ },
+ {
+  "key": "family.wording.china_d2eaf2",
+  "page": "family",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "China",
+  "pages": [
+   "family"
+  ],
+  "pageCount": 8
+ },
+ {
+  "key": "family.wording.enquire-about-category_60f342",
+  "page": "family",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "Enquire about {category}",
+  "pages": [
+   "family"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "family.wording.france_e3772a",
+  "page": "family",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "France",
+  "pages": [
+   "family"
+  ],
+  "pageCount": 4
+ },
+ {
+  "key": "family.wording.italy_ad79ef",
+  "page": "family",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "Italy",
+  "pages": [
+   "family"
+  ],
+  "pageCount": 4
+ },
+ {
+  "key": "family.wording.see-range-on-brand-website_420424",
+  "page": "family",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "See range on {brand} website",
+  "pages": [
+   "family"
+  ],
+  "pageCount": 15
+ },
+ {
+  "key": "family.wording.view-technical-specifications_cb01e2",
+  "page": "family",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "View technical specifications",
+  "pages": [
+   "family"
+  ],
+  "pageCount": 16
+ },
+ {
+  "key": "family.wording.available-systems-configurations_7d5004",
+  "page": "family",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Available systems & configurations",
+  "pages": [
+   "family"
+  ],
+  "pageCount": 16
+ },
+ {
+  "key": "machine.wording.count-models-in-family_0709e9",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "{count} Models in Family",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 18
+ },
+ {
+  "key": "machine.wording.count-models-in-range_7591ff",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "{count} Models in Range",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.all-products_3ffece",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "All products",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 57
+ },
+ {
+  "key": "machine.wording.china_d2eaf2",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "China",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 33
+ },
+ {
+  "key": "machine.wording.enquire_a4bf95",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "Enquire",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 30
+ },
+ {
+  "key": "machine.wording.enquire-about-this_0f0395",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "Enquire about this",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 57
+ },
+ {
+  "key": "machine.wording.france_e3772a",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "France",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.italy_ad79ef",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text",
+  "default": "Italy",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.more-in-category_55fe26",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "More in {category}:",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 54
+ },
+ {
+  "key": "machine.wording.view-on-brand-website_8ee494",
+  "page": "machine",
+  "section": "buttons-labels",
+  "type": "text",
+  "label": "Text (keep the {words in braces}: they are replaced by the product name)",
+  "default": "View on {brand} website",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 56
+ },
+ {
+  "key": "machine.wording.family-family-overview_adf1b8",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading (keep the {words in braces}: they are replaced by the product name)",
+  "default": "{family} family overview",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 13
+ },
+ {
+  "key": "machine.wording.family-series-overview_11300b",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading (keep the {words in braces}: they are replaced by the product name)",
+  "default": "{family} series overview",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 20
+ },
+ {
+  "key": "machine.wording.action_97c89a",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Action",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 30
+ },
+ {
+  "key": "machine.wording.arc-targets_686e7b",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Arc Targets",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 7
+ },
+ {
+  "key": "machine.wording.capacity-trees_fae6d3",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Capacity (trees)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.chamber-size-mm_c61df4",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Chamber Size (mm)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 7
+ },
+ {
+  "key": "machine.wording.chamber-volume-m_5d0292",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Chamber volume (m³)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.coating-technology_ecff61",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Coating technology",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.config_885114",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Config",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.configuration_754164",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Configuration",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.cooling_5569ac",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Cooling",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.dimensions_9f4ca9",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Dimensions",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.effective-coating-area-mm_38a171",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Effective coating area (mm)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 19
+ },
+ {
+  "key": "machine.wording.equipment-size-l-x-w-x-h-mm_96e584",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Equipment size L x W x H (mm)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.family_4efb6c",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Family",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.footprint-l-w-h-m_bbf63e",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Footprint L×W×H (m)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 7
+ },
+ {
+  "key": "machine.wording.hobbing-tool-load-d80xl150-pcs_33ac4a",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Hobbing tool load D80xL150 (pcs)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.industries_0c55b4",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Industries",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 56
+ },
+ {
+  "key": "machine.wording.insert-load-apmt1135-pcs_954540",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Insert load APMT1135 (pcs)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.key-benefits_2e7192",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Key benefits",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.key-features_bd8210",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Key features",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 57
+ },
+ {
+  "key": "machine.wording.load_ddcb77",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Load",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.main-options_a63ee5",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Main options",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.max-temp_fcedb6",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Max Temp",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.max-load-kg_332fe4",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Max. load (kg)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.max-working-temp-c_21b8fd",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Max. working temp. (°c)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.model_68c2cc",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Model",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 30
+ },
+ {
+  "key": "machine.wording.other-targets_9f43af",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Other Targets",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 7
+ },
+ {
+  "key": "machine.wording.process-time-h_7103c3",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Process time (h)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.round-tool-load-pcs_2bc24c",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Round tool load (pcs)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.series_40c20d",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Series",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.spindle-mm_39c614",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Spindle Ø (mm)",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.standard-model-range-technical-param_7ac5fe",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Standard model range & technical parameters",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 30
+ },
+ {
+  "key": "machine.wording.supported-processes_1e2dff",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Supported processes",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 54
+ },
+ {
+  "key": "machine.wording.technical-data_453001",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Technical data",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 57
+ },
+ {
+  "key": "machine.wording.thermochemical-options_dd0574",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Thermochemical options",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.typical-applications_e11895",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Typical applications",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 24
+ },
+ {
+  "key": "machine.wording.typical-use_b2b4a5",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Heading",
+  "default": "Typical use",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.vacuum_5fe15d",
+  "page": "machine",
+  "section": "headings",
+  "type": "text",
+  "label": "Table heading",
+  "default": "Vacuum",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.allcarb_4592a7",
+  "page": "machine",
+  "section": "text",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "ALLCARB®",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 6
+ },
+ {
+  "key": "machine.wording.datasheet-on-request_2ea7a4",
+  "page": "machine",
+  "section": "text",
+  "type": "text",
+  "label": "Bold text",
+  "default": "Datasheet on request",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 21
+ },
+ {
+  "key": "machine.wording.manufacturer-figures-exact-values-de_83a4a4",
+  "page": "machine",
+  "section": "text",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Manufacturer figures; exact values depend on the configuration.",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 35
+ },
+ {
+  "key": "machine.wording.published-per-model-chamber-dimensio_d1f312",
+  "page": "machine",
+  "section": "text",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Published per-model chamber dimensions, effective coating zones, target configurations, and footprint dimensions",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 7
+ },
+ {
+  "key": "machine.wording.published-per-model-coating-zones-ba_482933",
+  "page": "machine",
+  "section": "text",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Published per-model coating zones, batch load capacities, equipment dimensions, and cycle times",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 12
+ },
+ {
+  "key": "machine.wording.published-per-model-load-ratings-dim_7f8bf6",
+  "page": "machine",
+  "section": "text",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "Published per-model load ratings, dimensions, maximum temperatures, and vacuum levels",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 9
+ },
+ {
+  "key": "machine.wording.this-machine-is-configured-to-your-p_b8092c",
+  "page": "machine",
+  "section": "text",
+  "type": "text",
+  "label": "Paragraph",
+  "default": "This machine is configured to your part specs and throughput. Contact Greets Equipment for technical proposal.",
+  "pages": [
+   "machine"
+  ],
+  "pageCount": 21
+ }
+]

@@ -19,6 +19,7 @@ const { parseDocument } = require('htmlparser2');
 const { SITE_DIR } = require('../config/site');
 const BlogPost = require('../models/BlogPost');
 const { UPLOAD_DIR } = require('./imageStore');
+const sharedBlocks = require('./sharedBlocks');
 
 const SITE_URL = 'https://www.greetsequipment.com';
 const BACKUP_DIR = process.env.BACKUP_DIR ? path.resolve(process.env.BACKUP_DIR) : path.join(__dirname, '..', 'backups');
@@ -212,10 +213,21 @@ function faqHtml(faq) {
   if (!items.length) return '';
   const rows = items.map((f) => `  <dt style="font-weight: 700; color: var(--lime); margin-top: 1.5rem;">${esc(f.q)}</dt>
   <dd style="margin: 0.5rem 0 0; color: var(--ink);">${esc(f.a)}</dd>`).join('\n\n');
-  return `<h2>Frequently Asked Questions</h2>
+  return `<h2 data-cms="blog-article.faq.heading">Frequently Asked Questions</h2>
 <dl style="text-align: left; margin-top: 2rem;">
 ${rows}
 </dl>`;
+}
+
+// The menus and the footer come from index.html (the copy the admin panel edits), so a change there shows on every
+// article. The copy in the template is only used if index.html cannot be read.
+function withSharedBlocks(page) {
+  const head = sharedBlocks.header('../');
+  const foot = sharedBlocks.footer('../');
+  let out = page;
+  if (head) out = out.replace(/<!-- Header -->[\s\S]*?(?=\s*<!-- Breadcrumbs -->)/, () => head);
+  if (foot) out = out.replace(/<!-- Footer -->\s*<footer[\s\S]*?<\/footer>/, () => foot);
+  return out;
 }
 
 function renderArticle(post, copied) {
@@ -240,7 +252,8 @@ function renderArticle(post, copied) {
     JSONLD: structuredData(post, ctx),
   };
   // one pass, so a value that happens to contain "{{...}}" is never filled in again
-  return template.replace(/\{\{([A-Z0-9_]+)\}\}/g, (all, key) => (key in values ? values[key] : all));
+  const page = template.replace(/\{\{([A-Z0-9_]+)\}\}/g, (all, key) => (key in values ? values[key] : all));
+  return withSharedBlocks(page);
 }
 
 // ---------- the card on the blog page ----------
@@ -262,7 +275,7 @@ ${date}
             <p class="blog-card__excerpt">${esc(post.excerpt || post.description || '')}</p>
             <div class="blog-card__footer">
               <a href="${esc(url)}" class="blog-card__btn">
-                <span>Read Article</span>
+                <span data-cms="blog.blog-posts.read_article">Read Article</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
             </div>

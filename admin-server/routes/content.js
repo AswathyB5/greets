@@ -7,7 +7,12 @@ const imageStore = require('../services/imageStore');
 const { sanitizeRich } = require('../services/richText');
 const { requireAuthApi } = require('../middleware/auth');
 
-const MANIFEST = require('../data/content-manifest.json');
+// The hand-tagged pages (home, contact, privacy, blog list) plus the wording of the generated pages
+// (brand / category / machine / blog article). The second file is written by build_pages.js and by the blog publisher.
+const optionalJson = (name) => { try { return require(name); } catch (e) { return []; } };
+const MANIFEST = require('../data/content-manifest.json')
+  .concat(optionalJson('../data/template-fields.json'))
+  .concat(optionalJson('../data/blog-article-fields.json'));
 const UPLOAD_DIR = path.join(__dirname, '..', 'uploads');
 const MAX_VALUE_LENGTH = 20000;
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
@@ -56,6 +61,10 @@ const PAGE_TITLES = {
   contact: 'Contact page',
   privacy: 'Privacy Notice page',
   blog: 'Blog page',
+  'blog-article': 'Blog articles: fixed wording & layout (all articles)',
+  brand: 'Brand pages (BMI, Novatec, Huasheng): fixed wording',
+  family: 'Category pages: fixed wording',
+  machine: 'Machine pages: fixed wording',
 };
 
 // Image types we accept, checked by the file's first bytes (not its name).

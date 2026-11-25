@@ -39,6 +39,7 @@
     industries: 'Industries', finder: 'Product finder: labels (the words around the search)', bmi: 'BMI section', novatec: 'Novatec section', huasheng: 'Huasheng section',
     'home-crumb-wrap': 'Breadcrumb', messages: 'Form messages & popups (after sending an enquiry)', 'privacy-page-hero': 'Privacy page heading', navgroup: 'Top navigation',
     'blog-hero': 'Top banner & welcome', 'blog-posts': 'Blog cards (3-column grid)',
+    headings: 'Headings & table headings', 'buttons-labels': 'Buttons, links & small labels', text: 'Other wording',
   };
 
   // A page can word a menu item a little differently from the shared menu; those few items show up under the page.

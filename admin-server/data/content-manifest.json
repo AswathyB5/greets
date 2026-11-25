@@ -6438,5 +6438,159 @@
   "cardId": "blog.blog-posts.c1_6",
   "listId": "blog.blog-posts.l1",
   "repeatable": true
+ },
+ {
+  "key": "global.header.blog_link",
+  "page": "global",
+  "section": "header",
+  "type": "text",
+  "label": "Link text (Blog)",
+  "default": "Blog",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.blog_link",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Link text (Blog)",
+  "default": "Blog",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.reg_label",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Label: Registered Office",
+  "default": "Registered Office:",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.reg_address",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Registered Office address",
+  "default": "2, 111, 11th Cross, Vinayak Nagar, Annasandra Palya, Vimanapura, Bangalore North, Bangalore 560017, Karnataka",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.corp_label",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Label: Corporate Office",
+  "default": "Corporate Office:",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.cin_label",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Label: CIN",
+  "default": "CIN:",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.cin_value",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "CIN number",
+  "default": "U46529KA2025PTC207124",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.gstin_label",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Label: GSTIN",
+  "default": "GSTIN:",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.gstin_value",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "GSTIN number",
+  "default": "29AAMCG3022B1ZY",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.contact_label",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Heading: Contact",
+  "default": "Contact",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
+ },
+ {
+  "key": "global.footer.email_label",
+  "page": "global",
+  "section": "footer",
+  "type": "text",
+  "label": "Label: Email",
+  "default": "Email:",
+  "pages": [
+   "index",
+   "contact",
+   "privacy",
+   "blog"
+  ]
  }
 ]

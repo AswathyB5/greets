@@ -1,0 +1,8 @@
+[
+ { "key": "blog-article.crumbs.home", "page": "blog-article", "section": "breadcrumb", "type": "text", "label": "Breadcrumb: Home", "default": "Home", "pages": ["blog-article"] },
+ { "key": "blog-article.crumbs.blog", "page": "blog-article", "section": "breadcrumb", "type": "text", "label": "Breadcrumb: Blog", "default": "Blog", "pages": ["blog-article"] },
+ { "key": "blog-article.crumbs.back", "page": "blog-article", "section": "breadcrumb", "type": "text", "label": "\"Back to all blogs\" link", "default": "← Back to all blogs", "pages": ["blog-article"] },
+ { "key": "blog-article.meta.min_read", "page": "blog-article", "section": "article-top", "type": "text", "label": "Words after the reading time (e.g. \"5 min read\")", "default": "min read", "pages": ["blog-article"] },
+ { "key": "blog-article.faq.heading", "page": "blog-article", "section": "article-bottom", "type": "text", "label": "Heading above the questions", "default": "Frequently Asked Questions", "pages": ["blog-article"] },
+ { "key": "blog.blog-posts.read_article", "page": "blog", "section": "blog-posts", "type": "text", "label": "Button on every blog card", "default": "Read Article", "pages": ["blog"] }
+]
