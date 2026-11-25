@@ -79,6 +79,20 @@
     nodes.forEach(fn);
   }
 
+  // Wording on the generated product pages can contain {tokens} such as {brand} or {model}; the page
+  // carries their values in data-cms-vars='{"brand":"BMI",...}', so one edit fits every product.
+  function fillVars(el, text, isHtml) {
+    var raw = el.getAttribute('data-cms-vars');
+    if (!raw || String(text).indexOf('{') < 0) return text;
+    var vars;
+    try { vars = JSON.parse(raw); } catch (e) { return text; }
+    return String(text).replace(/\{(\w+)\}/g, function (all, name) {
+      if (!Object.prototype.hasOwnProperty.call(vars, name)) return all;
+      var value = String(vars[name]);
+      return isHtml ? value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') : value;
+    });
+  }
+
   // Puts the values v (key -> text) into every marked element inside root.
   function applyValues(root, v, t) {
     function has(key) { return Object.prototype.hasOwnProperty.call(v, key); }
@@ -87,8 +101,9 @@
       var key = el.getAttribute('data-cms');
       if (!has(key)) return;
       var oldText = el.textContent.trim();
-      if (t[key] === 'html') el.innerHTML = cleanHtml(v[key]);
-      else el.textContent = v[key];
+      var text = fillVars(el, v[key], t[key] === 'html');
+      if (t[key] === 'html') el.innerHTML = cleanHtml(text);
+      else el.textContent = text;
       if (el.tagName === 'OPTION' && el.getAttribute('value') === oldText) el.setAttribute('value', v[key]); // dropdown: submitted value follows the text
       if (el.hasAttribute('data-count')) el.setAttribute('data-count', v[key]); // keeps the number animation in step
     });

@@ -1,6 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 
+// Every generated page goes through emitPage(). The tagger (admin-server/services/templateTagger.js) marks the
+// fixed wording of the pages as editable from the admin panel, then writes them in finishPages() below.
+// If it cannot be loaded, the pages are written straight away, exactly as before.
+let TAGGER = null;
+try { TAGGER = require('./admin-server/services/templateTagger').createTagger(); } catch (e) { TAGGER = null; }
+function emitPage(file, html, ctx) {
+  if (TAGGER) TAGGER.add(file, html, ctx);
+  else fs.writeFileSync(file, html, 'utf8');
+}
+
 // Extract CATALOG and helper data from products.js
 const code = fs.readFileSync('products.js', 'utf8');
 
@@ -127,7 +137,7 @@ function slugify(s) {
     .replace(/^-+|-+$/g, '');
 }
 
-function getHeaderHtml(depth = 0) {
+function getHeaderHtmlLegacy(depth = 0) {
   const root = depth === 0 ? './' : '../'.repeat(depth);
   return `
   <!-- Header -->
@@ -284,7 +294,7 @@ function getHeaderHtml(depth = 0) {
 `;
 }
 
-function getFooterHtml(depth = 0) {
+function getFooterHtmlLegacy(depth = 0) {
   const root = depth === 0 ? './' : '../'.repeat(depth);
   return `
   <!-- Footer -->
@@ -349,6 +359,46 @@ function getFooterHtml(depth = 0) {
 `;
 }
 
+// ---------------------------------------------------------------------------------------------
+// Header + footer of the generated pages are taken from index.html (the page the admin panel edits),
+// so one edit in Admin > Pages > "Header & Footer (all pages)" shows on the product pages too.
+// Their relative links/pictures get the folder prefix of the page being built (root).
+// If index.html cannot be read, the older built-in copies above are used.
+// ---------------------------------------------------------------------------------------------
+let INDEX_HTML = null;
+function indexHtml() {
+  if (INDEX_HTML === null) {
+    try { INDEX_HTML = fs.readFileSync('index.html', 'utf8'); } catch (e) { INDEX_HTML = ''; }
+  }
+  return INDEX_HTML;
+}
+function sharedBlock(startMark, endMark, keepEnd) {
+  const src = indexHtml();
+  const a = src.indexOf(startMark);
+  if (a < 0) return null;
+  const b = src.indexOf(endMark, a);
+  if (b < 0) return null;
+  return src.slice(a, keepEnd ? b + endMark.length : b);
+}
+function rebaseLinks(html, root) {
+  return html.replace(/(?<![-\w])(href|src)="([^"]*)"/g, (all, attr, value) => {
+    if (value === '' || /^(https?:|\/\/|mailto:|tel:|javascript:|data:)/i.test(value)) return all;
+    if (value.startsWith('#')) return `${attr}="${root}index.html${value}"`;
+    return `${attr}="${root}${value.replace(/^\.\//, '')}"`;
+  });
+}
+const rootOf = (depth) => (depth === 0 ? './' : '../'.repeat(depth));
+function getHeaderHtml(depth = 0) {
+  const block = sharedBlock('<!-- Header -->', '<!-- Product View Overlay');
+  if (!block) return getHeaderHtmlLegacy(depth);
+  return '\n  ' + rebaseLinks(block, rootOf(depth)).replace(/(<a[^>]*href="[^"]*index\.html#hero"[^>]*?) class="active"/, '$1').trimEnd() + '\n';
+}
+function getFooterHtml(depth = 0) {
+  const block = sharedBlock('<!-- Footer -->', '</footer>', true);
+  if (!block) return getFooterHtmlLegacy(depth);
+  return '\n  ' + rebaseLinks(block, rootOf(depth)) + '\n';
+}
+
 function getCrumbsHtml(parts, root) {
   return `
     <div class="crumbrow">
@@ -379,7 +429,7 @@ try {
 
 const sitemapUrls = [
   { loc: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
-  { loc: `${SITE_URL}/contact.html`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${SITE_URL}/contact`, priority: '0.8', changefreq: 'monthly' },
   { loc: `${SITE_URL}/blog`, priority: '0.8', changefreq: 'weekly' },
   ...blogSlugs.map((slug) => ({ loc: `${SITE_URL}/${slug}/`, priority: '0.8', changefreq: 'monthly' })),
 ];
@@ -568,7 +618,7 @@ CATALOG.forEach(b => {
 </body>
 </html>`;
 
-  fs.writeFileSync(path.join(brandDir, 'index.html'), html, 'utf8');
+  emitPage(path.join(brandDir, 'index.html'), html, { kind: 'brand', id: b.id, vars: { brand: b.name } });
 
   // 2. Generate Category Pages
   b.cats.forEach(c => {
@@ -576,7 +626,13 @@ CATALOG.forEach(b => {
     if (!fs.existsSync(catDir)) fs.mkdirSync(catDir, { recursive: true });
 
     const catUrl = `${SITE_URL}/${b.id}/${c.id}/`;
-    sitemapUrls.push({ loc: catUrl, priority: '0.8', changefreq: 'weekly' });
+    // These category pages only repeat their one machine page, so Google saw two copies of the same page.
+    // The machine page (long address) is the main page: the category page points its canonical at it
+    // and is left out of the sitemap. The page itself still loads, so existing links keep working.
+    const MERGED_CATEGORIES = ['novatec/2crd', 'huasheng/ltmc'];
+    const mergedMachine = MERGED_CATEGORIES.includes(`${b.id}/${c.id}`) && c.machines.length === 1 ? c.machines[0] : null;
+    const catCanonical = mergedMachine ? `${SITE_URL}/${b.id}/${slugify(mergedMachine.name)}/` : catUrl;
+    if (!mergedMachine) sitemapUrls.push({ loc: catUrl, priority: '0.8', changefreq: 'weekly' });
 
     const root2 = '../../';
     const catTitle = c.seo_title || `${c.name} – ${b.name} | Greets Equipment India`;
@@ -609,14 +665,14 @@ CATALOG.forEach(b => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(catTitle)}</title>
   <meta name="description" content="${esc(catDesc)}">
-  <link rel="canonical" href="${catUrl}">
+  <link rel="canonical" href="${catCanonical}">
   <link rel="icon" type="image/png" href="${root2}assets/greetsfavicon.png">
   <link rel="apple-touch-icon" href="${root2}assets/greetsfavicon.png">
   <link rel="stylesheet" href="${root2}styles.css">
   
   <meta property="og:title" content="${esc(catTitle)}">
   <meta property="og:description" content="${esc(catDesc)}">
-  <meta property="og:url" content="${catUrl}">
+  <meta property="og:url" content="${catCanonical}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="${catPhotoUrl}">
   <meta property="og:site_name" content="Greets Equipment">
@@ -709,7 +765,7 @@ CATALOG.forEach(b => {
 </body>
 </html>`;
 
-    fs.writeFileSync(path.join(catDir, 'index.html'), catHtml, 'utf8');
+    emitPage(path.join(catDir, 'index.html'), catHtml, { kind: 'family', id: b.id + '/' + c.id, vars: { brand: b.name, category: c.name, family: c.family || '' } });
 
     // 3. Generate Machine Pages
     c.machines.forEach(m => {
@@ -1297,17 +1353,25 @@ ${lineLayoutHtml}
 </html>`;
       };
 
+      const machineCtx = { kind: 'machine', id: b.id + '/' + c.id + '/' + m.id, vars: { brand: b.name, category: c.name, family: m.family || m.series || c.family || '', model: m.name } };
+
       // Write rich slug file: /bmi/b8t-vacuum-gas-quenching-furnace/index.html
-      fs.writeFileSync(path.join(richDir, 'index.html'), generateMachineHtml('../../'), 'utf8');
+      emitPage(path.join(richDir, 'index.html'), generateMachineHtml('../../'), machineCtx);
 
       // Write hierarchical file: /bmi/gas-quenching/b8t/index.html
-      fs.writeFileSync(path.join(hierDir, 'index.html'), generateMachineHtml('../../../'), 'utf8');
+      emitPage(path.join(hierDir, 'index.html'), generateMachineHtml('../../../'), machineCtx);
 
       // Write direct model file: /bmi/b8t/index.html
-      fs.writeFileSync(path.join(shortDir, 'index.html'), generateMachineHtml('../../'), 'utf8');
+      emitPage(path.join(shortDir, 'index.html'), generateMachineHtml('../../'), machineCtx);
     });
   });
 });
+
+// Mark the fixed wording of the generated pages as editable, then write every page.
+if (TAGGER) {
+  const report = TAGGER.finish((file, html) => fs.writeFileSync(file, html, 'utf8'));
+  console.log(`Pages written: ${report.pages}; editable wording markers: ${report.markers}; editable wording fields: ${report.fields}.`);
+}
 
 // Generate sitemap.xml
 const now = new Date().toISOString().split('T')[0];
