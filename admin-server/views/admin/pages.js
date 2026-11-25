@@ -28,6 +28,7 @@
 
   // where the lists that are NOT typed here come from
   const SECTION_NOTES = {
+    meta: '<div class="tip"><strong>What Google and social media show.</strong> The title is the blue headline in Google and the browser tab; the description is the grey text under it (about 150–160 characters). The Facebook / LinkedIn and Twitter boxes are what a shared link looks like. Saving also writes these into the page itself, so search engines read them directly.</div>',
     header: '<div class="tip"><strong>The Products and Industries dropdowns.</strong> The Products dropdown lists your families by itself, so a renamed or new family shows in every menu: change them under <a href="/admin/products.html">Products</a>. The names in the Industries dropdown come from <a href="/admin/products.html#/industries">Products &rsaquo; Edit industries</a>; the three column titles are below. The phone menu shows the same items, and its words are the ones below.</div>',
   };
 
@@ -316,8 +317,9 @@
       </div>`;
   }
 
-  // Search-engine / social-share settings are not offered here (they stay as written in the website).
-  const HIDDEN_SECTIONS = new Set(['meta', 'messages', 'blog-posts']); // blog-posts: articles are managed in the Blog section
+  // Only the blog cards are hidden: the articles are managed in the Blog section.
+  // (Search-engine settings and the enquiry popup messages are editable here.)
+  const HIDDEN_SECTIONS = new Set(['blog-posts']);
 
   function sectionsOf() {
     const groups = new Map();

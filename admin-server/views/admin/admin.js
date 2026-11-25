@@ -29,10 +29,6 @@
     { id: 'contact', label: 'Contact page', icon: 'mail' },
     { id: 'privacy', label: 'Privacy page', icon: 'shield' },
     { id: 'blog', label: 'Blog page', icon: 'blog' },
-    { id: 'blog-article', label: 'Blog articles (wording)', icon: 'blog' },
-    { id: 'brand', label: 'Brand pages (wording)', icon: 'building' },
-    { id: 'family', label: 'Category pages (wording)', icon: 'folder' },
-    { id: 'machine', label: 'Machine pages (wording)', icon: 'cube' },
     { id: 'global', label: 'Header & Footer', icon: 'layout' },
   ];
 

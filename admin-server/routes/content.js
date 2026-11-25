@@ -4,6 +4,8 @@ const crypto = require('crypto');
 const express = require('express');
 const ContentValue = require('../models/ContentValue');
 const imageStore = require('../services/imageStore');
+const { applyMeta, PAGE_FILES } = require('../services/pageMeta');
+const { SITE_DIR } = require('../config/site');
 const { sanitizeRich } = require('../services/richText');
 const { requireAuthApi } = require('../middleware/auth');
 
@@ -67,6 +69,8 @@ const PAGE_TITLES = {
   machine: 'Machine pages: fixed wording',
 };
 
+const HIDDEN_PAGES = new Set(['blog-article', 'brand', 'family', 'machine']);
+
 // Image types we accept, checked by the file's first bytes (not its name).
 const IMAGE_SIGNATURES = [
   { ext: 'png', test: (b) => b.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])) },
@@ -122,7 +126,9 @@ adminRouter.get('/pages', async (req, res, next) => {
   try {
     const edited = await ContentValue.aggregate([{ $group: { _id: '$page', count: { $sum: 1 } } }]);
     const editedBy = Object.fromEntries(edited.map((e) => [e._id, e.count]));
-    const pages = Object.keys(PAGE_TITLES).map((id) => ({
+    // The shared wording of the generated pages (brand / category / machine / blog article) stays out of the list:
+    // it still works through the API, it just is not offered on the Pages screen.
+    const pages = Object.keys(PAGE_TITLES).filter((id) => !HIDDEN_PAGES.has(id)).map((id) => ({
       id,
       title: PAGE_TITLES[id],
       fields: MANIFEST.filter((f) => f.page === id && isEditable(f)).length,
@@ -220,7 +226,26 @@ adminRouter.put('/pages/:page', async (req, res, next) => {
     }
     if (Object.keys(errors).length) return res.status(400).json({ message: 'Some fields are not valid.', errors });
     if (ops.length) await ContentValue.bulkWrite(ops);
-    res.json({ saved: ops.length });
+
+    // Search-engine / share settings are also written into the page file itself, so Google reads them from the HTML.
+    let writtenToPage = null;
+    if (PAGE_FILES[page] && Object.keys(values).some((k) => k.startsWith(`${page}.meta.`))) {
+      try {
+        const rows = await ContentValue.find({ page, key: { $regex: `^${page}\\.meta\\.` } }).select('key value -_id').lean();
+        const saved = new Map(rows.map((r) => [r.key, r.value]));
+        const current = {};
+        for (const f of MANIFEST.filter((m) => m.page === page && m.section === 'meta')) {
+          const name = f.key.slice(`${page}.meta.`.length);
+          // a field that was reset goes back to its original wording; the others use what is saved
+          current[name] = saved.has(f.key) ? saved.get(f.key) : f.default;
+        }
+        writtenToPage = applyMeta(page, current, SITE_DIR, process.env.SITE_PUBLIC_URL).length;
+      } catch (e) {
+        console.error('Could not write the search-engine settings into the page file:', e.message);
+        writtenToPage = false;
+      }
+    }
+    res.json({ saved: ops.length, writtenToPage });
   } catch (err) {
     next(err);
   }
